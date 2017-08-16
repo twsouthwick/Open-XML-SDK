@@ -148,3 +148,5 @@ The data for schema validation is contained in static binary files that are not 
 - `dotnet run`
 
 This will go through and update schema files in the form of `DocumentFormat.OpenXml/src/GeneratedCode/Office*Schema.cs`. This update only needs to be run when there is a change to the binary files; otherwise, they will return the same result. These updated files are only used in the .NET Sandard implementation, while the binary files will continue to be used in the .NET 4.5 builds.
+
+
