@@ -8,28 +8,17 @@ namespace DocumentFormat.OpenXml.Packaging
     /// <summary>
     /// Represents a (RelationshipId, OpenXmlPart) pair.
     /// </summary>
-    public class IdPartPair
+    public readonly struct IdPartPair : IEquatable<IdPartPair>
     {
-        private string _id;
-        private OpenXmlPart _part;
+        /// <summary>
+        /// Gets the relationship ID in the pair.
+        /// </summary>
+        public string RelationshipId { get; }
 
         /// <summary>
-        /// Gets or sets the relationship ID in the pair.
+        /// Gets the OpenXmlPart in the pair.
         /// </summary>
-        public string RelationshipId
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the OpenXmlPart in the pair.
-        /// </summary>
-        public OpenXmlPart OpenXmlPart
-        {
-            get { return _part; }
-            set { _part = value; }
-        }
+        public OpenXmlPart OpenXmlPart { get; }
 
         /// <summary>
         /// Initializes a new instance of the IdPartPair with the specified id and part.
@@ -42,20 +31,52 @@ namespace DocumentFormat.OpenXml.Packaging
             OpenXmlPart = part;
         }
 
-        /// <summary>
-        /// Determines whether this instance and another specified IdPartPair object have the same value.
-        /// </summary>
-        /// <param name="value">An IdPartPair.</param>
-        /// <returns>True if the value of the value parameter is the same as this instance; otherwise, false.</returns>
-        public bool Equals(IdPartPair value)
+        /// <inheritdoc/>
+        public override bool Equals(object obj)
         {
-            //Check for null
-            if (value == null)
+            if (obj is IdPartPair idPart)
             {
-                return false;
+                return string.Equals(idPart.RelationshipId, RelationshipId, StringComparison.Ordinal)
+                    && Equals(idPart.OpenXmlPart, OpenXmlPart);
             }
 
-            return string.Equals(_id, value._id, StringComparison.Ordinal) && (_part == value._part);
+            return false;
+        }
+
+        /// <inheritdoc/>
+        public override int GetHashCode()
+        {
+            const int Multiplier = 17;
+            var hashCode = 23;
+
+            unchecked
+            {
+                hashCode = hashCode * Multiplier + StringComparer.Ordinal.GetHashCode(RelationshipId);
+                hashCode = hashCode * Multiplier + (OpenXmlPart?.GetHashCode() ?? 0);
+
+                return hashCode;
+            }
+        }
+
+        /// <summary>
+        /// Override the equals operator
+        /// </summary>
+        public static bool operator ==(IdPartPair left, IdPartPair right)
+        {
+            return left.Equals(right);
+        }
+
+        /// <summary>
+        /// Override the not equals operator
+        /// </summary>
+        public static bool operator !=(IdPartPair left, IdPartPair right)
+        {
+            return !(left == right);
+        }
+
+        public bool Equals(IdPartPair other)
+        {
+            return this == other;
         }
     }
 }
