@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{D4A0DC7B-FCAC-4E23-B1A7-C66676BFAD7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsoSchemaGenerator", "tools\IsoSchemaGenerator\IsoSchemaGenerator.csproj", "{625F91C7-239F-4E6E-8656-A66EDEF09D6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D4A0DC7B-FCAC-4E23-B1A7-C66676BFAD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4A0DC7B-FCAC-4E23-B1A7-C66676BFAD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4A0DC7B-FCAC-4E23-B1A7-C66676BFAD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4A0DC7B-FCAC-4E23-B1A7-C66676BFAD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625F91C7-239F-4E6E-8656-A66EDEF09D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625F91C7-239F-4E6E-8656-A66EDEF09D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625F91C7-239F-4E6E-8656-A66EDEF09D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625F91C7-239F-4E6E-8656-A66EDEF09D6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
