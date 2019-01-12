@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "IsoSchemaGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}
