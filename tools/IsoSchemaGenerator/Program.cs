@@ -34,7 +34,7 @@ namespace IsoSchemaGenerator
                 builder.RegisterType<Generator>()
                     .InstancePerLifetimeScope();
 
-                builder.RegisterType<ZipSchemaGenerator>()
+                builder.RegisterType<ZipSchemaBuilder>()
                     .As<ISchemaBuilder>()
                     .InstancePerLifetimeScope();
             }

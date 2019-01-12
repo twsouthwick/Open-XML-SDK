@@ -10,13 +10,13 @@ using System.Xml.Schema;
 
 namespace IsoSchemaGenerator
 {
-    public class ZipSchemaGenerator : ISchemaBuilder
+    public class ZipSchemaBuilder : ISchemaBuilder
     {
         private const string BaseUri = "schema:///";
 
         private readonly string _path;
 
-        public ZipSchemaGenerator(GeneratorOptions options)
+        public ZipSchemaBuilder(GeneratorOptions options)
         {
             _path = options.SchemaPath;
         }
@@ -47,7 +47,6 @@ namespace IsoSchemaGenerator
                     {
                         void Validation(object sender, ValidationEventArgs e)
                         {
-                            throw new NotImplementedException();
                         }
 
                         var s = XmlSchema.Read(stream, Validation);
