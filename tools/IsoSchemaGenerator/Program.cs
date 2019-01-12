@@ -2,6 +2,7 @@
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 using Autofac;
+using Serilog;
 
 namespace IsoSchemaGenerator
 {
@@ -37,6 +38,14 @@ namespace IsoSchemaGenerator
                 builder.RegisterType<ZipSchemaBuilder>()
                     .As<ISchemaBuilder>()
                     .InstancePerLifetimeScope();
+
+                builder.Register(ctx =>
+                {
+                    return new LoggerConfiguration()
+                        .WriteTo.ColoredConsole()
+                        .MinimumLevel.Debug()
+                        .CreateLogger();
+                }).As<ILogger>();
             }
         }
     }

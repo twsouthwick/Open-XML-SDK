@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using Serilog;
 using System;
 using System.IO;
 using System.IO.Compression;
@@ -15,10 +16,12 @@ namespace IsoSchemaGenerator
         private const string BaseUri = "schema:///";
 
         private readonly string _path;
+        private readonly ILogger _logger;
 
-        public ZipSchemaBuilder(GeneratorOptions options)
+        public ZipSchemaBuilder(GeneratorOptions options, ILogger logger)
         {
             _path = options.SchemaPath;
+            _logger = logger;
         }
 
         public XmlSchemaSet BuildSchemaSet()
@@ -29,16 +32,17 @@ namespace IsoSchemaGenerator
                 using (var outerStream = outer.GetEntry("OfficeOpenXML-XMLSchema-Strict.zip").Open())
                 using (var archive = new ZipArchive(outerStream))
                 {
-                    var resolver = new ZipXmlResolver(archive);
                     var schemaSet = new XmlSchemaSet
                     {
-                        XmlResolver = resolver,
+                        XmlResolver = new ZipXmlResolver(archive, _logger),
                     };
 
                     foreach (var entry in archive.Entries)
                     {
                         if (entry.Name.EndsWith(".xsd", StringComparison.OrdinalIgnoreCase))
                         {
+                            _logger.Information("Adding '{Schema}' to schemas.", entry.Name);
+
                             schemaSet.Add(null, BaseUri + entry.Name);
                         }
                     }
@@ -71,14 +75,17 @@ namespace IsoSchemaGenerator
         private class ZipXmlResolver : XmlResolver
         {
             private readonly ZipArchive _archive;
+            private readonly ILogger _logger;
 
-            public ZipXmlResolver(ZipArchive archive)
+            public ZipXmlResolver(ZipArchive archive, ILogger logger)
             {
                 _archive = archive;
+                _logger = logger;
             }
 
             public override object GetEntity(Uri absoluteUri, string role, Type ofObjectToReturn)
             {
+                _logger.Debug("Resolving '{SchemaUri}' for schema", absoluteUri);
                 return _archive.GetEntry(absoluteUri.Segments[1]).Open();
             }
         }
