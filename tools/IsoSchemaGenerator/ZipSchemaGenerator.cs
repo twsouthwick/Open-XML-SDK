@@ -16,9 +16,9 @@ namespace IsoSchemaGenerator
 
         private readonly string _path;
 
-        public ZipSchemaGenerator(string path)
+        public ZipSchemaGenerator(GeneratorOptions options)
         {
-            _path = path;
+            _path = options.SchemaPath;
         }
 
         public XmlSchemaSet BuildSchemaSet()

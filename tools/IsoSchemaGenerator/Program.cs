@@ -1,11 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Text;
-using System.Xml.Schema;
+using Autofac;
 
 namespace IsoSchemaGenerator
 {
@@ -15,13 +11,33 @@ namespace IsoSchemaGenerator
         {
             var options = new GeneratorOptions
             {
-                InputPath = args[0],
+                SchemaPath = args[0],
             };
 
-            var generator = new ZipSchemaGenerator(options.InputPath);
+            var builder = new ContainerBuilder();
 
-            var schemas = generator.BuildSchemaSet();
-            schemas.Compile();
+            builder.RegisterModule<ProgramModule>();
+
+            using (var container = builder.Build())
+            using (var scope = container.BeginLifetimeScope(b => b.RegisterInstance(options)))
+            {
+                var generator = scope.Resolve<Generator>();
+
+                generator.Run();
+            }
+        }
+
+        private class ProgramModule : Module
+        {
+            protected override void Load(ContainerBuilder builder)
+            {
+                builder.RegisterType<Generator>()
+                    .InstancePerLifetimeScope();
+
+                builder.RegisterType<ZipSchemaGenerator>()
+                    .As<ISchemaBuilder>()
+                    .InstancePerLifetimeScope();
+            }
         }
     }
 }

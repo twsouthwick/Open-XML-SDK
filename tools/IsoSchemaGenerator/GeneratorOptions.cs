@@ -5,6 +5,6 @@ namespace IsoSchemaGenerator
 {
     public class GeneratorOptions
     {
-        public string InputPath { get; set; }
+        public string SchemaPath { get; set; }
     }
 }

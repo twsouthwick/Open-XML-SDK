@@ -2,7 +2,7 @@
   "profiles": {
     "IsoSchemaGenerator": {
       "commandName": "Project",
-      "commandLineArgs": ""
+      "commandLineArgs": "\"C:\\Users\\twsou\\Downloads\\c071691_ISO_IEC_29500-1_2016_Electronic_inserts.zip\""
     }
   }
 }
