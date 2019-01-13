@@ -3,9 +3,8 @@
 
 using Autofac;
 using Serilog;
-using Serilog.Core;
-using Serilog.Events;
-using System.Xml.Schema;
+using System;
+using System.IO;
 
 namespace IsoSchemaGenerator
 {
@@ -16,60 +15,21 @@ namespace IsoSchemaGenerator
             var options = new GeneratorOptions
             {
                 SchemaPath = args[0],
+                OutputDirectory = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString()),
             };
 
             var builder = new ContainerBuilder();
 
-            builder.RegisterModule<ProgramModule>();
+            builder.RegisterAssemblyModules(typeof(Program).Assembly);
 
             using (var container = builder.Build())
             using (var scope = container.BeginLifetimeScope(b => b.RegisterInstance(options)))
             {
+                scope.Resolve<ILogger>().Information("{@Options}", scope.Resolve<GeneratorOptions>());
+
                 var generator = scope.Resolve<SchemaGenerator>();
 
                 generator.Run();
-            }
-        }
-
-        private class ProgramModule : Module
-        {
-            protected override void Load(ContainerBuilder builder)
-            {
-                builder.RegisterType<SchemaGenerator>()
-                    .InstancePerLifetimeScope();
-
-                builder.RegisterType<ZipSchemaBuilder>()
-                    .As<ISchemaBuilder>()
-                    .InstancePerLifetimeScope();
-
-                builder.RegisterAssemblyTypes(typeof(Program).Assembly)
-                    .AssignableTo<ISchemaCleaner>()
-                    .As<ISchemaCleaner>()
-                    .InstancePerLifetimeScope();
-
-                builder.Register(ctx =>
-                {
-                    return new LoggerConfiguration()
-                        .WriteTo.ColoredConsole()
-                        .MinimumLevel.Debug()
-                        .Destructure.With<XmlSchemaTypeDestructuringPolicy>()
-                        .CreateLogger();
-                }).As<ILogger>();
-            }
-
-            private class XmlSchemaTypeDestructuringPolicy : IDestructuringPolicy
-            {
-                public bool TryDestructure(object value, ILogEventPropertyValueFactory propertyValueFactory, out LogEventPropertyValue result)
-                {
-                    if (value is XmlSchemaType type)
-                    {
-                        result = new ScalarValue(type.QualifiedName);
-                        return true;
-                    }
-
-                    result = null;
-                    return false;
-                }
             }
         }
     }

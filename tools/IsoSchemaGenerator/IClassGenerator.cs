@@ -1,12 +1,12 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using System.Xml.Schema;
+
 namespace IsoSchemaGenerator
 {
-    public class GeneratorOptions
+    public interface IClassGenerator
     {
-        public string SchemaPath { get; set; }
-
-        public string OutputDirectory { get; set; }
+        void Generate(XmlSchemaSet schemaSet);
     }
 }

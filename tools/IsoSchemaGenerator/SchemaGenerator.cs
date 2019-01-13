@@ -13,15 +13,18 @@ namespace IsoSchemaGenerator
         private readonly ISchemaBuilder _schemaBuilder;
         private readonly ISchemaCleaner[] _cleaners;
         private readonly ILogger _logger;
+        private readonly IClassGenerator _generator;
 
         public SchemaGenerator(
             ISchemaBuilder schemaBuilder,
             ISchemaCleaner[] cleaners,
+            IClassGenerator generator,
             ILogger logger)
         {
             _schemaBuilder = schemaBuilder;
             _cleaners = cleaners;
             _logger = logger;
+            _generator = generator;
         }
 
         public void Run()
@@ -47,6 +50,8 @@ namespace IsoSchemaGenerator
             }
 
             schemas.Compile();
+
+            _generator.Generate(schemas);
         }
     }
 }
