@@ -47,26 +47,6 @@ namespace IsoSchemaGenerator
                         }
                     }
 
-                    using (var stream = typeof(Program).Assembly.GetManifestResourceStream("IsoSchemaGenerator.AdditionalSchemas.Additional.xsd"))
-                    {
-                        void Validation(object sender, ValidationEventArgs e)
-                        {
-                        }
-
-                        var s = XmlSchema.Read(stream, Validation);
-
-                        foreach (var item in s.Items.OfType<XmlSchemaSimpleType>())
-                        {
-                            foreach (XmlSchema schema in schemaSet.Schemas("http://purl.oclc.org/ooxml/officeDocument/sharedTypes"))
-                            {
-                                var onOff = schema.SchemaTypes.Values.OfType<XmlSchemaSimpleType>().Single(t => t.Name == "ST_OnOff");
-                                onOff.Content = item.Content;
-                            }
-                        }
-                    }
-
-                    schemaSet.Compile();
-
                     return schemaSet;
                 }
             }

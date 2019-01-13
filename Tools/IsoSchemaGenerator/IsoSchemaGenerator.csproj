@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="AdditionalSchemas\Additional.xsd" />
+    <None Remove="AdditionalSchemas\ST_OnOff.xsd" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="AdditionalSchemas\Additional.xsd" />
+    <EmbeddedResource Include="AdditionalSchemas\ST_OnOff.xsd" />
   </ItemGroup>
 
   <ItemGroup>
