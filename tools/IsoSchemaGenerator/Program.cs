@@ -25,7 +25,7 @@ namespace IsoSchemaGenerator
             using (var container = builder.Build())
             using (var scope = container.BeginLifetimeScope(b => b.RegisterInstance(options)))
             {
-                var generator = scope.Resolve<Generator>();
+                var generator = scope.Resolve<SchemaGenerator>();
 
                 generator.Run();
             }
@@ -35,7 +35,7 @@ namespace IsoSchemaGenerator
         {
             protected override void Load(ContainerBuilder builder)
             {
-                builder.RegisterType<Generator>()
+                builder.RegisterType<SchemaGenerator>()
                     .InstancePerLifetimeScope();
 
                 builder.RegisterType<ZipSchemaBuilder>()

@@ -8,13 +8,13 @@ using System.Xml.Schema;
 
 namespace IsoSchemaGenerator
 {
-    public class Generator
+    public class SchemaGenerator
     {
         private readonly ISchemaBuilder _schemaBuilder;
         private readonly ISchemaCleaner[] _cleaners;
         private readonly ILogger _logger;
 
-        public Generator(
+        public SchemaGenerator(
             ISchemaBuilder schemaBuilder,
             ISchemaCleaner[] cleaners,
             ILogger logger)
