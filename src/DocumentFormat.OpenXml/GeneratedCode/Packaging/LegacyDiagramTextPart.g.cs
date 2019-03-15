@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using DocumentFormat.OpenXml.Framework;
 using System;
 using System.Collections.Generic;
 
@@ -9,8 +10,8 @@ namespace DocumentFormat.OpenXml.Packaging
     /// <summary>
     /// Defines the LegacyDiagramTextPart
     /// </summary>
-    [OfficeAvailability(FileFormatVersions.Office2007)]
     [ContentType(ContentTypeConstant)]
+    [RelationshipTypeAttribute(RelationshipTypeConstant)]
     public partial class LegacyDiagramTextPart : OpenXmlPart, IFixedContentTypePart
     {
         internal const string ContentTypeConstant = "application/vnd.ms-office.legacyDiagramText";
@@ -25,9 +26,6 @@ namespace DocumentFormat.OpenXml.Packaging
 
         /// <inheritdoc/>
         public sealed override string ContentType => ContentTypeConstant;
-
-        /// <inheritdoc/>
-        internal sealed override bool IsContentTypeFixed => true;
 
         /// <inheritdoc/>
         public sealed override string RelationshipType => RelationshipTypeConstant;

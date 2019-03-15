@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO.Packaging;
+using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
@@ -15,38 +16,25 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.LegacyCompatibility
 /// <para> When the object is serialized out as xml, its qualified name is com14:compatSp.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2010)]
+[SchemaAttr(63, "compatSp")]
+[Id(ElementTypeIdConst)]
 public partial class CompatibilityShape : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 13208;
-    /// <inheritdoc/>
-    public override string LocalName => "compatSp";
-    
-    internal override byte NamespaceId => 63;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2010;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "spid")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> spid.</para>
     /// <para>Represents the following attribute in the schema: spid </para>
     /// </summary>
-    public StringValue ShapeId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "spid")]
+    [Index(0)]
+    public StringValue ShapeId { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the CompatibilityShape class.

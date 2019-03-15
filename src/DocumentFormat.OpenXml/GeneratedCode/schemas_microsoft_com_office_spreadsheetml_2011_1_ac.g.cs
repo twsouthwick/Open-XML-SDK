@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO.Packaging;
+using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Spreadsheet;
@@ -15,20 +16,14 @@ namespace DocumentFormat.OpenXml.Office2010.ExcelAc
 /// <para> When the object is serialized out as xml, its qualified name is x12ac:list.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2013)]
+[SchemaAttr(72, "list")]
+[Id(ElementTypeIdConst)]
 public partial class List : OpenXmlLeafTextElement
 {
     internal const int ElementTypeIdConst = 13429;
-    /// <inheritdoc/>
-    public override string LocalName => "list";
-    
-    internal override byte NamespaceId => 72;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2013;
-    
 
     
     

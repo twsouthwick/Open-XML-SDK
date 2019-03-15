@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using DocumentFormat.OpenXml.Framework;
 using System;
 
 namespace DocumentFormat.OpenXml.Packaging
@@ -8,6 +9,7 @@ namespace DocumentFormat.OpenXml.Packaging
     /// <summary>
     /// Represents an internal audio reference relationship to a MediaDataPart element.
     /// </summary>
+    [RelationshipType(RelationshipTypeConst)]
     public class AudioReferenceRelationship : DataPartReferenceRelationship
     {
         /// <summary>
@@ -18,10 +20,7 @@ namespace DocumentFormat.OpenXml.Packaging
         /// <summary>
         /// Gets the source relationship type for an audio reference.
         /// </summary>
-        public static string AudioReferenceRelationshipType
-        {
-            get { return RelationshipTypeConst; }
-        }
+        public static string AudioReferenceRelationshipType => RelationshipTypeConst;
 
         /// <summary>
         /// Initializes a new instance of the AudioReferenceRelationship.
@@ -47,9 +46,6 @@ namespace DocumentFormat.OpenXml.Packaging
         /// <summary>
         /// Gets the relationship type for an audio reference.
         /// </summary>
-        public override string RelationshipType
-        {
-            get { return RelationshipTypeConst; }
-        }
+        public override string RelationshipType => RelationshipTypeConst;
     }
 }

@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using DocumentFormat.OpenXml.Framework;
+
 namespace DocumentFormat.OpenXml.Wordprocessing
 {
     /// <summary>
@@ -37,33 +39,21 @@ namespace DocumentFormat.OpenXml.Wordprocessing
         /// <summary>
         /// Gets or sets the SdtProperties.
         /// </summary>
+        [Index(0)]
         public SdtProperties SdtProperties
         {
-            get
-            {
-                return GetElement<SdtProperties>(0);
-            }
-
-            set
-            {
-                SetElement(0, value);
-            }
+            get => GetElement<SdtProperties>(0);
+            set => SetElement(0, value);
         }
 
         /// <summary>
         /// Gets or sets the SdtEndCharProperties.
         /// </summary>
+        [Index(1)]
         public SdtEndCharProperties SdtEndCharProperties
         {
-            get
-            {
-                return GetElement<SdtEndCharProperties>(1);
-            }
-
-            set
-            {
-                SetElement(1, value);
-            }
+            get => GetElement<SdtEndCharProperties>(1);
+            set => SetElement(1, value);
         }
     }
 }

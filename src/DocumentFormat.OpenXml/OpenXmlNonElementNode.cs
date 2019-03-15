@@ -1,9 +1,9 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using DocumentFormat.OpenXml.Framework;
 using System;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 using System.Xml;
 
@@ -14,6 +14,7 @@ namespace DocumentFormat.OpenXml
     /// <summary>
     /// Represents an Open XML non element node (i.e. PT, Comments, Entity, Notation, XmlDeclaration).
     /// </summary>
+    [Id(ReservedElementTypeIds.OpenXmlMiscNodeId)]
     public class OpenXmlMiscNode : OpenXmlElement
     {
         private const string strCDataSectionName = "#cdata-section";
@@ -105,25 +106,10 @@ namespace DocumentFormat.OpenXml
         }
 
         /// <inheritdoc/>
-        internal override int ElementTypeId
-        {
-            get { return ReservedElementTypeIds.OpenXmlMiscNodeId; }
-        }
+        internal override int ElementTypeId => ReservedElementTypeIds.OpenXmlMiscNodeId;
 
         /// <inheritdoc/>
-        internal override byte NamespaceId
-        {
-            get
-            {
-                throw new InvalidOperationException();
-            }
-        }
-
-        /// <inheritdoc/>
-        public override bool HasChildren
-        {
-            get { return false; }
-        }
+        public override bool HasChildren => false;
 
         /// <inheritdoc/>
         public override string LocalName
@@ -272,7 +258,7 @@ namespace DocumentFormat.OpenXml
         }
 
         /// <inheritdoc/>
-        internal override void LazyLoad(XmlReader xmlReader)
+        private protected override void LazyLoad(XmlReader xmlReader)
         {
             Populate(xmlReader, OpenXmlLoadMode.Full);
         }
@@ -382,17 +368,14 @@ namespace DocumentFormat.OpenXml
         /// <inheritdoc/>
         internal override void LoadAttributes(XmlReader xmlReader)
         {
-            return;
         }
 
         /// <inheritdoc/>
-        internal override void Populate(XmlReader xmlReader, OpenXmlLoadMode loadMode)
+        private protected override void Populate(XmlReader xmlReader, OpenXmlLoadMode loadMode)
         {
             LoadOuterXml(xmlReader);
             xmlReader.Read();
         }
-
-        internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
 
         internal static OpenXmlMiscNode CreateFromText(string text)
         {

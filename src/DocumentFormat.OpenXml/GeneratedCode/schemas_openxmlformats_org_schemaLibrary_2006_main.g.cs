@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO.Packaging;
+using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml;
 
@@ -21,20 +22,14 @@ namespace DocumentFormat.OpenXml.CustomXmlSchemaReferences
 /// </remarks>
 
     [ChildElementInfo(typeof(Schema))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(25, "schemaLibrary")]
+[Id(ElementTypeIdConst)]
 public partial class SchemaLibrary : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 12468;
-    /// <inheritdoc/>
-    public override string LocalName => "schemaLibrary";
-    
-    internal override byte NamespaceId => 25;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -69,19 +64,11 @@ public partial class SchemaLibrary : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 25 == namespaceId && "schema" == name)
-    return new Schema();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<SchemaLibrary>(deep);
@@ -93,29 +80,16 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// <para> When the object is serialized out as xml, its qualified name is sl:schema.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(25, "schema")]
+[Id(ElementTypeIdConst)]
 public partial class Schema : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 12469;
-    /// <inheritdoc/>
-    public override string LocalName => "schema";
-    
-    internal override byte NamespaceId => 25;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(25, "uri"),
-		AttributeTag.Create<StringValue>(25, "manifestLocation"),
-		AttributeTag.Create<StringValue>(25, "schemaLocation")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Custom XML Schema Namespace.</para>
@@ -123,36 +97,30 @@ public partial class Schema : OpenXmlLeafElement
     /// </summary>
 ///<remark> xmlns:sl=http://schemas.openxmlformats.org/schemaLibrary/2006/main
 ///</remark>
-    public StringValue Uri
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(25, "uri")]
+    [Index(0)]
+    public StringValue Uri { get; set; }
+	
     /// <summary>
     /// <para> Resource File Location.</para>
     /// <para>Represents the following attribute in the schema: sl:manifestLocation </para>
     /// </summary>
 ///<remark> xmlns:sl=http://schemas.openxmlformats.org/schemaLibrary/2006/main
 ///</remark>
-    public StringValue ManifestLocation
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(25, "manifestLocation")]
+    [Index(1)]
+    public StringValue ManifestLocation { get; set; }
+	
     /// <summary>
     /// <para> Custom XML Schema Location.</para>
     /// <para>Represents the following attribute in the schema: sl:schemaLocation </para>
     /// </summary>
 ///<remark> xmlns:sl=http://schemas.openxmlformats.org/schemaLibrary/2006/main
 ///</remark>
-    public StringValue SchemaLocation
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(25, "schemaLocation")]
+    [Index(2)]
+    public StringValue SchemaLocation { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Schema class.

@@ -3,10 +3,10 @@
 
 using System;
 
-namespace DocumentFormat.OpenXml.Packaging
+namespace DocumentFormat.OpenXml.Framework
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    internal class ContentTypeAttribute : Attribute
+    internal sealed class ContentTypeAttribute : Attribute
     {
         public ContentTypeAttribute(string contentType)
         {

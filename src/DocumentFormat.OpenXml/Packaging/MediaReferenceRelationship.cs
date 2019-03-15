@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using DocumentFormat.OpenXml.Framework;
 using System;
 
 namespace DocumentFormat.OpenXml.Packaging
@@ -9,6 +10,7 @@ namespace DocumentFormat.OpenXml.Packaging
     /// Represents an internal media reference relationship to a MediaDataPart element.
     /// </summary>
     [OfficeAvailability(FileFormatVersions.Office2010)]
+    [RelationshipType(RelationshipTypeConst)]
     public class MediaReferenceRelationship : DataPartReferenceRelationship
     {
         /// <summary>
@@ -19,10 +21,7 @@ namespace DocumentFormat.OpenXml.Packaging
         /// <summary>
         /// Gets the source relationship type for a media reference.
         /// </summary>
-        public static string MediaReferenceRelationshipType
-        {
-            get { return RelationshipTypeConst; }
-        }
+        public static string MediaReferenceRelationshipType => RelationshipTypeConst;
 
         /// <summary>
         /// Initializes a new instance of the MediaReferenceRelationship class.
@@ -48,9 +47,6 @@ namespace DocumentFormat.OpenXml.Packaging
         /// <summary>
         /// Gets the relationship type for a media reference.
         /// </summary>
-        public override string RelationshipType
-        {
-            get { return RelationshipTypeConst; }
-        }
+        public override string RelationshipType => RelationshipTypeConst;
     }
 }

@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using DocumentFormat.OpenXml.Framework;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,8 +25,6 @@ namespace DocumentFormat.OpenXml.Packaging
         {
             foreach (PackageRelationship relationship in BasePackageRelationshipCollection)
             {
-                bool found;
-                string transitionalNamespace;
                 RelationshipProperty relationshipProperty;
 
                 relationshipProperty.TargetUri = relationship.TargetUri;
@@ -34,8 +33,7 @@ namespace DocumentFormat.OpenXml.Packaging
                 relationshipProperty.RelationshipType = relationship.RelationshipType;
 
                 // If packageRel.RelationshipType is something for Strict, it tries to get the equivalent in Transitional.
-                found = NamespaceIdMap.TryGetTransitionalRelationship(relationshipProperty.RelationshipType, out transitionalNamespace);
-                if (found)
+                if (NamespaceIdMap.TryGetTransitionalRelationship(relationshipProperty.RelationshipType, out var transitionalNamespace))
                 {
                     relationshipProperty.RelationshipType = transitionalNamespace;
                     StrictTranslation = true;

@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO.Packaging;
+using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml;
 
@@ -27,20 +28,14 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
     [ChildElementInfo(typeof(CachedView))]
     [ChildElementInfo(typeof(OpenByDefault))]
     [ChildElementInfo(typeof(Scope))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(39, "customXsn")]
+[Id(ElementTypeIdConst)]
 public partial class CustomXsn : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 12706;
-    /// <inheritdoc/>
-    public override string LocalName => "customXsn";
-    
-    internal override byte NamespaceId => 39;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -75,35 +70,12 @@ public partial class CustomXsn : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 39 == namespaceId && "xsnLocation" == name)
-    return new XsnLocation();
     
-if( 39 == namespaceId && "cached" == name)
-    return new CachedView();
-    
-if( 39 == namespaceId && "openByDefault" == name)
-    return new OpenByDefault();
-    
-if( 39 == namespaceId && "xsnScope" == name)
-    return new Scope();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "xsnLocation","cached","openByDefault","xsnScope" };
-    private static readonly byte[] eleNamespaceIds = { 39,39,39,39 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> XsnLocation.</para>
@@ -112,11 +84,13 @@ if( 39 == namespaceId && "xsnScope" == name)
     /// <remark>
     /// xmlns:ntns = http://schemas.microsoft.com/office/2006/metadata/customXsn
     /// </remark>
+	[Index(0)]
     public XsnLocation XsnLocation
-    {
+	{
         get => GetElement<XsnLocation>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> CachedView.</para>
     /// <para> Represents the following element tag in the schema: ntns:cached </para>
@@ -124,11 +98,13 @@ if( 39 == namespaceId && "xsnScope" == name)
     /// <remark>
     /// xmlns:ntns = http://schemas.microsoft.com/office/2006/metadata/customXsn
     /// </remark>
+	[Index(1)]
     public CachedView CachedView
-    {
+	{
         get => GetElement<CachedView>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> OpenByDefault.</para>
     /// <para> Represents the following element tag in the schema: ntns:openByDefault </para>
@@ -136,11 +112,13 @@ if( 39 == namespaceId && "xsnScope" == name)
     /// <remark>
     /// xmlns:ntns = http://schemas.microsoft.com/office/2006/metadata/customXsn
     /// </remark>
+	[Index(2)]
     public OpenByDefault OpenByDefault
-    {
+	{
         get => GetElement<OpenByDefault>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Scope.</para>
     /// <para> Represents the following element tag in the schema: ntns:xsnScope </para>
@@ -148,11 +126,13 @@ if( 39 == namespaceId && "xsnScope" == name)
     /// <remark>
     /// xmlns:ntns = http://schemas.microsoft.com/office/2006/metadata/customXsn
     /// </remark>
+	[Index(3)]
     public Scope Scope
-    {
+	{
         get => GetElement<Scope>(3);
         set => SetElement(3, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -164,21 +144,14 @@ if( 39 == namespaceId && "xsnScope" == name)
 /// <para>This class is available in Office 2007 or above.</para>
 /// <para> When the object is serialized out as xml, its qualified name is ntns:xsnLocation.</para>
 /// </summary>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(39, "xsnLocation")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class XsnLocation : OpenXmlLeafTextElement
 {
     internal const int ElementTypeIdConst = 12707;
-    /// <inheritdoc/>
-    public override string LocalName => "xsnLocation";
-    
-    internal override byte NamespaceId => 39;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the XsnLocation class.
@@ -208,21 +181,14 @@ public partial class XsnLocation : OpenXmlLeafTextElement
 /// <para>This class is available in Office 2007 or above.</para>
 /// <para> When the object is serialized out as xml, its qualified name is ntns:cached.</para>
 /// </summary>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(39, "cached")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class CachedView : OpenXmlLeafTextElement
 {
     internal const int ElementTypeIdConst = 12708;
-    /// <inheritdoc/>
-    public override string LocalName => "cached";
-    
-    internal override byte NamespaceId => 39;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the CachedView class.
@@ -252,21 +218,14 @@ public partial class CachedView : OpenXmlLeafTextElement
 /// <para>This class is available in Office 2007 or above.</para>
 /// <para> When the object is serialized out as xml, its qualified name is ntns:openByDefault.</para>
 /// </summary>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(39, "openByDefault")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class OpenByDefault : OpenXmlLeafTextElement
 {
     internal const int ElementTypeIdConst = 12709;
-    /// <inheritdoc/>
-    public override string LocalName => "openByDefault";
-    
-    internal override byte NamespaceId => 39;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the OpenByDefault class.
@@ -296,21 +255,14 @@ public partial class OpenByDefault : OpenXmlLeafTextElement
 /// <para>This class is available in Office 2007 or above.</para>
 /// <para> When the object is serialized out as xml, its qualified name is ntns:xsnScope.</para>
 /// </summary>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(39, "xsnScope")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class Scope : OpenXmlLeafTextElement
 {
     internal const int ElementTypeIdConst = 12710;
-    /// <inheritdoc/>
-    public override string LocalName => "xsnScope";
-    
-    internal override byte NamespaceId => 39;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the Scope class.

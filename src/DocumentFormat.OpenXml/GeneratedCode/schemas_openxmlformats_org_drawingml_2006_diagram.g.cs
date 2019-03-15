@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO.Packaging;
+using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
@@ -23,55 +24,39 @@ namespace DocumentFormat.OpenXml.Drawing.Diagrams
 ///<item><description>ExtensionList &lt;dgm:extLst></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
+
     [ChildElementInfo(typeof(ColorDefinitionTitle))]
     [ChildElementInfo(typeof(ColorTransformDescription))]
     [ChildElementInfo(typeof(ColorTransformCategories))]
     [ChildElementInfo(typeof(ColorTransformStyleLabel))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "colorsDef")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class ColorsDefinition : OpenXmlPartRootElement
 {
     internal const int ElementTypeIdConst = 10682;
-    /// <inheritdoc/>
-    public override string LocalName => "colorsDef";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "uniqueId"),
-		AttributeTag.Create<StringValue>(0, "minVer")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Unique ID.</para>
     /// <para>Represents the following attribute in the schema: uniqueId </para>
     /// </summary>
-    public StringValue UniqueId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "uniqueId")]
+    [Index(0)]
+    public StringValue UniqueId { get; set; }
+	
     /// <summary>
     /// <para> Minimum Version.</para>
     /// <para>Represents the following attribute in the schema: minVer </para>
     /// </summary>
-    public StringValue MinVersion
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "minVer")]
+    [Index(1)]
+    public StringValue MinVersion { get; set; }
+	
 
     
 	internal ColorsDefinition(DiagramColorsPart ownerPart) : base (ownerPart){}
@@ -118,6 +103,7 @@ public partial class ColorsDefinition : OpenXmlPartRootElement
         : base(outerXml)
     {
     }
+    
 
     
     
@@ -135,28 +121,7 @@ public partial class ColorsDefinition : OpenXmlPartRootElement
         base.SaveToPart(openXmlPart);
     }
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "title" == name)
-    return new ColorDefinitionTitle();
     
-if( 14 == namespaceId && "desc" == name)
-    return new ColorTransformDescription();
-    
-if( 14 == namespaceId && "catLst" == name)
-    return new ColorTransformCategories();
-    
-if( 14 == namespaceId && "styleLbl" == name)
-    return new ColorTransformStyleLabel();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<ColorsDefinition>(deep);
@@ -181,60 +146,41 @@ if( 14 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(ColorTransformDescription))]
     [ChildElementInfo(typeof(ColorTransformCategories))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "colorsDefHdr")]
+[Id(ElementTypeIdConst)]
 public partial class ColorsDefinitionHeader : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10683;
-    /// <inheritdoc/>
-    public override string LocalName => "colorsDefHdr";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "uniqueId"),
-		AttributeTag.Create<StringValue>(0, "minVer"),
-		AttributeTag.Create<Int32Value>(0, "resId")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Unique ID.</para>
     /// <para>Represents the following attribute in the schema: uniqueId </para>
     /// </summary>
-    public StringValue UniqueId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "uniqueId")]
+    [Index(0)]
+    public StringValue UniqueId { get; set; }
+	
     /// <summary>
     /// <para> Minimum Version.</para>
     /// <para>Represents the following attribute in the schema: minVer </para>
     /// </summary>
-    public StringValue MinVersion
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "minVer")]
+    [Index(1)]
+    public StringValue MinVersion { get; set; }
+	
     /// <summary>
     /// <para> Resource ID.</para>
     /// <para>Represents the following attribute in the schema: resId </para>
     /// </summary>
-    public Int32Value ResourceId
-    {
-        get { return (Int32Value)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "resId")]
+    [Index(2)]
+    public Int32Value ResourceId { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the ColorsDefinitionHeader class.
@@ -266,28 +212,11 @@ public partial class ColorsDefinitionHeader : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "title" == name)
-    return new ColorDefinitionTitle();
     
-if( 14 == namespaceId && "desc" == name)
-    return new ColorTransformDescription();
-    
-if( 14 == namespaceId && "catLst" == name)
-    return new ColorTransformCategories();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<ColorsDefinitionHeader>(deep);
@@ -306,20 +235,14 @@ if( 14 == namespaceId && "extLst" == name)
 /// </remarks>
 
     [ChildElementInfo(typeof(ColorsDefinitionHeader))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "colorsDefHdrLst")]
+[Id(ElementTypeIdConst)]
 public partial class ColorsDefinitionHeaderList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10684;
-    /// <inheritdoc/>
-    public override string LocalName => "colorsDefHdrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -354,19 +277,11 @@ public partial class ColorsDefinitionHeaderList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "colorsDefHdr" == name)
-    return new ColorsDefinitionHeader();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<ColorsDefinitionHeaderList>(deep);
@@ -386,26 +301,20 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 ///<item><description>DataModelExtensionList &lt;dgm:extLst></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
+
     [ChildElementInfo(typeof(PointList))]
     [ChildElementInfo(typeof(ConnectionList))]
     [ChildElementInfo(typeof(Background))]
     [ChildElementInfo(typeof(Whole))]
     [ChildElementInfo(typeof(DataModelExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "dataModel")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class DataModelRoot : OpenXmlPartRootElement
 {
     internal const int ElementTypeIdConst = 10685;
-    /// <inheritdoc/>
-    public override string LocalName => "dataModel";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -455,6 +364,7 @@ public partial class DataModelRoot : OpenXmlPartRootElement
         : base(outerXml)
     {
     }
+    
 
     
     
@@ -472,35 +382,8 @@ public partial class DataModelRoot : OpenXmlPartRootElement
         base.SaveToPart(openXmlPart);
     }
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "ptLst" == name)
-    return new PointList();
     
-if( 14 == namespaceId && "cxnLst" == name)
-    return new ConnectionList();
-    
-if( 14 == namespaceId && "bg" == name)
-    return new Background();
-    
-if( 14 == namespaceId && "whole" == name)
-    return new Whole();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new DataModelExtensionList();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "ptLst","cxnLst","bg","whole","extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14,14,14,14,14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Point List.</para>
@@ -509,11 +392,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public PointList PointList
-    {
+	{
         get => GetElement<PointList>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Connection List.</para>
     /// <para> Represents the following element tag in the schema: dgm:cxnLst </para>
@@ -521,11 +406,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(1)]
     public ConnectionList ConnectionList
-    {
+	{
         get => GetElement<ConnectionList>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Background Formatting.</para>
     /// <para> Represents the following element tag in the schema: dgm:bg </para>
@@ -533,11 +420,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(2)]
     public Background Background
-    {
+	{
         get => GetElement<Background>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Whole E2O Formatting.</para>
     /// <para> Represents the following element tag in the schema: dgm:whole </para>
@@ -545,11 +434,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(3)]
     public Whole Whole
-    {
+	{
         get => GetElement<Whole>(3);
         set => SetElement(3, value);
-    }
+	}
+    
     /// <summary>
     /// <para> DataModelExtensionList.</para>
     /// <para> Represents the following element tag in the schema: dgm:extLst </para>
@@ -557,11 +448,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(4)]
     public DataModelExtensionList DataModelExtensionList
-    {
+	{
         get => GetElement<DataModelExtensionList>(4);
         set => SetElement(4, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -585,7 +478,7 @@ if( 14 == namespaceId && "extLst" == name)
 ///<item><description>ExtensionList &lt;dgm:extLst></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
+
     [ChildElementInfo(typeof(Title))]
     [ChildElementInfo(typeof(Description))]
     [ChildElementInfo(typeof(CategoryList))]
@@ -594,60 +487,41 @@ if( 14 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(ColorData))]
     [ChildElementInfo(typeof(LayoutNode))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "layoutDef")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class LayoutDefinition : OpenXmlPartRootElement
 {
     internal const int ElementTypeIdConst = 10686;
-    /// <inheritdoc/>
-    public override string LocalName => "layoutDef";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "uniqueId"),
-		AttributeTag.Create<StringValue>(0, "minVer"),
-		AttributeTag.Create<StringValue>(0, "defStyle")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Unique Identifier.</para>
     /// <para>Represents the following attribute in the schema: uniqueId </para>
     /// </summary>
-    public StringValue UniqueId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "uniqueId")]
+    [Index(0)]
+    public StringValue UniqueId { get; set; }
+	
     /// <summary>
     /// <para> Minimum Version.</para>
     /// <para>Represents the following attribute in the schema: minVer </para>
     /// </summary>
-    public StringValue MinVersion
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "minVer")]
+    [Index(1)]
+    public StringValue MinVersion { get; set; }
+	
     /// <summary>
     /// <para> Default Style.</para>
     /// <para>Represents the following attribute in the schema: defStyle </para>
     /// </summary>
-    public StringValue DefaultStyle
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "defStyle")]
+    [Index(2)]
+    public StringValue DefaultStyle { get; set; }
+	
 
     
 	internal LayoutDefinition(DiagramLayoutDefinitionPart ownerPart) : base (ownerPart){}
@@ -694,6 +568,7 @@ public partial class LayoutDefinition : OpenXmlPartRootElement
         : base(outerXml)
     {
     }
+    
 
     
     
@@ -711,37 +586,7 @@ public partial class LayoutDefinition : OpenXmlPartRootElement
         base.SaveToPart(openXmlPart);
     }
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "title" == name)
-    return new Title();
     
-if( 14 == namespaceId && "desc" == name)
-    return new Description();
-    
-if( 14 == namespaceId && "catLst" == name)
-    return new CategoryList();
-    
-if( 14 == namespaceId && "sampData" == name)
-    return new SampleData();
-    
-if( 14 == namespaceId && "styleData" == name)
-    return new StyleData();
-    
-if( 14 == namespaceId && "clrData" == name)
-    return new ColorData();
-    
-if( 14 == namespaceId && "layoutNode" == name)
-    return new LayoutNode();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<LayoutDefinition>(deep);
@@ -766,71 +611,49 @@ if( 14 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(Description))]
     [ChildElementInfo(typeof(CategoryList))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "layoutDefHdr")]
+[Id(ElementTypeIdConst)]
 public partial class LayoutDefinitionHeader : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10687;
-    /// <inheritdoc/>
-    public override string LocalName => "layoutDefHdr";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "uniqueId"),
-		AttributeTag.Create<StringValue>(0, "minVer"),
-		AttributeTag.Create<StringValue>(0, "defStyle"),
-		AttributeTag.Create<Int32Value>(0, "resId")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Unique Identifier.</para>
     /// <para>Represents the following attribute in the schema: uniqueId </para>
     /// </summary>
-    public StringValue UniqueId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "uniqueId")]
+    [Index(0)]
+    public StringValue UniqueId { get; set; }
+	
     /// <summary>
     /// <para> Minimum Version.</para>
     /// <para>Represents the following attribute in the schema: minVer </para>
     /// </summary>
-    public StringValue MinVersion
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "minVer")]
+    [Index(1)]
+    public StringValue MinVersion { get; set; }
+	
     /// <summary>
     /// <para> Default Style.</para>
     /// <para>Represents the following attribute in the schema: defStyle </para>
     /// </summary>
-    public StringValue DefaultStyle
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "defStyle")]
+    [Index(2)]
+    public StringValue DefaultStyle { get; set; }
+	
     /// <summary>
     /// <para> Resource Identifier.</para>
     /// <para>Represents the following attribute in the schema: resId </para>
     /// </summary>
-    public Int32Value ResourceId
-    {
-        get { return (Int32Value)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "resId")]
+    [Index(3)]
+    public Int32Value ResourceId { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the LayoutDefinitionHeader class.
@@ -862,28 +685,11 @@ public partial class LayoutDefinitionHeader : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "title" == name)
-    return new Title();
     
-if( 14 == namespaceId && "desc" == name)
-    return new Description();
-    
-if( 14 == namespaceId && "catLst" == name)
-    return new CategoryList();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<LayoutDefinitionHeader>(deep);
@@ -902,20 +708,14 @@ if( 14 == namespaceId && "extLst" == name)
 /// </remarks>
 
     [ChildElementInfo(typeof(LayoutDefinitionHeader))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "layoutDefHdrLst")]
+[Id(ElementTypeIdConst)]
 public partial class LayoutDefinitionHeaderList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10688;
-    /// <inheritdoc/>
-    public override string LocalName => "layoutDefHdrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -950,19 +750,11 @@ public partial class LayoutDefinitionHeaderList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "layoutDefHdr" == name)
-    return new LayoutDefinitionHeader();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<LayoutDefinitionHeaderList>(deep);
@@ -974,30 +766,16 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// <para> When the object is serialized out as xml, its qualified name is dgm:relIds.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "relIds")]
+[Id(ElementTypeIdConst)]
 public partial class RelationshipIds : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10689;
-    /// <inheritdoc/>
-    public override string LocalName => "relIds";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(19, "dm"),
-		AttributeTag.Create<StringValue>(19, "lo"),
-		AttributeTag.Create<StringValue>(19, "qs"),
-		AttributeTag.Create<StringValue>(19, "cs")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Explicit Relationship to Diagram Data Part.</para>
@@ -1005,48 +783,40 @@ public partial class RelationshipIds : OpenXmlLeafElement
     /// </summary>
 ///<remark> xmlns:r=http://schemas.openxmlformats.org/officeDocument/2006/relationships
 ///</remark>
-    public StringValue DataPart
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(19, "dm")]
+    [Index(0)]
+    public StringValue DataPart { get; set; }
+	
     /// <summary>
     /// <para> Explicit Relationship to Diagram Layout Definition Part.</para>
     /// <para>Represents the following attribute in the schema: r:lo </para>
     /// </summary>
 ///<remark> xmlns:r=http://schemas.openxmlformats.org/officeDocument/2006/relationships
 ///</remark>
-    public StringValue LayoutPart
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(19, "lo")]
+    [Index(1)]
+    public StringValue LayoutPart { get; set; }
+	
     /// <summary>
     /// <para> Explicit Relationship to Style Definition Part.</para>
     /// <para>Represents the following attribute in the schema: r:qs </para>
     /// </summary>
 ///<remark> xmlns:r=http://schemas.openxmlformats.org/officeDocument/2006/relationships
 ///</remark>
-    public StringValue StylePart
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(19, "qs")]
+    [Index(2)]
+    public StringValue StylePart { get; set; }
+	
     /// <summary>
     /// <para> Explicit Relationship to Diagram Colors Part.</para>
     /// <para>Represents the following attribute in the schema: r:cs </para>
     /// </summary>
 ///<remark> xmlns:r=http://schemas.openxmlformats.org/officeDocument/2006/relationships
 ///</remark>
-    public StringValue ColorPart
-    {
-        get { return (StringValue)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(19, "cs")]
+    [Index(3)]
+    public StringValue ColorPart { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the RelationshipIds class.
@@ -1077,56 +847,40 @@ public partial class RelationshipIds : OpenXmlLeafElement
 ///<item><description>ExtensionList &lt;dgm:extLst></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
+
     [ChildElementInfo(typeof(StyleDefinitionTitle))]
     [ChildElementInfo(typeof(StyleLabelDescription))]
     [ChildElementInfo(typeof(StyleDisplayCategories))]
     [ChildElementInfo(typeof(Scene3D))]
     [ChildElementInfo(typeof(StyleLabel))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "styleDef")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class StyleDefinition : OpenXmlPartRootElement
 {
     internal const int ElementTypeIdConst = 10690;
-    /// <inheritdoc/>
-    public override string LocalName => "styleDef";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "uniqueId"),
-		AttributeTag.Create<StringValue>(0, "minVer")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Unique Style ID.</para>
     /// <para>Represents the following attribute in the schema: uniqueId </para>
     /// </summary>
-    public StringValue UniqueId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "uniqueId")]
+    [Index(0)]
+    public StringValue UniqueId { get; set; }
+	
     /// <summary>
     /// <para> Minimum Version.</para>
     /// <para>Represents the following attribute in the schema: minVer </para>
     /// </summary>
-    public StringValue MinVersion
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "minVer")]
+    [Index(1)]
+    public StringValue MinVersion { get; set; }
+	
 
     
 	internal StyleDefinition(DiagramStylePart ownerPart) : base (ownerPart){}
@@ -1173,6 +927,7 @@ public partial class StyleDefinition : OpenXmlPartRootElement
         : base(outerXml)
     {
     }
+    
 
     
     
@@ -1190,31 +945,7 @@ public partial class StyleDefinition : OpenXmlPartRootElement
         base.SaveToPart(openXmlPart);
     }
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "title" == name)
-    return new StyleDefinitionTitle();
     
-if( 14 == namespaceId && "desc" == name)
-    return new StyleLabelDescription();
-    
-if( 14 == namespaceId && "catLst" == name)
-    return new StyleDisplayCategories();
-    
-if( 14 == namespaceId && "scene3d" == name)
-    return new Scene3D();
-    
-if( 14 == namespaceId && "styleLbl" == name)
-    return new StyleLabel();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<StyleDefinition>(deep);
@@ -1239,60 +970,41 @@ if( 14 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(StyleLabelDescription))]
     [ChildElementInfo(typeof(StyleDisplayCategories))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "styleDefHdr")]
+[Id(ElementTypeIdConst)]
 public partial class StyleDefinitionHeader : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10691;
-    /// <inheritdoc/>
-    public override string LocalName => "styleDefHdr";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "uniqueId"),
-		AttributeTag.Create<StringValue>(0, "minVer"),
-		AttributeTag.Create<Int32Value>(0, "resId")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Unique Style ID.</para>
     /// <para>Represents the following attribute in the schema: uniqueId </para>
     /// </summary>
-    public StringValue UniqueId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "uniqueId")]
+    [Index(0)]
+    public StringValue UniqueId { get; set; }
+	
     /// <summary>
     /// <para> Minimum Version.</para>
     /// <para>Represents the following attribute in the schema: minVer </para>
     /// </summary>
-    public StringValue MinVersion
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "minVer")]
+    [Index(1)]
+    public StringValue MinVersion { get; set; }
+	
     /// <summary>
     /// <para> Resource ID.</para>
     /// <para>Represents the following attribute in the schema: resId </para>
     /// </summary>
-    public Int32Value ResourceId
-    {
-        get { return (Int32Value)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "resId")]
+    [Index(2)]
+    public Int32Value ResourceId { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the StyleDefinitionHeader class.
@@ -1324,28 +1036,11 @@ public partial class StyleDefinitionHeader : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "title" == name)
-    return new StyleDefinitionTitle();
     
-if( 14 == namespaceId && "desc" == name)
-    return new StyleLabelDescription();
-    
-if( 14 == namespaceId && "catLst" == name)
-    return new StyleDisplayCategories();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<StyleDefinitionHeader>(deep);
@@ -1364,20 +1059,14 @@ if( 14 == namespaceId && "extLst" == name)
 /// </remarks>
 
     [ChildElementInfo(typeof(StyleDefinitionHeader))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "styleDefHdrLst")]
+[Id(ElementTypeIdConst)]
 public partial class StyleDefinitionHeaderList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10692;
-    /// <inheritdoc/>
-    public override string LocalName => "styleDefHdrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -1412,19 +1101,11 @@ public partial class StyleDefinitionHeaderList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "styleDefHdr" == name)
-    return new StyleDefinitionHeader();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<StyleDefinitionHeaderList>(deep);
@@ -1436,49 +1117,33 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// <para> When the object is serialized out as xml, its qualified name is dgm:cat.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "cat")]
+[Id(ElementTypeIdConst)]
 public partial class ColorTransformCategory : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10693;
-    /// <inheritdoc/>
-    public override string LocalName => "cat";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "type"),
-		AttributeTag.Create<UInt32Value>(0, "pri")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Category Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public StringValue Type
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(0)]
+    public StringValue Type { get; set; }
+	
     /// <summary>
     /// <para> Priority.</para>
     /// <para>Represents the following attribute in the schema: pri </para>
     /// </summary>
-    public UInt32Value Priority
-    {
-        get { return (UInt32Value)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "pri")]
+    [Index(1)]
+    public UInt32Value Priority { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the ColorTransformCategory class.
@@ -1510,21 +1175,14 @@ public partial class ColorTransformCategory : OpenXmlLeafElement
 ///<item><description>DocumentFormat.OpenXml.Drawing.PresetColor &lt;a:prstClr></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "fillClrLst")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class FillColorList : ColorsType
 {
     internal const int ElementTypeIdConst = 10694;
-    /// <inheritdoc/>
-    public override string LocalName => "fillClrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the FillColorList class.
@@ -1555,6 +1213,7 @@ public partial class FillColorList : ColorsType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -1577,21 +1236,14 @@ public partial class FillColorList : ColorsType
 ///<item><description>DocumentFormat.OpenXml.Drawing.PresetColor &lt;a:prstClr></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "linClrLst")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class LineColorList : ColorsType
 {
     internal const int ElementTypeIdConst = 10695;
-    /// <inheritdoc/>
-    public override string LocalName => "linClrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the LineColorList class.
@@ -1622,6 +1274,7 @@ public partial class LineColorList : ColorsType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -1644,21 +1297,14 @@ public partial class LineColorList : ColorsType
 ///<item><description>DocumentFormat.OpenXml.Drawing.PresetColor &lt;a:prstClr></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "effectClrLst")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class EffectColorList : ColorsType
 {
     internal const int ElementTypeIdConst = 10696;
-    /// <inheritdoc/>
-    public override string LocalName => "effectClrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the EffectColorList class.
@@ -1689,6 +1335,7 @@ public partial class EffectColorList : ColorsType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -1711,21 +1358,14 @@ public partial class EffectColorList : ColorsType
 ///<item><description>DocumentFormat.OpenXml.Drawing.PresetColor &lt;a:prstClr></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "txLinClrLst")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class TextLineColorList : ColorsType
 {
     internal const int ElementTypeIdConst = 10697;
-    /// <inheritdoc/>
-    public override string LocalName => "txLinClrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the TextLineColorList class.
@@ -1756,6 +1396,7 @@ public partial class TextLineColorList : ColorsType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -1778,21 +1419,14 @@ public partial class TextLineColorList : ColorsType
 ///<item><description>DocumentFormat.OpenXml.Drawing.PresetColor &lt;a:prstClr></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "txFillClrLst")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class TextFillColorList : ColorsType
 {
     internal const int ElementTypeIdConst = 10698;
-    /// <inheritdoc/>
-    public override string LocalName => "txFillClrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the TextFillColorList class.
@@ -1823,6 +1457,7 @@ public partial class TextFillColorList : ColorsType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -1845,21 +1480,14 @@ public partial class TextFillColorList : ColorsType
 ///<item><description>DocumentFormat.OpenXml.Drawing.PresetColor &lt;a:prstClr></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "txEffectClrLst")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class TextEffectColorList : ColorsType
 {
     internal const int ElementTypeIdConst = 10699;
-    /// <inheritdoc/>
-    public override string LocalName => "txEffectClrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the TextEffectColorList class.
@@ -1890,6 +1518,7 @@ public partial class TextEffectColorList : ColorsType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -1910,69 +1539,35 @@ public partial class TextEffectColorList : ColorsType
 ///<item><description>DocumentFormat.OpenXml.Drawing.PresetColor &lt;a:prstClr></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
+
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
 public abstract partial class ColorsType : OpenXmlCompositeElement
 {
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ColorApplicationMethodValues>>(0, "meth"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.HueDirectionValues>>(0, "hueDir")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-    
+        
         /// <summary>
     /// <para> Color Application Method Type.</para>
     /// <para>Represents the following attribute in the schema: meth </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ColorApplicationMethodValues> Method
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ColorApplicationMethodValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "meth")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ColorApplicationMethodValues> Method { get; set; }
+	
     /// <summary>
     /// <para> Hue Direction.</para>
     /// <para>Represents the following attribute in the schema: hueDir </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.HueDirectionValues> HueDirection
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.HueDirectionValues>)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "hueDir")]
+    [Index(1)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.HueDirectionValues> HueDirection { get; set; }
+	
 
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "scrgbClr" == name)
-    return new DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage();
     
-if( 10 == namespaceId && "srgbClr" == name)
-    return new DocumentFormat.OpenXml.Drawing.RgbColorModelHex();
-    
-if( 10 == namespaceId && "hslClr" == name)
-    return new DocumentFormat.OpenXml.Drawing.HslColor();
-    
-if( 10 == namespaceId && "sysClr" == name)
-    return new DocumentFormat.OpenXml.Drawing.SystemColor();
-    
-if( 10 == namespaceId && "schemeClr" == name)
-    return new DocumentFormat.OpenXml.Drawing.SchemeColor();
-    
-if( 10 == namespaceId && "prstClr" == name)
-    return new DocumentFormat.OpenXml.Drawing.PresetColor();
-    
-
-    return null;
-}
-
     
     
     /// <summary>
@@ -2005,6 +1600,7 @@ if( 10 == namespaceId && "prstClr" == name)
         : base(outerXml)
     {
     }
+    
 
     
 }
@@ -2021,20 +1617,14 @@ if( 10 == namespaceId && "prstClr" == name)
 /// </remarks>
 
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "extLst")]
+[Id(ElementTypeIdConst)]
 public partial class ExtensionList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10700;
-    /// <inheritdoc/>
-    public override string LocalName => "extLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -2069,19 +1659,11 @@ public partial class ExtensionList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "ext" == name)
-    return new DocumentFormat.OpenXml.Drawing.Extension();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<ExtensionList>(deep);
@@ -2093,49 +1675,33 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// <para> When the object is serialized out as xml, its qualified name is dgm:title.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "title")]
+[Id(ElementTypeIdConst)]
 public partial class ColorDefinitionTitle : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10701;
-    /// <inheritdoc/>
-    public override string LocalName => "title";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "lang"),
-		AttributeTag.Create<StringValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Language.</para>
     /// <para>Represents the following attribute in the schema: lang </para>
     /// </summary>
-    public StringValue Language
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "lang")]
+    [Index(0)]
+    public StringValue Language { get; set; }
+	
     /// <summary>
     /// <para> Description Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public StringValue Val
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(1)]
+    public StringValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the ColorDefinitionTitle class.
@@ -2157,49 +1723,33 @@ public partial class ColorDefinitionTitle : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:desc.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "desc")]
+[Id(ElementTypeIdConst)]
 public partial class ColorTransformDescription : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10702;
-    /// <inheritdoc/>
-    public override string LocalName => "desc";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "lang"),
-		AttributeTag.Create<StringValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Language.</para>
     /// <para>Represents the following attribute in the schema: lang </para>
     /// </summary>
-    public StringValue Language
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "lang")]
+    [Index(0)]
+    public StringValue Language { get; set; }
+	
     /// <summary>
     /// <para> Description Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public StringValue Val
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(1)]
+    public StringValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the ColorTransformDescription class.
@@ -2228,20 +1778,14 @@ public partial class ColorTransformDescription : OpenXmlLeafElement
 /// </remarks>
 
     [ChildElementInfo(typeof(ColorTransformCategory))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "catLst")]
+[Id(ElementTypeIdConst)]
 public partial class ColorTransformCategories : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10703;
-    /// <inheritdoc/>
-    public override string LocalName => "catLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -2276,19 +1820,11 @@ public partial class ColorTransformCategories : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "cat" == name)
-    return new ColorTransformCategory();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<ColorTransformCategories>(deep);
@@ -2319,38 +1855,25 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
     [ChildElementInfo(typeof(TextFillColorList))]
     [ChildElementInfo(typeof(TextEffectColorList))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "styleLbl")]
+[Id(ElementTypeIdConst)]
 public partial class ColorTransformStyleLabel : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10704;
-    /// <inheritdoc/>
-    public override string LocalName => "styleLbl";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "name")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Name.</para>
     /// <para>Represents the following attribute in the schema: name </para>
     /// </summary>
-    public StringValue Name
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "name")]
+    [Index(0)]
+    public StringValue Name { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the ColorTransformStyleLabel class.
@@ -2382,44 +1905,12 @@ public partial class ColorTransformStyleLabel : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "fillClrLst" == name)
-    return new FillColorList();
     
-if( 14 == namespaceId && "linClrLst" == name)
-    return new LineColorList();
-    
-if( 14 == namespaceId && "effectClrLst" == name)
-    return new EffectColorList();
-    
-if( 14 == namespaceId && "txLinClrLst" == name)
-    return new TextLineColorList();
-    
-if( 14 == namespaceId && "txFillClrLst" == name)
-    return new TextFillColorList();
-    
-if( 14 == namespaceId && "txEffectClrLst" == name)
-    return new TextEffectColorList();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "fillClrLst","linClrLst","effectClrLst","txLinClrLst","txFillClrLst","txEffectClrLst","extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14,14,14,14,14,14,14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Fill Color List.</para>
@@ -2428,11 +1919,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public FillColorList FillColorList
-    {
+	{
         get => GetElement<FillColorList>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Line Color List.</para>
     /// <para> Represents the following element tag in the schema: dgm:linClrLst </para>
@@ -2440,11 +1933,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(1)]
     public LineColorList LineColorList
-    {
+	{
         get => GetElement<LineColorList>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Effect Color List.</para>
     /// <para> Represents the following element tag in the schema: dgm:effectClrLst </para>
@@ -2452,11 +1947,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(2)]
     public EffectColorList EffectColorList
-    {
+	{
         get => GetElement<EffectColorList>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Text Line Color List.</para>
     /// <para> Represents the following element tag in the schema: dgm:txLinClrLst </para>
@@ -2464,11 +1961,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(3)]
     public TextLineColorList TextLineColorList
-    {
+	{
         get => GetElement<TextLineColorList>(3);
         set => SetElement(3, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Text Fill Color List.</para>
     /// <para> Represents the following element tag in the schema: dgm:txFillClrLst </para>
@@ -2476,11 +1975,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(4)]
     public TextFillColorList TextFillColorList
-    {
+	{
         get => GetElement<TextFillColorList>(4);
         set => SetElement(4, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Text Effect Color List.</para>
     /// <para> Represents the following element tag in the schema: dgm:txEffectClrLst </para>
@@ -2488,11 +1989,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(5)]
     public TextEffectColorList TextEffectColorList
-    {
+	{
         get => GetElement<TextEffectColorList>(5);
         set => SetElement(5, value);
-    }
+	}
+    
     /// <summary>
     /// <para> ExtensionList.</para>
     /// <para> Represents the following element tag in the schema: dgm:extLst </para>
@@ -2500,11 +2003,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(6)]
     public ExtensionList ExtensionList
-    {
+	{
         get => GetElement<ExtensionList>(6);
         set => SetElement(6, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -2530,60 +2035,41 @@ if( 14 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(ShapeProperties))]
     [ChildElementInfo(typeof(TextBody))]
     [ChildElementInfo(typeof(PtExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "pt")]
+[Id(ElementTypeIdConst)]
 public partial class Point : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10705;
-    /// <inheritdoc/>
-    public override string LocalName => "pt";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "modelId"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.PointValues>>(0, "type"),
-		AttributeTag.Create<StringValue>(0, "cxnId")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Model Identifier.</para>
     /// <para>Represents the following attribute in the schema: modelId </para>
     /// </summary>
-    public StringValue ModelId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "modelId")]
+    [Index(0)]
+    public StringValue ModelId { get; set; }
+	
     /// <summary>
     /// <para> Point Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.PointValues> Type
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.PointValues>)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(1)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.PointValues> Type { get; set; }
+	
     /// <summary>
     /// <para> Connection Identifier.</para>
     /// <para>Represents the following attribute in the schema: cxnId </para>
     /// </summary>
-    public StringValue ConnectionId
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "cxnId")]
+    [Index(2)]
+    public StringValue ConnectionId { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Point class.
@@ -2615,35 +2101,12 @@ public partial class Point : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "prSet" == name)
-    return new PropertySet();
     
-if( 14 == namespaceId && "spPr" == name)
-    return new ShapeProperties();
-    
-if( 14 == namespaceId && "t" == name)
-    return new TextBody();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new PtExtensionList();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "prSet","spPr","t","extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14,14,14,14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Property Set.</para>
@@ -2652,11 +2115,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public PropertySet PropertySet
-    {
+	{
         get => GetElement<PropertySet>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Shape Properties.</para>
     /// <para> Represents the following element tag in the schema: dgm:spPr </para>
@@ -2664,11 +2129,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(1)]
     public ShapeProperties ShapeProperties
-    {
+	{
         get => GetElement<ShapeProperties>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Text Body.</para>
     /// <para> Represents the following element tag in the schema: dgm:t </para>
@@ -2676,11 +2143,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(2)]
     public TextBody TextBody
-    {
+	{
         get => GetElement<TextBody>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> PtExtensionList.</para>
     /// <para> Represents the following element tag in the schema: dgm:extLst </para>
@@ -2688,11 +2157,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(3)]
     public PtExtensionList PtExtensionList
-    {
+	{
         get => GetElement<PtExtensionList>(3);
         set => SetElement(3, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -2712,126 +2183,89 @@ if( 14 == namespaceId && "extLst" == name)
 /// </remarks>
 
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "cxn")]
+[Id(ElementTypeIdConst)]
 public partial class Connection : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10706;
-    /// <inheritdoc/>
-    public override string LocalName => "cxn";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "modelId"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConnectionValues>>(0, "type"),
-		AttributeTag.Create<StringValue>(0, "srcId"),
-		AttributeTag.Create<StringValue>(0, "destId"),
-		AttributeTag.Create<UInt32Value>(0, "srcOrd"),
-		AttributeTag.Create<UInt32Value>(0, "destOrd"),
-		AttributeTag.Create<StringValue>(0, "parTransId"),
-		AttributeTag.Create<StringValue>(0, "sibTransId"),
-		AttributeTag.Create<StringValue>(0, "presId")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Model Identifier.</para>
     /// <para>Represents the following attribute in the schema: modelId </para>
     /// </summary>
-    public StringValue ModelId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "modelId")]
+    [Index(0)]
+    public StringValue ModelId { get; set; }
+	
     /// <summary>
     /// <para> Point Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConnectionValues> Type
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConnectionValues>)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(1)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConnectionValues> Type { get; set; }
+	
     /// <summary>
     /// <para> Source Identifier.</para>
     /// <para>Represents the following attribute in the schema: srcId </para>
     /// </summary>
-    public StringValue SourceId
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "srcId")]
+    [Index(2)]
+    public StringValue SourceId { get; set; }
+	
     /// <summary>
     /// <para> Destination Identifier.</para>
     /// <para>Represents the following attribute in the schema: destId </para>
     /// </summary>
-    public StringValue DestinationId
-    {
-        get { return (StringValue)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "destId")]
+    [Index(3)]
+    public StringValue DestinationId { get; set; }
+	
     /// <summary>
     /// <para> Source Position.</para>
     /// <para>Represents the following attribute in the schema: srcOrd </para>
     /// </summary>
-    public UInt32Value SourcePosition
-    {
-        get { return (UInt32Value)Attributes[4].Value; }
-        set { Attributes[4].Value = value; }
-    }
-    
+    [SchemaAttr(0, "srcOrd")]
+    [Index(4)]
+    public UInt32Value SourcePosition { get; set; }
+	
     /// <summary>
     /// <para> Destination Position.</para>
     /// <para>Represents the following attribute in the schema: destOrd </para>
     /// </summary>
-    public UInt32Value DestinationPosition
-    {
-        get { return (UInt32Value)Attributes[5].Value; }
-        set { Attributes[5].Value = value; }
-    }
-    
+    [SchemaAttr(0, "destOrd")]
+    [Index(5)]
+    public UInt32Value DestinationPosition { get; set; }
+	
     /// <summary>
     /// <para> Parent Transition Identifier.</para>
     /// <para>Represents the following attribute in the schema: parTransId </para>
     /// </summary>
-    public StringValue ParentTransitionId
-    {
-        get { return (StringValue)Attributes[6].Value; }
-        set { Attributes[6].Value = value; }
-    }
-    
+    [SchemaAttr(0, "parTransId")]
+    [Index(6)]
+    public StringValue ParentTransitionId { get; set; }
+	
     /// <summary>
     /// <para> Sibling Transition Identifier.</para>
     /// <para>Represents the following attribute in the schema: sibTransId </para>
     /// </summary>
-    public StringValue SiblingTransitionId
-    {
-        get { return (StringValue)Attributes[7].Value; }
-        set { Attributes[7].Value = value; }
-    }
-    
+    [SchemaAttr(0, "sibTransId")]
+    [Index(7)]
+    public StringValue SiblingTransitionId { get; set; }
+	
     /// <summary>
     /// <para> Presentation Identifier.</para>
     /// <para>Represents the following attribute in the schema: presId </para>
     /// </summary>
-    public StringValue PresentationId
-    {
-        get { return (StringValue)Attributes[8].Value; }
-        set { Attributes[8].Value = value; }
-    }
-    
+    [SchemaAttr(0, "presId")]
+    [Index(8)]
+    public StringValue PresentationId { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Connection class.
@@ -2863,26 +2297,12 @@ public partial class Connection : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
     
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> ExtensionList.</para>
@@ -2891,11 +2311,13 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public ExtensionList ExtensionList
-    {
+	{
         get => GetElement<ExtensionList>(0);
         set => SetElement(0, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -2915,148 +2337,105 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// </remarks>
 
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "constr")]
+[Id(ElementTypeIdConst)]
 public partial class Constraint : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10707;
-    /// <inheritdoc/>
-    public override string LocalName => "constr";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues>>(0, "type"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues>>(0, "for"),
-		AttributeTag.Create<StringValue>(0, "forName"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>>(0, "ptType"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues>>(0, "refType"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues>>(0, "refFor"),
-		AttributeTag.Create<StringValue>(0, "refForName"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>>(0, "refPtType"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.BoolOperatorValues>>(0, "op"),
-		AttributeTag.Create<DoubleValue>(0, "val"),
-		AttributeTag.Create<DoubleValue>(0, "fact")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Constraint Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues> Type
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues> Type { get; set; }
+	
     /// <summary>
     /// <para> For.</para>
     /// <para>Represents the following attribute in the schema: for </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues> For
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues>)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "for")]
+    [Index(1)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues> For { get; set; }
+	
     /// <summary>
     /// <para> For Name.</para>
     /// <para>Represents the following attribute in the schema: forName </para>
     /// </summary>
-    public StringValue ForName
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "forName")]
+    [Index(2)]
+    public StringValue ForName { get; set; }
+	
     /// <summary>
     /// <para> Data Point Type.</para>
     /// <para>Represents the following attribute in the schema: ptType </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues> PointType
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "ptType")]
+    [Index(3)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues> PointType { get; set; }
+	
     /// <summary>
     /// <para> Reference Type.</para>
     /// <para>Represents the following attribute in the schema: refType </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues> ReferenceType
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues>)Attributes[4].Value; }
-        set { Attributes[4].Value = value; }
-    }
-    
+    [SchemaAttr(0, "refType")]
+    [Index(4)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues> ReferenceType { get; set; }
+	
     /// <summary>
     /// <para> Reference For.</para>
     /// <para>Represents the following attribute in the schema: refFor </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues> ReferenceFor
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues>)Attributes[5].Value; }
-        set { Attributes[5].Value = value; }
-    }
-    
+    [SchemaAttr(0, "refFor")]
+    [Index(5)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues> ReferenceFor { get; set; }
+	
     /// <summary>
     /// <para> Reference For Name.</para>
     /// <para>Represents the following attribute in the schema: refForName </para>
     /// </summary>
-    public StringValue ReferenceForName
-    {
-        get { return (StringValue)Attributes[6].Value; }
-        set { Attributes[6].Value = value; }
-    }
-    
+    [SchemaAttr(0, "refForName")]
+    [Index(6)]
+    public StringValue ReferenceForName { get; set; }
+	
     /// <summary>
     /// <para> Reference Point Type.</para>
     /// <para>Represents the following attribute in the schema: refPtType </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues> ReferencePointType
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>)Attributes[7].Value; }
-        set { Attributes[7].Value = value; }
-    }
-    
+    [SchemaAttr(0, "refPtType")]
+    [Index(7)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues> ReferencePointType { get; set; }
+	
     /// <summary>
     /// <para> Operator.</para>
     /// <para>Represents the following attribute in the schema: op </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.BoolOperatorValues> Operator
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.BoolOperatorValues>)Attributes[8].Value; }
-        set { Attributes[8].Value = value; }
-    }
-    
+    [SchemaAttr(0, "op")]
+    [Index(8)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.BoolOperatorValues> Operator { get; set; }
+	
     /// <summary>
     /// <para> Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public DoubleValue Val
-    {
-        get { return (DoubleValue)Attributes[9].Value; }
-        set { Attributes[9].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(9)]
+    public DoubleValue Val { get; set; }
+	
     /// <summary>
     /// <para> Factor.</para>
     /// <para>Represents the following attribute in the schema: fact </para>
     /// </summary>
-    public DoubleValue Fact
-    {
-        get { return (DoubleValue)Attributes[10].Value; }
-        set { Attributes[10].Value = value; }
-    }
-    
+    [SchemaAttr(0, "fact")]
+    [Index(10)]
+    public DoubleValue Fact { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Constraint class.
@@ -3088,26 +2467,12 @@ public partial class Constraint : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
     
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> ExtensionList.</para>
@@ -3116,11 +2481,13 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public ExtensionList ExtensionList
-    {
+	{
         get => GetElement<ExtensionList>(0);
         set => SetElement(0, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -3140,104 +2507,73 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// </remarks>
 
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "rule")]
+[Id(ElementTypeIdConst)]
 public partial class Rule : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10708;
-    /// <inheritdoc/>
-    public override string LocalName => "rule";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues>>(0, "type"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues>>(0, "for"),
-		AttributeTag.Create<StringValue>(0, "forName"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>>(0, "ptType"),
-		AttributeTag.Create<DoubleValue>(0, "val"),
-		AttributeTag.Create<DoubleValue>(0, "fact"),
-		AttributeTag.Create<DoubleValue>(0, "max")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Constraint Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues> Type
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintValues> Type { get; set; }
+	
     /// <summary>
     /// <para> For.</para>
     /// <para>Represents the following attribute in the schema: for </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues> For
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues>)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "for")]
+    [Index(1)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ConstraintRelationshipValues> For { get; set; }
+	
     /// <summary>
     /// <para> For Name.</para>
     /// <para>Represents the following attribute in the schema: forName </para>
     /// </summary>
-    public StringValue ForName
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "forName")]
+    [Index(2)]
+    public StringValue ForName { get; set; }
+	
     /// <summary>
     /// <para> Data Point Type.</para>
     /// <para>Represents the following attribute in the schema: ptType </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues> PointType
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "ptType")]
+    [Index(3)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues> PointType { get; set; }
+	
     /// <summary>
     /// <para> Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public DoubleValue Val
-    {
-        get { return (DoubleValue)Attributes[4].Value; }
-        set { Attributes[4].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(4)]
+    public DoubleValue Val { get; set; }
+	
     /// <summary>
     /// <para> Factor.</para>
     /// <para>Represents the following attribute in the schema: fact </para>
     /// </summary>
-    public DoubleValue Fact
-    {
-        get { return (DoubleValue)Attributes[5].Value; }
-        set { Attributes[5].Value = value; }
-    }
-    
+    [SchemaAttr(0, "fact")]
+    [Index(5)]
+    public DoubleValue Fact { get; set; }
+	
     /// <summary>
     /// <para> Max Value.</para>
     /// <para>Represents the following attribute in the schema: max </para>
     /// </summary>
-    public DoubleValue Max
-    {
-        get { return (DoubleValue)Attributes[6].Value; }
-        set { Attributes[6].Value = value; }
-    }
-    
+    [SchemaAttr(0, "max")]
+    [Index(6)]
+    public DoubleValue Max { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Rule class.
@@ -3269,26 +2605,12 @@ public partial class Rule : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
     
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> ExtensionList.</para>
@@ -3297,11 +2619,13 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public ExtensionList ExtensionList
-    {
+	{
         get => GetElement<ExtensionList>(0);
         set => SetElement(0, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -3314,49 +2638,33 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// <para> When the object is serialized out as xml, its qualified name is dgm:adj.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "adj")]
+[Id(ElementTypeIdConst)]
 public partial class Adjust : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10709;
-    /// <inheritdoc/>
-    public override string LocalName => "adj";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<UInt32Value>(0, "idx"),
-		AttributeTag.Create<DoubleValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Adjust Handle Index.</para>
     /// <para>Represents the following attribute in the schema: idx </para>
     /// </summary>
-    public UInt32Value Index
-    {
-        get { return (UInt32Value)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "idx")]
+    [Index(0)]
+    public UInt32Value Index { get; set; }
+	
     /// <summary>
     /// <para> Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public DoubleValue Val
-    {
-        get { return (DoubleValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(1)]
+    public DoubleValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Adjust class.
@@ -3385,20 +2693,14 @@ public partial class Adjust : OpenXmlLeafElement
 /// </remarks>
 
     [ChildElementInfo(typeof(Adjust))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "adjLst")]
+[Id(ElementTypeIdConst)]
 public partial class AdjustList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10710;
-    /// <inheritdoc/>
-    public override string LocalName => "adjLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -3433,19 +2735,11 @@ public partial class AdjustList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "adj" == name)
-    return new Adjust();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<AdjustList>(deep);
@@ -3457,49 +2751,33 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// <para> When the object is serialized out as xml, its qualified name is dgm:param.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "param")]
+[Id(ElementTypeIdConst)]
 public partial class Parameter : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10711;
-    /// <inheritdoc/>
-    public override string LocalName => "param";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ParameterIdValues>>(0, "type"),
-		AttributeTag.Create<StringValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Parameter Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ParameterIdValues> Type
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ParameterIdValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ParameterIdValues> Type { get; set; }
+	
     /// <summary>
     /// <para> Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public StringValue Val
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(1)]
+    public StringValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Parameter class.
@@ -3530,49 +2808,33 @@ public partial class Parameter : OpenXmlLeafElement
 
     [ChildElementInfo(typeof(Parameter))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "alg")]
+[Id(ElementTypeIdConst)]
 public partial class Algorithm : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10712;
-    /// <inheritdoc/>
-    public override string LocalName => "alg";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AlgorithmValues>>(0, "type"),
-		AttributeTag.Create<UInt32Value>(0, "rev")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Algorithm Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AlgorithmValues> Type
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AlgorithmValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AlgorithmValues> Type { get; set; }
+	
     /// <summary>
     /// <para> Revision Number.</para>
     /// <para>Represents the following attribute in the schema: rev </para>
     /// </summary>
-    public UInt32Value Revision
-    {
-        get { return (UInt32Value)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "rev")]
+    [Index(1)]
+    public UInt32Value Revision { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Algorithm class.
@@ -3604,22 +2866,11 @@ public partial class Algorithm : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "param" == name)
-    return new Parameter();
     
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<Algorithm>(deep);
@@ -3640,106 +2891,75 @@ if( 14 == namespaceId && "extLst" == name)
 
     [ChildElementInfo(typeof(AdjustList))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "shape")]
+[Id(ElementTypeIdConst)]
 public partial class Shape : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10713;
-    /// <inheritdoc/>
-    public override string LocalName => "shape";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<DoubleValue>(0, "rot"),
-		AttributeTag.Create<StringValue>(0, "type"),
-		AttributeTag.Create<StringValue>(19, "blip"),
-		AttributeTag.Create<Int32Value>(0, "zOrderOff"),
-		AttributeTag.Create<BooleanValue>(0, "hideGeom"),
-		AttributeTag.Create<BooleanValue>(0, "lkTxEntry"),
-		AttributeTag.Create<BooleanValue>(0, "blipPhldr")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Rotation.</para>
     /// <para>Represents the following attribute in the schema: rot </para>
     /// </summary>
-    public DoubleValue Rotation
-    {
-        get { return (DoubleValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "rot")]
+    [Index(0)]
+    public DoubleValue Rotation { get; set; }
+	
     /// <summary>
     /// <para> Shape Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public StringValue Type
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(1)]
+    public StringValue Type { get; set; }
+	
     /// <summary>
     /// <para> Relationship to Image Part.</para>
     /// <para>Represents the following attribute in the schema: r:blip </para>
     /// </summary>
 ///<remark> xmlns:r=http://schemas.openxmlformats.org/officeDocument/2006/relationships
 ///</remark>
-    public StringValue Blip
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(19, "blip")]
+    [Index(2)]
+    public StringValue Blip { get; set; }
+	
     /// <summary>
     /// <para> Z-Order Offset.</para>
     /// <para>Represents the following attribute in the schema: zOrderOff </para>
     /// </summary>
-    public Int32Value ZOrderOffset
-    {
-        get { return (Int32Value)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "zOrderOff")]
+    [Index(3)]
+    public Int32Value ZOrderOffset { get; set; }
+	
     /// <summary>
     /// <para> Hide Geometry.</para>
     /// <para>Represents the following attribute in the schema: hideGeom </para>
     /// </summary>
-    public BooleanValue HideGeometry
-    {
-        get { return (BooleanValue)Attributes[4].Value; }
-        set { Attributes[4].Value = value; }
-    }
-    
+    [SchemaAttr(0, "hideGeom")]
+    [Index(4)]
+    public BooleanValue HideGeometry { get; set; }
+	
     /// <summary>
     /// <para> Prevent Text Editing.</para>
     /// <para>Represents the following attribute in the schema: lkTxEntry </para>
     /// </summary>
-    public BooleanValue LockedText
-    {
-        get { return (BooleanValue)Attributes[5].Value; }
-        set { Attributes[5].Value = value; }
-    }
-    
+    [SchemaAttr(0, "lkTxEntry")]
+    [Index(5)]
+    public BooleanValue LockedText { get; set; }
+	
     /// <summary>
     /// <para> Image Placeholder.</para>
     /// <para>Represents the following attribute in the schema: blipPhldr </para>
     /// </summary>
-    public BooleanValue BlipPlaceholder
-    {
-        get { return (BooleanValue)Attributes[6].Value; }
-        set { Attributes[6].Value = value; }
-    }
-    
+    [SchemaAttr(0, "blipPhldr")]
+    [Index(6)]
+    public BooleanValue BlipPlaceholder { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Shape class.
@@ -3771,29 +2991,12 @@ public partial class Shape : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "adjLst" == name)
-    return new AdjustList();
     
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "adjLst","extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14,14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Shape Adjust List.</para>
@@ -3802,11 +3005,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public AdjustList AdjustList
-    {
+	{
         get => GetElement<AdjustList>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> ExtensionList.</para>
     /// <para> Represents the following element tag in the schema: dgm:extLst </para>
@@ -3814,11 +3019,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(1)]
     public ExtensionList ExtensionList
-    {
+	{
         get => GetElement<ExtensionList>(1);
         set => SetElement(1, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -3838,93 +3045,65 @@ if( 14 == namespaceId && "extLst" == name)
 /// </remarks>
 
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "presOf")]
+[Id(ElementTypeIdConst)]
 public partial class PresentationOf : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10714;
-    /// <inheritdoc/>
-    public override string LocalName => "presOf";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>>>(0, "axis"),
-		AttributeTag.Create<ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>>>(0, "ptType"),
-		AttributeTag.Create<ListValue<BooleanValue>>(0, "hideLastTrans"),
-		AttributeTag.Create<ListValue<Int32Value>>(0, "st"),
-		AttributeTag.Create<ListValue<UInt32Value>>(0, "cnt"),
-		AttributeTag.Create<ListValue<Int32Value>>(0, "step")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Axis.</para>
     /// <para>Represents the following attribute in the schema: axis </para>
     /// </summary>
-    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>> Axis
-    {
-        get { return (ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "axis")]
+    [Index(0)]
+    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>> Axis { get; set; }
+	
     /// <summary>
     /// <para> Data Point Type.</para>
     /// <para>Represents the following attribute in the schema: ptType </para>
     /// </summary>
-    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>> PointType
-    {
-        get { return (ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>>)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "ptType")]
+    [Index(1)]
+    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>> PointType { get; set; }
+	
     /// <summary>
     /// <para> Hide Last Transition.</para>
     /// <para>Represents the following attribute in the schema: hideLastTrans </para>
     /// </summary>
-    public ListValue<BooleanValue> HideLastTrans
-    {
-        get { return (ListValue<BooleanValue>)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "hideLastTrans")]
+    [Index(2)]
+    public ListValue<BooleanValue> HideLastTrans { get; set; }
+	
     /// <summary>
     /// <para> Start.</para>
     /// <para>Represents the following attribute in the schema: st </para>
     /// </summary>
-    public ListValue<Int32Value> Start
-    {
-        get { return (ListValue<Int32Value>)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "st")]
+    [Index(3)]
+    public ListValue<Int32Value> Start { get; set; }
+	
     /// <summary>
     /// <para> Count.</para>
     /// <para>Represents the following attribute in the schema: cnt </para>
     /// </summary>
-    public ListValue<UInt32Value> Count
-    {
-        get { return (ListValue<UInt32Value>)Attributes[4].Value; }
-        set { Attributes[4].Value = value; }
-    }
-    
+    [SchemaAttr(0, "cnt")]
+    [Index(4)]
+    public ListValue<UInt32Value> Count { get; set; }
+	
     /// <summary>
     /// <para> Step.</para>
     /// <para>Represents the following attribute in the schema: step </para>
     /// </summary>
-    public ListValue<Int32Value> Step
-    {
-        get { return (ListValue<Int32Value>)Attributes[5].Value; }
-        set { Attributes[5].Value = value; }
-    }
-    
+    [SchemaAttr(0, "step")]
+    [Index(5)]
+    public ListValue<Int32Value> Step { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the PresentationOf class.
@@ -3956,26 +3135,12 @@ public partial class PresentationOf : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
     
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> ExtensionList.</para>
@@ -3984,11 +3149,13 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public ExtensionList ExtensionList
-    {
+	{
         get => GetElement<ExtensionList>(0);
         set => SetElement(0, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -4008,20 +3175,14 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// </remarks>
 
     [ChildElementInfo(typeof(Constraint))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "constrLst")]
+[Id(ElementTypeIdConst)]
 public partial class Constraints : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10715;
-    /// <inheritdoc/>
-    public override string LocalName => "constrLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -4056,19 +3217,11 @@ public partial class Constraints : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "constr" == name)
-    return new Constraint();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<Constraints>(deep);
@@ -4087,20 +3240,14 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// </remarks>
 
     [ChildElementInfo(typeof(Rule))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "ruleLst")]
+[Id(ElementTypeIdConst)]
 public partial class RuleList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10716;
-    /// <inheritdoc/>
-    public override string LocalName => "ruleLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -4135,19 +3282,11 @@ public partial class RuleList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "rule" == name)
-    return new Rule();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<RuleList>(deep);
@@ -4172,21 +3311,14 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 ///<item><description>ResizeHandles &lt;dgm:resizeHandles></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "varLst")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class VariableList : LayoutVariablePropertySetType
 {
     internal const int ElementTypeIdConst = 10717;
-    /// <inheritdoc/>
-    public override string LocalName => "varLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the VariableList class.
@@ -4217,6 +3349,7 @@ public partial class VariableList : LayoutVariablePropertySetType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -4242,21 +3375,14 @@ public partial class VariableList : LayoutVariablePropertySetType
 ///<item><description>ResizeHandles &lt;dgm:resizeHandles></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "presLayoutVars")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class PresentationLayoutVariables : LayoutVariablePropertySetType
 {
     internal const int ElementTypeIdConst = 10731;
-    /// <inheritdoc/>
-    public override string LocalName => "presLayoutVars";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the PresentationLayoutVariables class.
@@ -4287,6 +3413,7 @@ public partial class PresentationLayoutVariables : LayoutVariablePropertySetType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -4310,7 +3437,7 @@ public partial class PresentationLayoutVariables : LayoutVariablePropertySetType
 ///<item><description>ResizeHandles &lt;dgm:resizeHandles></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
+
     [ChildElementInfo(typeof(OrganizationChart))]
     [ChildElementInfo(typeof(MaxNumberOfChildren))]
     [ChildElementInfo(typeof(PreferredNumberOfChildren))]
@@ -4320,52 +3447,13 @@ public partial class PresentationLayoutVariables : LayoutVariablePropertySetType
     [ChildElementInfo(typeof(AnimateOneByOne))]
     [ChildElementInfo(typeof(AnimationLevel))]
     [ChildElementInfo(typeof(ResizeHandles))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
 public abstract partial class LayoutVariablePropertySetType : OpenXmlCompositeElement
 {
         
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "orgChart" == name)
-    return new OrganizationChart();
     
-if( 14 == namespaceId && "chMax" == name)
-    return new MaxNumberOfChildren();
-    
-if( 14 == namespaceId && "chPref" == name)
-    return new PreferredNumberOfChildren();
-    
-if( 14 == namespaceId && "bulletEnabled" == name)
-    return new BulletEnabled();
-    
-if( 14 == namespaceId && "dir" == name)
-    return new Direction();
-    
-if( 14 == namespaceId && "hierBranch" == name)
-    return new HierarchyBranch();
-    
-if( 14 == namespaceId && "animOne" == name)
-    return new AnimateOneByOne();
-    
-if( 14 == namespaceId && "animLvl" == name)
-    return new AnimationLevel();
-    
-if( 14 == namespaceId && "resizeHandles" == name)
-    return new ResizeHandles();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "orgChart","chMax","chPref","bulletEnabled","dir","hierBranch","animOne","animLvl","resizeHandles" };
-    private static readonly byte[] eleNamespaceIds = { 14,14,14,14,14,14,14,14,14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Show Organization Chart User Interface.</para>
@@ -4374,11 +3462,13 @@ if( 14 == namespaceId && "resizeHandles" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public OrganizationChart OrganizationChart
-    {
+	{
         get => GetElement<OrganizationChart>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Maximum Children.</para>
     /// <para> Represents the following element tag in the schema: dgm:chMax </para>
@@ -4386,11 +3476,13 @@ if( 14 == namespaceId && "resizeHandles" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(1)]
     public MaxNumberOfChildren MaxNumberOfChildren
-    {
+	{
         get => GetElement<MaxNumberOfChildren>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Preferred Number of Children.</para>
     /// <para> Represents the following element tag in the schema: dgm:chPref </para>
@@ -4398,11 +3490,13 @@ if( 14 == namespaceId && "resizeHandles" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(2)]
     public PreferredNumberOfChildren PreferredNumberOfChildren
-    {
+	{
         get => GetElement<PreferredNumberOfChildren>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Show Insert Bullet.</para>
     /// <para> Represents the following element tag in the schema: dgm:bulletEnabled </para>
@@ -4410,11 +3504,13 @@ if( 14 == namespaceId && "resizeHandles" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(3)]
     public BulletEnabled BulletEnabled
-    {
+	{
         get => GetElement<BulletEnabled>(3);
         set => SetElement(3, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Diagram Direction.</para>
     /// <para> Represents the following element tag in the schema: dgm:dir </para>
@@ -4422,11 +3518,13 @@ if( 14 == namespaceId && "resizeHandles" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(4)]
     public Direction Direction
-    {
+	{
         get => GetElement<Direction>(4);
         set => SetElement(4, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Organization Chart Branch Style.</para>
     /// <para> Represents the following element tag in the schema: dgm:hierBranch </para>
@@ -4434,11 +3532,13 @@ if( 14 == namespaceId && "resizeHandles" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(5)]
     public HierarchyBranch HierarchyBranch
-    {
+	{
         get => GetElement<HierarchyBranch>(5);
         set => SetElement(5, value);
-    }
+	}
+    
     /// <summary>
     /// <para> One by One Animation String.</para>
     /// <para> Represents the following element tag in the schema: dgm:animOne </para>
@@ -4446,11 +3546,13 @@ if( 14 == namespaceId && "resizeHandles" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(6)]
     public AnimateOneByOne AnimateOneByOne
-    {
+	{
         get => GetElement<AnimateOneByOne>(6);
         set => SetElement(6, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Level Animation.</para>
     /// <para> Represents the following element tag in the schema: dgm:animLvl </para>
@@ -4458,11 +3560,13 @@ if( 14 == namespaceId && "resizeHandles" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(7)]
     public AnimationLevel AnimationLevel
-    {
+	{
         get => GetElement<AnimationLevel>(7);
         set => SetElement(7, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Shape Resize Style.</para>
     /// <para> Represents the following element tag in the schema: dgm:resizeHandles </para>
@@ -4470,11 +3574,13 @@ if( 14 == namespaceId && "resizeHandles" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(8)]
     public ResizeHandles ResizeHandles
-    {
+	{
         get => GetElement<ResizeHandles>(8);
         set => SetElement(8, value);
-    }
+	}
+    
 
 
     
@@ -4508,6 +3614,7 @@ if( 14 == namespaceId && "resizeHandles" == name)
         : base(outerXml)
     {
     }
+    
 
     
 }
@@ -4540,115 +3647,81 @@ if( 14 == namespaceId && "resizeHandles" == name)
     [ChildElementInfo(typeof(LayoutNode))]
     [ChildElementInfo(typeof(Choose))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "forEach")]
+[Id(ElementTypeIdConst)]
 public partial class ForEach : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10718;
-    /// <inheritdoc/>
-    public override string LocalName => "forEach";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "name"),
-		AttributeTag.Create<StringValue>(0, "ref"),
-		AttributeTag.Create<ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>>>(0, "axis"),
-		AttributeTag.Create<ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>>>(0, "ptType"),
-		AttributeTag.Create<ListValue<BooleanValue>>(0, "hideLastTrans"),
-		AttributeTag.Create<ListValue<Int32Value>>(0, "st"),
-		AttributeTag.Create<ListValue<UInt32Value>>(0, "cnt"),
-		AttributeTag.Create<ListValue<Int32Value>>(0, "step")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Name.</para>
     /// <para>Represents the following attribute in the schema: name </para>
     /// </summary>
-    public StringValue Name
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "name")]
+    [Index(0)]
+    public StringValue Name { get; set; }
+	
     /// <summary>
     /// <para> Reference.</para>
     /// <para>Represents the following attribute in the schema: ref </para>
     /// </summary>
-    public StringValue Reference
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "ref")]
+    [Index(1)]
+    public StringValue Reference { get; set; }
+	
     /// <summary>
     /// <para> Axis.</para>
     /// <para>Represents the following attribute in the schema: axis </para>
     /// </summary>
-    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>> Axis
-    {
-        get { return (ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>>)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "axis")]
+    [Index(2)]
+    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>> Axis { get; set; }
+	
     /// <summary>
     /// <para> Data Point Type.</para>
     /// <para>Represents the following attribute in the schema: ptType </para>
     /// </summary>
-    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>> PointType
-    {
-        get { return (ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>>)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "ptType")]
+    [Index(3)]
+    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>> PointType { get; set; }
+	
     /// <summary>
     /// <para> Hide Last Transition.</para>
     /// <para>Represents the following attribute in the schema: hideLastTrans </para>
     /// </summary>
-    public ListValue<BooleanValue> HideLastTrans
-    {
-        get { return (ListValue<BooleanValue>)Attributes[4].Value; }
-        set { Attributes[4].Value = value; }
-    }
-    
+    [SchemaAttr(0, "hideLastTrans")]
+    [Index(4)]
+    public ListValue<BooleanValue> HideLastTrans { get; set; }
+	
     /// <summary>
     /// <para> Start.</para>
     /// <para>Represents the following attribute in the schema: st </para>
     /// </summary>
-    public ListValue<Int32Value> Start
-    {
-        get { return (ListValue<Int32Value>)Attributes[5].Value; }
-        set { Attributes[5].Value = value; }
-    }
-    
+    [SchemaAttr(0, "st")]
+    [Index(5)]
+    public ListValue<Int32Value> Start { get; set; }
+	
     /// <summary>
     /// <para> Count.</para>
     /// <para>Represents the following attribute in the schema: cnt </para>
     /// </summary>
-    public ListValue<UInt32Value> Count
-    {
-        get { return (ListValue<UInt32Value>)Attributes[6].Value; }
-        set { Attributes[6].Value = value; }
-    }
-    
+    [SchemaAttr(0, "cnt")]
+    [Index(6)]
+    public ListValue<UInt32Value> Count { get; set; }
+	
     /// <summary>
     /// <para> Step.</para>
     /// <para>Represents the following attribute in the schema: step </para>
     /// </summary>
-    public ListValue<Int32Value> Step
-    {
-        get { return (ListValue<Int32Value>)Attributes[7].Value; }
-        set { Attributes[7].Value = value; }
-    }
-    
+    [SchemaAttr(0, "step")]
+    [Index(7)]
+    public ListValue<Int32Value> Step { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the ForEach class.
@@ -4680,43 +3753,11 @@ public partial class ForEach : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "alg" == name)
-    return new Algorithm();
     
-if( 14 == namespaceId && "shape" == name)
-    return new Shape();
-    
-if( 14 == namespaceId && "presOf" == name)
-    return new PresentationOf();
-    
-if( 14 == namespaceId && "constrLst" == name)
-    return new Constraints();
-    
-if( 14 == namespaceId && "ruleLst" == name)
-    return new RuleList();
-    
-if( 14 == namespaceId && "forEach" == name)
-    return new ForEach();
-    
-if( 14 == namespaceId && "layoutNode" == name)
-    return new LayoutNode();
-    
-if( 14 == namespaceId && "choose" == name)
-    return new Choose();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<ForEach>(deep);
@@ -4753,71 +3794,49 @@ if( 14 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(LayoutNode))]
     [ChildElementInfo(typeof(Choose))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "layoutNode")]
+[Id(ElementTypeIdConst)]
 public partial class LayoutNode : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10719;
-    /// <inheritdoc/>
-    public override string LocalName => "layoutNode";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "name"),
-		AttributeTag.Create<StringValue>(0, "styleLbl"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ChildOrderValues>>(0, "chOrder"),
-		AttributeTag.Create<StringValue>(0, "moveWith")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Name.</para>
     /// <para>Represents the following attribute in the schema: name </para>
     /// </summary>
-    public StringValue Name
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "name")]
+    [Index(0)]
+    public StringValue Name { get; set; }
+	
     /// <summary>
     /// <para> Style Label.</para>
     /// <para>Represents the following attribute in the schema: styleLbl </para>
     /// </summary>
-    public StringValue StyleLabel
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "styleLbl")]
+    [Index(1)]
+    public StringValue StyleLabel { get; set; }
+	
     /// <summary>
     /// <para> Child Order.</para>
     /// <para>Represents the following attribute in the schema: chOrder </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ChildOrderValues> ChildOrder
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ChildOrderValues>)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "chOrder")]
+    [Index(2)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ChildOrderValues> ChildOrder { get; set; }
+	
     /// <summary>
     /// <para> Move With.</para>
     /// <para>Represents the following attribute in the schema: moveWith </para>
     /// </summary>
-    public StringValue MoveWith
-    {
-        get { return (StringValue)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "moveWith")]
+    [Index(3)]
+    public StringValue MoveWith { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the LayoutNode class.
@@ -4849,46 +3868,11 @@ public partial class LayoutNode : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "alg" == name)
-    return new Algorithm();
     
-if( 14 == namespaceId && "shape" == name)
-    return new Shape();
-    
-if( 14 == namespaceId && "presOf" == name)
-    return new PresentationOf();
-    
-if( 14 == namespaceId && "constrLst" == name)
-    return new Constraints();
-    
-if( 14 == namespaceId && "ruleLst" == name)
-    return new RuleList();
-    
-if( 14 == namespaceId && "varLst" == name)
-    return new VariableList();
-    
-if( 14 == namespaceId && "forEach" == name)
-    return new ForEach();
-    
-if( 14 == namespaceId && "layoutNode" == name)
-    return new LayoutNode();
-    
-if( 14 == namespaceId && "choose" == name)
-    return new Choose();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<LayoutNode>(deep);
@@ -4909,38 +3893,25 @@ if( 14 == namespaceId && "extLst" == name)
 
     [ChildElementInfo(typeof(DiagramChooseIf))]
     [ChildElementInfo(typeof(DiagramChooseElse))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "choose")]
+[Id(ElementTypeIdConst)]
 public partial class Choose : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10720;
-    /// <inheritdoc/>
-    public override string LocalName => "choose";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "name")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Name.</para>
     /// <para>Represents the following attribute in the schema: name </para>
     /// </summary>
-    public StringValue Name
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "name")]
+    [Index(0)]
+    public StringValue Name { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Choose class.
@@ -4972,22 +3943,11 @@ public partial class Choose : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "if" == name)
-    return new DiagramChooseIf();
     
-if( 14 == namespaceId && "else" == name)
-    return new DiagramChooseElse();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<Choose>(deep);
@@ -5022,148 +3982,105 @@ if( 14 == namespaceId && "else" == name)
     [ChildElementInfo(typeof(LayoutNode))]
     [ChildElementInfo(typeof(Choose))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "if")]
+[Id(ElementTypeIdConst)]
 public partial class DiagramChooseIf : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10721;
-    /// <inheritdoc/>
-    public override string LocalName => "if";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "name"),
-		AttributeTag.Create<ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>>>(0, "axis"),
-		AttributeTag.Create<ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>>>(0, "ptType"),
-		AttributeTag.Create<ListValue<BooleanValue>>(0, "hideLastTrans"),
-		AttributeTag.Create<ListValue<Int32Value>>(0, "st"),
-		AttributeTag.Create<ListValue<UInt32Value>>(0, "cnt"),
-		AttributeTag.Create<ListValue<Int32Value>>(0, "step"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.FunctionValues>>(0, "func"),
-		AttributeTag.Create<StringValue>(0, "arg"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.FunctionOperatorValues>>(0, "op"),
-		AttributeTag.Create<StringValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Name.</para>
     /// <para>Represents the following attribute in the schema: name </para>
     /// </summary>
-    public StringValue Name
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "name")]
+    [Index(0)]
+    public StringValue Name { get; set; }
+	
     /// <summary>
     /// <para> Axis.</para>
     /// <para>Represents the following attribute in the schema: axis </para>
     /// </summary>
-    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>> Axis
-    {
-        get { return (ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>>)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "axis")]
+    [Index(1)]
+    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AxisValues>> Axis { get; set; }
+	
     /// <summary>
     /// <para> Data Point Type.</para>
     /// <para>Represents the following attribute in the schema: ptType </para>
     /// </summary>
-    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>> PointType
-    {
-        get { return (ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>>)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "ptType")]
+    [Index(2)]
+    public ListValue<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ElementValues>> PointType { get; set; }
+	
     /// <summary>
     /// <para> Hide Last Transition.</para>
     /// <para>Represents the following attribute in the schema: hideLastTrans </para>
     /// </summary>
-    public ListValue<BooleanValue> HideLastTrans
-    {
-        get { return (ListValue<BooleanValue>)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "hideLastTrans")]
+    [Index(3)]
+    public ListValue<BooleanValue> HideLastTrans { get; set; }
+	
     /// <summary>
     /// <para> Start.</para>
     /// <para>Represents the following attribute in the schema: st </para>
     /// </summary>
-    public ListValue<Int32Value> Start
-    {
-        get { return (ListValue<Int32Value>)Attributes[4].Value; }
-        set { Attributes[4].Value = value; }
-    }
-    
+    [SchemaAttr(0, "st")]
+    [Index(4)]
+    public ListValue<Int32Value> Start { get; set; }
+	
     /// <summary>
     /// <para> Count.</para>
     /// <para>Represents the following attribute in the schema: cnt </para>
     /// </summary>
-    public ListValue<UInt32Value> Count
-    {
-        get { return (ListValue<UInt32Value>)Attributes[5].Value; }
-        set { Attributes[5].Value = value; }
-    }
-    
+    [SchemaAttr(0, "cnt")]
+    [Index(5)]
+    public ListValue<UInt32Value> Count { get; set; }
+	
     /// <summary>
     /// <para> Step.</para>
     /// <para>Represents the following attribute in the schema: step </para>
     /// </summary>
-    public ListValue<Int32Value> Step
-    {
-        get { return (ListValue<Int32Value>)Attributes[6].Value; }
-        set { Attributes[6].Value = value; }
-    }
-    
+    [SchemaAttr(0, "step")]
+    [Index(6)]
+    public ListValue<Int32Value> Step { get; set; }
+	
     /// <summary>
     /// <para> Function.</para>
     /// <para>Represents the following attribute in the schema: func </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.FunctionValues> Function
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.FunctionValues>)Attributes[7].Value; }
-        set { Attributes[7].Value = value; }
-    }
-    
+    [SchemaAttr(0, "func")]
+    [Index(7)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.FunctionValues> Function { get; set; }
+	
     /// <summary>
     /// <para> Argument.</para>
     /// <para>Represents the following attribute in the schema: arg </para>
     /// </summary>
-    public StringValue Argument
-    {
-        get { return (StringValue)Attributes[8].Value; }
-        set { Attributes[8].Value = value; }
-    }
-    
+    [SchemaAttr(0, "arg")]
+    [Index(8)]
+    public StringValue Argument { get; set; }
+	
     /// <summary>
     /// <para> Operator.</para>
     /// <para>Represents the following attribute in the schema: op </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.FunctionOperatorValues> Operator
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.FunctionOperatorValues>)Attributes[9].Value; }
-        set { Attributes[9].Value = value; }
-    }
-    
+    [SchemaAttr(0, "op")]
+    [Index(9)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.FunctionOperatorValues> Operator { get; set; }
+	
     /// <summary>
     /// <para> Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public StringValue Val
-    {
-        get { return (StringValue)Attributes[10].Value; }
-        set { Attributes[10].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(10)]
+    public StringValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the DiagramChooseIf class.
@@ -5195,43 +4112,11 @@ public partial class DiagramChooseIf : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "alg" == name)
-    return new Algorithm();
     
-if( 14 == namespaceId && "shape" == name)
-    return new Shape();
-    
-if( 14 == namespaceId && "presOf" == name)
-    return new PresentationOf();
-    
-if( 14 == namespaceId && "constrLst" == name)
-    return new Constraints();
-    
-if( 14 == namespaceId && "ruleLst" == name)
-    return new RuleList();
-    
-if( 14 == namespaceId && "forEach" == name)
-    return new ForEach();
-    
-if( 14 == namespaceId && "layoutNode" == name)
-    return new LayoutNode();
-    
-if( 14 == namespaceId && "choose" == name)
-    return new Choose();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<DiagramChooseIf>(deep);
@@ -5266,38 +4151,25 @@ if( 14 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(LayoutNode))]
     [ChildElementInfo(typeof(Choose))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "else")]
+[Id(ElementTypeIdConst)]
 public partial class DiagramChooseElse : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10722;
-    /// <inheritdoc/>
-    public override string LocalName => "else";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "name")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Name.</para>
     /// <para>Represents the following attribute in the schema: name </para>
     /// </summary>
-    public StringValue Name
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "name")]
+    [Index(0)]
+    public StringValue Name { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the DiagramChooseElse class.
@@ -5329,43 +4201,11 @@ public partial class DiagramChooseElse : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "alg" == name)
-    return new Algorithm();
     
-if( 14 == namespaceId && "shape" == name)
-    return new Shape();
-    
-if( 14 == namespaceId && "presOf" == name)
-    return new PresentationOf();
-    
-if( 14 == namespaceId && "constrLst" == name)
-    return new Constraints();
-    
-if( 14 == namespaceId && "ruleLst" == name)
-    return new RuleList();
-    
-if( 14 == namespaceId && "forEach" == name)
-    return new ForEach();
-    
-if( 14 == namespaceId && "layoutNode" == name)
-    return new LayoutNode();
-    
-if( 14 == namespaceId && "choose" == name)
-    return new Choose();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<DiagramChooseElse>(deep);
@@ -5392,20 +4232,14 @@ if( 14 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(Background))]
     [ChildElementInfo(typeof(Whole))]
     [ChildElementInfo(typeof(DataModelExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "dataModel")]
+[Id(ElementTypeIdConst)]
 public partial class DataModel : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10723;
-    /// <inheritdoc/>
-    public override string LocalName => "dataModel";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -5440,38 +4274,12 @@ public partial class DataModel : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "ptLst" == name)
-    return new PointList();
     
-if( 14 == namespaceId && "cxnLst" == name)
-    return new ConnectionList();
-    
-if( 14 == namespaceId && "bg" == name)
-    return new Background();
-    
-if( 14 == namespaceId && "whole" == name)
-    return new Whole();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new DataModelExtensionList();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "ptLst","cxnLst","bg","whole","extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14,14,14,14,14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Point List.</para>
@@ -5480,11 +4288,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public PointList PointList
-    {
+	{
         get => GetElement<PointList>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Connection List.</para>
     /// <para> Represents the following element tag in the schema: dgm:cxnLst </para>
@@ -5492,11 +4302,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(1)]
     public ConnectionList ConnectionList
-    {
+	{
         get => GetElement<ConnectionList>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Background Formatting.</para>
     /// <para> Represents the following element tag in the schema: dgm:bg </para>
@@ -5504,11 +4316,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(2)]
     public Background Background
-    {
+	{
         get => GetElement<Background>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Whole E2O Formatting.</para>
     /// <para> Represents the following element tag in the schema: dgm:whole </para>
@@ -5516,11 +4330,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(3)]
     public Whole Whole
-    {
+	{
         get => GetElement<Whole>(3);
         set => SetElement(3, value);
-    }
+	}
+    
     /// <summary>
     /// <para> DataModelExtensionList.</para>
     /// <para> Represents the following element tag in the schema: dgm:extLst </para>
@@ -5528,11 +4344,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(4)]
     public DataModelExtensionList DataModelExtensionList
-    {
+	{
         get => GetElement<DataModelExtensionList>(4);
         set => SetElement(4, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -5545,49 +4363,33 @@ if( 14 == namespaceId && "extLst" == name)
 /// <para> When the object is serialized out as xml, its qualified name is dgm:cat.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "cat")]
+[Id(ElementTypeIdConst)]
 public partial class Category : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10724;
-    /// <inheritdoc/>
-    public override string LocalName => "cat";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "type"),
-		AttributeTag.Create<UInt32Value>(0, "pri")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Category Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public StringValue Type
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(0)]
+    public StringValue Type { get; set; }
+	
     /// <summary>
     /// <para> Priority.</para>
     /// <para>Represents the following attribute in the schema: pri </para>
     /// </summary>
-    public UInt32Value Priority
-    {
-        get { return (UInt32Value)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "pri")]
+    [Index(1)]
+    public UInt32Value Priority { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Category class.
@@ -5609,49 +4411,33 @@ public partial class Category : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:title.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "title")]
+[Id(ElementTypeIdConst)]
 public partial class Title : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10725;
-    /// <inheritdoc/>
-    public override string LocalName => "title";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "lang"),
-		AttributeTag.Create<StringValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Language.</para>
     /// <para>Represents the following attribute in the schema: lang </para>
     /// </summary>
-    public StringValue Language
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "lang")]
+    [Index(0)]
+    public StringValue Language { get; set; }
+	
     /// <summary>
     /// <para> Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public StringValue Val
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(1)]
+    public StringValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Title class.
@@ -5673,49 +4459,33 @@ public partial class Title : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:desc.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "desc")]
+[Id(ElementTypeIdConst)]
 public partial class Description : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10726;
-    /// <inheritdoc/>
-    public override string LocalName => "desc";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "lang"),
-		AttributeTag.Create<StringValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Language.</para>
     /// <para>Represents the following attribute in the schema: lang </para>
     /// </summary>
-    public StringValue Language
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "lang")]
+    [Index(0)]
+    public StringValue Language { get; set; }
+	
     /// <summary>
     /// <para> Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public StringValue Val
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(1)]
+    public StringValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Description class.
@@ -5744,20 +4514,14 @@ public partial class Description : OpenXmlLeafElement
 /// </remarks>
 
     [ChildElementInfo(typeof(Category))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "catLst")]
+[Id(ElementTypeIdConst)]
 public partial class CategoryList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10727;
-    /// <inheritdoc/>
-    public override string LocalName => "catLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -5792,19 +4556,11 @@ public partial class CategoryList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "cat" == name)
-    return new Category();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<CategoryList>(deep);
@@ -5821,21 +4577,14 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 ///<item><description>DataModel &lt;dgm:dataModel></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "sampData")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class SampleData : SampleDataType
 {
     internal const int ElementTypeIdConst = 10728;
-    /// <inheritdoc/>
-    public override string LocalName => "sampData";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the SampleData class.
@@ -5866,6 +4615,7 @@ public partial class SampleData : SampleDataType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -5883,21 +4633,14 @@ public partial class SampleData : SampleDataType
 ///<item><description>DataModel &lt;dgm:dataModel></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "styleData")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class StyleData : SampleDataType
 {
     internal const int ElementTypeIdConst = 10729;
-    /// <inheritdoc/>
-    public override string LocalName => "styleData";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the StyleData class.
@@ -5928,6 +4671,7 @@ public partial class StyleData : SampleDataType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -5945,21 +4689,14 @@ public partial class StyleData : SampleDataType
 ///<item><description>DataModel &lt;dgm:dataModel></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
+[SchemaAttr(14, "clrData")]
+[Id(ElementTypeIdConst)]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class ColorData : SampleDataType
 {
     internal const int ElementTypeIdConst = 10730;
-    /// <inheritdoc/>
-    public override string LocalName => "clrData";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     /// <summary>
     /// Initializes a new instance of the ColorData class.
@@ -5990,6 +4727,7 @@ public partial class ColorData : SampleDataType
         : base(outerXml)
     {
     }
+    
 
     
     /// <inheritdoc/>
@@ -6005,45 +4743,23 @@ public partial class ColorData : SampleDataType
 ///<item><description>DataModel &lt;dgm:dataModel></description></item>
 /// </list>
 /// </remarks>
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix")]
+
     [ChildElementInfo(typeof(DataModel))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
+
 public abstract partial class SampleDataType : OpenXmlCompositeElement
 {
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<BooleanValue>(0, "useDef")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-    
+        
         /// <summary>
     /// <para> Use Default.</para>
     /// <para>Represents the following attribute in the schema: useDef </para>
     /// </summary>
-    public BooleanValue UseDefault
-    {
-        get { return (BooleanValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "useDef")]
+    [Index(0)]
+    public BooleanValue UseDefault { get; set; }
+	
 
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "dataModel" == name)
-    return new DataModel();
     
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "dataModel" };
-    private static readonly byte[] eleNamespaceIds = { 14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Data Model.</para>
@@ -6052,11 +4768,13 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public DataModel DataModel
-    {
+	{
         get => GetElement<DataModel>(0);
         set => SetElement(0, value);
-    }
+	}
+    
 
 
     
@@ -6090,6 +4808,7 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
         : base(outerXml)
     {
     }
+    
 
     
 }
@@ -6112,20 +4831,14 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.FillReference))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectReference))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.FontReference))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "style")]
+[Id(ElementTypeIdConst)]
 public partial class Style : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10732;
-    /// <inheritdoc/>
-    public override string LocalName => "style";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -6160,35 +4873,12 @@ public partial class Style : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "lnRef" == name)
-    return new DocumentFormat.OpenXml.Drawing.LineReference();
     
-if( 10 == namespaceId && "fillRef" == name)
-    return new DocumentFormat.OpenXml.Drawing.FillReference();
-    
-if( 10 == namespaceId && "effectRef" == name)
-    return new DocumentFormat.OpenXml.Drawing.EffectReference();
-    
-if( 10 == namespaceId && "fontRef" == name)
-    return new DocumentFormat.OpenXml.Drawing.FontReference();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "lnRef","fillRef","effectRef","fontRef" };
-    private static readonly byte[] eleNamespaceIds = { 10,10,10,10 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> LineReference.</para>
@@ -6197,11 +4887,13 @@ if( 10 == namespaceId && "fontRef" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(0)]
     public DocumentFormat.OpenXml.Drawing.LineReference LineReference
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.LineReference>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> FillReference.</para>
     /// <para> Represents the following element tag in the schema: a:fillRef </para>
@@ -6209,11 +4901,13 @@ if( 10 == namespaceId && "fontRef" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(1)]
     public DocumentFormat.OpenXml.Drawing.FillReference FillReference
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.FillReference>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> EffectReference.</para>
     /// <para> Represents the following element tag in the schema: a:effectRef </para>
@@ -6221,11 +4915,13 @@ if( 10 == namespaceId && "fontRef" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(2)]
     public DocumentFormat.OpenXml.Drawing.EffectReference EffectReference
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.EffectReference>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Font Reference.</para>
     /// <para> Represents the following element tag in the schema: a:fontRef </para>
@@ -6233,11 +4929,13 @@ if( 10 == namespaceId && "fontRef" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(3)]
     public DocumentFormat.OpenXml.Drawing.FontReference FontReference
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.FontReference>(3);
         set => SetElement(3, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -6250,38 +4948,25 @@ if( 10 == namespaceId && "fontRef" == name)
 /// <para> When the object is serialized out as xml, its qualified name is dgm:orgChart.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "orgChart")]
+[Id(ElementTypeIdConst)]
 public partial class OrganizationChart : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10733;
-    /// <inheritdoc/>
-    public override string LocalName => "orgChart";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<BooleanValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Show Organization Chart User Interface Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public BooleanValue Val
-    {
-        get { return (BooleanValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(0)]
+    public BooleanValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the OrganizationChart class.
@@ -6303,38 +4988,25 @@ public partial class OrganizationChart : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:chMax.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "chMax")]
+[Id(ElementTypeIdConst)]
 public partial class MaxNumberOfChildren : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10734;
-    /// <inheritdoc/>
-    public override string LocalName => "chMax";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<Int32Value>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Maximum Children Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public Int32Value Val
-    {
-        get { return (Int32Value)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(0)]
+    public Int32Value Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the MaxNumberOfChildren class.
@@ -6356,38 +5028,25 @@ public partial class MaxNumberOfChildren : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:chPref.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "chPref")]
+[Id(ElementTypeIdConst)]
 public partial class PreferredNumberOfChildren : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10735;
-    /// <inheritdoc/>
-    public override string LocalName => "chPref";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<Int32Value>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Preferred Number of CHildren Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public Int32Value Val
-    {
-        get { return (Int32Value)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(0)]
+    public Int32Value Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the PreferredNumberOfChildren class.
@@ -6409,38 +5068,25 @@ public partial class PreferredNumberOfChildren : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:bulletEnabled.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "bulletEnabled")]
+[Id(ElementTypeIdConst)]
 public partial class BulletEnabled : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10736;
-    /// <inheritdoc/>
-    public override string LocalName => "bulletEnabled";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<BooleanValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Show Insert Bullet Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public BooleanValue Val
-    {
-        get { return (BooleanValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(0)]
+    public BooleanValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the BulletEnabled class.
@@ -6462,38 +5108,25 @@ public partial class BulletEnabled : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:dir.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "dir")]
+[Id(ElementTypeIdConst)]
 public partial class Direction : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10737;
-    /// <inheritdoc/>
-    public override string LocalName => "dir";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.DirectionValues>>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Diagram Direction Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.DirectionValues> Val
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.DirectionValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.DirectionValues> Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Direction class.
@@ -6515,38 +5148,25 @@ public partial class Direction : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:hierBranch.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "hierBranch")]
+[Id(ElementTypeIdConst)]
 public partial class HierarchyBranch : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10738;
-    /// <inheritdoc/>
-    public override string LocalName => "hierBranch";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.HierarchyBranchStyleValues>>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Organization Chart Branch Style Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.HierarchyBranchStyleValues> Val
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.HierarchyBranchStyleValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.HierarchyBranchStyleValues> Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the HierarchyBranch class.
@@ -6568,38 +5188,25 @@ public partial class HierarchyBranch : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:animOne.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "animOne")]
+[Id(ElementTypeIdConst)]
 public partial class AnimateOneByOne : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10739;
-    /// <inheritdoc/>
-    public override string LocalName => "animOne";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AnimateOneByOneValues>>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> One By One Animation Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AnimateOneByOneValues> Val
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AnimateOneByOneValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AnimateOneByOneValues> Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the AnimateOneByOne class.
@@ -6621,38 +5228,25 @@ public partial class AnimateOneByOne : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:animLvl.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "animLvl")]
+[Id(ElementTypeIdConst)]
 public partial class AnimationLevel : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10740;
-    /// <inheritdoc/>
-    public override string LocalName => "animLvl";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AnimationLevelStringValues>>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Level Animation Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AnimationLevelStringValues> Val
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AnimationLevelStringValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.AnimationLevelStringValues> Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the AnimationLevel class.
@@ -6674,38 +5268,25 @@ public partial class AnimationLevel : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:resizeHandles.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "resizeHandles")]
+[Id(ElementTypeIdConst)]
 public partial class ResizeHandles : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10741;
-    /// <inheritdoc/>
-    public override string LocalName => "resizeHandles";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ResizeHandlesStringValues>>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Shape Resize Style Type.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ResizeHandlesStringValues> Val
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ResizeHandlesStringValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.Diagrams.ResizeHandlesStringValues> Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the ResizeHandles class.
@@ -6727,49 +5308,33 @@ public partial class ResizeHandles : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:cat.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "cat")]
+[Id(ElementTypeIdConst)]
 public partial class StyleDisplayCategory : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10742;
-    /// <inheritdoc/>
-    public override string LocalName => "cat";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "type"),
-		AttributeTag.Create<UInt32Value>(0, "pri")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Category Type.</para>
     /// <para>Represents the following attribute in the schema: type </para>
     /// </summary>
-    public StringValue Type
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "type")]
+    [Index(0)]
+    public StringValue Type { get; set; }
+	
     /// <summary>
     /// <para> Priority.</para>
     /// <para>Represents the following attribute in the schema: pri </para>
     /// </summary>
-    public UInt32Value Priority
-    {
-        get { return (UInt32Value)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "pri")]
+    [Index(1)]
+    public UInt32Value Priority { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the StyleDisplayCategory class.
@@ -6804,20 +5369,14 @@ public partial class StyleDisplayCategory : OpenXmlLeafElement
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LightRig))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Backdrop))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "scene3d")]
+[Id(ElementTypeIdConst)]
 public partial class Scene3D : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10743;
-    /// <inheritdoc/>
-    public override string LocalName => "scene3d";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -6852,35 +5411,12 @@ public partial class Scene3D : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "camera" == name)
-    return new DocumentFormat.OpenXml.Drawing.Camera();
     
-if( 10 == namespaceId && "lightRig" == name)
-    return new DocumentFormat.OpenXml.Drawing.LightRig();
-    
-if( 10 == namespaceId && "backdrop" == name)
-    return new DocumentFormat.OpenXml.Drawing.Backdrop();
-    
-if( 10 == namespaceId && "extLst" == name)
-    return new DocumentFormat.OpenXml.Drawing.ExtensionList();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "camera","lightRig","backdrop","extLst" };
-    private static readonly byte[] eleNamespaceIds = { 10,10,10,10 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Camera.</para>
@@ -6889,11 +5425,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(0)]
     public DocumentFormat.OpenXml.Drawing.Camera Camera
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.Camera>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Light Rig.</para>
     /// <para> Represents the following element tag in the schema: a:lightRig </para>
@@ -6901,11 +5439,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(1)]
     public DocumentFormat.OpenXml.Drawing.LightRig LightRig
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.LightRig>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Backdrop Plane.</para>
     /// <para> Represents the following element tag in the schema: a:backdrop </para>
@@ -6913,11 +5453,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(2)]
     public DocumentFormat.OpenXml.Drawing.Backdrop Backdrop
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.Backdrop>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> ExtensionList.</para>
     /// <para> Represents the following element tag in the schema: a:extLst </para>
@@ -6925,11 +5467,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(3)]
     public DocumentFormat.OpenXml.Drawing.ExtensionList ExtensionList
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.ExtensionList>(3);
         set => SetElement(3, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -6957,71 +5501,49 @@ if( 10 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtrusionColor))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ContourColor))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "sp3d")]
+[Id(ElementTypeIdConst)]
 public partial class Shape3D : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10744;
-    /// <inheritdoc/>
-    public override string LocalName => "sp3d";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<Int64Value>(0, "z"),
-		AttributeTag.Create<Int64Value>(0, "extrusionH"),
-		AttributeTag.Create<Int64Value>(0, "contourW"),
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.PresetMaterialTypeValues>>(0, "prstMaterial")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Shape Depth.</para>
     /// <para>Represents the following attribute in the schema: z </para>
     /// </summary>
-    public Int64Value Z
-    {
-        get { return (Int64Value)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "z")]
+    [Index(0)]
+    public Int64Value Z { get; set; }
+	
     /// <summary>
     /// <para> Extrusion Height.</para>
     /// <para>Represents the following attribute in the schema: extrusionH </para>
     /// </summary>
-    public Int64Value ExtrusionHeight
-    {
-        get { return (Int64Value)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "extrusionH")]
+    [Index(1)]
+    public Int64Value ExtrusionHeight { get; set; }
+	
     /// <summary>
     /// <para> Contour Width.</para>
     /// <para>Represents the following attribute in the schema: contourW </para>
     /// </summary>
-    public Int64Value ContourWidth
-    {
-        get { return (Int64Value)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "contourW")]
+    [Index(2)]
+    public Int64Value ContourWidth { get; set; }
+	
     /// <summary>
     /// <para> Preset Material Type.</para>
     /// <para>Represents the following attribute in the schema: prstMaterial </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.PresetMaterialTypeValues> PresetMaterial
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.PresetMaterialTypeValues>)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "prstMaterial")]
+    [Index(3)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.PresetMaterialTypeValues> PresetMaterial { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the Shape3D class.
@@ -7053,38 +5575,12 @@ public partial class Shape3D : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "bevelT" == name)
-    return new DocumentFormat.OpenXml.Drawing.BevelTop();
     
-if( 10 == namespaceId && "bevelB" == name)
-    return new DocumentFormat.OpenXml.Drawing.BevelBottom();
-    
-if( 10 == namespaceId && "extrusionClr" == name)
-    return new DocumentFormat.OpenXml.Drawing.ExtrusionColor();
-    
-if( 10 == namespaceId && "contourClr" == name)
-    return new DocumentFormat.OpenXml.Drawing.ContourColor();
-    
-if( 10 == namespaceId && "extLst" == name)
-    return new DocumentFormat.OpenXml.Drawing.ExtensionList();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "bevelT","bevelB","extrusionClr","contourClr","extLst" };
-    private static readonly byte[] eleNamespaceIds = { 10,10,10,10,10 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Top Bevel.</para>
@@ -7093,11 +5589,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(0)]
     public DocumentFormat.OpenXml.Drawing.BevelTop BevelTop
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.BevelTop>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Bottom Bevel.</para>
     /// <para> Represents the following element tag in the schema: a:bevelB </para>
@@ -7105,11 +5603,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(1)]
     public DocumentFormat.OpenXml.Drawing.BevelBottom BevelBottom
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.BevelBottom>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Extrusion Color.</para>
     /// <para> Represents the following element tag in the schema: a:extrusionClr </para>
@@ -7117,11 +5617,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(2)]
     public DocumentFormat.OpenXml.Drawing.ExtrusionColor ExtrusionColor
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.ExtrusionColor>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Contour Color.</para>
     /// <para> Represents the following element tag in the schema: a:contourClr </para>
@@ -7129,11 +5631,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(3)]
     public DocumentFormat.OpenXml.Drawing.ContourColor ContourColor
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.ContourColor>(3);
         set => SetElement(3, value);
-    }
+	}
+    
     /// <summary>
     /// <para> ExtensionList.</para>
     /// <para> Represents the following element tag in the schema: a:extLst </para>
@@ -7141,11 +5645,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(4)]
     public DocumentFormat.OpenXml.Drawing.ExtensionList ExtensionList
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.ExtensionList>(4);
         set => SetElement(4, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -7167,20 +5673,14 @@ if( 10 == namespaceId && "extLst" == name)
 
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.FlatText))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "txPr")]
+[Id(ElementTypeIdConst)]
 public partial class TextProperties : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10745;
-    /// <inheritdoc/>
-    public override string LocalName => "txPr";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -7215,29 +5715,12 @@ public partial class TextProperties : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "sp3d" == name)
-    return new DocumentFormat.OpenXml.Drawing.Shape3DType();
     
-if( 10 == namespaceId && "flatTx" == name)
-    return new DocumentFormat.OpenXml.Drawing.FlatText();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "sp3d","flatTx" };
-    private static readonly byte[] eleNamespaceIds = { 10,10 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneChoice;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneChoice;
     
         /// <summary>
     /// <para> Apply 3D shape properties.</para>
@@ -7246,11 +5729,13 @@ if( 10 == namespaceId && "flatTx" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(0)]
     public DocumentFormat.OpenXml.Drawing.Shape3DType Shape3DType
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.Shape3DType>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> No text in 3D scene.</para>
     /// <para> Represents the following element tag in the schema: a:flatTx </para>
@@ -7258,11 +5743,13 @@ if( 10 == namespaceId && "flatTx" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(1)]
     public DocumentFormat.OpenXml.Drawing.FlatText FlatText
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.FlatText>(1);
         set => SetElement(1, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -7275,49 +5762,33 @@ if( 10 == namespaceId && "flatTx" == name)
 /// <para> When the object is serialized out as xml, its qualified name is dgm:title.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "title")]
+[Id(ElementTypeIdConst)]
 public partial class StyleDefinitionTitle : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10746;
-    /// <inheritdoc/>
-    public override string LocalName => "title";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "lang"),
-		AttributeTag.Create<StringValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Natural Language.</para>
     /// <para>Represents the following attribute in the schema: lang </para>
     /// </summary>
-    public StringValue Language
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "lang")]
+    [Index(0)]
+    public StringValue Language { get; set; }
+	
     /// <summary>
     /// <para> Description Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public StringValue Val
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(1)]
+    public StringValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the StyleDefinitionTitle class.
@@ -7339,49 +5810,33 @@ public partial class StyleDefinitionTitle : OpenXmlLeafElement
 /// <para> When the object is serialized out as xml, its qualified name is dgm:desc.</para>
 /// </summary>
 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "desc")]
+[Id(ElementTypeIdConst)]
 public partial class StyleLabelDescription : OpenXmlLeafElement
 {
     internal const int ElementTypeIdConst = 10747;
-    /// <inheritdoc/>
-    public override string LocalName => "desc";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "lang"),
-		AttributeTag.Create<StringValue>(0, "val")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Natural Language.</para>
     /// <para>Represents the following attribute in the schema: lang </para>
     /// </summary>
-    public StringValue Language
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "lang")]
+    [Index(0)]
+    public StringValue Language { get; set; }
+	
     /// <summary>
     /// <para> Description Value.</para>
     /// <para>Represents the following attribute in the schema: val </para>
     /// </summary>
-    public StringValue Val
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "val")]
+    [Index(1)]
+    public StringValue Val { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the StyleLabelDescription class.
@@ -7410,20 +5865,14 @@ public partial class StyleLabelDescription : OpenXmlLeafElement
 /// </remarks>
 
     [ChildElementInfo(typeof(StyleDisplayCategory))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "catLst")]
+[Id(ElementTypeIdConst)]
 public partial class StyleDisplayCategories : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10748;
-    /// <inheritdoc/>
-    public override string LocalName => "catLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -7458,19 +5907,11 @@ public partial class StyleDisplayCategories : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "cat" == name)
-    return new StyleDisplayCategory();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<StyleDisplayCategories>(deep);
@@ -7497,38 +5938,25 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
     [ChildElementInfo(typeof(TextProperties))]
     [ChildElementInfo(typeof(Style))]
     [ChildElementInfo(typeof(ExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "styleLbl")]
+[Id(ElementTypeIdConst)]
 public partial class StyleLabel : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10749;
-    /// <inheritdoc/>
-    public override string LocalName => "styleLbl";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "name")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Style Name.</para>
     /// <para>Represents the following attribute in the schema: name </para>
     /// </summary>
-    public StringValue Name
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "name")]
+    [Index(0)]
+    public StringValue Name { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the StyleLabel class.
@@ -7560,38 +5988,12 @@ public partial class StyleLabel : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "scene3d" == name)
-    return new Scene3D();
     
-if( 14 == namespaceId && "sp3d" == name)
-    return new Shape3D();
-    
-if( 14 == namespaceId && "txPr" == name)
-    return new TextProperties();
-    
-if( 14 == namespaceId && "style" == name)
-    return new Style();
-    
-if( 14 == namespaceId && "extLst" == name)
-    return new ExtensionList();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "scene3d","sp3d","txPr","style","extLst" };
-    private static readonly byte[] eleNamespaceIds = { 14,14,14,14,14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> 3-D Scene.</para>
@@ -7600,11 +6002,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public Scene3D Scene3D
-    {
+	{
         get => GetElement<Scene3D>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> 3-D Shape Properties.</para>
     /// <para> Represents the following element tag in the schema: dgm:sp3d </para>
@@ -7612,11 +6016,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(1)]
     public Shape3D Shape3D
-    {
+	{
         get => GetElement<Shape3D>(1);
         set => SetElement(1, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Text Properties.</para>
     /// <para> Represents the following element tag in the schema: dgm:txPr </para>
@@ -7624,11 +6030,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(2)]
     public TextProperties TextProperties
-    {
+	{
         get => GetElement<TextProperties>(2);
         set => SetElement(2, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Shape Style.</para>
     /// <para> Represents the following element tag in the schema: dgm:style </para>
@@ -7636,11 +6044,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(3)]
     public Style Style
-    {
+	{
         get => GetElement<Style>(3);
         set => SetElement(3, value);
-    }
+	}
+    
     /// <summary>
     /// <para> ExtensionList.</para>
     /// <para> Represents the following element tag in the schema: dgm:extLst </para>
@@ -7648,11 +6058,13 @@ if( 14 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(4)]
     public ExtensionList ExtensionList
-    {
+	{
         get => GetElement<ExtensionList>(4);
         set => SetElement(4, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -7672,20 +6084,14 @@ if( 14 == namespaceId && "extLst" == name)
 /// </remarks>
 
     [ChildElementInfo(typeof(Point))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "ptLst")]
+[Id(ElementTypeIdConst)]
 public partial class PointList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10750;
-    /// <inheritdoc/>
-    public override string LocalName => "ptLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -7720,19 +6126,11 @@ public partial class PointList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "pt" == name)
-    return new Point();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<PointList>(deep);
@@ -7751,20 +6149,14 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// </remarks>
 
     [ChildElementInfo(typeof(Connection))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "cxnLst")]
+[Id(ElementTypeIdConst)]
 public partial class ConnectionList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10751;
-    /// <inheritdoc/>
-    public override string LocalName => "cxnLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -7799,19 +6191,11 @@ public partial class ConnectionList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "cxn" == name)
-    return new Connection();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<ConnectionList>(deep);
@@ -7844,20 +6228,14 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "bg")]
+[Id(ElementTypeIdConst)]
 public partial class Background : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10752;
-    /// <inheritdoc/>
-    public override string LocalName => "bg";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -7892,40 +6270,11 @@ public partial class Background : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "noFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.NoFill();
     
-if( 10 == namespaceId && "solidFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.SolidFill();
-    
-if( 10 == namespaceId && "gradFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.GradientFill();
-    
-if( 10 == namespaceId && "blipFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.BlipFill();
-    
-if( 10 == namespaceId && "pattFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.PatternFill();
-    
-if( 10 == namespaceId && "grpFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.GroupFill();
-    
-if( 10 == namespaceId && "effectLst" == name)
-    return new DocumentFormat.OpenXml.Drawing.EffectList();
-    
-if( 10 == namespaceId && "effectDag" == name)
-    return new DocumentFormat.OpenXml.Drawing.EffectDag();
-    
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<Background>(deep);
@@ -7948,20 +6297,14 @@ if( 10 == namespaceId && "effectDag" == name)
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Outline))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "whole")]
+[Id(ElementTypeIdConst)]
 public partial class Whole : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10753;
-    /// <inheritdoc/>
-    public override string LocalName => "whole";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -7996,32 +6339,12 @@ public partial class Whole : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "ln" == name)
-    return new DocumentFormat.OpenXml.Drawing.Outline();
     
-if( 10 == namespaceId && "effectLst" == name)
-    return new DocumentFormat.OpenXml.Drawing.EffectList();
-    
-if( 10 == namespaceId && "effectDag" == name)
-    return new DocumentFormat.OpenXml.Drawing.EffectDag();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "ln","effectLst","effectDag" };
-    private static readonly byte[] eleNamespaceIds = { 10,10,10 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Outline.</para>
@@ -8030,11 +6353,13 @@ if( 10 == namespaceId && "effectDag" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(0)]
     public DocumentFormat.OpenXml.Drawing.Outline Outline
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.Outline>(0);
         set => SetElement(0, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -8054,20 +6379,14 @@ if( 10 == namespaceId && "effectDag" == name)
 /// </remarks>
 
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.DataModelExtension))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "extLst")]
+[Id(ElementTypeIdConst)]
 public partial class DataModelExtensionList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10754;
-    /// <inheritdoc/>
-    public override string LocalName => "extLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -8102,19 +6421,11 @@ public partial class DataModelExtensionList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "ext" == name)
-    return new DocumentFormat.OpenXml.Drawing.DataModelExtension();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<DataModelExtensionList>(deep);
@@ -8135,335 +6446,241 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 
     [ChildElementInfo(typeof(PresentationLayoutVariables))]
     [ChildElementInfo(typeof(Style))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "prSet")]
+[Id(ElementTypeIdConst)]
 public partial class PropertySet : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10755;
-    /// <inheritdoc/>
-    public override string LocalName => "prSet";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<StringValue>(0, "presAssocID"),
-		AttributeTag.Create<StringValue>(0, "presName"),
-		AttributeTag.Create<StringValue>(0, "presStyleLbl"),
-		AttributeTag.Create<Int32Value>(0, "presStyleIdx"),
-		AttributeTag.Create<Int32Value>(0, "presStyleCnt"),
-		AttributeTag.Create<StringValue>(0, "loTypeId"),
-		AttributeTag.Create<StringValue>(0, "loCatId"),
-		AttributeTag.Create<StringValue>(0, "qsTypeId"),
-		AttributeTag.Create<StringValue>(0, "qsCatId"),
-		AttributeTag.Create<StringValue>(0, "csTypeId"),
-		AttributeTag.Create<StringValue>(0, "csCatId"),
-		AttributeTag.Create<BooleanValue>(0, "coherent3DOff"),
-		AttributeTag.Create<StringValue>(0, "phldrT"),
-		AttributeTag.Create<BooleanValue>(0, "phldr"),
-		AttributeTag.Create<Int32Value>(0, "custAng"),
-		AttributeTag.Create<BooleanValue>(0, "custFlipVert"),
-		AttributeTag.Create<BooleanValue>(0, "custFlipHor"),
-		AttributeTag.Create<Int32Value>(0, "custSzX"),
-		AttributeTag.Create<Int32Value>(0, "custSzY"),
-		AttributeTag.Create<Int32Value>(0, "custScaleX"),
-		AttributeTag.Create<Int32Value>(0, "custScaleY"),
-		AttributeTag.Create<BooleanValue>(0, "custT"),
-		AttributeTag.Create<Int32Value>(0, "custLinFactX"),
-		AttributeTag.Create<Int32Value>(0, "custLinFactY"),
-		AttributeTag.Create<Int32Value>(0, "custLinFactNeighborX"),
-		AttributeTag.Create<Int32Value>(0, "custLinFactNeighborY"),
-		AttributeTag.Create<Int32Value>(0, "custRadScaleRad"),
-		AttributeTag.Create<Int32Value>(0, "custRadScaleInc")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Presentation Element Identifier.</para>
     /// <para>Represents the following attribute in the schema: presAssocID </para>
     /// </summary>
-    public StringValue PresentationElementId
-    {
-        get { return (StringValue)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "presAssocID")]
+    [Index(0)]
+    public StringValue PresentationElementId { get; set; }
+	
     /// <summary>
     /// <para> Presentation Name.</para>
     /// <para>Represents the following attribute in the schema: presName </para>
     /// </summary>
-    public StringValue PresentationName
-    {
-        get { return (StringValue)Attributes[1].Value; }
-        set { Attributes[1].Value = value; }
-    }
-    
+    [SchemaAttr(0, "presName")]
+    [Index(1)]
+    public StringValue PresentationName { get; set; }
+	
     /// <summary>
     /// <para> Presentation Style Label.</para>
     /// <para>Represents the following attribute in the schema: presStyleLbl </para>
     /// </summary>
-    public StringValue PresentationStyleLabel
-    {
-        get { return (StringValue)Attributes[2].Value; }
-        set { Attributes[2].Value = value; }
-    }
-    
+    [SchemaAttr(0, "presStyleLbl")]
+    [Index(2)]
+    public StringValue PresentationStyleLabel { get; set; }
+	
     /// <summary>
     /// <para> Presentation Style Index.</para>
     /// <para>Represents the following attribute in the schema: presStyleIdx </para>
     /// </summary>
-    public Int32Value PresentationStyleIndex
-    {
-        get { return (Int32Value)Attributes[3].Value; }
-        set { Attributes[3].Value = value; }
-    }
-    
+    [SchemaAttr(0, "presStyleIdx")]
+    [Index(3)]
+    public Int32Value PresentationStyleIndex { get; set; }
+	
     /// <summary>
     /// <para> Presentation Style Count.</para>
     /// <para>Represents the following attribute in the schema: presStyleCnt </para>
     /// </summary>
-    public Int32Value PresentationStyleCount
-    {
-        get { return (Int32Value)Attributes[4].Value; }
-        set { Attributes[4].Value = value; }
-    }
-    
+    [SchemaAttr(0, "presStyleCnt")]
+    [Index(4)]
+    public Int32Value PresentationStyleCount { get; set; }
+	
     /// <summary>
     /// <para> Current Diagram Type.</para>
     /// <para>Represents the following attribute in the schema: loTypeId </para>
     /// </summary>
-    public StringValue LayoutTypeId
-    {
-        get { return (StringValue)Attributes[5].Value; }
-        set { Attributes[5].Value = value; }
-    }
-    
+    [SchemaAttr(0, "loTypeId")]
+    [Index(5)]
+    public StringValue LayoutTypeId { get; set; }
+	
     /// <summary>
     /// <para> Current Diagram Category.</para>
     /// <para>Represents the following attribute in the schema: loCatId </para>
     /// </summary>
-    public StringValue LayoutCategoryId
-    {
-        get { return (StringValue)Attributes[6].Value; }
-        set { Attributes[6].Value = value; }
-    }
-    
+    [SchemaAttr(0, "loCatId")]
+    [Index(6)]
+    public StringValue LayoutCategoryId { get; set; }
+	
     /// <summary>
     /// <para> Current Style Type.</para>
     /// <para>Represents the following attribute in the schema: qsTypeId </para>
     /// </summary>
-    public StringValue QuickStyleTypeId
-    {
-        get { return (StringValue)Attributes[7].Value; }
-        set { Attributes[7].Value = value; }
-    }
-    
+    [SchemaAttr(0, "qsTypeId")]
+    [Index(7)]
+    public StringValue QuickStyleTypeId { get; set; }
+	
     /// <summary>
     /// <para> Current Style Category.</para>
     /// <para>Represents the following attribute in the schema: qsCatId </para>
     /// </summary>
-    public StringValue QuickStyleCategoryId
-    {
-        get { return (StringValue)Attributes[8].Value; }
-        set { Attributes[8].Value = value; }
-    }
-    
+    [SchemaAttr(0, "qsCatId")]
+    [Index(8)]
+    public StringValue QuickStyleCategoryId { get; set; }
+	
     /// <summary>
     /// <para> Color Transform Type Identifier.</para>
     /// <para>Represents the following attribute in the schema: csTypeId </para>
     /// </summary>
-    public StringValue ColorType
-    {
-        get { return (StringValue)Attributes[9].Value; }
-        set { Attributes[9].Value = value; }
-    }
-    
+    [SchemaAttr(0, "csTypeId")]
+    [Index(9)]
+    public StringValue ColorType { get; set; }
+	
     /// <summary>
     /// <para> Color Transform Category.</para>
     /// <para>Represents the following attribute in the schema: csCatId </para>
     /// </summary>
-    public StringValue ColorCategoryId
-    {
-        get { return (StringValue)Attributes[10].Value; }
-        set { Attributes[10].Value = value; }
-    }
-    
+    [SchemaAttr(0, "csCatId")]
+    [Index(10)]
+    public StringValue ColorCategoryId { get; set; }
+	
     /// <summary>
     /// <para> Coherent 3D Behavior.</para>
     /// <para>Represents the following attribute in the schema: coherent3DOff </para>
     /// </summary>
-    public BooleanValue Coherent3D
-    {
-        get { return (BooleanValue)Attributes[11].Value; }
-        set { Attributes[11].Value = value; }
-    }
-    
+    [SchemaAttr(0, "coherent3DOff")]
+    [Index(11)]
+    public BooleanValue Coherent3D { get; set; }
+	
     /// <summary>
     /// <para> Placeholder Text.</para>
     /// <para>Represents the following attribute in the schema: phldrT </para>
     /// </summary>
-    public StringValue PlaceholderText
-    {
-        get { return (StringValue)Attributes[12].Value; }
-        set { Attributes[12].Value = value; }
-    }
-    
+    [SchemaAttr(0, "phldrT")]
+    [Index(12)]
+    public StringValue PlaceholderText { get; set; }
+	
     /// <summary>
     /// <para> Placeholder.</para>
     /// <para>Represents the following attribute in the schema: phldr </para>
     /// </summary>
-    public BooleanValue Placeholder
-    {
-        get { return (BooleanValue)Attributes[13].Value; }
-        set { Attributes[13].Value = value; }
-    }
-    
+    [SchemaAttr(0, "phldr")]
+    [Index(13)]
+    public BooleanValue Placeholder { get; set; }
+	
     /// <summary>
     /// <para> Custom Rotation.</para>
     /// <para>Represents the following attribute in the schema: custAng </para>
     /// </summary>
-    public Int32Value Rotation
-    {
-        get { return (Int32Value)Attributes[14].Value; }
-        set { Attributes[14].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custAng")]
+    [Index(14)]
+    public Int32Value Rotation { get; set; }
+	
     /// <summary>
     /// <para> Custom Vertical Flip.</para>
     /// <para>Represents the following attribute in the schema: custFlipVert </para>
     /// </summary>
-    public BooleanValue VerticalFlip
-    {
-        get { return (BooleanValue)Attributes[15].Value; }
-        set { Attributes[15].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custFlipVert")]
+    [Index(15)]
+    public BooleanValue VerticalFlip { get; set; }
+	
     /// <summary>
     /// <para> Custom Horizontal Flip.</para>
     /// <para>Represents the following attribute in the schema: custFlipHor </para>
     /// </summary>
-    public BooleanValue HorizontalFlip
-    {
-        get { return (BooleanValue)Attributes[16].Value; }
-        set { Attributes[16].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custFlipHor")]
+    [Index(16)]
+    public BooleanValue HorizontalFlip { get; set; }
+	
     /// <summary>
     /// <para> Fixed Width Override.</para>
     /// <para>Represents the following attribute in the schema: custSzX </para>
     /// </summary>
-    public Int32Value FixedWidthOverride
-    {
-        get { return (Int32Value)Attributes[17].Value; }
-        set { Attributes[17].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custSzX")]
+    [Index(17)]
+    public Int32Value FixedWidthOverride { get; set; }
+	
     /// <summary>
     /// <para> Fixed Height Override.</para>
     /// <para>Represents the following attribute in the schema: custSzY </para>
     /// </summary>
-    public Int32Value FixedHeightOverride
-    {
-        get { return (Int32Value)Attributes[18].Value; }
-        set { Attributes[18].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custSzY")]
+    [Index(18)]
+    public Int32Value FixedHeightOverride { get; set; }
+	
     /// <summary>
     /// <para> Width Scale.</para>
     /// <para>Represents the following attribute in the schema: custScaleX </para>
     /// </summary>
-    public Int32Value WidthScale
-    {
-        get { return (Int32Value)Attributes[19].Value; }
-        set { Attributes[19].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custScaleX")]
+    [Index(19)]
+    public Int32Value WidthScale { get; set; }
+	
     /// <summary>
     /// <para> Height Scale.</para>
     /// <para>Represents the following attribute in the schema: custScaleY </para>
     /// </summary>
-    public Int32Value HightScale
-    {
-        get { return (Int32Value)Attributes[20].Value; }
-        set { Attributes[20].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custScaleY")]
+    [Index(20)]
+    public Int32Value HightScale { get; set; }
+	
     /// <summary>
     /// <para> Text Changed.</para>
     /// <para>Represents the following attribute in the schema: custT </para>
     /// </summary>
-    public BooleanValue TextChanged
-    {
-        get { return (BooleanValue)Attributes[21].Value; }
-        set { Attributes[21].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custT")]
+    [Index(21)]
+    public BooleanValue TextChanged { get; set; }
+	
     /// <summary>
     /// <para> Custom Factor Width.</para>
     /// <para>Represents the following attribute in the schema: custLinFactX </para>
     /// </summary>
-    public Int32Value FactorWidth
-    {
-        get { return (Int32Value)Attributes[22].Value; }
-        set { Attributes[22].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custLinFactX")]
+    [Index(22)]
+    public Int32Value FactorWidth { get; set; }
+	
     /// <summary>
     /// <para> Custom Factor Height.</para>
     /// <para>Represents the following attribute in the schema: custLinFactY </para>
     /// </summary>
-    public Int32Value FactorHeight
-    {
-        get { return (Int32Value)Attributes[23].Value; }
-        set { Attributes[23].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custLinFactY")]
+    [Index(23)]
+    public Int32Value FactorHeight { get; set; }
+	
     /// <summary>
     /// <para> Neighbor Offset Width.</para>
     /// <para>Represents the following attribute in the schema: custLinFactNeighborX </para>
     /// </summary>
-    public Int32Value NeighborOffsetWidth
-    {
-        get { return (Int32Value)Attributes[24].Value; }
-        set { Attributes[24].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custLinFactNeighborX")]
+    [Index(24)]
+    public Int32Value NeighborOffsetWidth { get; set; }
+	
     /// <summary>
     /// <para> Neighbor Offset Height.</para>
     /// <para>Represents the following attribute in the schema: custLinFactNeighborY </para>
     /// </summary>
-    public Int32Value NeighborOffsetHeight
-    {
-        get { return (Int32Value)Attributes[25].Value; }
-        set { Attributes[25].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custLinFactNeighborY")]
+    [Index(25)]
+    public Int32Value NeighborOffsetHeight { get; set; }
+	
     /// <summary>
     /// <para> Radius Scale.</para>
     /// <para>Represents the following attribute in the schema: custRadScaleRad </para>
     /// </summary>
-    public Int32Value RadiusScale
-    {
-        get { return (Int32Value)Attributes[26].Value; }
-        set { Attributes[26].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custRadScaleRad")]
+    [Index(26)]
+    public Int32Value RadiusScale { get; set; }
+	
     /// <summary>
     /// <para> Include Angle Scale.</para>
     /// <para>Represents the following attribute in the schema: custRadScaleInc </para>
     /// </summary>
-    public Int32Value IncludeAngleScale
-    {
-        get { return (Int32Value)Attributes[27].Value; }
-        set { Attributes[27].Value = value; }
-    }
-    
+    [SchemaAttr(0, "custRadScaleInc")]
+    [Index(27)]
+    public Int32Value IncludeAngleScale { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the PropertySet class.
@@ -8495,29 +6712,12 @@ public partial class PropertySet : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 14 == namespaceId && "presLayoutVars" == name)
-    return new PresentationLayoutVariables();
     
-if( 14 == namespaceId && "style" == name)
-    return new Style();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "presLayoutVars","style" };
-    private static readonly byte[] eleNamespaceIds = { 14,14 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Presentation Layout Variables.</para>
@@ -8526,11 +6726,13 @@ if( 14 == namespaceId && "style" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(0)]
     public PresentationLayoutVariables PresentationLayoutVariables
-    {
+	{
         get => GetElement<PresentationLayoutVariables>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Shape Style.</para>
     /// <para> Represents the following element tag in the schema: dgm:style </para>
@@ -8538,11 +6740,13 @@ if( 14 == namespaceId && "style" == name)
     /// <remark>
     /// xmlns:dgm = http://schemas.openxmlformats.org/drawingml/2006/diagram
     /// </remark>
+	[Index(1)]
     public Style Style
-    {
+	{
         get => GetElement<Style>(1);
         set => SetElement(1, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -8590,38 +6794,25 @@ if( 14 == namespaceId && "style" == name)
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "spPr")]
+[Id(ElementTypeIdConst)]
 public partial class ShapeProperties : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10756;
-    /// <inheritdoc/>
-    public override string LocalName => "spPr";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
+
     
-
-        private static readonly ReadOnlyArray<AttributeTag> s_attributeTags = new []
-	{
-		AttributeTag.Create<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>(0, "bwMode")
-	};
-    internal override AttributeTagCollection RawAttributes { get; } = new AttributeTagCollection(s_attributeTags);
-
     
         /// <summary>
     /// <para> Black and White Mode.</para>
     /// <para>Represents the following attribute in the schema: bwMode </para>
     /// </summary>
-    public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> BlackWhiteMode
-    {
-        get { return (EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>)Attributes[0].Value; }
-        set { Attributes[0].Value = value; }
-    }
-    
+    [SchemaAttr(0, "bwMode")]
+    [Index(0)]
+    public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> BlackWhiteMode { get; set; }
+	
 
     /// <summary>
     /// Initializes a new instance of the ShapeProperties class.
@@ -8653,68 +6844,12 @@ public partial class ShapeProperties : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "xfrm" == name)
-    return new DocumentFormat.OpenXml.Drawing.Transform2D();
     
-if( 10 == namespaceId && "custGeom" == name)
-    return new DocumentFormat.OpenXml.Drawing.CustomGeometry();
-    
-if( 10 == namespaceId && "prstGeom" == name)
-    return new DocumentFormat.OpenXml.Drawing.PresetGeometry();
-    
-if( 10 == namespaceId && "noFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.NoFill();
-    
-if( 10 == namespaceId && "solidFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.SolidFill();
-    
-if( 10 == namespaceId && "gradFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.GradientFill();
-    
-if( 10 == namespaceId && "blipFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.BlipFill();
-    
-if( 10 == namespaceId && "pattFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.PatternFill();
-    
-if( 10 == namespaceId && "grpFill" == name)
-    return new DocumentFormat.OpenXml.Drawing.GroupFill();
-    
-if( 10 == namespaceId && "ln" == name)
-    return new DocumentFormat.OpenXml.Drawing.Outline();
-    
-if( 10 == namespaceId && "effectLst" == name)
-    return new DocumentFormat.OpenXml.Drawing.EffectList();
-    
-if( 10 == namespaceId && "effectDag" == name)
-    return new DocumentFormat.OpenXml.Drawing.EffectDag();
-    
-if( 10 == namespaceId && "scene3d" == name)
-    return new DocumentFormat.OpenXml.Drawing.Scene3DType();
-    
-if( 10 == namespaceId && "sp3d" == name)
-    return new DocumentFormat.OpenXml.Drawing.Shape3DType();
-    
-if( 10 == namespaceId && "extLst" == name)
-    return new DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "xfrm","custGeom","prstGeom","noFill","solidFill","gradFill","blipFill","pattFill","grpFill","ln","effectLst","effectDag","scene3d","sp3d","extLst" };
-    private static readonly byte[] eleNamespaceIds = { 10,10,10,10,10,10,10,10,10,10,10,10,10,10,10 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> 2D Transform for Individual Objects.</para>
@@ -8723,11 +6858,13 @@ if( 10 == namespaceId && "extLst" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(0)]
     public DocumentFormat.OpenXml.Drawing.Transform2D Transform2D
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.Transform2D>(0);
         set => SetElement(0, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -8751,20 +6888,14 @@ if( 10 == namespaceId && "extLst" == name)
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BodyProperties))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ListStyle))]
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Paragraph))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "t")]
+[Id(ElementTypeIdConst)]
 public partial class TextBody : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10757;
-    /// <inheritdoc/>
-    public override string LocalName => "t";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -8799,32 +6930,12 @@ public partial class TextBody : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "bodyPr" == name)
-    return new DocumentFormat.OpenXml.Drawing.BodyProperties();
     
-if( 10 == namespaceId && "lstStyle" == name)
-    return new DocumentFormat.OpenXml.Drawing.ListStyle();
-    
-if( 10 == namespaceId && "p" == name)
-    return new DocumentFormat.OpenXml.Drawing.Paragraph();
-    
-
-    return null;
-}
-
-        private static readonly string[] eleTagNames = { "bodyPr","lstStyle","p" };
-    private static readonly byte[] eleNamespaceIds = { 10,10,10 };
-    
-    internal override string[] ElementTagNames => eleTagNames;
-    
-    internal override byte[] ElementNamespaceIds => eleNamespaceIds;
-    internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
+        internal override OpenXmlCompositeType OpenXmlCompositeType => OpenXmlCompositeType.OneSequence;
     
         /// <summary>
     /// <para> Body Properties.</para>
@@ -8833,11 +6944,13 @@ if( 10 == namespaceId && "p" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(0)]
     public DocumentFormat.OpenXml.Drawing.BodyProperties BodyProperties
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.BodyProperties>(0);
         set => SetElement(0, value);
-    }
+	}
+    
     /// <summary>
     /// <para> Text List Styles.</para>
     /// <para> Represents the following element tag in the schema: a:lstStyle </para>
@@ -8845,11 +6958,13 @@ if( 10 == namespaceId && "p" == name)
     /// <remark>
     /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
     /// </remark>
+	[Index(1)]
     public DocumentFormat.OpenXml.Drawing.ListStyle ListStyle
-    {
+	{
         get => GetElement<DocumentFormat.OpenXml.Drawing.ListStyle>(1);
         set => SetElement(1, value);
-    }
+	}
+    
 
 
     /// <inheritdoc/>
@@ -8869,20 +6984,14 @@ if( 10 == namespaceId && "p" == name)
 /// </remarks>
 
     [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PtExtension))]
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "3.0")]
+
 [OfficeAvailability(FileFormatVersions.Office2007)]
+[SchemaAttr(14, "extLst")]
+[Id(ElementTypeIdConst)]
 public partial class PtExtensionList : OpenXmlCompositeElement
 {
     internal const int ElementTypeIdConst = 10758;
-    /// <inheritdoc/>
-    public override string LocalName => "extLst";
-    
-    internal override byte NamespaceId => 14;
-    
     internal override int ElementTypeId => ElementTypeIdConst;
-   
-    internal override FileFormatVersions InitialVersion => FileFormatVersions.Office2007;
-    
 
     
     
@@ -8917,19 +7026,11 @@ public partial class PtExtensionList : OpenXmlCompositeElement
         : base(outerXml)
     {
     }
+    
   
      
     
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
-internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
-{
-    if( 10 == namespaceId && "ext" == name)
-    return new DocumentFormat.OpenXml.Drawing.PtExtension();
     
-
-    return null;
-}
-
     
     /// <inheritdoc/>
     public override OpenXmlElement CloneNode(bool deep) => CloneImp<PtExtensionList>(deep);
@@ -8938,7 +7039,6 @@ internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
 /// <summary>
 /// Color Application Method Type 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ColorApplicationMethodValues
 {  
 	///<summary>
@@ -8964,7 +7064,6 @@ Repeat,
 /// <summary>
 /// Hue Direction 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum HueDirectionValues
 {  
 	///<summary>
@@ -8984,7 +7083,6 @@ Counterclockwise,
 /// <summary>
 /// Point Type 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum PointValues
 {  
 	///<summary>
@@ -9028,7 +7126,6 @@ SiblingTransition,
 /// <summary>
 /// Connection Type 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ConnectionValues
 {  
 	///<summary>
@@ -9060,7 +7157,6 @@ UnknownRelationship,
 /// <summary>
 /// Diagram Direction Definition 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum DirectionValues
 {  
 	///<summary>
@@ -9080,7 +7176,6 @@ Reversed,
 /// <summary>
 /// Hierarchy Branch Style Definition 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum HierarchyBranchStyleValues
 {  
 	///<summary>
@@ -9118,7 +7213,6 @@ Initial,
 /// <summary>
 /// One by One Animation Value Definition 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum AnimateOneByOneValues
 {  
 	///<summary>
@@ -9144,7 +7238,6 @@ Branch,
 /// <summary>
 /// Animation Level String Definition 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum AnimationLevelStringValues
 {  
 	///<summary>
@@ -9170,7 +7263,6 @@ Center,
 /// <summary>
 /// Resize Handle 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ResizeHandlesStringValues
 {  
 	///<summary>
@@ -9190,7 +7282,6 @@ Relative,
 /// <summary>
 /// Algorithm Types 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum AlgorithmValues
 {  
 	///<summary>
@@ -9258,7 +7349,6 @@ Snake,
 /// <summary>
 /// Axis Type 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum AxisValues
 {  
 	///<summary>
@@ -9344,7 +7434,6 @@ None,
 /// <summary>
 /// Boolean Constraint 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum BoolOperatorValues
 {  
 	///<summary>
@@ -9376,7 +7465,6 @@ LessThanOrEqualTo,
 /// <summary>
 /// Child Order 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ChildOrderValues
 {  
 	///<summary>
@@ -9396,7 +7484,6 @@ Top,
 /// <summary>
 /// Constraint Type 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ConstraintValues
 {  
 	///<summary>
@@ -9788,7 +7875,6 @@ WidthOffset,
 /// <summary>
 /// Constraint Relationship 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ConstraintRelationshipValues
 {  
 	///<summary>
@@ -9814,7 +7900,6 @@ Descendant,
 /// <summary>
 /// Element Type 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ElementValues
 {  
 	///<summary>
@@ -9882,7 +7967,6 @@ SiblingTransition,
 /// <summary>
 /// Parameter Identifier 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ParameterIdValues
 {  
 	///<summary>
@@ -10220,7 +8304,6 @@ EndPoints,
 /// <summary>
 /// Function Type 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum FunctionValues
 {  
 	///<summary>
@@ -10276,7 +8359,6 @@ MaxDepth,
 /// <summary>
 /// Function Operator 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum FunctionOperatorValues
 {  
 	///<summary>
@@ -10320,7 +8402,6 @@ LessThanOrEqualTo,
 /// <summary>
 /// Horizontal Alignment 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum HorizontalAlignmentValues
 {  
 	///<summary>
@@ -10352,7 +8433,6 @@ None,
 /// <summary>
 /// Child Direction 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ChildDirectionValues
 {  
 	///<summary>
@@ -10372,7 +8452,6 @@ Vertical,
 /// <summary>
 /// Child Alignment 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ChildAlignmentValues
 {  
 	///<summary>
@@ -10404,7 +8483,6 @@ Right,
 /// <summary>
 /// Secondary Child Alignment 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum SecondaryChildAlignmentValues
 {  
 	///<summary>
@@ -10442,7 +8520,6 @@ Right,
 /// <summary>
 /// Linear Direction 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum LinearDirectionValues
 {  
 	///<summary>
@@ -10474,7 +8551,6 @@ FromBottom,
 /// <summary>
 /// Secondary Linear Direction 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum SecondaryLinearDirectionValues
 {  
 	///<summary>
@@ -10512,7 +8588,6 @@ FromBottom,
 /// <summary>
 /// Starting Element 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum StartingElementValues
 {  
 	///<summary>
@@ -10532,7 +8607,6 @@ Transition,
 /// <summary>
 /// Rotation Path 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum RotationPathValues
 {  
 	///<summary>
@@ -10552,7 +8626,6 @@ AlongPath,
 /// <summary>
 /// Center Shape Mapping 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum CenterShapeMappingValues
 {  
 	///<summary>
@@ -10572,7 +8645,6 @@ FirstNode,
 /// <summary>
 /// Bend Point 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum BendPointValues
 {  
 	///<summary>
@@ -10598,7 +8670,6 @@ End,
 /// <summary>
 /// Connector Routing 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ConnectorRoutingValues
 {  
 	///<summary>
@@ -10630,7 +8701,6 @@ LongCurve,
 /// <summary>
 /// Arrowhead Styles 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ArrowheadStyleValues
 {  
 	///<summary>
@@ -10656,7 +8726,6 @@ NoArrow,
 /// <summary>
 /// Connector Dimension 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ConnectorDimensionValues
 {  
 	///<summary>
@@ -10682,7 +8751,6 @@ Custom,
 /// <summary>
 /// Connector Point 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ConnectorPointValues
 {  
 	///<summary>
@@ -10756,7 +8824,6 @@ Radial,
 /// <summary>
 /// Node Horizontal Alignment 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum NodeHorizontalAlignmentValues
 {  
 	///<summary>
@@ -10782,7 +8849,6 @@ Right,
 /// <summary>
 /// Node Vertical Alignment 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum NodeVerticalAlignmentValues
 {  
 	///<summary>
@@ -10808,7 +8874,6 @@ Bottom,
 /// <summary>
 /// Fallback Dimension 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum FallbackDimensionValues
 {  
 	///<summary>
@@ -10828,7 +8893,6 @@ TwoDimension,
 /// <summary>
 /// Text Direction 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum TextDirectionValues
 {  
 	///<summary>
@@ -10848,7 +8912,6 @@ FromBottom,
 /// <summary>
 /// Pyramid Accent Position 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum PyramidAccentPositionValues
 {  
 	///<summary>
@@ -10868,7 +8931,6 @@ After,
 /// <summary>
 /// Pyramid Accent Text Margin 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum PyramidAccentTextMarginValues
 {  
 	///<summary>
@@ -10888,7 +8950,6 @@ Stack,
 /// <summary>
 /// Text Block Direction 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum TextBlockDirectionValues
 {  
 	///<summary>
@@ -10908,7 +8969,6 @@ Vertical,
 /// <summary>
 /// Text Anchor Horizontal 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum TextAnchorHorizontalValues
 {  
 	///<summary>
@@ -10928,7 +8988,6 @@ Center,
 /// <summary>
 /// Text Anchor Vertical 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum TextAnchorVerticalValues
 {  
 	///<summary>
@@ -10954,7 +9013,6 @@ Bottom,
 /// <summary>
 /// Text Alignment 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum TextAlignmentValues
 {  
 	///<summary>
@@ -10980,7 +9038,6 @@ Right,
 /// <summary>
 /// Auto Text Rotation 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum AutoTextRotationValues
 {  
 	///<summary>
@@ -11006,7 +9063,6 @@ Gravity,
 /// <summary>
 /// Grow Direction 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum GrowDirectionValues
 {  
 	///<summary>
@@ -11038,7 +9094,6 @@ BottomRight,
 /// <summary>
 /// Flow Direction 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum FlowDirectionValues
 {  
 	///<summary>
@@ -11058,7 +9113,6 @@ Column,
 /// <summary>
 /// Continue Direction 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum ContinueDirectionValues
 {  
 	///<summary>
@@ -11078,7 +9132,6 @@ SameDirection,
 /// <summary>
 /// Breakpoint 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum BreakpointValues
 {  
 	///<summary>
@@ -11104,7 +9157,6 @@ Fixed,
 /// <summary>
 /// Offset 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum OffsetValues
 {  
 	///<summary>
@@ -11124,7 +9176,6 @@ Offset,
 /// <summary>
 /// Hierarchy Alignment 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum HierarchyAlignmentValues
 {  
 	///<summary>
@@ -11228,7 +9279,6 @@ RightCenterDescendants,
 /// <summary>
 /// Variable Type 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum VariableValues
 {  
 	///<summary>
@@ -11296,7 +9346,6 @@ ResizeHandles,
 /// <summary>
 /// Output Shape Type 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum OutputShapeValues
 {  
 	///<summary>
@@ -11316,7 +9365,6 @@ Connection,
 /// <summary>
 /// Vertical Alignment 
 /// </summary> 
-[System.CodeDom.Compiler.GeneratedCode("DomGen", "2.0")]
 public enum VerticalAlignmentValues
 {  
 	///<summary>
