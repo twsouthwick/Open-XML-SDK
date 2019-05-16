@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -9,25 +10,39 @@ using System.Threading.Tasks;
 
 namespace PdfConverter
 {
-    public interface IConversionQueue
+    public static class PdfConverterExtensions
     {
-        Task<Stream> ConvertAsync(Stream input, CancellationToken token);
+        public static void AddPdfConverter(IServiceCollection services)
+        {
+            services.AddHostedService<PdfConversionBackgroundService>();
+            services.AddSingleton<ConversionQueue>();
+            services.AddSingleton<IPdfConverter>(ctx => ctx.GetRequiredService<ConversionQueue>());
+        }
+    }
+    public interface IPdfConverter
+    {
+        Task<IPdfFile> ConvertAsync(Stream input, CancellationToken token);
     }
 
-    internal class ConversionQueue : IConversionQueue
+    public interface IPdfFile : IDisposable
     {
-        private readonly ConcurrentQueue<(Stream stream, TaskCompletionSource<Stream> tcs)> _queue = new ConcurrentQueue<(Stream stream, TaskCompletionSource<Stream>)>();
+        Stream OpenStream();
+    }
+
+    internal class ConversionQueue : IPdfConverter
+    {
+        private readonly ConcurrentQueue<(Stream stream, TaskCompletionSource<IPdfFile> tcs)> _queue = new ConcurrentQueue<(Stream stream, TaskCompletionSource<IPdfFile>)>();
         private readonly SemaphoreSlim _signal = new SemaphoreSlim(0);
 
-        public Task<Stream> ConvertAsync(Stream input, CancellationToken token)
+        public Task<IPdfFile> ConvertAsync(Stream input, CancellationToken token)
         {
-            var tcs = new TaskCompletionSource<Stream>();
+            var tcs = new TaskCompletionSource<IPdfFile>();
             _queue.Enqueue((input, tcs));
             _signal.Release();
             return tcs.Task;
         }
 
-        public async Task<(Stream stream, TaskCompletionSource<Stream> tcs)> DequeueAsync(CancellationToken token)
+        public async Task<(Stream stream, TaskCompletionSource<IPdfFile> tcs)> DequeueAsync(CancellationToken token)
         {
             await _signal.WaitAsync(token);
 
@@ -49,12 +64,65 @@ namespace PdfConverter
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (!stoppingToken.IsCancellationRequested)
+            using (var pdf = new PdfConverter())
             {
-                var (stream, tcs) = await _queue.DequeueAsync(stoppingToken);
+                while (!stoppingToken.IsCancellationRequested)
+                {
+                    var (stream, tcs) = await _queue.DequeueAsync(stoppingToken);
 
+                    try
+                    {
+                        var result = new TemporaryFile();
 
+                        using (var file = await TemporaryFile.CreateAsync(stream))
+                        {
+                            pdf.Convert(file.Name, result.Name);
+                        }
+
+                        tcs.SetResult(result);
+                    }
+                    catch (Exception e)
+                    {
+                        tcs.SetException(e);
+                    }
+                }
             }
+        }
+
+        private class TemporaryFile : IPdfFile
+        {
+            public TemporaryFile()
+                : this(".pdf")
+            {
+            }
+
+            private TemporaryFile(string extension)
+            {
+                Name = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}{extension}");
+            }
+
+            public static async Task<TemporaryFile> CreateAsync(Stream stream)
+            {
+                var file = new TemporaryFile(".docx");
+
+                using (var fs = File.OpenWrite(file.Name))
+                {
+                    await stream.CopyToAsync(fs);
+                }
+
+                return file;
+            }
+
+            public string Name { get; }
+
+            public void Dispose()
+            {
+                File.Delete(Name);
+            }
+
+            public Stream OpenStream() => File.OpenRead(Name);
+
+            public Stream OpenWrite() => File.OpenWrite(Name);
         }
     }
 }

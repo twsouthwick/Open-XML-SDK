@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 
 namespace PdfConverter
 {
@@ -14,12 +7,7 @@ namespace PdfConverter
     {
         public static void Main(string[] args)
         {
-            using (var pdf = new PdfConverter())
-            {
-                pdf.Convert(@"C:\Users\tasou\Downloads\marriott leicester.pdf");
-            }
-
-            //CreateWebHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args).Build().Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

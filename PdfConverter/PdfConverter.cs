@@ -1,10 +1,7 @@
 ﻿using Microsoft.Office.Interop.Word;
 using Microsoft.Win32;
 using System;
-using System.Collections;
 using System.IO;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 
 namespace PdfConverter
 {
