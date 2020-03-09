@@ -22,7 +22,25 @@ namespace DocumentFormat.OpenXml.Framework
         private readonly TypeConcurrentDictionary<OpenXmlElementData> _elementData = new TypeConcurrentDictionary<OpenXmlElementData>();
         private readonly TypeConcurrentDictionary<OpenXmlPartData> _partData = new TypeConcurrentDictionary<OpenXmlPartData>();
 
+#if USE_WEAKREFERENCE_CACHE
+        private readonly static WeakReference<PackageCache> _cache = new WeakReference<PackageCache>(null);
+
+        public static PackageCache Cache
+        {
+            get
+            {
+                if (!_cache.TryGetTarget(out var cache))
+                {
+                    cache = new PackageCache();
+                    _cache.SetTarget(cache);
+                }
+
+                return cache;
+            }
+        }
+#else
         public static PackageCache Cache { get; } = new PackageCache();
+#endif
 
         public Func<T> GetFactory<T>(Type type)
         {
@@ -62,5 +80,29 @@ namespace DocumentFormat.OpenXml.Framework
         private sealed class TypeConcurrentDictionary<TValue> : ConcurrentDictionary<Type, TValue>
         {
         }
+
+#if USE_WEAKREFERENCE_CACHE && (NET35 || NET40)
+        private readonly struct WeakReference<T>
+            where T : class
+        {
+            private readonly WeakReference _weak;
+
+            public WeakReference(T instance)
+            {
+                _weak = new WeakReference(instance);
+            }
+
+            public bool TryGetTarget(out T target)
+            {
+                target = _weak.Target as T;
+                return target != null;
+            }
+
+            public void SetTarget(T target)
+            {
+                _weak.Target = target;
+            }
+        }
+#endif
     }
 }
