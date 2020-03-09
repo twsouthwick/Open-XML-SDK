@@ -22,8 +22,6 @@ namespace DocumentFormat.OpenXml.CustomProperties
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomDocumentProperty))]
-
 [SchemaAttr(4, "Properties")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class Properties : OpenXmlPartRootElement
@@ -140,40 +138,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTVector))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTArray))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTBlob))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTOBlob))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTEmpty))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTNull))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTByte))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTShort))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTInt32))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTInt64))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTInteger))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTUnsignedByte))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTUnsignedShort))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTUnsignedInt32))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTUnsignedInt64))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTUnsignedInteger))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTFloat))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTDouble))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTDecimal))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTLPSTR))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTLPWSTR))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTBString))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTDate))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTFileTime))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTBool))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTCurrency))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTError))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTStreamData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTOStreamData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTStorage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTOStorage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTVStreamData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTClassId))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTClipboardData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(4, "property")]

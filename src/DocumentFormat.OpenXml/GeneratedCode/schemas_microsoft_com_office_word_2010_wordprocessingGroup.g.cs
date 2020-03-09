@@ -178,16 +178,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NonVisualGroupDrawingShapeProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GroupShapeProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Word.DrawingShape.WordprocessingShape), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GroupShape), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GraphicFrame), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Pictures.Picture))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Word.ContentPart), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2010)]
-
 public abstract partial class WordprocessingGroupType : OpenXmlCompositeElement
 {
     
@@ -276,9 +266,6 @@ public abstract partial class WordprocessingGroupType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnClick))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnHover))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(60, "cNvPr")]
@@ -416,8 +403,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GraphicFrameLocks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(60, "cNvFrPr")]
@@ -505,8 +490,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Offset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extents))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(60, "xfrm")]
@@ -614,7 +597,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(60, "extLst")]
@@ -681,8 +663,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupShapeLocks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualGroupDrawingShapePropsExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(60, "cNvGrpSpPr")]
@@ -779,17 +759,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.TransformGroup))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(60, "grpSpPr")]
@@ -897,11 +866,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NonVisualGraphicFrameProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Transform2D), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Graphic))]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(60, "graphicFrame")]

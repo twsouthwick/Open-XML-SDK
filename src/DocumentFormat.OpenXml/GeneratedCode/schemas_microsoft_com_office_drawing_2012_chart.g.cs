@@ -26,9 +26,6 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing.Chart
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PivotTableName))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.FormatId))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "pivotSource")]
@@ -183,21 +180,6 @@ public partial class NumberingFormat : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Transform2D))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.CustomGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Outline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "spPr")]
@@ -312,8 +294,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ManualLayout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "layout")]
@@ -400,7 +380,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SequenceOfReferences), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "fullRef")]
@@ -474,7 +453,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SequenceOfReferences), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "levelRef")]
@@ -548,7 +526,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SequenceOfReferences), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "formulaRef")]
@@ -622,7 +599,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartText), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredSeriesTitle")]
@@ -696,7 +672,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AxisDataSourceType), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredCategoryTitle")]
@@ -770,7 +745,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AreaChartSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredAreaSeries")]
@@ -844,7 +818,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BarChartSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredBarSeries")]
@@ -918,7 +891,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BubbleChartSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredBubbleSeries")]
@@ -992,7 +964,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(LineChartSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredLineSeries")]
@@ -1066,7 +1037,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PieChartSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredPieSeries")]
@@ -1140,7 +1110,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RadarChartSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredRadarSeries")]
@@ -1214,7 +1183,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ScatterChartSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredScatterSeries")]
@@ -1288,7 +1256,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SurfaceChartSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "filteredSurfaceSeries")]
@@ -1363,8 +1330,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataLabelsRangeChache), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "datalabelsRange")]
@@ -1451,7 +1416,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CategoryFilterException), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "categoryFilterExceptions")]
@@ -1511,7 +1475,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataLabelFieldTableEntry), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "dlblFieldTable")]
@@ -1689,7 +1652,6 @@ public partial class Bubble3D : BooleanType
 /// Defines the BooleanType class.
 /// </summary>
 
-
 public abstract partial class BooleanType : OpenXmlLeafElement
 {
     
@@ -1724,9 +1686,6 @@ public abstract partial class BooleanType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.StringReference))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.RichText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.StringLiteral))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "tx")]
@@ -1829,7 +1788,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "leaderLines")]
@@ -2003,11 +1961,6 @@ public partial class TextFieldGuid : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.MultiLevelStringReference))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.NumberReference))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.NumberLiteral))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.StringReference))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.StringLiteral))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "cat")]
@@ -2149,20 +2102,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Order))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.SeriesText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.InvertIfNegative))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PictureOptions))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataLabels))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Trendline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ErrorBars))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.CategoryAxisData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Values))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Shape))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.BarSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "ser")]
@@ -2328,20 +2267,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Order))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.SeriesText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Marker))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PictureOptions))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataLabels))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Trendline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ErrorBars))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.CategoryAxisData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Values))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Smooth))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.LineSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "ser")]
@@ -2506,19 +2431,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Order))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.SeriesText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Marker))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataLabels))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Trendline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ErrorBars))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.XValues))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.YValues))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Smooth))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ScatterSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "ser")]
@@ -2669,18 +2581,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Order))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.SeriesText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PictureOptions))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataLabels))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Trendline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ErrorBars))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.CategoryAxisData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Values))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.AreaSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "ser")]
@@ -2829,17 +2729,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Order))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.SeriesText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PictureOptions))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Explosion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataLabels))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.CategoryAxisData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Values))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PieSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "ser")]
@@ -3003,21 +2892,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Order))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.SeriesText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PictureOptions))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.InvertIfNegative))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataLabels))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Trendline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ErrorBars))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.XValues))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.YValues))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.BubbleSize))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Bubble3D))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.BubbleSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "ser")]
@@ -3181,17 +3055,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Order))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.SeriesText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PictureOptions))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Marker))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataLabels))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.CategoryAxisData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Values))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.RadarSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "ser")]
@@ -3349,15 +3212,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Order))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.SeriesText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PictureOptions))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.CategoryAxisData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Values))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Bubble3D))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.SurfaceSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "ser")]
@@ -3657,10 +3511,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PointCount))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.StringPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.StrDataExtensionList))]
-
 public abstract partial class StringDataType : OpenXmlCompositeElement
 {
     
@@ -3760,10 +3610,6 @@ public partial class Explosion : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Symbol))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Size))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "marker")]
@@ -3891,22 +3737,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Delete))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Layout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.NumberingFormat))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.TextProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataLabelPosition))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowLegendKey))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowValue))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowCategoryName))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowSeriesName))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowPercent))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowBubbleSize))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Separator))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DLblExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "dLbl")]
@@ -4016,13 +3846,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SequenceOfReferences), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(Explosion), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(InvertIfNegativeBoolean), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(Bubble3D), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(Marker), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataLabel), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "categoryFilterException")]
@@ -4176,9 +3999,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TextFieldGuid), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(Formula), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataLabelFieldTableCache), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(64, "dlblFTEntry")]

@@ -87,8 +87,6 @@ public partial class Value : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Key), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(Value), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(76, "props")]

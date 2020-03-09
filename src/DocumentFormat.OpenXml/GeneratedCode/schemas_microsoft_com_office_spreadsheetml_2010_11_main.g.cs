@@ -131,8 +131,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PivotCache))]
-
 public abstract partial class OpenXmlPivotCachesElement : OpenXmlCompositeElement
 {
     
@@ -181,7 +179,6 @@ public abstract partial class OpenXmlPivotCachesElement : OpenXmlCompositeElemen
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotTableReference), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "pivotTableReferences")]
@@ -288,7 +285,6 @@ public partial class QueryTable : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WebExtension), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "webExtensions")]
@@ -348,7 +344,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimelineCacheReference), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "timelineCacheRefs")]
@@ -408,7 +403,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimelineReference), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "timelineRefs")]
@@ -501,7 +495,6 @@ public partial class WorkbookProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimelineStyle), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "timelineStyles")]
@@ -569,7 +562,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.DifferentialFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "dxfs")]
@@ -640,11 +632,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TextProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ModelTextProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(RangeProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(OleDbPrpoperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataFeedProperties), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "connection")]
@@ -854,8 +841,6 @@ public partial class CalculatedMember : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FieldListActiveTabTopLevelEntity), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "pivotTableUISettings")]
@@ -964,7 +949,6 @@ public partial class PivotFilter : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CachedUniqueName), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "cachedUniqueNames")]
@@ -1135,9 +1119,6 @@ public partial class PivotCacheIdVersion : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ModelTables), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ModelRelationships), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "dataModel")]
@@ -1244,7 +1225,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotRow), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "pivotTableData")]
@@ -1461,7 +1441,6 @@ public partial class MovingPeriodState : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.SlicerCache), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "slicerCaches")]
@@ -1521,7 +1500,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "tableSlicerCache")]
@@ -1632,7 +1610,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlicerCacheOlapLevelName), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "slicerCacheHideItemsWithNoData")]
@@ -1699,7 +1676,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.SlicerCachePivotTable), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "slicerCachePivotTables")]
@@ -1763,11 +1739,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SurveyPrSurveyElementPr), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(TitlePrSurveyElementPr), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DescriptionPrSurveyElementPr), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(SurveyQuestions), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "survey")]
@@ -1923,8 +1894,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Timeline), FileFormatVersions.Office2013)]
-
 [SchemaAttr(71, "timelines")]
 [OfficeAvailability(FileFormatVersions.Office2013)]
 public partial class Timelines : OpenXmlPartRootElement
@@ -2008,10 +1977,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>ExtensionList &lt;x15:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(TimelineCachePivotTables), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(TimelineState), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
 
 [SchemaAttr(71, "timelineCacheDefinition")]
 [OfficeAvailability(FileFormatVersions.Office2013)]
@@ -2188,7 +2153,6 @@ public partial class PivotTableReference : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.Formula))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "webExtension")]
@@ -2342,7 +2306,6 @@ public partial class TimelineReference : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimelineStyleElements), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "timelineStyle")]
@@ -2465,7 +2428,6 @@ public partial class TimelineStyleElement : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimelineStyleElement), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "timelineStyleElements")]
@@ -2559,7 +2521,6 @@ public partial class DbTable : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DbTable), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "dbTables")]
@@ -2653,7 +2614,6 @@ public partial class DbCommand : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.TextFields))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "textPr")]
@@ -2907,8 +2867,6 @@ public partial class RangeProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DbTables), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DbCommand), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "oledbPr")]
@@ -3002,7 +2960,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DbTables), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "dataFeedPr")]
@@ -3125,7 +3082,6 @@ public partial class FieldListActiveTabTopLevelEntity : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "extLst")]
@@ -3341,7 +3297,6 @@ public partial class ModelRelationship : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ModelTable), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "modelTables")]
@@ -3401,7 +3356,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ModelRelationship), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "modelRelationships")]
@@ -3462,8 +3416,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Xstring), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(PivotValueCellExtra), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "c")]
@@ -3678,7 +3630,6 @@ public partial class PivotValueCellExtra : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ServerFormat), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "pivotTableServerFormats")]
@@ -4096,8 +4047,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
-
 public abstract partial class OpenXmlSurveyElementPrElement : OpenXmlCompositeElement
 {
     
@@ -4217,8 +4166,6 @@ public abstract partial class OpenXmlSurveyElementPrElement : OpenXmlCompositeEl
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(QuestionsPrSurveyElementPr), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(SurveyQuestion), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "questions")]
@@ -4294,8 +4241,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(QuestionPrSurveyElementPr), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "question")]
@@ -4446,7 +4391,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "timeline")]
@@ -4677,7 +4621,6 @@ public partial class BoundsTimelineRange : TimelineRange
 /// Defines the TimelineRange class.
 /// </summary>
 
-
 public abstract partial class TimelineRange : OpenXmlLeafElement
 {
     
@@ -4721,9 +4664,6 @@ public abstract partial class TimelineRange : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.FilterColumn))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SortState))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "autoFilter")]
@@ -4792,7 +4732,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimelineCachePivotTable), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "pivotTables")]
@@ -4855,10 +4794,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SelectionTimelineRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(BoundsTimelineRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(MovingPeriodState), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "state")]
@@ -5031,7 +4966,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotValueCell), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(71, "pivotRow")]

@@ -27,10 +27,6 @@ namespace DocumentFormat.OpenXml.Office2010.Excel.Drawing
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExcelNonVisualContentPartShapeProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ApplicationNonVisualDrawingProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Transform2D), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(54, "contentPart")]
@@ -163,9 +159,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnClick))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnHover))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(54, "cNvPr")]
@@ -303,8 +296,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.ContentPartLocks), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(54, "cNvContentPartPr")]
@@ -399,8 +390,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NonVisualInkContentPartProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(54, "nvContentPartPr")]
@@ -528,8 +517,6 @@ public partial class ApplicationNonVisualDrawingProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Offset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extents))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(54, "xfrm")]
@@ -637,7 +624,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(54, "extLst")]

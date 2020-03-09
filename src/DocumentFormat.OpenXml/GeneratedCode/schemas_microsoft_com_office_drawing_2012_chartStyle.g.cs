@@ -29,15 +29,6 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing.ChartStyle
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor))]
-    [ChildElementInfo(typeof(ColorStyleVariation), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2013)]
-
 [SchemaAttr(65, "colorStyle")]
 [OfficeAvailability(FileFormatVersions.Office2013)]
 public partial class ColorStyle : OpenXmlPartRootElement
@@ -180,39 +171,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>OfficeArtExtensionList &lt;cs:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(AxisTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(CategoryAxis), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ChartArea), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataLabel), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataLabelCallout), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataPoint), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataPoint3D), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataPointLine), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataPointMarker), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(MarkerLayoutProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataPointWireframe), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DataTableStyle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DownBar), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DropLine), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ErrorBar), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(Floor), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(GridlineMajor), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(GridlineMinor), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(HiLoLine), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(LeaderLine), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(LegendStyle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(PlotArea), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(PlotArea3D), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(SeriesAxis), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(SeriesLine), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(TitleStyle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(TrendlineStyle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(TrendlineLabel), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(UpBar), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ValueAxis), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(Wall), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2013)]
 
 [SchemaAttr(65, "chartStyle")]
 [OfficeAvailability(FileFormatVersions.Office2013)]
@@ -748,34 +706,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Tint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shade))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Complement))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Inverse))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Gray))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Alpha))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Hue))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HueOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HueModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Saturation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SaturationOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SaturationModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Luminance))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LuminanceOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LuminanceModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Red))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RedOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RedModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Green))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GreenOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GreenModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Blue))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlueOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlueModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Gamma))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.InverseGamma))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(65, "variation")]
@@ -868,7 +798,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(65, "extLst")]
@@ -961,34 +890,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Tint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shade))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Complement))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Inverse))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Gray))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Alpha))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Hue))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HueOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HueModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Saturation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SaturationOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SaturationModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Luminance))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LuminanceOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LuminanceModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Red))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RedOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RedModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Green))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GreenOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GreenModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Blue))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlueOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlueModulation))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Gamma))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.InverseGamma))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(65, "styleClr")]
@@ -1311,14 +1212,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor))]
-    [ChildElementInfo(typeof(StyleColor), FileFormatVersions.Office2013)]
-
 public abstract partial class StyleReference : OpenXmlCompositeElement
 {
     
@@ -1426,13 +1319,6 @@ public partial class LineWidthScale : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor))]
-    [ChildElementInfo(typeof(StyleColor), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(65, "fontRef")]
@@ -1534,21 +1420,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Transform2D))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.CustomGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Outline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(65, "spPr")]
@@ -1683,28 +1554,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Outline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Highlight))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.UnderlineFollowsText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Underline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.UnderlineFillText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.UnderlineFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LatinFont))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EastAsianFont))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ComplexScriptFont))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SymbolFont))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnClick))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnMouseOver))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RightToLeft))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(65, "defRPr")]
@@ -1969,14 +1818,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetTextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoAutoFit))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NormalAutoFit))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ShapeAutoFit))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.FlatText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(65, "bodyPr")]
@@ -2263,7 +2104,6 @@ public partial class ValueAxisProperties : AxisProperties
 /// <summary>
 /// Defines the AxisProperties class.
 /// </summary>
-
 
 public abstract partial class AxisProperties : OpenXmlLeafElement
 {
@@ -4881,16 +4721,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>OfficeArtExtensionList &lt;cs:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(LineReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(LineWidthScale), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(FillReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(EffectReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(FontReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(TextCharacterPropertiesType), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(TextBodyProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2013)]
 
 public abstract partial class StyleEntry : OpenXmlCompositeElement
 {

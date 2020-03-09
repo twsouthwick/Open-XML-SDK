@@ -50,7 +50,6 @@ public partial class WrapNone : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(EffectExtent))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "wrapSquare")]
@@ -161,7 +160,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WrapPolygon))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "wrapTight")]
@@ -258,7 +256,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WrapPolygon))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "wrapThrough")]
@@ -355,7 +352,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(EffectExtent))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "wrapTopAndBottom")]
@@ -447,11 +443,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Extent))]
-    [ChildElementInfo(typeof(EffectExtent))]
-    [ChildElementInfo(typeof(DocProperties))]
-    [ChildElementInfo(typeof(NonVisualGraphicFrameDrawingProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Graphic))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "inline")]
@@ -641,21 +632,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SimplePosition))]
-    [ChildElementInfo(typeof(HorizontalPosition))]
-    [ChildElementInfo(typeof(VerticalPosition))]
-    [ChildElementInfo(typeof(Extent))]
-    [ChildElementInfo(typeof(EffectExtent))]
-    [ChildElementInfo(typeof(WrapNone))]
-    [ChildElementInfo(typeof(WrapSquare))]
-    [ChildElementInfo(typeof(WrapTight))]
-    [ChildElementInfo(typeof(WrapThrough))]
-    [ChildElementInfo(typeof(WrapTopBottom))]
-    [ChildElementInfo(typeof(DocProperties))]
-    [ChildElementInfo(typeof(NonVisualGraphicFrameDrawingProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Graphic))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Word.Drawing.RelativeWidth), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Word.Drawing.RelativeHeight), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "anchor")]
@@ -959,7 +935,6 @@ public partial class SimplePosition : Point2DType
 /// Defines the Point2DType class.
 /// </summary>
 
-
 public abstract partial class Point2DType : OpenXmlLeafElement
 {
     
@@ -1066,8 +1041,6 @@ public partial class EffectExtent : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StartPoint))]
-    [ChildElementInfo(typeof(LineTo))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "wrapPolygon")]
@@ -1151,9 +1124,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(HorizontalAlignment))]
-    [ChildElementInfo(typeof(PositionOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Word.Drawing.PercentagePositionHeightOffset), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "positionH")]
@@ -1267,9 +1237,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VerticalAlignment))]
-    [ChildElementInfo(typeof(PositionOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Word.Drawing.PercentagePositionVerticalOffset), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "positionV")]
@@ -1427,9 +1394,6 @@ public partial class Extent : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnClick))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnHover))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "docPr")]
@@ -1567,8 +1531,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GraphicFrameLocks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(16, "cNvGraphicFramePr")]

@@ -24,11 +24,6 @@ namespace DocumentFormat.OpenXml.Office.Word
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(KeyMapCustomizations))]
-    [ChildElementInfo(typeof(MismatchedKeyMapCustomization))]
-    [ChildElementInfo(typeof(Toolbars))]
-    [ChildElementInfo(typeof(AllocatedCommands))]
-
 [SchemaAttr(33, "tcg")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class TemplateCommandGroup : OpenXmlPartRootElement
@@ -115,7 +110,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Mcd))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(33, "mcds")]
@@ -174,9 +168,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>Mcds &lt;wne:mcds></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(DocEvents))]
-    [ChildElementInfo(typeof(Mcds))]
 
 [SchemaAttr(33, "vbaSuppData")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -288,7 +279,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SingleDataSourceRecord))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(33, "recipients")]
@@ -437,7 +427,6 @@ public partial class WllMacroKeyboardCustomization : MacroWllType
 /// Defines the MacroWllType class.
 /// </summary>
 
-
 public abstract partial class MacroWllType : OpenXmlLeafElement
 {
     
@@ -505,7 +494,6 @@ public partial class AllocatedCommandManifestEntry : AcceleratorKeymapType
 /// <summary>
 /// Defines the AcceleratorKeymapType class.
 /// </summary>
-
 
 public abstract partial class AcceleratorKeymapType : OpenXmlLeafElement
 {
@@ -582,11 +570,6 @@ public partial class CharacterInsertion : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FixedCommandKeyboardCustomization))]
-    [ChildElementInfo(typeof(MacroKeyboardCustomization))]
-    [ChildElementInfo(typeof(AllocatedCommandKeyboardCustomization))]
-    [ChildElementInfo(typeof(WllMacroKeyboardCustomization))]
-    [ChildElementInfo(typeof(CharacterInsertion))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(33, "keymap")]
@@ -1325,19 +1308,6 @@ public partial class EventDocBuildingBlockAfterInsertXsdString : OpenXmlLeafText
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(EventDocNewXsdString))]
-    [ChildElementInfo(typeof(EventDocOpenXsdString))]
-    [ChildElementInfo(typeof(EventDocCloseXsdString))]
-    [ChildElementInfo(typeof(EventDocSyncXsdString))]
-    [ChildElementInfo(typeof(EventDocXmlAfterInsertXsdString))]
-    [ChildElementInfo(typeof(EventDocXmlBeforeDeleteXsdString))]
-    [ChildElementInfo(typeof(EventDocContentControlAfterInsertXsdString))]
-    [ChildElementInfo(typeof(EventDocContentControlBeforeDeleteXsdString))]
-    [ChildElementInfo(typeof(EventDocContentControlOnExistXsdString))]
-    [ChildElementInfo(typeof(EventDocContentControlOnEnterXsdString))]
-    [ChildElementInfo(typeof(EventDocStoreUpdateXsdString))]
-    [ChildElementInfo(typeof(EventDocContentControlUpdateXsdString))]
-    [ChildElementInfo(typeof(EventDocBuildingBlockAfterInsertXsdString))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(33, "docEvents")]
@@ -1567,7 +1537,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AllocatedCommandManifestEntry))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(33, "acdManifest")]
@@ -1769,8 +1738,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(KeyMapEntry))]
-
 public abstract partial class KeymapsType : OpenXmlCompositeElement
 {
     
@@ -1820,8 +1787,6 @@ public abstract partial class KeymapsType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AllocatedCommandManifest))]
-    [ChildElementInfo(typeof(ToolbarData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(33, "toolbars")]
@@ -1882,7 +1847,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AllocatedCommand))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(33, "acds")]
@@ -2014,8 +1978,6 @@ public partial class RecordHashCode : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RecordIncluded))]
-    [ChildElementInfo(typeof(RecordHashCode))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(33, "recipientData")]

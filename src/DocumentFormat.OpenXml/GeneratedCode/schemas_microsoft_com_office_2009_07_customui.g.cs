@@ -731,8 +731,6 @@ public partial class CheckBox : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Item), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "gallery")]
@@ -1553,9 +1551,6 @@ public partial class MenuSeparator : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VisibleButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(VisibleToggleButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "splitButton")]
@@ -1756,15 +1751,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlCloneRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GalleryRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ToggleButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuSeparator), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SplitButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DynamicMenuRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "menu")]
@@ -2357,9 +2343,6 @@ public partial class DynamicMenuRegular : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VisibleButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(VisibleToggleButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuWithTitle), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "splitButton")]
@@ -2560,15 +2543,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlCloneRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GalleryRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ToggleButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuSeparator), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SplitButtonWithTitle), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuWithTitle), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DynamicMenuRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "menu")]
@@ -4247,7 +4221,6 @@ public partial class EditBox : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Item), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "comboBox")]
@@ -4617,8 +4590,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Item), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "dropDown")]
@@ -4989,8 +4960,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Item), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "gallery")]
@@ -5467,15 +5436,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlCloneRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GalleryRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ToggleButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuSeparator), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SplitButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DynamicMenuRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "menu")]
@@ -6101,9 +6061,6 @@ public partial class DynamicMenu : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VisibleButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(VisibleToggleButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "splitButton")]
@@ -6327,20 +6284,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlClone), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LabelControl), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Button), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ToggleButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(EditBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ComboBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DropDownRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Gallery), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Menu), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DynamicMenu), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SplitButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Box), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonGroup), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "box")]
@@ -6501,14 +6444,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlCloneRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ToggleButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GalleryRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DynamicMenuRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SplitButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Separator), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "buttonGroup")]
@@ -6960,7 +6895,6 @@ public partial class BackstageMenuCheckBox : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageMenuGroup), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "menu")]
@@ -7858,7 +7792,6 @@ public partial class BackstageEditBox : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ItemBackstageItem), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "dropDown")]
@@ -8098,7 +8031,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RadioButtonBackstageItem), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "radioGroup")]
@@ -8298,7 +8230,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ItemBackstageItem), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "comboBox")]
@@ -8839,17 +8770,6 @@ public partial class BackstageLabelControl : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageGroupButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageCheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageEditBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageDropDown), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(RadioGroup), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageComboBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Hyperlink), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageLabelControl), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GroupBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LayoutContainer), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ImageControl), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "groupBox")]
@@ -8982,17 +8902,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageGroupButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageCheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageEditBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageDropDown), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(RadioGroup), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageComboBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Hyperlink), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageLabelControl), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GroupBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LayoutContainer), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ImageControl), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "layoutContainer")]
@@ -9235,9 +9144,6 @@ public partial class ImageControl : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PrimaryItem), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(TopItemsGroupControls), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BottomItemsGroupControls), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "group")]
@@ -9443,7 +9349,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TaskGroupCategory), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "taskGroup")]
@@ -9644,15 +9549,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlCloneRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GalleryRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ToggleButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuSeparator), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SplitButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DynamicMenuRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "menu")]
@@ -9759,11 +9655,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>ContextMenus &lt;mso14:contextMenus></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(Commands), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Ribbon), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Backstage), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ContextMenus), FileFormatVersions.Office2010)]
 
 [SchemaAttr(57, "customUI")]
 [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -10590,7 +10481,6 @@ public partial class Separator : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "dialogBoxLauncher")]
@@ -10679,22 +10569,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlClone), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LabelControl), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Button), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ToggleButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(EditBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ComboBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DropDownRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Gallery), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Menu), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DynamicMenu), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SplitButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Box), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonGroup), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Separator), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DialogBoxLauncher), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "group")]
@@ -11345,10 +11219,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlCloneQat), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Separator), FileFormatVersions.Office2010)]
-
 public abstract partial class QatItemsType : OpenXmlCompositeElement
 {
     
@@ -11397,7 +11267,6 @@ public abstract partial class QatItemsType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Group), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "tab")]
@@ -11571,7 +11440,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tab), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "tabSet")]
@@ -11713,8 +11581,6 @@ public partial class Command : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SharedControlsQatItems), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentControlsQatItems), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "qat")]
@@ -11801,7 +11667,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tab), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "tabs")]
@@ -11861,7 +11726,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TabSet), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "contextualTabs")]
@@ -11929,15 +11793,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlCloneRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GalleryRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ToggleButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SplitButtonRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DynamicMenuRegular), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MenuSeparatorNoTitle), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "contextMenu")]
@@ -12055,7 +11910,6 @@ public partial class RadioButtonBackstageItem : BackstageItemType
 /// <summary>
 /// Defines the BackstageItemType class.
 /// </summary>
-
 
 public abstract partial class BackstageItemType : OpenXmlLeafElement
 {
@@ -12289,7 +12143,6 @@ public partial class BackstageRegularButton : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageMenuGroup), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "menu")]
@@ -12500,10 +12353,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageMenuButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageMenuCheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageSubMenu), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageMenuToggleButton), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "menuGroup")]
@@ -12623,8 +12472,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageRegularButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstagePrimaryMenu), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "primaryItem")]
@@ -12879,18 +12726,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageGroupButton), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageCheckBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageEditBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageDropDown), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(RadioGroup), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageComboBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Hyperlink), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageLabelControl), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GroupBox), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LayoutContainer), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ImageControl), FileFormatVersions.Office2010)]
-
 public abstract partial class GroupControlsType : OpenXmlCompositeElement
 {
     
@@ -12939,7 +12774,6 @@ public abstract partial class GroupControlsType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TaskGroupTask), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "category")]
@@ -13301,7 +13135,6 @@ public partial class TaskGroupTask : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TaskFormGroupTask), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "category")]
@@ -13456,7 +13289,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageGroup), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "task")]
@@ -13682,7 +13514,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TaskFormGroupCategory), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "taskFormGroup")]
@@ -13845,9 +13676,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TaskFormGroup), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageGroup), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(TaskGroup), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "firstColumn")]
@@ -13922,8 +13750,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageGroup), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(TaskGroup), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "secondColumn")]
@@ -13991,8 +13817,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageGroups), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SimpleGroups), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "tab")]
@@ -14452,7 +14276,6 @@ public partial class BackstageFastCommandButton : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Command), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "commands")]
@@ -14514,9 +14337,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(QuickAccessToolbar), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Tabs), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ContextualTabs), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "ribbon")]
@@ -14624,8 +14444,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackstageTab), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackstageFastCommandButton), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "backstage")]
@@ -14705,7 +14523,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ContextMenu), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(57, "contextMenus")]

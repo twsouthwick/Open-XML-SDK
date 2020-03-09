@@ -23,7 +23,6 @@ namespace DocumentFormat.OpenXml.Office2016.ExcelAc
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ModelTimeGrouping), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(84, "modelTimeGroupings")]
@@ -83,7 +82,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CalculatedTimeColumn), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(84, "modelTimeGrouping")]

@@ -22,7 +22,6 @@ namespace DocumentFormat.OpenXml.Bibliography
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Source))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(9, "Sources")]
@@ -108,9 +107,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Last))]
-    [ChildElementInfo(typeof(First))]
-    [ChildElementInfo(typeof(Middle))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(9, "Person")]
@@ -1954,7 +1950,6 @@ public partial class YearAccessed : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Person))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(9, "NameList")]
@@ -2768,8 +2763,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NameList))]
-
 public abstract partial class NameType : OpenXmlCompositeElement
 {
     
@@ -2949,9 +2942,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NameList))]
-    [ChildElementInfo(typeof(Corporate))]
-
 public abstract partial class NameOrCorporateType : OpenXmlCompositeElement
 {
     
@@ -3041,22 +3031,6 @@ public abstract partial class NameOrCorporateType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Artist))]
-    [ChildElementInfo(typeof(Author))]
-    [ChildElementInfo(typeof(BookAuthor))]
-    [ChildElementInfo(typeof(Compiler))]
-    [ChildElementInfo(typeof(Composer))]
-    [ChildElementInfo(typeof(Conductor))]
-    [ChildElementInfo(typeof(Counsel))]
-    [ChildElementInfo(typeof(Director))]
-    [ChildElementInfo(typeof(Editor))]
-    [ChildElementInfo(typeof(Interviewee))]
-    [ChildElementInfo(typeof(Interviewer))]
-    [ChildElementInfo(typeof(Inventor))]
-    [ChildElementInfo(typeof(Performer))]
-    [ChildElementInfo(typeof(ProducerName))]
-    [ChildElementInfo(typeof(Translator))]
-    [ChildElementInfo(typeof(Writer))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(9, "Author")]
@@ -3417,58 +3391,6 @@ public partial class SourceType : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AbbreviatedCaseNumber))]
-    [ChildElementInfo(typeof(AlbumTitle))]
-    [ChildElementInfo(typeof(AuthorList))]
-    [ChildElementInfo(typeof(BookTitle))]
-    [ChildElementInfo(typeof(Broadcaster))]
-    [ChildElementInfo(typeof(BroadcastTitle))]
-    [ChildElementInfo(typeof(CaseNumber))]
-    [ChildElementInfo(typeof(ChapterNumber))]
-    [ChildElementInfo(typeof(City))]
-    [ChildElementInfo(typeof(Comments))]
-    [ChildElementInfo(typeof(ConferenceName))]
-    [ChildElementInfo(typeof(CountryRegion))]
-    [ChildElementInfo(typeof(Court))]
-    [ChildElementInfo(typeof(Day))]
-    [ChildElementInfo(typeof(DayAccessed))]
-    [ChildElementInfo(typeof(Department))]
-    [ChildElementInfo(typeof(Distributor))]
-    [ChildElementInfo(typeof(Edition))]
-    [ChildElementInfo(typeof(GuidString))]
-    [ChildElementInfo(typeof(Institution))]
-    [ChildElementInfo(typeof(InternetSiteTitle))]
-    [ChildElementInfo(typeof(Issue))]
-    [ChildElementInfo(typeof(JournalName))]
-    [ChildElementInfo(typeof(LcId))]
-    [ChildElementInfo(typeof(Medium))]
-    [ChildElementInfo(typeof(Month))]
-    [ChildElementInfo(typeof(MonthAccessed))]
-    [ChildElementInfo(typeof(NumberVolumes))]
-    [ChildElementInfo(typeof(Pages))]
-    [ChildElementInfo(typeof(PatentNumber))]
-    [ChildElementInfo(typeof(PeriodicalTitle))]
-    [ChildElementInfo(typeof(ProductionCompany))]
-    [ChildElementInfo(typeof(PublicationTitle))]
-    [ChildElementInfo(typeof(Publisher))]
-    [ChildElementInfo(typeof(RecordingNumber))]
-    [ChildElementInfo(typeof(ReferenceOrder))]
-    [ChildElementInfo(typeof(Reporter))]
-    [ChildElementInfo(typeof(SourceType))]
-    [ChildElementInfo(typeof(ShortTitle))]
-    [ChildElementInfo(typeof(StandardNumber))]
-    [ChildElementInfo(typeof(StateProvince))]
-    [ChildElementInfo(typeof(Station))]
-    [ChildElementInfo(typeof(Tag))]
-    [ChildElementInfo(typeof(Theater))]
-    [ChildElementInfo(typeof(ThesisType))]
-    [ChildElementInfo(typeof(Title))]
-    [ChildElementInfo(typeof(PatentType))]
-    [ChildElementInfo(typeof(UrlString))]
-    [ChildElementInfo(typeof(Version))]
-    [ChildElementInfo(typeof(Volume))]
-    [ChildElementInfo(typeof(Year))]
-    [ChildElementInfo(typeof(YearAccessed))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(9, "Source")]

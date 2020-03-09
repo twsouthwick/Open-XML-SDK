@@ -8,11 +8,14 @@ namespace DocumentFormat.OpenXml.Framework
 {
     internal readonly struct LookupItem
     {
-        public LookupItem(Type type, ParticlePath path)
+        public LookupItem(Type type, ParticlePath path, OpenXmlElementData data)
         {
             Type = type;
             Path = path;
+            Data = data;
         }
+
+        public OpenXmlElementData Data { get; }
 
         public Type Type { get; }
 

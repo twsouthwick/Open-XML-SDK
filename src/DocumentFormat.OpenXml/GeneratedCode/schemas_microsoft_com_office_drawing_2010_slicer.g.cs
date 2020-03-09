@@ -24,7 +24,6 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Slicer
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(62, "slicer")]
@@ -106,7 +105,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(62, "extLst")]

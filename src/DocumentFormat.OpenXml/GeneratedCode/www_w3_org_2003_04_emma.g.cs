@@ -127,8 +127,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Arc))]
-    [ChildElementInfo(typeof(Node))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "lattice")]
@@ -265,11 +263,6 @@ public partial class Literal : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DerivedFrom))]
-    [ChildElementInfo(typeof(Info))]
-    [ChildElementInfo(typeof(Lattice))]
-    [ChildElementInfo(typeof(Literal))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Ink.ContextNode))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "interpretation")]
@@ -577,12 +570,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DerivedFrom))]
-    [ChildElementInfo(typeof(Info))]
-    [ChildElementInfo(typeof(Interpretation))]
-    [ChildElementInfo(typeof(OneOf))]
-    [ChildElementInfo(typeof(Group))]
-    [ChildElementInfo(typeof(Sequence))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "one-of")]
@@ -881,13 +868,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DerivedFrom))]
-    [ChildElementInfo(typeof(GroupInfo))]
-    [ChildElementInfo(typeof(Info))]
-    [ChildElementInfo(typeof(Interpretation))]
-    [ChildElementInfo(typeof(OneOf))]
-    [ChildElementInfo(typeof(Group))]
-    [ChildElementInfo(typeof(Sequence))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "group")]
@@ -1179,12 +1159,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DerivedFrom))]
-    [ChildElementInfo(typeof(Info))]
-    [ChildElementInfo(typeof(Interpretation))]
-    [ChildElementInfo(typeof(OneOf))]
-    [ChildElementInfo(typeof(Group))]
-    [ChildElementInfo(typeof(Sequence))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "sequence")]
@@ -1534,10 +1508,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Interpretation))]
-    [ChildElementInfo(typeof(OneOf))]
-    [ChildElementInfo(typeof(Sequence))]
-    [ChildElementInfo(typeof(Group))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "derivation")]
@@ -1714,7 +1684,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(EndPoint))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "endpoint-info")]
@@ -1935,7 +1904,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Info))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "node")]
@@ -2024,7 +1992,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Info))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "arc")]
@@ -2202,15 +2169,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Derivation))]
-    [ChildElementInfo(typeof(Grammar))]
-    [ChildElementInfo(typeof(Model))]
-    [ChildElementInfo(typeof(EndPointInfo))]
-    [ChildElementInfo(typeof(Info))]
-    [ChildElementInfo(typeof(Interpretation))]
-    [ChildElementInfo(typeof(OneOf))]
-    [ChildElementInfo(typeof(Group))]
-    [ChildElementInfo(typeof(Sequence))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(44, "emma")]

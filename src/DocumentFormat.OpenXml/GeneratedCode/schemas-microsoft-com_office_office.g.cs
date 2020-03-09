@@ -33,17 +33,6 @@ namespace DocumentFormat.OpenXml.Vml.Office
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Fill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Stroke))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.TextBox))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Shadow))]
-    [ChildElementInfo(typeof(Skew))]
-    [ChildElementInfo(typeof(Extrusion))]
-    [ChildElementInfo(typeof(Callout))]
-    [ChildElementInfo(typeof(Lock))]
-    [ChildElementInfo(typeof(ColorMostRecentlyUsed))]
-    [ChildElementInfo(typeof(ColorMenu))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(27, "shapedefaults")]
@@ -327,9 +316,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ShapeIdMap))]
-    [ChildElementInfo(typeof(RegroupTable))]
-    [ChildElementInfo(typeof(Rules))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(27, "shapelayout")]
@@ -605,7 +591,6 @@ public partial class Ink : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RelationTable))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(27, "diagram")]
@@ -1306,9 +1291,6 @@ public partial class Lock : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(LinkType))]
-    [ChildElementInfo(typeof(LockedField))]
-    [ChildElementInfo(typeof(FieldCodes))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(27, "OLEObject")]
@@ -1590,7 +1572,6 @@ public partial class ColumnStroke : StrokeChildType
 /// <summary>
 /// Defines the StrokeChildType class.
 /// </summary>
-
 
 public abstract partial class StrokeChildType : OpenXmlLeafElement
 {
@@ -1936,7 +1917,6 @@ public partial class ShapeIdMap : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Entry))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(27, "regrouptable")]
@@ -2005,7 +1985,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Rule))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(27, "rules")]
@@ -2114,7 +2093,6 @@ public partial class Entry : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Proxy))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(27, "r")]
@@ -2204,7 +2182,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Relation))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(27, "relationtable")]

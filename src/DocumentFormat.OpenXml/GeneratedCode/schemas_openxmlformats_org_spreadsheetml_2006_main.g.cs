@@ -89,9 +89,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CalculationCell))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 [SchemaAttr(22, "calcChain")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class CalculationChain : OpenXmlPartRootElement
@@ -176,10 +173,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>ExtensionList &lt;x:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(Authors))]
-    [ChildElementInfo(typeof(CommentList))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [SchemaAttr(22, "comments")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -304,9 +297,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Schema))]
-    [ChildElementInfo(typeof(Map))]
-
 [SchemaAttr(22, "MapInfo")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class MapInfo : OpenXmlPartRootElement
@@ -397,8 +387,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>Connection &lt;x:connection></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(Connection))]
 
 [SchemaAttr(22, "connections")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -491,18 +479,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>PivotCacheDefinitionExtensionList &lt;x:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(CacheSource))]
-    [ChildElementInfo(typeof(CacheFields))]
-    [ChildElementInfo(typeof(CacheHierarchies))]
-    [ChildElementInfo(typeof(Kpis))]
-    [ChildElementInfo(typeof(TupleCache))]
-    [ChildElementInfo(typeof(CalculatedItems))]
-    [ChildElementInfo(typeof(CalculatedMembers))]
-    [ChildElementInfo(typeof(Dimensions))]
-    [ChildElementInfo(typeof(MeasureGroups))]
-    [ChildElementInfo(typeof(Maps))]
-    [ChildElementInfo(typeof(PivotCacheDefinitionExtensionList))]
 
 [SchemaAttr(22, "pivotCacheDefinition")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -866,9 +842,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotCacheRecord))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 [SchemaAttr(22, "pivotCacheRecords")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class PivotCacheRecords : OpenXmlPartRootElement
@@ -974,24 +947,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>PivotTableDefinitionExtensionList &lt;x:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(Location))]
-    [ChildElementInfo(typeof(PivotFields))]
-    [ChildElementInfo(typeof(RowFields))]
-    [ChildElementInfo(typeof(RowItems))]
-    [ChildElementInfo(typeof(ColumnFields))]
-    [ChildElementInfo(typeof(ColumnItems))]
-    [ChildElementInfo(typeof(PageFields))]
-    [ChildElementInfo(typeof(DataFields))]
-    [ChildElementInfo(typeof(Formats))]
-    [ChildElementInfo(typeof(ConditionalFormats))]
-    [ChildElementInfo(typeof(ChartFormats))]
-    [ChildElementInfo(typeof(PivotHierarchies))]
-    [ChildElementInfo(typeof(PivotTableStyle))]
-    [ChildElementInfo(typeof(PivotFilters))]
-    [ChildElementInfo(typeof(RowHierarchiesUsage))]
-    [ChildElementInfo(typeof(ColumnHierarchiesUsage))]
-    [ChildElementInfo(typeof(PivotTableDefinitionExtensionList))]
 
 [SchemaAttr(22, "pivotTableDefinition")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -1777,9 +1732,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(QueryTableRefresh))]
-    [ChildElementInfo(typeof(QueryTableExtensionList))]
-
 [SchemaAttr(22, "queryTable")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class QueryTable : OpenXmlPartRootElement
@@ -2046,9 +1998,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SharedStringItem))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 [SchemaAttr(22, "sst")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class SharedStringTable : OpenXmlPartRootElement
@@ -2145,8 +2094,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>Header &lt;x:header></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(Header))]
 
 [SchemaAttr(22, "headers")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -2328,19 +2275,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RevisionRowColumn))]
-    [ChildElementInfo(typeof(RevisionMove))]
-    [ChildElementInfo(typeof(RevisionCustomView))]
-    [ChildElementInfo(typeof(RevisionSheetName))]
-    [ChildElementInfo(typeof(RevisionInsertSheet))]
-    [ChildElementInfo(typeof(RevisionCellChange))]
-    [ChildElementInfo(typeof(RevisionFormat))]
-    [ChildElementInfo(typeof(RevisionAutoFormat))]
-    [ChildElementInfo(typeof(RevisionDefinedName))]
-    [ChildElementInfo(typeof(RevisionComment))]
-    [ChildElementInfo(typeof(RevisionQueryTable))]
-    [ChildElementInfo(typeof(RevisionConflict))]
-
 [SchemaAttr(22, "revisions")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class Revisions : OpenXmlPartRootElement
@@ -2433,8 +2367,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>UserInfo &lt;x:userInfo></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(UserInfo))]
 
 [SchemaAttr(22, "users")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -2561,45 +2493,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>WorksheetExtensionList &lt;x:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(SheetProperties))]
-    [ChildElementInfo(typeof(SheetDimension))]
-    [ChildElementInfo(typeof(SheetViews))]
-    [ChildElementInfo(typeof(SheetFormatProperties))]
-    [ChildElementInfo(typeof(Columns))]
-    [ChildElementInfo(typeof(SheetData))]
-    [ChildElementInfo(typeof(SheetCalculationProperties))]
-    [ChildElementInfo(typeof(SheetProtection))]
-    [ChildElementInfo(typeof(ProtectedRanges))]
-    [ChildElementInfo(typeof(Scenarios))]
-    [ChildElementInfo(typeof(AutoFilter))]
-    [ChildElementInfo(typeof(SortState))]
-    [ChildElementInfo(typeof(DataConsolidate))]
-    [ChildElementInfo(typeof(CustomSheetViews))]
-    [ChildElementInfo(typeof(MergeCells))]
-    [ChildElementInfo(typeof(PhoneticProperties))]
-    [ChildElementInfo(typeof(ConditionalFormatting))]
-    [ChildElementInfo(typeof(DataValidations))]
-    [ChildElementInfo(typeof(Hyperlinks))]
-    [ChildElementInfo(typeof(PrintOptions))]
-    [ChildElementInfo(typeof(PageMargins))]
-    [ChildElementInfo(typeof(PageSetup))]
-    [ChildElementInfo(typeof(HeaderFooter))]
-    [ChildElementInfo(typeof(RowBreaks))]
-    [ChildElementInfo(typeof(ColumnBreaks))]
-    [ChildElementInfo(typeof(CustomProperties))]
-    [ChildElementInfo(typeof(CellWatches))]
-    [ChildElementInfo(typeof(IgnoredErrors))]
-    [ChildElementInfo(typeof(Drawing))]
-    [ChildElementInfo(typeof(LegacyDrawing))]
-    [ChildElementInfo(typeof(LegacyDrawingHeaderFooter))]
-    [ChildElementInfo(typeof(DrawingHeaderFooter))]
-    [ChildElementInfo(typeof(Picture))]
-    [ChildElementInfo(typeof(OleObjects))]
-    [ChildElementInfo(typeof(Controls))]
-    [ChildElementInfo(typeof(WebPublishItems))]
-    [ChildElementInfo(typeof(TableParts))]
-    [ChildElementInfo(typeof(WorksheetExtensionList))]
 
 [SchemaAttr(22, "worksheet")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -2782,21 +2675,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>ExtensionList &lt;x:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(ChartSheetProperties))]
-    [ChildElementInfo(typeof(ChartSheetViews))]
-    [ChildElementInfo(typeof(ChartSheetProtection))]
-    [ChildElementInfo(typeof(CustomChartsheetViews))]
-    [ChildElementInfo(typeof(PageMargins))]
-    [ChildElementInfo(typeof(ChartSheetPageSetup))]
-    [ChildElementInfo(typeof(HeaderFooter))]
-    [ChildElementInfo(typeof(Drawing))]
-    [ChildElementInfo(typeof(LegacyDrawing))]
-    [ChildElementInfo(typeof(LegacyDrawingHeaderFooter))]
-    [ChildElementInfo(typeof(DrawingHeaderFooter), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Picture))]
-    [ChildElementInfo(typeof(WebPublishItems))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [SchemaAttr(22, "chartsheet")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -3077,23 +2955,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>ExtensionList &lt;x:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(SheetProperties))]
-    [ChildElementInfo(typeof(SheetViews))]
-    [ChildElementInfo(typeof(SheetFormatProperties))]
-    [ChildElementInfo(typeof(SheetProtection))]
-    [ChildElementInfo(typeof(CustomSheetViews))]
-    [ChildElementInfo(typeof(PrintOptions))]
-    [ChildElementInfo(typeof(PageMargins))]
-    [ChildElementInfo(typeof(PageSetup))]
-    [ChildElementInfo(typeof(HeaderFooter))]
-    [ChildElementInfo(typeof(Drawing))]
-    [ChildElementInfo(typeof(LegacyDrawing))]
-    [ChildElementInfo(typeof(LegacyDrawingHeaderFooter))]
-    [ChildElementInfo(typeof(DrawingHeaderFooter), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(OleObjects))]
-    [ChildElementInfo(typeof(Controls), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [SchemaAttr(22, "dialogsheet")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -3392,14 +3253,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MetadataTypes))]
-    [ChildElementInfo(typeof(MetadataStrings))]
-    [ChildElementInfo(typeof(MdxMetadata))]
-    [ChildElementInfo(typeof(FutureMetadata))]
-    [ChildElementInfo(typeof(CellMetadata))]
-    [ChildElementInfo(typeof(ValueMetadata))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 [SchemaAttr(22, "metadata")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class Metadata : OpenXmlPartRootElement
@@ -3526,8 +3379,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SingleXmlCell))]
-
 [SchemaAttr(22, "singleXmlCells")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class SingleXmlCells : OpenXmlPartRootElement
@@ -3619,18 +3470,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>StylesheetExtensionList &lt;x:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(NumberingFormats))]
-    [ChildElementInfo(typeof(Fonts))]
-    [ChildElementInfo(typeof(Fills))]
-    [ChildElementInfo(typeof(Borders))]
-    [ChildElementInfo(typeof(CellStyleFormats))]
-    [ChildElementInfo(typeof(CellFormats))]
-    [ChildElementInfo(typeof(CellStyles))]
-    [ChildElementInfo(typeof(DifferentialFormats))]
-    [ChildElementInfo(typeof(TableStyles))]
-    [ChildElementInfo(typeof(Colors))]
-    [ChildElementInfo(typeof(StylesheetExtensionList))]
 
 [SchemaAttr(22, "styleSheet")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -3861,11 +3700,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExternalBook))]
-    [ChildElementInfo(typeof(DdeLink))]
-    [ChildElementInfo(typeof(OleLink))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 [SchemaAttr(22, "externalLink")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class ExternalLink : OpenXmlPartRootElement
@@ -3957,12 +3791,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>TableExtensionList &lt;x:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(AutoFilter))]
-    [ChildElementInfo(typeof(SortState))]
-    [ChildElementInfo(typeof(TableColumns))]
-    [ChildElementInfo(typeof(TableStyleInfo))]
-    [ChildElementInfo(typeof(TableExtensionList))]
 
 [SchemaAttr(22, "table")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -4270,9 +4098,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VolatileType))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 [SchemaAttr(22, "volTypes")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class VolatileTypes : OpenXmlPartRootElement
@@ -4372,25 +4197,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>WorkbookExtensionList &lt;x:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(FileVersion))]
-    [ChildElementInfo(typeof(FileSharing))]
-    [ChildElementInfo(typeof(WorkbookProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.ExcelAc.AbsolutePath), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(WorkbookProtection))]
-    [ChildElementInfo(typeof(BookViews))]
-    [ChildElementInfo(typeof(Sheets))]
-    [ChildElementInfo(typeof(FunctionGroups))]
-    [ChildElementInfo(typeof(ExternalReferences))]
-    [ChildElementInfo(typeof(DefinedNames))]
-    [ChildElementInfo(typeof(CalculationProperties))]
-    [ChildElementInfo(typeof(OleSize))]
-    [ChildElementInfo(typeof(CustomWorkbookViews))]
-    [ChildElementInfo(typeof(PivotCaches))]
-    [ChildElementInfo(typeof(WebPublishing))]
-    [ChildElementInfo(typeof(FileRecoveryProperties))]
-    [ChildElementInfo(typeof(WebPublishObjects))]
-    [ChildElementInfo(typeof(WorkbookExtensionList))]
 
 [SchemaAttr(22, "workbook")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -4689,15 +4495,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Filters))]
-    [ChildElementInfo(typeof(Top10))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.CustomFilters), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CustomFilters))]
-    [ChildElementInfo(typeof(DynamicFilter))]
-    [ChildElementInfo(typeof(ColorFilter))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.IconFilter), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(IconFilter))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "filterColumn")]
@@ -4899,9 +4696,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.SortCondition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SortCondition))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sortState")]
@@ -4995,7 +4789,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -5170,7 +4963,6 @@ public partial class CalculationCell : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Author))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "authors")]
@@ -5230,7 +5022,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Comment))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "commentList")]
@@ -5291,8 +5082,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommentText))]
-    [ChildElementInfo(typeof(CommentProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "comment")]
@@ -5883,7 +5672,6 @@ public partial class Formula2 : XstringType
 /// Defines the XstringType class.
 /// </summary>
 
-
 public abstract partial class XstringType : OpenXmlLeafTextElement
 {
     
@@ -6004,7 +5792,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataBinding))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "Map")]
@@ -6244,12 +6031,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DatabaseProperties))]
-    [ChildElementInfo(typeof(OlapProperties))]
-    [ChildElementInfo(typeof(WebQueryProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(Parameters))]
-    [ChildElementInfo(typeof(ConnectionExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "connection")]
@@ -6532,9 +6313,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MissingTable))]
-    [ChildElementInfo(typeof(CharacterValue))]
-    [ChildElementInfo(typeof(FieldItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "tables")]
@@ -6836,10 +6614,6 @@ public partial class TextField : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SharedItems))]
-    [ChildElementInfo(typeof(FieldGroup))]
-    [ChildElementInfo(typeof(MemberPropertiesMap))]
-    [ChildElementInfo(typeof(CacheFieldExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cacheField")]
@@ -7020,7 +6794,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Page))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pages")]
@@ -7087,7 +6860,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RangeSet))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rangeSets")]
@@ -7154,7 +6926,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PageItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "page")]
@@ -7340,8 +7111,6 @@ public partial class RangeSet : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tuples))]
-    [ChildElementInfo(typeof(MemberPropertyIndex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "m")]
@@ -7482,8 +7251,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tuples))]
-    [ChildElementInfo(typeof(MemberPropertyIndex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "n")]
@@ -7631,7 +7398,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MemberPropertyIndex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "b")]
@@ -7728,8 +7494,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tuples))]
-    [ChildElementInfo(typeof(MemberPropertyIndex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "e")]
@@ -7892,8 +7656,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tuples))]
-    [ChildElementInfo(typeof(MemberPropertyIndex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "s")]
@@ -8041,7 +7803,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MemberPropertyIndex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "d")]
@@ -8243,8 +8004,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tuple))]
-
 public abstract partial class TuplesType : OpenXmlCompositeElement
 {
     
@@ -8334,7 +8093,6 @@ public partial class MemberPropertiesMap : XType
 /// Defines the XType class.
 /// </summary>
 
-
 public abstract partial class XType : OpenXmlLeafElement
 {
     
@@ -8373,13 +8131,6 @@ public abstract partial class XType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MissingItem))]
-    [ChildElementInfo(typeof(NumberItem))]
-    [ChildElementInfo(typeof(BooleanItem))]
-    [ChildElementInfo(typeof(ErrorItem))]
-    [ChildElementInfo(typeof(StringItem))]
-    [ChildElementInfo(typeof(DateTimeItem))]
-    [ChildElementInfo(typeof(FieldItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "r")]
@@ -8579,8 +8330,6 @@ public partial class FieldUsage : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Groups))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "groupLevel")]
@@ -8697,7 +8446,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Group))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "groups")]
@@ -8764,7 +8512,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(GroupMembers))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "group")]
@@ -8876,7 +8623,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(GroupMember))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "groupMembers")]
@@ -8987,10 +8733,6 @@ public partial class GroupMember : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MissingItem))]
-    [ChildElementInfo(typeof(NumberItem))]
-    [ChildElementInfo(typeof(ErrorItem))]
-    [ChildElementInfo(typeof(StringItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "entries")]
@@ -9060,7 +8802,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TupleSet))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sets")]
@@ -9127,7 +8868,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Query))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "queryCache")]
@@ -9194,7 +8934,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ServerFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "serverFormats")]
@@ -9350,8 +9089,6 @@ public partial class Tuple : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tuples))]
-    [ChildElementInfo(typeof(SortByTuple))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "set")]
@@ -9449,7 +9186,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tuples))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "query")]
@@ -9532,8 +9268,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotArea))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "calculatedItem")]
@@ -9635,8 +9369,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotAreaReferences))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pivotArea")]
@@ -9807,7 +9539,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CalculatedMemberExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "calculatedMember")]
@@ -9934,9 +9665,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Items))]
-    [ChildElementInfo(typeof(AutoSortScope))]
-    [ChildElementInfo(typeof(PivotFieldExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pivotField")]
@@ -10475,7 +10203,6 @@ public partial class Item : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataFieldExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "dataField")]
@@ -10599,7 +10326,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MemberPropertyIndex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "i")]
@@ -10715,8 +10441,6 @@ public partial class Field : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotArea))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "format")]
@@ -10818,8 +10542,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotAreas))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "conditionalFormat")]
@@ -10928,7 +10650,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotArea))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pivotAreas")]
@@ -10995,7 +10716,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotArea))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "chartFormat")]
@@ -11094,9 +10814,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MemberProperties))]
-    [ChildElementInfo(typeof(Members))]
-    [ChildElementInfo(typeof(PivotHierarchyExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pivotHierarchy")]
@@ -11282,7 +10999,6 @@ public partial class ColumnHierarchyUsage : HierarchyUsageType
 /// <summary>
 /// Defines the HierarchyUsageType class.
 /// </summary>
-
 
 public abstract partial class HierarchyUsageType : OpenXmlLeafElement
 {
@@ -11583,8 +11299,6 @@ public partial class MeasureDimensionMap : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AutoFilter))]
-    [ChildElementInfo(typeof(PivotFilterExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "filter")]
@@ -11753,9 +11467,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FieldsUsage))]
-    [ChildElementInfo(typeof(GroupLevels))]
-    [ChildElementInfo(typeof(CacheHierarchyExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cacheHierarchy")]
@@ -12093,7 +11804,6 @@ public partial class RangeProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FieldItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "discretePr")]
@@ -12165,12 +11875,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MissingItem))]
-    [ChildElementInfo(typeof(NumberItem))]
-    [ChildElementInfo(typeof(BooleanItem))]
-    [ChildElementInfo(typeof(ErrorItem))]
-    [ChildElementInfo(typeof(StringItem))]
-    [ChildElementInfo(typeof(DateTimeItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "groupItems")]
@@ -12242,7 +11946,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pageField")]
@@ -12352,7 +12055,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotAreaReference))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "references")]
@@ -12420,8 +12122,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FieldItem))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "reference")]
@@ -12601,7 +12301,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(QueryTableField))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "queryTableFields")]
@@ -12668,7 +12367,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DeletedField))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "queryTableDeletedFields")]
@@ -12769,7 +12467,6 @@ public partial class DeletedField : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "queryTableField")]
@@ -13074,11 +12771,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Text))]
-    [ChildElementInfo(typeof(Run))]
-    [ChildElementInfo(typeof(PhoneticRun))]
-    [ChildElementInfo(typeof(PhoneticProperties))]
-
 public abstract partial class RstType : OpenXmlCompositeElement
 {
     
@@ -13279,7 +12971,6 @@ public partial class Shadow : BooleanPropertyType
 /// <summary>
 /// Defines the BooleanPropertyType class.
 /// </summary>
-
 
 public abstract partial class BooleanPropertyType : OpenXmlLeafElement
 {
@@ -13490,7 +13181,6 @@ public partial class BackgroundColor : ColorType
 /// Defines the ColorType class.
 /// </summary>
 
-
 public abstract partial class ColorType : OpenXmlLeafElement
 {
     
@@ -13620,7 +13310,6 @@ public partial class RunPropertyCharSet : InternationalPropertyType
 /// Defines the InternationalPropertyType class.
 /// </summary>
 
-
 public abstract partial class InternationalPropertyType : OpenXmlLeafElement
 {
     
@@ -13702,21 +13391,6 @@ public partial class FontScheme : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Bold))]
-    [ChildElementInfo(typeof(Italic))]
-    [ChildElementInfo(typeof(Strike))]
-    [ChildElementInfo(typeof(Condense))]
-    [ChildElementInfo(typeof(Extend))]
-    [ChildElementInfo(typeof(Outline))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(Underline))]
-    [ChildElementInfo(typeof(VerticalTextAlignment))]
-    [ChildElementInfo(typeof(FontSize))]
-    [ChildElementInfo(typeof(Color))]
-    [ChildElementInfo(typeof(RunFont))]
-    [ChildElementInfo(typeof(FontFamily))]
-    [ChildElementInfo(typeof(RunPropertyCharSet))]
-    [ChildElementInfo(typeof(FontScheme))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rPr")]
@@ -13791,8 +13465,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RunProperties))]
-    [ChildElementInfo(typeof(Text))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "r")]
@@ -13879,7 +13551,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Text))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rPh")]
@@ -14019,9 +13690,6 @@ public partial class PhoneticProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SheetIdMap))]
-    [ChildElementInfo(typeof(ReviewedList))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "header")]
@@ -14180,9 +13848,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Undo))]
-    [ChildElementInfo(typeof(RevisionCellChange))]
-    [ChildElementInfo(typeof(RevisionFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rrc")]
@@ -14306,9 +13971,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Undo))]
-    [ChildElementInfo(typeof(RevisionCellChange))]
-    [ChildElementInfo(typeof(RevisionFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rm")]
@@ -14466,7 +14128,6 @@ public partial class RevisionCustomView : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rsnm")]
@@ -14662,11 +14323,6 @@ public partial class RevisionInsertSheet : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OldCell))]
-    [ChildElementInfo(typeof(NewCell))]
-    [ChildElementInfo(typeof(OldDifferentialFormat))]
-    [ChildElementInfo(typeof(NewDifferentialFormat))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rcc")]
@@ -14893,8 +14549,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DifferentialFormat))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rfmt")]
@@ -15118,9 +14772,6 @@ public partial class RevisionAutoFormat : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula))]
-    [ChildElementInfo(typeof(OldFormula))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rdn")]
@@ -15603,7 +15254,6 @@ public partial class RevisionConflict : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SheetId))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetIdMap")]
@@ -15670,7 +15320,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Reviewed))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "reviewedList")]
@@ -15998,11 +15647,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CellFormula))]
-    [ChildElementInfo(typeof(CellValue))]
-    [ChildElementInfo(typeof(InlineString))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 public abstract partial class CellType : OpenXmlCompositeElement
 {
     
@@ -16146,10 +15790,6 @@ public abstract partial class CellType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CellFormula))]
-    [ChildElementInfo(typeof(CellValue))]
-    [ChildElementInfo(typeof(InlineString))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "nc")]
@@ -16507,14 +16147,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Font))]
-    [ChildElementInfo(typeof(NumberingFormat))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Alignment))]
-    [ChildElementInfo(typeof(Border))]
-    [ChildElementInfo(typeof(Protection))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 public abstract partial class DifferentialFormatType : OpenXmlCompositeElement
 {
     
@@ -16813,7 +16445,6 @@ public partial class CellFormula : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "userInfo")]
@@ -16921,8 +16552,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Cell))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "row")]
@@ -17384,7 +17013,6 @@ public partial class Selection : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotArea))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pivotSelection")]
@@ -17803,8 +17431,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Break))]
-
 public abstract partial class PageBreakType : OpenXmlCompositeElement
 {
     
@@ -18154,12 +17780,6 @@ public partial class PageSetup : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OddHeader))]
-    [ChildElementInfo(typeof(OddFooter))]
-    [ChildElementInfo(typeof(EvenHeader))]
-    [ChildElementInfo(typeof(EvenFooter))]
-    [ChildElementInfo(typeof(FirstHeader))]
-    [ChildElementInfo(typeof(FirstFooter))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "headerFooter")]
@@ -18328,9 +17948,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FilterColumn))]
-    [ChildElementInfo(typeof(SortState))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "autoFilter")]
@@ -18403,11 +18020,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula))]
-    [ChildElementInfo(typeof(ColorScale))]
-    [ChildElementInfo(typeof(DataBar))]
-    [ChildElementInfo(typeof(IconSet))]
-    [ChildElementInfo(typeof(ConditionalFormattingRuleExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cfRule")]
@@ -18628,7 +18240,6 @@ public partial class Hyperlink : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cfvo")]
@@ -18724,7 +18335,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(InputCells))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "scenario")]
@@ -19217,7 +18827,6 @@ public partial class TablePart : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetView")]
@@ -19322,9 +18931,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PageMargins))]
-    [ChildElementInfo(typeof(ChartSheetPageSetup))]
-    [ChildElementInfo(typeof(HeaderFooter))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "customSheetView")]
@@ -19517,7 +19123,6 @@ public partial class InputCells : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "control")]
@@ -19749,9 +19354,6 @@ public partial class MergeCell : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.ExcelAc.List), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(Formula1))]
-    [ChildElementInfo(typeof(Formula2))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "dataValidation")]
@@ -19946,10 +19548,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Pane))]
-    [ChildElementInfo(typeof(Selection))]
-    [ChildElementInfo(typeof(PivotSelection))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetView")]
@@ -20169,16 +19767,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Pane))]
-    [ChildElementInfo(typeof(Selection))]
-    [ChildElementInfo(typeof(RowBreaks))]
-    [ChildElementInfo(typeof(ColumnBreaks))]
-    [ChildElementInfo(typeof(PageMargins))]
-    [ChildElementInfo(typeof(PrintOptions))]
-    [ChildElementInfo(typeof(PageSetup))]
-    [ChildElementInfo(typeof(HeaderFooter))]
-    [ChildElementInfo(typeof(AutoFilter))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "customSheetView")]
@@ -20511,7 +20099,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(EmbeddedObjectProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "oleObject")]
@@ -20637,7 +20224,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MetadataType))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "metadataTypes")]
@@ -20704,7 +20290,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CharacterValue))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "metadataStrings")]
@@ -20771,7 +20356,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Mdx))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "mdxMetadata")]
@@ -20839,8 +20423,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FutureMetadataBlock))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "futureMetadata")]
@@ -21021,8 +20603,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>MetadataBlock &lt;x:bk></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(MetadataBlock))]
 
 public abstract partial class MetadataBlocksType : OpenXmlCompositeElement
 {
@@ -21303,7 +20883,6 @@ public partial class MetadataType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MetadataRecord))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "bk")]
@@ -21405,7 +20984,6 @@ public partial class MetadataRecord : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "bk")]
@@ -21482,10 +21060,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MdxTuple))]
-    [ChildElementInfo(typeof(MdxSet))]
-    [ChildElementInfo(typeof(MdxMemberProp))]
-    [ChildElementInfo(typeof(MdxKpi))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "mdx")]
@@ -21614,7 +21188,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NameIndex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "t")]
@@ -21746,7 +21319,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NameIndex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ms")]
@@ -21962,8 +21534,6 @@ public partial class NameIndex : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(XmlCellProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "singleXmlCell")]
@@ -22075,8 +21645,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(XmlProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "xmlCellPr")]
@@ -22179,7 +21747,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "xmlPr")]
@@ -22278,8 +21845,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ForegroundColor))]
-    [ChildElementInfo(typeof(BackgroundColor))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "patternFill")]
@@ -22373,7 +21938,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(GradientStop))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "gradientFill")]
@@ -22475,7 +22039,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Color))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "stop")]
@@ -22749,21 +22312,6 @@ public partial class Protection : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Bold))]
-    [ChildElementInfo(typeof(Italic))]
-    [ChildElementInfo(typeof(Strike))]
-    [ChildElementInfo(typeof(Condense))]
-    [ChildElementInfo(typeof(Extend))]
-    [ChildElementInfo(typeof(Outline))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(Underline))]
-    [ChildElementInfo(typeof(VerticalTextAlignment))]
-    [ChildElementInfo(typeof(FontSize))]
-    [ChildElementInfo(typeof(Color))]
-    [ChildElementInfo(typeof(FontName))]
-    [ChildElementInfo(typeof(FontFamilyNumbering))]
-    [ChildElementInfo(typeof(FontCharSet))]
-    [ChildElementInfo(typeof(FontScheme))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "font")]
@@ -23020,8 +22568,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PatternFill))]
-    [ChildElementInfo(typeof(GradientFill))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "fill")]
@@ -23116,15 +22662,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StartBorder), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(EndBorder), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LeftBorder))]
-    [ChildElementInfo(typeof(RightBorder))]
-    [ChildElementInfo(typeof(TopBorder))]
-    [ChildElementInfo(typeof(BottomBorder))]
-    [ChildElementInfo(typeof(DiagonalBorder))]
-    [ChildElementInfo(typeof(VerticalBorder))]
-    [ChildElementInfo(typeof(HorizontalBorder))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "border")]
@@ -23323,7 +22860,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RgbColor))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "indexedColors")]
@@ -23383,7 +22919,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Color))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "mruColors")]
@@ -23443,7 +22978,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TableStyleElement))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "tableStyle")]
@@ -23566,7 +23100,6 @@ public partial class RgbColor : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cellStyle")]
@@ -23685,9 +23218,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Alignment))]
-    [ChildElementInfo(typeof(Protection))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "xf")]
@@ -24031,7 +23561,6 @@ public partial class TableStyleElement : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SheetName))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetNames")]
@@ -24091,7 +23620,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExternalDefinedName))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "definedNames")]
@@ -24151,7 +23679,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExternalSheetData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetDataSet")]
@@ -24259,7 +23786,6 @@ public partial class ExternalDefinedName : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExternalRow))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetData")]
@@ -24334,7 +23860,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExternalCell))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "row")]
@@ -24402,7 +23927,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Xstring))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cell")]
@@ -24498,7 +24022,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DdeItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ddeItems")]
@@ -24558,7 +24081,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Values))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ddeItem")]
@@ -24660,7 +24182,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Value))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "values")]
@@ -24734,7 +24255,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DdeLinkValue))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "value")]
@@ -24816,8 +24336,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OleItem))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.OleItem), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "oleItems")]
@@ -24880,9 +24398,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SheetNames))]
-    [ChildElementInfo(typeof(ExternalDefinedNames))]
-    [ChildElementInfo(typeof(SheetDataSet))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "externalBook")]
@@ -24992,7 +24507,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DdeItems))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ddeLink")]
@@ -25082,7 +24596,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OleItems))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "oleLink")]
@@ -25247,10 +24760,6 @@ public partial class Xstring : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CalculatedColumnFormula))]
-    [ChildElementInfo(typeof(TotalsRowFormula))]
-    [ChildElementInfo(typeof(XmlColumnProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "tableColumn")]
@@ -25505,7 +25014,6 @@ public partial class TotalsRowFormula : TableFormulaType
 /// Defines the TableFormulaType class.
 /// </summary>
 
-
 public abstract partial class TableFormulaType : OpenXmlLeafTextElement
 {
     
@@ -25558,7 +25066,6 @@ public abstract partial class TableFormulaType : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "xmlColumnPr")]
@@ -25663,7 +25170,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Main))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "volType")]
@@ -25731,7 +25237,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Topic))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "main")]
@@ -25801,9 +25306,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Xstring))]
-    [ChildElementInfo(typeof(Subtopic))]
-    [ChildElementInfo(typeof(TopicReferences))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "tp")]
@@ -26079,7 +25581,6 @@ public partial class ExternalReference : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "customWorkbookView")]
@@ -26384,7 +25885,6 @@ public partial class Sheet : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "workbookView")]
@@ -26726,7 +26226,6 @@ public partial class FunctionGroup : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.Table), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -26797,8 +26296,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FromMarker), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ToMarker), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(22, "anchor")]
@@ -27027,11 +26524,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Spreadsheet.ColumnId))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Spreadsheet.ColumnOffset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Spreadsheet.RowId))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Spreadsheet.RowOffset))]
-
 public abstract partial class MarkerType : OpenXmlCompositeElement
 {
     
@@ -27130,7 +26622,6 @@ public abstract partial class MarkerType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.Id), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -27200,7 +26691,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.PivotHierarchy), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -27270,7 +26760,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.PivotField), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -27340,7 +26829,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.SourceConnection), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -27410,7 +26898,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TableColumn))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "tableColumns")]
@@ -27538,7 +27025,6 @@ public partial class TableStyleInfo : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TableExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -28137,8 +27623,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Color))]
-
 public abstract partial class BorderPropertiesType : OpenXmlCompositeElement
 {
     
@@ -28208,7 +27692,6 @@ public abstract partial class BorderPropertiesType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ObjectAnchor), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(22, "controlPr")]
@@ -28389,7 +27872,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ObjectAnchor), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(22, "objectPr")]
@@ -28549,7 +28031,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TabColor))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetPr")]
@@ -28638,8 +28119,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartSheetView))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetViews")]
@@ -28776,7 +28255,6 @@ public partial class ChartSheetProtection : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomChartsheetView))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "customSheetViews")]
@@ -28905,7 +28383,6 @@ public partial class LegacyDrawingHeaderFooter : LegacyDrawingType
 /// <summary>
 /// Defines the LegacyDrawingType class.
 /// </summary>
-
 
 public abstract partial class LegacyDrawingType : OpenXmlLeafElement
 {
@@ -29140,7 +28617,6 @@ public partial class Picture : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WebPublishItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "webPublishItems")]
@@ -29208,8 +28684,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormatValueObject))]
-    [ChildElementInfo(typeof(Color))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "colorScale")]
@@ -29271,8 +28745,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormatValueObject))]
-    [ChildElementInfo(typeof(Color))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "dataBar")]
@@ -29354,7 +28826,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormatValueObject))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "iconSet")]
@@ -29442,7 +28913,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormattingRuleExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -29502,7 +28972,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataReference))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "dataRefs")]
@@ -29571,9 +29040,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TabColor))]
-    [ChildElementInfo(typeof(OutlineProperties))]
-    [ChildElementInfo(typeof(PageSetupProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetPr")]
@@ -29737,8 +29203,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SheetView))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetViews")]
@@ -30073,7 +29537,6 @@ public partial class SheetProtection : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomSheetView))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "customSheetViews")]
@@ -30133,7 +29596,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OleObject))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "oleObjects")]
@@ -30193,7 +29655,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Control))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "controls")]
@@ -30287,7 +29748,6 @@ public partial class SheetDimension : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Column))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cols")]
@@ -30347,7 +29807,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Row))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheetData")]
@@ -30407,7 +29866,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataReferences))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "dataConsolidate")]
@@ -30518,8 +29976,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormattingRule))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "conditionalFormatting")]
@@ -30594,7 +30050,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomProperty))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "customProperties")]
@@ -30654,7 +30109,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MemberProperty))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "mps")]
@@ -30721,7 +30175,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Member))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "members")]
@@ -30795,7 +30248,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotHierarchyExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -30855,7 +30307,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Item))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "items")]
@@ -30922,7 +30373,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotArea))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "autoSortScope")]
@@ -30996,7 +30446,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotFieldExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -31113,8 +30562,6 @@ public partial class WorksheetSource : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Pages))]
-    [ChildElementInfo(typeof(RangeSets))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "consolidation")]
@@ -31208,7 +30655,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CacheSourceExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -31268,7 +30714,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ObjectAnchor), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(22, "commentPr")]
@@ -31636,9 +31081,6 @@ public partial class DateGroupItem : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.Filter), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Filter))]
-    [ChildElementInfo(typeof(DateGroupItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "filters")]
@@ -31769,7 +31211,6 @@ public partial class Top10 : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomFilter))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "customFilters")]
@@ -31984,9 +31425,6 @@ public partial class IconFilter : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.SlicerCachePivotTables), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.TableSlicerCache), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.SlicerCacheHideItemsWithNoData), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -32059,8 +31497,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.PivotFilter), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.MovingPeriodState), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -32131,7 +31567,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.QueryTable), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -32345,7 +31780,6 @@ public partial class OlapProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tables))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "webPr")]
@@ -32510,7 +31944,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TextFields))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "textPr")]
@@ -32696,7 +32129,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Parameter))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "parameters")]
@@ -32763,7 +32195,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConnectionExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -32824,8 +32255,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.Connection), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.Connection), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -32896,7 +32325,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TextField))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "textFields")]
@@ -32965,9 +32393,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WorksheetSource))]
-    [ChildElementInfo(typeof(Consolidation))]
-    [ChildElementInfo(typeof(CacheSourceExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cacheSource")]
@@ -33082,7 +32507,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CacheField))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cacheFields")]
@@ -33149,7 +32573,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CacheHierarchy))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cacheHierarchies")]
@@ -33216,7 +32639,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Kpi))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "kpis")]
@@ -33287,11 +32709,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Entries))]
-    [ChildElementInfo(typeof(Sets))]
-    [ChildElementInfo(typeof(QueryCache))]
-    [ChildElementInfo(typeof(ServerFormats))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "tupleCache")]
@@ -33417,7 +32834,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CalculatedItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "calculatedItems")]
@@ -33484,7 +32900,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CalculatedMember))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "calculatedMembers")]
@@ -33551,7 +32966,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Dimension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "dimensions")]
@@ -33618,7 +33032,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MeasureGroup))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "measureGroups")]
@@ -33685,7 +33098,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MeasureDimensionMap))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "maps")]
@@ -33752,7 +33164,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotCacheDefinitionExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -33815,10 +33226,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.PivotCacheDefinition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.PivotCacheDecoupled), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.TimelinePivotCacheDefinition), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.PivotCacheIdVersion), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -33896,12 +33303,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MissingItem))]
-    [ChildElementInfo(typeof(NumberItem))]
-    [ChildElementInfo(typeof(BooleanItem))]
-    [ChildElementInfo(typeof(ErrorItem))]
-    [ChildElementInfo(typeof(StringItem))]
-    [ChildElementInfo(typeof(DateTimeItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sharedItems")]
@@ -34066,9 +33467,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RangeProperties))]
-    [ChildElementInfo(typeof(DiscreteProperties))]
-    [ChildElementInfo(typeof(GroupItems))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "fieldGroup")]
@@ -34147,7 +33545,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CacheFieldExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -34208,8 +33605,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.CacheField), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.CachedUniqueNames), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -34280,7 +33675,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FieldUsage))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "fieldsUsage")]
@@ -34347,7 +33741,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(GroupLevel))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "groupLevels")]
@@ -34414,7 +33807,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CacheHierarchyExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -34475,8 +33867,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.CacheHierarchy), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.CacheHierarchy), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -34547,7 +33937,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CalculatedMemberExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -34608,8 +33997,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.CalculatedMember), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.CalculatedMember), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -34752,7 +34139,6 @@ public partial class Location : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotField))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pivotFields")]
@@ -34819,7 +34205,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Field))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rowFields")]
@@ -34886,7 +34271,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RowItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rowItems")]
@@ -34953,7 +34337,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Field))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "colFields")]
@@ -35020,7 +34403,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RowItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "colItems")]
@@ -35087,7 +34469,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PageField))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pageFields")]
@@ -35154,7 +34535,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataField))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "dataFields")]
@@ -35221,7 +34601,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Format))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "formats")]
@@ -35288,7 +34667,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "conditionalFormats")]
@@ -35355,7 +34733,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "chartFormats")]
@@ -35422,7 +34799,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotHierarchy))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pivotHierarchies")]
@@ -35557,7 +34933,6 @@ public partial class PivotTableStyle : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotFilter))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "filters")]
@@ -35624,7 +34999,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RowHierarchyUsage))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "rowHierarchiesUsage")]
@@ -35691,7 +35065,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ColumnHierarchyUsage))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "colHierarchiesUsage")]
@@ -35758,7 +35131,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotTableDefinitionExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -35820,9 +35192,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.PivotTableDefinition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.PivotTableData), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.PivotTableUISettings), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -35894,7 +35263,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataFieldExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -35955,8 +35323,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.DataField), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.DataField), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -36027,7 +35393,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotFilterExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -36090,10 +35455,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(QueryTableFields))]
-    [ChildElementInfo(typeof(QueryTableDeletedFields))]
-    [ChildElementInfo(typeof(SortState))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "queryTableRefresh")]
@@ -36255,7 +35616,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(QueryTableExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -36348,7 +35708,6 @@ public partial class SheetCalculationProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ProtectedRange))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "protectedRanges")]
@@ -36408,7 +35767,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Scenario))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "scenarios")]
@@ -36489,7 +35847,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MergeCell))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "mergeCells")]
@@ -36556,7 +35913,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataValidation))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "dataValidations")]
@@ -36644,7 +36000,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Hyperlink))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "hyperlinks")]
@@ -36704,7 +36059,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CellWatch))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cellWatches")]
@@ -36765,8 +36119,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(IgnoredError))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ignoredErrors")]
@@ -36827,7 +36179,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TablePart))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "tableParts")]
@@ -36894,7 +36245,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WorksheetExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -36961,14 +36311,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.ConditionalFormattings), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.DataValidations), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.SparklineGroups), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.SlicerList), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.ProtectedRanges), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.IgnoredErrors), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.WebExtensions), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.TimelineReferences), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -37045,7 +36387,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumberingFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "numFmts")]
@@ -37112,7 +36453,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Font))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "fonts")]
@@ -37189,7 +36529,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Fill))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "fills")]
@@ -37256,7 +36595,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Border))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "borders")]
@@ -37323,7 +36661,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CellFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cellStyleXfs")]
@@ -37390,7 +36727,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CellFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cellXfs")]
@@ -37457,7 +36793,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CellStyle))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "cellStyles")]
@@ -37524,7 +36859,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DifferentialFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "dxfs")]
@@ -37591,7 +36925,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TableStyle))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "tableStyles")]
@@ -37673,8 +37006,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(IndexedColors))]
-    [ChildElementInfo(typeof(MruColors))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "colors")]
@@ -37761,7 +37092,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StylesheetExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -37824,10 +37154,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.DifferentialFormats), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.SlicerStyles), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.DifferentialFormats), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.TimelineStyles), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]
@@ -38317,7 +37643,6 @@ public partial class WorkbookProtection : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WorkbookView))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "bookViews")]
@@ -38377,7 +37702,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Sheet))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "sheets")]
@@ -38437,7 +37761,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FunctionGroup))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "functionGroups")]
@@ -38504,7 +37827,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExternalReference))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "externalReferences")]
@@ -38564,7 +37886,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DefinedName))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "definedNames")]
@@ -38775,7 +38096,6 @@ public partial class OleSize : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomWorkbookView))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "customWorkbookViews")]
@@ -38835,7 +38155,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotCache))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "pivotCaches")]
@@ -39038,7 +38357,6 @@ public partial class FileRecoveryProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WebPublishObject))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "webPublishObjects")]
@@ -39105,7 +38423,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WorkbookExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "extLst")]
@@ -39175,17 +38492,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.DefinedNames), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.PivotCaches), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.SlicerCaches), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.SlicerCaches), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.WorkbookProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.PivotCaches), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.PivotTableReferences), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.TimelineCachePivotCaches), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.TimelineCacheReferences), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.WorkbookProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Excel.DataModel), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(22, "ext")]

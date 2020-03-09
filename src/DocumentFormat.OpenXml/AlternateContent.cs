@@ -11,8 +11,6 @@ namespace DocumentFormat.OpenXml
     /// compatibility.
     /// </summary>
     [SchemaAttr(Namespace, Name)]
-    [ChildElementInfo(typeof(AlternateContentChoice))]
-    [ChildElementInfo(typeof(AlternateContentFallback))]
     public class AlternateContent : OpenXmlCompositeElement
     {
         internal const string Namespace = @"http://schemas.openxmlformats.org/markup-compatibility/2006";

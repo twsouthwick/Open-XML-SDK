@@ -24,9 +24,6 @@ namespace DocumentFormat.OpenXml.Office2010.Ink
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ContextNodeProperty))]
-    [ChildElementInfo(typeof(SourceLink))]
-    [ChildElementInfo(typeof(DestinationLink))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(45, "context")]
@@ -332,7 +329,6 @@ public partial class DestinationLink : ContextLinkType
 /// <summary>
 /// Defines the ContextLinkType class.
 /// </summary>
-
 
 public abstract partial class ContextLinkType : OpenXmlLeafElement
 {

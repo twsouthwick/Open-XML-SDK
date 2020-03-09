@@ -80,20 +80,6 @@ public partial class NumberingFormat : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Transform2D))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.CustomGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Outline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "spPr")]
@@ -318,10 +304,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>DocumentFormat.OpenXml.Drawing.Paragraph &lt;a:p></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BodyProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ListStyle))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Paragraph))]
 
 public abstract partial class TextBodyType : OpenXmlCompositeElement
 {
@@ -1263,7 +1245,6 @@ public partial class RoundedCorners : BooleanType
 /// Defines the BooleanType class.
 /// </summary>
 
-
 public abstract partial class BooleanType : OpenXmlLeafElement
 {
     
@@ -1393,8 +1374,6 @@ public partial class Formula : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ManualLayout))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "layout")]
@@ -1483,9 +1462,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StringReference))]
-    [ChildElementInfo(typeof(RichText))]
-    [ChildElementInfo(typeof(StringLiteral))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "tx")]
@@ -1910,8 +1886,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-
 public abstract partial class ChartLinesType : OpenXmlCompositeElement
 {
     
@@ -2134,7 +2108,6 @@ public partial class FormatId : UnsignedIntegerType
 /// Defines the UnsignedIntegerType class.
 /// </summary>
 
-
 public abstract partial class UnsignedIntegerType : OpenXmlLeafElement
 {
     
@@ -2169,8 +2142,6 @@ public abstract partial class UnsignedIntegerType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StringReference))]
-    [ChildElementInfo(typeof(NumericValue))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "tx")]
@@ -2306,20 +2277,6 @@ public partial class Grouping : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Order))]
-    [ChildElementInfo(typeof(SeriesText))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(Marker))]
-    [ChildElementInfo(typeof(PictureOptions))]
-    [ChildElementInfo(typeof(DataPoint))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(Trendline))]
-    [ChildElementInfo(typeof(ErrorBars))]
-    [ChildElementInfo(typeof(CategoryAxisData))]
-    [ChildElementInfo(typeof(Values))]
-    [ChildElementInfo(typeof(Smooth))]
-    [ChildElementInfo(typeof(LineSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ser")]
@@ -2487,22 +2444,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataLabel))]
-    [ChildElementInfo(typeof(Delete))]
-    [ChildElementInfo(typeof(NumberingFormat))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(DataLabelPosition))]
-    [ChildElementInfo(typeof(ShowLegendKey))]
-    [ChildElementInfo(typeof(ShowValue))]
-    [ChildElementInfo(typeof(ShowCategoryName))]
-    [ChildElementInfo(typeof(ShowSeriesName))]
-    [ChildElementInfo(typeof(ShowPercent))]
-    [ChildElementInfo(typeof(ShowBubbleSize))]
-    [ChildElementInfo(typeof(Separator))]
-    [ChildElementInfo(typeof(ShowLeaderLines))]
-    [ChildElementInfo(typeof(LeaderLines))]
-    [ChildElementInfo(typeof(DLblsExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "dLbls")]
@@ -2672,20 +2613,6 @@ public partial class BarGrouping : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Order))]
-    [ChildElementInfo(typeof(SeriesText))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(InvertIfNegative))]
-    [ChildElementInfo(typeof(PictureOptions))]
-    [ChildElementInfo(typeof(DataPoint))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(Trendline))]
-    [ChildElementInfo(typeof(ErrorBars))]
-    [ChildElementInfo(typeof(CategoryAxisData))]
-    [ChildElementInfo(typeof(Values))]
-    [ChildElementInfo(typeof(Shape))]
-    [ChildElementInfo(typeof(BarSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ser")]
@@ -2849,18 +2776,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Order))]
-    [ChildElementInfo(typeof(SeriesText))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(PictureOptions))]
-    [ChildElementInfo(typeof(DataPoint))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(Trendline))]
-    [ChildElementInfo(typeof(ErrorBars))]
-    [ChildElementInfo(typeof(CategoryAxisData))]
-    [ChildElementInfo(typeof(Values))]
-    [ChildElementInfo(typeof(AreaSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ser")]
@@ -3009,17 +2924,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Order))]
-    [ChildElementInfo(typeof(SeriesText))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(PictureOptions))]
-    [ChildElementInfo(typeof(Explosion))]
-    [ChildElementInfo(typeof(DataPoint))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(CategoryAxisData))]
-    [ChildElementInfo(typeof(Values))]
-    [ChildElementInfo(typeof(PieSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ser")]
@@ -3177,15 +3081,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Order))]
-    [ChildElementInfo(typeof(SeriesText))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(PictureOptions))]
-    [ChildElementInfo(typeof(CategoryAxisData))]
-    [ChildElementInfo(typeof(Values))]
-    [ChildElementInfo(typeof(Bubble3D))]
-    [ChildElementInfo(typeof(SurfaceSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ser")]
@@ -3369,7 +3264,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BandFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "bandFmts")]
@@ -3433,11 +3327,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(LogBase))]
-    [ChildElementInfo(typeof(Orientation))]
-    [ChildElementInfo(typeof(MaxAxisValue))]
-    [ChildElementInfo(typeof(MinAxisValue))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "scaling")]
@@ -3602,12 +3491,6 @@ public partial class AxisPosition : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartText))]
-    [ChildElementInfo(typeof(Layout))]
-    [ChildElementInfo(typeof(Overlay))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "title")]
@@ -3779,7 +3662,6 @@ public partial class MinorTickMark : TickMarkType
 /// <summary>
 /// Defines the TickMarkType class.
 /// </summary>
-
 
 public abstract partial class TickMarkType : OpenXmlLeafElement
 {
@@ -4145,7 +4027,6 @@ public partial class MinAxisValue : DoubleType
 /// Defines the DoubleType class.
 /// </summary>
 
-
 public abstract partial class DoubleType : OpenXmlLeafElement
 {
     
@@ -4191,22 +4072,6 @@ public abstract partial class DoubleType : OpenXmlLeafElement
 ///<item><description>ChartSpaceExtensionList &lt;c:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(Date1904))]
-    [ChildElementInfo(typeof(EditingLanguage))]
-    [ChildElementInfo(typeof(RoundedCorners))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.Charts.Style), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Style))]
-    [ChildElementInfo(typeof(ColorMapOverride))]
-    [ChildElementInfo(typeof(PivotSource))]
-    [ChildElementInfo(typeof(Protection))]
-    [ChildElementInfo(typeof(Chart))]
-    [ChildElementInfo(typeof(ShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(ExternalData))]
-    [ChildElementInfo(typeof(PrintSettings))]
-    [ChildElementInfo(typeof(UserShapesReference))]
-    [ChildElementInfo(typeof(ChartSpaceExtensionList))]
 
 [SchemaAttr(11, "chartSpace")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -4345,9 +4210,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>DocumentFormat.OpenXml.Drawing.ChartDrawing.AbsoluteAnchorSize &lt;cdr:absSizeAnchor></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ChartDrawing.RelativeAnchorSize))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ChartDrawing.AbsoluteAnchorSize))]
 
 [SchemaAttr(11, "userShapes")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -4493,7 +4355,6 @@ public partial class UserShapesReference : RelationshipIdType
 /// <summary>
 /// Defines the RelationshipIdType class.
 /// </summary>
-
 
 public abstract partial class RelationshipIdType : OpenXmlLeafElement
 {
@@ -4879,7 +4740,6 @@ public partial class PivotTableName : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumericValue))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "pt")]
@@ -4968,7 +4828,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -5030,9 +4889,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula))]
-    [ChildElementInfo(typeof(NumberingCache))]
-    [ChildElementInfo(typeof(NumRefExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "numRef")]
@@ -5253,11 +5109,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FormatCode))]
-    [ChildElementInfo(typeof(PointCount))]
-    [ChildElementInfo(typeof(NumericPoint))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 public abstract partial class NumberDataType : OpenXmlCompositeElement
 {
     
@@ -5332,7 +5183,6 @@ public abstract partial class NumberDataType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StringPoint))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "lvl")]
@@ -5394,9 +5244,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula))]
-    [ChildElementInfo(typeof(MultiLevelStringCache))]
-    [ChildElementInfo(typeof(MultiLvlStrRefExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "multiLvlStrRef")]
@@ -5498,9 +5345,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula))]
-    [ChildElementInfo(typeof(StringCache))]
-    [ChildElementInfo(typeof(StrRefExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "strRef")]
@@ -5716,10 +5560,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PointCount))]
-    [ChildElementInfo(typeof(StringPoint))]
-    [ChildElementInfo(typeof(StrDataExtensionList))]
-
 public abstract partial class StringDataType : OpenXmlCompositeElement
 {
     
@@ -5891,7 +5731,6 @@ public partial class HeightMode : LayoutModeType
 /// Defines the LayoutModeType class.
 /// </summary>
 
-
 public abstract partial class LayoutModeType : OpenXmlLeafElement
 {
     
@@ -5933,16 +5772,6 @@ public abstract partial class LayoutModeType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(LayoutTarget))]
-    [ChildElementInfo(typeof(LeftMode))]
-    [ChildElementInfo(typeof(TopMode))]
-    [ChildElementInfo(typeof(WidthMode))]
-    [ChildElementInfo(typeof(HeightMode))]
-    [ChildElementInfo(typeof(Left))]
-    [ChildElementInfo(typeof(Top))]
-    [ChildElementInfo(typeof(Width))]
-    [ChildElementInfo(typeof(Height))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "manualLayout")]
@@ -6374,10 +6203,6 @@ public partial class Size : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Symbol))]
-    [ChildElementInfo(typeof(Size))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "marker")]
@@ -6494,11 +6319,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ApplyToFront))]
-    [ChildElementInfo(typeof(ApplyToSides))]
-    [ChildElementInfo(typeof(ApplyToEnd))]
-    [ChildElementInfo(typeof(PictureFormat))]
-    [ChildElementInfo(typeof(PictureStackUnit))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "pictureOptions")]
@@ -6732,12 +6552,6 @@ public partial class Period : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Layout))]
-    [ChildElementInfo(typeof(ChartText))]
-    [ChildElementInfo(typeof(NumberingFormat))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "trendlineLbl")]
@@ -7272,9 +7086,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumberReference))]
-    [ChildElementInfo(typeof(NumberLiteral))]
-
 public abstract partial class NumberDataSourceType : OpenXmlCompositeElement
 {
     
@@ -7382,7 +7193,6 @@ public partial class GapDepth : GapAmountType
 /// <summary>
 /// Defines the GapAmountType class.
 /// </summary>
-
 
 public abstract partial class GapAmountType : OpenXmlLeafElement
 {
@@ -7523,8 +7333,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-
 public abstract partial class UpDownBarType : OpenXmlCompositeElement
 {
     
@@ -7655,7 +7463,6 @@ public partial class SplitType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SecondPiePoint))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "custSplit")]
@@ -7750,8 +7557,6 @@ public partial class SecondPieSize : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "bandFmt")]
@@ -7943,10 +7748,6 @@ public partial class BuiltInUnit : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Layout))]
-    [ChildElementInfo(typeof(ChartText))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "dispUnitsLbl")]
@@ -8131,11 +7932,6 @@ public partial class Orientation : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(ShapeProperties))]
-    [ChildElementInfo(typeof(Marker))]
-    [ChildElementInfo(typeof(DataLabel))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "pivotFmt")]
@@ -8297,10 +8093,6 @@ public partial class LegendPosition : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Delete))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "legendEntry")]
@@ -8386,7 +8178,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "pivotFmts")]
@@ -8452,13 +8243,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RotateX))]
-    [ChildElementInfo(typeof(HeightPercent))]
-    [ChildElementInfo(typeof(RotateY))]
-    [ChildElementInfo(typeof(DepthPercent))]
-    [ChildElementInfo(typeof(RightAngleAxes))]
-    [ChildElementInfo(typeof(Perspective))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "view3D")]
@@ -8791,11 +8575,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Thickness))]
-    [ChildElementInfo(typeof(ShapeProperties))]
-    [ChildElementInfo(typeof(PictureOptions))]
-    [ChildElementInfo(typeof(ExtensionList))]
-
 public abstract partial class SurfaceType : OpenXmlCompositeElement
 {
     
@@ -8917,30 +8696,6 @@ public abstract partial class SurfaceType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Layout))]
-    [ChildElementInfo(typeof(AreaChart))]
-    [ChildElementInfo(typeof(Area3DChart))]
-    [ChildElementInfo(typeof(LineChart))]
-    [ChildElementInfo(typeof(Line3DChart))]
-    [ChildElementInfo(typeof(StockChart))]
-    [ChildElementInfo(typeof(RadarChart))]
-    [ChildElementInfo(typeof(ScatterChart))]
-    [ChildElementInfo(typeof(PieChart))]
-    [ChildElementInfo(typeof(Pie3DChart))]
-    [ChildElementInfo(typeof(DoughnutChart))]
-    [ChildElementInfo(typeof(BarChart))]
-    [ChildElementInfo(typeof(Bar3DChart))]
-    [ChildElementInfo(typeof(OfPieChart))]
-    [ChildElementInfo(typeof(SurfaceChart))]
-    [ChildElementInfo(typeof(Surface3DChart))]
-    [ChildElementInfo(typeof(BubbleChart))]
-    [ChildElementInfo(typeof(ValueAxis))]
-    [ChildElementInfo(typeof(CategoryAxis))]
-    [ChildElementInfo(typeof(DateAxis))]
-    [ChildElementInfo(typeof(SeriesAxis))]
-    [ChildElementInfo(typeof(DataTable))]
-    [ChildElementInfo(typeof(ShapeProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "plotArea")]
@@ -9049,13 +8804,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(LegendPosition))]
-    [ChildElementInfo(typeof(LegendEntry))]
-    [ChildElementInfo(typeof(Layout))]
-    [ChildElementInfo(typeof(Overlay))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "legend")]
@@ -9173,12 +8921,6 @@ public partial class DisplayBlanksAs : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OddHeader))]
-    [ChildElementInfo(typeof(OddFooter))]
-    [ChildElementInfo(typeof(EvenHeader))]
-    [ChildElementInfo(typeof(EvenFooter))]
-    [ChildElementInfo(typeof(FirstHeader))]
-    [ChildElementInfo(typeof(FirstFooter))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "headerFooter")]
@@ -9515,21 +9257,6 @@ public partial class PageSetup : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Transform2D))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.CustomGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Outline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "spPr")]
@@ -9658,22 +9385,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Delete))]
-    [ChildElementInfo(typeof(Layout))]
-    [ChildElementInfo(typeof(ChartText))]
-    [ChildElementInfo(typeof(NumberingFormat))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(DataLabelPosition))]
-    [ChildElementInfo(typeof(ShowLegendKey))]
-    [ChildElementInfo(typeof(ShowValue))]
-    [ChildElementInfo(typeof(ShowCategoryName))]
-    [ChildElementInfo(typeof(ShowSeriesName))]
-    [ChildElementInfo(typeof(ShowPercent))]
-    [ChildElementInfo(typeof(ShowBubbleSize))]
-    [ChildElementInfo(typeof(Separator))]
-    [ChildElementInfo(typeof(DLblExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "dLbl")]
@@ -9783,13 +9494,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Grouping))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(AreaChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(DropLines))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(AreaChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "areaChart")]
@@ -9894,14 +9598,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Grouping))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(AreaChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(DropLines))]
-    [ChildElementInfo(typeof(GapDepth))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(Area3DChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "area3DChart")]
@@ -10010,17 +9706,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Grouping))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(LineChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(DropLines))]
-    [ChildElementInfo(typeof(HighLowLines))]
-    [ChildElementInfo(typeof(UpDownBars))]
-    [ChildElementInfo(typeof(ShowMarker))]
-    [ChildElementInfo(typeof(Smooth))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(LineChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "lineChart")]
@@ -10129,14 +9814,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Grouping))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(LineChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(DropLines))]
-    [ChildElementInfo(typeof(GapDepth))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(Line3DChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "line3DChart")]
@@ -10241,13 +9918,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(LineChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(DropLines))]
-    [ChildElementInfo(typeof(HighLowLines))]
-    [ChildElementInfo(typeof(UpDownBars))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(StockChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "stockChart")]
@@ -10318,12 +9988,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RadarStyle))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(RadarChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(RadarChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "radarChart")]
@@ -10419,12 +10083,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ScatterStyle))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(ScatterChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(ScatterChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "scatterChart")]
@@ -10519,11 +10177,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(PieChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(FirstSliceAngle))]
-    [ChildElementInfo(typeof(PieChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "pieChart")]
@@ -10610,10 +10263,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(PieChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(Pie3DChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "pie3DChart")]
@@ -10701,12 +10350,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(PieChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(FirstSliceAngle))]
-    [ChildElementInfo(typeof(HoleSize))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "doughnutChart")]
@@ -10800,16 +10443,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BarDirection))]
-    [ChildElementInfo(typeof(BarGrouping))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(BarChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(GapWidth))]
-    [ChildElementInfo(typeof(Overlap))]
-    [ChildElementInfo(typeof(SeriesLines))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(BarChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "barChart")]
@@ -10931,16 +10564,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BarDirection))]
-    [ChildElementInfo(typeof(BarGrouping))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(BarChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(GapWidth))]
-    [ChildElementInfo(typeof(GapDepth))]
-    [ChildElementInfo(typeof(Shape))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(Bar3DChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "bar3DChart")]
@@ -11063,17 +10686,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OfPieType))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(PieChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(GapWidth))]
-    [ChildElementInfo(typeof(SplitType))]
-    [ChildElementInfo(typeof(SplitPosition))]
-    [ChildElementInfo(typeof(CustomSplit))]
-    [ChildElementInfo(typeof(SecondPieSize))]
-    [ChildElementInfo(typeof(SeriesLines))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ofPieChart")]
@@ -11179,11 +10791,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Wireframe))]
-    [ChildElementInfo(typeof(SurfaceChartSeries))]
-    [ChildElementInfo(typeof(BandFormats))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(SurfaceChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "surfaceChart")]
@@ -11272,12 +10879,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Wireframe))]
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(SurfaceChartSeries))]
-    [ChildElementInfo(typeof(BandFormats))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(Surface3DChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "surface3DChart")]
@@ -11376,15 +10977,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VaryColors))]
-    [ChildElementInfo(typeof(BubbleChartSeries))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(Bubble3D))]
-    [ChildElementInfo(typeof(BubbleScale))]
-    [ChildElementInfo(typeof(ShowNegativeBubbles))]
-    [ChildElementInfo(typeof(SizeRepresents))]
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(BubbleChartExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "bubbleChart")]
@@ -11486,27 +11078,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(Scaling))]
-    [ChildElementInfo(typeof(Delete))]
-    [ChildElementInfo(typeof(AxisPosition))]
-    [ChildElementInfo(typeof(MajorGridlines))]
-    [ChildElementInfo(typeof(MinorGridlines))]
-    [ChildElementInfo(typeof(Title))]
-    [ChildElementInfo(typeof(NumberingFormat))]
-    [ChildElementInfo(typeof(MajorTickMark))]
-    [ChildElementInfo(typeof(MinorTickMark))]
-    [ChildElementInfo(typeof(TickLabelPosition))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(CrossingAxis))]
-    [ChildElementInfo(typeof(Crosses))]
-    [ChildElementInfo(typeof(CrossesAt))]
-    [ChildElementInfo(typeof(CrossBetween))]
-    [ChildElementInfo(typeof(MajorUnit))]
-    [ChildElementInfo(typeof(MinorUnit))]
-    [ChildElementInfo(typeof(DisplayUnits))]
-    [ChildElementInfo(typeof(ValAxExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "valAx")]
@@ -11787,29 +11358,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(Scaling))]
-    [ChildElementInfo(typeof(Delete))]
-    [ChildElementInfo(typeof(AxisPosition))]
-    [ChildElementInfo(typeof(MajorGridlines))]
-    [ChildElementInfo(typeof(MinorGridlines))]
-    [ChildElementInfo(typeof(Title))]
-    [ChildElementInfo(typeof(NumberingFormat))]
-    [ChildElementInfo(typeof(MajorTickMark))]
-    [ChildElementInfo(typeof(MinorTickMark))]
-    [ChildElementInfo(typeof(TickLabelPosition))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(CrossingAxis))]
-    [ChildElementInfo(typeof(Crosses))]
-    [ChildElementInfo(typeof(CrossesAt))]
-    [ChildElementInfo(typeof(AutoLabeled))]
-    [ChildElementInfo(typeof(LabelAlignment))]
-    [ChildElementInfo(typeof(LabelOffset))]
-    [ChildElementInfo(typeof(TickLabelSkip))]
-    [ChildElementInfo(typeof(TickMarkSkip))]
-    [ChildElementInfo(typeof(NoMultiLevelLabels))]
-    [ChildElementInfo(typeof(CatAxExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "catAx")]
@@ -12093,30 +11641,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(Scaling))]
-    [ChildElementInfo(typeof(Delete))]
-    [ChildElementInfo(typeof(AxisPosition))]
-    [ChildElementInfo(typeof(MajorGridlines))]
-    [ChildElementInfo(typeof(MinorGridlines))]
-    [ChildElementInfo(typeof(Title))]
-    [ChildElementInfo(typeof(NumberingFormat))]
-    [ChildElementInfo(typeof(MajorTickMark))]
-    [ChildElementInfo(typeof(MinorTickMark))]
-    [ChildElementInfo(typeof(TickLabelPosition))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(CrossingAxis))]
-    [ChildElementInfo(typeof(Crosses))]
-    [ChildElementInfo(typeof(CrossesAt))]
-    [ChildElementInfo(typeof(AutoLabeled))]
-    [ChildElementInfo(typeof(LabelOffset))]
-    [ChildElementInfo(typeof(BaseTimeUnit))]
-    [ChildElementInfo(typeof(MajorUnit))]
-    [ChildElementInfo(typeof(MajorTimeUnit))]
-    [ChildElementInfo(typeof(MinorUnit))]
-    [ChildElementInfo(typeof(MinorTimeUnit))]
-    [ChildElementInfo(typeof(DateAxExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "dateAx")]
@@ -12396,25 +11920,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AxisId))]
-    [ChildElementInfo(typeof(Scaling))]
-    [ChildElementInfo(typeof(Delete))]
-    [ChildElementInfo(typeof(AxisPosition))]
-    [ChildElementInfo(typeof(MajorGridlines))]
-    [ChildElementInfo(typeof(MinorGridlines))]
-    [ChildElementInfo(typeof(Title))]
-    [ChildElementInfo(typeof(NumberingFormat))]
-    [ChildElementInfo(typeof(MajorTickMark))]
-    [ChildElementInfo(typeof(MinorTickMark))]
-    [ChildElementInfo(typeof(TickLabelPosition))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(CrossingAxis))]
-    [ChildElementInfo(typeof(Crosses))]
-    [ChildElementInfo(typeof(CrossesAt))]
-    [ChildElementInfo(typeof(TickLabelSkip))]
-    [ChildElementInfo(typeof(TickMarkSkip))]
-    [ChildElementInfo(typeof(SerAxExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "serAx")]
@@ -12677,13 +12182,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ShowHorizontalBorder))]
-    [ChildElementInfo(typeof(ShowVerticalBorder))]
-    [ChildElementInfo(typeof(ShowOutlineBorder))]
-    [ChildElementInfo(typeof(ShowKeys))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TextProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "dTable")]
@@ -12904,7 +12402,6 @@ public partial class HoleSize : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumericValue))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "pt")]
@@ -13020,7 +12517,6 @@ public partial class Thickness : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredLineSeriesExtension), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13090,7 +12586,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredPieSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13160,7 +12655,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredPieSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13232,9 +12726,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FullReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.LevelReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FormulaReference), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13306,7 +12797,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.AutoGeneneratedCategories), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13378,9 +12868,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FullReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.LevelReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FormulaReference), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13454,9 +12941,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FullReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.LevelReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FormulaReference), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13532,11 +13016,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.DataLabelFieldTable), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.ExceptionForSave), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.ShowDataLabelsRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.ShapeProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.Layout), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13616,13 +13095,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.ChartText), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.DataLabelFieldTable), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.ShowDataLabelsRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.ShapeProperties), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.Layout), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.ShowLeaderLines), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.LeaderLines), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13701,10 +13173,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredSeriesTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredCategoryTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.DataLabelsRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.CategoryFilterExceptions), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13780,10 +13248,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredSeriesTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredCategoryTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.DataLabelsRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.CategoryFilterExceptions), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13859,10 +13323,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredSeriesTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredCategoryTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.DataLabelsRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.CategoryFilterExceptions), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -13938,10 +13398,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredSeriesTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredCategoryTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.DataLabelsRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.CategoryFilterExceptions), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14017,10 +13473,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredSeriesTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredCategoryTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.DataLabelsRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.CategoryFilterExceptions), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14095,9 +13547,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredSeriesTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredCategoryTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.CategoryFilterExceptions), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14169,7 +13618,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredLineSeriesExtension), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14239,7 +13687,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredLineSeriesExtension), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14309,7 +13756,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredScatterSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14379,7 +13825,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredRadarSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14449,7 +13894,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredBarSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14519,7 +13963,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredBarSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14589,7 +14032,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredAreaSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14659,7 +14101,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredAreaSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14729,7 +14170,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredBubbleSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14799,7 +14239,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredSurfaceSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14869,7 +14308,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredSurfaceSeries), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -14939,7 +14377,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.NumberingFormat), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -15009,7 +14446,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.NumberingFormat), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -15079,7 +14515,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.NumberingFormat), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -15149,7 +14584,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.NumberingFormat), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -15222,10 +14656,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(GapWidth))]
-    [ChildElementInfo(typeof(UpBars))]
-    [ChildElementInfo(typeof(DownBars))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "upDownBars")]
@@ -15338,7 +14768,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StockChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -15398,7 +14827,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PieChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -15458,7 +14886,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Pie3DChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -15518,7 +14945,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumRefExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -15578,7 +15004,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StrDataExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -15638,7 +15063,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StrRefExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -15700,9 +15124,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PointCount))]
-    [ChildElementInfo(typeof(Level))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "multiLvlStrCache")]
@@ -15778,7 +15199,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MultiLvlStrRefExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -15838,7 +15258,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DLblExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -15898,7 +15317,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DLblsExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -15965,14 +15383,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(InvertIfNegative))]
-    [ChildElementInfo(typeof(Marker))]
-    [ChildElementInfo(typeof(Bubble3D))]
-    [ChildElementInfo(typeof(Explosion))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(PictureOptions))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "dPt")]
@@ -16148,18 +15558,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TrendlineName))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(TrendlineType))]
-    [ChildElementInfo(typeof(PolynomialOrder))]
-    [ChildElementInfo(typeof(Period))]
-    [ChildElementInfo(typeof(Forward))]
-    [ChildElementInfo(typeof(Backward))]
-    [ChildElementInfo(typeof(Intercept))]
-    [ChildElementInfo(typeof(DisplayRSquaredValue))]
-    [ChildElementInfo(typeof(DisplayEquation))]
-    [ChildElementInfo(typeof(TrendlineLabel))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "trendline")]
@@ -16384,15 +15782,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ErrorDirection))]
-    [ChildElementInfo(typeof(ErrorBarType))]
-    [ChildElementInfo(typeof(ErrorBarValueType))]
-    [ChildElementInfo(typeof(NoEndCap))]
-    [ChildElementInfo(typeof(Plus))]
-    [ChildElementInfo(typeof(Minus))]
-    [ChildElementInfo(typeof(ErrorBarValue))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "errBars")]
@@ -16702,12 +16091,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MultiLevelStringReference))]
-    [ChildElementInfo(typeof(NumberReference))]
-    [ChildElementInfo(typeof(NumberLiteral))]
-    [ChildElementInfo(typeof(StringReference))]
-    [ChildElementInfo(typeof(StringLiteral))]
-
 public abstract partial class AxisDataSourceType : OpenXmlCompositeElement
 {
     
@@ -16818,7 +16201,6 @@ public abstract partial class AxisDataSourceType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(LineSerExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -16878,7 +16260,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ScatterSerExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -16938,7 +16319,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RadarSerExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -17031,7 +16411,6 @@ public partial class Shape : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BarSerExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -17095,11 +16474,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.Charts.InvertSolidFillFormat), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredSeriesTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredCategoryTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.DataLabelsRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.CategoryFilterExceptions), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -17173,7 +16547,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AreaSerExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -17233,7 +16606,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PieSerExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -17293,7 +16665,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BubbleSerExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -17356,10 +16727,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.Charts.InvertSolidFillFormat), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.FilteredCategoryTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.DataLabelsRange), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.CategoryFilterExceptions), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]
@@ -17432,7 +16799,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SurfaceSerExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -17492,7 +16858,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(LineChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -17552,7 +16917,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Line3DChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -17657,19 +17021,6 @@ public partial class ScatterStyle : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Order))]
-    [ChildElementInfo(typeof(SeriesText))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(Marker))]
-    [ChildElementInfo(typeof(DataPoint))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(Trendline))]
-    [ChildElementInfo(typeof(ErrorBars))]
-    [ChildElementInfo(typeof(XValues))]
-    [ChildElementInfo(typeof(YValues))]
-    [ChildElementInfo(typeof(Smooth))]
-    [ChildElementInfo(typeof(ScatterSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ser")]
@@ -17809,7 +17160,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ScatterChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -17913,17 +17263,6 @@ public partial class RadarStyle : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Order))]
-    [ChildElementInfo(typeof(SeriesText))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(PictureOptions))]
-    [ChildElementInfo(typeof(Marker))]
-    [ChildElementInfo(typeof(DataPoint))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(CategoryAxisData))]
-    [ChildElementInfo(typeof(Values))]
-    [ChildElementInfo(typeof(RadarSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ser")]
@@ -18073,7 +17412,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RadarChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -18167,7 +17505,6 @@ public partial class Overlap : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BarChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -18227,7 +17564,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Bar3DChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -18287,7 +17623,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AreaChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -18347,7 +17682,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Area3DChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -18421,21 +17755,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Index))]
-    [ChildElementInfo(typeof(Order))]
-    [ChildElementInfo(typeof(SeriesText))]
-    [ChildElementInfo(typeof(ChartShapeProperties))]
-    [ChildElementInfo(typeof(PictureOptions))]
-    [ChildElementInfo(typeof(InvertIfNegative))]
-    [ChildElementInfo(typeof(DataPoint))]
-    [ChildElementInfo(typeof(DataLabels))]
-    [ChildElementInfo(typeof(Trendline))]
-    [ChildElementInfo(typeof(ErrorBars))]
-    [ChildElementInfo(typeof(XValues))]
-    [ChildElementInfo(typeof(YValues))]
-    [ChildElementInfo(typeof(BubbleSize))]
-    [ChildElementInfo(typeof(Bubble3D))]
-    [ChildElementInfo(typeof(BubbleSerExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ser")]
@@ -18656,7 +17975,6 @@ public partial class SizeRepresents : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BubbleChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -18716,7 +18034,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SurfaceChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -18776,7 +18093,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Surface3DChartExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -18938,7 +18254,6 @@ public partial class TickMarkSkip : SkipType
 /// Defines the SkipType class.
 /// </summary>
 
-
 public abstract partial class SkipType : OpenXmlLeafElement
 {
     
@@ -18973,7 +18288,6 @@ public abstract partial class SkipType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CatAxExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -19088,7 +18402,6 @@ public partial class MinorTimeUnit : TimeUnitType
 /// Defines the TimeUnitType class.
 /// </summary>
 
-
 public abstract partial class TimeUnitType : OpenXmlLeafElement
 {
     
@@ -19155,7 +18468,6 @@ public partial class MinorUnit : AxisUnitType
 /// Defines the AxisUnitType class.
 /// </summary>
 
-
 public abstract partial class AxisUnitType : OpenXmlLeafElement
 {
     
@@ -19190,7 +18502,6 @@ public abstract partial class AxisUnitType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DateAxExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -19250,7 +18561,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SerAxExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -19347,10 +18657,6 @@ public partial class CrossBetween : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomDisplayUnit))]
-    [ChildElementInfo(typeof(BuiltInUnit))]
-    [ChildElementInfo(typeof(DisplayUnitsLabel))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "dispUnits")]
@@ -19416,7 +18722,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ValAxExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -19544,7 +18849,6 @@ public partial class Style : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "clrMapOvr")]
@@ -19728,9 +19032,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotTableName))]
-    [ChildElementInfo(typeof(FormatId))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "pivotSource")]
@@ -19834,11 +19135,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartObject))]
-    [ChildElementInfo(typeof(Data))]
-    [ChildElementInfo(typeof(Formatting))]
-    [ChildElementInfo(typeof(Selection))]
-    [ChildElementInfo(typeof(UserInterface))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "protection")]
@@ -19976,19 +19272,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Title))]
-    [ChildElementInfo(typeof(AutoTitleDeleted))]
-    [ChildElementInfo(typeof(PivotFormats))]
-    [ChildElementInfo(typeof(View3D))]
-    [ChildElementInfo(typeof(Floor))]
-    [ChildElementInfo(typeof(SideWall))]
-    [ChildElementInfo(typeof(BackWall))]
-    [ChildElementInfo(typeof(PlotArea))]
-    [ChildElementInfo(typeof(Legend))]
-    [ChildElementInfo(typeof(PlotVisibleOnly))]
-    [ChildElementInfo(typeof(DisplayBlanksAs))]
-    [ChildElementInfo(typeof(ShowDataLabelsOverMaximum))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "chart")]
@@ -20218,7 +19501,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AutoUpdate))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "externalData")]
@@ -20305,10 +19587,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(HeaderFooter))]
-    [ChildElementInfo(typeof(PageMargins))]
-    [ChildElementInfo(typeof(PageSetup))]
-    [ChildElementInfo(typeof(LegacyDrawingHeaderFooter))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "printSettings")]
@@ -20421,7 +19699,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartSpaceExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "extLst")]
@@ -20483,9 +19760,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.Charts.PivotOptions), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.Charts.SketchOptions), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.Drawing.Chart.PivotSource), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(11, "ext")]

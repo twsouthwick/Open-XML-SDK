@@ -764,11 +764,14 @@ namespace DocumentFormat.OpenXml
 
         internal sealed override ParticleConstraint ParticleConstraint => CompiledParticle?.Particle;
 
+        internal override OpenXmlElement ElementFactory(byte namespaceId, string name)
+            => CompiledParticle?.CreateElement(namespaceId, name);
+
         private protected TElement GetElement<TElement>()
-            where TElement : OpenXmlElement => CompiledParticle.Get<TElement>(this);
+            where TElement : OpenXmlElement => CompiledParticle?.Get<TElement>(this);
 
         private protected void SetElement<TElement>(TElement value)
-            where TElement : OpenXmlElement => CompiledParticle.Set(this, value);
+            where TElement : OpenXmlElement => CompiledParticle?.Set(this, value);
 
         private void AddANode(OpenXmlElement node)
         {

@@ -27,13 +27,6 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtension
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WebExtensionStoreReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(WebExtensionReferenceList), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(WebExtensionPropertyBag), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(WebExtensionBindingList), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(Snapshot), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2013)]
-
 [SchemaAttr(66, "webextension")]
 [OfficeAvailability(FileFormatVersions.Office2013)]
 public partial class WebExtension : OpenXmlPartRootElement
@@ -289,7 +282,6 @@ public partial class WebExtensionProperty : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(66, "extLst")]
@@ -355,7 +347,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(66, "binding")]
@@ -453,7 +444,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(66, "reference")]
@@ -557,7 +547,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WebExtensionStoreReference), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(66, "alternateReferences")]
@@ -617,7 +606,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WebExtensionProperty), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(66, "properties")]
@@ -677,7 +665,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WebExtensionBinding), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(66, "bindings")]
@@ -754,24 +741,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaBiLevel))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaCeiling))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaFloor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaInverse))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaModulationEffect))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaModulationFixed))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AlphaReplace))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BiLevel))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Blur))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ColorChange))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ColorReplacement))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Duotone))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.FillOverlay))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Grayscale))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Hsl))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LuminanceEffect))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.TintEffect))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(66, "snapshot")]

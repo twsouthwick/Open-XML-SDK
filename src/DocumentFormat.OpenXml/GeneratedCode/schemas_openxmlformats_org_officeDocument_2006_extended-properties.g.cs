@@ -48,34 +48,6 @@ namespace DocumentFormat.OpenXml.ExtendedProperties
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Template))]
-    [ChildElementInfo(typeof(Manager))]
-    [ChildElementInfo(typeof(Company))]
-    [ChildElementInfo(typeof(Pages))]
-    [ChildElementInfo(typeof(Words))]
-    [ChildElementInfo(typeof(Characters))]
-    [ChildElementInfo(typeof(PresentationFormat))]
-    [ChildElementInfo(typeof(Lines))]
-    [ChildElementInfo(typeof(Paragraphs))]
-    [ChildElementInfo(typeof(Slides))]
-    [ChildElementInfo(typeof(Notes))]
-    [ChildElementInfo(typeof(TotalTime))]
-    [ChildElementInfo(typeof(HiddenSlides))]
-    [ChildElementInfo(typeof(MultimediaClips))]
-    [ChildElementInfo(typeof(ScaleCrop))]
-    [ChildElementInfo(typeof(HeadingPairs))]
-    [ChildElementInfo(typeof(TitlesOfParts))]
-    [ChildElementInfo(typeof(LinksUpToDate))]
-    [ChildElementInfo(typeof(CharactersWithSpaces))]
-    [ChildElementInfo(typeof(SharedDocument))]
-    [ChildElementInfo(typeof(HyperlinkBase))]
-    [ChildElementInfo(typeof(HyperlinkList))]
-    [ChildElementInfo(typeof(HyperlinksChanged))]
-    [ChildElementInfo(typeof(DigitalSignature))]
-    [ChildElementInfo(typeof(Application))]
-    [ChildElementInfo(typeof(ApplicationVersion))]
-    [ChildElementInfo(typeof(DocumentSecurity))]
-
 [SchemaAttr(3, "Properties")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class Properties : OpenXmlPartRootElement
@@ -1369,8 +1341,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTVector))]
-
 public abstract partial class VectorVariantType : OpenXmlCompositeElement
 {
     
@@ -1433,7 +1403,6 @@ public abstract partial class VectorVariantType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTVector))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(3, "TitlesOfParts")]
@@ -1507,7 +1476,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.VariantTypes.VTBlob))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(3, "DigSig")]

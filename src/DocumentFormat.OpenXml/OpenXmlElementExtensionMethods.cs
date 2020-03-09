@@ -141,9 +141,9 @@ namespace DocumentFormat.OpenXml
 
         internal static bool CanContainChild(this OpenXmlElement parent, OpenXmlElement child)
         {
-            if (parent is OpenXmlCompositeElement)
+            if (parent is OpenXmlCompositeElement composite)
             {
-                foreach (var element in parent.ElementData.Children.Elements)
+                foreach (var element in composite.CompiledParticle.Lookup)
                 {
                     if (element.Type.GetTypeInfo().IsAssignableFrom(child.GetType().GetTypeInfo()))
                     {

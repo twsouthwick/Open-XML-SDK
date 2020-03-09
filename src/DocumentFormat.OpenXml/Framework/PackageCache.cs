@@ -22,7 +22,16 @@ namespace DocumentFormat.OpenXml.Framework
         private readonly TypeConcurrentDictionary<OpenXmlElementData> _elementData = new TypeConcurrentDictionary<OpenXmlElementData>();
         private readonly TypeConcurrentDictionary<OpenXmlPartData> _partData = new TypeConcurrentDictionary<OpenXmlPartData>();
 
+        private readonly Lazy<ElementLookup> _lookup;
+
+        public PackageCache()
+        {
+            _lookup = new Lazy<ElementLookup>(() => ElementLookup.Create(this), true);
+        }
+
         public static PackageCache Cache { get; } = new PackageCache();
+
+        public ElementLookup Lookup => _lookup.Value;
 
         public Func<T> GetFactory<T>(Type type)
         {

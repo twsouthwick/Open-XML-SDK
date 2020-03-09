@@ -11,17 +11,19 @@ namespace DocumentFormat.OpenXml.Framework.Schema
     internal class ParticleCompiler
     {
         private readonly Stack<ParticlePathItem> _values;
+        private readonly PackageCache _cache;
         private readonly List<LookupItem> _path;
 
-        private ParticleCompiler()
+        private ParticleCompiler(PackageCache cache)
         {
+            _cache = cache;
             _path = new List<LookupItem>();
             _values = new Stack<ParticlePathItem>(4);
         }
 
-        public static LookupItem[] Compile(ParticleConstraint particle)
+        public static LookupItem[] Compile(ParticleConstraint particle, PackageCache cache)
         {
-            var instance = new ParticleCompiler();
+            var instance = new ParticleCompiler(cache);
             instance.Visit(particle);
 
             var result = new LookupItem[instance._path.Count];
@@ -61,7 +63,7 @@ namespace DocumentFormat.OpenXml.Framework.Schema
 
             var particlePath = ParticlePath.Create(newValues);
 
-            _path.Add(new LookupItem(element.ElementType, particlePath));
+            _path.Add(new LookupItem(element.ElementType, particlePath, _cache.ParseElementData(element.ElementType)));
         }
 
         private void VisitComposite(CompositeParticle seq)

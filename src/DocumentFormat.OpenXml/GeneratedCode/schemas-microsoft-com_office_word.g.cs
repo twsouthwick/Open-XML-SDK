@@ -98,7 +98,6 @@ public partial class BottomBorder : BorderType
 /// Defines the BorderType class.
 /// </summary>
 
-
 public abstract partial class BorderType : OpenXmlLeafElement
 {
     

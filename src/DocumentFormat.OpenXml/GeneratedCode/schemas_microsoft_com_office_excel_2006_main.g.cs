@@ -48,34 +48,6 @@ namespace DocumentFormat.OpenXml.Office.Excel
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SheetProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SheetDimension))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SheetViews))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SheetFormatProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Columns))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SheetData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SheetProtection))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.AutoFilter))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SortState))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.DataConsolidate))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.CustomSheetViews))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PhoneticProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ConditionalFormatting))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PrintOptions))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PageMargins))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PageSetup))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.HeaderFooter))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.RowBreaks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ColumnBreaks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.CustomProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Drawing))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.LegacyDrawing))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.LegacyDrawingHeaderFooter))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Picture))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.OleObjects))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.DrawingHeaderFooter), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ExtensionList))]
-
 [SchemaAttr(32, "macrosheet")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class Macrosheet : OpenXmlPartRootElement
@@ -234,9 +206,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>ColumnSortMap &lt;xne:colSortMap></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(RowSortMap))]
-    [ChildElementInfo(typeof(ColumnSortMap))]
 
 [SchemaAttr(32, "worksheetSortMap")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -423,7 +392,6 @@ public partial class Formula : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RowSortMapItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(32, "rowSortMap")]
@@ -499,7 +467,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ColumnSortMapItem))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(32, "colSortMap")]
@@ -608,7 +575,6 @@ public partial class ColumnSortMapItem : SortMapItemType
 /// <summary>
 /// Defines the SortMapItemType class.
 /// </summary>
-
 
 public abstract partial class SortMapItemType : OpenXmlLeafElement
 {

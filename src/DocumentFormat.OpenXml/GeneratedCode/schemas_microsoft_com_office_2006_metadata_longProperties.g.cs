@@ -22,7 +22,6 @@ namespace DocumentFormat.OpenXml.Office.LongProperties
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(LongProperty))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(40, "LongProperties")]

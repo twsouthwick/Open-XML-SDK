@@ -22,7 +22,6 @@ namespace DocumentFormat.OpenXml.AdditionalCharacteristics
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Characteristic))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(8, "additionalCharacteristics")]

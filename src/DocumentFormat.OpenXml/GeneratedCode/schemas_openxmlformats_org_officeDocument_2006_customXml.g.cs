@@ -21,8 +21,6 @@ namespace DocumentFormat.OpenXml.CustomXmlDataProperties
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SchemaReferences))]
-
 [SchemaAttr(20, "datastoreItem")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class DataStoreItem : OpenXmlPartRootElement
@@ -167,7 +165,6 @@ public partial class SchemaReference : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SchemaReference))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(20, "schemaRefs")]

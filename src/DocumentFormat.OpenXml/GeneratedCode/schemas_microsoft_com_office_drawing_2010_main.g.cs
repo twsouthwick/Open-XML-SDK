@@ -132,9 +132,6 @@ public partial class IsCanvas : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualContentPartProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Transform2D), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "contentPart")]
@@ -290,12 +287,6 @@ public partial class ShadowObscured : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "hiddenFill")]
@@ -451,18 +442,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetDash))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.CustomDash))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Round))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LineJoinBevel))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Miter))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HeadEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.TailEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "hiddenLine")]
@@ -584,8 +563,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "hiddenEffects")]
@@ -681,10 +658,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Camera))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LightRig))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Backdrop))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "hiddenScene3d")]
@@ -801,11 +774,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BevelTop))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BevelBottom))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtrusionColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ContourColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "hiddenSp3d")]
@@ -963,7 +931,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ImageLayer), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "imgProps")]
@@ -1096,7 +1063,6 @@ public partial class TextMath : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "extLst")]
@@ -1162,7 +1128,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "cpLocks")]
@@ -2347,8 +2312,6 @@ public partial class ArtisticWatercolorSponge : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ForegroundMark), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackgroundMark), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "backgroundRemoval")]
@@ -2615,33 +2578,6 @@ public partial class SharpenSoften : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ArtisticBlur), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticCement), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticChalkSketch), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticCrisscrossEtching), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticCutout), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticFilmGrain), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticGlass), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticGlowDiffused), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticGlowEdges), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticLightScreen), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticLineDrawing), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticMarker), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticMosaicBubbles), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticPaintStrokes), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticPaintBrush), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticPastelsSmooth), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticPencilGrayscale), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticPencilSketch), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticPhotocopy), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticPlasticWrap), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticTexturizer), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ArtisticWatercolorSponge), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BackgroundRemoval), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BrightnessContrast), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ColorTemperature), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Saturation), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SharpenSoften), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "imgEffect")]
@@ -3060,7 +2996,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ImageEffect), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "imgLayer")]
@@ -3131,9 +3066,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnClick))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnHover))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "cNvPr")]
@@ -3271,8 +3203,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ContentPartLocks), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "cNvContentPartPr")]
@@ -3367,8 +3297,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NonVisualInkContentPartProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "nvContentPartPr")]
@@ -3456,8 +3384,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Offset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extents))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(48, "xfrm")]

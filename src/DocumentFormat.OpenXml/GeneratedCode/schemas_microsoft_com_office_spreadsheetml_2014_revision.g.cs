@@ -27,7 +27,6 @@ namespace DocumentFormat.OpenXml.Office2016.Excel
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RevExHeader), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "revHdrs")]
@@ -132,20 +131,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RevExFuture), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExUnsupported), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExTrimmed), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExRowColumn), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExMove), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExChangeCell), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExFormatting), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExDefinedName), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExDelObj), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExChgObj), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExSheetOp), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevisionList), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevListAutoExpandRw), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevGroup), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "revStream")]
@@ -224,13 +209,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Font))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.NumberingFormat))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Fill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Alignment))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Border))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Protection))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "dxf")]
@@ -429,12 +407,6 @@ public partial class RevisionPtr : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataValidation), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Hyperlink), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(SparklineGroup), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Comments), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(AutoFilter), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(pivotTableDefinition), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "objectState")]
@@ -631,7 +603,6 @@ public partial class RevExHeader : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RevExTest), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "xrrftr")]
@@ -1055,8 +1026,6 @@ public partial class RevExMove : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RevCell), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ChangeCellSubEdit), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "xrrc")]
@@ -1196,8 +1165,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DifferentialFormatType), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "xrrf")]
@@ -1426,8 +1393,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FormulaFormula), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "xrrDefName")]
@@ -1633,7 +1598,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StateBasedHeader), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "xrrdo")]
@@ -1750,9 +1714,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StateBasedHeader), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevisionStateLink), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevisionState), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "xrrco")]
@@ -2189,19 +2150,6 @@ public partial class RevListAutoExpandRw : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RevExFuture), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExUnsupported), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExTrimmed), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExRowColumn), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExMove), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExChangeCell), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExFormatting), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExDefinedName), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExDelObj), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExChgObj), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevExSheetOp), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevisionList), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RevListAutoExpandRw), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "xrrg")]
@@ -2342,9 +2290,6 @@ public partial class RevExTest : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FFormula), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Xstring), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RstType), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "c")]
@@ -2472,7 +2417,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RevCell), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "ccse")]
@@ -2561,7 +2505,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "extLst")]
@@ -2691,7 +2634,6 @@ public partial class FFormula : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RefMap), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "hdr")]
@@ -2843,11 +2785,6 @@ public partial class RevisionStateLink : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RowColVisualOps), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(HideUnhideSheet), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShowGridlinesHeadings), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(FreezePanes), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Outlines), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "body")]
@@ -2977,11 +2914,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RefCell), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(SheetXluid), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RefOartAnchor), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RefFuture), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RefTest), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "refmap")]
@@ -3211,7 +3143,6 @@ public partial class FreezePanes : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Outline), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "outlines")]
@@ -3361,10 +3292,6 @@ public partial class Xstring : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Text))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Run))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PhoneticRun))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PhoneticProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "is")]
@@ -3805,9 +3732,6 @@ public partial class RefTest : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.ExcelAc.List), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Formula1))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Formula2))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "dataValidation")]
@@ -4072,16 +3996,6 @@ public partial class Hyperlink : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.SeriesColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.NegativeColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.AxisColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.MarkersColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.FirstMarkerColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.LastMarkerColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.HighMarkerColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.LowMarkerColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.Formula))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Excel.Sparklines), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "sparklineGroup")]
@@ -4393,9 +4307,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Authors))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.CommentList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "comments")]
@@ -4497,9 +4408,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.FilterColumn))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SortState))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "autoFilter")]
@@ -4584,23 +4492,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Location))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PivotFields))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.RowFields))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.RowItems))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ColumnFields))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ColumnItems))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PageFields))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.DataFields))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Formats))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ConditionalFormats))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ChartFormats))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PivotHierarchies))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PivotTableStyle))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PivotFilters))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.RowHierarchiesUsage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ColumnHierarchiesUsage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PivotTableDefinitionExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(83, "pivotTableDefinition")]

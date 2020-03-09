@@ -28,13 +28,6 @@ namespace DocumentFormat.OpenXml.InkML
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Annotation))]
-    [ChildElementInfo(typeof(AnnotationXml))]
-    [ChildElementInfo(typeof(Definitions))]
-    [ChildElementInfo(typeof(Context))]
-    [ChildElementInfo(typeof(Trace))]
-    [ChildElementInfo(typeof(TraceGroup))]
-    [ChildElementInfo(typeof(TraceView))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "ink")]
@@ -271,10 +264,6 @@ public partial class Matrix : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Bind))]
-    [ChildElementInfo(typeof(Table))]
-    [ChildElementInfo(typeof(Matrix))]
-    [ChildElementInfo(typeof(Mapping))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "mapping")]
@@ -370,7 +359,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Mapping))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "channel")]
@@ -512,7 +500,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Channel))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "intermittentChannels")]
@@ -645,8 +632,6 @@ public partial class ChannelProperty : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Channel))]
-    [ChildElementInfo(typeof(IntermittentChannels))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "traceFormat")]
@@ -916,7 +901,6 @@ public partial class SourceProperty : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChannelProperty))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "channelProperties")]
@@ -1027,7 +1011,6 @@ public partial class Annotation : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.EMMA.Emma))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "annotationXML")]
@@ -1124,8 +1107,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Annotation))]
-    [ChildElementInfo(typeof(AnnotationXml))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "brushProperty")]
@@ -1227,7 +1208,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TraceFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "canvas")]
@@ -1318,7 +1298,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Mapping))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "canvasTransform")]
@@ -1399,12 +1378,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TraceFormat))]
-    [ChildElementInfo(typeof(SampleRate))]
-    [ChildElementInfo(typeof(Latency))]
-    [ChildElementInfo(typeof(ActiveArea))]
-    [ChildElementInfo(typeof(SourceProperty))]
-    [ChildElementInfo(typeof(ChannelProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "inkSource")]
@@ -1567,9 +1540,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Annotation))]
-    [ChildElementInfo(typeof(AnnotationXml))]
-    [ChildElementInfo(typeof(BrushProperty))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "brush")]
@@ -1814,10 +1784,6 @@ public partial class Trace : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Annotation))]
-    [ChildElementInfo(typeof(AnnotationXml))]
-    [ChildElementInfo(typeof(Trace))]
-    [ChildElementInfo(typeof(TraceGroup))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "traceGroup")]
@@ -1907,9 +1873,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Annotation))]
-    [ChildElementInfo(typeof(AnnotationXml))]
-    [ChildElementInfo(typeof(TraceView))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "traceView")]
@@ -2015,12 +1978,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Canvas))]
-    [ChildElementInfo(typeof(CanvasTransform))]
-    [ChildElementInfo(typeof(TraceFormat))]
-    [ChildElementInfo(typeof(InkSource))]
-    [ChildElementInfo(typeof(Brush))]
-    [ChildElementInfo(typeof(Timestamp))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "context")]
@@ -2234,17 +2191,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Brush))]
-    [ChildElementInfo(typeof(Canvas))]
-    [ChildElementInfo(typeof(CanvasTransform))]
-    [ChildElementInfo(typeof(Context))]
-    [ChildElementInfo(typeof(InkSource))]
-    [ChildElementInfo(typeof(Mapping))]
-    [ChildElementInfo(typeof(Timestamp))]
-    [ChildElementInfo(typeof(Trace))]
-    [ChildElementInfo(typeof(TraceFormat))]
-    [ChildElementInfo(typeof(TraceGroup))]
-    [ChildElementInfo(typeof(TraceView))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(43, "definitions")]

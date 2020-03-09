@@ -23,7 +23,6 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing.TimeSlicer
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(77, "timeslicer")]
@@ -105,7 +104,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(77, "extLst")]

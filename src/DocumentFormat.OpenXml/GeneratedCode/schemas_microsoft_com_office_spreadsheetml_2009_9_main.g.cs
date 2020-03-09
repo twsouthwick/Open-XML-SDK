@@ -24,7 +24,6 @@ namespace DocumentFormat.OpenXml.Office2010.Excel
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormatting), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "conditionalFormattings")]
@@ -84,7 +83,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataValidation), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "dataValidations")]
@@ -172,7 +170,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SparklineGroup), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "sparklineGroups")]
@@ -232,7 +229,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlicerRef), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "slicerList")]
@@ -292,7 +288,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ProtectedRange), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "protectedRanges")]
@@ -353,8 +348,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(IgnoredError), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "ignoredErrors")]
@@ -415,7 +408,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DefinedName), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "definedNames")]
@@ -475,7 +467,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PivotCache))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "pivotCaches")]
@@ -535,7 +526,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlicerCache), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "slicerCaches")]
@@ -642,7 +632,6 @@ public partial class WorkbookProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TupleSet), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "calculatedMember")]
@@ -751,7 +740,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SetLevels), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "cacheHierarchy")]
@@ -942,9 +930,6 @@ public partial class PivotField : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotEdits), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(PivotChanges), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ConditionalFormats), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "pivotTableDefinition")]
@@ -1175,7 +1160,6 @@ public partial class PivotCacheDefinition : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CalculatedMembers), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "connection")]
@@ -1303,7 +1287,6 @@ public partial class Table : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlicerStyle), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "slicerStyles")]
@@ -1371,7 +1354,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.DifferentialFormat))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "dxfs")]
@@ -1438,7 +1420,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DdeValues), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "oleItem")]
@@ -1720,7 +1701,6 @@ public partial class Filter : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomFilter), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "customFilters")]
@@ -1896,8 +1876,6 @@ public partial class SourceConnection : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
-
 [SchemaAttr(53, "datastoreItem")]
 [OfficeAvailability(FileFormatVersions.Office2010)]
 public partial class DatastoreItem : OpenXmlPartRootElement
@@ -2002,9 +1980,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>ExtensionList &lt;x14:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(ListItems), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [SchemaAttr(53, "formControlPr")]
 [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -2337,8 +2312,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Slicer), FileFormatVersions.Office2010)]
-
 [SchemaAttr(53, "slicers")]
 [OfficeAvailability(FileFormatVersions.Office2010)]
 public partial class Slicers : OpenXmlPartRootElement
@@ -2422,10 +2395,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>SlicerCacheDefinitionExtensionList &lt;x14:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(SlicerCachePivotTables), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SlicerCacheData), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SlicerCacheDefinitionExtensionList), FileFormatVersions.Office2010)]
 
 [SchemaAttr(53, "slicerCacheDefinition")]
 [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -2568,9 +2537,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormattingRule), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.ReferenceSequence))]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "conditionalFormatting")]
@@ -2644,12 +2610,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.Formula))]
-    [ChildElementInfo(typeof(ColorScale), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DataBar), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(IconSet), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DifferentialType), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "cfRule")]
@@ -2813,7 +2773,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "extLst")]
@@ -2881,9 +2840,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DataValidationForumla1), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DataValidationForumla2), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.ReferenceSequence))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "dataValidation")]
@@ -3173,8 +3129,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.Formula))]
-
 public abstract partial class DataValidationFormulaType : OpenXmlCompositeElement
 {
     
@@ -3246,16 +3200,6 @@ public abstract partial class DataValidationFormulaType : OpenXmlCompositeElemen
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SeriesColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NegativeColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(AxisColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MarkersColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(FirstMarkerColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LastMarkerColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(HighMarkerColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LowMarkerColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.Formula))]
-    [ChildElementInfo(typeof(Sparklines), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "sparklineGroup")]
@@ -3851,7 +3795,6 @@ public partial class BarAxisColor : ColorType
 /// Defines the ColorType class.
 /// </summary>
 
-
 public abstract partial class ColorType : OpenXmlLeafElement
 {
     
@@ -3913,7 +3856,6 @@ public abstract partial class ColorType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Sparkline), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "sparklines")]
@@ -3974,8 +3916,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.Formula))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.ReferenceSequence))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "sparkline")]
@@ -4134,7 +4074,6 @@ public partial class SlicerCache : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ArgumentDescriptions), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "definedName")]
@@ -4216,7 +4155,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ArgumentDescription), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "argumentDescriptions")]
@@ -4329,8 +4267,6 @@ public partial class ArgumentDescription : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TupleSetHeaders), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(TupleSetRows), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "tupleSet")]
@@ -4431,7 +4367,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TupleSetHeader), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "headers")]
@@ -4491,7 +4426,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TupleSetRow), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "rows")]
@@ -4591,7 +4525,6 @@ public partial class TupleSetHeader : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TupleSetRowItem), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "row")]
@@ -4725,7 +4658,6 @@ public partial class SetLevel : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SetLevel), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "setLevels")]
@@ -4793,8 +4725,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormattingValueObject), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Color), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "colorScale")]
@@ -4860,12 +4790,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormattingValueObject), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(FillColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BorderColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NegativeFillColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NegativeBorderColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BarAxisColor), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "dataBar")]
@@ -4994,8 +4918,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormattingValueObject), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ConditionalFormattingIcon), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "iconSet")]
@@ -5097,13 +5019,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Font))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.NumberingFormat))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Fill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Alignment))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Border))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Protection))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "dxf")]
@@ -5256,8 +5171,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.Formula))]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "cfvo")]
@@ -5401,7 +5314,6 @@ public partial class ConditionalFormattingIcon : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotEdit), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "pivotEdits")]
@@ -5461,7 +5373,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotChange), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "pivotChanges")]
@@ -5521,7 +5432,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ConditionalFormat), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "conditionalFormats")]
@@ -5588,7 +5498,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.CalculatedMember))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "calculatedMembers")]
@@ -5658,10 +5567,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotUserEdit), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(TupleItems), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(PivotArea), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "pivotEdit")]
@@ -5775,8 +5680,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.Formula))]
-    [ChildElementInfo(typeof(PivotEditValue), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "userEdit")]
@@ -5863,7 +5766,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Xstring), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "tupleItems")]
@@ -5924,8 +5826,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PivotAreaReferences))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "pivotArea")]
@@ -6098,9 +5998,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotEditValue), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(TupleItems), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "pivotChange")]
@@ -6296,7 +6193,6 @@ public partial class Xstring : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlicerStyleElement), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "slicerStyleElements")]
@@ -6356,7 +6252,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.Value))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "values")]
@@ -6431,8 +6326,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PivotAreas), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "conditionalFormat")]
@@ -6549,7 +6442,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.PivotArea))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "pivotAreas")]
@@ -6616,7 +6508,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlicerStyleElements), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "slicerStyle")]
@@ -6739,7 +6630,6 @@ public partial class SlicerStyleElement : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.ReferenceSequence))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "ignoredError")]
@@ -6876,7 +6766,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office.Excel.ReferenceSequence))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "protectedRange")]
@@ -7076,8 +6965,6 @@ public partial class ListItem : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ListItem), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "itemLst")]
@@ -7138,7 +7025,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "slicer")]
@@ -7287,9 +7173,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OlapSlicerCacheLevelsData), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(OlapSlicerCacheSelections), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "olap")]
@@ -7398,8 +7281,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TabularSlicerCacheItems), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "tabular")]
@@ -7598,7 +7479,6 @@ public partial class OlapSlicerCacheItemParent : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OlapSlicerCacheItemParent), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "i")]
@@ -7680,7 +7560,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OlapSlicerCacheItem), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "range")]
@@ -7748,7 +7627,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OlapSlicerCacheRange), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "ranges")]
@@ -7808,7 +7686,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OlapSlicerCacheRanges), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "level")]
@@ -7919,7 +7796,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OlapSlicerCacheLevelData), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "levels")]
@@ -7986,7 +7862,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OlapSlicerCacheSelection), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "selections")]
@@ -8053,7 +7928,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OlapSlicerCacheItemParent), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "selection")]
@@ -8121,7 +7995,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TabularSlicerCacheItem), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "items")]
@@ -8236,7 +8109,6 @@ public partial class TabularSlicerCacheItem : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlicerCachePivotTable), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "pivotTables")]
@@ -8297,8 +8169,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OlapSlicerCache), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(TabularSlicerCache), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "data")]
@@ -8385,7 +8255,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Spreadsheet.SlicerCacheDefinitionExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(53, "extLst")]

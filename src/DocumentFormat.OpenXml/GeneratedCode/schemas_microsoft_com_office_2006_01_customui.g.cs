@@ -731,8 +731,6 @@ public partial class CheckBox : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Item))]
-    [ChildElementInfo(typeof(UnsizedButton))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "gallery")]
@@ -1538,9 +1536,6 @@ public partial class MenuSeparator : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VisibleButton))]
-    [ChildElementInfo(typeof(VisibleToggleButton))]
-    [ChildElementInfo(typeof(UnsizedMenu))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "splitButton")]
@@ -1741,15 +1736,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(UnsizedControlClone))]
-    [ChildElementInfo(typeof(UnsizedButton))]
-    [ChildElementInfo(typeof(CheckBox))]
-    [ChildElementInfo(typeof(UnsizedGallery))]
-    [ChildElementInfo(typeof(UnsizedToggleButton))]
-    [ChildElementInfo(typeof(MenuSeparator))]
-    [ChildElementInfo(typeof(UnsizedSplitButton))]
-    [ChildElementInfo(typeof(UnsizedMenu))]
-    [ChildElementInfo(typeof(UnsizedDynamicMenu))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "menu")]
@@ -2342,9 +2328,6 @@ public partial class UnsizedDynamicMenu : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VisibleButton))]
-    [ChildElementInfo(typeof(VisibleToggleButton))]
-    [ChildElementInfo(typeof(MenuWithTitle))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "splitButton")]
@@ -2545,15 +2528,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(UnsizedControlClone))]
-    [ChildElementInfo(typeof(UnsizedButton))]
-    [ChildElementInfo(typeof(CheckBox))]
-    [ChildElementInfo(typeof(UnsizedGallery))]
-    [ChildElementInfo(typeof(UnsizedToggleButton))]
-    [ChildElementInfo(typeof(MenuSeparator))]
-    [ChildElementInfo(typeof(SplitButtonWithTitle))]
-    [ChildElementInfo(typeof(MenuWithTitle))]
-    [ChildElementInfo(typeof(UnsizedDynamicMenu))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "menu")]
@@ -4150,7 +4124,6 @@ public partial class EditBox : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Item))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "comboBox")]
@@ -4520,8 +4493,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Item))]
-    [ChildElementInfo(typeof(UnsizedButton))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "dropDown")]
@@ -4892,8 +4863,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Item))]
-    [ChildElementInfo(typeof(UnsizedButton))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "gallery")]
@@ -5363,15 +5332,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(UnsizedControlClone))]
-    [ChildElementInfo(typeof(UnsizedButton))]
-    [ChildElementInfo(typeof(CheckBox))]
-    [ChildElementInfo(typeof(UnsizedGallery))]
-    [ChildElementInfo(typeof(UnsizedToggleButton))]
-    [ChildElementInfo(typeof(MenuSeparator))]
-    [ChildElementInfo(typeof(UnsizedSplitButton))]
-    [ChildElementInfo(typeof(UnsizedMenu))]
-    [ChildElementInfo(typeof(UnsizedDynamicMenu))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "menu")]
@@ -5997,9 +5957,6 @@ public partial class DynamicMenu : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VisibleButton))]
-    [ChildElementInfo(typeof(VisibleToggleButton))]
-    [ChildElementInfo(typeof(UnsizedMenu))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "splitButton")]
@@ -6223,20 +6180,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlClone))]
-    [ChildElementInfo(typeof(TextLabel))]
-    [ChildElementInfo(typeof(Button))]
-    [ChildElementInfo(typeof(ToggleButton))]
-    [ChildElementInfo(typeof(CheckBox))]
-    [ChildElementInfo(typeof(EditBox))]
-    [ChildElementInfo(typeof(ComboBox))]
-    [ChildElementInfo(typeof(DropDown))]
-    [ChildElementInfo(typeof(Gallery))]
-    [ChildElementInfo(typeof(Menu))]
-    [ChildElementInfo(typeof(DynamicMenu))]
-    [ChildElementInfo(typeof(SplitButton))]
-    [ChildElementInfo(typeof(Box))]
-    [ChildElementInfo(typeof(ButtonGroup))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "box")]
@@ -6388,13 +6331,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(UnsizedControlClone))]
-    [ChildElementInfo(typeof(UnsizedButton))]
-    [ChildElementInfo(typeof(UnsizedToggleButton))]
-    [ChildElementInfo(typeof(UnsizedGallery))]
-    [ChildElementInfo(typeof(UnsizedMenu))]
-    [ChildElementInfo(typeof(UnsizedDynamicMenu))]
-    [ChildElementInfo(typeof(UnsizedSplitButton))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "buttonGroup")]
@@ -6534,15 +6470,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(UnsizedControlClone))]
-    [ChildElementInfo(typeof(UnsizedButton))]
-    [ChildElementInfo(typeof(CheckBox))]
-    [ChildElementInfo(typeof(UnsizedGallery))]
-    [ChildElementInfo(typeof(UnsizedToggleButton))]
-    [ChildElementInfo(typeof(MenuSeparator))]
-    [ChildElementInfo(typeof(UnsizedSplitButton))]
-    [ChildElementInfo(typeof(UnsizedMenu))]
-    [ChildElementInfo(typeof(UnsizedDynamicMenu))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "menu")]
@@ -6649,8 +6576,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RepurposedCommands))]
-    [ChildElementInfo(typeof(Ribbon))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "customUI")]
@@ -7418,7 +7343,6 @@ public partial class VerticalSeparator : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(UnsizedButton))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "dialogBoxLauncher")]
@@ -7507,22 +7431,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ControlClone))]
-    [ChildElementInfo(typeof(TextLabel))]
-    [ChildElementInfo(typeof(Button))]
-    [ChildElementInfo(typeof(ToggleButton))]
-    [ChildElementInfo(typeof(CheckBox))]
-    [ChildElementInfo(typeof(EditBox))]
-    [ChildElementInfo(typeof(ComboBox))]
-    [ChildElementInfo(typeof(DropDown))]
-    [ChildElementInfo(typeof(Gallery))]
-    [ChildElementInfo(typeof(Menu))]
-    [ChildElementInfo(typeof(DynamicMenu))]
-    [ChildElementInfo(typeof(SplitButton))]
-    [ChildElementInfo(typeof(Box))]
-    [ChildElementInfo(typeof(ButtonGroup))]
-    [ChildElementInfo(typeof(VerticalSeparator))]
-    [ChildElementInfo(typeof(DialogBoxLauncher))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "group")]
@@ -8159,10 +8067,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(QuickAccessToolbarControlClone))]
-    [ChildElementInfo(typeof(UnsizedButton))]
-    [ChildElementInfo(typeof(VerticalSeparator))]
-
 public abstract partial class QatItemsType : OpenXmlCompositeElement
 {
     
@@ -8211,7 +8115,6 @@ public abstract partial class QatItemsType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Group))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "tab")]
@@ -8385,7 +8288,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tab))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "tabSet")]
@@ -8534,15 +8436,6 @@ public partial class RepurposedCommand : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(UnsizedControlClone))]
-    [ChildElementInfo(typeof(UnsizedButton))]
-    [ChildElementInfo(typeof(CheckBox))]
-    [ChildElementInfo(typeof(UnsizedGallery))]
-    [ChildElementInfo(typeof(UnsizedToggleButton))]
-    [ChildElementInfo(typeof(MenuSeparator))]
-    [ChildElementInfo(typeof(SplitButtonWithTitle))]
-    [ChildElementInfo(typeof(MenuWithTitle))]
-    [ChildElementInfo(typeof(UnsizedDynamicMenu))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "officeMenu")]
@@ -8626,8 +8519,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SharedQatControls))]
-    [ChildElementInfo(typeof(DocumentSpecificQuickAccessToolbarControls))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "qat")]
@@ -8714,7 +8605,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tab))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "tabs")]
@@ -8774,7 +8664,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ContextualTabSet))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "contextualTabs")]
@@ -8834,7 +8723,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RepurposedCommand))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "commands")]
@@ -8897,10 +8785,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OfficeMenu))]
-    [ChildElementInfo(typeof(QuickAccessToolbar))]
-    [ChildElementInfo(typeof(Tabs))]
-    [ChildElementInfo(typeof(ContextualTabSets))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(34, "ribbon")]

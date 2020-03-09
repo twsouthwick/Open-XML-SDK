@@ -23,8 +23,6 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtentionPane
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WebExtensionTaskpane), FileFormatVersions.Office2013)]
-
 [SchemaAttr(70, "taskpanes")]
 [OfficeAvailability(FileFormatVersions.Office2013)]
 public partial class Taskpanes : OpenXmlPartRootElement
@@ -144,7 +142,6 @@ public partial class WebExtensionPartReference : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(70, "extLst")]
@@ -211,8 +208,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WebExtensionPartReference), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(70, "taskpane")]

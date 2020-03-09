@@ -25,10 +25,6 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(XsnLocation))]
-    [ChildElementInfo(typeof(CachedView))]
-    [ChildElementInfo(typeof(OpenByDefault))]
-    [ChildElementInfo(typeof(Scope))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(39, "customXsn")]

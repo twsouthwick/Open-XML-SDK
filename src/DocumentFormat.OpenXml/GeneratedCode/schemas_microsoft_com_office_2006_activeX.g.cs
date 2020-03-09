@@ -22,7 +22,6 @@ namespace DocumentFormat.OpenXml.Office.ActiveX
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ActiveXObjectProperty))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(35, "ocx")]
@@ -121,8 +120,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SharedComFont))]
-    [ChildElementInfo(typeof(SharedComPicture))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(35, "ocxPr")]
@@ -231,7 +228,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ActiveXObjectProperty))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(35, "font")]

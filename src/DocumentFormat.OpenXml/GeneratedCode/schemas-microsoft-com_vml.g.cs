@@ -166,7 +166,6 @@ public partial class Path : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "formulas")]
@@ -226,7 +225,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ShapeHandle))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "handles")]
@@ -286,7 +284,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.FillExtendedProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "fill")]
@@ -558,11 +555,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.LeftStroke))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.TopStroke))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.RightStroke))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.BottomStroke))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ColumnStroke))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "stroke")]
@@ -997,7 +989,6 @@ public partial class Shadow : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.TextBoxContent))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "textbox")]
@@ -1365,31 +1356,6 @@ public partial class ImageData : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Ink))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.InkAnnotationFlag))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "shape")]
@@ -1965,30 +1931,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Complex))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "shapetype")]
@@ -2542,23 +2484,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Group))]
-    [ChildElementInfo(typeof(Shape))]
-    [ChildElementInfo(typeof(Shapetype))]
-    [ChildElementInfo(typeof(Arc))]
-    [ChildElementInfo(typeof(Curve))]
-    [ChildElementInfo(typeof(ImageFile))]
-    [ChildElementInfo(typeof(Line))]
-    [ChildElementInfo(typeof(Oval))]
-    [ChildElementInfo(typeof(PolyLine))]
-    [ChildElementInfo(typeof(Rectangle))]
-    [ChildElementInfo(typeof(RoundRectangle))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Diagram))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "group")]
@@ -2907,7 +2832,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Fill))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "background")]
@@ -3061,29 +2985,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "arc")]
@@ -3627,29 +3528,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "curve")]
@@ -4213,29 +4091,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "image")]
@@ -4834,29 +4689,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "line")]
@@ -5406,29 +5238,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "oval")]
@@ -5965,30 +5774,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Ink))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "polyline")]
@@ -6532,29 +6317,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "rect")]
@@ -7090,29 +6852,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Path))]
-    [ChildElementInfo(typeof(Formulas))]
-    [ChildElementInfo(typeof(ShapeHandles))]
-    [ChildElementInfo(typeof(Fill))]
-    [ChildElementInfo(typeof(Stroke))]
-    [ChildElementInfo(typeof(Shadow))]
-    [ChildElementInfo(typeof(TextBox))]
-    [ChildElementInfo(typeof(TextPath))]
-    [ChildElementInfo(typeof(ImageData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Skew))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Extrusion))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Callout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.Lock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.ClipPath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Office.SignatureLine))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TextWrap))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.AnchorLock))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.TopBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.BottomBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.LeftBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Wordprocessing.RightBorder))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Vml.Presentation.TextData))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(26, "roundrect")]

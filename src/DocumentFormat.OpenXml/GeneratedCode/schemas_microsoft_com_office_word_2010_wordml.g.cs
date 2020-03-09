@@ -568,63 +568,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.SdtRun))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.ProofError))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.PermStart))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.PermEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.BookmarkStart))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.BookmarkEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CommentRangeStart))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CommentRangeEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.MoveFromRangeStart))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.MoveFromRangeEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.MoveToRangeStart))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.MoveToRangeEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CustomXmlInsRangeStart))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CustomXmlInsRangeEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CustomXmlDelRangeStart))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CustomXmlDelRangeEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CustomXmlMoveFromRangeStart))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CustomXmlMoveFromRangeEnd))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CustomXmlMoveToRangeStart))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.CustomXmlMoveToRangeEnd))]
-    [ChildElementInfo(typeof(CustomXmlConflictInsertionRangeStart), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CustomXmlConflictInsertionRangeEnd), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CustomXmlConflictDeletionRangeStart), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CustomXmlConflictDeletionRangeEnd), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.InsertedRun))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.DeletedRun))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.MoveFromRun))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.MoveToRun))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.ContentPart), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(RunConflictInsertion), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(RunConflictDeletion), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Paragraph))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.OfficeMath))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Accent))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Bar))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Box))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.BorderBox))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Delimiter))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.EquationArray))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Fraction))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.MathFunction))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.GroupChar))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.LimitLower))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.LimitUpper))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Matrix))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Nary))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Phantom))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Radical))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.PreSubSuper))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Subscript))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.SubSuperscript))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Superscript))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Math.Run))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.Run))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.BidirectionalOverride), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Wordprocessing.BidirectionalEmbedding), FileFormatVersions.Office2010)]
-
 public abstract partial class RunTrackChangeType : OpenXmlCompositeElement
 {
     
@@ -781,7 +724,6 @@ public partial class CustomXmlConflictDeletionRangeStart : TrackChangeType
 /// Defines the TrackChangeType class.
 /// </summary>
 
-
 public abstract partial class TrackChangeType : OpenXmlLeafElement
 {
     
@@ -893,7 +835,6 @@ public partial class Alpha : PositiveFixedPercentageType
 /// <summary>
 /// Defines the PositiveFixedPercentageType class.
 /// </summary>
-
 
 public abstract partial class PositiveFixedPercentageType : OpenXmlLeafElement
 {
@@ -1088,7 +1029,6 @@ public partial class LuminanceModulation : PercentageType
 /// Defines the PercentageType class.
 /// </summary>
 
-
 public abstract partial class PercentageType : OpenXmlLeafElement
 {
     
@@ -1134,16 +1074,6 @@ public abstract partial class PercentageType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tint), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Shade), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Alpha), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(HueModulation), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Saturation), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SaturationOffset), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SaturationModulation), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Luminance), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LuminanceOffset), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LuminanceModulation), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "srgbClr")]
@@ -1239,16 +1169,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tint), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Shade), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Alpha), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(HueModulation), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Saturation), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SaturationOffset), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SaturationModulation), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Luminance), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LuminanceOffset), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LuminanceModulation), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "schemeClr")]
@@ -1381,7 +1301,6 @@ public partial class LinearShadeProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FillToRectangle), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "path")]
@@ -1541,7 +1460,6 @@ public partial class EntityPickerEmpty : EmptyType
 /// Defines the EmptyType class.
 /// </summary>
 
-
 public abstract partial class EmptyType : OpenXmlLeafElement
 {
     
@@ -1568,8 +1486,6 @@ public abstract partial class EmptyType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RgbColorModelHex), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SchemeColor), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "solidFill")]
@@ -1664,9 +1580,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(GradientStopList), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LinearShadeProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(PathShadeProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "gradFill")]
@@ -1822,8 +1735,6 @@ public partial class LineJoinMiterProperties : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RgbColorModelHex), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SchemeColor), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "glow")]
@@ -1928,8 +1839,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RgbColorModelHex), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SchemeColor), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "shadow")]
@@ -2279,13 +2188,6 @@ public partial class Reflection : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NoFillEmpty), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SolidColorFillProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GradientFillProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(PresetLineDashProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(RoundEmpty), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BevelEmpty), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LineJoinMiterProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "textOutline")]
@@ -2412,9 +2314,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NoFillEmpty), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SolidColorFillProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(GradientFillProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "textFill")]
@@ -2521,8 +2420,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Camera), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(LightRig), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "scene3d")]
@@ -2612,10 +2509,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BevelTop), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(BevelBottom), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtrusionColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ContourColor), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "props3d")]
@@ -2872,7 +2765,6 @@ public partial class NumberSpacing : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StyleSet), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "stylisticSets")]
@@ -3008,7 +2900,6 @@ public partial class Checked : OnOffType
 /// Defines the OnOffType class.
 /// </summary>
 
-
 public abstract partial class OnOffType : OpenXmlLeafElement
 {
     
@@ -3046,9 +2937,6 @@ public abstract partial class OnOffType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(WordNonVisualContentPartShapeProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(Transform2D), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "contentPart")]
@@ -3241,7 +3129,6 @@ public partial class CustomXmlConflictDeletionRangeEnd : MarkupType
 /// Defines the MarkupType class.
 /// </summary>
 
-
 public abstract partial class MarkupType : OpenXmlLeafElement
 {
     
@@ -3318,9 +3205,6 @@ public partial class DefaultImageDpi : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Checked), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(CheckedState), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(UncheckedState), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "checkbox")]
@@ -3421,8 +3305,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RgbColorModelHex), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SchemeColor), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "gs")]
@@ -3593,7 +3475,6 @@ public partial class FillToRectangle : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(GradientStop), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "gsLst")]
@@ -3753,7 +3634,6 @@ public partial class Camera : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SphereCoordinates), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "lightRig")]
@@ -3884,7 +3764,6 @@ public partial class BevelBottom : BevelType
 /// <summary>
 /// Defines the BevelType class.
 /// </summary>
-
 
 public abstract partial class BevelType : OpenXmlLeafElement
 {
@@ -4067,9 +3946,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RgbColorModelHex), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SchemeColor), FileFormatVersions.Office2010)]
-
 public abstract partial class ColorType : OpenXmlCompositeElement
 {
     
@@ -4225,7 +4101,6 @@ public partial class UncheckedState : CheckBoxSymbolType
 /// Defines the CheckBoxSymbolType class.
 /// </summary>
 
-
 public abstract partial class CheckBoxSymbolType : OpenXmlLeafElement
 {
     
@@ -4274,9 +4149,6 @@ public abstract partial class CheckBoxSymbolType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnClick))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnHover))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "cNvPr")]
@@ -4414,8 +4286,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.ContentPartLocks), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "cNvContentPartPr")]
@@ -4510,8 +4380,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NonVisualInkContentPartProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "nvContentPartPr")]
@@ -4599,8 +4467,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Offset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extents))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "xfrm")]
@@ -4708,7 +4574,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(52, "extLst")]

@@ -167,7 +167,6 @@ public partial class ColIdIdentifier : OpenXmlIdentifierElement
 /// Defines the OpenXmlIdentifierElement class.
 /// </summary>
 
-
 public abstract partial class OpenXmlIdentifierElement : OpenXmlLeafElement
 {
     

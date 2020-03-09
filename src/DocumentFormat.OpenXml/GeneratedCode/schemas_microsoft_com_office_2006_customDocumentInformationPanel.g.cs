@@ -24,9 +24,6 @@ namespace DocumentFormat.OpenXml.Office.CustomDocumentInformationPanel
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ShowOnOpen))]
-    [ChildElementInfo(typeof(DefaultPropertyEditorNamespace))]
-    [ChildElementInfo(typeof(CustomPropertyEditor))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(37, "customPropertyEditors")]
@@ -256,8 +253,6 @@ public partial class ShowOnOpen : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PropertyEditorNamespace))]
-    [ChildElementInfo(typeof(XsnFileLocation))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(37, "customPropertyEditor")]

@@ -38,21 +38,6 @@ namespace DocumentFormat.OpenXml.Office2016.Drawing.Charts
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Transform2D))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.CustomGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Outline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "spPr")]
@@ -234,7 +219,6 @@ public partial class Bubble3DBoolean : BooleanType
 /// Defines the BooleanType class.
 /// </summary>
 
-
 public abstract partial class BooleanType : OpenXmlLeafElement
 {
     
@@ -270,10 +254,6 @@ public abstract partial class BooleanType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Symbol))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Size))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "marker")]
@@ -401,22 +381,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Index))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Delete))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Layout))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartText))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.NumberingFormat))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.TextProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DataLabelPosition))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowLegendKey))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowValue))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowCategoryName))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowSeriesName))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowPercent))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ShowBubbleSize))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Separator))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.DLblExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "dLbl")]
@@ -520,7 +484,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CategoryFilterException), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "categoryFilterExceptions")]
@@ -580,7 +543,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BooleanFalse), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "pivotOptions16")]
@@ -654,7 +616,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartDataPointUniqueIDMapEntry), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "datapointuniqueidmap")]
@@ -748,7 +709,6 @@ public partial class UniqueID : UniqueIDChart
 /// Defines the UniqueIDChart class.
 /// </summary>
 
-
 public abstract partial class UniqueIDChart : OpenXmlLeafElement
 {
     
@@ -788,13 +748,6 @@ public abstract partial class UniqueIDChart : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(UniqueIdChartUniqueID), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(UnsignedIntegerType), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(InvertIfNegativeBoolean), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Bubble3DBoolean), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Marker), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(DLbl), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "categoryFilterException")]
@@ -949,10 +902,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.FormatCode))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PointCount))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.NumericPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "numCache")]
@@ -1041,7 +990,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumberDataType), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "filteredLitCache")]
@@ -1117,9 +1065,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PointCount))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.StringPoint))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.StrDataExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "strCache")]
@@ -1195,7 +1140,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StringDataType), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "filteredLitCache")]
@@ -1271,9 +1215,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PointCount))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Level))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "multiLvlStrCache")]
@@ -1349,7 +1290,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MultiLvlStrData), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "filteredLitCache")]
@@ -1529,8 +1469,6 @@ public partial class XsdunsignedInt : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(XsdunsignedInt), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(UniqueID), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(82, "ptentry")]

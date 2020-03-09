@@ -32,16 +32,6 @@ namespace DocumentFormat.OpenXml.Drawing.LockedCanvas
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualGroupShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.VisualGroupShapeProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.TextShape))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ConnectionShape))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Picture))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.GvmlContentPart), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GraphicFrame))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupShape))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GvmlGroupShapeExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(15, "lockedCanvas")]

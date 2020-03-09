@@ -10,12 +10,14 @@ namespace DocumentFormat.OpenXml.Framework
 {
     internal class CompiledParticle : IComparer<OpenXmlElement>
     {
-        private Lazy<LookupItem[]> _lookup;
+        private readonly PackageCache _cache = PackageCache.Cache;
+
+        private readonly Lazy<LookupItem[]> _lookup;
 
         public CompiledParticle(ParticleConstraint particle)
         {
             Particle = particle;
-            _lookup = new Lazy<LookupItem[]>(() => ParticleCompiler.Compile(Particle), true);
+            _lookup = new Lazy<LookupItem[]>(() => ParticleCompiler.Compile(Particle, _cache), true);
         }
 
         public ReadOnlyArray<LookupItem> Lookup => _lookup.Value;
@@ -28,6 +30,21 @@ namespace DocumentFormat.OpenXml.Framework
 
         public ParticlePath Find(object obj)
             => GetPath(obj?.GetType());
+
+        public OpenXmlElement CreateElement(byte nsId, string name)
+        {
+            foreach (var l in Lookup)
+            {
+                if (l.Data.Info.Schema.NamespaceId == nsId && l.Data.Info.Schema.Tag == name)
+                {
+                    var factory = _cache.GetFactory<OpenXmlElement>(l.Type);
+
+                    return factory();
+                }
+            }
+
+            return null;
+        }
 
         private ParticlePath GetPath(Type type)
         {

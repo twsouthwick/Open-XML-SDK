@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using DocumentFormat.OpenXml.Framework;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -120,14 +121,16 @@ namespace DocumentFormat.OpenXml.Validation.Schema
 
                 var childrenNames = new List<string>();
 
-                if (_elementTypes != null)
+                if (_elementTypes != null && parent is OpenXmlCompositeElement composite)
                 {
-                    foreach (var childElement in parent.ElementData.Children.Elements)
+                    foreach (var childElement in composite.CompiledParticle.Lookup)
                     {
                         if (_elementTypes.Contains(childElement.Type))
                         {
+                            var info = PackageCache.Cache.ParseElementData(childElement.Type);
+
                             // <namespace:localname>, use InvariantCulture
-                            childrenNames.Add(SR.Format(ValidationResources.Fmt_ElementName, childElement.Namespace, childElement.Name));
+                            childrenNames.Add(SR.Format(ValidationResources.Fmt_ElementName, info.Info.Schema.NamespaceUri, info.Info.Schema.Tag));
                         }
                     }
                 }

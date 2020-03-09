@@ -27,12 +27,6 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PublishDate))]
-    [ChildElementInfo(typeof(DocumentAbstract))]
-    [ChildElementInfo(typeof(CompanyAddress))]
-    [ChildElementInfo(typeof(CompanyPhoneNumber))]
-    [ChildElementInfo(typeof(CompanyFaxNumber))]
-    [ChildElementInfo(typeof(CompanyEmailAddress))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(36, "CoverPageProperties")]

@@ -175,8 +175,6 @@ public partial class NumericValue : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(NumericLevel), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "numDim")]
@@ -249,8 +247,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(StringLevel), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "strDim")]
@@ -322,7 +318,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Extension2), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "extLst")]
@@ -427,9 +422,6 @@ public partial class ExternalData : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumericDimension), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(StringDimension), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "data")]
@@ -503,8 +495,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Formula), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(VXsdstring), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "txData")]
@@ -684,10 +674,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BodyProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ListStyle))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Paragraph))]
-
 public abstract partial class TextBodyType : OpenXmlCompositeElement
 {
     
@@ -763,8 +749,6 @@ public abstract partial class TextBodyType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TextData), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(RichTextBody), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "tx")]
@@ -868,21 +852,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Transform2D))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.CustomGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Outline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "spPr")]
@@ -999,10 +968,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Text), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(TxPrTextBody), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "unitsLabel")]
@@ -1215,10 +1180,6 @@ public partial class ValueAxisScaling : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Text), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(TxPrTextBody), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "title")]
@@ -1332,8 +1293,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AxisUnitsLabel), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "units")]
@@ -1538,9 +1497,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
-
 public abstract partial class OpenXmlGridlinesElement : OpenXmlCompositeElement
 {
     
@@ -1721,8 +1677,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
-
 public abstract partial class OpenXmlTickMarksElement : OpenXmlCompositeElement
 {
     
@@ -1792,7 +1746,6 @@ public abstract partial class OpenXmlTickMarksElement : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "tickLabels")]
@@ -2133,8 +2086,6 @@ public partial class Aggregation : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Xsddouble), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(BinCountXsdunsignedInt), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "binning")]
@@ -2279,7 +2230,6 @@ public partial class Statistics : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(IdxXsdunsignedInt), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "subtotals")]
@@ -2647,12 +2597,6 @@ public partial class VXsdstring : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumberFormat), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(TxPrTextBody), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(DataLabelVisibilities), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(SeparatorXsdstring), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "dataLabel")]
@@ -2841,8 +2785,6 @@ public partial class DataLabelHidden : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "dataPt")]
@@ -2944,14 +2886,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumberFormat), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(TxPrTextBody), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(DataLabelVisibilities), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(SeparatorXsdstring), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(DataLabel), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(DataLabelHidden), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "dataLabels")]
@@ -3127,13 +3061,6 @@ public partial class DataId : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ParentLabelLayout), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(SeriesElementVisibilities), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Aggregation), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Binning), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Statistics), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Subtotals), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "layoutPr")]
@@ -3267,8 +3194,6 @@ public partial class AxisId : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "plotSurface")]
@@ -3362,14 +3287,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Text), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(DataPoint), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(DataLabels), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(DataId), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(SeriesLayoutProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(AxisId), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "series")]
@@ -3500,9 +3417,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PlotSurface), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Series), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "plotAreaRegion")]
@@ -3590,19 +3504,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CategoryAxisScaling), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ValueAxisScaling), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(AxisTitle), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(AxisUnits), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(MajorGridlinesGridlines), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(MinorGridlinesGridlines), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(MajorTickMarksTickMarks), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(MinorTickMarksTickMarks), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(TickLabels), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(NumberFormat), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(TxPrTextBody), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "axis")]
@@ -3695,10 +3596,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Text), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(TxPrTextBody), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "title")]
@@ -3835,10 +3732,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PlotAreaRegion), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Axis), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "plotArea")]
@@ -3917,9 +3810,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ShapeProperties), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(TxPrTextBody), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "legend")]
@@ -4045,12 +3935,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OddHeaderXsdstring), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(OddFooterXsdstring), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(EvenHeaderXsdstring), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(EvenFooterXsdstring), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(FirstHeaderXsdstring), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(FirstFooterXsdstring), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "headerFooter")]
@@ -4375,9 +4259,6 @@ public partial class PageSetup : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExternalData), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Data), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "chartData")]
@@ -4456,10 +4337,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartTitle), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(PlotArea), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(Legend), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "chart")]
@@ -4572,7 +4449,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "clrMapOvr")]
@@ -4756,9 +4632,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(HeaderFooter), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(PageMargins), FileFormatVersions.Office2016)]
-    [ChildElementInfo(typeof(PageSetup), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "printSettings")]
@@ -4902,7 +4775,6 @@ public partial class Formula : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ChartStringValue), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "lvl")]
@@ -4970,7 +4842,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NumericValue), FileFormatVersions.Office2016)]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(80, "lvl")]

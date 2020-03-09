@@ -291,7 +291,6 @@ public partial class WedgeTransition : EmptyType
 /// Defines the EmptyType class.
 /// </summary>
 
-
 public abstract partial class EmptyType : OpenXmlLeafElement
 {
     
@@ -371,7 +370,6 @@ public partial class ParagraphIndexRange : IndexRangeType
 /// <summary>
 /// Defines the IndexRangeType class.
 /// </summary>
-
 
 public abstract partial class IndexRangeType : OpenXmlLeafElement
 {
@@ -576,7 +574,6 @@ public partial class KioskSlideMode : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "clrMap")]
@@ -759,8 +756,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.MasterColorMapping))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.OverrideColorMapping))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "clrMapOvr")]
@@ -857,14 +852,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "bgPr")]
@@ -955,12 +942,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "bgRef")]
@@ -1112,8 +1093,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommentAuthor))]
-
 [SchemaAttr(24, "cmAuthorLst")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class CommentAuthorList : OpenXmlPartRootElement
@@ -1195,8 +1174,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>Comment &lt;p:cm></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(Comment))]
 
 [SchemaAttr(24, "cmLst")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -1283,9 +1260,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OleObjectEmbed))]
-    [ChildElementInfo(typeof(OleObjectLink))]
-    [ChildElementInfo(typeof(Picture))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "oleObj")]
@@ -1415,21 +1389,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>PresentationExtensionList &lt;p:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(SlideMasterIdList))]
-    [ChildElementInfo(typeof(NotesMasterIdList))]
-    [ChildElementInfo(typeof(HandoutMasterIdList))]
-    [ChildElementInfo(typeof(SlideIdList))]
-    [ChildElementInfo(typeof(SlideSize))]
-    [ChildElementInfo(typeof(NotesSize))]
-    [ChildElementInfo(typeof(EmbeddedFontList))]
-    [ChildElementInfo(typeof(CustomShowList))]
-    [ChildElementInfo(typeof(PhotoAlbum))]
-    [ChildElementInfo(typeof(CustomerDataList))]
-    [ChildElementInfo(typeof(Kinsoku))]
-    [ChildElementInfo(typeof(DefaultTextStyle))]
-    [ChildElementInfo(typeof(ModificationVerifier))]
-    [ChildElementInfo(typeof(PresentationExtensionList))]
 
 [SchemaAttr(24, "presentation")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -1786,13 +1745,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(HtmlPublishProperties))]
-    [ChildElementInfo(typeof(WebProperties))]
-    [ChildElementInfo(typeof(PrintingProperties))]
-    [ChildElementInfo(typeof(ShowProperties))]
-    [ChildElementInfo(typeof(ColorMostRecentlyUsed))]
-    [ChildElementInfo(typeof(PresentationPropertiesExtensionList))]
-
 [SchemaAttr(24, "presentationPr")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class PresentationProperties : OpenXmlPartRootElement
@@ -1957,12 +1909,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>SlideExtensionList &lt;p:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(CommonSlideData))]
-    [ChildElementInfo(typeof(ColorMapOverride))]
-    [ChildElementInfo(typeof(Transition))]
-    [ChildElementInfo(typeof(Timing))]
-    [ChildElementInfo(typeof(SlideExtensionList))]
 
 [SchemaAttr(24, "sld")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -2143,13 +2089,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>SlideLayoutExtensionList &lt;p:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(CommonSlideData))]
-    [ChildElementInfo(typeof(ColorMapOverride))]
-    [ChildElementInfo(typeof(Transition))]
-    [ChildElementInfo(typeof(Timing))]
-    [ChildElementInfo(typeof(HeaderFooter))]
-    [ChildElementInfo(typeof(SlideLayoutExtensionList))]
 
 [SchemaAttr(24, "sldLayout")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -2368,15 +2307,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonSlideData))]
-    [ChildElementInfo(typeof(ColorMap))]
-    [ChildElementInfo(typeof(SlideLayoutIdList))]
-    [ChildElementInfo(typeof(Transition))]
-    [ChildElementInfo(typeof(Timing))]
-    [ChildElementInfo(typeof(HeaderFooter))]
-    [ChildElementInfo(typeof(TextStyles))]
-    [ChildElementInfo(typeof(SlideMasterExtensionList))]
-
 [SchemaAttr(24, "sldMaster")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class SlideMaster : OpenXmlPartRootElement
@@ -2580,11 +2510,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonSlideData))]
-    [ChildElementInfo(typeof(ColorMap))]
-    [ChildElementInfo(typeof(HeaderFooter))]
-    [ChildElementInfo(typeof(HandoutMasterExtensionList))]
-
 [SchemaAttr(24, "handoutMaster")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class HandoutMaster : OpenXmlPartRootElement
@@ -2729,12 +2654,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>NotesMasterExtensionList &lt;p:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(CommonSlideData))]
-    [ChildElementInfo(typeof(ColorMap))]
-    [ChildElementInfo(typeof(HeaderFooter))]
-    [ChildElementInfo(typeof(NotesStyle))]
-    [ChildElementInfo(typeof(NotesMasterExtensionList))]
 
 [SchemaAttr(24, "notesMaster")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -2892,10 +2811,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonSlideData))]
-    [ChildElementInfo(typeof(ColorMapOverride))]
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
-
 [SchemaAttr(24, "notes")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class NotesSlide : OpenXmlPartRootElement
@@ -3038,8 +2953,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
-
 [SchemaAttr(24, "sldSyncPr")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class SlideSyncProperties : OpenXmlPartRootElement
@@ -3160,8 +3073,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Tag))]
-
 [SchemaAttr(24, "tagLst")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
 public partial class TagList : OpenXmlPartRootElement
@@ -3250,15 +3161,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>ExtensionList &lt;p:extLst></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(NormalViewProperties))]
-    [ChildElementInfo(typeof(SlideViewProperties))]
-    [ChildElementInfo(typeof(OutlineViewProperties))]
-    [ChildElementInfo(typeof(NotesTextViewProperties))]
-    [ChildElementInfo(typeof(SorterViewProperties))]
-    [ChildElementInfo(typeof(NotesViewProperties))]
-    [ChildElementInfo(typeof(GridSpacing))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [SchemaAttr(24, "viewPr")]
 [OfficeAvailability(FileFormatVersions.Office2007)]
@@ -3465,9 +3367,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.NonVisualContentPartProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.Transform2D), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.ExtensionListModify), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(24, "contentPart")]
@@ -3621,7 +3520,6 @@ public partial class SoundTarget : EmbeddedWavAudioFileType
 /// Defines the EmbeddedWavAudioFileType class.
 /// </summary>
 
-
 public abstract partial class EmbeddedWavAudioFileType : OpenXmlLeafElement
 {
     
@@ -3671,7 +3569,6 @@ public abstract partial class EmbeddedWavAudioFileType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Sound))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "stSnd")]
@@ -3829,11 +3726,6 @@ public partial class TimePercentage : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideTarget))]
-    [ChildElementInfo(typeof(SoundTarget))]
-    [ChildElementInfo(typeof(ShapeTarget))]
-    [ChildElementInfo(typeof(InkTarget))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.BookmarkTarget), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "tgtEl")]
@@ -4144,10 +4036,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TargetElement))]
-    [ChildElementInfo(typeof(TimeNode))]
-    [ChildElementInfo(typeof(RuntimeNodeTrigger))]
-
 public abstract partial class TimeListConditionalType : OpenXmlCompositeElement
 {
     
@@ -4253,7 +4141,6 @@ public abstract partial class TimeListConditionalType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonTimeNode))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "par")]
@@ -4329,9 +4216,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonTimeNode))]
-    [ChildElementInfo(typeof(PreviousConditionList))]
-    [ChildElementInfo(typeof(NextConditionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "seq")]
@@ -4454,7 +4338,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonTimeNode))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "excl")]
@@ -4529,8 +4412,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonBehavior))]
-    [ChildElementInfo(typeof(TimeAnimateValueList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "anim")]
@@ -4668,10 +4549,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonBehavior))]
-    [ChildElementInfo(typeof(ByColor))]
-    [ChildElementInfo(typeof(FromColor))]
-    [ChildElementInfo(typeof(ToColor))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "animClr")]
@@ -4801,8 +4678,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonBehavior))]
-    [ChildElementInfo(typeof(Progress))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "animEffect")]
@@ -4915,11 +4790,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonBehavior))]
-    [ChildElementInfo(typeof(ByPosition))]
-    [ChildElementInfo(typeof(FromPosition))]
-    [ChildElementInfo(typeof(ToPosition))]
-    [ChildElementInfo(typeof(RotationCenter))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "animMotion")]
@@ -5093,7 +4963,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonBehavior))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "animRot")]
@@ -5202,10 +5071,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonBehavior))]
-    [ChildElementInfo(typeof(ByPosition))]
-    [ChildElementInfo(typeof(FromPosition))]
-    [ChildElementInfo(typeof(ToPosition))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "animScale")]
@@ -5336,7 +5201,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonBehavior))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cmd")]
@@ -5426,8 +5290,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonBehavior))]
-    [ChildElementInfo(typeof(ToVariantValue))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "set")]
@@ -5514,7 +5376,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonMediaNode))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "audio")]
@@ -5595,7 +5456,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonMediaNode))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "video")]
@@ -5681,12 +5541,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StartConditionList))]
-    [ChildElementInfo(typeof(EndConditionList))]
-    [ChildElementInfo(typeof(EndSync))]
-    [ChildElementInfo(typeof(Iterate))]
-    [ChildElementInfo(typeof(ChildTimeNodeList))]
-    [ChildElementInfo(typeof(SubTimeNodeList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cTn")]
@@ -6219,8 +6073,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Condition))]
-
 public abstract partial class TimeListTimeConditionalListType : OpenXmlCompositeElement
 {
     
@@ -6333,7 +6185,6 @@ public partial class Text : OpenXmlLeafTextElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(AttributeName))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "attrNameLst")]
@@ -6672,13 +6523,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor))]
-
 public abstract partial class ColorType : OpenXmlCompositeElement
 {
     
@@ -6801,7 +6645,6 @@ public abstract partial class ColorType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(VariantValue))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "tav")]
@@ -6998,9 +6841,6 @@ public partial class HslColor : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonTimeNode))]
-    [ChildElementInfo(typeof(TargetElement))]
-    [ChildElementInfo(typeof(AttributeNameList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cBhvr")]
@@ -7160,7 +7000,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(FloatVariantValue))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "progress")]
@@ -7360,12 +7199,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BooleanVariantValue))]
-    [ChildElementInfo(typeof(IntegerVariantValue))]
-    [ChildElementInfo(typeof(FloatVariantValue))]
-    [ChildElementInfo(typeof(StringVariantValue))]
-    [ChildElementInfo(typeof(ColorValue))]
-
 public abstract partial class TimeListAnimationVariantType : OpenXmlCompositeElement
 {
     
@@ -7477,8 +7310,6 @@ public abstract partial class TimeListAnimationVariantType : OpenXmlCompositeEle
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonTimeNode))]
-    [ChildElementInfo(typeof(TargetElement))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cMediaNode")]
@@ -7594,7 +7425,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ParallelTimeNode))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "tnLst")]
@@ -7668,7 +7498,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimeNodeList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "tmpl")]
@@ -7749,7 +7578,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Template))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "tmplLst")]
@@ -7810,8 +7638,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BuildDiagram))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BuildChart))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "bldSub")]
@@ -7898,7 +7724,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TemplateList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "bldP")]
@@ -8173,8 +7998,6 @@ public partial class BuildOleChart : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BuildAsOne))]
-    [ChildElementInfo(typeof(BuildSubElement))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "bldGraphic")]
@@ -8290,10 +8113,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BuildParagraph))]
-    [ChildElementInfo(typeof(BuildDiagram))]
-    [ChildElementInfo(typeof(BuildOleChart))]
-    [ChildElementInfo(typeof(BuildGraphics))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "bldLst")]
@@ -8356,7 +8175,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -8430,8 +8248,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RgbColor))]
-    [ChildElementInfo(typeof(HslColor))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "by")]
@@ -8648,13 +8464,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>DocumentFormat.OpenXml.Drawing.PresetColor &lt;a:prstClr></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor), FileFormatVersions.Office2010)]
 
 public abstract partial class Color3Type : OpenXmlCompositeElement
 {
@@ -8886,7 +8695,6 @@ public partial class CustomerDataTags : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommentAuthorExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cmAuthor")]
@@ -9002,9 +8810,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Position))]
-    [ChildElementInfo(typeof(Text))]
-    [ChildElementInfo(typeof(CommentExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cm")]
@@ -9127,7 +8932,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -9194,8 +8998,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
-    [ChildElementInfo(typeof(Picture))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "control")]
@@ -9329,7 +9131,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sldId")]
@@ -9422,7 +9223,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sldMasterId")]
@@ -9514,7 +9314,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "notesMasterId")]
@@ -9598,7 +9397,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "handoutMasterId")]
@@ -9813,7 +9611,6 @@ public partial class BoldItalicFont : EmbeddedFontDataIdType
 /// Defines the EmbeddedFontDataIdType class.
 /// </summary>
 
-
 public abstract partial class EmbeddedFontDataIdType : OpenXmlLeafElement
 {
     
@@ -9853,11 +9650,6 @@ public abstract partial class EmbeddedFontDataIdType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Font))]
-    [ChildElementInfo(typeof(RegularFont))]
-    [ChildElementInfo(typeof(BoldFont))]
-    [ChildElementInfo(typeof(ItalicFont))]
-    [ChildElementInfo(typeof(BoldItalicFont))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "embeddedFont")]
@@ -9983,7 +9775,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideListEntry))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sldLst")]
@@ -10044,8 +9835,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideList))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "custShow")]
@@ -10150,9 +9939,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnClick))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnHover))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cNvPr")]
@@ -10290,8 +10076,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ShapeLocks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cNvSpPr")]
@@ -10392,14 +10176,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PlaceholderShape))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AudioFromCD))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.WaveAudioFile))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AudioFromFile))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.VideoFromFile))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.QuickTimeFromFile))]
-    [ChildElementInfo(typeof(CustomerDataList))]
-    [ChildElementInfo(typeof(ApplicationNonVisualDrawingPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "nvPr")]
@@ -10502,9 +10278,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties))]
-    [ChildElementInfo(typeof(NonVisualShapeDrawingProperties))]
-    [ChildElementInfo(typeof(ApplicationNonVisualDrawingProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "nvSpPr")]
@@ -10618,21 +10391,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Transform2D))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.CustomGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetGeometry))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Outline))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Shape3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "spPr")]
@@ -10749,10 +10507,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.LineReference))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.FillReference))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectReference))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.FontReference))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "style")]
@@ -10867,9 +10621,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BodyProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ListStyle))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Paragraph))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "txBody")]
@@ -10960,10 +10711,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ConnectionShapeLocks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.StartConnection))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EndConnection))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cNvCxnSpPr")]
@@ -11078,9 +10825,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties))]
-    [ChildElementInfo(typeof(NonVisualConnectorShapeDrawingProperties))]
-    [ChildElementInfo(typeof(ApplicationNonVisualDrawingProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "nvCxnSpPr")]
@@ -11181,8 +10925,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PictureLocks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualPicturePropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cNvPicPr")]
@@ -11278,9 +11020,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties))]
-    [ChildElementInfo(typeof(NonVisualPictureDrawingProperties))]
-    [ChildElementInfo(typeof(ApplicationNonVisualDrawingProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "nvPicPr")]
@@ -11383,10 +11122,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Blip))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SourceRectangle))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Tile))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Stretch))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "blipFill")]
@@ -11496,8 +11231,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GraphicFrameLocks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cNvGraphicFramePr")]
@@ -11586,9 +11319,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties))]
-    [ChildElementInfo(typeof(NonVisualGraphicFrameDrawingProperties))]
-    [ChildElementInfo(typeof(ApplicationNonVisualDrawingProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "nvGraphicFramePr")]
@@ -11689,8 +11419,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Offset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extents))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "xfrm")]
@@ -11799,8 +11527,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupShapeLocks))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualGroupDrawingShapePropsExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cNvGrpSpPr")]
@@ -12265,18 +11991,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.DefaultParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Level1ParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Level2ParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Level3ParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Level4ParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Level5ParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Level6ParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Level7ParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Level8ParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Level9ParagraphProperties))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
-
 public abstract partial class TextListStyleType : OpenXmlCompositeElement
 {
     
@@ -12459,7 +12173,6 @@ public abstract partial class TextListStyleType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sldLayoutId")]
@@ -12555,11 +12268,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Background))]
-    [ChildElementInfo(typeof(ShapeTree))]
-    [ChildElementInfo(typeof(CustomerDataList))]
-    [ChildElementInfo(typeof(ControlList))]
-    [ChildElementInfo(typeof(CommonSlideDataExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cSld")]
@@ -12768,7 +12476,6 @@ public partial class RestoredTop : NormalViewPortionType
 /// Defines the NormalViewPortionType class.
 /// </summary>
 
-
 public abstract partial class NormalViewPortionType : OpenXmlLeafElement
 {
     
@@ -12811,8 +12518,6 @@ public abstract partial class NormalViewPortionType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ScaleX))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ScaleY))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "scale")]
@@ -12933,7 +12638,6 @@ public partial class Position : Point2DType
 /// Defines the Point2DType class.
 /// </summary>
 
-
 public abstract partial class Point2DType : OpenXmlLeafElement
 {
     
@@ -12978,8 +12682,6 @@ public abstract partial class Point2DType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ScaleFactor))]
-    [ChildElementInfo(typeof(Origin))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cViewPr")]
@@ -13116,7 +12818,6 @@ public partial class OutlineViewSlideListEntry : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(OutlineViewSlideListEntry))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sldLst")]
@@ -13217,7 +12918,6 @@ public partial class Guide : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Guide))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "guideLst")]
@@ -13278,8 +12978,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonViewProperties))]
-    [ChildElementInfo(typeof(GuideList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cSldViewPr")]
@@ -13389,9 +13087,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(RestoredLeft))]
-    [ChildElementInfo(typeof(RestoredTop))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "normalViewPr")]
@@ -13529,8 +13224,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonSlideViewProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "slideViewPr")]
@@ -13619,9 +13312,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonViewProperties))]
-    [ChildElementInfo(typeof(OutlineViewSlideList))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "outlineViewPr")]
@@ -13722,8 +13412,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonViewProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "notesTextViewPr")]
@@ -13811,8 +13499,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonViewProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sorterViewPr")]
@@ -13907,8 +13593,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonSlideViewProperties))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "notesViewPr")]
@@ -14029,7 +13713,6 @@ public partial class NotesSize : PositiveSize2DType
 /// Defines the PositiveSize2DType class.
 /// </summary>
 
-
 public abstract partial class PositiveSize2DType : OpenXmlLeafElement
 {
     
@@ -14074,8 +13757,6 @@ public abstract partial class PositiveSize2DType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.LaserTraceList), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.ShowEventRecordList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -14146,7 +13827,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.CreationId), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -14218,9 +13898,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.BrowseMode), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.LaserColor), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.ShowMediaControls), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -14296,11 +13973,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualPictureProperties))]
-    [ChildElementInfo(typeof(BlipFill))]
-    [ChildElementInfo(typeof(ShapeProperties))]
-    [ChildElementInfo(typeof(ShapeStyle))]
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "pic")]
@@ -14426,7 +14098,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "embed")]
@@ -14508,7 +14179,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "link")]
@@ -14631,49 +14301,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BlindsTransition))]
-    [ChildElementInfo(typeof(CheckerTransition))]
-    [ChildElementInfo(typeof(CircleTransition))]
-    [ChildElementInfo(typeof(DissolveTransition))]
-    [ChildElementInfo(typeof(CombTransition))]
-    [ChildElementInfo(typeof(CoverTransition))]
-    [ChildElementInfo(typeof(CutTransition))]
-    [ChildElementInfo(typeof(DiamondTransition))]
-    [ChildElementInfo(typeof(FadeTransition))]
-    [ChildElementInfo(typeof(NewsflashTransition))]
-    [ChildElementInfo(typeof(PlusTransition))]
-    [ChildElementInfo(typeof(PullTransition))]
-    [ChildElementInfo(typeof(PushTransition))]
-    [ChildElementInfo(typeof(RandomTransition))]
-    [ChildElementInfo(typeof(RandomBarTransition))]
-    [ChildElementInfo(typeof(SplitTransition))]
-    [ChildElementInfo(typeof(StripsTransition))]
-    [ChildElementInfo(typeof(WedgeTransition))]
-    [ChildElementInfo(typeof(WheelTransition))]
-    [ChildElementInfo(typeof(WipeTransition))]
-    [ChildElementInfo(typeof(ZoomTransition))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.FlashTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.VortexTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.SwitchTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.FlipTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.RippleTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.GlitterTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.HoneycombTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.PrismTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.DoorsTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.WindowTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.ShredTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.FerrisTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.FlythroughTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.WarpTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.GalleryTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.ConveyorTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.PanTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.RevealTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.WheelReverseTransition), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.PresetTransition), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(SoundAction))]
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "transition")]
@@ -14815,9 +14442,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimeNodeList))]
-    [ChildElementInfo(typeof(BuildList))]
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "timing")]
@@ -14917,7 +14541,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -14978,8 +14601,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackgroundProperties))]
-    [ChildElementInfo(typeof(BackgroundStyleReference))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "bg")]
@@ -15232,16 +14853,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualGroupShapeProperties))]
-    [ChildElementInfo(typeof(GroupShapeProperties))]
-    [ChildElementInfo(typeof(Shape))]
-    [ChildElementInfo(typeof(GroupShape))]
-    [ChildElementInfo(typeof(GraphicFrame))]
-    [ChildElementInfo(typeof(ConnectionShape))]
-    [ChildElementInfo(typeof(Picture))]
-    [ChildElementInfo(typeof(ContentPart), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
-
 public abstract partial class GroupShapeType : OpenXmlCompositeElement
 {
     
@@ -15317,8 +14928,6 @@ public abstract partial class GroupShapeType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomerData))]
-    [ChildElementInfo(typeof(CustomerDataTags))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "custDataLst")]
@@ -15379,7 +14988,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Control))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "controls")]
@@ -15439,7 +15047,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommonSlideDataExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -15501,9 +15108,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties))]
-    [ChildElementInfo(typeof(NonVisualGroupShapeDrawingProperties))]
-    [ChildElementInfo(typeof(ApplicationNonVisualDrawingProperties))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "nvGrpSpPr")]
@@ -15613,17 +15217,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.TransformGroup))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NoFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SolidFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GradientFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.BlipFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PatternFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.GroupFill))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.EffectDag))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Scene3DType))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "grpSpPr")]
@@ -15731,11 +15324,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualShapeProperties))]
-    [ChildElementInfo(typeof(ShapeProperties))]
-    [ChildElementInfo(typeof(ShapeStyle))]
-    [ChildElementInfo(typeof(TextBody))]
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sp")]
@@ -15871,10 +15459,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualGraphicFrameProperties))]
-    [ChildElementInfo(typeof(Transform))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Graphic))]
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "graphicFrame")]
@@ -15990,10 +15574,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualConnectionShapeProperties))]
-    [ChildElementInfo(typeof(ShapeProperties))]
-    [ChildElementInfo(typeof(ShapeStyle))]
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "cxnSp")]
@@ -16106,7 +15686,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ShowPropertiesExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -16170,11 +15749,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(BackgroundAnimation))]
-    [ChildElementInfo(typeof(SubShape))]
-    [ChildElementInfo(typeof(OleChartElement))]
-    [ChildElementInfo(typeof(TextElement))]
-    [ChildElementInfo(typeof(GraphicElement))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "spTgt")]
@@ -16345,7 +15919,6 @@ public partial class SubShape : TimeListSubShapeIdType
 /// Defines the TimeListSubShapeIdType class.
 /// </summary>
 
-
 public abstract partial class TimeListSubShapeIdType : OpenXmlLeafElement
 {
     
@@ -16380,7 +15953,6 @@ public abstract partial class TimeListSubShapeIdType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.PresenceInfo), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -16450,7 +16022,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.ThreadingInfo), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -16520,7 +16091,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.SlideGuideList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -16590,7 +16160,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.SlideGuideList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -16660,7 +16229,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.SlideGuideList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -16730,7 +16298,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.SlideGuideList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -16800,7 +16367,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ph")]
@@ -16912,7 +16478,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ApplicationNonVisualDrawingPropertiesExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -16973,8 +16538,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.Media), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.ModificationId), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -17046,8 +16609,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimeAbsolute))]
-    [ChildElementInfo(typeof(TimePercentage))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "iterate")]
@@ -17315,20 +16876,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ParallelTimeNode))]
-    [ChildElementInfo(typeof(SequenceTimeNode))]
-    [ChildElementInfo(typeof(ExclusiveTimeNode))]
-    [ChildElementInfo(typeof(Animate))]
-    [ChildElementInfo(typeof(AnimateColor))]
-    [ChildElementInfo(typeof(AnimateEffect))]
-    [ChildElementInfo(typeof(AnimateMotion))]
-    [ChildElementInfo(typeof(AnimateRotation))]
-    [ChildElementInfo(typeof(AnimateScale))]
-    [ChildElementInfo(typeof(Command))]
-    [ChildElementInfo(typeof(SetBehavior))]
-    [ChildElementInfo(typeof(Audio))]
-    [ChildElementInfo(typeof(Video))]
-
 public abstract partial class TimeTypeListType : OpenXmlCompositeElement
 {
     
@@ -17377,7 +16924,6 @@ public abstract partial class TimeTypeListType : OpenXmlCompositeElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TimeAnimateValue))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "tavLst")]
@@ -17513,7 +17059,6 @@ public partial class RotationCenter : TimeListType
 /// Defines the TimeListType class.
 /// </summary>
 
-
 public abstract partial class TimeListType : OpenXmlLeafElement
 {
     
@@ -17555,7 +17100,6 @@ public abstract partial class TimeListType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommentAuthorExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -17615,7 +17159,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommentExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -17675,7 +17218,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideMasterId))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sldMasterIdLst")]
@@ -17735,7 +17277,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NotesMasterId))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "notesMasterIdLst")]
@@ -17809,7 +17350,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(HandoutMasterId))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "handoutMasterIdLst")]
@@ -17883,7 +17423,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideId))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sldIdLst")]
@@ -17995,7 +17534,6 @@ public partial class SlideSize : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(EmbeddedFont))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "embeddedFontLst")]
@@ -18055,7 +17593,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CustomShow))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "custShowLst")]
@@ -18115,7 +17652,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "photoAlbum")]
@@ -18424,7 +17960,6 @@ public partial class ModificationVerifier : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PresentationExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -18487,10 +18022,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.SectionProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.SectionList), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.SlideGuideList), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.NotesGuideList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -18566,10 +18097,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideAll))]
-    [ChildElementInfo(typeof(SlideRange))]
-    [ChildElementInfo(typeof(CustomShowReference))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "htmlPubPr")]
@@ -18663,7 +18190,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "webPr")]
@@ -18802,7 +18328,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "prnPr")]
@@ -18920,14 +18445,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PresenterSlideMode))]
-    [ChildElementInfo(typeof(BrowseSlideMode))]
-    [ChildElementInfo(typeof(KioskSlideMode))]
-    [ChildElementInfo(typeof(SlideAll))]
-    [ChildElementInfo(typeof(SlideRange))]
-    [ChildElementInfo(typeof(CustomShowReference))]
-    [ChildElementInfo(typeof(PenColor))]
-    [ChildElementInfo(typeof(ShowPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "showPr")]
@@ -19039,12 +18556,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "clrMru")]
@@ -19127,7 +18638,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PresentationPropertiesExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -19190,10 +18700,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.DiscardImageEditData), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.PowerPoint.DefaultImageDpi), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.TextMath), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2013.PowerPoint.ChartTrackingReferenceBased), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "ext")]
@@ -19266,7 +18772,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionListWithModification))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "hf")]
@@ -19368,7 +18873,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideLayoutExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -19428,7 +18932,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideLayoutId))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sldLayoutIdLst")]
@@ -19491,10 +18994,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TitleStyle))]
-    [ChildElementInfo(typeof(BodyStyle))]
-    [ChildElementInfo(typeof(OtherStyle))]
-    [ChildElementInfo(typeof(ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "txStyles")]
@@ -19607,7 +19106,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SlideMasterExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -19667,7 +19165,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(HandoutMasterExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -19727,7 +19224,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NotesMasterExtension))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "extLst")]
@@ -19830,8 +19326,6 @@ public partial class OleChartElement : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CharRange))]
-    [ChildElementInfo(typeof(ParagraphIndexRange))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "txEl")]
@@ -19919,8 +19413,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Diagram))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Chart))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "graphicEl")]
@@ -20083,7 +19575,6 @@ public partial class RandomBarTransition : OrientationTransitionType
 /// Defines the OrientationTransitionType class.
 /// </summary>
 
-
 public abstract partial class OrientationTransitionType : OpenXmlLeafElement
 {
     
@@ -20150,7 +19641,6 @@ public partial class PullTransition : EightDirectionTransitionType
 /// <summary>
 /// Defines the EightDirectionTransitionType class.
 /// </summary>
-
 
 public abstract partial class EightDirectionTransitionType : OpenXmlLeafElement
 {
@@ -20220,7 +19710,6 @@ public partial class FadeTransition : OptionalBlackTransitionType
 /// Defines the OptionalBlackTransitionType class.
 /// </summary>
 
-
 public abstract partial class OptionalBlackTransitionType : OpenXmlLeafElement
 {
     
@@ -20286,7 +19775,6 @@ public partial class WipeTransition : SideDirectionTransitionType
 /// <summary>
 /// Defines the SideDirectionTransitionType class.
 /// </summary>
-
 
 public abstract partial class SideDirectionTransitionType : OpenXmlLeafElement
 {
@@ -20465,8 +19953,6 @@ public partial class ZoomTransition : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(StartSoundAction))]
-    [ChildElementInfo(typeof(EndSoundAction))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(24, "sndAc")]

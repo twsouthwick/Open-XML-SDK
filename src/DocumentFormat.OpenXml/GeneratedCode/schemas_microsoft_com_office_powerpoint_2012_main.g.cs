@@ -113,7 +113,6 @@ public partial class PresenceInfo : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ParentCommentIdentifier), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(68, "threadingInfo")]
@@ -305,9 +304,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtendedGuide), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
-
 public abstract partial class ExtendedGuideList : OpenXmlCompositeElement
 {
     
@@ -435,12 +431,6 @@ public partial class ParentCommentIdentifier : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(68, "clr")]
@@ -585,7 +575,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Presentation.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(68, "extLst")]
@@ -652,8 +641,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ColorType), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(68, "guide")]

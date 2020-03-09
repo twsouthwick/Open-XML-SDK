@@ -180,8 +180,6 @@ public partial class Appearance : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(CommentEx), FileFormatVersions.Office2013)]
-
 [SchemaAttr(69, "commentsEx")]
 [OfficeAvailability(FileFormatVersions.Office2013)]
 public partial class CommentsEx : OpenXmlPartRootElement
@@ -263,8 +261,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 ///<item><description>Person &lt;w15:person></description></item>
 /// </list>
 /// </remarks>
-
-    [ChildElementInfo(typeof(Person), FileFormatVersions.Office2013)]
 
 [SchemaAttr(69, "people")]
 [OfficeAvailability(FileFormatVersions.Office2013)]
@@ -350,8 +346,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SectionTitle), FileFormatVersions.Office2013)]
-    [ChildElementInfo(typeof(DoNotAllowInsertDeleteSection), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(69, "repeatingSection")]
@@ -561,7 +555,6 @@ public partial class DoNotAllowInsertDeleteSection : OnOffType
 /// Defines the OnOffType class.
 /// </summary>
 
-
 public abstract partial class OnOffType : OpenXmlLeafElement
 {
     
@@ -728,7 +721,6 @@ public partial class CommentEx : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(PresenceInfo), FileFormatVersions.Office2013)]
 
 [OfficeAvailability(FileFormatVersions.Office2013)]
 [SchemaAttr(69, "person")]

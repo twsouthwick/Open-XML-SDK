@@ -25,9 +25,6 @@ namespace DocumentFormat.OpenXml.Office2016.Drawing.ChartsAc
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.PointCount))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.Level))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Charts.ExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2016)]
 [SchemaAttr(81, "multiLvlStrLit")]

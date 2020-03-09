@@ -27,9 +27,6 @@ namespace DocumentFormat.OpenXml.Office2010.PowerPoint
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(NonVisualDrawingProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NonVisualInkContentPartProperties), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ApplicationNonVisualDrawingProperties), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "nvContentPartPr")]
@@ -130,8 +127,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Offset))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.Extents))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "xfrm")]
@@ -239,7 +234,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Presentation.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "extLst")]
@@ -315,10 +309,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MediaTrim), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MediaFade), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(MediaBookmarkList), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "media")]
@@ -483,7 +473,6 @@ public partial class PanTransition : SideDirectionTransitionType
 /// Defines the SideDirectionTransitionType class.
 /// </summary>
 
-
 public abstract partial class SideDirectionTransitionType : OpenXmlLeafElement
 {
     
@@ -614,7 +603,6 @@ public partial class ConveyorTransition : LeftRightDirectionTransitionType
 /// Defines the LeftRightDirectionTransitionType class.
 /// </summary>
 
-
 public abstract partial class LeftRightDirectionTransitionType : OpenXmlLeafElement
 {
     
@@ -716,7 +704,6 @@ public partial class FlashTransition : EmptyType
 /// <summary>
 /// Defines the EmptyType class.
 /// </summary>
-
 
 public abstract partial class EmptyType : OpenXmlLeafElement
 {
@@ -824,7 +811,6 @@ public partial class WindowTransition : OrientationTransitionType
 /// <summary>
 /// Defines the OrientationTransitionType class.
 /// </summary>
-
 
 public abstract partial class OrientationTransitionType : OpenXmlLeafElement
 {
@@ -1134,7 +1120,6 @@ public partial class BookmarkTarget : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SectionOld), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "sectionPr")]
@@ -1194,7 +1179,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Section), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "sectionLst")]
@@ -1292,12 +1276,6 @@ public partial class BrowseMode : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelPercentage))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.RgbColorModelHex))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HslColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SystemColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.SchemeColor))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.PresetColor))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "laserClr")]
@@ -1544,7 +1522,6 @@ public partial class ShowMediaControls : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TracePointList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "laserTraceLst")]
@@ -1638,7 +1615,6 @@ public partial class ModificationId : RandomIdType
 /// Defines the RandomIdType class.
 /// </summary>
 
-
 public abstract partial class RandomIdType : OpenXmlLeafElement
 {
     
@@ -1678,13 +1654,6 @@ public abstract partial class RandomIdType : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TriggerEventRecord), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(PlayEventRecord), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(StopEventRecord), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(PauseEventRecord), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ResumeEventRecord), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(SeekEventRecord), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(NullEventRecord), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "showEvtLst")]
@@ -1841,9 +1810,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnClick))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.HyperlinkOnHover))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "cNvPr")]
@@ -1981,8 +1947,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.ContentPartLocks), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Office2010.Drawing.OfficeArtExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "cNvContentPartPr")]
@@ -2083,14 +2047,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Presentation.PlaceholderShape))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AudioFromCD))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.WaveAudioFile))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.AudioFromFile))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.VideoFromFile))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Drawing.QuickTimeFromFile))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Presentation.CustomerDataList))]
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Presentation.ApplicationNonVisualDrawingPropertiesExtensionList))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "nvPr")]
@@ -2311,7 +2267,6 @@ public partial class MediaFade : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(MediaBookmark), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "bmkLst")]
@@ -2371,7 +2326,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(DocumentFormat.OpenXml.Presentation.Extension))]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "extLst")]
@@ -2437,7 +2391,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "section")]
@@ -2569,7 +2522,6 @@ public partial class SectionSlideIdListEntry : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SectionSlideIdListEntry), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "sldIdLst")]
@@ -2630,8 +2582,6 @@ internal override CompiledParticle CompiledParticle => _constraint;
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(SectionSlideIdList), FileFormatVersions.Office2010)]
-    [ChildElementInfo(typeof(ExtensionList), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "section")]
@@ -2785,7 +2735,6 @@ public partial class TracePoint : OpenXmlLeafElement
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(TracePoint), FileFormatVersions.Office2010)]
 
 [OfficeAvailability(FileFormatVersions.Office2010)]
 [SchemaAttr(49, "tracePtLst")]
@@ -2971,7 +2920,6 @@ public partial class ResumeEventRecord : MediaPlaybackEventRecordType
 /// <summary>
 /// Defines the MediaPlaybackEventRecordType class.
 /// </summary>
-
 
 public abstract partial class MediaPlaybackEventRecordType : OpenXmlLeafElement
 {

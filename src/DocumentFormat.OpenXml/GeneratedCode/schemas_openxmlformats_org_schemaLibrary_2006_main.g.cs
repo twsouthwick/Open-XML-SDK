@@ -22,7 +22,6 @@ namespace DocumentFormat.OpenXml.CustomXmlSchemaReferences
 /// </list>
 /// </remarks>
 
-    [ChildElementInfo(typeof(Schema))]
 
 [OfficeAvailability(FileFormatVersions.Office2007)]
 [SchemaAttr(25, "schemaLibrary")]
