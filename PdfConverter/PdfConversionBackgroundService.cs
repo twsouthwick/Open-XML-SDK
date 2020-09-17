@@ -12,11 +12,12 @@ namespace PdfConverter
 {
     public static class PdfConverterExtensions
     {
-        public static void AddPdfConverter(IServiceCollection services)
+        public static void AddPdfConverter(this IServiceCollection services)
         {
             services.AddHostedService<PdfConversionBackgroundService>();
             services.AddSingleton<ConversionQueue>();
             services.AddSingleton<IPdfConverter>(ctx => ctx.GetRequiredService<ConversionQueue>());
+            services.AddSingleton<TaskMultiplier>();
         }
     }
     public interface IPdfConverter
