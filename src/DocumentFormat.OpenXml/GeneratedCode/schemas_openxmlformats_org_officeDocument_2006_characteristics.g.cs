@@ -76,6 +76,12 @@ namespace DocumentFormat.OpenXml.AdditionalCharacteristics
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is ac:characteristic.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "relation")]
+    [SchemaAttr(0, "val")]
+    [SchemaAttr(0, "vocabulary")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Characteristic : OpenXmlLeafElement
     {
         /// <summary>
@@ -155,6 +161,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Characteristic Relationship Types
     /// </summary>
+
+
     public enum RelationValues
     {
         ///<summary>

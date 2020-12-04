@@ -23,6 +23,12 @@ namespace DocumentFormat.OpenXml.Office.ActiveX
     ///   <item><description>ActiveXObjectProperty &lt;ax:ocxPr></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(35, "classid")]
+    [SchemaAttr(35, "license")]
+    [SchemaAttr(19, "id")]
+    [SchemaAttr(35, "persistence")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ActiveXControlData : OpenXmlCompositeElement
     {
         /// <summary>
@@ -146,6 +152,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>SharedComPicture &lt;ax:picture></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(35, "name")]
+    [SchemaAttr(35, "value")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ActiveXObjectProperty : OpenXmlCompositeElement
     {
         /// <summary>
@@ -268,6 +278,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ActiveXObjectProperty &lt;ax:ocxPr></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(35, "persistence")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SharedComFont : OpenXmlCompositeElement
     {
         /// <summary>
@@ -350,6 +364,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is ax:picture.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SharedComPicture : OpenXmlLeafElement
     {
         /// <summary>
@@ -387,6 +404,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Defines the PersistenceValues enumeration.
     /// </summary>
+
+
     public enum PersistenceValues
     {
         ///<summary>

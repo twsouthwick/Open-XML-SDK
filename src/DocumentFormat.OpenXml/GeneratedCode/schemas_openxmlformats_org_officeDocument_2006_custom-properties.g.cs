@@ -148,6 +148,12 @@ namespace DocumentFormat.OpenXml.CustomProperties
     ///   <item><description>DocumentFormat.OpenXml.VariantTypes.VTClipboardData &lt;vt:cf></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "fmtid")]
+    [SchemaAttr(0, "pid")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "linkTarget")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CustomDocumentProperty : OpenXmlCompositeElement
     {
         /// <summary>

@@ -660,6 +660,10 @@ namespace DocumentFormat.OpenXml.VariantTypes
     ///   <item><description>VTClipboardData &lt;vt:cf></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "baseType")]
+    [SchemaAttr(0, "size")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VTVector : OpenXmlCompositeElement
     {
         /// <summary>
@@ -804,6 +808,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>VTCurrency &lt;vt:cy></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "lBound")]
+    [SchemaAttr(0, "uBound")]
+    [SchemaAttr(0, "baseType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VTArray : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2003,6 +2012,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is vt:vstream.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "version")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VTVStreamData : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -2095,6 +2107,10 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("\\s*\\{[a-fA-F0-9]{8}-
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is vt:cf.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "format")]
+    [SchemaAttr(0, "size")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VTClipboardData : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -2159,6 +2175,8 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("\\s*\\{[a-fA-F0-9]{8}-
     /// <summary>
     /// Vector Base Type Simple Type
     /// </summary>
+
+
     public enum VectorBaseValues
     {
         ///<summary>
@@ -2292,6 +2310,8 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("\\s*\\{[a-fA-F0-9]{8}-
     /// <summary>
     /// Array Base Type Simple Type
     /// </summary>
+
+
     public enum ArrayBaseValues
     {
         ///<summary>

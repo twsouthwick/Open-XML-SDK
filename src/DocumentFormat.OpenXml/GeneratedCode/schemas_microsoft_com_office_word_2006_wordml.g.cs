@@ -354,6 +354,11 @@ namespace DocumentFormat.OpenXml.Office.Word
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:fci.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "fciName")]
+    [SchemaAttr(33, "fciIndex")]
+    [SchemaAttr(33, "swArg")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FixedCommandKeyboardCustomization : OpenXmlLeafElement
     {
         /// <summary>
@@ -427,6 +432,9 @@ namespace DocumentFormat.OpenXml.Office.Word
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:macro.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "macroName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MacroKeyboardCustomization : MacroWllType
     {
         /// <summary>
@@ -451,6 +459,9 @@ namespace DocumentFormat.OpenXml.Office.Word
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:wll.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "macroName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WllMacroKeyboardCustomization : MacroWllType
     {
         /// <summary>
@@ -475,6 +486,9 @@ namespace DocumentFormat.OpenXml.Office.Word
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "macroName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class MacroWllType : OpenXmlLeafElement
     {
         /// <summary>
@@ -510,6 +524,9 @@ namespace DocumentFormat.OpenXml.Office.Word
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:acd.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "acdName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class AllocatedCommandKeyboardCustomization : AcceleratorKeymapType
     {
         /// <summary>
@@ -534,6 +551,9 @@ namespace DocumentFormat.OpenXml.Office.Word
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:acdEntry.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "acdName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class AllocatedCommandManifestEntry : AcceleratorKeymapType
     {
         /// <summary>
@@ -558,6 +578,9 @@ namespace DocumentFormat.OpenXml.Office.Word
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "acdName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class AcceleratorKeymapType : OpenXmlLeafElement
     {
         /// <summary>
@@ -593,6 +616,9 @@ namespace DocumentFormat.OpenXml.Office.Word
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:wch.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CharacterInsertion : OpenXmlLeafElement
     {
         /// <summary>
@@ -646,6 +672,13 @@ namespace DocumentFormat.OpenXml.Office.Word
     ///   <item><description>CharacterInsertion &lt;wne:wch></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "chmPrimary")]
+    [SchemaAttr(33, "chmSecondary")]
+    [SchemaAttr(33, "kcmPrimary")]
+    [SchemaAttr(33, "kcmSecondary")]
+    [SchemaAttr(33, "mask")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class KeyMapEntry : OpenXmlCompositeElement
     {
         /// <summary>
@@ -855,6 +888,12 @@ aBuilder.AddValidator(new StringValidator() { Length = (2L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:acd.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "argValue")]
+    [SchemaAttr(33, "fciBasedOn")]
+    [SchemaAttr(33, "fciIndexBasedOn")]
+    [SchemaAttr(33, "acdName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class AllocatedCommand : OpenXmlLeafElement
     {
         /// <summary>
@@ -939,6 +978,13 @@ aBuilder.AddValidator(new StringValidator() { Length = (2L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:mcd.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "macroName")]
+    [SchemaAttr(33, "name")]
+    [SchemaAttr(33, "menuHelp")]
+    [SchemaAttr(33, "bEncrypt")]
+    [SchemaAttr(33, "cmg")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Mcd : OpenXmlLeafElement
     {
         /// <summary>
@@ -1847,6 +1893,9 @@ aBuilder.AddValidator(new StringValidator() { Length = (2L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:toolbarData.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ToolbarData : OpenXmlLeafElement
     {
         /// <summary>
@@ -2177,6 +2226,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:active.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RecordIncluded : OpenXmlLeafElement
     {
         /// <summary>
@@ -2216,6 +2268,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wne:hash.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(33, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RecordHashCode : OpenXmlLeafElement
     {
         /// <summary>

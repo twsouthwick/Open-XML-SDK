@@ -19,6 +19,10 @@ namespace DocumentFormat.OpenXml.EMMA
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is emma:derived-from.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "resource")]
+    [SchemaAttr(0, "composite")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DerivedFrom : OpenXmlLeafElement
     {
         /// <summary>
@@ -70,6 +74,9 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is emma:info.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Info : OpenXmlCompositeElement
     {
         /// <summary>
@@ -144,6 +151,12 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>Node &lt;emma:node></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "initial")]
+    [SchemaAttr(0, "final")]
+    [SchemaAttr(44, "time-ref-uri")]
+    [SchemaAttr(44, "time-ref-anchor-point")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Lattice : OpenXmlCompositeElement
     {
         /// <summary>
@@ -304,6 +317,34 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Office2010.Ink.ContextNode &lt;msink:context></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(44, "tokens")]
+    [SchemaAttr(44, "process")]
+    [SchemaAttr(44, "lang")]
+    [SchemaAttr(44, "signal")]
+    [SchemaAttr(44, "signal-size")]
+    [SchemaAttr(44, "media-type")]
+    [SchemaAttr(44, "confidence")]
+    [SchemaAttr(44, "source")]
+    [SchemaAttr(44, "start")]
+    [SchemaAttr(44, "end")]
+    [SchemaAttr(44, "time-ref-uri")]
+    [SchemaAttr(44, "time-ref-anchor-point")]
+    [SchemaAttr(44, "offset-to-start")]
+    [SchemaAttr(44, "duration")]
+    [SchemaAttr(44, "medium")]
+    [SchemaAttr(44, "mode")]
+    [SchemaAttr(44, "function")]
+    [SchemaAttr(44, "verbal")]
+    [SchemaAttr(44, "cost")]
+    [SchemaAttr(44, "grammar-ref")]
+    [SchemaAttr(44, "endpoint-info-ref")]
+    [SchemaAttr(44, "model-ref")]
+    [SchemaAttr(44, "dialog-turn")]
+    [SchemaAttr(44, "no-input")]
+    [SchemaAttr(44, "uninterpreted")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Interpretation : OpenXmlCompositeElement
     {
         /// <summary>
@@ -753,6 +794,33 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>Sequence &lt;emma:sequence></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "disjunction-type")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(44, "tokens")]
+    [SchemaAttr(44, "process")]
+    [SchemaAttr(44, "lang")]
+    [SchemaAttr(44, "signal")]
+    [SchemaAttr(44, "signal-size")]
+    [SchemaAttr(44, "media-type")]
+    [SchemaAttr(44, "confidence")]
+    [SchemaAttr(44, "source")]
+    [SchemaAttr(44, "start")]
+    [SchemaAttr(44, "end")]
+    [SchemaAttr(44, "time-ref-uri")]
+    [SchemaAttr(44, "time-ref-anchor-point")]
+    [SchemaAttr(44, "offset-to-start")]
+    [SchemaAttr(44, "duration")]
+    [SchemaAttr(44, "medium")]
+    [SchemaAttr(44, "mode")]
+    [SchemaAttr(44, "function")]
+    [SchemaAttr(44, "verbal")]
+    [SchemaAttr(44, "cost")]
+    [SchemaAttr(44, "grammar-ref")]
+    [SchemaAttr(44, "endpoint-info-ref")]
+    [SchemaAttr(44, "model-ref")]
+    [SchemaAttr(44, "dialog-turn")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OneOf : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1187,6 +1255,32 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>Sequence &lt;emma:sequence></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(44, "tokens")]
+    [SchemaAttr(44, "process")]
+    [SchemaAttr(44, "lang")]
+    [SchemaAttr(44, "signal")]
+    [SchemaAttr(44, "signal-size")]
+    [SchemaAttr(44, "media-type")]
+    [SchemaAttr(44, "confidence")]
+    [SchemaAttr(44, "source")]
+    [SchemaAttr(44, "start")]
+    [SchemaAttr(44, "end")]
+    [SchemaAttr(44, "time-ref-uri")]
+    [SchemaAttr(44, "time-ref-anchor-point")]
+    [SchemaAttr(44, "offset-to-start")]
+    [SchemaAttr(44, "duration")]
+    [SchemaAttr(44, "medium")]
+    [SchemaAttr(44, "mode")]
+    [SchemaAttr(44, "function")]
+    [SchemaAttr(44, "verbal")]
+    [SchemaAttr(44, "cost")]
+    [SchemaAttr(44, "grammar-ref")]
+    [SchemaAttr(44, "endpoint-info-ref")]
+    [SchemaAttr(44, "model-ref")]
+    [SchemaAttr(44, "dialog-turn")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Group : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1610,6 +1704,32 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>Sequence &lt;emma:sequence></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(44, "tokens")]
+    [SchemaAttr(44, "process")]
+    [SchemaAttr(44, "lang")]
+    [SchemaAttr(44, "signal")]
+    [SchemaAttr(44, "signal-size")]
+    [SchemaAttr(44, "media-type")]
+    [SchemaAttr(44, "confidence")]
+    [SchemaAttr(44, "source")]
+    [SchemaAttr(44, "start")]
+    [SchemaAttr(44, "end")]
+    [SchemaAttr(44, "time-ref-uri")]
+    [SchemaAttr(44, "time-ref-anchor-point")]
+    [SchemaAttr(44, "offset-to-start")]
+    [SchemaAttr(44, "duration")]
+    [SchemaAttr(44, "medium")]
+    [SchemaAttr(44, "mode")]
+    [SchemaAttr(44, "function")]
+    [SchemaAttr(44, "verbal")]
+    [SchemaAttr(44, "cost")]
+    [SchemaAttr(44, "grammar-ref")]
+    [SchemaAttr(44, "endpoint-info-ref")]
+    [SchemaAttr(44, "model-ref")]
+    [SchemaAttr(44, "dialog-turn")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Sequence : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2020,6 +2140,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is emma:group-info.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GroupInfo : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2155,6 +2278,10 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is emma:grammar.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "ref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Grammar : OpenXmlLeafElement
     {
         /// <summary>
@@ -2210,6 +2337,10 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is emma:model.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "ref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Model : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2298,6 +2429,9 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>EndPoint &lt;emma:endpoint></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class EndPointInfo : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2367,6 +2501,19 @@ aBuilder.AddValidator(new StringValidator() { IsId = (true), IsToken = (true), I
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is emma:endpoint.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(44, "endpoint-role")]
+    [SchemaAttr(44, "endpoint-address")]
+    [SchemaAttr(44, "message-id")]
+    [SchemaAttr(44, "port-num")]
+    [SchemaAttr(44, "port-type")]
+    [SchemaAttr(44, "endpoint-pair-ref")]
+    [SchemaAttr(44, "service-name")]
+    [SchemaAttr(44, "media-type")]
+    [SchemaAttr(44, "medium")]
+    [SchemaAttr(44, "mode")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class EndPoint : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2581,6 +2728,11 @@ aBuilder.AddValidator(new StringValidator() { IsId = (true), IsToken = (true), I
     ///   <item><description>Info &lt;emma:info></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "node-number")]
+    [SchemaAttr(44, "confidence")]
+    [SchemaAttr(44, "cost")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Node : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2690,6 +2842,20 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>Info &lt;emma:info></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "from")]
+    [SchemaAttr(0, "to")]
+    [SchemaAttr(44, "start")]
+    [SchemaAttr(44, "end")]
+    [SchemaAttr(44, "offset-to-start")]
+    [SchemaAttr(44, "duration")]
+    [SchemaAttr(44, "confidence")]
+    [SchemaAttr(44, "cost")]
+    [SchemaAttr(44, "lang")]
+    [SchemaAttr(44, "medium")]
+    [SchemaAttr(44, "mode")]
+    [SchemaAttr(44, "source")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Arc : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2934,6 +3100,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>Sequence &lt;emma:sequence></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "version")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Emma : OpenXmlCompositeElement
     {
         /// <summary>
@@ -3019,6 +3188,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Defines the EndPointRoleValues enumeration.
     /// </summary>
+
+
     public enum EndPointRoleValues
     {
         ///<summary>
@@ -3050,6 +3221,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Defines the MediumValues enumeration.
     /// </summary>
+
+
     public enum MediumValues
     {
         ///<summary>
@@ -3075,6 +3248,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Defines the AnchorPointValues enumeration.
     /// </summary>
+
+
     public enum AnchorPointValues
     {
         ///<summary>
@@ -3094,6 +3269,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Defines the DisjunctionTypeValues enumeration.
     /// </summary>
+
+
     public enum DisjunctionTypeValues
     {
         ///<summary>

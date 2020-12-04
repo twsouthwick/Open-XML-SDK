@@ -111,6 +111,9 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtentionPane
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wetp:webextensionref.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebExtensionPartReference : OpenXmlLeafElement
     {
         /// <summary>
@@ -228,6 +231,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>OfficeArtExtensionList &lt;wetp:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "dockstate")]
+    [SchemaAttr(0, "visibility")]
+    [SchemaAttr(0, "width")]
+    [SchemaAttr(0, "row")]
+    [SchemaAttr(0, "locked")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebExtensionTaskpane : OpenXmlCompositeElement
     {
         /// <summary>

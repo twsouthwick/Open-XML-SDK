@@ -50,6 +50,13 @@ namespace DocumentFormat.OpenXml.Drawing.Wordprocessing
     ///   <item><description>EffectExtent &lt;wp:effectExtent></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "wrapText")]
+    [SchemaAttr(0, "distT")]
+    [SchemaAttr(0, "distB")]
+    [SchemaAttr(0, "distL")]
+    [SchemaAttr(0, "distR")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WrapSquare : OpenXmlCompositeElement
     {
         /// <summary>
@@ -182,6 +189,11 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>WrapPolygon &lt;wp:wrapPolygon></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "wrapText")]
+    [SchemaAttr(0, "distL")]
+    [SchemaAttr(0, "distR")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WrapTight : OpenXmlCompositeElement
     {
         /// <summary>
@@ -292,6 +304,11 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>WrapPolygon &lt;wp:wrapPolygon></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "wrapText")]
+    [SchemaAttr(0, "distL")]
+    [SchemaAttr(0, "distR")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WrapThrough : OpenXmlCompositeElement
     {
         /// <summary>
@@ -402,6 +419,10 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>EffectExtent &lt;wp:effectExtent></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "distT")]
+    [SchemaAttr(0, "distB")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WrapTopBottom : OpenXmlCompositeElement
     {
         /// <summary>
@@ -501,6 +522,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Drawing.Graphic &lt;a:graphic></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "distT")]
+    [SchemaAttr(0, "distB")]
+    [SchemaAttr(0, "distL")]
+    [SchemaAttr(0, "distR")]
+    [SchemaAttr(51, "anchorId")]
+    [SchemaAttr(51, "editId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Inline : OpenXmlCompositeElement
     {
         /// <summary>
@@ -728,6 +757,21 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     ///   <item><description>DocumentFormat.OpenXml.Office2010.Word.Drawing.RelativeHeight &lt;wp14:sizeRelV></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "distT")]
+    [SchemaAttr(0, "distB")]
+    [SchemaAttr(0, "distL")]
+    [SchemaAttr(0, "distR")]
+    [SchemaAttr(0, "simplePos")]
+    [SchemaAttr(0, "relativeHeight")]
+    [SchemaAttr(0, "behindDoc")]
+    [SchemaAttr(0, "locked")]
+    [SchemaAttr(0, "layoutInCell")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "allowOverlap")]
+    [SchemaAttr(51, "editId")]
+    [SchemaAttr(51, "anchorId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Anchor : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1056,6 +1100,10 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp:start.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "x")]
+    [SchemaAttr(0, "y")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class StartPoint : Point2DType
     {
         /// <summary>
@@ -1080,6 +1128,10 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp:lineTo.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "x")]
+    [SchemaAttr(0, "y")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class LineTo : Point2DType
     {
         /// <summary>
@@ -1104,6 +1156,10 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp:simplePos.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "x")]
+    [SchemaAttr(0, "y")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SimplePosition : Point2DType
     {
         /// <summary>
@@ -1128,6 +1184,10 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "x")]
+    [SchemaAttr(0, "y")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class Point2DType : OpenXmlLeafElement
     {
         /// <summary>
@@ -1179,6 +1239,12 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp:effectExtent.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "l")]
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "b")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class EffectExtent : OpenXmlLeafElement
     {
         /// <summary>
@@ -1271,6 +1337,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-27273042329600L),
     ///   <item><description>LineTo &lt;wp:lineTo></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "edited")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WrapPolygon : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1359,6 +1428,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-27273042329600L),
     ///   <item><description>DocumentFormat.OpenXml.Office2010.Word.Drawing.PercentagePositionHeightOffset &lt;wp14:pctPosHOffset></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "relativeFrom")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class HorizontalPosition : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1482,6 +1554,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2010.Word.Drawing.PercentagePositionVerticalOffset &lt;wp14:pctPosVOffset></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "relativeFrom")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VerticalPosition : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1597,6 +1672,10 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp:extent.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "cx")]
+    [SchemaAttr(0, "cy")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Extent : OpenXmlLeafElement
     {
         /// <summary>
@@ -1660,6 +1739,13 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "descr")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "title")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DocProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2021,6 +2107,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Text Wrapping Location
     /// </summary>
+
+
     public enum WrapTextValues
     {
         ///<summary>
@@ -2052,6 +2140,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Relative Horizontal Alignment Positions
     /// </summary>
+
+
     public enum HorizontalAlignmentValues
     {
         ///<summary>
@@ -2089,6 +2179,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Horizontal Relative Positioning
     /// </summary>
+
+
     public enum HorizontalRelativePositionValues
     {
         ///<summary>
@@ -2144,6 +2236,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Vertical Alignment Definition
     /// </summary>
+
+
     public enum VerticalAlignmentValues
     {
         ///<summary>
@@ -2181,6 +2275,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Vertical Relative Positioning
     /// </summary>
+
+
     public enum VerticalRelativePositionValues
     {
         ///<summary>

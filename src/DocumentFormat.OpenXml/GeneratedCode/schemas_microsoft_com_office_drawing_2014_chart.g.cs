@@ -39,6 +39,9 @@ namespace DocumentFormat.OpenXml.Office2016.Drawing.Charts
     ///   <item><description>DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "bwMode")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ShapeProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -167,6 +170,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2016 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:explosion.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class UnsignedIntegerType : OpenXmlLeafElement
     {
         /// <summary>
@@ -207,6 +213,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2016 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:invertIfNegative.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class InvertIfNegativeBoolean : BooleanType
     {
         /// <summary>
@@ -232,6 +241,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2016 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:bubble3D.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Bubble3DBoolean : BooleanType
     {
         /// <summary>
@@ -257,6 +269,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class BooleanType : OpenXmlLeafElement
     {
         /// <summary>
@@ -736,6 +751,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2016 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:uniqueId.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class UniqueIdChartUniqueID : UniqueIDChart
     {
         /// <summary>
@@ -761,6 +779,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2016 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:uniqueID.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class UniqueID : UniqueIDChart
     {
         /// <summary>
@@ -786,6 +807,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2016 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class UniqueIDChart : OpenXmlLeafElement
     {
         /// <summary>
@@ -1462,6 +1486,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2016 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:literalDataChart.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class LiteralDataChart : OpenXmlLeafElement
     {
         /// <summary>
@@ -1502,6 +1529,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2016 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:showExpandCollapseFieldButtons.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BooleanFalse : OpenXmlLeafElement
     {
         /// <summary>

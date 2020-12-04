@@ -30,6 +30,9 @@ namespace DocumentFormat.OpenXml.InkML
     ///   <item><description>TraceView &lt;inkml:traceView></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "documentID")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Ink : OpenXmlPartRootElement
     {
         /// <summary>
@@ -110,6 +113,12 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:bind.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "source")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "column")]
+    [SchemaAttr(0, "variable")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Bind : OpenXmlLeafElement
     {
         /// <summary>
@@ -179,6 +188,11 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:table.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "apply")]
+    [SchemaAttr(0, "interpolation")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Table : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -253,6 +267,9 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:matrix.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Matrix : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -314,6 +331,11 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>Mapping &lt;inkml:mapping></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "mappingRef")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Mapping : OpenXmlCompositeElement
     {
         /// <summary>
@@ -428,6 +450,17 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>Mapping &lt;inkml:mapping></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "default")]
+    [SchemaAttr(0, "min")]
+    [SchemaAttr(0, "max")]
+    [SchemaAttr(0, "orientation")]
+    [SchemaAttr(0, "respectTo")]
+    [SchemaAttr(0, "units")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Channel : OpenXmlCompositeElement
     {
         /// <summary>
@@ -678,6 +711,12 @@ union.AddValidator(StringValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:channelProperty.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "channel")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "value")]
+    [SchemaAttr(0, "units")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ChannelProperty : OpenXmlLeafElement
     {
         /// <summary>
@@ -790,6 +829,9 @@ union.AddValidator(StringValidator.Instance);
     ///   <item><description>IntermittentChannels &lt;inkml:intermittentChannels></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TraceFormat : OpenXmlCompositeElement
     {
         /// <summary>
@@ -860,6 +902,10 @@ union.AddValidator(StringValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:sampleRate.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uniform")]
+    [SchemaAttr(0, "value")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SampleRate : OpenXmlLeafElement
     {
         /// <summary>
@@ -910,6 +956,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:latency.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "value")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Latency : OpenXmlLeafElement
     {
         /// <summary>
@@ -949,6 +998,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:activeArea.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "height")]
+    [SchemaAttr(0, "width")]
+    [SchemaAttr(0, "units")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ActiveArea : OpenXmlLeafElement
     {
         /// <summary>
@@ -1035,6 +1090,11 @@ union.AddValidator(StringValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:srcProperty.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "value")]
+    [SchemaAttr(0, "units")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SourceProperty : OpenXmlLeafElement
     {
         /// <summary>
@@ -1175,6 +1235,10 @@ union.AddValidator(StringValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:annotation.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "encoding")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Annotation : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -1241,6 +1305,11 @@ union.AddValidator(StringValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.EMMA.Emma &lt;emma:emma></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "encoding")]
+    [SchemaAttr(0, "href")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class AnnotationXml : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1351,6 +1420,11 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>AnnotationXml &lt;inkml:annotationXML></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "value")]
+    [SchemaAttr(0, "units")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BrushProperty : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1482,6 +1556,10 @@ union.AddValidator(StringValidator.Instance);
     ///   <item><description>TraceFormat &lt;inkml:traceFormat></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "traceFormatRef")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Canvas : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1583,6 +1661,10 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>Mapping &lt;inkml:mapping></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "invertible")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CanvasTransform : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1673,6 +1755,14 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>ChannelProperties &lt;inkml:channelProperties></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "manufacturer")]
+    [SchemaAttr(0, "model")]
+    [SchemaAttr(0, "serialNo")]
+    [SchemaAttr(0, "specificationRef")]
+    [SchemaAttr(0, "description")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class InkSource : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1872,6 +1962,10 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>BrushProperty &lt;inkml:brushProperty></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "brushRef")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Brush : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1958,6 +2052,13 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:timestamp.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "time")]
+    [SchemaAttr(0, "timestampRef")]
+    [SchemaAttr(0, "timeString")]
+    [SchemaAttr(0, "timeOffset")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Timestamp : OpenXmlLeafElement
     {
         /// <summary>
@@ -2047,6 +2148,16 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is inkml:trace.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "continuation")]
+    [SchemaAttr(0, "priorRef")]
+    [SchemaAttr(0, "contextRef")]
+    [SchemaAttr(0, "brushRef")]
+    [SchemaAttr(0, "duration")]
+    [SchemaAttr(0, "timeOffset")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Trace : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -2194,6 +2305,11 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>TraceGroup &lt;inkml:traceGroup></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "contextRef")]
+    [SchemaAttr(0, "brushRef")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TraceGroup : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2304,6 +2420,13 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>TraceView &lt;inkml:traceView></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "contextRef")]
+    [SchemaAttr(0, "traceDataRef")]
+    [SchemaAttr(0, "from")]
+    [SchemaAttr(0, "to")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TraceView : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2437,6 +2560,16 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     ///   <item><description>Timestamp &lt;inkml:timestamp></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "id")]
+    [SchemaAttr(0, "contextRef")]
+    [SchemaAttr(0, "canvasRef")]
+    [SchemaAttr(0, "canvasTransformRef")]
+    [SchemaAttr(0, "traceFormatRef")]
+    [SchemaAttr(0, "inkSourceRef")]
+    [SchemaAttr(0, "brushRef")]
+    [SchemaAttr(0, "timestampRef")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Context : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2778,6 +2911,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the ChannelDataTypeValues enumeration.
     /// </summary>
+
+
     public enum ChannelDataTypeValues
     {
         ///<summary>
@@ -2803,6 +2938,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the ChannelValueOrientationValues enumeration.
     /// </summary>
+
+
     public enum ChannelValueOrientationValues
     {
         ///<summary>
@@ -2822,6 +2959,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardChannelPropertyNameValues enumeration.
     /// </summary>
+
+
     public enum StandardChannelPropertyNameValues
     {
         ///<summary>
@@ -2889,6 +3028,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardBrushPropertyNameValues enumeration.
     /// </summary>
+
+
     public enum StandardBrushPropertyNameValues
     {
         ///<summary>
@@ -2950,6 +3091,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardChannelNameValues enumeration.
     /// </summary>
+
+
     public enum StandardChannelNameValues
     {
         ///<summary>
@@ -3161,6 +3304,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardLengthUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardLengthUnitsValues
     {
         ///<summary>
@@ -3216,6 +3361,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardPerLengthUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardPerLengthUnitsValues
     {
         ///<summary>
@@ -3271,6 +3418,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardTimeUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardTimeUnitsValues
     {
         ///<summary>
@@ -3290,6 +3439,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardPerTimeUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardPerTimeUnitsValues
     {
         ///<summary>
@@ -3309,6 +3460,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardMassForceUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardMassForceUnitsValues
     {
         ///<summary>
@@ -3346,6 +3499,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardPerMassForceUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardPerMassForceUnitsValues
     {
         ///<summary>
@@ -3383,6 +3538,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardAngleUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardAngleUnitsValues
     {
         ///<summary>
@@ -3402,6 +3559,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardPerAngleUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardPerAngleUnitsValues
     {
         ///<summary>
@@ -3421,6 +3580,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardOtherUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardOtherUnitsValues
     {
         ///<summary>
@@ -3446,6 +3607,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the StandardPerOtherUnitsValues enumeration.
     /// </summary>
+
+
     public enum StandardPerOtherUnitsValues
     {
         ///<summary>
@@ -3465,6 +3628,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the TraceTypeValues enumeration.
     /// </summary>
+
+
     public enum TraceTypeValues
     {
         ///<summary>
@@ -3490,6 +3655,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the TraceContinuationValues enumeration.
     /// </summary>
+
+
     public enum TraceContinuationValues
     {
         ///<summary>
@@ -3515,6 +3682,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the RasterOperationValues enumeration.
     /// </summary>
+
+
     public enum RasterOperationValues
     {
         ///<summary>
@@ -3618,6 +3787,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the PenTipShapeValues enumeration.
     /// </summary>
+
+
     public enum PenTipShapeValues
     {
         ///<summary>
@@ -3643,6 +3814,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the MappingTypeValues enumeration.
     /// </summary>
+
+
     public enum MappingTypeValues
     {
         ///<summary>
@@ -3686,6 +3859,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the TableApplyValues enumeration.
     /// </summary>
+
+
     public enum TableApplyValues
     {
         ///<summary>
@@ -3705,6 +3880,8 @@ aBuilder.AddValidator(new StringValidator() { IsUri = (true) });
     /// <summary>
     /// Defines the TableInterpolationValues enumeration.
     /// </summary>
+
+
     public enum TableInterpolationValues
     {
         ///<summary>

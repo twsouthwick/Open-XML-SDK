@@ -23,6 +23,23 @@ namespace DocumentFormat.OpenXml.Vml
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is v:path.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "v")]
+    [SchemaAttr(0, "limo")]
+    [SchemaAttr(0, "textboxrect")]
+    [SchemaAttr(0, "fillok")]
+    [SchemaAttr(0, "strokeok")]
+    [SchemaAttr(0, "shadowok")]
+    [SchemaAttr(0, "arrowok")]
+    [SchemaAttr(0, "gradientshapeok")]
+    [SchemaAttr(0, "textpathok")]
+    [SchemaAttr(0, "insetpenok")]
+    [SchemaAttr(27, "connecttype")]
+    [SchemaAttr(27, "connectlocs")]
+    [SchemaAttr(27, "connectangles")]
+    [SchemaAttr(27, "extrusionok")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Path : OpenXmlLeafElement
     {
         /// <summary>
@@ -350,6 +367,34 @@ namespace DocumentFormat.OpenXml.Vml
     ///   <item><description>DocumentFormat.OpenXml.Vml.Office.FillExtendedProperties &lt;o:fill></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "on")]
+    [SchemaAttr(0, "color")]
+    [SchemaAttr(0, "opacity")]
+    [SchemaAttr(0, "color2")]
+    [SchemaAttr(0, "src")]
+    [SchemaAttr(27, "href")]
+    [SchemaAttr(27, "althref")]
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "origin")]
+    [SchemaAttr(0, "position")]
+    [SchemaAttr(0, "aspect")]
+    [SchemaAttr(0, "colors")]
+    [SchemaAttr(0, "angle")]
+    [SchemaAttr(0, "alignshape")]
+    [SchemaAttr(0, "focus")]
+    [SchemaAttr(0, "focussize")]
+    [SchemaAttr(0, "focusposition")]
+    [SchemaAttr(0, "method")]
+    [SchemaAttr(27, "detectmouseclick")]
+    [SchemaAttr(27, "title")]
+    [SchemaAttr(27, "opacity2")]
+    [SchemaAttr(0, "recolor")]
+    [SchemaAttr(0, "rotate")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Fill : OpenXmlCompositeElement
     {
         /// <summary>
@@ -738,6 +783,36 @@ namespace DocumentFormat.OpenXml.Vml
     ///   <item><description>DocumentFormat.OpenXml.Vml.Office.ColumnStroke &lt;o:column></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "on")]
+    [SchemaAttr(0, "weight")]
+    [SchemaAttr(0, "color")]
+    [SchemaAttr(0, "opacity")]
+    [SchemaAttr(0, "linestyle")]
+    [SchemaAttr(0, "miterlimit")]
+    [SchemaAttr(0, "joinstyle")]
+    [SchemaAttr(0, "endcap")]
+    [SchemaAttr(0, "dashstyle")]
+    [SchemaAttr(0, "filltype")]
+    [SchemaAttr(0, "src")]
+    [SchemaAttr(0, "imageaspect")]
+    [SchemaAttr(0, "imagesize")]
+    [SchemaAttr(0, "imagealignshape")]
+    [SchemaAttr(0, "color2")]
+    [SchemaAttr(0, "startarrow")]
+    [SchemaAttr(0, "startarrowwidth")]
+    [SchemaAttr(0, "startarrowlength")]
+    [SchemaAttr(0, "endarrow")]
+    [SchemaAttr(0, "endarrowwidth")]
+    [SchemaAttr(0, "endarrowlength")]
+    [SchemaAttr(27, "href")]
+    [SchemaAttr(27, "althref")]
+    [SchemaAttr(27, "title")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(19, "id")]
+    [SchemaAttr(0, "insetpen")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Stroke : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1193,6 +1268,19 @@ namespace DocumentFormat.OpenXml.Vml
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is v:shadow.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "on")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "obscured")]
+    [SchemaAttr(0, "color")]
+    [SchemaAttr(0, "opacity")]
+    [SchemaAttr(0, "offset")]
+    [SchemaAttr(0, "color2")]
+    [SchemaAttr(0, "offset2")]
+    [SchemaAttr(0, "origin")]
+    [SchemaAttr(0, "matrix")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Shadow : OpenXmlLeafElement
     {
         /// <summary>
@@ -1346,6 +1434,12 @@ namespace DocumentFormat.OpenXml.Vml
     ///   <item><description>DocumentFormat.OpenXml.Wordprocessing.TextBoxContent &lt;w:txbxContent></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "inset")]
+    [SchemaAttr(27, "singleclick")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TextBox : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1449,6 +1543,16 @@ namespace DocumentFormat.OpenXml.Vml
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is v:textpath.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "on")]
+    [SchemaAttr(0, "fitshape")]
+    [SchemaAttr(0, "fitpath")]
+    [SchemaAttr(0, "trim")]
+    [SchemaAttr(0, "xscale")]
+    [SchemaAttr(0, "string")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TextPath : OpenXmlLeafElement
     {
         /// <summary>
@@ -1563,6 +1667,27 @@ namespace DocumentFormat.OpenXml.Vml
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is v:imagedata.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "chromakey")]
+    [SchemaAttr(0, "cropleft")]
+    [SchemaAttr(0, "croptop")]
+    [SchemaAttr(0, "cropright")]
+    [SchemaAttr(0, "cropbottom")]
+    [SchemaAttr(0, "gain")]
+    [SchemaAttr(0, "blacklevel")]
+    [SchemaAttr(0, "gamma")]
+    [SchemaAttr(0, "grayscale")]
+    [SchemaAttr(0, "bilevel")]
+    [SchemaAttr(0, "embosscolor")]
+    [SchemaAttr(0, "recolortarget")]
+    [SchemaAttr(27, "title")]
+    [SchemaAttr(27, "detectmouseclick")]
+    [SchemaAttr(27, "relid")]
+    [SchemaAttr(19, "id")]
+    [SchemaAttr(19, "pict")]
+    [SchemaAttr(19, "href")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ImageData : OpenXmlLeafElement
     {
         /// <summary>
@@ -1853,6 +1978,64 @@ namespace DocumentFormat.OpenXml.Vml
     ///   <item><description>DocumentFormat.OpenXml.Vml.Presentation.InkAnnotationFlag &lt;pvml:iscomment></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "coordorigin")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "adj")]
+    [SchemaAttr(0, "path")]
+    [SchemaAttr(27, "gfxdata")]
+    [SchemaAttr(0, "equationxml")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Shape : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2717,6 +2900,62 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>DocumentFormat.OpenXml.Vml.Office.Complex &lt;o:complex></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "coordorigin")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(0, "adj")]
+    [SchemaAttr(0, "path")]
+    [SchemaAttr(27, "master")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Shapetype : OpenXmlCompositeElement
     {
         /// <summary>
@@ -3550,6 +3789,42 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>DocumentFormat.OpenXml.Vml.Spreadsheet.ClientData &lt;xvml:ClientData></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "coordorigin")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(27, "gfxdata")]
+    [SchemaAttr(0, "editas")]
+    [SchemaAttr(27, "tableproperties")]
+    [SchemaAttr(27, "tablelimits")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Group : OpenXmlCompositeElement
     {
         /// <summary>
@@ -4086,6 +4361,15 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>Fill &lt;v:fill></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "fill")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "targetscreensize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Background : OpenXmlCompositeElement
     {
         /// <summary>
@@ -4274,6 +4558,61 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), MaxLength = (255
     ///   <item><description>DocumentFormat.OpenXml.Vml.Presentation.TextData &lt;pvml:textdata></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(27, "gfxdata")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "coordorigin")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(0, "startangle")]
+    [SchemaAttr(0, "endangle")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Arc : OpenXmlCompositeElement
     {
         /// <summary>
@@ -5106,6 +5445,64 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), MaxLength = (255
     ///   <item><description>DocumentFormat.OpenXml.Vml.Presentation.TextData &lt;pvml:textdata></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "coordorigin")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(27, "gfxdata")]
+    [SchemaAttr(0, "from")]
+    [SchemaAttr(0, "control1")]
+    [SchemaAttr(0, "control2")]
+    [SchemaAttr(0, "to")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Curve : OpenXmlCompositeElement
     {
         /// <summary>
@@ -5966,6 +6363,69 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>DocumentFormat.OpenXml.Vml.Presentation.TextData &lt;pvml:textdata></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(0, "src")]
+    [SchemaAttr(0, "cropleft")]
+    [SchemaAttr(0, "croptop")]
+    [SchemaAttr(0, "cropright")]
+    [SchemaAttr(0, "cropbottom")]
+    [SchemaAttr(0, "gain")]
+    [SchemaAttr(0, "blacklevel")]
+    [SchemaAttr(0, "gamma")]
+    [SchemaAttr(0, "grayscale")]
+    [SchemaAttr(0, "bilevel")]
+    [SchemaAttr(27, "gfxdata")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ImageFile : OpenXmlCompositeElement
     {
         /// <summary>
@@ -6881,6 +7341,62 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>DocumentFormat.OpenXml.Vml.Presentation.TextData &lt;pvml:textdata></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "coordorigin")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(27, "gfxdata")]
+    [SchemaAttr(0, "from")]
+    [SchemaAttr(0, "to")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Line : OpenXmlCompositeElement
     {
         /// <summary>
@@ -7717,6 +8233,60 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>DocumentFormat.OpenXml.Vml.Presentation.TextData &lt;pvml:textdata></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "coordorigin")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(27, "gfxdata")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Oval : OpenXmlCompositeElement
     {
         /// <summary>
@@ -8534,6 +9104,61 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>DocumentFormat.OpenXml.Vml.Office.Ink &lt;o:ink></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "coordorigin")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(27, "gfxdata")]
+    [SchemaAttr(0, "points")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PolyLine : OpenXmlCompositeElement
     {
         /// <summary>
@@ -9362,6 +9987,60 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>DocumentFormat.OpenXml.Vml.Presentation.TextData &lt;pvml:textdata></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "coordorigin")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(27, "gfxdata")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Rectangle : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10178,6 +10857,60 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>DocumentFormat.OpenXml.Vml.Presentation.TextData &lt;pvml:textdata></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "href")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "class")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "alt")]
+    [SchemaAttr(0, "coordsize")]
+    [SchemaAttr(0, "wrapcoords")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(27, "spid")]
+    [SchemaAttr(27, "oned")]
+    [SchemaAttr(27, "regroupid")]
+    [SchemaAttr(27, "doubleclicknotify")]
+    [SchemaAttr(27, "button")]
+    [SchemaAttr(27, "userhidden")]
+    [SchemaAttr(27, "bullet")]
+    [SchemaAttr(27, "hr")]
+    [SchemaAttr(27, "hrstd")]
+    [SchemaAttr(27, "hrnoshade")]
+    [SchemaAttr(27, "hrpct")]
+    [SchemaAttr(27, "hralign")]
+    [SchemaAttr(27, "allowincell")]
+    [SchemaAttr(27, "allowoverlap")]
+    [SchemaAttr(27, "userdrawn")]
+    [SchemaAttr(27, "bordertopcolor")]
+    [SchemaAttr(27, "borderleftcolor")]
+    [SchemaAttr(27, "borderbottomcolor")]
+    [SchemaAttr(27, "borderrightcolor")]
+    [SchemaAttr(27, "dgmlayout")]
+    [SchemaAttr(27, "dgmnodekind")]
+    [SchemaAttr(27, "dgmlayoutmru")]
+    [SchemaAttr(27, "insetmode")]
+    [SchemaAttr(0, "filled")]
+    [SchemaAttr(0, "fillcolor")]
+    [SchemaAttr(0, "stroked")]
+    [SchemaAttr(0, "strokecolor")]
+    [SchemaAttr(0, "strokeweight")]
+    [SchemaAttr(0, "insetpen")]
+    [SchemaAttr(27, "spt")]
+    [SchemaAttr(27, "connectortype")]
+    [SchemaAttr(27, "bwmode")]
+    [SchemaAttr(27, "bwpure")]
+    [SchemaAttr(27, "bwnormal")]
+    [SchemaAttr(27, "forcedash")]
+    [SchemaAttr(27, "oleicon")]
+    [SchemaAttr(27, "ole")]
+    [SchemaAttr(27, "preferrelative")]
+    [SchemaAttr(27, "cliptowrap")]
+    [SchemaAttr(27, "clip")]
+    [SchemaAttr(27, "gfxdata")]
+    [SchemaAttr(0, "arcsize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RoundRectangle : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10966,6 +11699,17 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is v:h.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "position")]
+    [SchemaAttr(0, "polar")]
+    [SchemaAttr(0, "map")]
+    [SchemaAttr(0, "invx")]
+    [SchemaAttr(0, "invy")]
+    [SchemaAttr(0, "switch")]
+    [SchemaAttr(0, "xrange")]
+    [SchemaAttr(0, "yrange")]
+    [SchemaAttr(0, "radiusrange")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ShapeHandle : OpenXmlLeafElement
     {
         /// <summary>
@@ -11090,6 +11834,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is v:f.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "eqn")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Formula : OpenXmlLeafElement
     {
         /// <summary>
@@ -11124,6 +11871,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// VML Extension Handling Behaviors
     /// </summary>
+
+
     public enum ExtensionHandlingBehaviorValues
     {
         ///<summary>
@@ -11149,6 +11898,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Shape Fill Type
     /// </summary>
+
+
     public enum FillTypeValues
     {
         ///<summary>
@@ -11192,6 +11943,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Gradient Fill Computation Type
     /// </summary>
+
+
     public enum FillMethodValues
     {
         ///<summary>
@@ -11229,6 +11982,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Stroke Line Style
     /// </summary>
+
+
     public enum StrokeLineStyleValues
     {
         ///<summary>
@@ -11266,6 +12021,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Line Join Type
     /// </summary>
+
+
     public enum StrokeJoinStyleValues
     {
         ///<summary>
@@ -11291,6 +12048,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Stroke End Cap Type
     /// </summary>
+
+
     public enum StrokeEndCapValues
     {
         ///<summary>
@@ -11316,6 +12075,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Stroke Arrowhead Length
     /// </summary>
+
+
     public enum StrokeArrowLengthValues
     {
         ///<summary>
@@ -11341,6 +12102,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Stroke Arrowhead Width
     /// </summary>
+
+
     public enum StrokeArrowWidthValues
     {
         ///<summary>
@@ -11366,6 +12129,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Stroke Arrowhead Type
     /// </summary>
+
+
     public enum StrokeArrowValues
     {
         ///<summary>
@@ -11409,6 +12174,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Image Scaling Behavior
     /// </summary>
+
+
     public enum ImageAspectValues
     {
         ///<summary>
@@ -11434,6 +12201,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Shape Grouping Types
     /// </summary>
+
+
     public enum EditAsValues
     {
         ///<summary>
@@ -11483,6 +12252,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Shadow Type
     /// </summary>
+
+
     public enum ShadowValues
     {
         ///<summary>
@@ -11526,6 +12297,8 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <summary>
     /// Defines the StrokeFillTypeValues enumeration.
     /// </summary>
+
+
     public enum StrokeFillTypeValues
     {
         ///<summary>

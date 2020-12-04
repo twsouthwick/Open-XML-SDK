@@ -19,6 +19,12 @@ namespace DocumentFormat.OpenXml.Office2013.Word
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:color.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "val")]
+    [SchemaAttr(23, "themeColor")]
+    [SchemaAttr(23, "themeTint")]
+    [SchemaAttr(23, "themeShade")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Color : OpenXmlLeafElement
     {
         /// <summary>
@@ -115,6 +121,11 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:dataBinding.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "prefixMappings")]
+    [SchemaAttr(23, "xpath")]
+    [SchemaAttr(23, "storeItemID")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataBinding : OpenXmlLeafElement
     {
         /// <summary>
@@ -189,6 +200,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:appearance.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(69, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Appearance : OpenXmlLeafElement
     {
         /// <summary>
@@ -528,6 +542,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:chartTrackingRefBased.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ChartTrackingRefBased : OnOffType
     {
         /// <summary>
@@ -553,6 +570,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:collapsed.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DefaultCollapsed : OnOffType
     {
         /// <summary>
@@ -578,6 +598,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:webExtensionLinked.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebExtensionLinked : OnOffType
     {
         /// <summary>
@@ -603,6 +626,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:webExtensionCreated.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebExtensionCreated : OnOffType
     {
         /// <summary>
@@ -628,6 +654,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:doNotAllowInsertDeleteSection.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DoNotAllowInsertDeleteSection : OnOffType
     {
         /// <summary>
@@ -653,6 +682,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class OnOffType : OpenXmlLeafElement
     {
         /// <summary>
@@ -688,6 +720,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:docId.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(69, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PersistentDocumentId : OpenXmlLeafElement
     {
         /// <summary>
@@ -732,6 +767,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:footnoteColumns.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FootnoteColumns : OpenXmlLeafElement
     {
         /// <summary>
@@ -775,6 +813,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:commentEx.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(69, "paraId")]
+    [SchemaAttr(69, "paraIdParent")]
+    [SchemaAttr(69, "done")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CommentEx : OpenXmlLeafElement
     {
         /// <summary>
@@ -863,6 +906,10 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     ///   <item><description>PresenceInfo &lt;w15:presenceInfo></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(69, "author")]
+    [SchemaAttr(69, "contact")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Person : OpenXmlCompositeElement
     {
         /// <summary>
@@ -967,6 +1014,10 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:presenceInfo.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(69, "providerId")]
+    [SchemaAttr(69, "userId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PresenceInfo : OpenXmlLeafElement
     {
         /// <summary>
@@ -1031,6 +1082,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2013))
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w15:sectionTitle.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(23, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SectionTitle : OpenXmlLeafElement
     {
         /// <summary>
@@ -1072,6 +1126,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Defines the SdtAppearance enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2013)]
     public enum SdtAppearance
     {

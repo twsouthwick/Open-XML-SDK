@@ -15,6 +15,8 @@ namespace DocumentFormat.OpenXml
     /// <summary>
     /// Defines the SpaceProcessingModeValues enumeration.
     /// </summary>
+
+
     public enum SpaceProcessingModeValues
     {
         ///<summary>

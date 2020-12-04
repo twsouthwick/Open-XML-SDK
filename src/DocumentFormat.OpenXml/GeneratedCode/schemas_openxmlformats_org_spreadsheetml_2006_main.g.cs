@@ -23,6 +23,9 @@ namespace DocumentFormat.OpenXml.Spreadsheet
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:ext.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Extension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -326,6 +329,9 @@ namespace DocumentFormat.OpenXml.Spreadsheet
     ///   <item><description>Map &lt;x:Map></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "SelectionNamespaces")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MapInfo : OpenXmlPartRootElement
     {
         /// <summary>
@@ -533,6 +539,27 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotCacheDefinitionExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+    [SchemaAttr(0, "invalid")]
+    [SchemaAttr(0, "saveData")]
+    [SchemaAttr(0, "refreshOnLoad")]
+    [SchemaAttr(0, "optimizeMemory")]
+    [SchemaAttr(0, "enableRefresh")]
+    [SchemaAttr(0, "refreshedBy")]
+    [SchemaAttr(0, "refreshedDateIso")]
+    [SchemaAttr(0, "refreshedDate")]
+    [SchemaAttr(0, "backgroundQuery")]
+    [SchemaAttr(0, "missingItemsLimit")]
+    [SchemaAttr(0, "createdVersion")]
+    [SchemaAttr(0, "refreshedVersion")]
+    [SchemaAttr(0, "minRefreshableVersion")]
+    [SchemaAttr(0, "recordCount")]
+    [SchemaAttr(0, "upgradeOnRefresh")]
+    [SchemaAttr(0, "tupleCache")]
+    [SchemaAttr(0, "supportSubquery")]
+    [SchemaAttr(0, "supportAdvancedDrill")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotCacheDefinition : OpenXmlPartRootElement
     {
         /// <summary>
@@ -1001,6 +1028,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotCacheRecords : OpenXmlPartRootElement
     {
         /// <summary>
@@ -1121,6 +1151,76 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotTableDefinitionExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "cacheId")]
+    [SchemaAttr(0, "dataOnRows")]
+    [SchemaAttr(0, "dataPosition")]
+    [SchemaAttr(0, "autoFormatId")]
+    [SchemaAttr(0, "applyNumberFormats")]
+    [SchemaAttr(0, "applyBorderFormats")]
+    [SchemaAttr(0, "applyFontFormats")]
+    [SchemaAttr(0, "applyPatternFormats")]
+    [SchemaAttr(0, "applyAlignmentFormats")]
+    [SchemaAttr(0, "applyWidthHeightFormats")]
+    [SchemaAttr(0, "dataCaption")]
+    [SchemaAttr(0, "grandTotalCaption")]
+    [SchemaAttr(0, "errorCaption")]
+    [SchemaAttr(0, "showError")]
+    [SchemaAttr(0, "missingCaption")]
+    [SchemaAttr(0, "showMissing")]
+    [SchemaAttr(0, "pageStyle")]
+    [SchemaAttr(0, "pivotTableStyle")]
+    [SchemaAttr(0, "vacatedStyle")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "updatedVersion")]
+    [SchemaAttr(0, "minRefreshableVersion")]
+    [SchemaAttr(0, "asteriskTotals")]
+    [SchemaAttr(0, "showItems")]
+    [SchemaAttr(0, "editData")]
+    [SchemaAttr(0, "disableFieldList")]
+    [SchemaAttr(0, "showCalcMbrs")]
+    [SchemaAttr(0, "visualTotals")]
+    [SchemaAttr(0, "showMultipleLabel")]
+    [SchemaAttr(0, "showDataDropDown")]
+    [SchemaAttr(0, "showDrill")]
+    [SchemaAttr(0, "printDrill")]
+    [SchemaAttr(0, "showMemberPropertyTips")]
+    [SchemaAttr(0, "showDataTips")]
+    [SchemaAttr(0, "enableWizard")]
+    [SchemaAttr(0, "enableDrill")]
+    [SchemaAttr(0, "enableFieldProperties")]
+    [SchemaAttr(0, "preserveFormatting")]
+    [SchemaAttr(0, "useAutoFormatting")]
+    [SchemaAttr(0, "pageWrap")]
+    [SchemaAttr(0, "pageOverThenDown")]
+    [SchemaAttr(0, "subtotalHiddenItems")]
+    [SchemaAttr(0, "rowGrandTotals")]
+    [SchemaAttr(0, "colGrandTotals")]
+    [SchemaAttr(0, "fieldPrintTitles")]
+    [SchemaAttr(0, "itemPrintTitles")]
+    [SchemaAttr(0, "mergeItem")]
+    [SchemaAttr(0, "showDropZones")]
+    [SchemaAttr(0, "createdVersion")]
+    [SchemaAttr(0, "indent")]
+    [SchemaAttr(0, "showEmptyRow")]
+    [SchemaAttr(0, "showEmptyCol")]
+    [SchemaAttr(0, "showHeaders")]
+    [SchemaAttr(0, "compact")]
+    [SchemaAttr(0, "outline")]
+    [SchemaAttr(0, "outlineData")]
+    [SchemaAttr(0, "compactData")]
+    [SchemaAttr(0, "published")]
+    [SchemaAttr(0, "gridDropZones")]
+    [SchemaAttr(0, "immersive")]
+    [SchemaAttr(0, "multipleFieldFilters")]
+    [SchemaAttr(0, "chartFormat")]
+    [SchemaAttr(0, "rowHeaderCaption")]
+    [SchemaAttr(0, "colHeaderCaption")]
+    [SchemaAttr(0, "fieldListSortAscending")]
+    [SchemaAttr(0, "mdxSubqueries")]
+    [SchemaAttr(0, "customListSort")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotTableDefinition : OpenXmlPartRootElement
     {
         /// <summary>
@@ -2236,6 +2336,30 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>QueryTableExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "headers")]
+    [SchemaAttr(0, "rowNumbers")]
+    [SchemaAttr(0, "disableRefresh")]
+    [SchemaAttr(0, "backgroundRefresh")]
+    [SchemaAttr(0, "firstBackgroundRefresh")]
+    [SchemaAttr(0, "refreshOnLoad")]
+    [SchemaAttr(0, "growShrinkType")]
+    [SchemaAttr(0, "fillFormulas")]
+    [SchemaAttr(0, "removeDataOnSave")]
+    [SchemaAttr(0, "disableEdit")]
+    [SchemaAttr(0, "preserveFormatting")]
+    [SchemaAttr(0, "adjustColumnWidth")]
+    [SchemaAttr(0, "intermediate")]
+    [SchemaAttr(0, "connectionId")]
+    [SchemaAttr(0, "autoFormatId")]
+    [SchemaAttr(0, "applyNumberFormats")]
+    [SchemaAttr(0, "applyBorderFormats")]
+    [SchemaAttr(0, "applyFontFormats")]
+    [SchemaAttr(0, "applyPatternFormats")]
+    [SchemaAttr(0, "applyAlignmentFormats")]
+    [SchemaAttr(0, "applyWidthHeightFormats")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class QueryTable : OpenXmlPartRootElement
     {
         /// <summary>
@@ -2608,6 +2732,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "uniqueCount")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SharedStringTable : OpenXmlPartRootElement
     {
         /// <summary>
@@ -2725,6 +2853,20 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Header &lt;x:header></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "guid")]
+    [SchemaAttr(0, "lastGuid")]
+    [SchemaAttr(0, "shared")]
+    [SchemaAttr(0, "diskRevisions")]
+    [SchemaAttr(0, "history")]
+    [SchemaAttr(0, "trackRevisions")]
+    [SchemaAttr(0, "exclusive")]
+    [SchemaAttr(0, "revisionId")]
+    [SchemaAttr(0, "version")]
+    [SchemaAttr(0, "keepChangeHistory")]
+    [SchemaAttr(0, "protected")]
+    [SchemaAttr(0, "preserveHistory")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Headers : OpenXmlPartRootElement
     {
         /// <summary>
@@ -3082,6 +3224,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
     ///   <item><description>UserInfo &lt;x:userInfo></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Users : OpenXmlPartRootElement
     {
         /// <summary>
@@ -4698,6 +4843,30 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
     ///   <item><description>TableExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "displayName")]
+    [SchemaAttr(0, "comment")]
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "tableType")]
+    [SchemaAttr(0, "headerRowCount")]
+    [SchemaAttr(0, "insertRow")]
+    [SchemaAttr(0, "insertRowShift")]
+    [SchemaAttr(0, "totalsRowCount")]
+    [SchemaAttr(0, "totalsRowShown")]
+    [SchemaAttr(0, "published")]
+    [SchemaAttr(0, "headerRowDxfId")]
+    [SchemaAttr(0, "dataDxfId")]
+    [SchemaAttr(0, "totalsRowDxfId")]
+    [SchemaAttr(0, "headerRowBorderDxfId")]
+    [SchemaAttr(0, "tableBorderDxfId")]
+    [SchemaAttr(0, "totalsRowBorderDxfId")]
+    [SchemaAttr(0, "headerRowCellStyle")]
+    [SchemaAttr(0, "dataCellStyle")]
+    [SchemaAttr(0, "totalsRowCellStyle")]
+    [SchemaAttr(0, "connectionId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Table : OpenXmlPartRootElement
     {
         /// <summary>
@@ -5238,6 +5407,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>WorkbookExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "conformance")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Workbook : OpenXmlPartRootElement
     {
         /// <summary>
@@ -5577,6 +5749,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "colId")]
+    [SchemaAttr(0, "hiddenButton")]
+    [SchemaAttr(0, "showButton")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FilterColumn : OpenXmlCompositeElement
     {
         /// <summary>
@@ -5808,6 +5985,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "columnSort")]
+    [SchemaAttr(0, "caseSensitive")]
+    [SchemaAttr(0, "sortMethod")]
+    [SchemaAttr(0, "ref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SortState : OpenXmlCompositeElement
     {
         /// <summary>
@@ -5981,6 +6164,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:customFilter.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "operator")]
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CustomFilter : OpenXmlLeafElement
     {
         /// <summary>
@@ -6028,6 +6215,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:c.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "i")]
+    [SchemaAttr(0, "s")]
+    [SchemaAttr(0, "l")]
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "a")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CalculationCell : OpenXmlLeafElement
     {
         /// <summary>
@@ -6250,6 +6445,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CommentProperties &lt;x:commentPr></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "authorId")]
+    [SchemaAttr(0, "guid")]
+    [SchemaAttr(0, "shapeId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Comment : OpenXmlCompositeElement
     {
         /// <summary>
@@ -6390,6 +6591,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:author.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Author : XstringType
     {
         /// <summary>
@@ -6427,6 +6631,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:t.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Text : XstringType
     {
         /// <summary>
@@ -6464,6 +6671,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:v.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CellValue : XstringType
     {
         /// <summary>
@@ -6501,6 +6711,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:formula.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Formula : XstringType
     {
         /// <summary>
@@ -6538,6 +6751,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:oldFormula.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OldFormula : XstringType
     {
         /// <summary>
@@ -6575,6 +6791,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:oddHeader.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OddHeader : XstringType
     {
         /// <summary>
@@ -6612,6 +6831,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:oddFooter.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OddFooter : XstringType
     {
         /// <summary>
@@ -6649,6 +6871,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:evenHeader.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class EvenHeader : XstringType
     {
         /// <summary>
@@ -6686,6 +6911,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:evenFooter.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class EvenFooter : XstringType
     {
         /// <summary>
@@ -6723,6 +6951,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:firstHeader.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FirstHeader : XstringType
     {
         /// <summary>
@@ -6760,6 +6991,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:firstFooter.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FirstFooter : XstringType
     {
         /// <summary>
@@ -6797,6 +7031,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:val.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DdeLinkValue : XstringType
     {
         /// <summary>
@@ -6834,6 +7071,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:stp.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Subtopic : XstringType
     {
         /// <summary>
@@ -6871,6 +7111,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:formula1.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Formula1 : XstringType
     {
         /// <summary>
@@ -6908,6 +7151,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:formula2.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Formula2 : XstringType
     {
         /// <summary>
@@ -6945,6 +7191,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class XstringType : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -6993,6 +7242,11 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:Schema.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ID")]
+    [SchemaAttr(0, "SchemaRef")]
+    [SchemaAttr(0, "Namespace")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Schema : OpenXmlCompositeElement
     {
         /// <summary>
@@ -7092,6 +7346,17 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DataBinding &lt;x:DataBinding></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ID")]
+    [SchemaAttr(0, "Name")]
+    [SchemaAttr(0, "RootElement")]
+    [SchemaAttr(0, "SchemaID")]
+    [SchemaAttr(0, "ShowImportExportValidationErrors")]
+    [SchemaAttr(0, "AutoFit")]
+    [SchemaAttr(0, "Append")]
+    [SchemaAttr(0, "PreserveSortAFLayout")]
+    [SchemaAttr(0, "PreserveFormat")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Map : OpenXmlCompositeElement
     {
         /// <summary>
@@ -7289,6 +7554,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:DataBinding.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "DataBindingName")]
+    [SchemaAttr(0, "FileBinding")]
+    [SchemaAttr(0, "ConnectionID")]
+    [SchemaAttr(0, "FileBindingName")]
+    [SchemaAttr(0, "DataBindingLoadMode")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataBinding : OpenXmlCompositeElement
     {
         /// <summary>
@@ -7420,6 +7692,28 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ConnectionExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "sourceFile")]
+    [SchemaAttr(0, "odcFile")]
+    [SchemaAttr(0, "keepAlive")]
+    [SchemaAttr(0, "interval")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "reconnectionMethod")]
+    [SchemaAttr(0, "refreshedVersion")]
+    [SchemaAttr(0, "minRefreshableVersion")]
+    [SchemaAttr(0, "savePassword")]
+    [SchemaAttr(0, "new")]
+    [SchemaAttr(0, "deleted")]
+    [SchemaAttr(0, "onlyUseConnectionFile")]
+    [SchemaAttr(0, "background")]
+    [SchemaAttr(0, "refreshOnLoad")]
+    [SchemaAttr(0, "saveData")]
+    [SchemaAttr(0, "credentials")]
+    [SchemaAttr(0, "singleSignOnId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Connection : OpenXmlCompositeElement
     {
         /// <summary>
@@ -7805,6 +8099,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>FieldItem &lt;x:x></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Tables : OpenXmlCompositeElement
     {
         /// <summary>
@@ -7874,6 +8171,18 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:parameter.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "sqlType")]
+    [SchemaAttr(0, "parameterType")]
+    [SchemaAttr(0, "refreshOnChange")]
+    [SchemaAttr(0, "prompt")]
+    [SchemaAttr(0, "boolean")]
+    [SchemaAttr(0, "double")]
+    [SchemaAttr(0, "integer")]
+    [SchemaAttr(0, "string")]
+    [SchemaAttr(0, "cell")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Parameter : OpenXmlLeafElement
     {
         /// <summary>
@@ -8038,6 +8347,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:s.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CharacterValue : OpenXmlLeafElement
     {
         /// <summary>
@@ -8077,6 +8389,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:x.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FieldItem : OpenXmlLeafElement
     {
         /// <summary>
@@ -8116,6 +8431,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:textField.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "position")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TextField : OpenXmlLeafElement
     {
         /// <summary>
@@ -8173,6 +8492,21 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CacheFieldExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "caption")]
+    [SchemaAttr(0, "propertyName")]
+    [SchemaAttr(0, "serverField")]
+    [SchemaAttr(0, "uniqueList")]
+    [SchemaAttr(0, "numFmtId")]
+    [SchemaAttr(0, "formula")]
+    [SchemaAttr(0, "sqlType")]
+    [SchemaAttr(0, "hierarchy")]
+    [SchemaAttr(0, "level")]
+    [SchemaAttr(0, "databaseField")]
+    [SchemaAttr(0, "mappingCount")]
+    [SchemaAttr(0, "memberPropertyField")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CacheField : OpenXmlCompositeElement
     {
         /// <summary>
@@ -8412,6 +8746,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Page &lt;x:page></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Pages : OpenXmlCompositeElement
     {
         /// <summary>
@@ -8483,6 +8820,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>RangeSet &lt;x:rangeSet></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RangeSets : OpenXmlCompositeElement
     {
         /// <summary>
@@ -8554,6 +8894,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PageItem &lt;x:pageItem></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Page : OpenXmlCompositeElement
     {
         /// <summary>
@@ -8619,6 +8962,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:pageItem.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PageItem : OpenXmlLeafElement
     {
         /// <summary>
@@ -8658,6 +9004,16 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rangeSet.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "i1")]
+    [SchemaAttr(0, "i2")]
+    [SchemaAttr(0, "i3")]
+    [SchemaAttr(0, "i4")]
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "sheet")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RangeSet : OpenXmlLeafElement
     {
         /// <summary>
@@ -8783,6 +9139,19 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MemberPropertyIndex &lt;x:x></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "u")]
+    [SchemaAttr(0, "f")]
+    [SchemaAttr(0, "c")]
+    [SchemaAttr(0, "cp")]
+    [SchemaAttr(0, "in")]
+    [SchemaAttr(0, "bc")]
+    [SchemaAttr(0, "fc")]
+    [SchemaAttr(0, "i")]
+    [SchemaAttr(0, "un")]
+    [SchemaAttr(0, "st")]
+    [SchemaAttr(0, "b")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MissingItem : OpenXmlCompositeElement
     {
         /// <summary>
@@ -8975,6 +9344,20 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     ///   <item><description>MemberPropertyIndex &lt;x:x></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+    [SchemaAttr(0, "u")]
+    [SchemaAttr(0, "f")]
+    [SchemaAttr(0, "c")]
+    [SchemaAttr(0, "cp")]
+    [SchemaAttr(0, "in")]
+    [SchemaAttr(0, "bc")]
+    [SchemaAttr(0, "fc")]
+    [SchemaAttr(0, "i")]
+    [SchemaAttr(0, "un")]
+    [SchemaAttr(0, "st")]
+    [SchemaAttr(0, "b")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NumberItem : OpenXmlCompositeElement
     {
         /// <summary>
@@ -9181,6 +9564,13 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     ///   <item><description>MemberPropertyIndex &lt;x:x></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+    [SchemaAttr(0, "u")]
+    [SchemaAttr(0, "f")]
+    [SchemaAttr(0, "c")]
+    [SchemaAttr(0, "cp")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BooleanItem : OpenXmlCompositeElement
     {
         /// <summary>
@@ -9301,6 +9691,20 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MemberPropertyIndex &lt;x:x></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+    [SchemaAttr(0, "u")]
+    [SchemaAttr(0, "f")]
+    [SchemaAttr(0, "c")]
+    [SchemaAttr(0, "cp")]
+    [SchemaAttr(0, "in")]
+    [SchemaAttr(0, "bc")]
+    [SchemaAttr(0, "fc")]
+    [SchemaAttr(0, "i")]
+    [SchemaAttr(0, "un")]
+    [SchemaAttr(0, "st")]
+    [SchemaAttr(0, "b")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ErrorItem : OpenXmlCompositeElement
     {
         /// <summary>
@@ -9520,6 +9924,20 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     ///   <item><description>MemberPropertyIndex &lt;x:x></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+    [SchemaAttr(0, "u")]
+    [SchemaAttr(0, "f")]
+    [SchemaAttr(0, "c")]
+    [SchemaAttr(0, "cp")]
+    [SchemaAttr(0, "in")]
+    [SchemaAttr(0, "bc")]
+    [SchemaAttr(0, "fc")]
+    [SchemaAttr(0, "i")]
+    [SchemaAttr(0, "un")]
+    [SchemaAttr(0, "st")]
+    [SchemaAttr(0, "b")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class StringItem : OpenXmlCompositeElement
     {
         /// <summary>
@@ -9725,6 +10143,13 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     ///   <item><description>MemberPropertyIndex &lt;x:x></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+    [SchemaAttr(0, "u")]
+    [SchemaAttr(0, "f")]
+    [SchemaAttr(0, "c")]
+    [SchemaAttr(0, "cp")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DateTimeItem : OpenXmlCompositeElement
     {
         /// <summary>
@@ -9844,6 +10269,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Tuple &lt;x:tpl></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "c")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Tuples : TuplesType
     {
         /// <summary>
@@ -9902,6 +10330,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Tuple &lt;x:tpl></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "c")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SortByTuple : TuplesType
     {
         /// <summary>
@@ -9960,6 +10391,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Tuple &lt;x:tpl></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "c")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class TuplesType : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10017,6 +10451,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:x.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MemberPropertyIndex : XType
     {
         /// <summary>
@@ -10041,6 +10478,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:mpMap.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MemberPropertiesMap : XType
     {
         /// <summary>
@@ -10066,6 +10506,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "v")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class XType : OpenXmlLeafElement
     {
         /// <summary>
@@ -10175,6 +10618,18 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:kpi.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uniqueName")]
+    [SchemaAttr(0, "caption")]
+    [SchemaAttr(0, "displayFolder")]
+    [SchemaAttr(0, "measureGroup")]
+    [SchemaAttr(0, "parent")]
+    [SchemaAttr(0, "value")]
+    [SchemaAttr(0, "goal")]
+    [SchemaAttr(0, "status")]
+    [SchemaAttr(0, "trend")]
+    [SchemaAttr(0, "weight")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Kpi : OpenXmlLeafElement
     {
         /// <summary>
@@ -10329,6 +10784,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:fieldUsage.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "x")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FieldUsage : OpenXmlLeafElement
     {
         /// <summary>
@@ -10377,6 +10835,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uniqueName")]
+    [SchemaAttr(0, "caption")]
+    [SchemaAttr(0, "user")]
+    [SchemaAttr(0, "customRollUp")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GroupLevel : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10516,6 +10980,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Group &lt;x:group></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Groups : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10587,6 +11054,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>GroupMembers &lt;x:groupMembers></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "uniqueName")]
+    [SchemaAttr(0, "caption")]
+    [SchemaAttr(0, "uniqueParent")]
+    [SchemaAttr(0, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Group : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10728,6 +11202,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>GroupMember &lt;x:groupMember></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GroupMembers : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10793,6 +11270,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:groupMember.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uniqueName")]
+    [SchemaAttr(0, "group")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GroupMember : OpenXmlLeafElement
     {
         /// <summary>
@@ -10854,6 +11335,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>StringItem &lt;x:s></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Entries : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10931,6 +11415,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>TupleSet &lt;x:set></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Sets : OpenXmlCompositeElement
     {
         /// <summary>
@@ -11002,6 +11489,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Query &lt;x:query></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class QueryCache : OpenXmlCompositeElement
     {
         /// <summary>
@@ -11073,6 +11563,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ServerFormat &lt;x:serverFormat></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ServerFormats : OpenXmlCompositeElement
     {
         /// <summary>
@@ -11138,6 +11631,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:serverFormat.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "culture")]
+    [SchemaAttr(0, "format")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ServerFormat : OpenXmlLeafElement
     {
         /// <summary>
@@ -11188,6 +11685,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:tpl.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "fld")]
+    [SchemaAttr(0, "hier")]
+    [SchemaAttr(0, "item")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Tuple : OpenXmlLeafElement
     {
         /// <summary>
@@ -11259,6 +11761,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>SortByTuple &lt;x:sortByTuple></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "maxRank")]
+    [SchemaAttr(0, "setDefinition")]
+    [SchemaAttr(0, "sortType")]
+    [SchemaAttr(0, "queryFailed")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TupleSet : OpenXmlCompositeElement
     {
         /// <summary>
@@ -11384,6 +11893,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Tuples &lt;x:tpls></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "mdx")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Query : OpenXmlCompositeElement
     {
         /// <summary>
@@ -11473,6 +11985,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "field")]
+    [SchemaAttr(0, "formula")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CalculatedItem : OpenXmlCompositeElement
     {
         /// <summary>
@@ -11584,6 +12100,20 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "field")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "dataOnly")]
+    [SchemaAttr(0, "labelOnly")]
+    [SchemaAttr(0, "grandRow")]
+    [SchemaAttr(0, "grandCol")]
+    [SchemaAttr(0, "cacheIndex")]
+    [SchemaAttr(0, "outline")]
+    [SchemaAttr(0, "offset")]
+    [SchemaAttr(0, "collapsedLevelsAreSubtotals")]
+    [SchemaAttr(0, "axis")]
+    [SchemaAttr(0, "fieldPosition")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotArea : OpenXmlCompositeElement
     {
         /// <summary>
@@ -11805,6 +12335,15 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CalculatedMemberExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "mdx")]
+    [SchemaAttr(0, "memberName")]
+    [SchemaAttr(0, "hierarchy")]
+    [SchemaAttr(0, "parent")]
+    [SchemaAttr(0, "solveOrder")]
+    [SchemaAttr(0, "set")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CalculatedMember : OpenXmlCompositeElement
     {
         /// <summary>
@@ -11972,6 +12511,56 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotFieldExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "axis")]
+    [SchemaAttr(0, "dataField")]
+    [SchemaAttr(0, "subtotalCaption")]
+    [SchemaAttr(0, "showDropDowns")]
+    [SchemaAttr(0, "hiddenLevel")]
+    [SchemaAttr(0, "uniqueMemberProperty")]
+    [SchemaAttr(0, "compact")]
+    [SchemaAttr(0, "allDrilled")]
+    [SchemaAttr(0, "numFmtId")]
+    [SchemaAttr(0, "outline")]
+    [SchemaAttr(0, "subtotalTop")]
+    [SchemaAttr(0, "dragToRow")]
+    [SchemaAttr(0, "dragToCol")]
+    [SchemaAttr(0, "multipleItemSelectionAllowed")]
+    [SchemaAttr(0, "dragToPage")]
+    [SchemaAttr(0, "dragToData")]
+    [SchemaAttr(0, "dragOff")]
+    [SchemaAttr(0, "showAll")]
+    [SchemaAttr(0, "insertBlankRow")]
+    [SchemaAttr(0, "serverField")]
+    [SchemaAttr(0, "insertPageBreak")]
+    [SchemaAttr(0, "autoShow")]
+    [SchemaAttr(0, "topAutoShow")]
+    [SchemaAttr(0, "hideNewItems")]
+    [SchemaAttr(0, "measureFilter")]
+    [SchemaAttr(0, "includeNewItemsInFilter")]
+    [SchemaAttr(0, "itemPageCount")]
+    [SchemaAttr(0, "sortType")]
+    [SchemaAttr(0, "dataSourceSort")]
+    [SchemaAttr(0, "nonAutoSortDefault")]
+    [SchemaAttr(0, "rankBy")]
+    [SchemaAttr(0, "defaultSubtotal")]
+    [SchemaAttr(0, "sumSubtotal")]
+    [SchemaAttr(0, "countASubtotal")]
+    [SchemaAttr(0, "avgSubtotal")]
+    [SchemaAttr(0, "maxSubtotal")]
+    [SchemaAttr(0, "minSubtotal")]
+    [SchemaAttr(0, "productSubtotal")]
+    [SchemaAttr(0, "countSubtotal")]
+    [SchemaAttr(0, "stdDevSubtotal")]
+    [SchemaAttr(0, "stdDevPSubtotal")]
+    [SchemaAttr(0, "varSubtotal")]
+    [SchemaAttr(0, "varPSubtotal")]
+    [SchemaAttr(0, "showPropCell")]
+    [SchemaAttr(0, "showPropTip")]
+    [SchemaAttr(0, "showPropAsCaption")]
+    [SchemaAttr(0, "defaultAttributeDrillState")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotField : OpenXmlCompositeElement
     {
         /// <summary>
@@ -12598,6 +13187,19 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:item.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "n")]
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "h")]
+    [SchemaAttr(0, "s")]
+    [SchemaAttr(0, "sd")]
+    [SchemaAttr(0, "f")]
+    [SchemaAttr(0, "m")]
+    [SchemaAttr(0, "c")]
+    [SchemaAttr(0, "x")]
+    [SchemaAttr(0, "d")]
+    [SchemaAttr(0, "e")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Item : OpenXmlLeafElement
     {
         /// <summary>
@@ -12753,6 +13355,15 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DataFieldExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "fld")]
+    [SchemaAttr(0, "subtotal")]
+    [SchemaAttr(0, "showDataAs")]
+    [SchemaAttr(0, "baseField")]
+    [SchemaAttr(0, "baseItem")]
+    [SchemaAttr(0, "numFmtId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataField : OpenXmlCompositeElement
     {
         /// <summary>
@@ -12907,6 +13518,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MemberPropertyIndex &lt;x:x></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "i")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RowItem : OpenXmlCompositeElement
     {
         /// <summary>
@@ -12995,6 +13611,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:field.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "x")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Field : OpenXmlLeafElement
     {
         /// <summary>
@@ -13042,6 +13661,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "action")]
+    [SchemaAttr(0, "dxfId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Format : OpenXmlCompositeElement
     {
         /// <summary>
@@ -13154,6 +13777,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "scope")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "priority")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ConditionalFormat : OpenXmlCompositeElement
     {
         /// <summary>
@@ -13279,6 +13907,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotArea &lt;x:pivotArea></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotAreas : OpenXmlCompositeElement
     {
         /// <summary>
@@ -13350,6 +13981,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotArea &lt;x:pivotArea></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "chart")]
+    [SchemaAttr(0, "format")]
+    [SchemaAttr(0, "series")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ChartFormat : OpenXmlCompositeElement
     {
         /// <summary>
@@ -13464,6 +14100,19 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotHierarchyExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "outline")]
+    [SchemaAttr(0, "multipleItemSelectionAllowed")]
+    [SchemaAttr(0, "subtotalTop")]
+    [SchemaAttr(0, "showInFieldList")]
+    [SchemaAttr(0, "dragToRow")]
+    [SchemaAttr(0, "dragToCol")]
+    [SchemaAttr(0, "dragToPage")]
+    [SchemaAttr(0, "dragToData")]
+    [SchemaAttr(0, "dragOff")]
+    [SchemaAttr(0, "includeNewItemsInFilter")]
+    [SchemaAttr(0, "caption")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotHierarchy : OpenXmlCompositeElement
     {
         /// <summary>
@@ -13657,6 +14306,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rowHierarchyUsage.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "hierarchyUsage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RowHierarchyUsage : HierarchyUsageType
     {
         /// <summary>
@@ -13681,6 +14333,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:colHierarchyUsage.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "hierarchyUsage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ColumnHierarchyUsage : HierarchyUsageType
     {
         /// <summary>
@@ -13705,6 +14360,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "hierarchyUsage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class HierarchyUsageType : OpenXmlLeafElement
     {
         /// <summary>
@@ -13740,6 +14398,17 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:mp.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "showCell")]
+    [SchemaAttr(0, "showTip")]
+    [SchemaAttr(0, "showAsCaption")]
+    [SchemaAttr(0, "nameLen")]
+    [SchemaAttr(0, "pPos")]
+    [SchemaAttr(0, "pLen")]
+    [SchemaAttr(0, "level")]
+    [SchemaAttr(0, "field")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MemberProperty : OpenXmlLeafElement
     {
         /// <summary>
@@ -13868,6 +14537,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:member.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Member : OpenXmlLeafElement
     {
         /// <summary>
@@ -13907,6 +14579,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:dimension.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "measure")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "uniqueName")]
+    [SchemaAttr(0, "caption")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Dimension : OpenXmlLeafElement
     {
         /// <summary>
@@ -13989,6 +14667,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:measureGroup.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "caption")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MeasureGroup : OpenXmlLeafElement
     {
         /// <summary>
@@ -14044,6 +14726,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:map.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "measureGroup")]
+    [SchemaAttr(0, "dimension")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MeasureDimensionMap : OpenXmlLeafElement
     {
         /// <summary>
@@ -14104,6 +14790,19 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotFilterExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "fld")]
+    [SchemaAttr(0, "mpFld")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "evalOrder")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "iMeasureHier")]
+    [SchemaAttr(0, "iMeasureFld")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "stringValue1")]
+    [SchemaAttr(0, "stringValue2")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotFilter : OpenXmlCompositeElement
     {
         /// <summary>
@@ -14328,6 +15027,30 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CacheHierarchyExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uniqueName")]
+    [SchemaAttr(0, "caption")]
+    [SchemaAttr(0, "measure")]
+    [SchemaAttr(0, "set")]
+    [SchemaAttr(0, "parentSet")]
+    [SchemaAttr(0, "iconSet")]
+    [SchemaAttr(0, "attribute")]
+    [SchemaAttr(0, "time")]
+    [SchemaAttr(0, "keyAttribute")]
+    [SchemaAttr(0, "defaultMemberUniqueName")]
+    [SchemaAttr(0, "allUniqueName")]
+    [SchemaAttr(0, "allCaption")]
+    [SchemaAttr(0, "dimensionUniqueName")]
+    [SchemaAttr(0, "displayFolder")]
+    [SchemaAttr(0, "measureGroup")]
+    [SchemaAttr(0, "measures")]
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "oneField")]
+    [SchemaAttr(0, "memberValueDatatype")]
+    [SchemaAttr(0, "unbalanced")]
+    [SchemaAttr(0, "unbalancedGroup")]
+    [SchemaAttr(0, "hidden")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CacheHierarchy : OpenXmlCompositeElement
     {
         /// <summary>
@@ -14679,6 +15402,16 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rangePr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "autoStart")]
+    [SchemaAttr(0, "autoEnd")]
+    [SchemaAttr(0, "groupBy")]
+    [SchemaAttr(0, "startNum")]
+    [SchemaAttr(0, "endNum")]
+    [SchemaAttr(0, "startDate")]
+    [SchemaAttr(0, "endDate")]
+    [SchemaAttr(0, "groupInterval")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RangeProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -14799,6 +15532,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>FieldItem &lt;x:x></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DiscreteProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -14875,6 +15611,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DateTimeItem &lt;x:d></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GroupItems : OpenXmlCompositeElement
     {
         /// <summary>
@@ -14956,6 +15695,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "fld")]
+    [SchemaAttr(0, "item")]
+    [SchemaAttr(0, "hier")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "cap")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PageField : OpenXmlCompositeElement
     {
         /// <summary>
@@ -15089,6 +15835,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotAreaReference &lt;x:reference></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotAreaReferences : OpenXmlCompositeElement
     {
         /// <summary>
@@ -15161,6 +15910,25 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "field")]
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "selected")]
+    [SchemaAttr(0, "byPosition")]
+    [SchemaAttr(0, "relative")]
+    [SchemaAttr(0, "defaultSubtotal")]
+    [SchemaAttr(0, "sumSubtotal")]
+    [SchemaAttr(0, "countASubtotal")]
+    [SchemaAttr(0, "avgSubtotal")]
+    [SchemaAttr(0, "maxSubtotal")]
+    [SchemaAttr(0, "minSubtotal")]
+    [SchemaAttr(0, "productSubtotal")]
+    [SchemaAttr(0, "countSubtotal")]
+    [SchemaAttr(0, "stdDevSubtotal")]
+    [SchemaAttr(0, "stdDevPSubtotal")]
+    [SchemaAttr(0, "varSubtotal")]
+    [SchemaAttr(0, "varPSubtotal")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotAreaReference : OpenXmlCompositeElement
     {
         /// <summary>
@@ -15410,6 +16178,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>QueryTableField &lt;x:queryTableField></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class QueryTableFields : OpenXmlCompositeElement
     {
         /// <summary>
@@ -15481,6 +16252,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DeletedField &lt;x:deletedField></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class QueryTableDeletedFields : OpenXmlCompositeElement
     {
         /// <summary>
@@ -15546,6 +16320,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:deletedField.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DeletedField : OpenXmlLeafElement
     {
         /// <summary>
@@ -15592,6 +16369,15 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "dataBound")]
+    [SchemaAttr(0, "rowNumbers")]
+    [SchemaAttr(0, "fillFormulas")]
+    [SchemaAttr(0, "clipped")]
+    [SchemaAttr(0, "tableColumnId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class QueryTableField : OpenXmlCompositeElement
     {
         /// <summary>
@@ -16007,6 +16793,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:b.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Bold : BooleanPropertyType
     {
         /// <summary>
@@ -16031,6 +16820,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:i.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Italic : BooleanPropertyType
     {
         /// <summary>
@@ -16055,6 +16847,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:strike.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Strike : BooleanPropertyType
     {
         /// <summary>
@@ -16079,6 +16874,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:condense.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Condense : BooleanPropertyType
     {
         /// <summary>
@@ -16103,6 +16901,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:extend.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Extend : BooleanPropertyType
     {
         /// <summary>
@@ -16127,6 +16928,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:outline.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Outline : BooleanPropertyType
     {
         /// <summary>
@@ -16151,6 +16955,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:shadow.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Shadow : BooleanPropertyType
     {
         /// <summary>
@@ -16175,6 +16982,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class BooleanPropertyType : OpenXmlLeafElement
     {
         /// <summary>
@@ -16207,6 +17017,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:u.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Underline : OpenXmlLeafElement
     {
         /// <summary>
@@ -16243,6 +17056,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:vertAlign.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VerticalTextAlignment : OpenXmlLeafElement
     {
         /// <summary>
@@ -16282,6 +17098,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:sz.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FontSize : OpenXmlLeafElement
     {
         /// <summary>
@@ -16322,6 +17141,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:color.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "auto")]
+    [SchemaAttr(0, "indexed")]
+    [SchemaAttr(0, "rgb")]
+    [SchemaAttr(0, "theme")]
+    [SchemaAttr(0, "tint")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Color : ColorType
     {
         /// <summary>
@@ -16349,6 +17175,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:tabColor.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "auto")]
+    [SchemaAttr(0, "indexed")]
+    [SchemaAttr(0, "rgb")]
+    [SchemaAttr(0, "theme")]
+    [SchemaAttr(0, "tint")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TabColor : ColorType
     {
         /// <summary>
@@ -16375,6 +17208,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:fgColor.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "auto")]
+    [SchemaAttr(0, "indexed")]
+    [SchemaAttr(0, "rgb")]
+    [SchemaAttr(0, "theme")]
+    [SchemaAttr(0, "tint")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ForegroundColor : ColorType
     {
         /// <summary>
@@ -16400,6 +17240,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:bgColor.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "auto")]
+    [SchemaAttr(0, "indexed")]
+    [SchemaAttr(0, "rgb")]
+    [SchemaAttr(0, "theme")]
+    [SchemaAttr(0, "tint")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackgroundColor : ColorType
     {
         /// <summary>
@@ -16425,6 +17272,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "auto")]
+    [SchemaAttr(0, "indexed")]
+    [SchemaAttr(0, "rgb")]
+    [SchemaAttr(0, "theme")]
+    [SchemaAttr(0, "tint")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class ColorType : OpenXmlLeafElement
     {
         /// <summary>
@@ -16504,6 +17358,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rFont.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RunFont : OpenXmlLeafElement
     {
         /// <summary>
@@ -16544,6 +17401,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:family.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FontFamily : InternationalPropertyType
     {
         /// <summary>
@@ -16569,6 +17429,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:charset.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RunPropertyCharSet : InternationalPropertyType
     {
         /// <summary>
@@ -16594,6 +17457,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class InternationalPropertyType : OpenXmlLeafElement
     {
         /// <summary>
@@ -16629,6 +17495,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:scheme.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FontScheme : OpenXmlLeafElement
     {
         /// <summary>
@@ -16863,6 +17732,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Text &lt;x:t></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "sb")]
+    [SchemaAttr(0, "eb")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PhoneticRun : OpenXmlCompositeElement
     {
         /// <summary>
@@ -16959,6 +17832,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:phoneticPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "fontId")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "alignment")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PhoneticProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -17029,6 +17907,15 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "guid")]
+    [SchemaAttr(0, "dateTime")]
+    [SchemaAttr(0, "maxSheetId")]
+    [SchemaAttr(0, "userName")]
+    [SchemaAttr(19, "id")]
+    [SchemaAttr(0, "minRId")]
+    [SchemaAttr(0, "maxRId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Header : OpenXmlCompositeElement
     {
         /// <summary>
@@ -17233,6 +18120,16 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>RevisionFormat &lt;x:rfmt></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rId")]
+    [SchemaAttr(0, "ua")]
+    [SchemaAttr(0, "ra")]
+    [SchemaAttr(0, "sId")]
+    [SchemaAttr(0, "eol")]
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "action")]
+    [SchemaAttr(0, "edge")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionRowColumn : OpenXmlCompositeElement
     {
         /// <summary>
@@ -17400,6 +18297,15 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>RevisionFormat &lt;x:rfmt></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rId")]
+    [SchemaAttr(0, "ua")]
+    [SchemaAttr(0, "ra")]
+    [SchemaAttr(0, "sheetId")]
+    [SchemaAttr(0, "source")]
+    [SchemaAttr(0, "destination")]
+    [SchemaAttr(0, "sourceSheetId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionMove : OpenXmlCompositeElement
     {
         /// <summary>
@@ -17549,6 +18455,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rcv.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "guid")]
+    [SchemaAttr(0, "action")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionCustomView : OpenXmlLeafElement
     {
         /// <summary>
@@ -17609,6 +18519,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rId")]
+    [SchemaAttr(0, "ua")]
+    [SchemaAttr(0, "ra")]
+    [SchemaAttr(0, "sheetId")]
+    [SchemaAttr(0, "oldName")]
+    [SchemaAttr(0, "newName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionSheetName : OpenXmlCompositeElement
     {
         /// <summary>
@@ -17755,6 +18673,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:ris.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rId")]
+    [SchemaAttr(0, "ua")]
+    [SchemaAttr(0, "ra")]
+    [SchemaAttr(0, "sheetId")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "sheetPosition")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionInsertSheet : OpenXmlLeafElement
     {
         /// <summary>
@@ -17870,6 +18796,22 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rId")]
+    [SchemaAttr(0, "ua")]
+    [SchemaAttr(0, "ra")]
+    [SchemaAttr(0, "sId")]
+    [SchemaAttr(0, "odxf")]
+    [SchemaAttr(0, "xfDxf")]
+    [SchemaAttr(0, "s")]
+    [SchemaAttr(0, "dxf")]
+    [SchemaAttr(0, "numFmtId")]
+    [SchemaAttr(0, "quotePrefix")]
+    [SchemaAttr(0, "oldQuotePrefix")]
+    [SchemaAttr(0, "ph")]
+    [SchemaAttr(0, "oldPh")]
+    [SchemaAttr(0, "endOfListFormulaUpdate")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionCellChange : OpenXmlCompositeElement
     {
         /// <summary>
@@ -18165,6 +19107,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "sheetId")]
+    [SchemaAttr(0, "xfDxf")]
+    [SchemaAttr(0, "s")]
+    [SchemaAttr(0, "sqref")]
+    [SchemaAttr(0, "start")]
+    [SchemaAttr(0, "length")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionFormat : OpenXmlCompositeElement
     {
         /// <summary>
@@ -18320,6 +19270,17 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:raf.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "sheetId")]
+    [SchemaAttr(0, "autoFormatId")]
+    [SchemaAttr(0, "applyNumberFormats")]
+    [SchemaAttr(0, "applyBorderFormats")]
+    [SchemaAttr(0, "applyFontFormats")]
+    [SchemaAttr(0, "applyPatternFormats")]
+    [SchemaAttr(0, "applyAlignmentFormats")]
+    [SchemaAttr(0, "applyWidthHeightFormats")]
+    [SchemaAttr(0, "ref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionAutoFormat : OpenXmlLeafElement
     {
         /// <summary>
@@ -18460,6 +19421,32 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rId")]
+    [SchemaAttr(0, "ua")]
+    [SchemaAttr(0, "ra")]
+    [SchemaAttr(0, "localSheetId")]
+    [SchemaAttr(0, "customView")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "function")]
+    [SchemaAttr(0, "oldFunction")]
+    [SchemaAttr(0, "functionGroupId")]
+    [SchemaAttr(0, "oldFunctionGroupId")]
+    [SchemaAttr(0, "shortcutKey")]
+    [SchemaAttr(0, "oldShortcutKey")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "oldHidden")]
+    [SchemaAttr(0, "customMenu")]
+    [SchemaAttr(0, "oldCustomMenu")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "oldDescription")]
+    [SchemaAttr(0, "help")]
+    [SchemaAttr(0, "oldHelp")]
+    [SchemaAttr(0, "statusBar")]
+    [SchemaAttr(0, "oldStatusBar")]
+    [SchemaAttr(0, "comment")]
+    [SchemaAttr(0, "oldComment")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionDefinedName : OpenXmlCompositeElement
     {
         /// <summary>
@@ -18842,6 +19829,19 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rcmt.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "sheetId")]
+    [SchemaAttr(0, "cell")]
+    [SchemaAttr(0, "guid")]
+    [SchemaAttr(0, "action")]
+    [SchemaAttr(0, "alwaysShow")]
+    [SchemaAttr(0, "old")]
+    [SchemaAttr(0, "hiddenRow")]
+    [SchemaAttr(0, "hiddenColumn")]
+    [SchemaAttr(0, "author")]
+    [SchemaAttr(0, "oldLength")]
+    [SchemaAttr(0, "newLength")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionComment : OpenXmlLeafElement
     {
         /// <summary>
@@ -19002,6 +20002,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rqt.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "sheetId")]
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "fieldId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionQueryTable : OpenXmlLeafElement
     {
         /// <summary>
@@ -19069,6 +20074,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rcft.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rId")]
+    [SchemaAttr(0, "ua")]
+    [SchemaAttr(0, "ra")]
+    [SchemaAttr(0, "sheetId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RevisionConflict : OpenXmlLeafElement
     {
         /// <summary>
@@ -19148,6 +20159,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>SheetId &lt;x:sheetId></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SheetIdMap : OpenXmlCompositeElement
     {
         /// <summary>
@@ -19219,6 +20233,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Reviewed &lt;x:reviewed></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ReviewedList : OpenXmlCompositeElement
     {
         /// <summary>
@@ -19284,6 +20301,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:reviewed.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Reviewed : OpenXmlLeafElement
     {
         /// <summary>
@@ -19324,6 +20344,19 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:undo.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "index")]
+    [SchemaAttr(0, "exp")]
+    [SchemaAttr(0, "ref3D")]
+    [SchemaAttr(0, "array")]
+    [SchemaAttr(0, "v")]
+    [SchemaAttr(0, "nf")]
+    [SchemaAttr(0, "cs")]
+    [SchemaAttr(0, "dr")]
+    [SchemaAttr(0, "dn")]
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "sId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Undo : OpenXmlLeafElement
     {
         /// <summary>
@@ -19492,6 +20525,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "s")]
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "cm")]
+    [SchemaAttr(0, "vm")]
+    [SchemaAttr(0, "ph")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OldCell : CellType
     {
         /// <summary>
@@ -19559,6 +20600,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "s")]
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "cm")]
+    [SchemaAttr(0, "vm")]
+    [SchemaAttr(0, "ph")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Cell : CellType
     {
         /// <summary>
@@ -19629,6 +20678,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "s")]
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "cm")]
+    [SchemaAttr(0, "vm")]
+    [SchemaAttr(0, "ph")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class CellType : OpenXmlCompositeElement
     {
         /// <summary>
@@ -19805,6 +20862,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "s")]
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "cm")]
+    [SchemaAttr(0, "vm")]
+    [SchemaAttr(0, "ph")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NewCell : OpenXmlCompositeElement
     {
         /// <summary>
@@ -20353,6 +21418,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:sheetId.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SheetId : OpenXmlLeafElement
     {
         /// <summary>
@@ -20393,6 +21461,21 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:f.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "aca")]
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "dt2D")]
+    [SchemaAttr(0, "dtr")]
+    [SchemaAttr(0, "del1")]
+    [SchemaAttr(0, "del2")]
+    [SchemaAttr(0, "r1")]
+    [SchemaAttr(0, "r2")]
+    [SchemaAttr(0, "ca")]
+    [SchemaAttr(0, "si")]
+    [SchemaAttr(0, "bx")]
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CellFormula : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -20585,6 +21668,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "guid")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "dateTime")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class UserInfo : OpenXmlCompositeElement
     {
         /// <summary>
@@ -20716,6 +21805,21 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "spans")]
+    [SchemaAttr(0, "s")]
+    [SchemaAttr(0, "customFormat")]
+    [SchemaAttr(0, "ht")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "customHeight")]
+    [SchemaAttr(0, "outlineLevel")]
+    [SchemaAttr(0, "collapsed")]
+    [SchemaAttr(0, "thickTop")]
+    [SchemaAttr(0, "thickBot")]
+    [SchemaAttr(0, "ph")]
+    [SchemaAttr(55, "dyDescent")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Row : OpenXmlCompositeElement
     {
         /// <summary>
@@ -20924,6 +22028,18 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:col.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "min")]
+    [SchemaAttr(0, "max")]
+    [SchemaAttr(0, "width")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "bestFit")]
+    [SchemaAttr(0, "customWidth")]
+    [SchemaAttr(0, "phonetic")]
+    [SchemaAttr(0, "outlineLevel")]
+    [SchemaAttr(0, "collapsed")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Column : OpenXmlLeafElement
     {
         /// <summary>
@@ -21072,6 +22188,12 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:outlinePr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "applyStyles")]
+    [SchemaAttr(0, "summaryBelow")]
+    [SchemaAttr(0, "summaryRight")]
+    [SchemaAttr(0, "showOutlineSymbols")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OutlineProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -21141,6 +22263,10 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:pageSetUpPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "autoPageBreaks")]
+    [SchemaAttr(0, "fitToPage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PageSetupProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -21188,6 +22314,13 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:pane.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "xSplit")]
+    [SchemaAttr(0, "ySplit")]
+    [SchemaAttr(0, "topLeftCell")]
+    [SchemaAttr(0, "activePane")]
+    [SchemaAttr(0, "state")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Pane : OpenXmlLeafElement
     {
         /// <summary>
@@ -21268,6 +22401,12 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:selection.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "pane")]
+    [SchemaAttr(0, "activeCell")]
+    [SchemaAttr(0, "activeCellId")]
+    [SchemaAttr(0, "sqref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Selection : OpenXmlLeafElement
     {
         /// <summary>
@@ -21344,6 +22483,25 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>PivotArea &lt;x:pivotArea></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "pane")]
+    [SchemaAttr(0, "showHeader")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "data")]
+    [SchemaAttr(0, "extendable")]
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "axis")]
+    [SchemaAttr(0, "dimension")]
+    [SchemaAttr(0, "start")]
+    [SchemaAttr(0, "min")]
+    [SchemaAttr(0, "max")]
+    [SchemaAttr(0, "activeRow")]
+    [SchemaAttr(0, "activeCol")]
+    [SchemaAttr(0, "previousRow")]
+    [SchemaAttr(0, "previousCol")]
+    [SchemaAttr(0, "click")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotSelection : OpenXmlCompositeElement
     {
         /// <summary>
@@ -21607,6 +22765,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:brk.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "min")]
+    [SchemaAttr(0, "max")]
+    [SchemaAttr(0, "man")]
+    [SchemaAttr(0, "pt")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Break : OpenXmlLeafElement
     {
         /// <summary>
@@ -21690,6 +22855,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:dataRef.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "sheet")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataReference : OpenXmlLeafElement
     {
         /// <summary>
@@ -21768,6 +22939,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Break &lt;x:brk></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "manualBreakCount")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RowBreaks : PageBreakType
     {
         /// <summary>
@@ -21828,6 +23003,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Break &lt;x:brk></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "manualBreakCount")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ColumnBreaks : PageBreakType
     {
         /// <summary>
@@ -21888,6 +23067,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Break &lt;x:brk></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "manualBreakCount")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class PageBreakType : OpenXmlCompositeElement
     {
         /// <summary>
@@ -21956,6 +23139,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:pageMargins.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "left")]
+    [SchemaAttr(0, "right")]
+    [SchemaAttr(0, "top")]
+    [SchemaAttr(0, "bottom")]
+    [SchemaAttr(0, "header")]
+    [SchemaAttr(0, "footer")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PageMargins : OpenXmlLeafElement
     {
         /// <summary>
@@ -22071,6 +23262,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:printOptions.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "horizontalCentered")]
+    [SchemaAttr(0, "verticalCentered")]
+    [SchemaAttr(0, "headings")]
+    [SchemaAttr(0, "gridLines")]
+    [SchemaAttr(0, "gridLinesSet")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PrintOptions : OpenXmlLeafElement
     {
         /// <summary>
@@ -22151,6 +23349,25 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:pageSetup.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "paperSize")]
+    [SchemaAttr(0, "scale")]
+    [SchemaAttr(0, "firstPageNumber")]
+    [SchemaAttr(0, "fitToWidth")]
+    [SchemaAttr(0, "fitToHeight")]
+    [SchemaAttr(0, "pageOrder")]
+    [SchemaAttr(0, "orientation")]
+    [SchemaAttr(0, "usePrinterDefaults")]
+    [SchemaAttr(0, "blackAndWhite")]
+    [SchemaAttr(0, "draft")]
+    [SchemaAttr(0, "cellComments")]
+    [SchemaAttr(0, "useFirstPageNumber")]
+    [SchemaAttr(0, "errors")]
+    [SchemaAttr(0, "horizontalDpi")]
+    [SchemaAttr(0, "verticalDpi")]
+    [SchemaAttr(0, "copies")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PageSetup : OpenXmlLeafElement
     {
         /// <summary>
@@ -22382,6 +23599,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>FirstFooter &lt;x:firstFooter></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "differentOddEven")]
+    [SchemaAttr(0, "differentFirst")]
+    [SchemaAttr(0, "scaleWithDoc")]
+    [SchemaAttr(0, "alignWithMargins")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class HeaderFooter : OpenXmlCompositeElement
     {
         /// <summary>
@@ -22576,6 +23799,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class AutoFilter : OpenXmlCompositeElement
     {
         /// <summary>
@@ -22655,6 +23881,21 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ConditionalFormattingRuleExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "dxfId")]
+    [SchemaAttr(0, "priority")]
+    [SchemaAttr(0, "stopIfTrue")]
+    [SchemaAttr(0, "aboveAverage")]
+    [SchemaAttr(0, "percent")]
+    [SchemaAttr(0, "bottom")]
+    [SchemaAttr(0, "operator")]
+    [SchemaAttr(0, "text")]
+    [SchemaAttr(0, "timePeriod")]
+    [SchemaAttr(0, "rank")]
+    [SchemaAttr(0, "stdDev")]
+    [SchemaAttr(0, "equalAverage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ConditionalFormattingRule : OpenXmlCompositeElement
     {
         /// <summary>
@@ -22869,6 +24110,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:hyperlink.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(19, "id")]
+    [SchemaAttr(0, "location")]
+    [SchemaAttr(0, "tooltip")]
+    [SchemaAttr(0, "display")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Hyperlink : OpenXmlLeafElement
     {
         /// <summary>
@@ -22965,6 +24213,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "val")]
+    [SchemaAttr(0, "gte")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ConditionalFormatValueObject : OpenXmlCompositeElement
     {
         /// <summary>
@@ -23074,6 +24327,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>InputCells &lt;x:inputCells></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "locked")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "user")]
+    [SchemaAttr(0, "comment")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Scenario : OpenXmlCompositeElement
     {
         /// <summary>
@@ -23202,6 +24463,16 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:protectedRange.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "password")]
+    [SchemaAttr(0, "algorithmName")]
+    [SchemaAttr(0, "hashValue")]
+    [SchemaAttr(0, "saltValue")]
+    [SchemaAttr(0, "spinCount")]
+    [SchemaAttr(0, "sqref")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "securityDescriptor")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ProtectedRange : OpenXmlLeafElement
     {
         /// <summary>
@@ -23327,6 +24598,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:cellWatch.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CellWatch : OpenXmlLeafElement
     {
         /// <summary>
@@ -23367,6 +24641,19 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:pageSetup.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "paperSize")]
+    [SchemaAttr(0, "firstPageNumber")]
+    [SchemaAttr(0, "orientation")]
+    [SchemaAttr(0, "usePrinterDefaults")]
+    [SchemaAttr(0, "blackAndWhite")]
+    [SchemaAttr(0, "draft")]
+    [SchemaAttr(0, "useFirstPageNumber")]
+    [SchemaAttr(0, "horizontalDpi")]
+    [SchemaAttr(0, "verticalDpi")]
+    [SchemaAttr(0, "copies")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ChartSheetPageSetup : OpenXmlLeafElement
     {
         /// <summary>
@@ -23519,6 +24806,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:customPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CustomProperty : OpenXmlLeafElement
     {
         /// <summary>
@@ -23576,6 +24867,16 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:webPublishItem.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "divId")]
+    [SchemaAttr(0, "sourceType")]
+    [SchemaAttr(0, "sourceRef")]
+    [SchemaAttr(0, "sourceObject")]
+    [SchemaAttr(0, "destinationFile")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "autoRepublish")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebPublishItem : OpenXmlLeafElement
     {
         /// <summary>
@@ -23708,6 +25009,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:tablePart.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TablePart : OpenXmlLeafElement
     {
         /// <summary>
@@ -23756,6 +25060,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "tabSelected")]
+    [SchemaAttr(0, "zoomScale")]
+    [SchemaAttr(0, "workbookViewId")]
+    [SchemaAttr(0, "zoomToFit")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ChartSheetView : OpenXmlCompositeElement
     {
         /// <summary>
@@ -23880,6 +25190,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>HeaderFooter &lt;x:headerFooter></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "guid")]
+    [SchemaAttr(0, "scale")]
+    [SchemaAttr(0, "state")]
+    [SchemaAttr(0, "zoomToFit")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CustomChartsheetView : OpenXmlCompositeElement
     {
         /// <summary>
@@ -24026,6 +25342,13 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:inputCells.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "deleted")]
+    [SchemaAttr(0, "undone")]
+    [SchemaAttr(0, "val")]
+    [SchemaAttr(0, "numFmtId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class InputCells : OpenXmlLeafElement
     {
         /// <summary>
@@ -24119,6 +25442,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ControlProperties &lt;x:controlPr></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "shapeId")]
+    [SchemaAttr(19, "id")]
+    [SchemaAttr(0, "name")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Control : OpenXmlCompositeElement
     {
         /// <summary>
@@ -24231,6 +25559,18 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:ignoredError.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "sqref")]
+    [SchemaAttr(0, "evalError")]
+    [SchemaAttr(0, "twoDigitTextYear")]
+    [SchemaAttr(0, "numberStoredAsText")]
+    [SchemaAttr(0, "formula")]
+    [SchemaAttr(0, "formulaRange")]
+    [SchemaAttr(0, "unlockedFormula")]
+    [SchemaAttr(0, "emptyCellReference")]
+    [SchemaAttr(0, "listDataValidation")]
+    [SchemaAttr(0, "calculatedColumn")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class IgnoredError : OpenXmlLeafElement
     {
         /// <summary>
@@ -24370,6 +25710,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:mergeCell.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MergeCell : OpenXmlLeafElement
     {
         /// <summary>
@@ -24417,6 +25760,21 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Formula2 &lt;x:formula2></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "errorStyle")]
+    [SchemaAttr(0, "imeMode")]
+    [SchemaAttr(0, "operator")]
+    [SchemaAttr(0, "allowBlank")]
+    [SchemaAttr(0, "showDropDown")]
+    [SchemaAttr(0, "showInputMessage")]
+    [SchemaAttr(0, "showErrorMessage")]
+    [SchemaAttr(0, "errorTitle")]
+    [SchemaAttr(0, "error")]
+    [SchemaAttr(0, "promptTitle")]
+    [SchemaAttr(0, "prompt")]
+    [SchemaAttr(0, "sqref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataValidation : OpenXmlCompositeElement
     {
         /// <summary>
@@ -24672,6 +26030,27 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "windowProtection")]
+    [SchemaAttr(0, "showFormulas")]
+    [SchemaAttr(0, "showGridLines")]
+    [SchemaAttr(0, "showRowColHeaders")]
+    [SchemaAttr(0, "showZeros")]
+    [SchemaAttr(0, "rightToLeft")]
+    [SchemaAttr(0, "tabSelected")]
+    [SchemaAttr(0, "showRuler")]
+    [SchemaAttr(0, "showOutlineSymbols")]
+    [SchemaAttr(0, "defaultGridColor")]
+    [SchemaAttr(0, "showWhiteSpace")]
+    [SchemaAttr(0, "view")]
+    [SchemaAttr(0, "topLeftCell")]
+    [SchemaAttr(0, "colorId")]
+    [SchemaAttr(0, "zoomScale")]
+    [SchemaAttr(0, "zoomScaleNormal")]
+    [SchemaAttr(0, "zoomScaleSheetLayoutView")]
+    [SchemaAttr(0, "zoomScalePageLayoutView")]
+    [SchemaAttr(0, "workbookViewId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SheetView : OpenXmlCompositeElement
     {
         /// <summary>
@@ -24977,6 +26356,28 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "guid")]
+    [SchemaAttr(0, "scale")]
+    [SchemaAttr(0, "colorId")]
+    [SchemaAttr(0, "showPageBreaks")]
+    [SchemaAttr(0, "showFormulas")]
+    [SchemaAttr(0, "showGridLines")]
+    [SchemaAttr(0, "showRowCol")]
+    [SchemaAttr(0, "outlineSymbols")]
+    [SchemaAttr(0, "zeroValues")]
+    [SchemaAttr(0, "fitToPage")]
+    [SchemaAttr(0, "printArea")]
+    [SchemaAttr(0, "filter")]
+    [SchemaAttr(0, "showAutoFilter")]
+    [SchemaAttr(0, "hiddenRows")]
+    [SchemaAttr(0, "hiddenColumns")]
+    [SchemaAttr(0, "state")]
+    [SchemaAttr(0, "filterUnique")]
+    [SchemaAttr(0, "view")]
+    [SchemaAttr(0, "showRuler")]
+    [SchemaAttr(0, "topLeftCell")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CustomSheetView : OpenXmlCompositeElement
     {
         /// <summary>
@@ -25411,6 +26812,15 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
     ///   <item><description>EmbeddedObjectProperties &lt;x:objectPr></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "progId")]
+    [SchemaAttr(0, "dvAspect")]
+    [SchemaAttr(0, "link")]
+    [SchemaAttr(0, "oleUpdate")]
+    [SchemaAttr(0, "autoLoad")]
+    [SchemaAttr(0, "shapeId")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OleObject : OpenXmlCompositeElement
     {
         /// <summary>
@@ -25570,6 +26980,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MetadataType &lt;x:metadataType></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MetadataTypes : OpenXmlCompositeElement
     {
         /// <summary>
@@ -25642,6 +27055,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CharacterValue &lt;x:s></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MetadataStrings : OpenXmlCompositeElement
     {
         /// <summary>
@@ -25714,6 +27130,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Mdx &lt;x:mdx></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MdxMetadata : OpenXmlCompositeElement
     {
         /// <summary>
@@ -25787,6 +27206,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FutureMetadata : OpenXmlCompositeElement
     {
         /// <summary>
@@ -25878,6 +27301,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MetadataBlock &lt;x:bk></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CellMetadata : MetadataBlocksType
     {
         /// <summary>
@@ -25937,6 +27363,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MetadataBlock &lt;x:bk></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ValueMetadata : MetadataBlocksType
     {
         /// <summary>
@@ -25996,6 +27425,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MetadataBlock &lt;x:bk></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class MetadataBlocksType : OpenXmlCompositeElement
     {
         /// <summary>
@@ -26053,6 +27485,36 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:metadataType.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "minSupportedVersion")]
+    [SchemaAttr(0, "ghostRow")]
+    [SchemaAttr(0, "ghostCol")]
+    [SchemaAttr(0, "edit")]
+    [SchemaAttr(0, "delete")]
+    [SchemaAttr(0, "copy")]
+    [SchemaAttr(0, "pasteAll")]
+    [SchemaAttr(0, "pasteFormulas")]
+    [SchemaAttr(0, "pasteValues")]
+    [SchemaAttr(0, "pasteFormats")]
+    [SchemaAttr(0, "pasteComments")]
+    [SchemaAttr(0, "pasteDataValidation")]
+    [SchemaAttr(0, "pasteBorders")]
+    [SchemaAttr(0, "pasteColWidths")]
+    [SchemaAttr(0, "pasteNumberFormats")]
+    [SchemaAttr(0, "merge")]
+    [SchemaAttr(0, "splitFirst")]
+    [SchemaAttr(0, "splitAll")]
+    [SchemaAttr(0, "rowColShift")]
+    [SchemaAttr(0, "clearAll")]
+    [SchemaAttr(0, "clearFormats")]
+    [SchemaAttr(0, "clearContents")]
+    [SchemaAttr(0, "clearComments")]
+    [SchemaAttr(0, "assign")]
+    [SchemaAttr(0, "coerce")]
+    [SchemaAttr(0, "adjust")]
+    [SchemaAttr(0, "cellMeta")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MetadataType : OpenXmlLeafElement
     {
         /// <summary>
@@ -26453,6 +27915,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rc.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "v")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MetadataRecord : OpenXmlLeafElement
     {
         /// <summary>
@@ -26589,6 +28055,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MdxKpi &lt;x:k></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "n")]
+    [SchemaAttr(0, "f")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Mdx : OpenXmlCompositeElement
     {
         /// <summary>
@@ -26737,6 +28207,18 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>NameIndex &lt;x:n></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "c")]
+    [SchemaAttr(0, "ct")]
+    [SchemaAttr(0, "si")]
+    [SchemaAttr(0, "fi")]
+    [SchemaAttr(0, "bc")]
+    [SchemaAttr(0, "fc")]
+    [SchemaAttr(0, "i")]
+    [SchemaAttr(0, "u")]
+    [SchemaAttr(0, "st")]
+    [SchemaAttr(0, "b")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MdxTuple : OpenXmlCompositeElement
     {
         /// <summary>
@@ -26917,6 +28399,11 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     ///   <item><description>NameIndex &lt;x:n></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ns")]
+    [SchemaAttr(0, "c")]
+    [SchemaAttr(0, "o")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MdxSet : OpenXmlCompositeElement
     {
         /// <summary>
@@ -27010,6 +28497,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:p.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "n")]
+    [SchemaAttr(0, "np")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MdxMemberProp : OpenXmlLeafElement
     {
         /// <summary>
@@ -27067,6 +28558,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:k.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "n")]
+    [SchemaAttr(0, "np")]
+    [SchemaAttr(0, "p")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MdxKpi : OpenXmlLeafElement
     {
         /// <summary>
@@ -27138,6 +28634,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:n.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "x")]
+    [SchemaAttr(0, "s")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NameIndex : OpenXmlLeafElement
     {
         /// <summary>
@@ -27197,6 +28697,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "connectionId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SingleXmlCell : OpenXmlCompositeElement
     {
         /// <summary>
@@ -27331,6 +28836,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "uniqueName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class XmlCellProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -27450,6 +28959,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "mapId")]
+    [SchemaAttr(0, "xpath")]
+    [SchemaAttr(0, "xmlDataType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class XmlProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -27568,6 +29082,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>BackgroundColor &lt;x:bgColor></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "patternType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PatternFill : OpenXmlCompositeElement
     {
         /// <summary>
@@ -27667,6 +29184,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>GradientStop &lt;x:stop></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "degree")]
+    [SchemaAttr(0, "left")]
+    [SchemaAttr(0, "right")]
+    [SchemaAttr(0, "top")]
+    [SchemaAttr(0, "bottom")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GradientFill : OpenXmlCompositeElement
     {
         /// <summary>
@@ -27798,6 +29323,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "position")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GradientStop : OpenXmlCompositeElement
     {
         /// <summary>
@@ -27880,6 +29408,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:numFmt.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "numFmtId")]
+    [SchemaAttr(0, "formatCode")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NumberingFormat : OpenXmlLeafElement
     {
         /// <summary>
@@ -27934,6 +29466,18 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:alignment.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "horizontal")]
+    [SchemaAttr(0, "vertical")]
+    [SchemaAttr(0, "textRotation")]
+    [SchemaAttr(0, "wrapText")]
+    [SchemaAttr(0, "indent")]
+    [SchemaAttr(0, "relativeIndent")]
+    [SchemaAttr(0, "justifyLastLine")]
+    [SchemaAttr(0, "shrinkToFit")]
+    [SchemaAttr(0, "readingOrder")]
+    [SchemaAttr(0, "mergeCell")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Alignment : OpenXmlLeafElement
     {
         /// <summary>
@@ -28072,6 +29616,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:protection.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "locked")]
+    [SchemaAttr(0, "hidden")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Protection : OpenXmlLeafElement
     {
         /// <summary>
@@ -28517,6 +30065,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>HorizontalBorder &lt;x:horizontal></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "diagonalUp")]
+    [SchemaAttr(0, "diagonalDown")]
+    [SchemaAttr(0, "outline")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Border : OpenXmlCompositeElement
     {
         /// <summary>
@@ -28861,6 +30414,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>TableStyleElement &lt;x:tableStyleElement></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "pivot")]
+    [SchemaAttr(0, "table")]
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TableStyle : OpenXmlCompositeElement
     {
         /// <summary>
@@ -28963,6 +30522,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:rgbColor.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rgb")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RgbColor : OpenXmlLeafElement
     {
         /// <summary>
@@ -29008,6 +30570,14 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "xfId")]
+    [SchemaAttr(0, "builtinId")]
+    [SchemaAttr(0, "iLevel")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "customBuiltin")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CellStyle : OpenXmlCompositeElement
     {
         /// <summary>
@@ -29157,6 +30727,21 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "numFmtId")]
+    [SchemaAttr(0, "fontId")]
+    [SchemaAttr(0, "fillId")]
+    [SchemaAttr(0, "borderId")]
+    [SchemaAttr(0, "xfId")]
+    [SchemaAttr(0, "quotePrefix")]
+    [SchemaAttr(0, "pivotButton")]
+    [SchemaAttr(0, "applyNumberFormat")]
+    [SchemaAttr(0, "applyFont")]
+    [SchemaAttr(0, "applyFill")]
+    [SchemaAttr(0, "applyBorder")]
+    [SchemaAttr(0, "applyAlignment")]
+    [SchemaAttr(0, "applyProtection")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CellFormat : OpenXmlCompositeElement
     {
         /// <summary>
@@ -29402,6 +30987,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:name.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FontName : OpenXmlLeafElement
     {
         /// <summary>
@@ -29443,6 +31031,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:family.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FontFamilyNumbering : OpenXmlLeafElement
     {
         /// <summary>
@@ -29483,6 +31074,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:charset.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FontCharSet : OpenXmlLeafElement
     {
         /// <summary>
@@ -29523,6 +31117,11 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:tableStyleElement.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "dxfId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TableStyleElement : OpenXmlLeafElement
     {
         /// <summary>
@@ -29763,6 +31362,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:definedName.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "refersTo")]
+    [SchemaAttr(0, "sheetId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ExternalDefinedName : OpenXmlLeafElement
     {
         /// <summary>
@@ -29831,6 +31435,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExternalRow &lt;x:row></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "sheetId")]
+    [SchemaAttr(0, "refreshError")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ExternalSheetData : OpenXmlCompositeElement
     {
         /// <summary>
@@ -29917,6 +31525,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExternalCell &lt;x:cell></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ExternalRow : OpenXmlCompositeElement
     {
         /// <summary>
@@ -29992,6 +31603,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Xstring &lt;x:v></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "vm")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ExternalCell : OpenXmlCompositeElement
     {
         /// <summary>
@@ -30162,6 +31778,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Values &lt;x:values></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "ole")]
+    [SchemaAttr(0, "advise")]
+    [SchemaAttr(0, "preferPic")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DdeItem : OpenXmlCompositeElement
     {
         /// <summary>
@@ -30281,6 +31903,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Value &lt;x:value></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rows")]
+    [SchemaAttr(0, "cols")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Values : OpenXmlCompositeElement
     {
         /// <summary>
@@ -30365,6 +31991,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DdeLinkValue &lt;x:val></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "t")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Value : OpenXmlCompositeElement
     {
         /// <summary>
@@ -30513,6 +32142,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>SheetDataSet &lt;x:sheetDataSet></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ExternalBook : OpenXmlCompositeElement
     {
         /// <summary>
@@ -30633,6 +32265,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DdeItems &lt;x:ddeItems></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ddeService")]
+    [SchemaAttr(0, "ddeTopic")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DdeLink : OpenXmlCompositeElement
     {
         /// <summary>
@@ -30736,6 +32372,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>OleItems &lt;x:oleItems></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+    [SchemaAttr(0, "progId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OleLink : OpenXmlCompositeElement
     {
         /// <summary>
@@ -30835,6 +32475,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:sheetName.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SheetName : OpenXmlLeafElement
     {
         /// <summary>
@@ -30918,6 +32561,20 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "uniqueName")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "totalsRowFunction")]
+    [SchemaAttr(0, "totalsRowLabel")]
+    [SchemaAttr(0, "queryTableFieldId")]
+    [SchemaAttr(0, "headerRowDxfId")]
+    [SchemaAttr(0, "dataDxfId")]
+    [SchemaAttr(0, "totalsRowDxfId")]
+    [SchemaAttr(0, "headerRowCellStyle")]
+    [SchemaAttr(0, "dataCellStyle")]
+    [SchemaAttr(0, "totalsRowCellStyle")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TableColumn : OpenXmlCompositeElement
     {
         /// <summary>
@@ -31182,6 +32839,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:calculatedColumnFormula.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "array")]
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CalculatedColumnFormula : TableFormulaType
     {
         /// <summary>
@@ -31219,6 +32880,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:totalsRowFormula.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "array")]
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TotalsRowFormula : TableFormulaType
     {
         /// <summary>
@@ -31256,6 +32921,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "array")]
+    [SchemaAttr(1, "space")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class TableFormulaType : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -31321,6 +32990,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "mapId")]
+    [SchemaAttr(0, "xpath")]
+    [SchemaAttr(0, "denormalized")]
+    [SchemaAttr(0, "xmlDataType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class XmlColumnProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -31450,6 +33125,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Main &lt;x:main></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VolatileType : OpenXmlCompositeElement
     {
         /// <summary>
@@ -31524,6 +33202,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Topic &lt;x:tp></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "first")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Main : OpenXmlCompositeElement
     {
         /// <summary>
@@ -31601,6 +33282,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>TopicReferences &lt;x:tr></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "t")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Topic : OpenXmlCompositeElement
     {
         /// <summary>
@@ -31683,6 +33367,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:tr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "r")]
+    [SchemaAttr(0, "s")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TopicReferences : OpenXmlLeafElement
     {
         /// <summary>
@@ -31737,6 +33425,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:pivotCache.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "cacheId")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotCache : OpenXmlLeafElement
     {
         /// <summary>
@@ -31795,6 +33487,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:webPublishObject.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "divId")]
+    [SchemaAttr(0, "sourceObject")]
+    [SchemaAttr(0, "destinationFile")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "autoRepublish")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebPublishObject : OpenXmlLeafElement
     {
         /// <summary>
@@ -31900,6 +33600,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:externalReference.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ExternalReference : OpenXmlLeafElement
     {
         /// <summary>
@@ -31948,6 +33651,32 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "guid")]
+    [SchemaAttr(0, "autoUpdate")]
+    [SchemaAttr(0, "mergeInterval")]
+    [SchemaAttr(0, "changesSavedWin")]
+    [SchemaAttr(0, "onlySync")]
+    [SchemaAttr(0, "personalView")]
+    [SchemaAttr(0, "includePrintSettings")]
+    [SchemaAttr(0, "includeHiddenRowCol")]
+    [SchemaAttr(0, "maximized")]
+    [SchemaAttr(0, "minimized")]
+    [SchemaAttr(0, "showHorizontalScroll")]
+    [SchemaAttr(0, "showVerticalScroll")]
+    [SchemaAttr(0, "showSheetTabs")]
+    [SchemaAttr(0, "xWindow")]
+    [SchemaAttr(0, "yWindow")]
+    [SchemaAttr(0, "windowWidth")]
+    [SchemaAttr(0, "windowHeight")]
+    [SchemaAttr(0, "tabRatio")]
+    [SchemaAttr(0, "activeSheetId")]
+    [SchemaAttr(0, "showFormulaBar")]
+    [SchemaAttr(0, "showStatusbar")]
+    [SchemaAttr(0, "showComments")]
+    [SchemaAttr(0, "showObjects")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CustomWorkbookView : OpenXmlCompositeElement
     {
         /// <summary>
@@ -32294,6 +34023,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:sheet.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "sheetId")]
+    [SchemaAttr(0, "state")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Sheet : OpenXmlLeafElement
     {
         /// <summary>
@@ -32388,6 +34123,21 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "visibility")]
+    [SchemaAttr(0, "minimized")]
+    [SchemaAttr(0, "showHorizontalScroll")]
+    [SchemaAttr(0, "showVerticalScroll")]
+    [SchemaAttr(0, "showSheetTabs")]
+    [SchemaAttr(0, "xWindow")]
+    [SchemaAttr(0, "yWindow")]
+    [SchemaAttr(0, "windowWidth")]
+    [SchemaAttr(0, "windowHeight")]
+    [SchemaAttr(0, "tabRatio")]
+    [SchemaAttr(0, "firstSheet")]
+    [SchemaAttr(0, "activeTab")]
+    [SchemaAttr(0, "autoFilterDateGrouping")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WorkbookView : OpenXmlCompositeElement
     {
         /// <summary>
@@ -32602,6 +34352,23 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:definedName.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "comment")]
+    [SchemaAttr(0, "customMenu")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "help")]
+    [SchemaAttr(0, "statusBar")]
+    [SchemaAttr(0, "localSheetId")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "function")]
+    [SchemaAttr(0, "vbProcedure")]
+    [SchemaAttr(0, "xlm")]
+    [SchemaAttr(0, "functionGroupId")]
+    [SchemaAttr(0, "shortcutKey")]
+    [SchemaAttr(0, "publishToServer")]
+    [SchemaAttr(0, "workbookParameter")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DefinedName : OpenXmlLeafTextElement
     {
         /// <summary>
@@ -32811,6 +34578,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:functionGroup.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FunctionGroup : OpenXmlLeafElement
     {
         /// <summary>
@@ -32857,6 +34627,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Office2010.Excel.Table &lt;x14:table></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TableExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -32934,6 +34707,11 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>ToMarker &lt;x:to></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "moveWithCells")]
+    [SchemaAttr(0, "sizeWithCells")]
+    [SchemaAttr(0, "z-order")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ObjectAnchor : OpenXmlCompositeElement
     {
         /// <summary>
@@ -33295,6 +35073,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2010.Excel.Id &lt;x14:id></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ConditionalFormattingRuleExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -33371,6 +35152,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2010.Excel.PivotHierarchy &lt;x14:pivotHierarchy></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotHierarchyExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -33447,6 +35231,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2010.Excel.PivotField &lt;x14:pivotField></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotFieldExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -33523,6 +35310,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2010.Excel.SourceConnection &lt;x14:sourceConnection></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CacheSourceExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -33599,6 +35389,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>TableColumn &lt;x:tableColumn></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TableColumns : OpenXmlCompositeElement
     {
         /// <summary>
@@ -33664,6 +35457,13 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:tableStyleInfo.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "showFirstColumn")]
+    [SchemaAttr(0, "showLastColumn")]
+    [SchemaAttr(0, "showRowStripes")]
+    [SchemaAttr(0, "showColumnStripes")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TableStyleInfo : OpenXmlLeafElement
     {
         /// <summary>
@@ -33804,6 +35604,12 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:oleItem.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "icon")]
+    [SchemaAttr(0, "advise")]
+    [SchemaAttr(0, "preferPic")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OleItem : OpenXmlLeafElement
     {
         /// <summary>
@@ -33884,6 +35690,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class StartBorder : BorderPropertiesType
     {
         /// <summary>
@@ -33943,6 +35752,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class EndBorder : BorderPropertiesType
     {
         /// <summary>
@@ -34002,6 +35814,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class LeftBorder : BorderPropertiesType
     {
         /// <summary>
@@ -34060,6 +35875,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RightBorder : BorderPropertiesType
     {
         /// <summary>
@@ -34118,6 +35936,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TopBorder : BorderPropertiesType
     {
         /// <summary>
@@ -34176,6 +35997,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BottomBorder : BorderPropertiesType
     {
         /// <summary>
@@ -34234,6 +36058,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DiagonalBorder : BorderPropertiesType
     {
         /// <summary>
@@ -34292,6 +36119,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VerticalBorder : BorderPropertiesType
     {
         /// <summary>
@@ -34350,6 +36180,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class HorizontalBorder : BorderPropertiesType
     {
         /// <summary>
@@ -34408,6 +36241,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "style")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class BorderPropertiesType : OpenXmlCompositeElement
     {
         /// <summary>
@@ -34484,6 +36320,23 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ObjectAnchor &lt;x:anchor></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "locked")]
+    [SchemaAttr(0, "defaultSize")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(0, "disabled")]
+    [SchemaAttr(0, "recalcAlways")]
+    [SchemaAttr(0, "uiObject")]
+    [SchemaAttr(0, "autoFill")]
+    [SchemaAttr(0, "autoLine")]
+    [SchemaAttr(0, "autoPict")]
+    [SchemaAttr(0, "macro")]
+    [SchemaAttr(0, "altText")]
+    [SchemaAttr(0, "linkedCell")]
+    [SchemaAttr(0, "listFillRange")]
+    [SchemaAttr(0, "cf")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ControlProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -34726,6 +36579,20 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ObjectAnchor &lt;x:anchor></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "locked")]
+    [SchemaAttr(0, "defaultSize")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(0, "disabled")]
+    [SchemaAttr(0, "uiObject")]
+    [SchemaAttr(0, "autoFill")]
+    [SchemaAttr(0, "autoLine")]
+    [SchemaAttr(0, "autoPict")]
+    [SchemaAttr(0, "macro")]
+    [SchemaAttr(0, "altText")]
+    [SchemaAttr(0, "dde")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class EmbeddedObjectProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -34935,6 +36802,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>TabColor &lt;x:tabColor></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "published")]
+    [SchemaAttr(0, "codeName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ChartSheetProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -35088,6 +36959,15 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:sheetProtection.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "password")]
+    [SchemaAttr(0, "algorithmName")]
+    [SchemaAttr(0, "hashValue")]
+    [SchemaAttr(0, "saltValue")]
+    [SchemaAttr(0, "spinCount")]
+    [SchemaAttr(0, "content")]
+    [SchemaAttr(0, "objects")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ChartSheetProtection : OpenXmlLeafElement
     {
         /// <summary>
@@ -35252,6 +37132,9 @@ aBuilder.AddValidator(new StringValidator() { Length = (2L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:drawing.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Drawing : OpenXmlLeafElement
     {
         /// <summary>
@@ -35295,6 +37178,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:legacyDrawing.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class LegacyDrawing : LegacyDrawingType
     {
         /// <summary>
@@ -35320,6 +37206,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:legacyDrawingHF.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class LegacyDrawingHeaderFooter : LegacyDrawingType
     {
         /// <summary>
@@ -35344,6 +37233,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class LegacyDrawingType : OpenXmlLeafElement
     {
         /// <summary>
@@ -35382,6 +37274,27 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:drawingHF.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+    [SchemaAttr(0, "lho")]
+    [SchemaAttr(0, "lhe")]
+    [SchemaAttr(0, "lhf")]
+    [SchemaAttr(0, "cho")]
+    [SchemaAttr(0, "che")]
+    [SchemaAttr(0, "chf")]
+    [SchemaAttr(0, "rho")]
+    [SchemaAttr(0, "rhe")]
+    [SchemaAttr(0, "rhf")]
+    [SchemaAttr(0, "lfo")]
+    [SchemaAttr(0, "lfe")]
+    [SchemaAttr(0, "lff")]
+    [SchemaAttr(0, "cfo")]
+    [SchemaAttr(0, "cfe")]
+    [SchemaAttr(0, "cff")]
+    [SchemaAttr(0, "rfo")]
+    [SchemaAttr(0, "rfe")]
+    [SchemaAttr(0, "rff")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DrawingHeaderFooter : OpenXmlLeafElement
     {
         /// <summary>
@@ -35622,6 +37535,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:picture.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Picture : OpenXmlLeafElement
     {
         /// <summary>
@@ -35670,6 +37586,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>WebPublishItem &lt;x:webPublishItem></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebPublishItems : OpenXmlCompositeElement
     {
         /// <summary>
@@ -35804,6 +37723,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Color &lt;x:color></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "minLength")]
+    [SchemaAttr(0, "maxLength")]
+    [SchemaAttr(0, "showValue")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataBar : OpenXmlCompositeElement
     {
         /// <summary>
@@ -35901,6 +37825,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ConditionalFormatValueObject &lt;x:cfvo></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "iconSet")]
+    [SchemaAttr(0, "showValue")]
+    [SchemaAttr(0, "percent")]
+    [SchemaAttr(0, "reverse")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class IconSet : OpenXmlCompositeElement
     {
         /// <summary>
@@ -36064,6 +37994,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DataReference &lt;x:dataRef></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataReferences : OpenXmlCompositeElement
     {
         /// <summary>
@@ -36137,6 +38070,17 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PageSetupProperties &lt;x:pageSetUpPr></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "syncHorizontal")]
+    [SchemaAttr(0, "syncVertical")]
+    [SchemaAttr(0, "syncRef")]
+    [SchemaAttr(0, "transitionEvaluation")]
+    [SchemaAttr(0, "transitionEntry")]
+    [SchemaAttr(0, "published")]
+    [SchemaAttr(0, "codeName")]
+    [SchemaAttr(0, "filterMode")]
+    [SchemaAttr(0, "enableFormatConditionsCalculation")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SheetProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -36396,6 +38340,18 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:sheetFormatPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "baseColWidth")]
+    [SchemaAttr(0, "defaultColWidth")]
+    [SchemaAttr(0, "defaultRowHeight")]
+    [SchemaAttr(0, "customHeight")]
+    [SchemaAttr(0, "zeroHeight")]
+    [SchemaAttr(0, "thickTop")]
+    [SchemaAttr(0, "thickBottom")]
+    [SchemaAttr(0, "outlineLevelRow")]
+    [SchemaAttr(0, "outlineLevelCol")]
+    [SchemaAttr(55, "dyDescent")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SheetFormatProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -36544,6 +38500,29 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:sheetProtection.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "password")]
+    [SchemaAttr(0, "algorithmName")]
+    [SchemaAttr(0, "hashValue")]
+    [SchemaAttr(0, "saltValue")]
+    [SchemaAttr(0, "spinCount")]
+    [SchemaAttr(0, "sheet")]
+    [SchemaAttr(0, "objects")]
+    [SchemaAttr(0, "scenarios")]
+    [SchemaAttr(0, "formatCells")]
+    [SchemaAttr(0, "formatColumns")]
+    [SchemaAttr(0, "formatRows")]
+    [SchemaAttr(0, "insertColumns")]
+    [SchemaAttr(0, "insertRows")]
+    [SchemaAttr(0, "insertHyperlinks")]
+    [SchemaAttr(0, "deleteColumns")]
+    [SchemaAttr(0, "deleteRows")]
+    [SchemaAttr(0, "selectLockedCells")]
+    [SchemaAttr(0, "sort")]
+    [SchemaAttr(0, "autoFilter")]
+    [SchemaAttr(0, "pivotTables")]
+    [SchemaAttr(0, "selectUnlockedCells")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SheetProtection : OpenXmlLeafElement
     {
         /// <summary>
@@ -36980,6 +38959,9 @@ aBuilder.AddValidator(new StringValidator() { Length = (2L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:dimension.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SheetDimension : OpenXmlLeafElement
     {
         /// <summary>
@@ -37143,6 +39125,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DataReferences &lt;x:dataRefs></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "function")]
+    [SchemaAttr(0, "leftLabels")]
+    [SchemaAttr(0, "startLabels")]
+    [SchemaAttr(0, "topLabels")]
+    [SchemaAttr(0, "link")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataConsolidate : OpenXmlCompositeElement
     {
         /// <summary>
@@ -37275,6 +39264,10 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "pivot")]
+    [SchemaAttr(0, "sqref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ConditionalFormatting : OpenXmlCompositeElement
     {
         /// <summary>
@@ -37419,6 +39412,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>MemberProperty &lt;x:mp></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MemberProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -37490,6 +39486,10 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>Member &lt;x:member></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "level")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Members : OpenXmlCompositeElement
     {
         /// <summary>
@@ -37631,6 +39631,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>Item &lt;x:item></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Items : OpenXmlCompositeElement
     {
         /// <summary>
@@ -37827,6 +39830,12 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:worksheetSource.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "sheet")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WorksheetSource : OpenXmlLeafElement
     {
         /// <summary>
@@ -37909,6 +39918,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>RangeSets &lt;x:rangeSets></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "autoPage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Consolidation : OpenXmlCompositeElement
     {
         /// <summary>
@@ -38067,6 +40079,23 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>ObjectAnchor &lt;x:anchor></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "locked")]
+    [SchemaAttr(0, "defaultSize")]
+    [SchemaAttr(0, "print")]
+    [SchemaAttr(0, "disabled")]
+    [SchemaAttr(0, "uiObject")]
+    [SchemaAttr(0, "autoFill")]
+    [SchemaAttr(0, "autoLine")]
+    [SchemaAttr(0, "altText")]
+    [SchemaAttr(0, "textHAlign")]
+    [SchemaAttr(0, "textVAlign")]
+    [SchemaAttr(0, "lockText")]
+    [SchemaAttr(0, "justLastX")]
+    [SchemaAttr(0, "autoScale")]
+    [SchemaAttr(0, "rowHidden")]
+    [SchemaAttr(0, "colHidden")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CommentProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -38300,6 +40329,15 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:sortCondition.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "descending")]
+    [SchemaAttr(0, "sortBy")]
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "customList")]
+    [SchemaAttr(0, "dxfId")]
+    [SchemaAttr(0, "iconSet")]
+    [SchemaAttr(0, "iconId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SortCondition : OpenXmlLeafElement
     {
         /// <summary>
@@ -38405,6 +40443,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:filter.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Filter : OpenXmlLeafElement
     {
         /// <summary>
@@ -38444,6 +40485,15 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:dateGroupItem.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "year")]
+    [SchemaAttr(0, "month")]
+    [SchemaAttr(0, "day")]
+    [SchemaAttr(0, "hour")]
+    [SchemaAttr(0, "minute")]
+    [SchemaAttr(0, "second")]
+    [SchemaAttr(0, "dateTimeGrouping")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DateGroupItem : OpenXmlLeafElement
     {
         /// <summary>
@@ -38566,6 +40616,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DateGroupItem &lt;x:dateGroupItem></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "blank")]
+    [SchemaAttr(0, "calendarType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Filters : OpenXmlCompositeElement
     {
         /// <summary>
@@ -38646,6 +40700,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:top10.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "top")]
+    [SchemaAttr(0, "percent")]
+    [SchemaAttr(0, "val")]
+    [SchemaAttr(0, "filterVal")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Top10 : OpenXmlLeafElement
     {
         /// <summary>
@@ -38724,6 +40784,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CustomFilter &lt;x:customFilter></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "and")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CustomFilters : OpenXmlCompositeElement
     {
         /// <summary>
@@ -38789,6 +40852,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:dynamicFilter.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "val")]
+    [SchemaAttr(0, "maxVal")]
+    [SchemaAttr(0, "valIso")]
+    [SchemaAttr(0, "maxValIso")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DynamicFilter : OpenXmlLeafElement
     {
         /// <summary>
@@ -38878,6 +40948,10 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:colorFilter.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "dxfId")]
+    [SchemaAttr(0, "cellColor")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ColorFilter : OpenXmlLeafElement
     {
         /// <summary>
@@ -38929,6 +41003,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:iconFilter.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "iconSet")]
+    [SchemaAttr(0, "iconId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class IconFilter : OpenXmlLeafElement
     {
         /// <summary>
@@ -38987,6 +41065,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.SlicerCacheHideItemsWithNoData &lt;x15:slicerCacheHideItemsWithNoData></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SlicerCacheDefinitionExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -39068,6 +41149,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.MovingPeriodState &lt;x15:movingPeriodState></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotFilterExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -39146,6 +41230,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.QueryTable &lt;x15:queryTable></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class QueryTableExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -39216,6 +41303,12 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:dbPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "connection")]
+    [SchemaAttr(0, "command")]
+    [SchemaAttr(0, "serverCommand")]
+    [SchemaAttr(0, "commandType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DatabaseProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -39290,6 +41383,17 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:olapPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "local")]
+    [SchemaAttr(0, "localConnection")]
+    [SchemaAttr(0, "localRefresh")]
+    [SchemaAttr(0, "sendLocale")]
+    [SchemaAttr(0, "rowDrillCount")]
+    [SchemaAttr(0, "serverFill")]
+    [SchemaAttr(0, "serverNumberFormat")]
+    [SchemaAttr(0, "serverFont")]
+    [SchemaAttr(0, "serverFontColor")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OlapProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -39421,6 +41525,21 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>Tables &lt;x:tables></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "xml")]
+    [SchemaAttr(0, "sourceData")]
+    [SchemaAttr(0, "parsePre")]
+    [SchemaAttr(0, "consecutive")]
+    [SchemaAttr(0, "firstRow")]
+    [SchemaAttr(0, "xl97")]
+    [SchemaAttr(0, "textDates")]
+    [SchemaAttr(0, "xl2000")]
+    [SchemaAttr(0, "url")]
+    [SchemaAttr(0, "post")]
+    [SchemaAttr(0, "htmlTables")]
+    [SchemaAttr(0, "htmlFormat")]
+    [SchemaAttr(0, "editPage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebQueryProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -39638,6 +41757,24 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>TextFields &lt;x:textFields></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "prompt")]
+    [SchemaAttr(0, "fileType")]
+    [SchemaAttr(0, "codePage")]
+    [SchemaAttr(0, "characterSet")]
+    [SchemaAttr(0, "firstRow")]
+    [SchemaAttr(0, "sourceFile")]
+    [SchemaAttr(0, "delimited")]
+    [SchemaAttr(0, "decimal")]
+    [SchemaAttr(0, "thousands")]
+    [SchemaAttr(0, "tab")]
+    [SchemaAttr(0, "space")]
+    [SchemaAttr(0, "comma")]
+    [SchemaAttr(0, "semicolon")]
+    [SchemaAttr(0, "consecutive")]
+    [SchemaAttr(0, "qualifier")]
+    [SchemaAttr(0, "delimiter")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TextProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -39892,6 +42029,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>Parameter &lt;x:parameter></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Parameters : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40023,6 +42163,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.Connection &lt;x15:connection></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ConnectionExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40101,6 +42244,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>TextField &lt;x:textField></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TextFields : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40174,6 +42320,10 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>CacheSourceExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "connectionId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CacheSource : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40304,6 +42454,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CacheField &lt;x:cacheField></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CacheFields : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40375,6 +42528,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CacheHierarchy &lt;x:cacheHierarchy></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CacheHierarchies : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40446,6 +42602,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Kpi &lt;x:kpi></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Kpis : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40653,6 +42812,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CalculatedItem &lt;x:calculatedItem></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CalculatedItems : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40724,6 +42886,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>CalculatedMember &lt;x:calculatedMember></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CalculatedMembers : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40795,6 +42960,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Dimension &lt;x:dimension></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Dimensions : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40866,6 +43034,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MeasureGroup &lt;x:measureGroup></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MeasureGroups : OpenXmlCompositeElement
     {
         /// <summary>
@@ -40937,6 +43108,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>MeasureDimensionMap &lt;x:map></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Maps : OpenXmlCompositeElement
     {
         /// <summary>
@@ -41070,6 +43244,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.PivotCacheIdVersion &lt;x15:pivotCacheIdVersion></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotCacheDefinitionExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -41157,6 +43334,22 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DateTimeItem &lt;x:d></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "containsSemiMixedTypes")]
+    [SchemaAttr(0, "containsNonDate")]
+    [SchemaAttr(0, "containsDate")]
+    [SchemaAttr(0, "containsString")]
+    [SchemaAttr(0, "containsBlank")]
+    [SchemaAttr(0, "containsMixedTypes")]
+    [SchemaAttr(0, "containsNumber")]
+    [SchemaAttr(0, "containsInteger")]
+    [SchemaAttr(0, "minValue")]
+    [SchemaAttr(0, "maxValue")]
+    [SchemaAttr(0, "minDate")]
+    [SchemaAttr(0, "maxDate")]
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "longText")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SharedItems : OpenXmlCompositeElement
     {
         /// <summary>
@@ -41386,6 +43579,10 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>GroupItems &lt;x:groupItems></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "par")]
+    [SchemaAttr(0, "base")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FieldGroup : OpenXmlCompositeElement
     {
         /// <summary>
@@ -41535,6 +43732,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.CachedUniqueNames &lt;x15:cachedUniqueNames></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CacheFieldExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -41613,6 +43813,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>FieldUsage &lt;x:fieldUsage></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FieldsUsage : OpenXmlCompositeElement
     {
         /// <summary>
@@ -41684,6 +43887,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>GroupLevel &lt;x:groupLevel></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GroupLevels : OpenXmlCompositeElement
     {
         /// <summary>
@@ -41815,6 +44021,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.CacheHierarchy &lt;x15:cacheHierarchy></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CacheHierarchyExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -41953,6 +44162,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.CalculatedMember &lt;x15:calculatedMember></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CalculatedMemberExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42025,6 +44237,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:location.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "firstHeaderRow")]
+    [SchemaAttr(0, "firstDataRow")]
+    [SchemaAttr(0, "firstDataCol")]
+    [SchemaAttr(0, "rowPageCount")]
+    [SchemaAttr(0, "colPageCount")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Location : OpenXmlLeafElement
     {
         /// <summary>
@@ -42134,6 +44354,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotField &lt;x:pivotField></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotFields : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42205,6 +44428,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Field &lt;x:field></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RowFields : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42276,6 +44502,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>RowItem &lt;x:i></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RowItems : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42347,6 +44576,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Field &lt;x:field></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ColumnFields : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42418,6 +44650,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>RowItem &lt;x:i></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ColumnItems : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42489,6 +44724,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PageField &lt;x:pageField></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PageFields : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42560,6 +44798,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DataField &lt;x:dataField></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataFields : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42631,6 +44872,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>Format &lt;x:format></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Formats : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42702,6 +44946,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ConditionalFormat &lt;x:conditionalFormat></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ConditionalFormats : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42773,6 +45020,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ChartFormat &lt;x:chartFormat></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ChartFormats : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42844,6 +45094,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotHierarchy &lt;x:pivotHierarchy></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotHierarchies : OpenXmlCompositeElement
     {
         /// <summary>
@@ -42909,6 +45162,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:pivotTableStyleInfo.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "showRowHeaders")]
+    [SchemaAttr(0, "showColHeaders")]
+    [SchemaAttr(0, "showRowStripes")]
+    [SchemaAttr(0, "showColStripes")]
+    [SchemaAttr(0, "showLastColumn")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotTableStyle : OpenXmlLeafElement
     {
         /// <summary>
@@ -43007,6 +45268,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>PivotFilter &lt;x:filter></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotFilters : OpenXmlCompositeElement
     {
         /// <summary>
@@ -43078,6 +45342,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>RowHierarchyUsage &lt;x:rowHierarchyUsage></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RowHierarchiesUsage : OpenXmlCompositeElement
     {
         /// <summary>
@@ -43149,6 +45416,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ColumnHierarchyUsage &lt;x:colHierarchyUsage></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ColumnHierarchiesUsage : OpenXmlCompositeElement
     {
         /// <summary>
@@ -43281,6 +45551,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.PivotTableUISettings &lt;x15:pivotTableUISettings></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PivotTableDefinitionExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -43421,6 +45694,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.DataField &lt;x15:dataField></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataFieldExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -43561,6 +45837,15 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>ExtensionList &lt;x:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "preserveSortFilterLayout")]
+    [SchemaAttr(0, "fieldIdWrapped")]
+    [SchemaAttr(0, "headersInLastRefresh")]
+    [SchemaAttr(0, "minimumVersion")]
+    [SchemaAttr(0, "nextId")]
+    [SchemaAttr(0, "unboundColumnsLeft")]
+    [SchemaAttr(0, "unboundColumnsRight")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class QueryTableRefresh : OpenXmlCompositeElement
     {
         /// <summary>
@@ -43813,6 +46098,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:sheetCalcPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "fullCalcOnLoad")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SheetCalculationProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -43914,6 +46202,11 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>Scenario &lt;x:scenario></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "current")]
+    [SchemaAttr(0, "show")]
+    [SchemaAttr(0, "sqref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Scenarios : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44007,6 +46300,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>MergeCell &lt;x:mergeCell></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MergeCells : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44078,6 +46374,12 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DataValidation &lt;x:dataValidation></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "disablePrompts")]
+    [SchemaAttr(0, "xWindow")]
+    [SchemaAttr(0, "yWindow")]
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DataValidations : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44365,6 +46667,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>TablePart &lt;x:tablePart></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TableParts : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44502,6 +46807,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.TimelineReferences &lt;x15:timelineRefs></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WorksheetExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44592,6 +46900,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>NumberingFormat &lt;x:numFmt></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NumberingFormats : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44663,6 +46974,10 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>Font &lt;x:font></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(55, "knownFonts")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Fonts : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44751,6 +47066,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>Fill &lt;x:fill></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Fills : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44822,6 +47140,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>Border &lt;x:border></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Borders : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44893,6 +47214,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>CellFormat &lt;x:xf></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CellStyleFormats : OpenXmlCompositeElement
     {
         /// <summary>
@@ -44964,6 +47288,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>CellFormat &lt;x:xf></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CellFormats : OpenXmlCompositeElement
     {
         /// <summary>
@@ -45035,6 +47362,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>CellStyle &lt;x:cellStyle></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CellStyles : OpenXmlCompositeElement
     {
         /// <summary>
@@ -45106,6 +47436,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>DifferentialFormat &lt;x:dxf></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DifferentialFormats : OpenXmlCompositeElement
     {
         /// <summary>
@@ -45177,6 +47510,11 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>TableStyle &lt;x:tableStyle></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+    [SchemaAttr(0, "defaultTableStyle")]
+    [SchemaAttr(0, "defaultPivotStyle")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TableStyles : OpenXmlCompositeElement
     {
         /// <summary>
@@ -45421,6 +47759,9 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.TimelineStyles &lt;x15:timelineStyles></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class StylesheetExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -45497,6 +47838,13 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:fileVersion.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "appName")]
+    [SchemaAttr(0, "lastEdited")]
+    [SchemaAttr(0, "lowestEdited")]
+    [SchemaAttr(0, "rupBuild")]
+    [SchemaAttr(0, "codeName")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FileVersion : OpenXmlLeafElement
     {
         /// <summary>
@@ -45584,6 +47932,15 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:fileSharing.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "readOnlyRecommended")]
+    [SchemaAttr(0, "userName")]
+    [SchemaAttr(0, "reservationPassword")]
+    [SchemaAttr(0, "algorithmName")]
+    [SchemaAttr(0, "hashValue")]
+    [SchemaAttr(0, "saltValue")]
+    [SchemaAttr(0, "spinCount")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FileSharing : OpenXmlLeafElement
     {
         /// <summary>
@@ -45690,6 +48047,27 @@ aBuilder.AddValidator(new StringValidator() { Length = (2L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:workbookPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "date1904")]
+    [SchemaAttr(0, "dateCompatibility")]
+    [SchemaAttr(0, "showObjects")]
+    [SchemaAttr(0, "showBorderUnselectedTables")]
+    [SchemaAttr(0, "filterPrivacy")]
+    [SchemaAttr(0, "promptedSolutions")]
+    [SchemaAttr(0, "showInkAnnotation")]
+    [SchemaAttr(0, "backupFile")]
+    [SchemaAttr(0, "saveExternalLinkValues")]
+    [SchemaAttr(0, "updateLinks")]
+    [SchemaAttr(0, "codeName")]
+    [SchemaAttr(0, "hidePivotFieldList")]
+    [SchemaAttr(0, "showPivotChartFilter")]
+    [SchemaAttr(0, "allowRefreshQuery")]
+    [SchemaAttr(0, "publishItems")]
+    [SchemaAttr(0, "checkCompatibility")]
+    [SchemaAttr(0, "autoCompressPictures")]
+    [SchemaAttr(0, "refreshAllConnections")]
+    [SchemaAttr(0, "defaultThemeVersion")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WorkbookProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -45927,6 +48305,21 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:workbookProtection.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "workbookPassword")]
+    [SchemaAttr(0, "revisionsPassword")]
+    [SchemaAttr(0, "lockStructure")]
+    [SchemaAttr(0, "lockWindows")]
+    [SchemaAttr(0, "lockRevision")]
+    [SchemaAttr(0, "revisionsAlgorithmName")]
+    [SchemaAttr(0, "revisionsHashValue")]
+    [SchemaAttr(0, "revisionsSaltValue")]
+    [SchemaAttr(0, "revisionsSpinCount")]
+    [SchemaAttr(0, "workbookAlgorithmName")]
+    [SchemaAttr(0, "workbookHashValue")]
+    [SchemaAttr(0, "workbookSaltValue")]
+    [SchemaAttr(0, "workbookSpinCount")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WorkbookProtection : OpenXmlLeafElement
     {
         /// <summary>
@@ -46225,6 +48618,9 @@ aBuilder.AddValidator(new StringValidator() { Length = (2L) });
     ///   <item><description>FunctionGroup &lt;x:functionGroup></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "builtInGroupCount")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FunctionGroups : OpenXmlCompositeElement
     {
         /// <summary>
@@ -46409,6 +48805,21 @@ aBuilder.AddValidator(new StringValidator() { Length = (2L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:calcPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "calcId")]
+    [SchemaAttr(0, "calcMode")]
+    [SchemaAttr(0, "fullCalcOnLoad")]
+    [SchemaAttr(0, "refMode")]
+    [SchemaAttr(0, "iterate")]
+    [SchemaAttr(0, "iterateCount")]
+    [SchemaAttr(0, "iterateDelta")]
+    [SchemaAttr(0, "fullPrecision")]
+    [SchemaAttr(0, "calcCompleted")]
+    [SchemaAttr(0, "calcOnSave")]
+    [SchemaAttr(0, "concurrentCalc")]
+    [SchemaAttr(0, "concurrentManualCount")]
+    [SchemaAttr(0, "forceFullCalc")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CalculationProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -46577,6 +48988,9 @@ aBuilder.AddValidator(new StringValidator() { Length = (2L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:oleSize.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class OleSize : OpenXmlLeafElement
     {
         /// <summary>
@@ -46734,6 +49148,17 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:webPublishing.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "css")]
+    [SchemaAttr(0, "thicket")]
+    [SchemaAttr(0, "longFileNames")]
+    [SchemaAttr(0, "vml")]
+    [SchemaAttr(0, "allowPng")]
+    [SchemaAttr(0, "targetScreenSize")]
+    [SchemaAttr(0, "dpi")]
+    [SchemaAttr(0, "codePage")]
+    [SchemaAttr(0, "characterSet")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebPublishing : OpenXmlLeafElement
     {
         /// <summary>
@@ -46858,6 +49283,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x:fileRecoveryPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "autoRecover")]
+    [SchemaAttr(0, "crashSave")]
+    [SchemaAttr(0, "dataExtractLoad")]
+    [SchemaAttr(0, "repairLoad")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class FileRecoveryProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -46933,6 +49364,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>WebPublishObject &lt;x:webPublishObject></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebPublishObjects : OpenXmlCompositeElement
     {
         /// <summary>
@@ -47073,6 +49507,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Office2013.Excel.DataModel &lt;x15:dataModel></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "uri")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WorkbookExtension : OpenXmlCompositeElement
     {
         /// <summary>
@@ -47161,6 +49598,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Filter Operator
     /// </summary>
+
+
     public enum FilterOperatorValues
     {
         ///<summary>
@@ -47204,6 +49643,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Dynamic Filter
     /// </summary>
+
+
     public enum DynamicFilterValues
     {
         ///<summary>
@@ -47421,6 +49862,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Icon Set Type
     /// </summary>
+
+
     public enum IconSetValues
     {
         ///<summary>
@@ -47530,6 +49973,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Sort By
     /// </summary>
+
+
     public enum SortByValues
     {
         ///<summary>
@@ -47561,6 +50006,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Sort Method
     /// </summary>
+
+
     public enum SortMethodValues
     {
         ///<summary>
@@ -47586,6 +50033,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Calendar Type
     /// </summary>
+
+
     public enum CalendarValues
     {
         ///<summary>
@@ -47671,6 +50120,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Date Time Grouping
     /// </summary>
+
+
     public enum DateTimeGroupingValues
     {
         ///<summary>
@@ -47714,6 +50165,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// HTML Formatting Handling
     /// </summary>
+
+
     public enum HtmlFormattingValues
     {
         ///<summary>
@@ -47739,6 +50192,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Parameter Type
     /// </summary>
+
+
     public enum ParameterValues
     {
         ///<summary>
@@ -47764,6 +50219,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// File Type
     /// </summary>
+
+
     public enum FileTypeValues
     {
         ///<summary>
@@ -47789,6 +50246,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Qualifier
     /// </summary>
+
+
     public enum QualifierValues
     {
         ///<summary>
@@ -47814,6 +50273,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Text Field Data Type
     /// </summary>
+
+
     public enum ExternalConnectionValues
     {
         ///<summary>
@@ -47881,6 +50342,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Credentials Method
     /// </summary>
+
+
     public enum CredentialsMethodValues
     {
         ///<summary>
@@ -47906,6 +50369,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// PivotCache Type
     /// </summary>
+
+
     public enum SourceValues
     {
         ///<summary>
@@ -47937,6 +50402,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Values Group By
     /// </summary>
+
+
     public enum GroupByValues
     {
         ///<summary>
@@ -47992,6 +50459,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Set Sort Order
     /// </summary>
+
+
     public enum SortValues
     {
         ///<summary>
@@ -48041,6 +50510,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Conditional Formatting Scope
     /// </summary>
+
+
     public enum ScopeValues
     {
         ///<summary>
@@ -48066,6 +50537,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Top N Evaluation Type
     /// </summary>
+
+
     public enum RuleValues
     {
         ///<summary>
@@ -48097,6 +50570,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Show Data As
     /// </summary>
+
+
     public enum ShowDataAsValues
     {
         ///<summary>
@@ -48158,6 +50633,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// PivotItem Type
     /// </summary>
+
+
     public enum ItemValues
     {
         ///<summary>
@@ -48255,6 +50732,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Field Sort Type
     /// </summary>
+
+
     public enum FieldSortValues
     {
         ///<summary>
@@ -48280,6 +50759,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Pivot Filter Types
     /// </summary>
+
+
     public enum PivotFilterValues
     {
         ///<summary>
@@ -48683,6 +51164,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// PivotTable Format Types
     /// </summary>
+
+
     public enum FormatActionValues
     {
         ///<summary>
@@ -48702,6 +51185,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// PivotTable Axis
     /// </summary>
+
+
     public enum PivotTableAxisValues
     {
         ///<summary>
@@ -48733,6 +51218,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Grow Shrink Type
     /// </summary>
+
+
     public enum GrowShrinkValues
     {
         ///<summary>
@@ -48758,6 +51245,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Phonetic Type
     /// </summary>
+
+
     public enum PhoneticValues
     {
         ///<summary>
@@ -48789,6 +51278,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Phonetic Alignment Types
     /// </summary>
+
+
     public enum PhoneticAlignmentValues
     {
         ///<summary>
@@ -48820,6 +51311,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Row Column Action Type
     /// </summary>
+
+
     public enum RowColumnActionValues
     {
         ///<summary>
@@ -48851,6 +51344,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Revision Action Types
     /// </summary>
+
+
     public enum RevisionActionValues
     {
         ///<summary>
@@ -48870,6 +51365,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Formula Expression Type
     /// </summary>
+
+
     public enum FormulaExpressionValues
     {
         ///<summary>
@@ -48907,6 +51404,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Formula Type
     /// </summary>
+
+
     public enum CellFormulaValues
     {
         ///<summary>
@@ -48938,6 +51437,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Pane Types
     /// </summary>
+
+
     public enum PaneValues
     {
         ///<summary>
@@ -48969,6 +51470,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Sheet View Type
     /// </summary>
+
+
     public enum SheetViewValues
     {
         ///<summary>
@@ -48994,6 +51497,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Data Consolidation Functions
     /// </summary>
+
+
     public enum DataConsolidateFunctionValues
     {
         ///<summary>
@@ -49067,6 +51572,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Data Validation Type
     /// </summary>
+
+
     public enum DataValidationValues
     {
         ///<summary>
@@ -49122,6 +51629,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Data Validation Operator
     /// </summary>
+
+
     public enum DataValidationOperatorValues
     {
         ///<summary>
@@ -49177,6 +51686,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Data Validation Error Styles
     /// </summary>
+
+
     public enum DataValidationErrorStyleValues
     {
         ///<summary>
@@ -49202,6 +51713,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Data Validation IME Mode
     /// </summary>
+
+
     public enum DataValidationImeModeValues
     {
         ///<summary>
@@ -49275,6 +51788,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Conditional Format Type
     /// </summary>
+
+
     public enum ConditionalFormatValues
     {
         ///<summary>
@@ -49390,6 +51905,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Time Period Types
     /// </summary>
+
+
     public enum TimePeriodValues
     {
         ///<summary>
@@ -49457,6 +51974,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Conditional Format Operators
     /// </summary>
+
+
     public enum ConditionalFormattingOperatorValues
     {
         ///<summary>
@@ -49536,6 +52055,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Conditional Format Value Object Type
     /// </summary>
+
+
     public enum ConditionalFormatValueObjectValues
     {
         ///<summary>
@@ -49579,6 +52100,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Page Order
     /// </summary>
+
+
     public enum PageOrderValues
     {
         ///<summary>
@@ -49598,6 +52121,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Orientation
     /// </summary>
+
+
     public enum OrientationValues
     {
         ///<summary>
@@ -49623,6 +52148,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Cell Comments
     /// </summary>
+
+
     public enum CellCommentsValues
     {
         ///<summary>
@@ -49648,6 +52175,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Print Errors
     /// </summary>
+
+
     public enum PrintErrorValues
     {
         ///<summary>
@@ -49679,6 +52208,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Data View Aspect Type
     /// </summary>
+
+
     public enum DataViewAspectValues
     {
         ///<summary>
@@ -49698,6 +52229,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// OLE Update Types
     /// </summary>
+
+
     public enum OleUpdateValues
     {
         ///<summary>
@@ -49717,6 +52250,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Web Source Type
     /// </summary>
+
+
     public enum WebSourceValues
     {
         ///<summary>
@@ -49772,6 +52307,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Pane State
     /// </summary>
+
+
     public enum PaneStateValues
     {
         ///<summary>
@@ -49797,6 +52334,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// MDX Function Type
     /// </summary>
+
+
     public enum MdxFunctionValues
     {
         ///<summary>
@@ -49846,6 +52385,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// MDX Set Order
     /// </summary>
+
+
     public enum MdxSetOrderValues
     {
         ///<summary>
@@ -49895,6 +52436,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// MDX KPI Property
     /// </summary>
+
+
     public enum MdxKPIPropertyValues
     {
         ///<summary>
@@ -49938,6 +52481,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Border Line Styles
     /// </summary>
+
+
     public enum BorderStyleValues
     {
         ///<summary>
@@ -50029,6 +52574,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Pattern Type
     /// </summary>
+
+
     public enum PatternValues
     {
         ///<summary>
@@ -50150,6 +52697,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Gradient Type
     /// </summary>
+
+
     public enum GradientValues
     {
         ///<summary>
@@ -50169,6 +52718,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Horizontal Alignment Type
     /// </summary>
+
+
     public enum HorizontalAlignmentValues
     {
         ///<summary>
@@ -50224,6 +52775,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Vertical Alignment Types
     /// </summary>
+
+
     public enum VerticalAlignmentValues
     {
         ///<summary>
@@ -50261,6 +52814,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Table Style Type
     /// </summary>
+
+
     public enum TableStyleValues
     {
         ///<summary>
@@ -50436,6 +52991,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Vertical Alignment Run Types
     /// </summary>
+
+
     public enum VerticalAlignmentRunValues
     {
         ///<summary>
@@ -50461,6 +53018,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Font scheme Styles
     /// </summary>
+
+
     public enum FontSchemeValues
     {
         ///<summary>
@@ -50486,6 +53045,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Underline Types
     /// </summary>
+
+
     public enum UnderlineValues
     {
         ///<summary>
@@ -50523,6 +53084,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// DDE Value Types
     /// </summary>
+
+
     public enum DdeValues
     {
         ///<summary>
@@ -50560,6 +53123,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Table Type
     /// </summary>
+
+
     public enum TableValues
     {
         ///<summary>
@@ -50585,6 +53150,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Totals Row Function Types
     /// </summary>
+
+
     public enum TotalsRowFunctionValues
     {
         ///<summary>
@@ -50652,6 +53219,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// XML Data Types
     /// </summary>
+
+
     public enum XmlDataValues
     {
         ///<summary>
@@ -50929,6 +53498,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Volatile Dependency Types
     /// </summary>
+
+
     public enum VolatileDependencyValues
     {
         ///<summary>
@@ -50948,6 +53519,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Volatile Dependency Value Types
     /// </summary>
+
+
     public enum VolatileValues
     {
         ///<summary>
@@ -50979,6 +53552,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Visibility Types
     /// </summary>
+
+
     public enum VisibilityValues
     {
         ///<summary>
@@ -51004,6 +53579,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Comment Display Types
     /// </summary>
+
+
     public enum CommentsValues
     {
         ///<summary>
@@ -51029,6 +53606,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Object Display Types
     /// </summary>
+
+
     public enum ObjectDisplayValues
     {
         ///<summary>
@@ -51054,6 +53633,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Sheet Visibility Types
     /// </summary>
+
+
     public enum SheetStateValues
     {
         ///<summary>
@@ -51079,6 +53660,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Update Links Behavior Types
     /// </summary>
+
+
     public enum UpdateLinksBehaviorValues
     {
         ///<summary>
@@ -51104,6 +53687,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Calculation Mode
     /// </summary>
+
+
     public enum CalculateModeValues
     {
         ///<summary>
@@ -51129,6 +53714,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Reference Mode
     /// </summary>
+
+
     public enum ReferenceModeValues
     {
         ///<summary>
@@ -51148,6 +53735,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Target Screen Size Types
     /// </summary>
+
+
     public enum TargetScreenSizeValues
     {
         ///<summary>
@@ -51221,6 +53810,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Defines the TextHorizontalAlignmentValues enumeration.
     /// </summary>
+
+
     public enum TextHorizontalAlignmentValues
     {
         ///<summary>
@@ -51258,6 +53849,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Defines the TextVerticalAlignmentValues enumeration.
     /// </summary>
+
+
     public enum TextVerticalAlignmentValues
     {
         ///<summary>
@@ -51295,6 +53888,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Cell Type
     /// </summary>
+
+
     public enum CellValues
     {
         ///<summary>
@@ -51346,6 +53941,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Rule Type
     /// </summary>
+
+
     public enum PivotAreaValues
     {
         ///<summary>
@@ -51403,6 +54000,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Document Conformance Class Value
     /// </summary>
+
+
     public enum ConformanceClass
     {
         ///<summary>

@@ -20,6 +20,11 @@ namespace DocumentFormat.OpenXml.Office2013.PowerPoint
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is p15:prstTrans.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "prst")]
+    [SchemaAttr(0, "invX")]
+    [SchemaAttr(0, "invY")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PresetTransition : OpenXmlLeafElement
     {
         /// <summary>
@@ -79,6 +84,10 @@ namespace DocumentFormat.OpenXml.Office2013.PowerPoint
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is p15:presenceInfo.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "userId")]
+    [SchemaAttr(0, "providerId")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class PresenceInfo : OpenXmlLeafElement
     {
         /// <summary>
@@ -141,6 +150,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ParentCommentIdentifier &lt;p15:parentCm></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "timeZoneBias")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ThreadingInfo : OpenXmlCompositeElement
     {
         /// <summary>
@@ -395,6 +407,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is p15:chartTrackingRefBased.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ChartTrackingReferenceBased : OpenXmlLeafElement
     {
         /// <summary>
@@ -435,6 +450,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is p15:parentCm.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "authorId")]
+    [SchemaAttr(0, "idx")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ParentCommentIdentifier : OpenXmlLeafElement
     {
         /// <summary>
@@ -715,6 +734,13 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>ExtensionList &lt;p15:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "orient")]
+    [SchemaAttr(0, "pos")]
+    [SchemaAttr(0, "userDrawn")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ExtendedGuide : OpenXmlCompositeElement
     {
         /// <summary>

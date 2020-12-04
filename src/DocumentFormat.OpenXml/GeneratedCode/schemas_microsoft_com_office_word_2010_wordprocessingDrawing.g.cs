@@ -102,6 +102,9 @@ namespace DocumentFormat.OpenXml.Office2010.Word.Drawing
     ///   <item><description>PercentageWidth &lt;wp14:pctWidth></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "relativeFrom")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RelativeWidth : OpenXmlCompositeElement
     {
         /// <summary>
@@ -191,6 +194,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>PercentageHeight &lt;wp14:pctHeight></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "relativeFrom")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RelativeHeight : OpenXmlCompositeElement
     {
         /// <summary>
@@ -350,6 +356,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Defines the SizeRelativeHorizontallyValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum SizeRelativeHorizontallyValues
     {
@@ -394,6 +402,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <summary>
     /// Defines the SizeRelativeVerticallyValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum SizeRelativeVerticallyValues
     {

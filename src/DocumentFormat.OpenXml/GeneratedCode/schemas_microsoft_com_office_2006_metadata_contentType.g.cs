@@ -18,6 +18,16 @@ namespace DocumentFormat.OpenXml.Office.ContentType
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is ct:contentTypeSchema.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(38, "_")]
+    [SchemaAttr(41, "_")]
+    [SchemaAttr(41, "contentTypeName")]
+    [SchemaAttr(41, "contentTypeID")]
+    [SchemaAttr(41, "contentTypeVersion")]
+    [SchemaAttr(41, "contentTypeDescription")]
+    [SchemaAttr(41, "contentTypeScope")]
+    [SchemaAttr(41, "versionID")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ContentTypeSchema : OpenXmlCompositeElement
     {
         /// <summary>

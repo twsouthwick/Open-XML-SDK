@@ -30,6 +30,10 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtension
     ///   <item><description>OfficeArtExtensionList &lt;we:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "frozen")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebExtension : OpenXmlPartRootElement
     {
         /// <summary>
@@ -230,6 +234,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:webextensionref.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebExtensionReference : OpenXmlLeafElement
     {
         /// <summary>
@@ -273,6 +280,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:property.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "value")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebExtensionProperty : OpenXmlLeafElement
     {
         /// <summary>
@@ -399,6 +410,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>OfficeArtExtensionList &lt;we:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "type")]
+    [SchemaAttr(0, "appref")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebExtensionBinding : OpenXmlCompositeElement
     {
         /// <summary>
@@ -515,6 +531,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>OfficeArtExtensionList &lt;we:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "version")]
+    [SchemaAttr(0, "store")]
+    [SchemaAttr(0, "storeType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WebExtensionStoreReference : OpenXmlCompositeElement
     {
         /// <summary>
@@ -837,6 +859,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Drawing.BlipExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "embed")]
+    [SchemaAttr(19, "link")]
+    [SchemaAttr(0, "cstate")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Snapshot : OpenXmlCompositeElement
     {
         /// <summary>

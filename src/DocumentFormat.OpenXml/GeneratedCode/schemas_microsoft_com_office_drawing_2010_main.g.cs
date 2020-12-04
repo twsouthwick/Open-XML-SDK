@@ -19,6 +19,10 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:cameraTool.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "cellRange")]
+    [SchemaAttr(0, "spid")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CameraTool : OpenXmlLeafElement
     {
         /// <summary>
@@ -68,6 +72,9 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:compatExt.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "spid")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CompatExtension : OpenXmlLeafElement
     {
         /// <summary>
@@ -106,6 +113,9 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:isCanvas.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class IsCanvas : OpenXmlLeafElement
     {
         /// <summary>
@@ -154,6 +164,10 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>OfficeArtExtensionList &lt;a14:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "bwMode")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GvmlContentPart : OpenXmlCompositeElement
     {
         /// <summary>
@@ -283,6 +297,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:shadowObscured.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ShadowObscured : OpenXmlLeafElement
     {
         /// <summary>
@@ -496,6 +513,12 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Drawing.ExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "w")]
+    [SchemaAttr(0, "cap")]
+    [SchemaAttr(0, "cmpd")]
+    [SchemaAttr(0, "algn")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class HiddenLineProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -873,6 +896,12 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>DocumentFormat.OpenXml.Drawing.ExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "z")]
+    [SchemaAttr(0, "extrusionH")]
+    [SchemaAttr(0, "contourW")]
+    [SchemaAttr(0, "prstMaterial")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class HiddenShape3D : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1130,6 +1159,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:useLocalDpi.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "val")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class UseLocalDpi : OpenXmlLeafElement
     {
         /// <summary>
@@ -1264,6 +1296,18 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>OfficeArtExtensionList &lt;a14:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "noGrp")]
+    [SchemaAttr(0, "noSelect")]
+    [SchemaAttr(0, "noRot")]
+    [SchemaAttr(0, "noChangeAspect")]
+    [SchemaAttr(0, "noMove")]
+    [SchemaAttr(0, "noResize")]
+    [SchemaAttr(0, "noEditPoints")]
+    [SchemaAttr(0, "noAdjustHandles")]
+    [SchemaAttr(0, "noChangeArrowheads")]
+    [SchemaAttr(0, "noChangeShapeType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ContentPartLocks : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1442,6 +1486,12 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:foregroundMark.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "x1")]
+    [SchemaAttr(0, "y1")]
+    [SchemaAttr(0, "x2")]
+    [SchemaAttr(0, "y2")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ForegroundMark : OpenXmlLeafElement
     {
         /// <summary>
@@ -1528,6 +1578,12 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:backgroundMark.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "x1")]
+    [SchemaAttr(0, "y1")]
+    [SchemaAttr(0, "x2")]
+    [SchemaAttr(0, "y2")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackgroundMark : OpenXmlLeafElement
     {
         /// <summary>
@@ -1614,6 +1670,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticBlur.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "radius")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticBlur : OpenXmlLeafElement
     {
         /// <summary>
@@ -1654,6 +1713,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticCement.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "crackSpacing")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticCement : OpenXmlLeafElement
     {
         /// <summary>
@@ -1708,6 +1771,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticChalkSketch.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "pressure")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticChalkSketch : OpenXmlLeafElement
     {
         /// <summary>
@@ -1762,6 +1829,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticCrisscrossEtching.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "pressure")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticCrisscrossEtching : OpenXmlLeafElement
     {
         /// <summary>
@@ -1816,6 +1887,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticCutout.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "numberOfShades")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticCutout : OpenXmlLeafElement
     {
         /// <summary>
@@ -1870,6 +1945,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticFilmGrain.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "grainSize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticFilmGrain : OpenXmlLeafElement
     {
         /// <summary>
@@ -1924,6 +2003,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticGlass.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "scaling")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticGlass : OpenXmlLeafElement
     {
         /// <summary>
@@ -1978,6 +2061,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticGlowDiffused.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "intensity")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticGlowDiffused : OpenXmlLeafElement
     {
         /// <summary>
@@ -2032,6 +2119,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticGlowEdges.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "smoothness")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticGlowEdges : OpenXmlLeafElement
     {
         /// <summary>
@@ -2086,6 +2177,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticLightScreen.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "gridSize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticLightScreen : OpenXmlLeafElement
     {
         /// <summary>
@@ -2140,6 +2235,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticLineDrawing.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "pencilSize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticLineDrawing : OpenXmlLeafElement
     {
         /// <summary>
@@ -2194,6 +2293,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticMarker.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "size")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticMarker : OpenXmlLeafElement
     {
         /// <summary>
@@ -2248,6 +2351,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticMosiaicBubbles.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "pressure")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticMosaicBubbles : OpenXmlLeafElement
     {
         /// <summary>
@@ -2302,6 +2409,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticPaintStrokes.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "intensity")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticPaintStrokes : OpenXmlLeafElement
     {
         /// <summary>
@@ -2356,6 +2467,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticPaintBrush.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "brushSize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticPaintBrush : OpenXmlLeafElement
     {
         /// <summary>
@@ -2410,6 +2525,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticPastelsSmooth.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "scaling")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticPastelsSmooth : OpenXmlLeafElement
     {
         /// <summary>
@@ -2464,6 +2583,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticPencilGrayscale.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "pencilSize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticPencilGrayscale : OpenXmlLeafElement
     {
         /// <summary>
@@ -2518,6 +2641,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticPencilSketch.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "pressure")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticPencilSketch : OpenXmlLeafElement
     {
         /// <summary>
@@ -2572,6 +2699,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticPhotocopy.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "detail")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticPhotocopy : OpenXmlLeafElement
     {
         /// <summary>
@@ -2626,6 +2757,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticPlasticWrap.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "smoothness")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticPlasticWrap : OpenXmlLeafElement
     {
         /// <summary>
@@ -2680,6 +2815,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticTexturizer.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "scaling")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticTexturizer : OpenXmlLeafElement
     {
         /// <summary>
@@ -2734,6 +2873,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:artisticWatercolorSponge.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "trans")]
+    [SchemaAttr(0, "brushSize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ArtisticWatercolorSponge : OpenXmlLeafElement
     {
         /// <summary>
@@ -2795,6 +2938,12 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     ///   <item><description>BackgroundMark &lt;a14:backgroundMark></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "t")]
+    [SchemaAttr(0, "b")]
+    [SchemaAttr(0, "l")]
+    [SchemaAttr(0, "r")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackgroundRemoval : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2912,6 +3061,10 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:brightnessContrast.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "bright")]
+    [SchemaAttr(0, "contrast")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BrightnessContrast : OpenXmlLeafElement
     {
         /// <summary>
@@ -2966,6 +3119,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100000L), MaxIncl
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:colorTemperature.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "colorTemp")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ColorTemperature : OpenXmlLeafElement
     {
         /// <summary>
@@ -3006,6 +3162,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (1500L), MaxInclusi
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:saturation.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "sat")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Saturation : OpenXmlLeafElement
     {
         /// <summary>
@@ -3046,6 +3205,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a14:sharpenSoften.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "amount")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SharpenSoften : OpenXmlLeafElement
     {
         /// <summary>
@@ -3118,6 +3280,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100000L), MaxIncl
     ///   <item><description>SharpenSoften &lt;a14:sharpenSoften></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "visible")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ImageEffect : OpenXmlCompositeElement
     {
         /// <summary>
@@ -3593,6 +3758,9 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100000L), MaxIncl
     ///   <item><description>ImageEffect &lt;a14:imgEffect></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(19, "embed")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ImageLayer : OpenXmlCompositeElement
     {
         /// <summary>
@@ -3670,6 +3838,13 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100000L), MaxIncl
     ///   <item><description>DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "descr")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "title")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NonVisualDrawingProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -3836,6 +4011,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>OfficeArtExtensionList &lt;a14:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "isComment")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NonVisualInkContentPartProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -4026,6 +4204,11 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Drawing.Extents &lt;a:ext></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rot")]
+    [SchemaAttr(0, "flipH")]
+    [SchemaAttr(0, "flipV")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Transform2D : OpenXmlCompositeElement
     {
         /// <summary>

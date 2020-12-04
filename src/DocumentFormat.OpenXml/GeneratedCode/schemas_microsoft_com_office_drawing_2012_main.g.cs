@@ -18,6 +18,12 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a15:backgroundPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "bwMode")]
+    [SchemaAttr(0, "bwPure")]
+    [SchemaAttr(0, "bwNormal")]
+    [SchemaAttr(0, "targetScreenSize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackgroundProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -100,6 +106,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a15:nonVisualGroupProps.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "isLegacyGroup")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NonVisualGroupProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -137,6 +146,11 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a15:objectPr.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "objectId")]
+    [SchemaAttr(0, "isActiveX")]
+    [SchemaAttr(0, "linkType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ObjectProperties : OpenXmlLeafElement
     {
         /// <summary>
@@ -196,6 +210,20 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     /// <para>This class is available in Office 2013 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a15:signatureLine.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "isSignatureLine")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "provId")]
+    [SchemaAttr(0, "signingInstructionsSet")]
+    [SchemaAttr(0, "allowComments")]
+    [SchemaAttr(0, "showSignDate")]
+    [SchemaAttr(0, "suggestedSigner")]
+    [SchemaAttr(0, "suggestedSigner2")]
+    [SchemaAttr(0, "suggestedSignerEmail")]
+    [SchemaAttr(0, "signingInstructions")]
+    [SchemaAttr(0, "addlXml")]
+    [SchemaAttr(0, "sigProvUrl")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SignatureLine : OpenXmlLeafElement
     {
         /// <summary>
@@ -358,6 +386,8 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
     /// <summary>
     /// Defines the TargetScreenSize enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2013)]
     public enum TargetScreenSize
     {

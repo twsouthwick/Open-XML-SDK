@@ -33,6 +33,9 @@ namespace DocumentFormat.OpenXml.Office2010.Word.DrawingShape
     ///   <item><description>TextBodyProperties &lt;wps:bodyPr></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "normalEastAsianFlow")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class WordprocessingShape : OpenXmlCompositeElement
     {
         /// <summary>
@@ -208,6 +211,13 @@ namespace DocumentFormat.OpenXml.Office2010.Word.DrawingShape
     ///   <item><description>DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "descr")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "title")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NonVisualDrawingProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -374,6 +384,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Drawing.ExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "txBox")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class NonVisualDrawingShapeProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -609,6 +622,9 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Drawing.ShapePropertiesExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "bwMode")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ShapeProperties : OpenXmlCompositeElement
     {
         /// <summary>
@@ -865,6 +881,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>OfficeArtExtensionList &lt;wps:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TextBoxInfo2 : OpenXmlCompositeElement
     {
         /// <summary>
@@ -965,6 +984,10 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
     ///   <item><description>OfficeArtExtensionList &lt;wps:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "seq")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class LinkedTextBox : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1074,6 +1097,27 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     ///   <item><description>DocumentFormat.OpenXml.Drawing.ExtensionList &lt;a:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "rot")]
+    [SchemaAttr(0, "spcFirstLastPara")]
+    [SchemaAttr(0, "vertOverflow")]
+    [SchemaAttr(0, "horzOverflow")]
+    [SchemaAttr(0, "vert")]
+    [SchemaAttr(0, "wrap")]
+    [SchemaAttr(0, "lIns")]
+    [SchemaAttr(0, "tIns")]
+    [SchemaAttr(0, "rIns")]
+    [SchemaAttr(0, "bIns")]
+    [SchemaAttr(0, "numCol")]
+    [SchemaAttr(0, "spcCol")]
+    [SchemaAttr(0, "rtlCol")]
+    [SchemaAttr(0, "fromWordArt")]
+    [SchemaAttr(0, "anchor")]
+    [SchemaAttr(0, "anchorCtr")]
+    [SchemaAttr(0, "forceAA")]
+    [SchemaAttr(0, "upright")]
+    [SchemaAttr(0, "compatLnSpc")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TextBodyProperties : OpenXmlCompositeElement
     {
         /// <summary>

@@ -25,6 +25,11 @@ namespace DocumentFormat.OpenXml.Office2013.Theme
     ///   <item><description>OfficeArtExtensionList &lt;thm15:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "vid")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ThemeFamily : OpenXmlCompositeElement
     {
         /// <summary>
@@ -210,6 +215,13 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
     ///   <item><description>OfficeArtExtensionList &lt;thm15:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+    [SchemaAttr(0, "vid")]
+    [SchemaAttr(0, "cx")]
+    [SchemaAttr(0, "cy")]
+    [SchemaAttr(19, "id")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ThemeVariant : OpenXmlCompositeElement
     {
         /// <summary>

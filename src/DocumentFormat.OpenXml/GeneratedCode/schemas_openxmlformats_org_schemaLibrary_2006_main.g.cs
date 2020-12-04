@@ -77,6 +77,11 @@ namespace DocumentFormat.OpenXml.CustomXmlSchemaReferences
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is sl:schema.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(25, "uri")]
+    [SchemaAttr(25, "manifestLocation")]
+    [SchemaAttr(25, "schemaLocation")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Schema : OpenXmlLeafElement
     {
         /// <summary>

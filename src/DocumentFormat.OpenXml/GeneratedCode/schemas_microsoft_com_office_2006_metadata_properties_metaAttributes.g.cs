@@ -17,6 +17,25 @@ namespace DocumentFormat.OpenXml.Office.MetaAttributes
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is ma:DummyContentTypeElement.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "decimals")]
+    [SchemaAttr(0, "default")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "displayName")]
+    [SchemaAttr(0, "fieldsID")]
+    [SchemaAttr(0, "format")]
+    [SchemaAttr(0, "hidden")]
+    [SchemaAttr(0, "index")]
+    [SchemaAttr(0, "internalName")]
+    [SchemaAttr(0, "LCID")]
+    [SchemaAttr(0, "list")]
+    [SchemaAttr(0, "percentage")]
+    [SchemaAttr(0, "readOnly")]
+    [SchemaAttr(0, "requiredMultiChoice")]
+    [SchemaAttr(0, "root")]
+    [SchemaAttr(0, "showField")]
+    [SchemaAttr(0, "web")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Dummy : OpenXmlLeafElement
     {
         /// <summary>
@@ -233,6 +252,8 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]{8}\\-[0-9a
     /// <summary>
     /// Defines the TrueOnlyValues enumeration.
     /// </summary>
+
+
     public enum TrueOnlyValues
     {
         ///<summary>

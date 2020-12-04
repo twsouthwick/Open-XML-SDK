@@ -23,6 +23,11 @@ namespace DocumentFormat.OpenXml.Bibliography
     ///   <item><description>Source &lt;b:Source></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "SelectedStyle")]
+    [SchemaAttr(0, "StyleName")]
+    [SchemaAttr(0, "URI")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Sources : OpenXmlPartRootElement
     {
         /// <summary>
@@ -4618,6 +4623,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (255
     /// <summary>
     /// Bibliographic Data Source Types
     /// </summary>
+
+
     public enum DataSourceValues
     {
         ///<summary>

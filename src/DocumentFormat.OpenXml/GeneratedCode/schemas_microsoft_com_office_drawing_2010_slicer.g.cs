@@ -25,6 +25,9 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Slicer
     ///   <item><description>OfficeArtExtensionList &lt;sle:extLst></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "name")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Slicer : OpenXmlCompositeElement
     {
         /// <summary>

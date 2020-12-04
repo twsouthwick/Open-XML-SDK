@@ -440,6 +440,10 @@ namespace DocumentFormat.OpenXml.Office.Excel
     ///   <item><description>RowSortMapItem &lt;xne:row></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RowSortMap : OpenXmlCompositeElement
     {
         /// <summary>
@@ -528,6 +532,10 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
     ///   <item><description>ColumnSortMapItem &lt;xne:col></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ref")]
+    [SchemaAttr(0, "count")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ColumnSortMap : OpenXmlCompositeElement
     {
         /// <summary>
@@ -610,6 +618,10 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:row.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "newVal")]
+    [SchemaAttr(0, "oldVal")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RowSortMapItem : SortMapItemType
     {
         /// <summary>
@@ -634,6 +646,10 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:col.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "newVal")]
+    [SchemaAttr(0, "oldVal")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ColumnSortMapItem : SortMapItemType
     {
         /// <summary>
@@ -658,6 +674,10 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
     /// <para>This class is available in Office 2007 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "newVal")]
+    [SchemaAttr(0, "oldVal")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class SortMapItemType : OpenXmlLeafElement
     {
         /// <summary>

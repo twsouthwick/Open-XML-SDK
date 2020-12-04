@@ -18,6 +18,34 @@ namespace DocumentFormat.OpenXml.Office2010.CustomUI
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:control.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ControlCloneRegular : OpenXmlLeafElement
     {
         /// <summary>
@@ -396,6 +424,38 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:button.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ButtonRegular : OpenXmlLeafElement
     {
         /// <summary>
@@ -831,6 +891,32 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:checkBox.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "getPressed")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CheckBox : OpenXmlLeafElement
     {
         /// <summary>
@@ -1194,6 +1280,57 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ButtonRegular &lt;mso14:button></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "invalidateContentOnDrop")]
+    [SchemaAttr(0, "columns")]
+    [SchemaAttr(0, "rows")]
+    [SchemaAttr(0, "itemWidth")]
+    [SchemaAttr(0, "itemHeight")]
+    [SchemaAttr(0, "getItemWidth")]
+    [SchemaAttr(0, "getItemHeight")]
+    [SchemaAttr(0, "showItemLabel")]
+    [SchemaAttr(0, "showInRibbon")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "showItemImage")]
+    [SchemaAttr(0, "getItemCount")]
+    [SchemaAttr(0, "getItemLabel")]
+    [SchemaAttr(0, "getItemScreentip")]
+    [SchemaAttr(0, "getItemSupertip")]
+    [SchemaAttr(0, "getItemImage")]
+    [SchemaAttr(0, "getItemID")]
+    [SchemaAttr(0, "sizeString")]
+    [SchemaAttr(0, "getSelectedItemID")]
+    [SchemaAttr(0, "getSelectedItemIndex")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GalleryRegular : OpenXmlCompositeElement
     {
         /// <summary>
@@ -1919,6 +2056,39 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:toggleButton.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "getPressed")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ToggleButtonRegular : OpenXmlLeafElement
     {
         /// <summary>
@@ -2367,6 +2537,17 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:menuSeparator.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "getTitle")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MenuSeparator : OpenXmlLeafElement
     {
         /// <summary>
@@ -2527,6 +2708,24 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>MenuRegular &lt;mso14:menu></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SplitButtonRegular : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2821,6 +3020,38 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>DynamicMenuRegular &lt;mso14:dynamicMenu></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "itemSize")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MenuRegular : OpenXmlCompositeElement
     {
         /// <summary>
@@ -3315,6 +3546,39 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:dynamicMenu.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "getContent")]
+    [SchemaAttr(0, "invalidateContentOnDrop")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DynamicMenuRegular : OpenXmlLeafElement
     {
         /// <summary>
@@ -3769,6 +4033,24 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>MenuWithTitle &lt;mso14:menu></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SplitButtonWithTitle : OpenXmlCompositeElement
     {
         /// <summary>
@@ -4063,6 +4345,38 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>DynamicMenuRegular &lt;mso14:dynamicMenu></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "itemSize")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "getTitle")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MenuWithTitle : OpenXmlCompositeElement
     {
         /// <summary>
@@ -4557,6 +4871,15 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:menuSeparator.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MenuSeparatorNoTitle : OpenXmlLeafElement
     {
         /// <summary>
@@ -4681,6 +5004,38 @@ aBuilder.AddValidator(new StringValidator() { IsQName = (true), MinLength = (1L)
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:control.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "getSize")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ControlClone : OpenXmlLeafElement
     {
         /// <summary>
@@ -5113,6 +5468,28 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:labelControl.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class LabelControl : OpenXmlLeafElement
     {
         /// <summary>
@@ -5410,6 +5787,40 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:button.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "getSize")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Button : OpenXmlLeafElement
     {
         /// <summary>
@@ -5870,6 +6281,41 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:toggleButton.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "getSize")]
+    [SchemaAttr(0, "getPressed")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ToggleButton : OpenXmlLeafElement
     {
         /// <summary>
@@ -6343,6 +6789,39 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:editBox.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "maxLength")]
+    [SchemaAttr(0, "getText")]
+    [SchemaAttr(0, "onChange")]
+    [SchemaAttr(0, "sizeString")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class EditBox : OpenXmlLeafElement
     {
         /// <summary>
@@ -6797,6 +7276,47 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>Item &lt;mso14:item></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "showItemImage")]
+    [SchemaAttr(0, "getItemCount")]
+    [SchemaAttr(0, "getItemLabel")]
+    [SchemaAttr(0, "getItemScreentip")]
+    [SchemaAttr(0, "getItemSupertip")]
+    [SchemaAttr(0, "getItemImage")]
+    [SchemaAttr(0, "getItemID")]
+    [SchemaAttr(0, "sizeString")]
+    [SchemaAttr(0, "invalidateContentOnDrop")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "maxLength")]
+    [SchemaAttr(0, "getText")]
+    [SchemaAttr(0, "onChange")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ComboBox : OpenXmlCompositeElement
     {
         /// <summary>
@@ -7390,6 +7910,47 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ButtonRegular &lt;mso14:button></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "showItemImage")]
+    [SchemaAttr(0, "getItemCount")]
+    [SchemaAttr(0, "getItemLabel")]
+    [SchemaAttr(0, "getItemScreentip")]
+    [SchemaAttr(0, "getItemSupertip")]
+    [SchemaAttr(0, "getItemImage")]
+    [SchemaAttr(0, "getItemID")]
+    [SchemaAttr(0, "sizeString")]
+    [SchemaAttr(0, "getSelectedItemID")]
+    [SchemaAttr(0, "getSelectedItemIndex")]
+    [SchemaAttr(0, "showItemLabel")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DropDownRegular : OpenXmlCompositeElement
     {
         /// <summary>
@@ -7985,6 +8546,59 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ButtonRegular &lt;mso14:button></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "getSize")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "invalidateContentOnDrop")]
+    [SchemaAttr(0, "columns")]
+    [SchemaAttr(0, "rows")]
+    [SchemaAttr(0, "itemWidth")]
+    [SchemaAttr(0, "itemHeight")]
+    [SchemaAttr(0, "getItemWidth")]
+    [SchemaAttr(0, "getItemHeight")]
+    [SchemaAttr(0, "showItemLabel")]
+    [SchemaAttr(0, "showInRibbon")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "showItemImage")]
+    [SchemaAttr(0, "getItemCount")]
+    [SchemaAttr(0, "getItemLabel")]
+    [SchemaAttr(0, "getItemScreentip")]
+    [SchemaAttr(0, "getItemSupertip")]
+    [SchemaAttr(0, "getItemImage")]
+    [SchemaAttr(0, "getItemID")]
+    [SchemaAttr(0, "sizeString")]
+    [SchemaAttr(0, "getSelectedItemID")]
+    [SchemaAttr(0, "getSelectedItemIndex")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Gallery : OpenXmlCompositeElement
     {
         /// <summary>
@@ -8752,6 +9366,40 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>DynamicMenuRegular &lt;mso14:dynamicMenu></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "getSize")]
+    [SchemaAttr(0, "itemSize")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Menu : OpenXmlCompositeElement
     {
         /// <summary>
@@ -9274,6 +9922,41 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:dynamicMenu.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "getSize")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "getContent")]
+    [SchemaAttr(0, "invalidateContentOnDrop")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class DynamicMenu : OpenXmlLeafElement
     {
         /// <summary>
@@ -9753,6 +10436,26 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>MenuRegular &lt;mso14:menu></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "getSize")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class SplitButton : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10080,6 +10783,18 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ButtonGroup &lt;mso14:buttonGroup></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "boxStyle")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Box : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10311,6 +11026,17 @@ aBuilder.AddValidator(new StringValidator() { IsQName = (true), MinLength = (1L)
     ///   <item><description>Separator &lt;mso14:separator></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ButtonGroup : OpenXmlCompositeElement
     {
         /// <summary>
@@ -10506,6 +11232,26 @@ aBuilder.AddValidator(new StringValidator() { IsQName = (true), MinLength = (1L)
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:button.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "isDefinitive")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageMenuButton : OpenXmlLeafElement
     {
         /// <summary>
@@ -10775,6 +11521,23 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:checkBox.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "getPressed")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageMenuCheckBox : OpenXmlLeafElement
     {
         /// <summary>
@@ -11011,6 +11774,24 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>BackstageMenuGroup &lt;mso14:menuGroup></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageSubMenu : OpenXmlCompositeElement
     {
         /// <summary>
@@ -11290,6 +12071,26 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:toggleButton.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "getPressed")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageMenuToggleButton : OpenXmlLeafElement
     {
         /// <summary>
@@ -11562,6 +12363,30 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:button.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "isDefinitive")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageGroupButton : OpenXmlLeafElement
     {
         /// <summary>
@@ -11881,6 +12706,28 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:checkBox.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "getPressed")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageCheckBox : OpenXmlLeafElement
     {
         /// <summary>
@@ -12178,6 +13025,25 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:editBox.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "alignLabel")]
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "getText")]
+    [SchemaAttr(0, "onChange")]
+    [SchemaAttr(0, "maxLength")]
+    [SchemaAttr(0, "sizeString")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageEditBox : OpenXmlLeafElement
     {
         /// <summary>
@@ -12436,6 +13302,31 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ItemBackstageItem &lt;mso14:item></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "alignLabel")]
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "getSelectedItemIndex")]
+    [SchemaAttr(0, "sizeString")]
+    [SchemaAttr(0, "getItemCount")]
+    [SchemaAttr(0, "getItemLabel")]
+    [SchemaAttr(0, "getItemID")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageDropDown : OpenXmlCompositeElement
     {
         /// <summary>
@@ -12807,6 +13698,26 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>RadioButtonBackstageItem &lt;mso14:radioButton></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "alignLabel")]
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "getSelectedItemIndex")]
+    [SchemaAttr(0, "getItemCount")]
+    [SchemaAttr(0, "getItemLabel")]
+    [SchemaAttr(0, "getItemID")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RadioGroup : OpenXmlCompositeElement
     {
         /// <summary>
@@ -13108,6 +14019,27 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ItemBackstageItem &lt;mso14:item></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "alignLabel")]
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "getText")]
+    [SchemaAttr(0, "onChange")]
+    [SchemaAttr(0, "sizeString")]
+    [SchemaAttr(0, "getItemCount")]
+    [SchemaAttr(0, "getItemLabel")]
+    [SchemaAttr(0, "getItemID")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageComboBox : OpenXmlCompositeElement
     {
         /// <summary>
@@ -13417,6 +14349,31 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:hyperlink.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "alignLabel")]
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "target")]
+    [SchemaAttr(0, "getTarget")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Hyperlink : OpenXmlLeafElement
     {
         /// <summary>
@@ -13753,6 +14710,20 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:labelControl.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "alignLabel")]
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "noWrap")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageLabelControl : OpenXmlLeafElement
     {
         /// <summary>
@@ -13948,6 +14919,14 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ImageControl &lt;mso14:imageControl></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class GroupBox : OpenXmlCompositeElement
     {
         /// <summary>
@@ -14126,6 +15105,14 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ImageControl &lt;mso14:imageControl></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "align")]
+    [SchemaAttr(0, "expand")]
+    [SchemaAttr(0, "layoutChildren")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class LayoutContainer : OpenXmlCompositeElement
     {
         /// <summary>
@@ -14282,6 +15269,20 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:imageControl.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "altText")]
+    [SchemaAttr(0, "getAltText")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ImageControl : OpenXmlLeafElement
     {
         /// <summary>
@@ -14478,6 +15479,26 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>BottomItemsGroupControls &lt;mso14:bottomItems></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "style")]
+    [SchemaAttr(0, "getStyle")]
+    [SchemaAttr(0, "helperText")]
+    [SchemaAttr(0, "getHelperText")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageGroup : OpenXmlCompositeElement
     {
         /// <summary>
@@ -14789,6 +15810,25 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>TaskGroupCategory &lt;mso14:category></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "helperText")]
+    [SchemaAttr(0, "getHelperText")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "allowedTaskSizes")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TaskGroup : OpenXmlCompositeElement
     {
         /// <summary>
@@ -15087,6 +16127,11 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>DynamicMenuRegular &lt;mso14:dynamicMenu></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "getTitle")]
+    [SchemaAttr(0, "itemSize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class MenuRoot : OpenXmlCompositeElement
     {
         /// <summary>
@@ -15221,6 +16266,10 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ContextMenus &lt;mso14:contextMenus></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "onLoad")]
+    [SchemaAttr(0, "loadImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class CustomUI : OpenXmlPartRootElement
     {
         /// <summary>
@@ -15393,6 +16442,14 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:item.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "supertip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Item : OpenXmlLeafElement
     {
         /// <summary>
@@ -15503,6 +16560,36 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:button.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VisibleButton : OpenXmlLeafElement
     {
         /// <summary>
@@ -15912,6 +16999,37 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:toggleButton.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "getPressed")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class VisibleToggleButton : OpenXmlLeafElement
     {
         /// <summary>
@@ -16335,6 +17453,17 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:separator.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Separator : OpenXmlLeafElement
     {
         /// <summary>
@@ -16578,6 +17707,31 @@ aBuilder.AddValidator(new StringValidator() { IsQName = (true), MinLength = (1L)
     ///   <item><description>DialogBoxLauncher &lt;mso14:dialogBoxLauncher></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "autoScale")]
+    [SchemaAttr(0, "centerVertically")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Group : OpenXmlCompositeElement
     {
         /// <summary>
@@ -16988,6 +18142,38 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:control.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "size")]
+    [SchemaAttr(0, "getSize")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "showImage")]
+    [SchemaAttr(0, "getShowImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ControlCloneQat : OpenXmlLeafElement
     {
         /// <summary>
@@ -17613,6 +18799,22 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>Group &lt;mso14:group></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Tab : OpenXmlCompositeElement
     {
         /// <summary>
@@ -17870,6 +19072,11 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>Tab &lt;mso14:tab></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TabSet : OpenXmlCompositeElement
     {
         /// <summary>
@@ -17965,6 +19172,12 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:command.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "idMso")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Command : OpenXmlLeafElement
     {
         /// <summary>
@@ -18267,6 +19480,9 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), IsNcName = (true
     ///   <item><description>MenuSeparatorNoTitle &lt;mso14:menuSeparator></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "idMso")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ContextMenu : OpenXmlCompositeElement
     {
         /// <summary>
@@ -18361,6 +19577,11 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), IsNcName = (true
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:item.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ItemBackstageItem : BackstageItemType
     {
         /// <summary>
@@ -18386,6 +19607,11 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), IsNcName = (true
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:radioButton.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class RadioButtonBackstageItem : BackstageItemType
     {
         /// <summary>
@@ -18411,6 +19637,11 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), IsNcName = (true
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public abstract partial class BackstageItemType : OpenXmlLeafElement
     {
         /// <summary>
@@ -18474,6 +19705,28 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), IsNcName = (true
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:button.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "isDefinitive")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageRegularButton : OpenXmlLeafElement
     {
         /// <summary>
@@ -18777,6 +20030,26 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>BackstageMenuGroup &lt;mso14:menuGroup></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "screentip")]
+    [SchemaAttr(0, "getScreentip")]
+    [SchemaAttr(0, "supertip")]
+    [SchemaAttr(0, "getSupertip")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstagePrimaryMenu : OpenXmlCompositeElement
     {
         /// <summary>
@@ -19093,6 +20366,14 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>BackstageMenuToggleButton &lt;mso14:toggleButton></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "itemSize")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageMenuGroup : OpenXmlCompositeElement
     {
         /// <summary>
@@ -19580,6 +20861,20 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>TaskGroupTask &lt;mso14:task></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TaskGroupCategory : OpenXmlCompositeElement
     {
         /// <summary>
@@ -19800,6 +21095,31 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:task.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "isDefinitive")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TaskGroupTask : OpenXmlLeafElement
     {
         /// <summary>
@@ -20145,6 +21465,20 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>TaskFormGroupTask &lt;mso14:task></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TaskFormGroupCategory : OpenXmlCompositeElement
     {
         /// <summary>
@@ -20371,6 +21705,29 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>BackstageGroup &lt;mso14:group></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "description")]
+    [SchemaAttr(0, "getDescription")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TaskFormGroupTask : OpenXmlCompositeElement
     {
         /// <summary>
@@ -20720,6 +22077,21 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>TaskFormGroupCategory &lt;mso14:category></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "helperText")]
+    [SchemaAttr(0, "getHelperText")]
+    [SchemaAttr(0, "showLabel")]
+    [SchemaAttr(0, "getShowLabel")]
+    [SchemaAttr(0, "allowedTaskSizes")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class TaskFormGroup : OpenXmlCompositeElement
     {
         /// <summary>
@@ -21102,6 +22474,31 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>SimpleGroups &lt;mso14:secondColumn></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "title")]
+    [SchemaAttr(0, "getTitle")]
+    [SchemaAttr(0, "columnWidthPercent")]
+    [SchemaAttr(0, "firstColumnMinWidth")]
+    [SchemaAttr(0, "firstColumnMaxWidth")]
+    [SchemaAttr(0, "secondColumnMinWidth")]
+    [SchemaAttr(0, "secondColumnMaxWidth")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageTab : OpenXmlCompositeElement
     {
         /// <summary>
@@ -21501,6 +22898,29 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (1L), MaxInclusive 
     /// <para>This class is available in Office 2010 or above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is mso14:button.</para>
     /// </summary>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "idMso")]
+    [SchemaAttr(0, "insertAfterMso")]
+    [SchemaAttr(0, "insertBeforeMso")]
+    [SchemaAttr(0, "insertAfterQ")]
+    [SchemaAttr(0, "insertBeforeQ")]
+    [SchemaAttr(0, "id")]
+    [SchemaAttr(0, "idQ")]
+    [SchemaAttr(0, "tag")]
+    [SchemaAttr(0, "onAction")]
+    [SchemaAttr(0, "isDefinitive")]
+    [SchemaAttr(0, "enabled")]
+    [SchemaAttr(0, "getEnabled")]
+    [SchemaAttr(0, "label")]
+    [SchemaAttr(0, "getLabel")]
+    [SchemaAttr(0, "visible")]
+    [SchemaAttr(0, "getVisible")]
+    [SchemaAttr(0, "keytip")]
+    [SchemaAttr(0, "getKeytip")]
+    [SchemaAttr(0, "image")]
+    [SchemaAttr(0, "imageMso")]
+    [SchemaAttr(0, "getImage")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class BackstageFastCommandButton : OpenXmlLeafElement
     {
         /// <summary>
@@ -21880,6 +23300,9 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>ContextualTabs &lt;mso14:contextualTabs></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "startFromScratch")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Ribbon : OpenXmlCompositeElement
     {
         /// <summary>
@@ -21996,6 +23419,10 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     ///   <item><description>BackstageFastCommandButton &lt;mso14:button></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "onShow")]
+    [SchemaAttr(0, "onHide")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class Backstage : OpenXmlCompositeElement
     {
         /// <summary>
@@ -22142,6 +23569,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <summary>
     /// Defines the GalleryShowInRibbonValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum GalleryShowInRibbonValues
     {
@@ -22162,6 +23591,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <summary>
     /// Defines the SizeValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum SizeValues
     {
@@ -22182,6 +23613,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <summary>
     /// Defines the ItemSizeValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum ItemSizeValues
     {
@@ -22202,6 +23635,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <summary>
     /// Defines the BoxStyleValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum BoxStyleValues
     {
@@ -22222,6 +23657,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <summary>
     /// Defines the TaskSizesValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum TaskSizesValues
     {
@@ -22266,6 +23703,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <summary>
     /// Defines the ExpandValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum ExpandValues
     {
@@ -22328,6 +23767,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <summary>
     /// Defines the StyleValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum StyleValues
     {
@@ -22354,6 +23795,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <summary>
     /// Defines the Style2Values enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum Style2Values
     {
@@ -22380,6 +23823,8 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (1L), MaxLength = (102
     /// <summary>
     /// Defines the LayoutChildrenValues enumeration.
     /// </summary>
+
+
     [OfficeAvailability(FileFormatVersions.Office2010)]
     public enum LayoutChildrenValues
     {

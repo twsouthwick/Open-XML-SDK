@@ -90,6 +90,9 @@ namespace DocumentFormat.OpenXml.Vml.Spreadsheet
     ///   <item><description>FormulaTextBox &lt;xvml:FmlaTxbx></description></item>
     /// </list>
     /// </remark>
+#pragma warning disable CS0618 // Type or member is obsolete
+    [SchemaAttr(0, "ObjectType")]
+#pragma warning restore CS0618 // Type or member is obsolete
     public partial class ClientData : OpenXmlCompositeElement
     {
         /// <summary>
@@ -2821,6 +2824,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Clipboard Format Type
     /// </summary>
+
+
     public enum ClipboardFormatValues
     {
         ///<summary>
@@ -2858,6 +2863,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Object Type
     /// </summary>
+
+
     public enum ObjectValues
     {
         ///<summary>
@@ -2979,6 +2986,8 @@ aBuilder.AddValidator(RequiredValidator.Instance);
     /// <summary>
     /// Boolean Value with Blank State
     /// </summary>
+
+
     public enum BooleanEntryWithBlankValues
     {
         ///<summary>
