@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.CustomXmlSchemaReferences;
 using DocumentFormat.OpenXml.Drawing.Wordprocessing;
@@ -22,7 +24,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 {
     /// <summary>
     /// <para>Table Cell Insertion.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:cellIns.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -50,7 +52,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Table Cell Deletion.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:cellDel.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -78,7 +80,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Defines the CustomXmlInsRangeStart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXmlInsRangeStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -106,7 +108,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Defines the CustomXmlDelRangeStart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXmlDelRangeStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -134,7 +136,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Defines the CustomXmlMoveFromRangeStart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXmlMoveFromRangeStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -162,7 +164,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Defines the CustomXmlMoveToRangeStart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXmlMoveToRangeStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -190,7 +192,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Inserted Paragraph.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ins.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -218,7 +220,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Deleted Paragraph.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:del.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -246,7 +248,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Move Source Paragraph.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveFrom.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -273,7 +275,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Move Destination Paragraph.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveTo.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -300,7 +302,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Defines the TrackChangeType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TrackChangeType : OpenXmlLeafElement
@@ -325,7 +327,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -344,7 +346,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -363,7 +365,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -393,7 +395,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
 
     /// <summary>
     /// <para>Vertically Merged/Split Table Cells.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:cellMerge.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -421,7 +423,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
         [SchemaAttr(23, "vMerge")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalMergeRevisionValues> VerticalMerge
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalMergeRevisionValues>? VerticalMerge
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalMergeRevisionValues>>();
             set => SetAttribute(value);
@@ -440,7 +442,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
         [SchemaAttr(23, "vMergeOrig")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalMergeRevisionValues> VerticalMergeOriginal
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalMergeRevisionValues>? VerticalMergeOriginal
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalMergeRevisionValues>>();
             set => SetAttribute(value);
@@ -459,7 +461,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -478,7 +480,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -497,7 +499,7 @@ namespace DocumentFormat.OpenXml.Wordprocessing
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -534,7 +536,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the BookmarkStart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bookmarkStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -562,7 +564,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -581,7 +583,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "colFirst")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value ColumnFirst
+        public Int32Value? ColumnFirst
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -600,7 +602,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "colLast")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value ColumnLast
+        public Int32Value? ColumnLast
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -619,7 +621,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "displacedByCustomXml")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues> DisplacedByCustomXml
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>? DisplacedByCustomXml
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>>();
             set => SetAttribute(value);
@@ -638,7 +640,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -675,7 +677,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the BookmarkEnd Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bookmarkEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -703,7 +705,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the CommentRangeStart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:commentRangeStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -732,7 +734,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the CommentRangeEnd Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:commentRangeEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -761,7 +763,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MoveFromRangeEnd Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveFromRangeEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -789,7 +791,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MoveToRangeEnd Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveToRangeEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -817,7 +819,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MarkupRangeType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class MarkupRangeType : OpenXmlLeafElement
@@ -842,7 +844,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "displacedByCustomXml")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues> DisplacedByCustomXml
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>? DisplacedByCustomXml
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>>();
             set => SetAttribute(value);
@@ -861,7 +863,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -886,7 +888,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MoveFromRangeStart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveFromRangeStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -914,7 +916,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MoveToRangeStart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveToRangeStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -942,7 +944,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MoveBookmarkType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class MoveBookmarkType : OpenXmlLeafElement
@@ -967,7 +969,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -986,7 +988,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -1005,7 +1007,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -1024,7 +1026,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "colFirst")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value ColumnFirst
+        public Int32Value? ColumnFirst
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -1043,7 +1045,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "colLast")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value ColumnLast
+        public Int32Value? ColumnLast
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -1062,7 +1064,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "displacedByCustomXml")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues> DisplacedByCustomXml
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>? DisplacedByCustomXml
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>>();
             set => SetAttribute(value);
@@ -1081,7 +1083,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -1121,7 +1123,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlInsRangeEnd Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXmlInsRangeEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1149,7 +1151,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlDelRangeEnd Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXmlDelRangeEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1177,7 +1179,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlMoveFromRangeEnd Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXmlMoveFromRangeEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1205,7 +1207,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlMoveToRangeEnd Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXmlMoveToRangeEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1232,7 +1234,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Comment Content Reference Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:commentReference.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1261,7 +1263,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MarkupType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class MarkupType : OpenXmlLeafElement
@@ -1286,7 +1288,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -1310,7 +1312,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the ParagraphStyleId Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1338,7 +1340,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Date Display Mask.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dateFormat.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1365,7 +1367,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Document Part Gallery Filter.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docPartGallery.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1392,7 +1394,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Document Part Category Filter.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docPartCategory.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1419,7 +1421,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Document Part Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docPart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1446,7 +1448,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Custom XML Element Placeholder Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:placeholder.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1473,7 +1475,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the TableCaption Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblCaption.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1501,7 +1503,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the TableDescription Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblDescription.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1529,7 +1531,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Data Source Name for Column.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:name.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1557,7 +1559,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Predefined Merge Field Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:mappedName.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1584,7 +1586,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>UDL Connection String.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:udl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1611,7 +1613,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Data Source Table Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:table.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1638,7 +1640,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Data Source Connection String.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:connectString.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1665,7 +1667,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Query For Data Source Records To Merge.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:query.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1692,7 +1694,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Column Containing E-mail Address.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:addressFieldName.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1719,7 +1721,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Merged E-mail or Fax Subject Line.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:mailSubject.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1746,7 +1748,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Frame Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sz.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1773,7 +1775,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Associated Paragraph Style Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:style.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1800,7 +1802,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Description for Entry.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:description.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1827,7 +1829,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SdtAlias Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:alias.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1854,7 +1856,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Tag Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tag.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1881,7 +1883,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Attached Custom XML Schema.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:attachedSchema.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1908,7 +1910,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Radix Point for Field Code Evaluation.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:decimalSymbol.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1936,7 +1938,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>List Separator for Field Code Evaluation.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:listSeparator.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1964,7 +1966,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the WebPageEncoding Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:encoding.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1991,7 +1993,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the AltName Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:altName.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2018,7 +2020,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the StringType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class StringType : OpenXmlLeafElement
@@ -2043,7 +2045,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -2062,7 +2064,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the KeepNext Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:keepNext.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2089,7 +2091,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the KeepLines Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:keepLines.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2116,7 +2118,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the PageBreakBefore Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pageBreakBefore.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2143,7 +2145,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the WidowControl Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:widowControl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2170,7 +2172,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SuppressLineNumbers Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:suppressLineNumbers.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2197,7 +2199,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SuppressAutoHyphens Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:suppressAutoHyphens.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2224,7 +2226,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Kinsoku Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:kinsoku.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2251,7 +2253,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the WordWrap Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:wordWrap.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2278,7 +2280,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the OverflowPunctuation Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:overflowPunct.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2305,7 +2307,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the TopLinePunctuation Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:topLinePunct.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2332,7 +2334,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the AutoSpaceDE Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:autoSpaceDE.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2359,7 +2361,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the AutoSpaceDN Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:autoSpaceDN.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2386,7 +2388,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the BiDi Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bidi.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2413,7 +2415,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the AdjustRightIndent Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:adjustRightInd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2440,7 +2442,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SnapToGrid Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:snapToGrid.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2467,7 +2469,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the ContextualSpacing Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:contextualSpacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2494,7 +2496,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MirrorIndents Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:mirrorIndents.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2521,7 +2523,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SuppressOverlap Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:suppressOverlap.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2548,7 +2550,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Bold Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:b.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2575,7 +2577,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the BoldComplexScript Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bCs.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2602,7 +2604,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Italic Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:i.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2629,7 +2631,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the ItalicComplexScript Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:iCs.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2656,7 +2658,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Caps Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:caps.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2683,7 +2685,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SmallCaps Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:smallCaps.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2710,7 +2712,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Strike Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:strike.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2737,7 +2739,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the DoubleStrike Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dstrike.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2764,7 +2766,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Outline Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:outline.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2791,7 +2793,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Shadow Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:shadow.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2818,7 +2820,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Emboss Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:emboss.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2845,7 +2847,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Imprint Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:imprint.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2872,7 +2874,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the NoProof Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noProof.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2899,7 +2901,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Vanish Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:vanish.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2926,7 +2928,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the WebHidden Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:webHidden.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2953,7 +2955,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the RightToLeftText Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rtl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2980,7 +2982,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the ComplexScript Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:cs.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3007,7 +3009,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SpecVanish Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:specVanish.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3034,7 +3036,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the OfficeMath Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:oMath.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3061,7 +3063,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Hidden Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hidden.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3088,7 +3090,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the FormProtection Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:formProt.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3115,7 +3117,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the NoEndnote Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noEndnote.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3142,7 +3144,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the TitlePage Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:titlePg.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3169,7 +3171,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the GutterOnRight Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rtlGutter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3196,7 +3198,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Form Field Enabled.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:enabled.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3223,7 +3225,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Recalculate Fields When Current Field Is Modified.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:calcOnExit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3250,7 +3252,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Automatically Size Form Field.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sizeAuto.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3277,7 +3279,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Default Checkbox Form Field State.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:default.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3304,7 +3306,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Checkbox Form Field State.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:checked.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3331,7 +3333,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Keep Source Formatting on Import.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:matchSrc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3358,7 +3360,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Invalidated Field Cache.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dirty.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3385,7 +3387,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Built-In Document Part.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docPartUnique.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3412,7 +3414,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Record Is Included in Mail Merge.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:active.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3439,7 +3441,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use Country/Region-Based Address Field Ordering.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dynamicAddress.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3466,7 +3468,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>First Row of Data Source Contains Column Names.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:fHdr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3493,7 +3495,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Query Contains Link to External Query File.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:linkToQuery.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3520,7 +3522,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Remove Blank Lines from Merged Documents.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotSuppressBlankLines.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3547,7 +3549,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Merged Document To E-Mail Attachment.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:mailAsAttachment.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3574,7 +3576,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>View Merged Data Within Document.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:viewMergedData.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3601,7 +3603,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Display All Levels Using Arabic Numerals.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:isLgl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3628,7 +3630,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Data for HTML blockquote Element.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:blockQuote.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3655,7 +3657,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Data for HTML body Element.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bodyDiv.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3682,7 +3684,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use Simplified Rules For Table Border Conflicts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:useSingleBorderforContiguousCells.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3709,7 +3711,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate WordPerfect 6.x Paragraph Justification.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:wpJustification.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3736,7 +3738,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Create Custom Tab Stop for Hanging Indent.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noTabHangInd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3763,7 +3765,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Add Leading Between Lines of Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noLeading.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3790,7 +3792,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Add Additional Space Below Baseline For Underlined East Asian Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:spaceForUL.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3817,7 +3819,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Balance Text Columns within a Section.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noColumnBalance.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3844,7 +3846,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Balance Single Byte and Double Byte Characters.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:balanceSingleByteDoubleByteWidth.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3871,7 +3873,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Center Content on Lines With Exact Line Height.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noExtraLineSpacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3898,7 +3900,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Convert Backslash To Yen Sign When Entered.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotLeaveBackslashAlone.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3925,7 +3927,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Underline All Trailing Spaces.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ulTrailSpace.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3952,7 +3954,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Don't Justify Lines Ending in Soft Line Break.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotExpandShiftReturn.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3979,7 +3981,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Only Expand/Condense Text By Whole Points.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:spacingInWholePoints.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4006,7 +4008,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate Word 6.0 Line Wrapping for East Asian Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lineWrapLikeWord6.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4033,7 +4035,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Print Body Text before Header/Footer Contents.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:printBodyTextBeforeHeader.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4060,7 +4062,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Print Colors as Black And White without Dithering.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:printColBlack.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4087,7 +4089,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Space width.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:wpSpaceWidth.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4114,7 +4116,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Display Page/Column Breaks Present in Frames.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:showBreaksInFrames.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4141,7 +4143,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Increase Priority Of Font Size During Font Substitution.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:subFontBySize.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4168,7 +4170,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Ignore Exact Line Height for Last Line on Page.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:suppressBottomSpacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4195,7 +4197,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Ignore Minimum and Exact Line Height for First Line on Page.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:suppressTopSpacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4222,7 +4224,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Ignore Minimum Line Height for First Line on Page.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:suppressSpacingAtTopOfPage.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4249,7 +4251,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate WordPerfect 5.x Line Spacing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:suppressTopSpacingWP.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4276,7 +4278,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Use Space Before On First Line After a Page Break.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:suppressSpBfAfterPgBrk.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4303,7 +4305,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Swap Paragraph Borders on Odd Numbered Pages.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:swapBordersFacingPages.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4330,7 +4332,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Treat Backslash Quotation Delimiter as Two Quotation Marks.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:convMailMergeEsc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4357,7 +4359,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate WordPerfect 6.x Font Height Calculation.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:truncateFontHeightsLikeWP6.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4384,7 +4386,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate Word 5.x for the Macintosh Small Caps Formatting.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:mwSmallCaps.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4411,7 +4413,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use Printer Metrics To Display Documents.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:usePrinterMetrics.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4438,7 +4440,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Suppress Paragraph Borders Next To Frames.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotSuppressParagraphBorders.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4465,7 +4467,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Line Wrap Trailing Spaces.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:wrapTrailSpaces.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4492,7 +4494,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate Word 6.x/95/97 Footnote Placement.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:footnoteLayoutLikeWW8.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4519,7 +4521,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate Word 97 Text Wrapping Around Floating Objects.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:shapeLayoutLikeWW8.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4546,7 +4548,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Align Table Rows Independently.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:alignTablesRowByRow.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4573,7 +4575,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Ignore Width of Last Tab Stop When Aligning Paragraph If It Is Not Left Aligned.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:forgetLastTabAlignment.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4600,7 +4602,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Add Document Grid Line Pitch To Lines in Table Cells.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:adjustLineHeightInTable.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4627,7 +4629,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate Word 95 Full-Width Character Spacing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:autoSpaceLikeWord95.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4654,7 +4656,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Increase Line Height for Raised/Lowered Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noSpaceRaiseLower.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4681,7 +4683,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use Fixed Paragraph Spacing for HTML Auto Setting.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotUseHTMLParagraphAutoSpacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4708,7 +4710,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Ignore Space Before Table When Deciding If Table Should Wrap Floating Object.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:layoutRawTableWidth.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4735,7 +4737,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Allow Table Rows to Wrap Inline Objects Independently.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:layoutTableRowsApart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4762,7 +4764,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate Word 97 East Asian Line Breaking.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:useWord97LineBreakRules.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4789,7 +4791,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Allow Floating Tables To Break Across Pages.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotBreakWrappedTables.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4816,7 +4818,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Snap to Document Grid in Table Cells with Objects.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotSnapToGridInCell.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4843,7 +4845,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Select Field When First or Last Character Is Selected.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:selectFldWithFirstOrLastChar.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4870,7 +4872,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use Legacy Ethiopic and Amharic Line Breaking Rules.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:applyBreakingRules.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4897,7 +4899,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Allow Hanging Punctuation With Character Grid.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotWrapTextWithPunct.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4924,7 +4926,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Compress Compressible Characters When Using Document Grid.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotUseEastAsianBreakRules.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4951,7 +4953,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Emulate Word 2002 Table Style Rules.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:useWord2002TableStyleRules.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4978,7 +4980,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Allow Tables to AutoFit Into Page Margins.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:growAutofit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5005,7 +5007,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Bypass East Asian/Complex Script Layout Code.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:useFELayout.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5032,7 +5034,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Automatically Apply List Paragraph Style To Bulleted/Numbered Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:useNormalStyleForList.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5059,7 +5061,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Ignore Hanging Indent When Creating Tab Stop After Numbering.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotUseIndentAsNumberingTabStop.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5086,7 +5088,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use Alternate Set of East Asian Line Breaking Rules.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:useAltKinsokuLineBreakRules.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5113,7 +5115,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Allow Contextual Spacing of Paragraphs in Tables.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:allowSpaceOfSameStyleInTable.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5140,7 +5142,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Ignore Floating Objects When Calculating Paragraph Indentation.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotSuppressIndentation.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5167,7 +5169,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not AutoFit Tables To Fit Next To Wrapped Objects.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotAutofitConstrainedTables.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5194,7 +5196,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Allow Table Columns To Exceed Preferred Widths of Constituent Cells.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:autofitToFirstFixedWidthCell.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5221,7 +5223,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Underline Following Character Following Numbering.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:underlineTabInNumList.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5248,7 +5250,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Always Use Fixed Width for Hangul Characters.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:displayHangulFixedWidth.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5275,7 +5277,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Always Move Paragraph Mark to Page after a Page Break.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:splitPgBreakAndParaMark.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5302,7 +5304,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Don't Vertically Align Cells Containing Floating Objects.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotVertAlignCellWithSp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5329,7 +5331,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Don't Break Table Rows Around Floating Tables.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotBreakConstrainedForcedTable.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5356,7 +5358,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Ignore Vertical Alignment in Textboxes.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotVertAlignInTxbx.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5383,7 +5385,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use ANSI Kerning Pairs from Fonts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:useAnsiKerningPairs.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5410,7 +5412,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use Cached Paragraph Information for Column Balancing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:cachedColBalance.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5437,7 +5439,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the ShowingPlaceholder Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:showingPlcHdr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5464,7 +5466,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the TemporarySdt Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:temporary.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5491,7 +5493,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Remove Personal Information from Document Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:removePersonalInformation.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5518,7 +5520,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Remove Date and Time from Annotations.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:removeDateAndTime.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5545,7 +5547,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Display Visual Boundary For Header/Footer or Between Pages.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotDisplayPageBoundaries.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5572,7 +5574,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Display Background Objects When Displaying Document.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:displayBackgroundShape.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5599,7 +5601,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Print PostScript Codes With Document Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:printPostScriptOverText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5626,7 +5628,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Print Fractional Character Widths.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:printFractionalCharacterWidth.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5653,7 +5655,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Only Print Form Field Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:printFormsData.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5680,7 +5682,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Embed TrueType Fonts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:embedTrueTypeFonts.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5707,7 +5709,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Embed Common System Fonts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:embedSystemFonts.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5734,7 +5736,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Subset Fonts When Embedding.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:saveSubsetFonts.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5761,7 +5763,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Only Save Form Field Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:saveFormsData.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5788,7 +5790,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Mirror Page Margins.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:mirrorMargins.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5815,7 +5817,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Align Paragraph and Table Borders with Page Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:alignBordersAndEdges.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5842,7 +5844,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Page Border Excludes Header.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bordersDoNotSurroundHeader.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5869,7 +5871,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Page Border Excludes Footer.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bordersDoNotSurroundFooter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5896,7 +5898,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Position Gutter At Top of Page.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:gutterAtTop.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5923,7 +5925,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Display Visual Indication of Spelling Errors.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hideSpellingErrors.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5950,7 +5952,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Display Visual Indication of Grammatical Errors.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hideGrammaticalErrors.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5977,7 +5979,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Structured Document Tag Placeholder Text Should be Resaved.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:formsDesign.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6004,7 +6006,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Automatically Update Styles From Document Template.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:linkStyles.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6031,7 +6033,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Track Revisions to Document.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:trackRevisions.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6058,7 +6060,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Use Move Syntax When Tracking Revisions.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotTrackMoves.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6085,7 +6087,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Track Formatting Revisions When Tracking Revisions.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotTrackFormatting.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6112,7 +6114,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Allow Automatic Formatting to Override Formatting Protection Settings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:autoFormatOverride.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6139,7 +6141,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Prevent Modification of Themes Part.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:styleLockTheme.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6166,7 +6168,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Prevent Replacement of Styles Part.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:styleLockQFSet.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6193,7 +6195,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Automatically Hyphenate Document Contents When Displayed.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:autoHyphenation.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6220,7 +6222,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Hyphenate Words in ALL CAPITAL LETTERS.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotHyphenateCaps.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6247,7 +6249,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Show E-Mail Message Header.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:showEnvelope.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6274,7 +6276,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Different Even/Odd Page Headers and Footers.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:evenAndOddHeaders.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6301,7 +6303,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Reverse Book Fold Printing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bookFoldRevPrinting.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6328,7 +6330,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Book Fold Printing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bookFoldPrinting.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6355,7 +6357,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Use Margins for Drawing Grid Origin.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotUseMarginsForDrawingGridOrigin.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6382,7 +6384,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Show Visual Indicator For Form Fields.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotShadeFormData.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6409,7 +6411,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Never Kern Punctuation Characters.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noPunctuationKerning.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6436,7 +6438,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Print Two Pages Per Sheet.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:printTwoOnOne.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6463,7 +6465,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use Strict Kinsoku Rules for Japanese Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:strictFirstAndLastChars.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6490,7 +6492,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Generate Thumbnail For Document On Save.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:savePreviewPicture.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6517,7 +6519,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Validate Custom XML Markup Against Schemas.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotValidateAgainstSchema.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6544,7 +6546,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Allow Saving Document As XML File When Custom XML Markup Is Invalid.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:saveInvalidXml.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6571,7 +6573,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Ignore Mixed Content When Validating Custom XML Markup.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ignoreMixedContent.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6598,7 +6600,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Use Custom XML Element Names as Default Placeholder Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:alwaysShowPlaceholderText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6625,7 +6627,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Show Visual Indicator For Invalid Custom XML Markup.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotDemarcateInvalidXml.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6652,7 +6654,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Only Save Custom XML Markup.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:saveXmlDataOnly.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6679,7 +6681,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Save Document as XML File through Custom XSL Transform.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:useXSLTWhenSaving.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6706,7 +6708,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Show Visual Indicators for Custom XML Markup Start/End Locations.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:showXMLTags.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6733,7 +6735,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Mark Custom XML Elements With No Namespace As Invalid.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:alwaysMergeEmptyNamespace.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6760,7 +6762,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Automatically Recalculate Fields on Open.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:updateFields.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6787,7 +6789,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Disable Features Incompatible With Earlier Word Processing Formats.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:uiCompat97To2003.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6814,7 +6816,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Include Content in Text Boxes, Footnotes, and Endnotes in Document Statistics.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotIncludeSubdocsInStats.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6841,7 +6843,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Do Not Automatically Compress Images.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotAutoCompressPictures.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6868,7 +6870,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the OptimizeForBrowser Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:optimizeForBrowser.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6895,7 +6897,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the RelyOnVML Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:relyOnVML.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6922,7 +6924,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the AllowPNG Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:allowPNG.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6949,7 +6951,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the DoNotRelyOnCSS Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotRelyOnCSS.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6976,7 +6978,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the DoNotSaveAsSingleFile Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotSaveAsSingleFile.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7003,7 +7005,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the DoNotOrganizeInFolder Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotOrganizeInFolder.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7030,7 +7032,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the DoNotUseLongFileNames Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:doNotUseLongFileNames.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7057,7 +7059,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the NotTrueType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:notTrueType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7084,7 +7086,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the OnOffType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class OnOffType : OpenXmlLeafElement
@@ -7109,7 +7111,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Val
+        public OnOffValue? Val
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -7125,7 +7127,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the FrameProperties Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:framePr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7153,7 +7155,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "dropCap")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DropCapLocationValues> DropCap
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DropCapLocationValues>? DropCap
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DropCapLocationValues>>();
             set => SetAttribute(value);
@@ -7172,7 +7174,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "lines")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Lines
+        public Int32Value? Lines
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -7191,7 +7193,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Width
+        public StringValue? Width
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7210,7 +7212,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "h")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Height
+        public UInt32Value? Height
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -7229,7 +7231,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "vSpace")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue VerticalSpace
+        public StringValue? VerticalSpace
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7248,7 +7250,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "hSpace")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue HorizontalSpace
+        public StringValue? HorizontalSpace
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7267,7 +7269,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "wrap")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextWrappingValues> Wrap
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextWrappingValues>? Wrap
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextWrappingValues>>();
             set => SetAttribute(value);
@@ -7286,7 +7288,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "hAnchor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAnchorValues> HorizontalPosition
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAnchorValues>? HorizontalPosition
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAnchorValues>>();
             set => SetAttribute(value);
@@ -7305,7 +7307,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "vAnchor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAnchorValues> VerticalPosition
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAnchorValues>? VerticalPosition
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAnchorValues>>();
             set => SetAttribute(value);
@@ -7324,7 +7326,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "x")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue X
+        public StringValue? X
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7343,7 +7345,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "xAlign")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAlignmentValues> XAlign
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAlignmentValues>? XAlign
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAlignmentValues>>();
             set => SetAttribute(value);
@@ -7362,7 +7364,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "y")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Y
+        public StringValue? Y
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7381,7 +7383,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "yAlign")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAlignmentValues> YAlign
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAlignmentValues>? YAlign
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAlignmentValues>>();
             set => SetAttribute(value);
@@ -7400,7 +7402,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "hRule")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HeightRuleValues> HeightType
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HeightRuleValues>? HeightType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.HeightRuleValues>>();
             set => SetAttribute(value);
@@ -7419,7 +7421,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "anchorLock")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue AnchorLock
+        public OnOffValue? AnchorLock
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -7499,7 +7501,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the NumberingProperties Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numPr.</para>
     /// </summary>
     /// <remark>
@@ -7571,7 +7573,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingLevelReference NumberingLevelReference
+        public NumberingLevelReference? NumberingLevelReference
         {
             get => GetElement<NumberingLevelReference>();
             set => SetElement(value);
@@ -7584,7 +7586,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingId NumberingId
+        public NumberingId? NumberingId
         {
             get => GetElement<NumberingId>();
             set => SetElement(value);
@@ -7597,7 +7599,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingChange NumberingChange
+        public NumberingChange? NumberingChange
         {
             get => GetElement<NumberingChange>();
             set => SetElement(value);
@@ -7610,7 +7612,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Inserted Inserted
+        public Inserted? Inserted
         {
             get => GetElement<Inserted>();
             set => SetElement(value);
@@ -7622,7 +7624,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the ParagraphBorders Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pBdr.</para>
     /// </summary>
     /// <remark>
@@ -7700,7 +7702,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopBorder TopBorder
+        public TopBorder? TopBorder
         {
             get => GetElement<TopBorder>();
             set => SetElement(value);
@@ -7713,7 +7715,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LeftBorder LeftBorder
+        public LeftBorder? LeftBorder
         {
             get => GetElement<LeftBorder>();
             set => SetElement(value);
@@ -7726,7 +7728,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BottomBorder BottomBorder
+        public BottomBorder? BottomBorder
         {
             get => GetElement<BottomBorder>();
             set => SetElement(value);
@@ -7739,7 +7741,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RightBorder RightBorder
+        public RightBorder? RightBorder
         {
             get => GetElement<RightBorder>();
             set => SetElement(value);
@@ -7752,7 +7754,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BetweenBorder BetweenBorder
+        public BetweenBorder? BetweenBorder
         {
             get => GetElement<BetweenBorder>();
             set => SetElement(value);
@@ -7765,7 +7767,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BarBorder BarBorder
+        public BarBorder? BarBorder
         {
             get => GetElement<BarBorder>();
             set => SetElement(value);
@@ -7777,7 +7779,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the Shading Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:shd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7805,7 +7807,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ShadingPatternValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ShadingPatternValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ShadingPatternValues>>();
             set => SetAttribute(value);
@@ -7824,7 +7826,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "color")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Color
+        public StringValue? Color
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7843,7 +7845,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "themeColor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues> ThemeColor
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>? ThemeColor
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>>();
             set => SetAttribute(value);
@@ -7862,7 +7864,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "themeTint")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeTint
+        public StringValue? ThemeTint
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7881,7 +7883,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "themeShade")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeShade
+        public StringValue? ThemeShade
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7900,7 +7902,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "fill")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Fill
+        public StringValue? Fill
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7919,7 +7921,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "themeFill")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues> ThemeFill
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>? ThemeFill
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>>();
             set => SetAttribute(value);
@@ -7938,7 +7940,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "themeFillTint")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeFillTint
+        public StringValue? ThemeFillTint
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7957,7 +7959,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "themeFillShade")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeFillShade
+        public StringValue? ThemeFillShade
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8014,7 +8016,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the Tabs Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tabs.</para>
     /// </summary>
     /// <remark>
@@ -8076,7 +8078,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the SpacingBetweenLines Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:spacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8104,7 +8106,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "before")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Before
+        public StringValue? Before
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8123,7 +8125,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "beforeLines")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value BeforeLines
+        public Int32Value? BeforeLines
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -8142,7 +8144,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "beforeAutospacing")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue BeforeAutoSpacing
+        public OnOffValue? BeforeAutoSpacing
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -8161,7 +8163,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "after")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue After
+        public StringValue? After
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8180,7 +8182,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "afterLines")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value AfterLines
+        public Int32Value? AfterLines
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -8199,7 +8201,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "afterAutospacing")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue AfterAutoSpacing
+        public OnOffValue? AfterAutoSpacing
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -8218,7 +8220,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "line")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Line
+        public StringValue? Line
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8237,7 +8239,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "lineRule")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LineSpacingRuleValues> LineRule
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LineSpacingRuleValues>? LineRule
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.LineSpacingRuleValues>>();
             set => SetAttribute(value);
@@ -8288,7 +8290,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the Indentation Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ind.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8316,14 +8318,14 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "left")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Left
+        public StringValue? Left
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>start, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>start, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:start</para>
         /// </summary>
         /// <remark>
@@ -8335,7 +8337,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "start")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Start
+        public StringValue? Start
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8354,14 +8356,14 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "leftChars")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value LeftChars
+        public Int32Value? LeftChars
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>startChars, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>startChars, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:startChars</para>
         /// </summary>
         /// <remark>
@@ -8373,7 +8375,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "startChars")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value StartCharacters
+        public Int32Value? StartCharacters
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -8392,14 +8394,14 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "right")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Right
+        public StringValue? Right
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>end, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>end, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:end</para>
         /// </summary>
         /// <remark>
@@ -8411,7 +8413,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "end")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue End
+        public StringValue? End
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8430,14 +8432,14 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "rightChars")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value RightChars
+        public Int32Value? RightChars
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>endChars, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>endChars, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:endChars</para>
         /// </summary>
         /// <remark>
@@ -8449,7 +8451,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "endChars")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value EndCharacters
+        public Int32Value? EndCharacters
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -8468,7 +8470,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "hanging")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Hanging
+        public StringValue? Hanging
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8487,7 +8489,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "hangingChars")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value HangingChars
+        public Int32Value? HangingChars
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -8506,7 +8508,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "firstLine")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue FirstLine
+        public StringValue? FirstLine
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8525,7 +8527,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "firstLineChars")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value FirstLineChars
+        public Int32Value? FirstLineChars
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -8612,7 +8614,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the Justification Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:jc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8640,7 +8642,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.JustificationValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.JustificationValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.JustificationValues>>();
             set => SetAttribute(value);
@@ -8663,7 +8665,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the TextDirection Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:textDirection.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8691,7 +8693,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextDirectionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextDirectionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextDirectionValues>>();
             set => SetAttribute(value);
@@ -8714,7 +8716,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TextAlignment Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:textAlignment.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8742,7 +8744,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalTextAlignmentValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalTextAlignmentValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalTextAlignmentValues>>();
             set => SetAttribute(value);
@@ -8765,7 +8767,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TextBoxTightWrap Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:textboxTightWrap.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8793,7 +8795,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextBoxTightWrapValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextBoxTightWrapValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextBoxTightWrapValues>>();
             set => SetAttribute(value);
@@ -8816,7 +8818,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the OutlineLevel Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:outlineLvl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8844,7 +8846,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the GridSpan Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:gridSpan.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8871,7 +8873,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the GridBefore Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:gridBefore.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8898,7 +8900,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the GridAfter Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:gridAfter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8925,7 +8927,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Drop-Down List Selection.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:result.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8952,7 +8954,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Record Currently Displayed In Merged Document.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:activeRecord.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8979,7 +8981,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Mail Merge Error Reporting Setting.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:checkErrors.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9006,7 +9008,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Restart Numbering Level Symbol.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lvlRestart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9033,7 +9035,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Picture Numbering Symbol Definition Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lvlPicBulletId.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9060,7 +9062,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Numbering Level Starting Value Override.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:startOverride.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9087,7 +9089,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Last Reviewed Abstract Numbering Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numIdMacAtCleanup.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9114,7 +9116,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtId Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:id.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9141,7 +9143,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the PixelsPerInch Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pixelsPerInch.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9168,7 +9170,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DecimalNumberType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class DecimalNumberType : OpenXmlLeafElement
@@ -9193,7 +9195,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -9212,7 +9214,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ParagraphPropertiesChange Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pPrChange.</para>
     /// </summary>
     /// <remark>
@@ -9270,7 +9272,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -9289,7 +9291,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -9308,7 +9310,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -9352,7 +9354,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphPropertiesExtended ParagraphPropertiesExtended
+        public ParagraphPropertiesExtended? ParagraphPropertiesExtended
         {
             get => GetElement<ParagraphPropertiesExtended>();
             set => SetElement(value);
@@ -9364,7 +9366,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Header Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:headerReference.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9393,7 +9395,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Footer Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:footerReference.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9422,7 +9424,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the HeaderFooterReferenceType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class HeaderFooterReferenceType : OpenXmlLeafElement
@@ -9447,7 +9449,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HeaderFooterValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HeaderFooterValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.HeaderFooterValues>>();
             set => SetAttribute(value);
@@ -9466,7 +9468,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -9489,7 +9491,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Break.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:br.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9517,7 +9519,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.BreakValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.BreakValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.BreakValues>>();
             set => SetAttribute(value);
@@ -9536,7 +9538,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "clear")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.BreakTextRestartLocationValues> Clear
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.BreakTextRestartLocationValues>? Clear
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.BreakTextRestartLocationValues>>();
             set => SetAttribute(value);
@@ -9557,7 +9559,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:t.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9597,7 +9599,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Deleted Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:delText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9637,7 +9639,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Field Code.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:instrText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9677,7 +9679,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Deleted Field Code.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:delInstrText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9717,7 +9719,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the TextType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TextType : OpenXmlLeafTextElement
@@ -9755,7 +9757,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(1, "space")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.SpaceProcessingModeValues> Space
+        public EnumValue<DocumentFormat.OpenXml.SpaceProcessingModeValues>? Space
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.SpaceProcessingModeValues>>();
             set => SetAttribute(value);
@@ -9771,7 +9773,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Non Breaking Hyphen Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noBreakHyphen.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9798,7 +9800,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Optional Hyphen Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:softHyphen.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9825,7 +9827,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Date Block - Short Day Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dayShort.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9852,7 +9854,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Date Block - Short Month Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:monthShort.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9879,7 +9881,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Date Block - Short Year Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:yearShort.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9906,7 +9908,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Date Block - Long Day Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dayLong.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9933,7 +9935,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Date Block - Long Month Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:monthLong.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9960,7 +9962,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Date Block - Long Year Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:yearLong.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9987,7 +9989,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Comment Information Block.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:annotationRef.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10014,7 +10016,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Footnote Reference Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:footnoteRef.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10041,7 +10043,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Endnote Reference Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:endnoteRef.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10068,7 +10070,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Footnote/Endnote Separator Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:separator.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10095,7 +10097,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Continuation Separator Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:continuationSeparator.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10122,7 +10124,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Page Number Block.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pgNum.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10149,7 +10151,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Carriage Return.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:cr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10176,7 +10178,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Tab Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tab.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10203,7 +10205,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Position of Last Calculated Page Break.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lastRenderedPageBreak.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10230,7 +10232,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SdtContentEquation Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:equation.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10257,7 +10259,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SdtContentPicture Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:picture.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10284,7 +10286,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SdtContentRichText Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:richText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10311,7 +10313,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SdtContentCitation Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:citation.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10338,7 +10340,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SdtContentGroup Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:group.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10365,7 +10367,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SdtContentBibliography Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bibliography.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10392,7 +10394,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Upgrade Document on Open.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:forceUpgrade.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10419,7 +10421,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the EmptyType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class EmptyType : OpenXmlLeafElement
@@ -10439,7 +10441,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Symbol Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sym.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10467,7 +10469,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "font")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Font
+        public StringValue? Font
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -10486,7 +10488,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "char")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue Char
+        public HexBinaryValue? Char
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -10513,7 +10515,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Inline Embedded Object.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:object.</para>
     /// </summary>
     /// <remark>
@@ -10586,7 +10588,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "dxaOrig")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue DxaOriginal
+        public StringValue? DxaOriginal
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -10605,14 +10607,14 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "dyaOrig")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue DyaOriginal
+        public StringValue? DyaOriginal
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>anchorId, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>anchorId, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:anchorId</para>
         /// </summary>
         /// <remark>
@@ -10624,7 +10626,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(52, "anchorId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue AnchorId
+        public HexBinaryValue? AnchorId
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -10700,7 +10702,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>VML Object.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pict.</para>
     /// </summary>
     /// <remark>
@@ -10759,7 +10761,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         }
 
         /// <summary>
-        /// <para>anchorId, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>anchorId, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:anchorId</para>
         /// </summary>
         /// <remark>
@@ -10771,7 +10773,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(52, "anchorId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue AnchorId
+        public HexBinaryValue? AnchorId
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -10838,7 +10840,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Complex Field Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:fldChar.</para>
     /// </summary>
     /// <remark>
@@ -10898,7 +10900,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "fldCharType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FieldCharValues> FieldCharType
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FieldCharValues>? FieldCharType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.FieldCharValues>>();
             set => SetAttribute(value);
@@ -10917,7 +10919,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "fldLock")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue FieldLock
+        public OnOffValue? FieldLock
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -10936,7 +10938,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "dirty")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Dirty
+        public OnOffValue? Dirty
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -10971,7 +10973,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FieldData FieldData
+        public FieldData? FieldData
         {
             get => GetElement<FieldData>();
             set => SetElement(value);
@@ -10984,7 +10986,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FormFieldData FormFieldData
+        public FormFieldData? FormFieldData
         {
             get => GetElement<FormFieldData>();
             set => SetElement(value);
@@ -10997,7 +10999,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingChange NumberingChange
+        public NumberingChange? NumberingChange
         {
             get => GetElement<NumberingChange>();
             set => SetElement(value);
@@ -11009,7 +11011,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Phonetic Guide.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ruby.</para>
     /// </summary>
     /// <remark>
@@ -11078,7 +11080,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RubyProperties RubyProperties
+        public RubyProperties? RubyProperties
         {
             get => GetElement<RubyProperties>();
             set => SetElement(value);
@@ -11091,7 +11093,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RubyContent RubyContent
+        public RubyContent? RubyContent
         {
             get => GetElement<RubyContent>();
             set => SetElement(value);
@@ -11104,7 +11106,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RubyBase RubyBase
+        public RubyBase? RubyBase
         {
             get => GetElement<RubyBase>();
             set => SetElement(value);
@@ -11116,7 +11118,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Footnote Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:footnoteReference.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11144,7 +11146,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Endnote Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:endnoteReference.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11171,7 +11173,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the FootnoteEndnoteReferenceType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class FootnoteEndnoteReferenceType : OpenXmlLeafElement
@@ -11196,7 +11198,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "customMarkFollows")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue CustomMarkFollows
+        public OnOffValue? CustomMarkFollows
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -11215,7 +11217,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue Id
+        public IntegerValue? Id
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -11236,7 +11238,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>DrawingML Object.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:drawing.</para>
     /// </summary>
     /// <remark>
@@ -11302,7 +11304,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:wp = http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Wordprocessing.Anchor Anchor
+        public DocumentFormat.OpenXml.Drawing.Wordprocessing.Anchor? Anchor
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Wordprocessing.Anchor>();
             set => SetElement(value);
@@ -11315,7 +11317,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:wp = http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Wordprocessing.Inline Inline
+        public DocumentFormat.OpenXml.Drawing.Wordprocessing.Inline? Inline
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Wordprocessing.Inline>();
             set => SetElement(value);
@@ -11327,7 +11329,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Absolute Position Tab Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ptab.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11355,7 +11357,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "alignment")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.AbsolutePositionTabAlignmentValues> Alignment
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.AbsolutePositionTabAlignmentValues>? Alignment
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.AbsolutePositionTabAlignmentValues>>();
             set => SetAttribute(value);
@@ -11374,7 +11376,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "relativeTo")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.AbsolutePositionTabPositioningBaseValues> RelativeTo
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.AbsolutePositionTabPositioningBaseValues>? RelativeTo
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.AbsolutePositionTabPositioningBaseValues>>();
             set => SetAttribute(value);
@@ -11393,7 +11395,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "leader")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.AbsolutePositionTabLeaderCharValues> Leader
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.AbsolutePositionTabLeaderCharValues>? Leader
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.AbsolutePositionTabLeaderCharValues>>();
             set => SetAttribute(value);
@@ -11424,7 +11426,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RunStyle Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11451,7 +11453,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableStyle Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11478,7 +11480,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Paragraph Style's Associated Numbering Level.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11505,7 +11507,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Abstract Numbering Definition Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:name.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11532,7 +11534,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Numbering Style Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:styleLink.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11559,7 +11561,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Numbering Style Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numStyleLink.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11586,7 +11588,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Alternate Style Names.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:aliases.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11613,7 +11615,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Parent Style ID.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:basedOn.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11640,7 +11642,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Style For Next Paragraph.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:next.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11667,7 +11669,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Linked Style Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:link.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11694,7 +11696,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Paragraph Style Applied to Automatically Generated Paragraphs.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:clickAndTypeStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11721,7 +11723,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Default Table Style for Newly Inserted Tables.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:defaultTableStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11748,7 +11750,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the String253Type Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class String253Type : OpenXmlLeafElement
@@ -11773,7 +11775,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -11793,7 +11795,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RunFonts Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rFonts.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -11821,7 +11823,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "hint")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FontTypeHintValues> Hint
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FontTypeHintValues>? Hint
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.FontTypeHintValues>>();
             set => SetAttribute(value);
@@ -11840,7 +11842,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "ascii")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Ascii
+        public StringValue? Ascii
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -11859,7 +11861,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "hAnsi")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue HighAnsi
+        public StringValue? HighAnsi
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -11878,7 +11880,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "eastAsia")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue EastAsia
+        public StringValue? EastAsia
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -11897,7 +11899,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cs")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ComplexScript
+        public StringValue? ComplexScript
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -11916,7 +11918,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "asciiTheme")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues> AsciiTheme
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues>? AsciiTheme
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues>>();
             set => SetAttribute(value);
@@ -11935,7 +11937,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "hAnsiTheme")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues> HighAnsiTheme
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues>? HighAnsiTheme
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues>>();
             set => SetAttribute(value);
@@ -11954,7 +11956,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "eastAsiaTheme")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues> EastAsiaTheme
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues>? EastAsiaTheme
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues>>();
             set => SetAttribute(value);
@@ -11973,7 +11975,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cstheme")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues> ComplexScriptTheme
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues>? ComplexScriptTheme
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeFontValues>>();
             set => SetAttribute(value);
@@ -12013,7 +12015,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
 
     /// <summary>
     /// <para>Defines the Color Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:color.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12041,7 +12043,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -12060,7 +12062,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
         [SchemaAttr(23, "themeColor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues> ThemeColor
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>? ThemeColor
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>>();
             set => SetAttribute(value);
@@ -12079,7 +12081,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
         [SchemaAttr(23, "themeTint")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeTint
+        public StringValue? ThemeTint
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -12098,7 +12100,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
         [SchemaAttr(23, "themeShade")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeShade
+        public StringValue? ThemeShade
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -12135,7 +12137,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
 
     /// <summary>
     /// <para>Defines the Spacing Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:spacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12163,7 +12165,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -12187,7 +12189,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-31680L), MaxInclu
 
     /// <summary>
     /// <para>Defines the CharacterScale Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:w.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12215,7 +12217,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-31680L), MaxInclu
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue Val
+        public IntegerValue? Val
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -12238,7 +12240,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-31680L), MaxInclu
 
     /// <summary>
     /// <para>Defines the Kern Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:kern.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12266,7 +12268,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-31680L), MaxInclu
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -12290,7 +12292,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-31680L), MaxInclu
 
     /// <summary>
     /// <para>Defines the Position Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:position.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12318,7 +12320,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-31680L), MaxInclu
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -12347,7 +12349,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the FontSize Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sz.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12374,7 +12376,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the FontSizeComplexScript Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:szCs.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12401,7 +12403,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Checkbox Form Field Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:size.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12428,7 +12430,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Phonetic Guide Text Font Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hps.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12455,7 +12457,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Phonetic Guide Base Text Font Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hpsBaseText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12482,7 +12484,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the HpsMeasureType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class HpsMeasureType : OpenXmlLeafElement
@@ -12507,7 +12509,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -12532,7 +12534,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the Highlight Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:highlight.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12560,7 +12562,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HighlightColorValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HighlightColorValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.HighlightColorValues>>();
             set => SetAttribute(value);
@@ -12583,7 +12585,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Underline Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:u.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12611,7 +12613,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.UnderlineValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.UnderlineValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.UnderlineValues>>();
             set => SetAttribute(value);
@@ -12630,7 +12632,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "color")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Color
+        public StringValue? Color
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -12649,7 +12651,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "themeColor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues> ThemeColor
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>? ThemeColor
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>>();
             set => SetAttribute(value);
@@ -12668,7 +12670,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "themeTint")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeTint
+        public StringValue? ThemeTint
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -12687,7 +12689,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "themeShade")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeShade
+        public StringValue? ThemeShade
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -12724,7 +12726,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TextEffect Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:effect.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12752,7 +12754,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextEffectValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextEffectValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextEffectValues>>();
             set => SetAttribute(value);
@@ -12775,7 +12777,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Border Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bdr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12802,7 +12804,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Paragraph Border Above Identical Paragraphs.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:top.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12829,7 +12831,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Left Paragraph Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:left.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12856,7 +12858,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Paragraph Border Between Identical Paragraphs.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bottom.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12883,7 +12885,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Right Paragraph Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:right.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12910,7 +12912,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Paragraph Border Between Identical Paragraphs.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:between.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12937,7 +12939,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Paragraph Border Between Facing Pages.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bar.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12964,7 +12966,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the StartBorder Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:start.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -12992,7 +12994,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the EndBorder Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:end.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13020,7 +13022,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Inside Horizontal Edges Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:insideH.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13047,7 +13049,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Inside Vertical Edges Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:insideV.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13074,7 +13076,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Cell Top Left to Bottom Right Diagonal Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tl2br.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13101,7 +13103,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Cell Top Right to Bottom Left Diagonal Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tr2bl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13128,7 +13130,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the BorderType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class BorderType : OpenXmlLeafElement
@@ -13153,7 +13155,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.BorderValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.BorderValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.BorderValues>>();
             set => SetAttribute(value);
@@ -13172,7 +13174,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "color")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Color
+        public StringValue? Color
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -13191,7 +13193,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "themeColor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues> ThemeColor
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>? ThemeColor
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>>();
             set => SetAttribute(value);
@@ -13210,7 +13212,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "themeTint")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeTint
+        public StringValue? ThemeTint
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -13229,7 +13231,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "themeShade")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeShade
+        public StringValue? ThemeShade
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -13248,7 +13250,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "sz")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Size
+        public UInt32Value? Size
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -13267,7 +13269,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "space")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Space
+        public UInt32Value? Space
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -13286,7 +13288,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "shadow")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Shadow
+        public OnOffValue? Shadow
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -13305,7 +13307,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "frame")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Frame
+        public OnOffValue? Frame
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -13348,7 +13350,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the FitText Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:fitText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13376,7 +13378,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -13395,7 +13397,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Id
+        public Int32Value? Id
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -13420,7 +13422,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
 
     /// <summary>
     /// <para>Defines the VerticalTextAlignment Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:vertAlign.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13448,7 +13450,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalPositionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalPositionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalPositionValues>>();
             set => SetAttribute(value);
@@ -13471,7 +13473,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Emphasis Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:em.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13499,7 +13501,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.EmphasisMarkValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.EmphasisMarkValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.EmphasisMarkValues>>();
             set => SetAttribute(value);
@@ -13522,7 +13524,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Languages Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lang.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13549,7 +13551,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Theme Font Languages.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:themeFontLang.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13576,7 +13578,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the LanguageType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class LanguageType : OpenXmlLeafElement
@@ -13601,7 +13603,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -13620,7 +13622,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "eastAsia")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue EastAsia
+        public StringValue? EastAsia
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -13639,7 +13641,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "bidi")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Bidi
+        public StringValue? Bidi
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -13666,7 +13668,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the EastAsianLayout Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:eastAsianLayout.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -13694,7 +13696,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Id
+        public Int32Value? Id
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -13713,7 +13715,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "combine")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Combine
+        public OnOffValue? Combine
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -13732,7 +13734,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "combineBrackets")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CombineBracketValues> CombineBrackets
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CombineBracketValues>? CombineBrackets
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CombineBracketValues>>();
             set => SetAttribute(value);
@@ -13751,7 +13753,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "vert")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Vertical
+        public OnOffValue? Vertical
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -13770,7 +13772,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "vertCompress")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue VerticalCompress
+        public OnOffValue? VerticalCompress
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -13794,7 +13796,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RunPropertiesChange Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPrChange.</para>
     /// </summary>
     /// <remark>
@@ -13852,7 +13854,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -13871,7 +13873,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -13890,7 +13892,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -13934,7 +13936,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PreviousRunProperties PreviousRunProperties
+        public PreviousRunProperties? PreviousRunProperties
         {
             get => GetElement<PreviousRunProperties>();
             set => SetElement(value);
@@ -13946,7 +13948,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Run Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPr.</para>
     /// </summary>
     /// <remark>
@@ -14225,7 +14227,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunStyle RunStyle
+        public RunStyle? RunStyle
         {
             get => GetElement<RunStyle>();
             set => SetElement(value);
@@ -14238,7 +14240,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunFonts RunFonts
+        public RunFonts? RunFonts
         {
             get => GetElement<RunFonts>();
             set => SetElement(value);
@@ -14251,7 +14253,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Bold Bold
+        public Bold? Bold
         {
             get => GetElement<Bold>();
             set => SetElement(value);
@@ -14264,7 +14266,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BoldComplexScript BoldComplexScript
+        public BoldComplexScript? BoldComplexScript
         {
             get => GetElement<BoldComplexScript>();
             set => SetElement(value);
@@ -14277,7 +14279,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Italic Italic
+        public Italic? Italic
         {
             get => GetElement<Italic>();
             set => SetElement(value);
@@ -14290,7 +14292,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ItalicComplexScript ItalicComplexScript
+        public ItalicComplexScript? ItalicComplexScript
         {
             get => GetElement<ItalicComplexScript>();
             set => SetElement(value);
@@ -14303,7 +14305,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Caps Caps
+        public Caps? Caps
         {
             get => GetElement<Caps>();
             set => SetElement(value);
@@ -14316,7 +14318,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SmallCaps SmallCaps
+        public SmallCaps? SmallCaps
         {
             get => GetElement<SmallCaps>();
             set => SetElement(value);
@@ -14329,7 +14331,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Strike Strike
+        public Strike? Strike
         {
             get => GetElement<Strike>();
             set => SetElement(value);
@@ -14342,7 +14344,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoubleStrike DoubleStrike
+        public DoubleStrike? DoubleStrike
         {
             get => GetElement<DoubleStrike>();
             set => SetElement(value);
@@ -14355,7 +14357,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Outline Outline
+        public Outline? Outline
         {
             get => GetElement<Outline>();
             set => SetElement(value);
@@ -14368,7 +14370,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shadow Shadow
+        public Shadow? Shadow
         {
             get => GetElement<Shadow>();
             set => SetElement(value);
@@ -14381,7 +14383,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Emboss Emboss
+        public Emboss? Emboss
         {
             get => GetElement<Emboss>();
             set => SetElement(value);
@@ -14394,7 +14396,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Imprint Imprint
+        public Imprint? Imprint
         {
             get => GetElement<Imprint>();
             set => SetElement(value);
@@ -14407,7 +14409,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoProof NoProof
+        public NoProof? NoProof
         {
             get => GetElement<NoProof>();
             set => SetElement(value);
@@ -14420,7 +14422,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SnapToGrid SnapToGrid
+        public SnapToGrid? SnapToGrid
         {
             get => GetElement<SnapToGrid>();
             set => SetElement(value);
@@ -14433,7 +14435,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Vanish Vanish
+        public Vanish? Vanish
         {
             get => GetElement<Vanish>();
             set => SetElement(value);
@@ -14446,7 +14448,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WebHidden WebHidden
+        public WebHidden? WebHidden
         {
             get => GetElement<WebHidden>();
             set => SetElement(value);
@@ -14459,7 +14461,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Color Color
+        public Color? Color
         {
             get => GetElement<Color>();
             set => SetElement(value);
@@ -14472,7 +14474,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Spacing Spacing
+        public Spacing? Spacing
         {
             get => GetElement<Spacing>();
             set => SetElement(value);
@@ -14485,7 +14487,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public CharacterScale CharacterScale
+        public CharacterScale? CharacterScale
         {
             get => GetElement<CharacterScale>();
             set => SetElement(value);
@@ -14498,7 +14500,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Kern Kern
+        public Kern? Kern
         {
             get => GetElement<Kern>();
             set => SetElement(value);
@@ -14511,7 +14513,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Position Position
+        public Position? Position
         {
             get => GetElement<Position>();
             set => SetElement(value);
@@ -14524,7 +14526,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontSize FontSize
+        public FontSize? FontSize
         {
             get => GetElement<FontSize>();
             set => SetElement(value);
@@ -14537,7 +14539,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontSizeComplexScript FontSizeComplexScript
+        public FontSizeComplexScript? FontSizeComplexScript
         {
             get => GetElement<FontSizeComplexScript>();
             set => SetElement(value);
@@ -14550,7 +14552,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Highlight Highlight
+        public Highlight? Highlight
         {
             get => GetElement<Highlight>();
             set => SetElement(value);
@@ -14563,7 +14565,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Underline Underline
+        public Underline? Underline
         {
             get => GetElement<Underline>();
             set => SetElement(value);
@@ -14576,7 +14578,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextEffect TextEffect
+        public TextEffect? TextEffect
         {
             get => GetElement<TextEffect>();
             set => SetElement(value);
@@ -14589,7 +14591,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Border Border
+        public Border? Border
         {
             get => GetElement<Border>();
             set => SetElement(value);
@@ -14602,7 +14604,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -14615,7 +14617,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FitText FitText
+        public FitText? FitText
         {
             get => GetElement<FitText>();
             set => SetElement(value);
@@ -14628,7 +14630,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public VerticalTextAlignment VerticalTextAlignment
+        public VerticalTextAlignment? VerticalTextAlignment
         {
             get => GetElement<VerticalTextAlignment>();
             set => SetElement(value);
@@ -14641,7 +14643,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RightToLeftText RightToLeftText
+        public RightToLeftText? RightToLeftText
         {
             get => GetElement<RightToLeftText>();
             set => SetElement(value);
@@ -14654,7 +14656,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ComplexScript ComplexScript
+        public ComplexScript? ComplexScript
         {
             get => GetElement<ComplexScript>();
             set => SetElement(value);
@@ -14667,7 +14669,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Emphasis Emphasis
+        public Emphasis? Emphasis
         {
             get => GetElement<Emphasis>();
             set => SetElement(value);
@@ -14680,7 +14682,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Languages Languages
+        public Languages? Languages
         {
             get => GetElement<Languages>();
             set => SetElement(value);
@@ -14693,7 +14695,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EastAsianLayout EastAsianLayout
+        public EastAsianLayout? EastAsianLayout
         {
             get => GetElement<EastAsianLayout>();
             set => SetElement(value);
@@ -14706,163 +14708,163 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpecVanish SpecVanish
+        public SpecVanish? SpecVanish
         {
             get => GetElement<SpecVanish>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>Glow.</para>
+        /// <para>Glow, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:glow.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.Glow Glow
+        public DocumentFormat.OpenXml.Office2010.Word.Glow? Glow
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.Glow>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>Shadow14.</para>
+        /// <para>Shadow14, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:shadow.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.Shadow Shadow14
+        public DocumentFormat.OpenXml.Office2010.Word.Shadow? Shadow14
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.Shadow>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>Reflection.</para>
+        /// <para>Reflection, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:reflection.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.Reflection Reflection
+        public DocumentFormat.OpenXml.Office2010.Word.Reflection? Reflection
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.Reflection>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>TextOutlineEffect.</para>
+        /// <para>TextOutlineEffect, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:textOutline.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.TextOutlineEffect TextOutlineEffect
+        public DocumentFormat.OpenXml.Office2010.Word.TextOutlineEffect? TextOutlineEffect
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.TextOutlineEffect>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>FillTextEffect.</para>
+        /// <para>FillTextEffect, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:textFill.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.FillTextEffect FillTextEffect
+        public DocumentFormat.OpenXml.Office2010.Word.FillTextEffect? FillTextEffect
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.FillTextEffect>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>Scene3D.</para>
+        /// <para>Scene3D, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:scene3d.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.Scene3D Scene3D
+        public DocumentFormat.OpenXml.Office2010.Word.Scene3D? Scene3D
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.Scene3D>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>Properties3D.</para>
+        /// <para>Properties3D, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:props3d.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.Properties3D Properties3D
+        public DocumentFormat.OpenXml.Office2010.Word.Properties3D? Properties3D
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.Properties3D>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>Ligatures.</para>
+        /// <para>Ligatures, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:ligatures.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.Ligatures Ligatures
+        public DocumentFormat.OpenXml.Office2010.Word.Ligatures? Ligatures
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.Ligatures>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>NumberingFormat.</para>
+        /// <para>NumberingFormat, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:numForm.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.NumberingFormat NumberingFormat
+        public DocumentFormat.OpenXml.Office2010.Word.NumberingFormat? NumberingFormat
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.NumberingFormat>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>NumberSpacing.</para>
+        /// <para>NumberSpacing, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:numSpacing.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.NumberSpacing NumberSpacing
+        public DocumentFormat.OpenXml.Office2010.Word.NumberSpacing? NumberSpacing
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.NumberSpacing>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>StylisticSets.</para>
+        /// <para>StylisticSets, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:stylisticSets.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.StylisticSets StylisticSets
+        public DocumentFormat.OpenXml.Office2010.Word.StylisticSets? StylisticSets
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.StylisticSets>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>ContextualAlternatives.</para>
+        /// <para>ContextualAlternatives, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w14:cntxtAlts.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Word.ContextualAlternatives ContextualAlternatives
+        public DocumentFormat.OpenXml.Office2010.Word.ContextualAlternatives? ContextualAlternatives
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Word.ContextualAlternatives>();
             set => SetElement(value);
@@ -14875,7 +14877,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunPropertiesChange RunPropertiesChange
+        public RunPropertiesChange? RunPropertiesChange
         {
             get => GetElement<RunPropertiesChange>();
             set => SetElement(value);
@@ -14887,7 +14889,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the InsertedMathControl Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ins.</para>
     /// </summary>
     /// <remark>
@@ -14946,7 +14948,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -14965,7 +14967,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -14984,7 +14986,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15041,7 +15043,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the DeletedMathControl Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:del.</para>
     /// </summary>
     /// <remark>
@@ -15099,7 +15101,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15118,7 +15120,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -15137,7 +15139,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15186,7 +15188,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MoveFromMathControl Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveFrom.</para>
     /// </summary>
     /// <remark>
@@ -15272,7 +15274,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MoveToMathControl Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveTo.</para>
     /// </summary>
     /// <remark>
@@ -15358,7 +15360,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the MathControlMoveType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -15415,7 +15417,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15434,7 +15436,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -15453,7 +15455,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15486,7 +15488,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlRuby Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXml.</para>
     /// </summary>
     /// <remark>
@@ -15785,7 +15787,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the SimpleFieldRuby Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:fldSimple.</para>
     /// </summary>
     /// <remark>
@@ -15900,7 +15902,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "instr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Instruction
+        public StringValue? Instruction
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15919,7 +15921,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "fldLock")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue FieldLock
+        public OnOffValue? FieldLock
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -15938,7 +15940,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "dirty")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Dirty
+        public OnOffValue? Dirty
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -16149,7 +16151,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FieldData FieldData
+        public FieldData? FieldData
         {
             get => GetElement<FieldData>();
             set => SetElement(value);
@@ -16161,7 +16163,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the HyperlinkRuby Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hyperlink.</para>
     /// </summary>
     /// <remark>
@@ -16275,7 +16277,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "tgtFrame")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue TargetFrame
+        public StringValue? TargetFrame
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16294,7 +16296,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "tooltip")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Tooltip
+        public StringValue? Tooltip
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16313,7 +16315,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "docLocation")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue DocLocation
+        public StringValue? DocLocation
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16332,7 +16334,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "history")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue History
+        public OnOffValue? History
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -16351,7 +16353,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "anchor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Anchor
+        public StringValue? Anchor
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16370,7 +16372,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16588,7 +16590,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Phonetic Guide Text Run.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:r.</para>
     /// </summary>
     /// <remark>
@@ -16678,7 +16680,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "rsidRPr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidRunProperties
+        public HexBinaryValue? RsidRunProperties
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -16697,7 +16699,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "rsidDel")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidRunDeletion
+        public HexBinaryValue? RsidRunDeletion
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -16716,7 +16718,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "rsidR")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidRunAddition
+        public HexBinaryValue? RsidRunAddition
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -16829,7 +16831,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunProperties RunProperties
+        public RunProperties? RunProperties
         {
             get => GetElement<RunProperties>();
             set => SetElement(value);
@@ -16841,7 +16843,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the SdtRunRuby Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdt.</para>
     /// </summary>
     /// <remark>
@@ -16988,7 +16990,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SdtContentRunRuby SdtContentRunRuby
+        public SdtContentRunRuby? SdtContentRunRuby
         {
             get => GetElement<SdtContentRunRuby>();
             set => SetElement(value);
@@ -17000,7 +17002,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the ProofError Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:proofErr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -17028,7 +17030,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ProofingErrorValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ProofingErrorValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ProofingErrorValues>>();
             set => SetAttribute(value);
@@ -17051,7 +17053,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the PermStart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:permStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -17079,7 +17081,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "edGrp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.RangePermissionEditingGroupValues> EditorGroup
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.RangePermissionEditingGroupValues>? EditorGroup
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.RangePermissionEditingGroupValues>>();
             set => SetAttribute(value);
@@ -17098,7 +17100,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "ed")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Ed
+        public StringValue? Ed
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -17117,7 +17119,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "colFirst")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value ColumnFirst
+        public Int32Value? ColumnFirst
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -17136,7 +17138,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "colLast")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value ColumnLast
+        public Int32Value? ColumnLast
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -17155,7 +17157,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Id
+        public Int32Value? Id
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -17174,7 +17176,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "displacedByCustomXml")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues> DisplacedByCustomXml
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>? DisplacedByCustomXml
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>>();
             set => SetAttribute(value);
@@ -17209,7 +17211,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the PermEnd Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:permEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -17237,7 +17239,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Id
+        public Int32Value? Id
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -17256,7 +17258,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "displacedByCustomXml")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues> DisplacedByCustomXml
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>? DisplacedByCustomXml
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DisplacedByCustomXmlValues>>();
             set => SetAttribute(value);
@@ -17281,7 +17283,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Inserted Run Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ins.</para>
     /// </summary>
     /// <remark>
@@ -17534,7 +17536,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Deleted Run Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:del.</para>
     /// </summary>
     /// <remark>
@@ -17787,7 +17789,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Move Source Run Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveFrom.</para>
     /// </summary>
     /// <remark>
@@ -18040,7 +18042,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Move Destination Run Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:moveTo.</para>
     /// </summary>
     /// <remark>
@@ -18293,7 +18295,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RunTrackChangeType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -18403,7 +18405,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -18422,7 +18424,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -18441,7 +18443,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -18527,7 +18529,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the ContentPart Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:contentPart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -18555,7 +18557,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -18579,7 +18581,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtRun Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdt.</para>
     /// </summary>
     /// <remark>
@@ -18726,7 +18728,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SdtContentRun SdtContentRun
+        public SdtContentRun? SdtContentRun
         {
             get => GetElement<SdtContentRun>();
             set => SetElement(value);
@@ -18738,7 +18740,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the CustomXmlBlock Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXml.</para>
     /// </summary>
     /// <remark>
@@ -18950,7 +18952,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtBlock Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdt.</para>
     /// </summary>
     /// <remark>
@@ -19097,7 +19099,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SdtContentBlock SdtContentBlock
+        public SdtContentBlock? SdtContentBlock
         {
             get => GetElement<SdtContentBlock>();
             set => SetElement(value);
@@ -19109,7 +19111,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Paragraph Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:p.</para>
     /// </summary>
     /// <remark>
@@ -19227,7 +19229,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "rsidRPr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidParagraphMarkRevision
+        public HexBinaryValue? RsidParagraphMarkRevision
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -19246,7 +19248,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "rsidR")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidParagraphAddition
+        public HexBinaryValue? RsidParagraphAddition
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -19265,7 +19267,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "rsidDel")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidParagraphDeletion
+        public HexBinaryValue? RsidParagraphDeletion
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -19284,7 +19286,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "rsidP")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidParagraphProperties
+        public HexBinaryValue? RsidParagraphProperties
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -19303,14 +19305,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "rsidRDefault")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidRunAdditionDefault
+        public HexBinaryValue? RsidRunAdditionDefault
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>paraId, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>paraId, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:paraId</para>
         /// </summary>
         /// <remark>
@@ -19322,14 +19324,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(52, "paraId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue ParagraphId
+        public HexBinaryValue? ParagraphId
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>textId, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>textId, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:textId</para>
         /// </summary>
         /// <remark>
@@ -19341,14 +19343,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(52, "textId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue TextId
+        public HexBinaryValue? TextId
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>noSpellErr, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>noSpellErr, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:noSpellErr</para>
         /// </summary>
         /// <remark>
@@ -19360,7 +19362,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(52, "noSpellErr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue NoSpellError
+        public OnOffValue? NoSpellError
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -19631,7 +19633,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphProperties ParagraphProperties
+        public ParagraphProperties? ParagraphProperties
         {
             get => GetElement<ParagraphProperties>();
             set => SetElement(value);
@@ -19643,7 +19645,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the Table Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tbl.</para>
     /// </summary>
     /// <remark>
@@ -19887,7 +19889,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Table Row.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tr.</para>
     /// </summary>
     /// <remark>
@@ -19979,7 +19981,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "rsidRPr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidTableRowMarkRevision
+        public HexBinaryValue? RsidTableRowMarkRevision
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -19998,7 +20000,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "rsidR")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidTableRowAddition
+        public HexBinaryValue? RsidTableRowAddition
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -20017,7 +20019,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "rsidDel")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidTableRowDeletion
+        public HexBinaryValue? RsidTableRowDeletion
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -20036,14 +20038,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "rsidTr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidTableRowProperties
+        public HexBinaryValue? RsidTableRowProperties
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>paraId, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>paraId, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:paraId</para>
         /// </summary>
         /// <remark>
@@ -20055,14 +20057,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "paraId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue ParagraphId
+        public HexBinaryValue? ParagraphId
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>textId, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>textId, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:textId</para>
         /// </summary>
         /// <remark>
@@ -20074,7 +20076,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "textId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue TextId
+        public HexBinaryValue? TextId
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -20237,7 +20239,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TablePropertyExceptions TablePropertyExceptions
+        public TablePropertyExceptions? TablePropertyExceptions
         {
             get => GetElement<TablePropertyExceptions>();
             set => SetElement(value);
@@ -20250,7 +20252,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableRowProperties TableRowProperties
+        public TableRowProperties? TableRowProperties
         {
             get => GetElement<TableRowProperties>();
             set => SetElement(value);
@@ -20262,7 +20264,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Row-Level Custom XML Element.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXml.</para>
     /// </summary>
     /// <remark>
@@ -20465,7 +20467,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Row-Level Structured Document Tag.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdt.</para>
     /// </summary>
     /// <remark>
@@ -20612,7 +20614,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SdtContentRow SdtContentRow
+        public SdtContentRow? SdtContentRow
         {
             get => GetElement<SdtContentRow>();
             set => SetElement(value);
@@ -20624,7 +20626,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Table Cell.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tc.</para>
     /// </summary>
     /// <remark>
@@ -20858,7 +20860,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellProperties TableCellProperties
+        public TableCellProperties? TableCellProperties
         {
             get => GetElement<TableCellProperties>();
             set => SetElement(value);
@@ -20870,7 +20872,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Cell-Level Custom XML Element.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXml.</para>
     /// </summary>
     /// <remark>
@@ -21073,7 +21075,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Cell-Level Structured Document Tag.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdt.</para>
     /// </summary>
     /// <remark>
@@ -21220,7 +21222,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SdtContentCell SdtContentCell
+        public SdtContentCell? SdtContentCell
         {
             get => GetElement<SdtContentCell>();
             set => SetElement(value);
@@ -21232,7 +21234,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlRun Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXml.</para>
     /// </summary>
     /// <remark>
@@ -21564,7 +21566,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the SimpleField Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:fldSimple.</para>
     /// </summary>
     /// <remark>
@@ -21682,7 +21684,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "instr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Instruction
+        public StringValue? Instruction
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -21701,7 +21703,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "fldLock")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue FieldLock
+        public OnOffValue? FieldLock
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -21720,7 +21722,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "dirty")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Dirty
+        public OnOffValue? Dirty
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -21961,7 +21963,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FieldData FieldData
+        public FieldData? FieldData
         {
             get => GetElement<FieldData>();
             set => SetElement(value);
@@ -21973,7 +21975,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Hyperlink Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hyperlink.</para>
     /// </summary>
     /// <remark>
@@ -22090,7 +22092,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "tgtFrame")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue TargetFrame
+        public StringValue? TargetFrame
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -22109,7 +22111,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "tooltip")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Tooltip
+        public StringValue? Tooltip
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -22128,7 +22130,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "docLocation")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue DocLocation
+        public StringValue? DocLocation
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -22147,7 +22149,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "history")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue History
+        public OnOffValue? History
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -22166,7 +22168,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "anchor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Anchor
+        public StringValue? Anchor
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -22185,7 +22187,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -22433,7 +22435,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Defines the BidirectionalOverride Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bdo.</para>
     /// </summary>
     /// <remark>
@@ -22550,7 +22552,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DirectionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DirectionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DirectionValues>>();
             set => SetAttribute(value);
@@ -22781,7 +22783,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Defines the BidirectionalEmbedding Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dir.</para>
     /// </summary>
     /// <remark>
@@ -22898,7 +22900,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DirectionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DirectionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DirectionValues>>();
             set => SetAttribute(value);
@@ -23129,7 +23131,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Anchor for Subdocument Location.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:subDoc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23157,7 +23159,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Defines the PrinterSettingsReference Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:printerSettings.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23185,7 +23187,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>ODSO Data Source File Path.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:src.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23213,7 +23215,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Reference to Inclusion/Exclusion Data for Data Source.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:recipientData.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23241,7 +23243,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Data Source File Path.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dataSource.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23269,7 +23271,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Header Definition File Path.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:headerSource.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23296,7 +23298,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Source File for Frame.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sourceFileName.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23324,7 +23326,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Defines the MovieReference Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:movie.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23351,7 +23353,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Attached Document Template.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:attachedTemplate.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23380,7 +23382,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Defines the RelationshipType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class RelationshipType : OpenXmlLeafElement
@@ -23405,7 +23407,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -23424,7 +23426,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Defines the ConditionalFormatStyle Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:cnfStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23452,14 +23454,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>firstRow, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>firstRow, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:firstRow</para>
         /// </summary>
         /// <remark>
@@ -23471,14 +23473,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "firstRow")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue FirstRow
+        public OnOffValue? FirstRow
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>lastRow, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lastRow, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:lastRow</para>
         /// </summary>
         /// <remark>
@@ -23490,14 +23492,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "lastRow")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue LastRow
+        public OnOffValue? LastRow
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>firstColumn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>firstColumn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:firstColumn</para>
         /// </summary>
         /// <remark>
@@ -23509,14 +23511,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "firstColumn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue FirstColumn
+        public OnOffValue? FirstColumn
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>lastColumn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lastColumn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:lastColumn</para>
         /// </summary>
         /// <remark>
@@ -23528,14 +23530,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "lastColumn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue LastColumn
+        public OnOffValue? LastColumn
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>oddVBand, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>oddVBand, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:oddVBand</para>
         /// </summary>
         /// <remark>
@@ -23547,14 +23549,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "oddVBand")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue OddVerticalBand
+        public OnOffValue? OddVerticalBand
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>evenVBand, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>evenVBand, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:evenVBand</para>
         /// </summary>
         /// <remark>
@@ -23566,14 +23568,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "evenVBand")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue EvenVerticalBand
+        public OnOffValue? EvenVerticalBand
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>oddHBand, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>oddHBand, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:oddHBand</para>
         /// </summary>
         /// <remark>
@@ -23585,14 +23587,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "oddHBand")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue OddHorizontalBand
+        public OnOffValue? OddHorizontalBand
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>evenHBand, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>evenHBand, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:evenHBand</para>
         /// </summary>
         /// <remark>
@@ -23604,14 +23606,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "evenHBand")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue EvenHorizontalBand
+        public OnOffValue? EvenHorizontalBand
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>firstRowFirstColumn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>firstRowFirstColumn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:firstRowFirstColumn</para>
         /// </summary>
         /// <remark>
@@ -23623,14 +23625,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "firstRowFirstColumn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue FirstRowFirstColumn
+        public OnOffValue? FirstRowFirstColumn
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>firstRowLastColumn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>firstRowLastColumn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:firstRowLastColumn</para>
         /// </summary>
         /// <remark>
@@ -23642,14 +23644,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "firstRowLastColumn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue FirstRowLastColumn
+        public OnOffValue? FirstRowLastColumn
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>lastRowFirstColumn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lastRowFirstColumn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:lastRowFirstColumn</para>
         /// </summary>
         /// <remark>
@@ -23661,14 +23663,14 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "lastRowFirstColumn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue LastRowFirstColumn
+        public OnOffValue? LastRowFirstColumn
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>lastRowLastColumn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lastRowLastColumn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:lastRowLastColumn</para>
         /// </summary>
         /// <remark>
@@ -23680,7 +23682,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "lastRowLastColumn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue LastRowLastColumn
+        public OnOffValue? LastRowLastColumn
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -23754,7 +23756,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TableCellWidth Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tcW.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23781,7 +23783,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the WidthBeforeTableRow Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:wBefore.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23808,7 +23810,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the WidthAfterTableRow Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:wAfter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23835,7 +23837,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TableCellSpacing Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblCellSpacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23862,7 +23864,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TableWidth Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblW.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23889,7 +23891,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Table Cell Top Margin Default.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:top.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23916,7 +23918,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the StartMargin Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:start.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23944,7 +23946,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Table Cell Bottom Margin Default.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bottom.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -23973,7 +23975,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the EndMargin Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:end.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24001,7 +24003,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Table Cell Left Margin Exception.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:left.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24028,7 +24030,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Table Cell Right Margin Exception.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:right.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24055,7 +24057,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TableWidthType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TableWidthType : OpenXmlLeafElement
@@ -24080,7 +24082,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Width
+        public StringValue? Width
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -24099,7 +24101,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableWidthUnitValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableWidthUnitValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableWidthUnitValues>>();
             set => SetAttribute(value);
@@ -24129,7 +24131,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the HorizontalMerge Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hMerge.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24157,7 +24159,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MergedCellValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MergedCellValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.MergedCellValues>>();
             set => SetAttribute(value);
@@ -24177,7 +24179,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the VerticalMerge Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:vMerge.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24205,7 +24207,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MergedCellValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MergedCellValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.MergedCellValues>>();
             set => SetAttribute(value);
@@ -24225,7 +24227,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TableCellBorders Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tcBorders.</para>
     /// </summary>
     /// <remark>
@@ -24315,7 +24317,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopBorder TopBorder
+        public TopBorder? TopBorder
         {
             get => GetElement<TopBorder>();
             set => SetElement(value);
@@ -24328,20 +24330,20 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LeftBorder LeftBorder
+        public LeftBorder? LeftBorder
         {
             get => GetElement<LeftBorder>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>StartBorder.</para>
+        /// <para>StartBorder, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:start.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StartBorder StartBorder
+        public StartBorder? StartBorder
         {
             get => GetElement<StartBorder>();
             set => SetElement(value);
@@ -24354,7 +24356,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BottomBorder BottomBorder
+        public BottomBorder? BottomBorder
         {
             get => GetElement<BottomBorder>();
             set => SetElement(value);
@@ -24367,20 +24369,20 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RightBorder RightBorder
+        public RightBorder? RightBorder
         {
             get => GetElement<RightBorder>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>EndBorder.</para>
+        /// <para>EndBorder, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:end.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EndBorder EndBorder
+        public EndBorder? EndBorder
         {
             get => GetElement<EndBorder>();
             set => SetElement(value);
@@ -24393,7 +24395,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public InsideHorizontalBorder InsideHorizontalBorder
+        public InsideHorizontalBorder? InsideHorizontalBorder
         {
             get => GetElement<InsideHorizontalBorder>();
             set => SetElement(value);
@@ -24406,7 +24408,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public InsideVerticalBorder InsideVerticalBorder
+        public InsideVerticalBorder? InsideVerticalBorder
         {
             get => GetElement<InsideVerticalBorder>();
             set => SetElement(value);
@@ -24419,7 +24421,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopLeftToBottomRightCellBorder TopLeftToBottomRightCellBorder
+        public TopLeftToBottomRightCellBorder? TopLeftToBottomRightCellBorder
         {
             get => GetElement<TopLeftToBottomRightCellBorder>();
             set => SetElement(value);
@@ -24432,7 +24434,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopRightToBottomLeftCellBorder TopRightToBottomLeftCellBorder
+        public TopRightToBottomLeftCellBorder? TopRightToBottomLeftCellBorder
         {
             get => GetElement<TopRightToBottomLeftCellBorder>();
             set => SetElement(value);
@@ -24444,7 +24446,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the NoWrap Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noWrap.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24471,7 +24473,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TableCellFitText Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tcFitText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24498,7 +24500,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the HideMark Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hideMark.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24525,7 +24527,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the CantSplit Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:cantSplit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24552,7 +24554,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TableHeader Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblHeader.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24579,7 +24581,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the BiDiVisual Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bidiVisual.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24606,7 +24608,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Frame Cannot Be Resized.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noResizeAllowed.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24633,7 +24635,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Maintain Link to Existing File.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:linkedToFile.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24660,7 +24662,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Do Not Display Frameset Splitters.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noBorder.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24687,7 +24689,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Frameset Splitter Border Style.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:flatBorders.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24714,7 +24716,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Automatically Merge User Formatting Into Style Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:autoRedefine.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24741,7 +24743,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Hide Style From User Interface.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hidden.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24768,7 +24770,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Hide Style From Main User Interface.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:semiHidden.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24795,7 +24797,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Remove Semi-Hidden Property When Style Is Used.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:unhideWhenUsed.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24822,7 +24824,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Primary Style.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:qFormat.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24849,7 +24851,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Style Cannot Be Applied.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:locked.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24876,7 +24878,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>E-Mail Message Text Style.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:personal.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24903,7 +24905,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>E-Mail Message Composition Style.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:personalCompose.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24930,7 +24932,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>E-Mail Message Reply Style.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:personalReply.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -24957,7 +24959,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the OnOffOnlyType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class OnOffOnlyType : OpenXmlLeafElement
@@ -24982,7 +24984,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.OnOffOnlyValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.OnOffOnlyValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.OnOffOnlyValues>>();
             set => SetAttribute(value);
@@ -24998,7 +25000,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TableCellMargin Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tcMar.</para>
     /// </summary>
     /// <remark>
@@ -25076,7 +25078,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopMargin TopMargin
+        public TopMargin? TopMargin
         {
             get => GetElement<TopMargin>();
             set => SetElement(value);
@@ -25089,20 +25091,20 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LeftMargin LeftMargin
+        public LeftMargin? LeftMargin
         {
             get => GetElement<LeftMargin>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>StartMargin.</para>
+        /// <para>StartMargin, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:start.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StartMargin StartMargin
+        public StartMargin? StartMargin
         {
             get => GetElement<StartMargin>();
             set => SetElement(value);
@@ -25115,7 +25117,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BottomMargin BottomMargin
+        public BottomMargin? BottomMargin
         {
             get => GetElement<BottomMargin>();
             set => SetElement(value);
@@ -25128,20 +25130,20 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RightMargin RightMargin
+        public RightMargin? RightMargin
         {
             get => GetElement<RightMargin>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>EndMargin.</para>
+        /// <para>EndMargin, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:end.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EndMargin EndMargin
+        public EndMargin? EndMargin
         {
             get => GetElement<EndMargin>();
             set => SetElement(value);
@@ -25153,7 +25155,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TableCellVerticalAlignment Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:vAlign.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25181,7 +25183,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableVerticalAlignmentValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableVerticalAlignmentValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableVerticalAlignmentValues>>();
             set => SetAttribute(value);
@@ -25204,7 +25206,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DivId Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:divId.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25232,7 +25234,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -25261,7 +25263,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableRowHeight Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:trHeight.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25289,7 +25291,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -25308,7 +25310,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "hRule")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HeightRuleValues> HeightType
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HeightRuleValues>? HeightType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.HeightRuleValues>>();
             set => SetAttribute(value);
@@ -25332,7 +25334,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
 
     /// <summary>
     /// <para>Defines the TableJustification Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:jc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25360,7 +25362,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableRowAlignmentValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableRowAlignmentValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableRowAlignmentValues>>();
             set => SetAttribute(value);
@@ -25383,7 +25385,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
 
     /// <summary>
     /// <para>Defines the TablePositionProperties Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblpPr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25411,7 +25413,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "leftFromText")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value LeftFromText
+        public Int16Value? LeftFromText
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -25430,7 +25432,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "rightFromText")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value RightFromText
+        public Int16Value? RightFromText
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -25449,7 +25451,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "topFromText")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value TopFromText
+        public Int16Value? TopFromText
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -25468,7 +25470,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "bottomFromText")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value BottomFromText
+        public Int16Value? BottomFromText
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -25487,7 +25489,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "vertAnchor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAnchorValues> VerticalAnchor
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAnchorValues>? VerticalAnchor
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAnchorValues>>();
             set => SetAttribute(value);
@@ -25506,7 +25508,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "horzAnchor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAnchorValues> HorizontalAnchor
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAnchorValues>? HorizontalAnchor
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAnchorValues>>();
             set => SetAttribute(value);
@@ -25525,7 +25527,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "tblpXSpec")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAlignmentValues> TablePositionXAlignment
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAlignmentValues>? TablePositionXAlignment
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.HorizontalAlignmentValues>>();
             set => SetAttribute(value);
@@ -25544,7 +25546,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "tblpX")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value TablePositionX
+        public Int32Value? TablePositionX
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -25563,7 +25565,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "tblpYSpec")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAlignmentValues> TablePositionYAlignment
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAlignmentValues>? TablePositionYAlignment
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalAlignmentValues>>();
             set => SetAttribute(value);
@@ -25582,7 +25584,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (31680L) });
         [SchemaAttr(23, "tblpY")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value TablePositionY
+        public Int32Value? TablePositionY
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -25629,7 +25631,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-31680L), MaxInclu
 
     /// <summary>
     /// <para>Defines the TableOverlap Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblOverlap.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25657,7 +25659,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-31680L), MaxInclu
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableOverlapValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableOverlapValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableOverlapValues>>();
             set => SetAttribute(value);
@@ -25680,7 +25682,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableStyleRowBandSize Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblStyleRowBandSize.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25707,7 +25709,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableStyleColumnBandSize Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblStyleColBandSize.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25734,7 +25736,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the UnsignedDecimalNumberMax3Type Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class UnsignedDecimalNumberMax3Type : OpenXmlLeafElement
@@ -25759,7 +25761,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -25779,7 +25781,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableIndentation Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblInd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25807,7 +25809,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Width
+        public Int32Value? Width
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -25826,7 +25828,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableWidthUnitValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableWidthUnitValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableWidthUnitValues>>();
             set => SetAttribute(value);
@@ -25847,7 +25849,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableBorders Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblBorders.</para>
     /// </summary>
     /// <remark>
@@ -25931,7 +25933,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopBorder TopBorder
+        public TopBorder? TopBorder
         {
             get => GetElement<TopBorder>();
             set => SetElement(value);
@@ -25944,20 +25946,20 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LeftBorder LeftBorder
+        public LeftBorder? LeftBorder
         {
             get => GetElement<LeftBorder>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>StartBorder.</para>
+        /// <para>StartBorder, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:start.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StartBorder StartBorder
+        public StartBorder? StartBorder
         {
             get => GetElement<StartBorder>();
             set => SetElement(value);
@@ -25970,7 +25972,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BottomBorder BottomBorder
+        public BottomBorder? BottomBorder
         {
             get => GetElement<BottomBorder>();
             set => SetElement(value);
@@ -25983,20 +25985,20 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RightBorder RightBorder
+        public RightBorder? RightBorder
         {
             get => GetElement<RightBorder>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>EndBorder.</para>
+        /// <para>EndBorder, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:end.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EndBorder EndBorder
+        public EndBorder? EndBorder
         {
             get => GetElement<EndBorder>();
             set => SetElement(value);
@@ -26009,7 +26011,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public InsideHorizontalBorder InsideHorizontalBorder
+        public InsideHorizontalBorder? InsideHorizontalBorder
         {
             get => GetElement<InsideHorizontalBorder>();
             set => SetElement(value);
@@ -26022,7 +26024,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public InsideVerticalBorder InsideVerticalBorder
+        public InsideVerticalBorder? InsideVerticalBorder
         {
             get => GetElement<InsideVerticalBorder>();
             set => SetElement(value);
@@ -26034,7 +26036,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableLayout Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblLayout.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -26062,7 +26064,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableLayoutValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableLayoutValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableLayoutValues>>();
             set => SetAttribute(value);
@@ -26082,7 +26084,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableCellMarginDefault Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblCellMar.</para>
     /// </summary>
     /// <remark>
@@ -26160,7 +26162,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopMargin TopMargin
+        public TopMargin? TopMargin
         {
             get => GetElement<TopMargin>();
             set => SetElement(value);
@@ -26173,20 +26175,20 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellLeftMargin TableCellLeftMargin
+        public TableCellLeftMargin? TableCellLeftMargin
         {
             get => GetElement<TableCellLeftMargin>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>StartMargin.</para>
+        /// <para>StartMargin, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:start.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StartMargin StartMargin
+        public StartMargin? StartMargin
         {
             get => GetElement<StartMargin>();
             set => SetElement(value);
@@ -26199,7 +26201,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BottomMargin BottomMargin
+        public BottomMargin? BottomMargin
         {
             get => GetElement<BottomMargin>();
             set => SetElement(value);
@@ -26212,20 +26214,20 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellRightMargin TableCellRightMargin
+        public TableCellRightMargin? TableCellRightMargin
         {
             get => GetElement<TableCellRightMargin>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>EndMargin.</para>
+        /// <para>EndMargin, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:end.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EndMargin EndMargin
+        public EndMargin? EndMargin
         {
             get => GetElement<EndMargin>();
             set => SetElement(value);
@@ -26237,7 +26239,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Footnote and Endnote Numbering Starting Value.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -26265,7 +26267,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -26288,7 +26290,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Footnote and Endnote Numbering Restart Location.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numRestart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -26316,7 +26318,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.RestartNumberValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.RestartNumberValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.RestartNumberValues>>();
             set => SetAttribute(value);
@@ -26339,7 +26341,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the AltChunk Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:altChunk.</para>
     /// </summary>
     /// <remark>
@@ -26397,7 +26399,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -26425,7 +26427,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AltChunkProperties AltChunkProperties
+        public AltChunkProperties? AltChunkProperties
         {
             get => GetElement<AltChunkProperties>();
             set => SetElement(value);
@@ -26437,7 +26439,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableLook Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblLook.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -26465,14 +26467,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue Val
+        public HexBinaryValue? Val
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>firstRow, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>firstRow, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:firstRow</para>
         /// </summary>
         /// <remark>
@@ -26484,14 +26486,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "firstRow")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue FirstRow
+        public OnOffValue? FirstRow
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>lastRow, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lastRow, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:lastRow</para>
         /// </summary>
         /// <remark>
@@ -26503,14 +26505,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "lastRow")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue LastRow
+        public OnOffValue? LastRow
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>firstColumn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>firstColumn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:firstColumn</para>
         /// </summary>
         /// <remark>
@@ -26522,14 +26524,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "firstColumn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue FirstColumn
+        public OnOffValue? FirstColumn
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>lastColumn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lastColumn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:lastColumn</para>
         /// </summary>
         /// <remark>
@@ -26541,14 +26543,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "lastColumn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue LastColumn
+        public OnOffValue? LastColumn
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>noHBand, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>noHBand, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:noHBand</para>
         /// </summary>
         /// <remark>
@@ -26560,14 +26562,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "noHBand")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue NoHorizontalBand
+        public OnOffValue? NoHorizontalBand
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>noVBand, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>noVBand, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:noVBand</para>
         /// </summary>
         /// <remark>
@@ -26579,7 +26581,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "noVBand")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue NoVerticalBand
+        public OnOffValue? NoVerticalBand
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -26626,7 +26628,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the FootnoteProperties Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:footnotePr.</para>
     /// </summary>
     /// <remark>
@@ -26704,7 +26706,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FootnotePosition FootnotePosition
+        public FootnotePosition? FootnotePosition
         {
             get => GetElement<FootnotePosition>();
             set => SetElement(value);
@@ -26717,7 +26719,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -26730,7 +26732,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingStart NumberingStart
+        public NumberingStart? NumberingStart
         {
             get => GetElement<NumberingStart>();
             set => SetElement(value);
@@ -26743,7 +26745,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingRestart NumberingRestart
+        public NumberingRestart? NumberingRestart
         {
             get => GetElement<NumberingRestart>();
             set => SetElement(value);
@@ -26755,7 +26757,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the EndnoteProperties Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:endnotePr.</para>
     /// </summary>
     /// <remark>
@@ -26833,7 +26835,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EndnotePosition EndnotePosition
+        public EndnotePosition? EndnotePosition
         {
             get => GetElement<EndnotePosition>();
             set => SetElement(value);
@@ -26846,7 +26848,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -26859,7 +26861,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingStart NumberingStart
+        public NumberingStart? NumberingStart
         {
             get => GetElement<NumberingStart>();
             set => SetElement(value);
@@ -26872,7 +26874,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingRestart NumberingRestart
+        public NumberingRestart? NumberingRestart
         {
             get => GetElement<NumberingRestart>();
             set => SetElement(value);
@@ -26884,7 +26886,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the SectionType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:type.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -26912,7 +26914,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.SectionMarkValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.SectionMarkValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.SectionMarkValues>>();
             set => SetAttribute(value);
@@ -26935,7 +26937,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the PageSize Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pgSz.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -26963,7 +26965,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Width
+        public UInt32Value? Width
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -26982,7 +26984,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "h")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Height
+        public UInt32Value? Height
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -27001,7 +27003,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "orient")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageOrientationValues> Orient
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageOrientationValues>? Orient
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageOrientationValues>>();
             set => SetAttribute(value);
@@ -27020,7 +27022,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "code")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Code
+        public UInt16Value? Code
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -27049,7 +27051,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the PageMargin Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pgMar.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -27077,7 +27079,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "top")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Top
+        public Int32Value? Top
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -27096,7 +27098,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "right")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Right
+        public UInt32Value? Right
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -27115,7 +27117,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "bottom")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Bottom
+        public Int32Value? Bottom
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -27134,7 +27136,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "left")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Left
+        public UInt32Value? Left
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -27153,7 +27155,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "header")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Header
+        public UInt32Value? Header
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -27172,7 +27174,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "footer")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Footer
+        public UInt32Value? Footer
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -27191,7 +27193,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "gutter")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Gutter
+        public UInt32Value? Gutter
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -27238,7 +27240,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the PaperSource Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:paperSrc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -27266,7 +27268,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "first")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value First
+        public UInt16Value? First
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -27285,7 +27287,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "other")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Other
+        public UInt16Value? Other
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -27306,7 +27308,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the PageBorders Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pgBorders.</para>
     /// </summary>
     /// <remark>
@@ -27367,7 +27369,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "zOrder")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageBorderZOrderValues> ZOrder
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageBorderZOrderValues>? ZOrder
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageBorderZOrderValues>>();
             set => SetAttribute(value);
@@ -27386,7 +27388,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "display")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageBorderDisplayValues> Display
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageBorderDisplayValues>? Display
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageBorderDisplayValues>>();
             set => SetAttribute(value);
@@ -27405,7 +27407,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "offsetFrom")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageBorderOffsetValues> OffsetFrom
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageBorderOffsetValues>? OffsetFrom
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.PageBorderOffsetValues>>();
             set => SetAttribute(value);
@@ -27439,7 +27441,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopBorder TopBorder
+        public TopBorder? TopBorder
         {
             get => GetElement<TopBorder>();
             set => SetElement(value);
@@ -27452,7 +27454,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LeftBorder LeftBorder
+        public LeftBorder? LeftBorder
         {
             get => GetElement<LeftBorder>();
             set => SetElement(value);
@@ -27465,7 +27467,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BottomBorder BottomBorder
+        public BottomBorder? BottomBorder
         {
             get => GetElement<BottomBorder>();
             set => SetElement(value);
@@ -27478,7 +27480,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RightBorder RightBorder
+        public RightBorder? RightBorder
         {
             get => GetElement<RightBorder>();
             set => SetElement(value);
@@ -27490,7 +27492,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the LineNumberType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lnNumType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -27518,7 +27520,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "countBy")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value CountBy
+        public Int16Value? CountBy
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -27537,7 +27539,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "start")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value Start
+        public Int16Value? Start
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -27556,7 +27558,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "distance")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Distance
+        public StringValue? Distance
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -27575,7 +27577,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "restart")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LineNumberRestartValues> Restart
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LineNumberRestartValues>? Restart
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.LineNumberRestartValues>>();
             set => SetAttribute(value);
@@ -27612,7 +27614,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Defines the PageNumberType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pgNumType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -27640,7 +27642,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "fmt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.NumberFormatValues> Format
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.NumberFormatValues>? Format
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.NumberFormatValues>>();
             set => SetAttribute(value);
@@ -27659,7 +27661,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "start")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Start
+        public Int32Value? Start
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -27678,7 +27680,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "chapStyle")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue ChapterStyle
+        public ByteValue? ChapterStyle
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -27697,7 +27699,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "chapSep")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ChapterSeparatorValues> ChapterSeparator
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ChapterSeparatorValues>? ChapterSeparator
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ChapterSeparatorValues>>();
             set => SetAttribute(value);
@@ -27723,7 +27725,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the Columns Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:cols.</para>
     /// </summary>
     /// <remark>
@@ -27781,7 +27783,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(23, "equalWidth")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue EqualWidth
+        public OnOffValue? EqualWidth
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -27800,7 +27802,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(23, "space")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Space
+        public StringValue? Space
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -27819,7 +27821,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(23, "num")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value ColumnCount
+        public Int16Value? ColumnCount
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -27838,7 +27840,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(23, "sep")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Separator
+        public OnOffValue? Separator
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -27877,7 +27879,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (1L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the VerticalTextAlignmentOnPage Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:vAlign.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -27905,7 +27907,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (1L), MaxInclusive 
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalJustificationValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalJustificationValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.VerticalJustificationValues>>();
             set => SetAttribute(value);
@@ -27928,7 +27930,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DocGrid Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docGrid.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -27956,7 +27958,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocGridValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocGridValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocGridValues>>();
             set => SetAttribute(value);
@@ -27975,7 +27977,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "linePitch")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value LinePitch
+        public Int32Value? LinePitch
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -27994,7 +27996,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "charSpace")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value CharacterSpace
+        public Int32Value? CharacterSpace
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -28016,7 +28018,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Inclusion/Exclusion Data for Data Source.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:recipients.</para>
     /// </summary>
     /// <remark>
@@ -28078,7 +28080,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Rich Text Box Content Container.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:txbxContent.</para>
     /// </summary>
     /// <remark>
@@ -28305,7 +28307,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Comments Collection.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:comments.</para>
     /// </summary>
     /// <remark>
@@ -28389,7 +28391,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the WordprocessingCommentsPart associated with this element.
         /// </summary>
-        public WordprocessingCommentsPart WordprocessingCommentsPart
+        public WordprocessingCommentsPart? WordprocessingCommentsPart
         {
             get => OpenXmlPart as WordprocessingCommentsPart;
             internal set => OpenXmlPart = value;
@@ -28398,7 +28400,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Document Footnotes.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:footnotes.</para>
     /// </summary>
     /// <remark>
@@ -28482,7 +28484,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the FootnotesPart associated with this element.
         /// </summary>
-        public FootnotesPart FootnotesPart
+        public FootnotesPart? FootnotesPart
         {
             get => OpenXmlPart as FootnotesPart;
             internal set => OpenXmlPart = value;
@@ -28491,7 +28493,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Document Endnotes.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:endnotes.</para>
     /// </summary>
     /// <remark>
@@ -28575,7 +28577,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the EndnotesPart associated with this element.
         /// </summary>
-        public EndnotesPart EndnotesPart
+        public EndnotesPart? EndnotesPart
         {
             get => OpenXmlPart as EndnotesPart;
             internal set => OpenXmlPart = value;
@@ -28584,7 +28586,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Header.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hdr.</para>
     /// </summary>
     /// <remark>
@@ -28833,7 +28835,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the HeaderPart associated with this element.
         /// </summary>
-        public HeaderPart HeaderPart
+        public HeaderPart? HeaderPart
         {
             get => OpenXmlPart as HeaderPart;
             internal set => OpenXmlPart = value;
@@ -28842,7 +28844,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Footer.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ftr.</para>
     /// </summary>
     /// <remark>
@@ -29091,7 +29093,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the FooterPart associated with this element.
         /// </summary>
-        public FooterPart FooterPart
+        public FooterPart? FooterPart
         {
             get => OpenXmlPart as FooterPart;
             internal set => OpenXmlPart = value;
@@ -29100,7 +29102,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the HeaderFooterType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -29219,7 +29221,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Document Settings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:settings.</para>
     /// </summary>
     /// <remark>
@@ -29588,7 +29590,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WriteProtection WriteProtection
+        public WriteProtection? WriteProtection
         {
             get => GetElement<WriteProtection>();
             set => SetElement(value);
@@ -29601,7 +29603,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public View View
+        public View? View
         {
             get => GetElement<View>();
             set => SetElement(value);
@@ -29614,7 +29616,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Zoom Zoom
+        public Zoom? Zoom
         {
             get => GetElement<Zoom>();
             set => SetElement(value);
@@ -29627,7 +29629,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RemovePersonalInformation RemovePersonalInformation
+        public RemovePersonalInformation? RemovePersonalInformation
         {
             get => GetElement<RemovePersonalInformation>();
             set => SetElement(value);
@@ -29640,7 +29642,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RemoveDateAndTime RemoveDateAndTime
+        public RemoveDateAndTime? RemoveDateAndTime
         {
             get => GetElement<RemoveDateAndTime>();
             set => SetElement(value);
@@ -29653,7 +29655,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotDisplayPageBoundaries DoNotDisplayPageBoundaries
+        public DoNotDisplayPageBoundaries? DoNotDisplayPageBoundaries
         {
             get => GetElement<DoNotDisplayPageBoundaries>();
             set => SetElement(value);
@@ -29666,7 +29668,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DisplayBackgroundShape DisplayBackgroundShape
+        public DisplayBackgroundShape? DisplayBackgroundShape
         {
             get => GetElement<DisplayBackgroundShape>();
             set => SetElement(value);
@@ -29679,7 +29681,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PrintPostScriptOverText PrintPostScriptOverText
+        public PrintPostScriptOverText? PrintPostScriptOverText
         {
             get => GetElement<PrintPostScriptOverText>();
             set => SetElement(value);
@@ -29692,7 +29694,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PrintFractionalCharacterWidth PrintFractionalCharacterWidth
+        public PrintFractionalCharacterWidth? PrintFractionalCharacterWidth
         {
             get => GetElement<PrintFractionalCharacterWidth>();
             set => SetElement(value);
@@ -29705,7 +29707,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PrintFormsData PrintFormsData
+        public PrintFormsData? PrintFormsData
         {
             get => GetElement<PrintFormsData>();
             set => SetElement(value);
@@ -29718,7 +29720,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EmbedTrueTypeFonts EmbedTrueTypeFonts
+        public EmbedTrueTypeFonts? EmbedTrueTypeFonts
         {
             get => GetElement<EmbedTrueTypeFonts>();
             set => SetElement(value);
@@ -29731,7 +29733,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EmbedSystemFonts EmbedSystemFonts
+        public EmbedSystemFonts? EmbedSystemFonts
         {
             get => GetElement<EmbedSystemFonts>();
             set => SetElement(value);
@@ -29744,7 +29746,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SaveSubsetFonts SaveSubsetFonts
+        public SaveSubsetFonts? SaveSubsetFonts
         {
             get => GetElement<SaveSubsetFonts>();
             set => SetElement(value);
@@ -29757,7 +29759,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SaveFormsData SaveFormsData
+        public SaveFormsData? SaveFormsData
         {
             get => GetElement<SaveFormsData>();
             set => SetElement(value);
@@ -29770,7 +29772,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MirrorMargins MirrorMargins
+        public MirrorMargins? MirrorMargins
         {
             get => GetElement<MirrorMargins>();
             set => SetElement(value);
@@ -29783,7 +29785,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AlignBorderAndEdges AlignBorderAndEdges
+        public AlignBorderAndEdges? AlignBorderAndEdges
         {
             get => GetElement<AlignBorderAndEdges>();
             set => SetElement(value);
@@ -29796,7 +29798,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BordersDoNotSurroundHeader BordersDoNotSurroundHeader
+        public BordersDoNotSurroundHeader? BordersDoNotSurroundHeader
         {
             get => GetElement<BordersDoNotSurroundHeader>();
             set => SetElement(value);
@@ -29809,7 +29811,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BordersDoNotSurroundFooter BordersDoNotSurroundFooter
+        public BordersDoNotSurroundFooter? BordersDoNotSurroundFooter
         {
             get => GetElement<BordersDoNotSurroundFooter>();
             set => SetElement(value);
@@ -29822,7 +29824,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public GutterAtTop GutterAtTop
+        public GutterAtTop? GutterAtTop
         {
             get => GetElement<GutterAtTop>();
             set => SetElement(value);
@@ -29835,7 +29837,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public HideSpellingErrors HideSpellingErrors
+        public HideSpellingErrors? HideSpellingErrors
         {
             get => GetElement<HideSpellingErrors>();
             set => SetElement(value);
@@ -29848,7 +29850,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public HideGrammaticalErrors HideGrammaticalErrors
+        public HideGrammaticalErrors? HideGrammaticalErrors
         {
             get => GetElement<HideGrammaticalErrors>();
             set => SetElement(value);
@@ -29882,7 +29884,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the DocumentSettingsPart associated with this element.
         /// </summary>
-        public DocumentSettingsPart DocumentSettingsPart
+        public DocumentSettingsPart? DocumentSettingsPart
         {
             get => OpenXmlPart as DocumentSettingsPart;
             internal set => OpenXmlPart = value;
@@ -29891,7 +29893,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Web Page Settings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:webSettings.</para>
     /// </summary>
     /// <remark>
@@ -29987,7 +29989,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Frameset Frameset
+        public Frameset? Frameset
         {
             get => GetElement<Frameset>();
             set => SetElement(value);
@@ -30000,7 +30002,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Divs Divs
+        public Divs? Divs
         {
             get => GetElement<Divs>();
             set => SetElement(value);
@@ -30013,7 +30015,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WebPageEncoding WebPageEncoding
+        public WebPageEncoding? WebPageEncoding
         {
             get => GetElement<WebPageEncoding>();
             set => SetElement(value);
@@ -30026,7 +30028,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OptimizeForBrowser OptimizeForBrowser
+        public OptimizeForBrowser? OptimizeForBrowser
         {
             get => GetElement<OptimizeForBrowser>();
             set => SetElement(value);
@@ -30039,7 +30041,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RelyOnVML RelyOnVML
+        public RelyOnVML? RelyOnVML
         {
             get => GetElement<RelyOnVML>();
             set => SetElement(value);
@@ -30052,7 +30054,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AllowPNG AllowPNG
+        public AllowPNG? AllowPNG
         {
             get => GetElement<AllowPNG>();
             set => SetElement(value);
@@ -30065,7 +30067,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotRelyOnCSS DoNotRelyOnCSS
+        public DoNotRelyOnCSS? DoNotRelyOnCSS
         {
             get => GetElement<DoNotRelyOnCSS>();
             set => SetElement(value);
@@ -30078,7 +30080,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotSaveAsSingleFile DoNotSaveAsSingleFile
+        public DoNotSaveAsSingleFile? DoNotSaveAsSingleFile
         {
             get => GetElement<DoNotSaveAsSingleFile>();
             set => SetElement(value);
@@ -30091,7 +30093,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotOrganizeInFolder DoNotOrganizeInFolder
+        public DoNotOrganizeInFolder? DoNotOrganizeInFolder
         {
             get => GetElement<DoNotOrganizeInFolder>();
             set => SetElement(value);
@@ -30104,7 +30106,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotUseLongFileNames DoNotUseLongFileNames
+        public DoNotUseLongFileNames? DoNotUseLongFileNames
         {
             get => GetElement<DoNotUseLongFileNames>();
             set => SetElement(value);
@@ -30117,7 +30119,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PixelsPerInch PixelsPerInch
+        public PixelsPerInch? PixelsPerInch
         {
             get => GetElement<PixelsPerInch>();
             set => SetElement(value);
@@ -30130,7 +30132,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TargetScreenSize TargetScreenSize
+        public TargetScreenSize? TargetScreenSize
         {
             get => GetElement<TargetScreenSize>();
             set => SetElement(value);
@@ -30164,7 +30166,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the WebSettingsPart associated with this element.
         /// </summary>
-        public WebSettingsPart WebSettingsPart
+        public WebSettingsPart? WebSettingsPart
         {
             get => OpenXmlPart as WebSettingsPart;
             internal set => OpenXmlPart = value;
@@ -30173,7 +30175,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Font Table Root Element.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:fonts.</para>
     /// </summary>
     /// <remark>
@@ -30257,7 +30259,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the FontTablePart associated with this element.
         /// </summary>
-        public FontTablePart FontTablePart
+        public FontTablePart? FontTablePart
         {
             get => OpenXmlPart as FontTablePart;
             internal set => OpenXmlPart = value;
@@ -30266,7 +30268,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Numbering Definitions.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numbering.</para>
     /// </summary>
     /// <remark>
@@ -30359,7 +30361,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the NumberingDefinitionsPart associated with this element.
         /// </summary>
-        public NumberingDefinitionsPart NumberingDefinitionsPart
+        public NumberingDefinitionsPart? NumberingDefinitionsPart
         {
             get => OpenXmlPart as NumberingDefinitionsPart;
             internal set => OpenXmlPart = value;
@@ -30368,7 +30370,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Style Definitions.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:styles.</para>
     /// </summary>
     /// <remark>
@@ -30437,7 +30439,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocDefaults DocDefaults
+        public DocDefaults? DocDefaults
         {
             get => GetElement<DocDefaults>();
             set => SetElement(value);
@@ -30450,7 +30452,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LatentStyles LatentStyles
+        public LatentStyles? LatentStyles
         {
             get => GetElement<LatentStyles>();
             set => SetElement(value);
@@ -30462,7 +30464,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Document.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:document.</para>
     /// </summary>
     /// <remark>
@@ -30521,7 +30523,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "conformance")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocumentConformance> Conformance
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocumentConformance>? Conformance
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocumentConformance>>();
             set => SetAttribute(value);
@@ -30555,7 +30557,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocumentBackground DocumentBackground
+        public DocumentBackground? DocumentBackground
         {
             get => GetElement<DocumentBackground>();
             set => SetElement(value);
@@ -30568,7 +30570,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Body Body
+        public Body? Body
         {
             get => GetElement<Body>();
             set => SetElement(value);
@@ -30602,7 +30604,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the MainDocumentPart associated with this element.
         /// </summary>
-        public MainDocumentPart MainDocumentPart
+        public MainDocumentPart? MainDocumentPart
         {
             get => OpenXmlPart as MainDocumentPart;
             internal set => OpenXmlPart = value;
@@ -30611,7 +30613,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Glossary Document Root Element.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:glossaryDocument.</para>
     /// </summary>
     /// <remark>
@@ -30683,7 +30685,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocumentBackground DocumentBackground
+        public DocumentBackground? DocumentBackground
         {
             get => GetElement<DocumentBackground>();
             set => SetElement(value);
@@ -30696,7 +30698,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocParts DocParts
+        public DocParts? DocParts
         {
             get => GetElement<DocParts>();
             set => SetElement(value);
@@ -30730,7 +30732,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the GlossaryDocumentPart associated with this element.
         /// </summary>
-        public GlossaryDocumentPart GlossaryDocumentPart
+        public GlossaryDocumentPart? GlossaryDocumentPart
         {
             get => OpenXmlPart as GlossaryDocumentPart;
             internal set => OpenXmlPart = value;
@@ -30739,7 +30741,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Previous Table-Level Property Exceptions.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblPrEx.</para>
     /// </summary>
     /// <remark>
@@ -30826,7 +30828,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableWidth TableWidth
+        public TableWidth? TableWidth
         {
             get => GetElement<TableWidth>();
             set => SetElement(value);
@@ -30839,7 +30841,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableJustification TableJustification
+        public TableJustification? TableJustification
         {
             get => GetElement<TableJustification>();
             set => SetElement(value);
@@ -30852,7 +30854,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellSpacing TableCellSpacing
+        public TableCellSpacing? TableCellSpacing
         {
             get => GetElement<TableCellSpacing>();
             set => SetElement(value);
@@ -30865,7 +30867,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableIndentation TableIndentation
+        public TableIndentation? TableIndentation
         {
             get => GetElement<TableIndentation>();
             set => SetElement(value);
@@ -30878,7 +30880,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableBorders TableBorders
+        public TableBorders? TableBorders
         {
             get => GetElement<TableBorders>();
             set => SetElement(value);
@@ -30891,7 +30893,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -30904,7 +30906,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableLayout TableLayout
+        public TableLayout? TableLayout
         {
             get => GetElement<TableLayout>();
             set => SetElement(value);
@@ -30917,7 +30919,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMarginDefault TableCellMarginDefault
+        public TableCellMarginDefault? TableCellMarginDefault
         {
             get => GetElement<TableCellMarginDefault>();
             set => SetElement(value);
@@ -30930,7 +30932,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableLook TableLook
+        public TableLook? TableLook
         {
             get => GetElement<TableLook>();
             set => SetElement(value);
@@ -30942,7 +30944,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Previous Table Cell Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tcPr.</para>
     /// </summary>
     /// <remark>
@@ -31098,7 +31100,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ConditionalFormatStyle ConditionalFormatStyle
+        public ConditionalFormatStyle? ConditionalFormatStyle
         {
             get => GetElement<ConditionalFormatStyle>();
             set => SetElement(value);
@@ -31111,7 +31113,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellWidth TableCellWidth
+        public TableCellWidth? TableCellWidth
         {
             get => GetElement<TableCellWidth>();
             set => SetElement(value);
@@ -31124,7 +31126,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public GridSpan GridSpan
+        public GridSpan? GridSpan
         {
             get => GetElement<GridSpan>();
             set => SetElement(value);
@@ -31137,7 +31139,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public HorizontalMerge HorizontalMerge
+        public HorizontalMerge? HorizontalMerge
         {
             get => GetElement<HorizontalMerge>();
             set => SetElement(value);
@@ -31150,7 +31152,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public VerticalMerge VerticalMerge
+        public VerticalMerge? VerticalMerge
         {
             get => GetElement<VerticalMerge>();
             set => SetElement(value);
@@ -31163,7 +31165,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellBorders TableCellBorders
+        public TableCellBorders? TableCellBorders
         {
             get => GetElement<TableCellBorders>();
             set => SetElement(value);
@@ -31176,7 +31178,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -31189,7 +31191,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoWrap NoWrap
+        public NoWrap? NoWrap
         {
             get => GetElement<NoWrap>();
             set => SetElement(value);
@@ -31202,7 +31204,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMargin TableCellMargin
+        public TableCellMargin? TableCellMargin
         {
             get => GetElement<TableCellMargin>();
             set => SetElement(value);
@@ -31215,7 +31217,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextDirection TextDirection
+        public TextDirection? TextDirection
         {
             get => GetElement<TextDirection>();
             set => SetElement(value);
@@ -31228,7 +31230,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellFitText TableCellFitText
+        public TableCellFitText? TableCellFitText
         {
             get => GetElement<TableCellFitText>();
             set => SetElement(value);
@@ -31241,7 +31243,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellVerticalAlignment TableCellVerticalAlignment
+        public TableCellVerticalAlignment? TableCellVerticalAlignment
         {
             get => GetElement<TableCellVerticalAlignment>();
             set => SetElement(value);
@@ -31254,7 +31256,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public HideMark HideMark
+        public HideMark? HideMark
         {
             get => GetElement<HideMark>();
             set => SetElement(value);
@@ -31266,7 +31268,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Previous Table Row Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:trPr.</para>
     /// </summary>
     /// <remark>
@@ -31373,7 +31375,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Previous Table Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblPr.</para>
     /// </summary>
     /// <remark>
@@ -31514,7 +31516,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableStyle TableStyle
+        public TableStyle? TableStyle
         {
             get => GetElement<TableStyle>();
             set => SetElement(value);
@@ -31527,7 +31529,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TablePositionProperties TablePositionProperties
+        public TablePositionProperties? TablePositionProperties
         {
             get => GetElement<TablePositionProperties>();
             set => SetElement(value);
@@ -31540,7 +31542,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableOverlap TableOverlap
+        public TableOverlap? TableOverlap
         {
             get => GetElement<TableOverlap>();
             set => SetElement(value);
@@ -31553,7 +31555,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BiDiVisual BiDiVisual
+        public BiDiVisual? BiDiVisual
         {
             get => GetElement<BiDiVisual>();
             set => SetElement(value);
@@ -31566,7 +31568,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableWidth TableWidth
+        public TableWidth? TableWidth
         {
             get => GetElement<TableWidth>();
             set => SetElement(value);
@@ -31579,7 +31581,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableJustification TableJustification
+        public TableJustification? TableJustification
         {
             get => GetElement<TableJustification>();
             set => SetElement(value);
@@ -31592,7 +31594,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellSpacing TableCellSpacing
+        public TableCellSpacing? TableCellSpacing
         {
             get => GetElement<TableCellSpacing>();
             set => SetElement(value);
@@ -31605,7 +31607,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableIndentation TableIndentation
+        public TableIndentation? TableIndentation
         {
             get => GetElement<TableIndentation>();
             set => SetElement(value);
@@ -31618,7 +31620,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableBorders TableBorders
+        public TableBorders? TableBorders
         {
             get => GetElement<TableBorders>();
             set => SetElement(value);
@@ -31631,7 +31633,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -31644,7 +31646,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableLayout TableLayout
+        public TableLayout? TableLayout
         {
             get => GetElement<TableLayout>();
             set => SetElement(value);
@@ -31657,7 +31659,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMarginDefault TableCellMarginDefault
+        public TableCellMarginDefault? TableCellMarginDefault
         {
             get => GetElement<TableCellMarginDefault>();
             set => SetElement(value);
@@ -31670,33 +31672,33 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableLook TableLook
+        public TableLook? TableLook
         {
             get => GetElement<TableLook>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>TableCaption.</para>
+        /// <para>TableCaption, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:tblCaption.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCaption TableCaption
+        public TableCaption? TableCaption
         {
             get => GetElement<TableCaption>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>TableDescription.</para>
+        /// <para>TableDescription, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:tblDescription.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableDescription TableDescription
+        public TableDescription? TableDescription
         {
             get => GetElement<TableDescription>();
             set => SetElement(value);
@@ -31708,7 +31710,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Previous Section Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sectPr.</para>
     /// </summary>
     /// <remark>
@@ -31785,7 +31787,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "rsidRPr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidRPr
+        public HexBinaryValue? RsidRPr
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -31804,7 +31806,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "rsidDel")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidDel
+        public HexBinaryValue? RsidDel
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -31823,7 +31825,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "rsidR")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidR
+        public HexBinaryValue? RsidR
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -31842,7 +31844,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "rsidSect")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidSect
+        public HexBinaryValue? RsidSect
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -31927,7 +31929,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FootnoteProperties FootnoteProperties
+        public FootnoteProperties? FootnoteProperties
         {
             get => GetElement<FootnoteProperties>();
             set => SetElement(value);
@@ -31940,7 +31942,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EndnoteProperties EndnoteProperties
+        public EndnoteProperties? EndnoteProperties
         {
             get => GetElement<EndnoteProperties>();
             set => SetElement(value);
@@ -31953,7 +31955,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SectionType SectionType
+        public SectionType? SectionType
         {
             get => GetElement<SectionType>();
             set => SetElement(value);
@@ -31966,7 +31968,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PageSize PageSize
+        public PageSize? PageSize
         {
             get => GetElement<PageSize>();
             set => SetElement(value);
@@ -31979,7 +31981,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PageMargin PageMargin
+        public PageMargin? PageMargin
         {
             get => GetElement<PageMargin>();
             set => SetElement(value);
@@ -31992,7 +31994,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PaperSource PaperSource
+        public PaperSource? PaperSource
         {
             get => GetElement<PaperSource>();
             set => SetElement(value);
@@ -32005,7 +32007,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PageBorders PageBorders
+        public PageBorders? PageBorders
         {
             get => GetElement<PageBorders>();
             set => SetElement(value);
@@ -32018,7 +32020,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LineNumberType LineNumberType
+        public LineNumberType? LineNumberType
         {
             get => GetElement<LineNumberType>();
             set => SetElement(value);
@@ -32031,7 +32033,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PageNumberType PageNumberType
+        public PageNumberType? PageNumberType
         {
             get => GetElement<PageNumberType>();
             set => SetElement(value);
@@ -32044,7 +32046,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Columns Columns
+        public Columns? Columns
         {
             get => GetElement<Columns>();
             set => SetElement(value);
@@ -32057,7 +32059,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FormProtection FormProtection
+        public FormProtection? FormProtection
         {
             get => GetElement<FormProtection>();
             set => SetElement(value);
@@ -32070,7 +32072,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public VerticalTextAlignmentOnPage VerticalTextAlignmentOnPage
+        public VerticalTextAlignmentOnPage? VerticalTextAlignmentOnPage
         {
             get => GetElement<VerticalTextAlignmentOnPage>();
             set => SetElement(value);
@@ -32083,7 +32085,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoEndnote NoEndnote
+        public NoEndnote? NoEndnote
         {
             get => GetElement<NoEndnote>();
             set => SetElement(value);
@@ -32096,7 +32098,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TitlePage TitlePage
+        public TitlePage? TitlePage
         {
             get => GetElement<TitlePage>();
             set => SetElement(value);
@@ -32109,7 +32111,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextDirection TextDirection
+        public TextDirection? TextDirection
         {
             get => GetElement<TextDirection>();
             set => SetElement(value);
@@ -32122,7 +32124,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BiDi BiDi
+        public BiDi? BiDi
         {
             get => GetElement<BiDi>();
             set => SetElement(value);
@@ -32135,7 +32137,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public GutterOnRight GutterOnRight
+        public GutterOnRight? GutterOnRight
         {
             get => GetElement<GutterOnRight>();
             set => SetElement(value);
@@ -32148,7 +32150,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocGrid DocGrid
+        public DocGrid? DocGrid
         {
             get => GetElement<DocGrid>();
             set => SetElement(value);
@@ -32161,20 +32163,20 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PrinterSettingsReference PrinterSettingsReference
+        public PrinterSettingsReference? PrinterSettingsReference
         {
             get => GetElement<PrinterSettingsReference>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>FootnoteColumns.</para>
+        /// <para>FootnoteColumns, this property is only available in Office 2013 and later..</para>
         /// <para>Represents the following element tag in the schema: w15:footnoteColumns.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w15 = http://schemas.microsoft.com/office/word/2012/wordml
         /// </remark>
-        public DocumentFormat.OpenXml.Office2013.Word.FootnoteColumns FootnoteColumns
+        public DocumentFormat.OpenXml.Office2013.Word.FootnoteColumns? FootnoteColumns
         {
             get => GetElement<DocumentFormat.OpenXml.Office2013.Word.FootnoteColumns>();
             set => SetElement(value);
@@ -32186,7 +32188,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Previous Paragraph Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pPr.</para>
     /// </summary>
     /// <remark>
@@ -32363,7 +32365,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphStyleId ParagraphStyleId
+        public ParagraphStyleId? ParagraphStyleId
         {
             get => GetElement<ParagraphStyleId>();
             set => SetElement(value);
@@ -32376,7 +32378,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepNext KeepNext
+        public KeepNext? KeepNext
         {
             get => GetElement<KeepNext>();
             set => SetElement(value);
@@ -32389,7 +32391,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepLines KeepLines
+        public KeepLines? KeepLines
         {
             get => GetElement<KeepLines>();
             set => SetElement(value);
@@ -32402,7 +32404,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PageBreakBefore PageBreakBefore
+        public PageBreakBefore? PageBreakBefore
         {
             get => GetElement<PageBreakBefore>();
             set => SetElement(value);
@@ -32415,7 +32417,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FrameProperties FrameProperties
+        public FrameProperties? FrameProperties
         {
             get => GetElement<FrameProperties>();
             set => SetElement(value);
@@ -32428,7 +32430,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WidowControl WidowControl
+        public WidowControl? WidowControl
         {
             get => GetElement<WidowControl>();
             set => SetElement(value);
@@ -32441,7 +32443,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingProperties NumberingProperties
+        public NumberingProperties? NumberingProperties
         {
             get => GetElement<NumberingProperties>();
             set => SetElement(value);
@@ -32454,7 +32456,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressLineNumbers SuppressLineNumbers
+        public SuppressLineNumbers? SuppressLineNumbers
         {
             get => GetElement<SuppressLineNumbers>();
             set => SetElement(value);
@@ -32467,7 +32469,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphBorders ParagraphBorders
+        public ParagraphBorders? ParagraphBorders
         {
             get => GetElement<ParagraphBorders>();
             set => SetElement(value);
@@ -32480,7 +32482,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -32493,7 +32495,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Tabs Tabs
+        public Tabs? Tabs
         {
             get => GetElement<Tabs>();
             set => SetElement(value);
@@ -32506,7 +32508,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressAutoHyphens SuppressAutoHyphens
+        public SuppressAutoHyphens? SuppressAutoHyphens
         {
             get => GetElement<SuppressAutoHyphens>();
             set => SetElement(value);
@@ -32519,7 +32521,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Kinsoku Kinsoku
+        public Kinsoku? Kinsoku
         {
             get => GetElement<Kinsoku>();
             set => SetElement(value);
@@ -32532,7 +32534,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WordWrap WordWrap
+        public WordWrap? WordWrap
         {
             get => GetElement<WordWrap>();
             set => SetElement(value);
@@ -32545,7 +32547,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OverflowPunctuation OverflowPunctuation
+        public OverflowPunctuation? OverflowPunctuation
         {
             get => GetElement<OverflowPunctuation>();
             set => SetElement(value);
@@ -32558,7 +32560,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopLinePunctuation TopLinePunctuation
+        public TopLinePunctuation? TopLinePunctuation
         {
             get => GetElement<TopLinePunctuation>();
             set => SetElement(value);
@@ -32571,7 +32573,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDE AutoSpaceDE
+        public AutoSpaceDE? AutoSpaceDE
         {
             get => GetElement<AutoSpaceDE>();
             set => SetElement(value);
@@ -32584,7 +32586,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDN AutoSpaceDN
+        public AutoSpaceDN? AutoSpaceDN
         {
             get => GetElement<AutoSpaceDN>();
             set => SetElement(value);
@@ -32597,7 +32599,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BiDi BiDi
+        public BiDi? BiDi
         {
             get => GetElement<BiDi>();
             set => SetElement(value);
@@ -32610,7 +32612,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AdjustRightIndent AdjustRightIndent
+        public AdjustRightIndent? AdjustRightIndent
         {
             get => GetElement<AdjustRightIndent>();
             set => SetElement(value);
@@ -32623,7 +32625,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SnapToGrid SnapToGrid
+        public SnapToGrid? SnapToGrid
         {
             get => GetElement<SnapToGrid>();
             set => SetElement(value);
@@ -32636,7 +32638,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpacingBetweenLines SpacingBetweenLines
+        public SpacingBetweenLines? SpacingBetweenLines
         {
             get => GetElement<SpacingBetweenLines>();
             set => SetElement(value);
@@ -32649,7 +32651,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Indentation Indentation
+        public Indentation? Indentation
         {
             get => GetElement<Indentation>();
             set => SetElement(value);
@@ -32662,7 +32664,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ContextualSpacing ContextualSpacing
+        public ContextualSpacing? ContextualSpacing
         {
             get => GetElement<ContextualSpacing>();
             set => SetElement(value);
@@ -32675,7 +32677,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MirrorIndents MirrorIndents
+        public MirrorIndents? MirrorIndents
         {
             get => GetElement<MirrorIndents>();
             set => SetElement(value);
@@ -32688,7 +32690,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressOverlap SuppressOverlap
+        public SuppressOverlap? SuppressOverlap
         {
             get => GetElement<SuppressOverlap>();
             set => SetElement(value);
@@ -32701,7 +32703,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Justification Justification
+        public Justification? Justification
         {
             get => GetElement<Justification>();
             set => SetElement(value);
@@ -32714,7 +32716,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextDirection TextDirection
+        public TextDirection? TextDirection
         {
             get => GetElement<TextDirection>();
             set => SetElement(value);
@@ -32727,7 +32729,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextAlignment TextAlignment
+        public TextAlignment? TextAlignment
         {
             get => GetElement<TextAlignment>();
             set => SetElement(value);
@@ -32740,7 +32742,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextBoxTightWrap TextBoxTightWrap
+        public TextBoxTightWrap? TextBoxTightWrap
         {
             get => GetElement<TextBoxTightWrap>();
             set => SetElement(value);
@@ -32753,7 +32755,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OutlineLevel OutlineLevel
+        public OutlineLevel? OutlineLevel
         {
             get => GetElement<OutlineLevel>();
             set => SetElement(value);
@@ -32766,7 +32768,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DivId DivId
+        public DivId? DivId
         {
             get => GetElement<DivId>();
             set => SetElement(value);
@@ -32779,7 +32781,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ConditionalFormatStyle ConditionalFormatStyle
+        public ConditionalFormatStyle? ConditionalFormatStyle
         {
             get => GetElement<ConditionalFormatStyle>();
             set => SetElement(value);
@@ -32791,7 +32793,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Previous Run Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPr.</para>
     /// </summary>
     /// <remark>
@@ -33054,7 +33056,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Previous Run Properties for the Paragraph Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPr.</para>
     /// </summary>
     /// <remark>
@@ -33357,7 +33359,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Inserted Inserted
+        public Inserted? Inserted
         {
             get => GetElement<Inserted>();
             set => SetElement(value);
@@ -33370,7 +33372,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Deleted Deleted
+        public Deleted? Deleted
         {
             get => GetElement<Deleted>();
             set => SetElement(value);
@@ -33383,7 +33385,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MoveFrom MoveFrom
+        public MoveFrom? MoveFrom
         {
             get => GetElement<MoveFrom>();
             set => SetElement(value);
@@ -33396,7 +33398,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MoveTo MoveTo
+        public MoveTo? MoveTo
         {
             get => GetElement<MoveTo>();
             set => SetElement(value);
@@ -33408,7 +33410,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Numbering Level Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ilvl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -33436,7 +33438,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -33460,7 +33462,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Numbering Definition Instance Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numId.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -33487,7 +33489,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Starting Value.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:start.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -33514,7 +33516,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Abstract Numbering Definition Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:abstractNumId.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -33541,7 +33543,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the NonNegativeDecimalNumberType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class NonNegativeDecimalNumberType : OpenXmlLeafElement
@@ -33566,7 +33568,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -33586,7 +33588,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Previous Paragraph Numbering Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numberingChange.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -33614,7 +33616,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "original")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Original
+        public StringValue? Original
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -33633,7 +33635,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -33652,7 +33654,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -33671,7 +33673,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -33708,7 +33710,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Custom Tab Stop.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tab.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -33736,7 +33738,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TabStopValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TabStopValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TabStopValues>>();
             set => SetAttribute(value);
@@ -33755,7 +33757,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "leader")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TabStopLeaderCharValues> Leader
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TabStopLeaderCharValues>? Leader
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TabStopLeaderCharValues>>();
             set => SetAttribute(value);
@@ -33774,7 +33776,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "pos")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Position
+        public Int32Value? Position
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -33803,7 +33805,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Run Properties for the Paragraph Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPr.</para>
     /// </summary>
     /// <remark>
@@ -34109,7 +34111,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Inserted Inserted
+        public Inserted? Inserted
         {
             get => GetElement<Inserted>();
             set => SetElement(value);
@@ -34122,7 +34124,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Deleted Deleted
+        public Deleted? Deleted
         {
             get => GetElement<Deleted>();
             set => SetElement(value);
@@ -34135,7 +34137,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MoveFrom MoveFrom
+        public MoveFrom? MoveFrom
         {
             get => GetElement<MoveFrom>();
             set => SetElement(value);
@@ -34148,7 +34150,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MoveTo MoveTo
+        public MoveTo? MoveTo
         {
             get => GetElement<MoveTo>();
             set => SetElement(value);
@@ -34160,7 +34162,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Section Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sectPr.</para>
     /// </summary>
     /// <remark>
@@ -34240,7 +34242,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "rsidRPr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidRPr
+        public HexBinaryValue? RsidRPr
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -34259,7 +34261,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "rsidDel")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidDel
+        public HexBinaryValue? RsidDel
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -34278,7 +34280,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "rsidR")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidR
+        public HexBinaryValue? RsidR
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -34297,7 +34299,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "rsidSect")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue RsidSect
+        public HexBinaryValue? RsidSect
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -34393,7 +34395,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Custom Field Data.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:fldData.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -34433,7 +34435,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Form Field Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ffData.</para>
     /// </summary>
     /// <remark>
@@ -34525,7 +34527,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Form Field Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:name.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -34553,7 +34555,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -34576,7 +34578,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Script Function to Execute on Form Field Entry.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:entryMacro.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -34603,7 +34605,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Script Function to Execute on Form Field Exit.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:exitMacro.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -34630,7 +34632,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the MacroNameType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class MacroNameType : OpenXmlLeafElement
@@ -34655,7 +34657,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -34675,7 +34677,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Associated Help Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:helpText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -34703,7 +34705,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.InfoTextValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.InfoTextValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.InfoTextValues>>();
             set => SetAttribute(value);
@@ -34722,7 +34724,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -34746,7 +34748,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Associated Status Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:statusText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -34774,7 +34776,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.InfoTextValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.InfoTextValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.InfoTextValues>>();
             set => SetAttribute(value);
@@ -34793,7 +34795,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -34818,7 +34820,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
 
     /// <summary>
     /// <para>Checkbox Form Field Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:checkBox.</para>
     /// </summary>
     /// <remark>
@@ -34892,7 +34894,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
 
     /// <summary>
     /// <para>Drop-Down List Form Field Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:ddList.</para>
     /// </summary>
     /// <remark>
@@ -34961,7 +34963,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DropDownListSelection DropDownListSelection
+        public DropDownListSelection? DropDownListSelection
         {
             get => GetElement<DropDownListSelection>();
             set => SetElement(value);
@@ -34974,7 +34976,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DefaultDropDownListItemIndex DefaultDropDownListItemIndex
+        public DefaultDropDownListItemIndex? DefaultDropDownListItemIndex
         {
             get => GetElement<DefaultDropDownListItemIndex>();
             set => SetElement(value);
@@ -34986,7 +34988,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
 
     /// <summary>
     /// <para>Text Box Form Field Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:textInput.</para>
     /// </summary>
     /// <remark>
@@ -35058,7 +35060,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextBoxFormFieldType TextBoxFormFieldType
+        public TextBoxFormFieldType? TextBoxFormFieldType
         {
             get => GetElement<TextBoxFormFieldType>();
             set => SetElement(value);
@@ -35071,7 +35073,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DefaultTextBoxFormFieldString DefaultTextBoxFormFieldString
+        public DefaultTextBoxFormFieldString? DefaultTextBoxFormFieldString
         {
             get => GetElement<DefaultTextBoxFormFieldString>();
             set => SetElement(value);
@@ -35084,7 +35086,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MaxLength MaxLength
+        public MaxLength? MaxLength
         {
             get => GetElement<MaxLength>();
             set => SetElement(value);
@@ -35097,7 +35099,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Format Format
+        public Format? Format
         {
             get => GetElement<Format>();
             set => SetElement(value);
@@ -35109,7 +35111,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
 
     /// <summary>
     /// <para>Default Drop-Down List Item Index.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:default.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35137,7 +35139,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (140L), InitialVersion
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -35161,7 +35163,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Drop-Down List Entry.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:listEntry.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35188,7 +35190,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Default Text Box Form Field String.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:default.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35215,7 +35217,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Frame Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:name.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35242,7 +35244,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the String255Type Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class String255Type : OpenXmlLeafElement
@@ -35267,7 +35269,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -35287,7 +35289,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Text Box Form Field Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:type.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35315,7 +35317,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextBoxFormFieldValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextBoxFormFieldValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TextBoxFormFieldValues>>();
             set => SetAttribute(value);
@@ -35338,7 +35340,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Text Box Form Field Maximum Length.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:maxLength.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35366,7 +35368,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value Val
+        public Int16Value? Val
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -35390,7 +35392,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (1L) });
 
     /// <summary>
     /// <para>Text Box Form Field Formatting.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:format.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35418,7 +35420,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (1L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -35442,7 +35444,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (64L) });
 
     /// <summary>
     /// <para>Single Column Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:col.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35470,7 +35472,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (64L) });
         [SchemaAttr(23, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Width
+        public StringValue? Width
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -35489,7 +35491,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (64L) });
         [SchemaAttr(23, "space")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Space
+        public StringValue? Space
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -35526,7 +35528,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (64L) });
 
     /// <summary>
     /// <para>Revision Information for Section Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sectPrChange.</para>
     /// </summary>
     /// <remark>
@@ -35584,7 +35586,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (64L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -35603,7 +35605,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (64L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -35622,7 +35624,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (64L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -35666,7 +35668,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PreviousSectionProperties PreviousSectionProperties
+        public PreviousSectionProperties? PreviousSectionProperties
         {
             get => GetElement<PreviousSectionProperties>();
             set => SetElement(value);
@@ -35678,7 +35680,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Revision Information for Run Properties on the Paragraph Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPrChange.</para>
     /// </summary>
     /// <remark>
@@ -35736,7 +35738,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -35755,7 +35757,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -35774,7 +35776,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -35818,7 +35820,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PreviousParagraphMarkRunProperties PreviousParagraphMarkRunProperties
+        public PreviousParagraphMarkRunProperties? PreviousParagraphMarkRunProperties
         {
             get => GetElement<PreviousParagraphMarkRunProperties>();
             set => SetElement(value);
@@ -35830,7 +35832,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>External Content Import Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:altChunkPr.</para>
     /// </summary>
     /// <remark>
@@ -35893,7 +35895,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MatchSource MatchSource
+        public MatchSource? MatchSource
         {
             get => GetElement<MatchSource>();
             set => SetElement(value);
@@ -35905,7 +35907,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Phonetic Guide Text Alignment.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rubyAlign.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35933,7 +35935,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.RubyAlignValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.RubyAlignValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.RubyAlignValues>>();
             set => SetAttribute(value);
@@ -35956,7 +35958,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Distance Between Phonetic Guide Text and Phonetic Guide Base Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hpsRaise.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -35984,7 +35986,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value Val
+        public Int16Value? Val
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -36007,7 +36009,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Language ID for Phonetic Guide.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lid.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -36035,7 +36037,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -36059,7 +36061,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Phonetic Guide Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rubyPr.</para>
     /// </summary>
     /// <remark>
@@ -36137,7 +36139,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RubyAlign RubyAlign
+        public RubyAlign? RubyAlign
         {
             get => GetElement<RubyAlign>();
             set => SetElement(value);
@@ -36150,7 +36152,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PhoneticGuideTextFontSize PhoneticGuideTextFontSize
+        public PhoneticGuideTextFontSize? PhoneticGuideTextFontSize
         {
             get => GetElement<PhoneticGuideTextFontSize>();
             set => SetElement(value);
@@ -36163,7 +36165,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PhoneticGuideRaise PhoneticGuideRaise
+        public PhoneticGuideRaise? PhoneticGuideRaise
         {
             get => GetElement<PhoneticGuideRaise>();
             set => SetElement(value);
@@ -36176,7 +36178,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PhoneticGuideBaseTextSize PhoneticGuideBaseTextSize
+        public PhoneticGuideBaseTextSize? PhoneticGuideBaseTextSize
         {
             get => GetElement<PhoneticGuideBaseTextSize>();
             set => SetElement(value);
@@ -36189,7 +36191,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LanguageId LanguageId
+        public LanguageId? LanguageId
         {
             get => GetElement<LanguageId>();
             set => SetElement(value);
@@ -36202,7 +36204,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Dirty Dirty
+        public Dirty? Dirty
         {
             get => GetElement<Dirty>();
             set => SetElement(value);
@@ -36214,7 +36216,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Phonetic Guide Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rt.</para>
     /// </summary>
     /// <remark>
@@ -36450,7 +36452,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Phonetic Guide Base Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rubyBase.</para>
     /// </summary>
     /// <remark>
@@ -36686,7 +36688,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RubyContentType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -36849,7 +36851,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Custom XML Data Date Storage Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:storeMappedDataAs.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -36877,7 +36879,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DateFormatValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DateFormatValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DateFormatValues>>();
             set => SetAttribute(value);
@@ -36897,7 +36899,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Date Picker Calendar Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:calendar.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -36925,7 +36927,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CalendarValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CalendarValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CalendarValues>>();
             set => SetAttribute(value);
@@ -36945,7 +36947,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Combo Box List Item.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:listItem.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -36973,7 +36975,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "displayText")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue DisplayText
+        public StringValue? DisplayText
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -36992,7 +36994,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "value")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Value
+        public StringValue? Value
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -37013,7 +37015,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Structured Document Tag Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdtPr.</para>
     /// </summary>
     /// <remark>
@@ -37168,7 +37170,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Structured Document Tag End Character Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdtEndPr.</para>
     /// </summary>
     /// <remark>
@@ -37230,7 +37232,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Block-Level Structured Document Tag Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdtContent.</para>
     /// </summary>
     /// <remark>
@@ -37436,7 +37438,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Inline-Level Structured Document Tag Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdtContent.</para>
     /// </summary>
     /// <remark>
@@ -37772,7 +37774,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtContentRunRuby Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdtContent.</para>
     /// </summary>
     /// <remark>
@@ -38065,7 +38067,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Cell-Level Structured Document Tag Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdtContent.</para>
     /// </summary>
     /// <remark>
@@ -38262,7 +38264,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Row-Level Structured Document Tag Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sdtContent.</para>
     /// </summary>
     /// <remark>
@@ -38459,7 +38461,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Custom XML Element Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:customXmlPr.</para>
     /// </summary>
     /// <remark>
@@ -38525,7 +38527,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public CustomXmlPlaceholder CustomXmlPlaceholder
+        public CustomXmlPlaceholder? CustomXmlPlaceholder
         {
             get => GetElement<CustomXmlPlaceholder>();
             set => SetElement(value);
@@ -38537,7 +38539,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Custom XML Attribute.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:attr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -38565,7 +38567,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -38584,7 +38586,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -38603,7 +38605,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -38632,7 +38634,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Grid Column Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:gridCol.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -38660,7 +38662,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Width
+        public StringValue? Width
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -38688,7 +38690,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Revision Information for Table Grid Column Definitions.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblGridChange.</para>
     /// </summary>
     /// <remark>
@@ -38746,7 +38748,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -38785,7 +38787,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PreviousTableGrid PreviousTableGrid
+        public PreviousTableGrid? PreviousTableGrid
         {
             get => GetElement<PreviousTableGrid>();
             set => SetElement(value);
@@ -38797,7 +38799,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Revision Information for Table Cell Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tcPrChange.</para>
     /// </summary>
     /// <remark>
@@ -38855,7 +38857,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -38874,7 +38876,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -38893,7 +38895,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -38937,7 +38939,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PreviousTableCellProperties PreviousTableCellProperties
+        public PreviousTableCellProperties? PreviousTableCellProperties
         {
             get => GetElement<PreviousTableCellProperties>();
             set => SetElement(value);
@@ -38949,7 +38951,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Table Cell Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tcPr.</para>
     /// </summary>
     /// <remark>
@@ -39114,7 +39116,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ConditionalFormatStyle ConditionalFormatStyle
+        public ConditionalFormatStyle? ConditionalFormatStyle
         {
             get => GetElement<ConditionalFormatStyle>();
             set => SetElement(value);
@@ -39127,7 +39129,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellWidth TableCellWidth
+        public TableCellWidth? TableCellWidth
         {
             get => GetElement<TableCellWidth>();
             set => SetElement(value);
@@ -39140,7 +39142,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public GridSpan GridSpan
+        public GridSpan? GridSpan
         {
             get => GetElement<GridSpan>();
             set => SetElement(value);
@@ -39153,7 +39155,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public HorizontalMerge HorizontalMerge
+        public HorizontalMerge? HorizontalMerge
         {
             get => GetElement<HorizontalMerge>();
             set => SetElement(value);
@@ -39166,7 +39168,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public VerticalMerge VerticalMerge
+        public VerticalMerge? VerticalMerge
         {
             get => GetElement<VerticalMerge>();
             set => SetElement(value);
@@ -39179,7 +39181,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellBorders TableCellBorders
+        public TableCellBorders? TableCellBorders
         {
             get => GetElement<TableCellBorders>();
             set => SetElement(value);
@@ -39192,7 +39194,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -39205,7 +39207,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoWrap NoWrap
+        public NoWrap? NoWrap
         {
             get => GetElement<NoWrap>();
             set => SetElement(value);
@@ -39218,7 +39220,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMargin TableCellMargin
+        public TableCellMargin? TableCellMargin
         {
             get => GetElement<TableCellMargin>();
             set => SetElement(value);
@@ -39231,7 +39233,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextDirection TextDirection
+        public TextDirection? TextDirection
         {
             get => GetElement<TextDirection>();
             set => SetElement(value);
@@ -39244,7 +39246,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellFitText TableCellFitText
+        public TableCellFitText? TableCellFitText
         {
             get => GetElement<TableCellFitText>();
             set => SetElement(value);
@@ -39257,7 +39259,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellVerticalAlignment TableCellVerticalAlignment
+        public TableCellVerticalAlignment? TableCellVerticalAlignment
         {
             get => GetElement<TableCellVerticalAlignment>();
             set => SetElement(value);
@@ -39270,7 +39272,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public HideMark HideMark
+        public HideMark? HideMark
         {
             get => GetElement<HideMark>();
             set => SetElement(value);
@@ -39282,7 +39284,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Revision Information for Table Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblPrChange.</para>
     /// </summary>
     /// <remark>
@@ -39340,7 +39342,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -39359,7 +39361,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -39378,7 +39380,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -39422,7 +39424,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PreviousTableProperties PreviousTableProperties
+        public PreviousTableProperties? PreviousTableProperties
         {
             get => GetElement<PreviousTableProperties>();
             set => SetElement(value);
@@ -39434,7 +39436,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Revision Information for Table-Level Property Exceptions.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblPrExChange.</para>
     /// </summary>
     /// <remark>
@@ -39492,7 +39494,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -39511,7 +39513,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -39530,7 +39532,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -39574,7 +39576,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PreviousTablePropertyExceptions PreviousTablePropertyExceptions
+        public PreviousTablePropertyExceptions? PreviousTablePropertyExceptions
         {
             get => GetElement<PreviousTablePropertyExceptions>();
             set => SetElement(value);
@@ -39586,7 +39588,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Table Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblPr.</para>
     /// </summary>
     /// <remark>
@@ -39736,7 +39738,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableStyle TableStyle
+        public TableStyle? TableStyle
         {
             get => GetElement<TableStyle>();
             set => SetElement(value);
@@ -39749,7 +39751,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TablePositionProperties TablePositionProperties
+        public TablePositionProperties? TablePositionProperties
         {
             get => GetElement<TablePositionProperties>();
             set => SetElement(value);
@@ -39762,7 +39764,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableOverlap TableOverlap
+        public TableOverlap? TableOverlap
         {
             get => GetElement<TableOverlap>();
             set => SetElement(value);
@@ -39775,7 +39777,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BiDiVisual BiDiVisual
+        public BiDiVisual? BiDiVisual
         {
             get => GetElement<BiDiVisual>();
             set => SetElement(value);
@@ -39788,7 +39790,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableWidth TableWidth
+        public TableWidth? TableWidth
         {
             get => GetElement<TableWidth>();
             set => SetElement(value);
@@ -39801,7 +39803,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableJustification TableJustification
+        public TableJustification? TableJustification
         {
             get => GetElement<TableJustification>();
             set => SetElement(value);
@@ -39814,7 +39816,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellSpacing TableCellSpacing
+        public TableCellSpacing? TableCellSpacing
         {
             get => GetElement<TableCellSpacing>();
             set => SetElement(value);
@@ -39827,7 +39829,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableIndentation TableIndentation
+        public TableIndentation? TableIndentation
         {
             get => GetElement<TableIndentation>();
             set => SetElement(value);
@@ -39840,7 +39842,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableBorders TableBorders
+        public TableBorders? TableBorders
         {
             get => GetElement<TableBorders>();
             set => SetElement(value);
@@ -39853,7 +39855,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -39866,7 +39868,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableLayout TableLayout
+        public TableLayout? TableLayout
         {
             get => GetElement<TableLayout>();
             set => SetElement(value);
@@ -39879,7 +39881,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMarginDefault TableCellMarginDefault
+        public TableCellMarginDefault? TableCellMarginDefault
         {
             get => GetElement<TableCellMarginDefault>();
             set => SetElement(value);
@@ -39892,33 +39894,33 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableLook TableLook
+        public TableLook? TableLook
         {
             get => GetElement<TableLook>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>TableCaption.</para>
+        /// <para>TableCaption, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:tblCaption.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCaption TableCaption
+        public TableCaption? TableCaption
         {
             get => GetElement<TableCaption>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>TableDescription.</para>
+        /// <para>TableDescription, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: w:tblDescription.</para>
         /// </summary>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableDescription TableDescription
+        public TableDescription? TableDescription
         {
             get => GetElement<TableDescription>();
             set => SetElement(value);
@@ -39931,7 +39933,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TablePropertiesChange TablePropertiesChange
+        public TablePropertiesChange? TablePropertiesChange
         {
             get => GetElement<TablePropertiesChange>();
             set => SetElement(value);
@@ -39943,7 +39945,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Table Grid.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblGrid.</para>
     /// </summary>
     /// <remark>
@@ -40014,7 +40016,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Footnote Placement.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pos.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40042,7 +40044,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FootnotePositionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FootnotePositionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.FootnotePositionValues>>();
             set => SetAttribute(value);
@@ -40065,7 +40067,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Footnote Numbering Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numFmt.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40093,14 +40095,14 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.NumberFormatValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.NumberFormatValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.NumberFormatValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>format, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>format, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:format</para>
         /// </summary>
         /// <remark>
@@ -40112,7 +40114,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "format")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Format
+        public StringValue? Format
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -40139,7 +40141,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Endnote Placement.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pos.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40167,7 +40169,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.EndnotePositionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.EndnotePositionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.EndnotePositionValues>>();
             set => SetAttribute(value);
@@ -40190,7 +40192,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Special Footnote List.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:footnote.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40219,7 +40221,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Special Endnote List.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:endnote.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40248,7 +40250,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the FootnoteEndnoteSeparatorReferenceType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class FootnoteEndnoteSeparatorReferenceType : OpenXmlLeafElement
@@ -40273,7 +40275,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue Id
+        public IntegerValue? Id
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -40293,7 +40295,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Index of Column Containing Unique Values for Record.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:column.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40320,7 +40322,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Column Delimiter for Data Source.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:colDelim.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40347,7 +40349,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the UnsignedDecimalNumberType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class UnsignedDecimalNumberType : OpenXmlLeafElement
@@ -40372,7 +40374,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -40391,7 +40393,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Unique Value for Record.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:uniqueTag.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40419,7 +40421,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Base64BinaryValue Val
+        public Base64BinaryValue? Val
         {
             get => GetAttribute<Base64BinaryValue>();
             set => SetAttribute(value);
@@ -40442,7 +40444,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Data About Single Data Source Record.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:recipientData.</para>
     /// </summary>
     /// <remark>
@@ -40511,7 +40513,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Active Active
+        public Active? Active
         {
             get => GetElement<Active>();
             set => SetElement(value);
@@ -40524,7 +40526,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ColumnIndex ColumnIndex
+        public ColumnIndex? ColumnIndex
         {
             get => GetElement<ColumnIndex>();
             set => SetElement(value);
@@ -40537,7 +40539,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UniqueTag UniqueTag
+        public UniqueTag? UniqueTag
         {
             get => GetElement<UniqueTag>();
             set => SetElement(value);
@@ -40549,7 +40551,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Merge Field Mapping.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:type.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40577,7 +40579,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeOdsoFieldValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeOdsoFieldValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeOdsoFieldValues>>();
             set => SetAttribute(value);
@@ -40600,7 +40602,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>ODSO Data Source Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:type.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40628,7 +40630,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeSourceValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeSourceValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeSourceValues>>();
             set => SetAttribute(value);
@@ -40651,7 +40653,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>External Data Source to Merge Field Mapping.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:fieldMapData.</para>
     /// </summary>
     /// <remark>
@@ -40729,7 +40731,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MailMergeFieldType MailMergeFieldType
+        public MailMergeFieldType? MailMergeFieldType
         {
             get => GetElement<MailMergeFieldType>();
             set => SetElement(value);
@@ -40742,7 +40744,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Name Name
+        public Name? Name
         {
             get => GetElement<Name>();
             set => SetElement(value);
@@ -40755,7 +40757,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MappedName MappedName
+        public MappedName? MappedName
         {
             get => GetElement<MappedName>();
             set => SetElement(value);
@@ -40768,7 +40770,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ColumnIndex ColumnIndex
+        public ColumnIndex? ColumnIndex
         {
             get => GetElement<ColumnIndex>();
             set => SetElement(value);
@@ -40781,7 +40783,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LanguageId LanguageId
+        public LanguageId? LanguageId
         {
             get => GetElement<LanguageId>();
             set => SetElement(value);
@@ -40794,7 +40796,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DynamicAddress DynamicAddress
+        public DynamicAddress? DynamicAddress
         {
             get => GetElement<DynamicAddress>();
             set => SetElement(value);
@@ -40806,7 +40808,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Source Document Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:mainDocumentType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40834,7 +40836,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeDocumentValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeDocumentValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeDocumentValues>>();
             set => SetAttribute(value);
@@ -40857,7 +40859,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Data Source Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dataType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40885,7 +40887,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeDataValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeDataValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeDataValues>>();
             set => SetAttribute(value);
@@ -40908,7 +40910,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Merged Document Destination.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:destination.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -40936,7 +40938,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeDestinationValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeDestinationValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.MailMergeDestinationValues>>();
             set => SetAttribute(value);
@@ -40959,7 +40961,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Office Data Source Object Settings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:odso.</para>
     /// </summary>
     /// <remark>
@@ -41043,7 +41045,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UdlConnectionString UdlConnectionString
+        public UdlConnectionString? UdlConnectionString
         {
             get => GetElement<UdlConnectionString>();
             set => SetElement(value);
@@ -41056,7 +41058,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DataSourceTableName DataSourceTableName
+        public DataSourceTableName? DataSourceTableName
         {
             get => GetElement<DataSourceTableName>();
             set => SetElement(value);
@@ -41069,7 +41071,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SourceReference SourceReference
+        public SourceReference? SourceReference
         {
             get => GetElement<SourceReference>();
             set => SetElement(value);
@@ -41082,7 +41084,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ColumnDelimiter ColumnDelimiter
+        public ColumnDelimiter? ColumnDelimiter
         {
             get => GetElement<ColumnDelimiter>();
             set => SetElement(value);
@@ -41095,7 +41097,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MailMergeSource MailMergeSource
+        public MailMergeSource? MailMergeSource
         {
             get => GetElement<MailMergeSource>();
             set => SetElement(value);
@@ -41108,7 +41110,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FirstRowHeader FirstRowHeader
+        public FirstRowHeader? FirstRowHeader
         {
             get => GetElement<FirstRowHeader>();
             set => SetElement(value);
@@ -41120,7 +41122,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Single Document Variable.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docVar.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -41148,7 +41150,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -41167,7 +41169,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -41196,7 +41198,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Original Document Revision Save ID.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rsidRoot.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -41223,7 +41225,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Single Session Revision Save ID.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rsid.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -41250,7 +41252,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Abstract Numbering Definition Identifier.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:nsid.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -41277,7 +41279,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Numbering Template Code.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tmpl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -41304,7 +41306,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Defines the LongHexNumberType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class LongHexNumberType : OpenXmlLeafElement
@@ -41329,7 +41331,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue Val
+        public HexBinaryValue? Val
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -41349,7 +41351,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Run Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPr.</para>
     /// </summary>
     /// <remark>
@@ -41535,7 +41537,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunFonts RunFonts
+        public RunFonts? RunFonts
         {
             get => GetElement<RunFonts>();
             set => SetElement(value);
@@ -41548,7 +41550,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Bold Bold
+        public Bold? Bold
         {
             get => GetElement<Bold>();
             set => SetElement(value);
@@ -41561,7 +41563,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BoldComplexScript BoldComplexScript
+        public BoldComplexScript? BoldComplexScript
         {
             get => GetElement<BoldComplexScript>();
             set => SetElement(value);
@@ -41574,7 +41576,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Italic Italic
+        public Italic? Italic
         {
             get => GetElement<Italic>();
             set => SetElement(value);
@@ -41587,7 +41589,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ItalicComplexScript ItalicComplexScript
+        public ItalicComplexScript? ItalicComplexScript
         {
             get => GetElement<ItalicComplexScript>();
             set => SetElement(value);
@@ -41600,7 +41602,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Caps Caps
+        public Caps? Caps
         {
             get => GetElement<Caps>();
             set => SetElement(value);
@@ -41613,7 +41615,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SmallCaps SmallCaps
+        public SmallCaps? SmallCaps
         {
             get => GetElement<SmallCaps>();
             set => SetElement(value);
@@ -41626,7 +41628,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Strike Strike
+        public Strike? Strike
         {
             get => GetElement<Strike>();
             set => SetElement(value);
@@ -41639,7 +41641,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoubleStrike DoubleStrike
+        public DoubleStrike? DoubleStrike
         {
             get => GetElement<DoubleStrike>();
             set => SetElement(value);
@@ -41652,7 +41654,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Outline Outline
+        public Outline? Outline
         {
             get => GetElement<Outline>();
             set => SetElement(value);
@@ -41665,7 +41667,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shadow Shadow
+        public Shadow? Shadow
         {
             get => GetElement<Shadow>();
             set => SetElement(value);
@@ -41678,7 +41680,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Emboss Emboss
+        public Emboss? Emboss
         {
             get => GetElement<Emboss>();
             set => SetElement(value);
@@ -41691,7 +41693,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Imprint Imprint
+        public Imprint? Imprint
         {
             get => GetElement<Imprint>();
             set => SetElement(value);
@@ -41704,7 +41706,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoProof NoProof
+        public NoProof? NoProof
         {
             get => GetElement<NoProof>();
             set => SetElement(value);
@@ -41717,7 +41719,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SnapToGrid SnapToGrid
+        public SnapToGrid? SnapToGrid
         {
             get => GetElement<SnapToGrid>();
             set => SetElement(value);
@@ -41730,7 +41732,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Vanish Vanish
+        public Vanish? Vanish
         {
             get => GetElement<Vanish>();
             set => SetElement(value);
@@ -41743,7 +41745,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WebHidden WebHidden
+        public WebHidden? WebHidden
         {
             get => GetElement<WebHidden>();
             set => SetElement(value);
@@ -41756,7 +41758,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Color Color
+        public Color? Color
         {
             get => GetElement<Color>();
             set => SetElement(value);
@@ -41769,7 +41771,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Spacing Spacing
+        public Spacing? Spacing
         {
             get => GetElement<Spacing>();
             set => SetElement(value);
@@ -41782,7 +41784,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public CharacterScale CharacterScale
+        public CharacterScale? CharacterScale
         {
             get => GetElement<CharacterScale>();
             set => SetElement(value);
@@ -41795,7 +41797,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Kern Kern
+        public Kern? Kern
         {
             get => GetElement<Kern>();
             set => SetElement(value);
@@ -41808,7 +41810,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Position Position
+        public Position? Position
         {
             get => GetElement<Position>();
             set => SetElement(value);
@@ -41821,7 +41823,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontSize FontSize
+        public FontSize? FontSize
         {
             get => GetElement<FontSize>();
             set => SetElement(value);
@@ -41834,7 +41836,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontSizeComplexScript FontSizeComplexScript
+        public FontSizeComplexScript? FontSizeComplexScript
         {
             get => GetElement<FontSizeComplexScript>();
             set => SetElement(value);
@@ -41847,7 +41849,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Underline Underline
+        public Underline? Underline
         {
             get => GetElement<Underline>();
             set => SetElement(value);
@@ -41860,7 +41862,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextEffect TextEffect
+        public TextEffect? TextEffect
         {
             get => GetElement<TextEffect>();
             set => SetElement(value);
@@ -41873,7 +41875,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Border Border
+        public Border? Border
         {
             get => GetElement<Border>();
             set => SetElement(value);
@@ -41886,7 +41888,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -41899,7 +41901,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FitText FitText
+        public FitText? FitText
         {
             get => GetElement<FitText>();
             set => SetElement(value);
@@ -41912,7 +41914,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public VerticalTextAlignment VerticalTextAlignment
+        public VerticalTextAlignment? VerticalTextAlignment
         {
             get => GetElement<VerticalTextAlignment>();
             set => SetElement(value);
@@ -41925,7 +41927,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Emphasis Emphasis
+        public Emphasis? Emphasis
         {
             get => GetElement<Emphasis>();
             set => SetElement(value);
@@ -41938,7 +41940,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Languages Languages
+        public Languages? Languages
         {
             get => GetElement<Languages>();
             set => SetElement(value);
@@ -41951,7 +41953,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EastAsianLayout EastAsianLayout
+        public EastAsianLayout? EastAsianLayout
         {
             get => GetElement<EastAsianLayout>();
             set => SetElement(value);
@@ -41964,7 +41966,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpecVanish SpecVanish
+        public SpecVanish? SpecVanish
         {
             get => GetElement<SpecVanish>();
             set => SetElement(value);
@@ -41976,7 +41978,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Paragraph Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pPr.</para>
     /// </summary>
     /// <remark>
@@ -42132,7 +42134,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepNext KeepNext
+        public KeepNext? KeepNext
         {
             get => GetElement<KeepNext>();
             set => SetElement(value);
@@ -42145,7 +42147,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepLines KeepLines
+        public KeepLines? KeepLines
         {
             get => GetElement<KeepLines>();
             set => SetElement(value);
@@ -42158,7 +42160,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PageBreakBefore PageBreakBefore
+        public PageBreakBefore? PageBreakBefore
         {
             get => GetElement<PageBreakBefore>();
             set => SetElement(value);
@@ -42171,7 +42173,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FrameProperties FrameProperties
+        public FrameProperties? FrameProperties
         {
             get => GetElement<FrameProperties>();
             set => SetElement(value);
@@ -42184,7 +42186,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WidowControl WidowControl
+        public WidowControl? WidowControl
         {
             get => GetElement<WidowControl>();
             set => SetElement(value);
@@ -42197,7 +42199,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingProperties NumberingProperties
+        public NumberingProperties? NumberingProperties
         {
             get => GetElement<NumberingProperties>();
             set => SetElement(value);
@@ -42210,7 +42212,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressLineNumbers SuppressLineNumbers
+        public SuppressLineNumbers? SuppressLineNumbers
         {
             get => GetElement<SuppressLineNumbers>();
             set => SetElement(value);
@@ -42223,7 +42225,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphBorders ParagraphBorders
+        public ParagraphBorders? ParagraphBorders
         {
             get => GetElement<ParagraphBorders>();
             set => SetElement(value);
@@ -42236,7 +42238,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -42249,7 +42251,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Tabs Tabs
+        public Tabs? Tabs
         {
             get => GetElement<Tabs>();
             set => SetElement(value);
@@ -42262,7 +42264,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressAutoHyphens SuppressAutoHyphens
+        public SuppressAutoHyphens? SuppressAutoHyphens
         {
             get => GetElement<SuppressAutoHyphens>();
             set => SetElement(value);
@@ -42275,7 +42277,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Kinsoku Kinsoku
+        public Kinsoku? Kinsoku
         {
             get => GetElement<Kinsoku>();
             set => SetElement(value);
@@ -42288,7 +42290,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WordWrap WordWrap
+        public WordWrap? WordWrap
         {
             get => GetElement<WordWrap>();
             set => SetElement(value);
@@ -42301,7 +42303,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OverflowPunctuation OverflowPunctuation
+        public OverflowPunctuation? OverflowPunctuation
         {
             get => GetElement<OverflowPunctuation>();
             set => SetElement(value);
@@ -42314,7 +42316,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopLinePunctuation TopLinePunctuation
+        public TopLinePunctuation? TopLinePunctuation
         {
             get => GetElement<TopLinePunctuation>();
             set => SetElement(value);
@@ -42327,7 +42329,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDE AutoSpaceDE
+        public AutoSpaceDE? AutoSpaceDE
         {
             get => GetElement<AutoSpaceDE>();
             set => SetElement(value);
@@ -42340,7 +42342,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDN AutoSpaceDN
+        public AutoSpaceDN? AutoSpaceDN
         {
             get => GetElement<AutoSpaceDN>();
             set => SetElement(value);
@@ -42353,7 +42355,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BiDi BiDi
+        public BiDi? BiDi
         {
             get => GetElement<BiDi>();
             set => SetElement(value);
@@ -42366,7 +42368,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AdjustRightIndent AdjustRightIndent
+        public AdjustRightIndent? AdjustRightIndent
         {
             get => GetElement<AdjustRightIndent>();
             set => SetElement(value);
@@ -42379,7 +42381,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SnapToGrid SnapToGrid
+        public SnapToGrid? SnapToGrid
         {
             get => GetElement<SnapToGrid>();
             set => SetElement(value);
@@ -42392,7 +42394,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpacingBetweenLines SpacingBetweenLines
+        public SpacingBetweenLines? SpacingBetweenLines
         {
             get => GetElement<SpacingBetweenLines>();
             set => SetElement(value);
@@ -42405,7 +42407,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Indentation Indentation
+        public Indentation? Indentation
         {
             get => GetElement<Indentation>();
             set => SetElement(value);
@@ -42418,7 +42420,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ContextualSpacing ContextualSpacing
+        public ContextualSpacing? ContextualSpacing
         {
             get => GetElement<ContextualSpacing>();
             set => SetElement(value);
@@ -42431,7 +42433,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MirrorIndents MirrorIndents
+        public MirrorIndents? MirrorIndents
         {
             get => GetElement<MirrorIndents>();
             set => SetElement(value);
@@ -42444,7 +42446,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressOverlap SuppressOverlap
+        public SuppressOverlap? SuppressOverlap
         {
             get => GetElement<SuppressOverlap>();
             set => SetElement(value);
@@ -42457,7 +42459,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Justification Justification
+        public Justification? Justification
         {
             get => GetElement<Justification>();
             set => SetElement(value);
@@ -42470,7 +42472,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextDirection TextDirection
+        public TextDirection? TextDirection
         {
             get => GetElement<TextDirection>();
             set => SetElement(value);
@@ -42483,7 +42485,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextAlignment TextAlignment
+        public TextAlignment? TextAlignment
         {
             get => GetElement<TextAlignment>();
             set => SetElement(value);
@@ -42496,7 +42498,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextBoxTightWrap TextBoxTightWrap
+        public TextBoxTightWrap? TextBoxTightWrap
         {
             get => GetElement<TextBoxTightWrap>();
             set => SetElement(value);
@@ -42509,7 +42511,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OutlineLevel OutlineLevel
+        public OutlineLevel? OutlineLevel
         {
             get => GetElement<OutlineLevel>();
             set => SetElement(value);
@@ -42521,7 +42523,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Default Run Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPrDefault.</para>
     /// </summary>
     /// <remark>
@@ -42584,7 +42586,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunPropertiesBaseStyle RunPropertiesBaseStyle
+        public RunPropertiesBaseStyle? RunPropertiesBaseStyle
         {
             get => GetElement<RunPropertiesBaseStyle>();
             set => SetElement(value);
@@ -42596,7 +42598,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Default Paragraph Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pPrDefault.</para>
     /// </summary>
     /// <remark>
@@ -42659,7 +42661,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphPropertiesBaseStyle ParagraphPropertiesBaseStyle
+        public ParagraphPropertiesBaseStyle? ParagraphPropertiesBaseStyle
         {
             get => GetElement<ParagraphPropertiesBaseStyle>();
             set => SetElement(value);
@@ -42671,7 +42673,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Left and Right Margin for Frame.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:marW.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -42698,7 +42700,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Top and Bottom Margin for Frame.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:marH.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -42725,7 +42727,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Defines the PixelsMeasureType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class PixelsMeasureType : OpenXmlLeafElement
@@ -42750,7 +42752,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -42769,7 +42771,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
 
     /// <summary>
     /// <para>Scrollbar Display Option.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:scrollbar.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -42797,7 +42799,7 @@ aBuilder.AddValidator(new StringValidator() { MinLength = (0L), MaxLength = (652
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FrameScrollbarVisibilityValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FrameScrollbarVisibilityValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.FrameScrollbarVisibilityValues>>();
             set => SetAttribute(value);
@@ -42820,7 +42822,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Frameset Splitter Width.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:w.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -42847,7 +42849,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Hyphenation Zone.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hyphenationZone.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -42874,7 +42876,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Drawing Grid Horizontal Grid Unit Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:drawingGridHorizontalSpacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -42901,7 +42903,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Drawing Grid Vertical Grid Unit Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:drawingGridVerticalSpacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -42928,7 +42930,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Drawing Grid Horizontal Origin Point.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:drawingGridHorizontalOrigin.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -42955,7 +42957,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Drawing Grid Vertical Origin Point.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:drawingGridVerticalOrigin.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -42982,7 +42984,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TwipsMeasureType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TwipsMeasureType : OpenXmlLeafElement
@@ -43007,7 +43009,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -43032,7 +43034,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Frameset Splitter Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:framesetSplitbar.</para>
     /// </summary>
     /// <remark>
@@ -43104,7 +43106,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Width Width
+        public Width? Width
         {
             get => GetElement<Width>();
             set => SetElement(value);
@@ -43117,7 +43119,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Color Color
+        public Color? Color
         {
             get => GetElement<Color>();
             set => SetElement(value);
@@ -43130,7 +43132,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoBorder NoBorder
+        public NoBorder? NoBorder
         {
             get => GetElement<NoBorder>();
             set => SetElement(value);
@@ -43143,7 +43145,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FlatBorders FlatBorders
+        public FlatBorders? FlatBorders
         {
             get => GetElement<FlatBorders>();
             set => SetElement(value);
@@ -43155,7 +43157,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Frameset Layout.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:frameLayout.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -43183,7 +43185,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FrameLayoutValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FrameLayoutValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.FrameLayoutValues>>();
             set => SetAttribute(value);
@@ -43206,7 +43208,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Nested Frameset Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:frameset.</para>
     /// </summary>
     /// <remark>
@@ -43287,7 +43289,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FrameSize FrameSize
+        public FrameSize? FrameSize
         {
             get => GetElement<FrameSize>();
             set => SetElement(value);
@@ -43300,7 +43302,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FramesetSplitbar FramesetSplitbar
+        public FramesetSplitbar? FramesetSplitbar
         {
             get => GetElement<FramesetSplitbar>();
             set => SetElement(value);
@@ -43313,7 +43315,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FrameLayout FrameLayout
+        public FrameLayout? FrameLayout
         {
             get => GetElement<FrameLayout>();
             set => SetElement(value);
@@ -43325,7 +43327,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Single Frame Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:frame.</para>
     /// </summary>
     /// <remark>
@@ -43409,7 +43411,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FrameSize FrameSize
+        public FrameSize? FrameSize
         {
             get => GetElement<FrameSize>();
             set => SetElement(value);
@@ -43422,7 +43424,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FrameName FrameName
+        public FrameName? FrameName
         {
             get => GetElement<FrameName>();
             set => SetElement(value);
@@ -43435,7 +43437,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SourceFileReference SourceFileReference
+        public SourceFileReference? SourceFileReference
         {
             get => GetElement<SourceFileReference>();
             set => SetElement(value);
@@ -43448,7 +43450,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MarginWidth MarginWidth
+        public MarginWidth? MarginWidth
         {
             get => GetElement<MarginWidth>();
             set => SetElement(value);
@@ -43461,7 +43463,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MarginHeight MarginHeight
+        public MarginHeight? MarginHeight
         {
             get => GetElement<MarginHeight>();
             set => SetElement(value);
@@ -43474,7 +43476,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ScrollbarVisibility ScrollbarVisibility
+        public ScrollbarVisibility? ScrollbarVisibility
         {
             get => GetElement<ScrollbarVisibility>();
             set => SetElement(value);
@@ -43487,7 +43489,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoResizeAllowed NoResizeAllowed
+        public NoResizeAllowed? NoResizeAllowed
         {
             get => GetElement<NoResizeAllowed>();
             set => SetElement(value);
@@ -43500,7 +43502,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LinkedToFile LinkedToFile
+        public LinkedToFile? LinkedToFile
         {
             get => GetElement<LinkedToFile>();
             set => SetElement(value);
@@ -43512,7 +43514,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Content Between Numbering Symbol and Paragraph Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:suff.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -43540,7 +43542,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LevelSuffixValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LevelSuffixValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.LevelSuffixValues>>();
             set => SetAttribute(value);
@@ -43563,7 +43565,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Numbering Level Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lvlText.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -43591,7 +43593,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -43610,7 +43612,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "null")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Null
+        public OnOffValue? Null
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -43631,7 +43633,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Legacy Numbering Level Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:legacy.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -43659,7 +43661,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "legacy")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Legacy
+        public OnOffValue? Legacy
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -43678,7 +43680,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "legacySpace")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue LegacySpace
+        public StringValue? LegacySpace
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -43697,7 +43699,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "legacyIndent")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue LegacyIndent
+        public StringValue? LegacyIndent
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -43735,7 +43737,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Justification.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lvlJc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -43763,7 +43765,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LevelJustificationValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LevelJustificationValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.LevelJustificationValues>>();
             set => SetAttribute(value);
@@ -43786,7 +43788,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Numbering Level Associated Paragraph Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pPr.</para>
     /// </summary>
     /// <remark>
@@ -43951,7 +43953,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphStyleId ParagraphStyleId
+        public ParagraphStyleId? ParagraphStyleId
         {
             get => GetElement<ParagraphStyleId>();
             set => SetElement(value);
@@ -43964,7 +43966,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepNext KeepNext
+        public KeepNext? KeepNext
         {
             get => GetElement<KeepNext>();
             set => SetElement(value);
@@ -43977,7 +43979,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepLines KeepLines
+        public KeepLines? KeepLines
         {
             get => GetElement<KeepLines>();
             set => SetElement(value);
@@ -43990,7 +43992,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PageBreakBefore PageBreakBefore
+        public PageBreakBefore? PageBreakBefore
         {
             get => GetElement<PageBreakBefore>();
             set => SetElement(value);
@@ -44003,7 +44005,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FrameProperties FrameProperties
+        public FrameProperties? FrameProperties
         {
             get => GetElement<FrameProperties>();
             set => SetElement(value);
@@ -44016,7 +44018,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WidowControl WidowControl
+        public WidowControl? WidowControl
         {
             get => GetElement<WidowControl>();
             set => SetElement(value);
@@ -44029,7 +44031,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingProperties NumberingProperties
+        public NumberingProperties? NumberingProperties
         {
             get => GetElement<NumberingProperties>();
             set => SetElement(value);
@@ -44042,7 +44044,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressLineNumbers SuppressLineNumbers
+        public SuppressLineNumbers? SuppressLineNumbers
         {
             get => GetElement<SuppressLineNumbers>();
             set => SetElement(value);
@@ -44055,7 +44057,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphBorders ParagraphBorders
+        public ParagraphBorders? ParagraphBorders
         {
             get => GetElement<ParagraphBorders>();
             set => SetElement(value);
@@ -44068,7 +44070,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -44081,7 +44083,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Tabs Tabs
+        public Tabs? Tabs
         {
             get => GetElement<Tabs>();
             set => SetElement(value);
@@ -44094,7 +44096,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressAutoHyphens SuppressAutoHyphens
+        public SuppressAutoHyphens? SuppressAutoHyphens
         {
             get => GetElement<SuppressAutoHyphens>();
             set => SetElement(value);
@@ -44107,7 +44109,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Kinsoku Kinsoku
+        public Kinsoku? Kinsoku
         {
             get => GetElement<Kinsoku>();
             set => SetElement(value);
@@ -44120,7 +44122,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WordWrap WordWrap
+        public WordWrap? WordWrap
         {
             get => GetElement<WordWrap>();
             set => SetElement(value);
@@ -44133,7 +44135,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OverflowPunctuation OverflowPunctuation
+        public OverflowPunctuation? OverflowPunctuation
         {
             get => GetElement<OverflowPunctuation>();
             set => SetElement(value);
@@ -44146,7 +44148,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopLinePunctuation TopLinePunctuation
+        public TopLinePunctuation? TopLinePunctuation
         {
             get => GetElement<TopLinePunctuation>();
             set => SetElement(value);
@@ -44159,7 +44161,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDE AutoSpaceDE
+        public AutoSpaceDE? AutoSpaceDE
         {
             get => GetElement<AutoSpaceDE>();
             set => SetElement(value);
@@ -44172,7 +44174,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDN AutoSpaceDN
+        public AutoSpaceDN? AutoSpaceDN
         {
             get => GetElement<AutoSpaceDN>();
             set => SetElement(value);
@@ -44185,7 +44187,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BiDi BiDi
+        public BiDi? BiDi
         {
             get => GetElement<BiDi>();
             set => SetElement(value);
@@ -44198,7 +44200,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AdjustRightIndent AdjustRightIndent
+        public AdjustRightIndent? AdjustRightIndent
         {
             get => GetElement<AdjustRightIndent>();
             set => SetElement(value);
@@ -44211,7 +44213,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SnapToGrid SnapToGrid
+        public SnapToGrid? SnapToGrid
         {
             get => GetElement<SnapToGrid>();
             set => SetElement(value);
@@ -44224,7 +44226,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpacingBetweenLines SpacingBetweenLines
+        public SpacingBetweenLines? SpacingBetweenLines
         {
             get => GetElement<SpacingBetweenLines>();
             set => SetElement(value);
@@ -44237,7 +44239,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Indentation Indentation
+        public Indentation? Indentation
         {
             get => GetElement<Indentation>();
             set => SetElement(value);
@@ -44250,7 +44252,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ContextualSpacing ContextualSpacing
+        public ContextualSpacing? ContextualSpacing
         {
             get => GetElement<ContextualSpacing>();
             set => SetElement(value);
@@ -44263,7 +44265,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MirrorIndents MirrorIndents
+        public MirrorIndents? MirrorIndents
         {
             get => GetElement<MirrorIndents>();
             set => SetElement(value);
@@ -44276,7 +44278,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressOverlap SuppressOverlap
+        public SuppressOverlap? SuppressOverlap
         {
             get => GetElement<SuppressOverlap>();
             set => SetElement(value);
@@ -44289,7 +44291,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Justification Justification
+        public Justification? Justification
         {
             get => GetElement<Justification>();
             set => SetElement(value);
@@ -44302,7 +44304,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextDirection TextDirection
+        public TextDirection? TextDirection
         {
             get => GetElement<TextDirection>();
             set => SetElement(value);
@@ -44315,7 +44317,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextAlignment TextAlignment
+        public TextAlignment? TextAlignment
         {
             get => GetElement<TextAlignment>();
             set => SetElement(value);
@@ -44328,7 +44330,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextBoxTightWrap TextBoxTightWrap
+        public TextBoxTightWrap? TextBoxTightWrap
         {
             get => GetElement<TextBoxTightWrap>();
             set => SetElement(value);
@@ -44341,7 +44343,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OutlineLevel OutlineLevel
+        public OutlineLevel? OutlineLevel
         {
             get => GetElement<OutlineLevel>();
             set => SetElement(value);
@@ -44353,7 +44355,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Numbering Symbol Run Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPr.</para>
     /// </summary>
     /// <remark>
@@ -44545,7 +44547,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunFonts RunFonts
+        public RunFonts? RunFonts
         {
             get => GetElement<RunFonts>();
             set => SetElement(value);
@@ -44558,7 +44560,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Bold Bold
+        public Bold? Bold
         {
             get => GetElement<Bold>();
             set => SetElement(value);
@@ -44571,7 +44573,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BoldComplexScript BoldComplexScript
+        public BoldComplexScript? BoldComplexScript
         {
             get => GetElement<BoldComplexScript>();
             set => SetElement(value);
@@ -44584,7 +44586,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Italic Italic
+        public Italic? Italic
         {
             get => GetElement<Italic>();
             set => SetElement(value);
@@ -44597,7 +44599,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ItalicComplexScript ItalicComplexScript
+        public ItalicComplexScript? ItalicComplexScript
         {
             get => GetElement<ItalicComplexScript>();
             set => SetElement(value);
@@ -44610,7 +44612,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Caps Caps
+        public Caps? Caps
         {
             get => GetElement<Caps>();
             set => SetElement(value);
@@ -44623,7 +44625,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SmallCaps SmallCaps
+        public SmallCaps? SmallCaps
         {
             get => GetElement<SmallCaps>();
             set => SetElement(value);
@@ -44636,7 +44638,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Strike Strike
+        public Strike? Strike
         {
             get => GetElement<Strike>();
             set => SetElement(value);
@@ -44649,7 +44651,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoubleStrike DoubleStrike
+        public DoubleStrike? DoubleStrike
         {
             get => GetElement<DoubleStrike>();
             set => SetElement(value);
@@ -44662,7 +44664,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Outline Outline
+        public Outline? Outline
         {
             get => GetElement<Outline>();
             set => SetElement(value);
@@ -44675,7 +44677,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shadow Shadow
+        public Shadow? Shadow
         {
             get => GetElement<Shadow>();
             set => SetElement(value);
@@ -44688,7 +44690,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Emboss Emboss
+        public Emboss? Emboss
         {
             get => GetElement<Emboss>();
             set => SetElement(value);
@@ -44701,7 +44703,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Imprint Imprint
+        public Imprint? Imprint
         {
             get => GetElement<Imprint>();
             set => SetElement(value);
@@ -44714,7 +44716,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoProof NoProof
+        public NoProof? NoProof
         {
             get => GetElement<NoProof>();
             set => SetElement(value);
@@ -44727,7 +44729,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SnapToGrid SnapToGrid
+        public SnapToGrid? SnapToGrid
         {
             get => GetElement<SnapToGrid>();
             set => SetElement(value);
@@ -44740,7 +44742,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Vanish Vanish
+        public Vanish? Vanish
         {
             get => GetElement<Vanish>();
             set => SetElement(value);
@@ -44753,7 +44755,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WebHidden WebHidden
+        public WebHidden? WebHidden
         {
             get => GetElement<WebHidden>();
             set => SetElement(value);
@@ -44766,7 +44768,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Color Color
+        public Color? Color
         {
             get => GetElement<Color>();
             set => SetElement(value);
@@ -44779,7 +44781,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Spacing Spacing
+        public Spacing? Spacing
         {
             get => GetElement<Spacing>();
             set => SetElement(value);
@@ -44792,7 +44794,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public CharacterScale CharacterScale
+        public CharacterScale? CharacterScale
         {
             get => GetElement<CharacterScale>();
             set => SetElement(value);
@@ -44805,7 +44807,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Kern Kern
+        public Kern? Kern
         {
             get => GetElement<Kern>();
             set => SetElement(value);
@@ -44818,7 +44820,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Position Position
+        public Position? Position
         {
             get => GetElement<Position>();
             set => SetElement(value);
@@ -44831,7 +44833,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontSize FontSize
+        public FontSize? FontSize
         {
             get => GetElement<FontSize>();
             set => SetElement(value);
@@ -44844,7 +44846,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontSizeComplexScript FontSizeComplexScript
+        public FontSizeComplexScript? FontSizeComplexScript
         {
             get => GetElement<FontSizeComplexScript>();
             set => SetElement(value);
@@ -44857,7 +44859,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Underline Underline
+        public Underline? Underline
         {
             get => GetElement<Underline>();
             set => SetElement(value);
@@ -44870,7 +44872,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextEffect TextEffect
+        public TextEffect? TextEffect
         {
             get => GetElement<TextEffect>();
             set => SetElement(value);
@@ -44883,7 +44885,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Border Border
+        public Border? Border
         {
             get => GetElement<Border>();
             set => SetElement(value);
@@ -44896,7 +44898,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -44909,7 +44911,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FitText FitText
+        public FitText? FitText
         {
             get => GetElement<FitText>();
             set => SetElement(value);
@@ -44922,7 +44924,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public VerticalTextAlignment VerticalTextAlignment
+        public VerticalTextAlignment? VerticalTextAlignment
         {
             get => GetElement<VerticalTextAlignment>();
             set => SetElement(value);
@@ -44935,7 +44937,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RightToLeftText RightToLeftText
+        public RightToLeftText? RightToLeftText
         {
             get => GetElement<RightToLeftText>();
             set => SetElement(value);
@@ -44948,7 +44950,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ComplexScript ComplexScript
+        public ComplexScript? ComplexScript
         {
             get => GetElement<ComplexScript>();
             set => SetElement(value);
@@ -44961,7 +44963,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Emphasis Emphasis
+        public Emphasis? Emphasis
         {
             get => GetElement<Emphasis>();
             set => SetElement(value);
@@ -44974,7 +44976,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Languages Languages
+        public Languages? Languages
         {
             get => GetElement<Languages>();
             set => SetElement(value);
@@ -44987,7 +44989,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EastAsianLayout EastAsianLayout
+        public EastAsianLayout? EastAsianLayout
         {
             get => GetElement<EastAsianLayout>();
             set => SetElement(value);
@@ -45000,7 +45002,7 @@ aBuilder.AddUnion(union =>
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpecVanish SpecVanish
+        public SpecVanish? SpecVanish
         {
             get => GetElement<SpecVanish>();
             set => SetElement(value);
@@ -45012,7 +45014,7 @@ aBuilder.AddUnion(union =>
 
     /// <summary>
     /// <para>Abstract Numbering Definition Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:multiLevelType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -45040,7 +45042,7 @@ aBuilder.AddUnion(union =>
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MultiLevelValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.MultiLevelValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.MultiLevelValues>>();
             set => SetAttribute(value);
@@ -45063,7 +45065,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Numbering Level Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lvl.</para>
     /// </summary>
     /// <remark>
@@ -45132,7 +45134,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "ilvl")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value LevelIndex
+        public Int32Value? LevelIndex
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -45151,7 +45153,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "tplc")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue TemplateCode
+        public HexBinaryValue? TemplateCode
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -45170,7 +45172,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "tentative")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Tentative
+        public OnOffValue? Tentative
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -45226,7 +45228,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StartNumberingValue StartNumberingValue
+        public StartNumberingValue? StartNumberingValue
         {
             get => GetElement<StartNumberingValue>();
             set => SetElement(value);
@@ -45239,7 +45241,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -45252,7 +45254,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LevelRestart LevelRestart
+        public LevelRestart? LevelRestart
         {
             get => GetElement<LevelRestart>();
             set => SetElement(value);
@@ -45265,7 +45267,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphStyleIdInLevel ParagraphStyleIdInLevel
+        public ParagraphStyleIdInLevel? ParagraphStyleIdInLevel
         {
             get => GetElement<ParagraphStyleIdInLevel>();
             set => SetElement(value);
@@ -45278,7 +45280,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public IsLegalNumberingStyle IsLegalNumberingStyle
+        public IsLegalNumberingStyle? IsLegalNumberingStyle
         {
             get => GetElement<IsLegalNumberingStyle>();
             set => SetElement(value);
@@ -45291,7 +45293,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LevelSuffix LevelSuffix
+        public LevelSuffix? LevelSuffix
         {
             get => GetElement<LevelSuffix>();
             set => SetElement(value);
@@ -45304,7 +45306,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LevelText LevelText
+        public LevelText? LevelText
         {
             get => GetElement<LevelText>();
             set => SetElement(value);
@@ -45317,7 +45319,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LevelPictureBulletId LevelPictureBulletId
+        public LevelPictureBulletId? LevelPictureBulletId
         {
             get => GetElement<LevelPictureBulletId>();
             set => SetElement(value);
@@ -45330,7 +45332,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LegacyNumbering LegacyNumbering
+        public LegacyNumbering? LegacyNumbering
         {
             get => GetElement<LegacyNumbering>();
             set => SetElement(value);
@@ -45343,7 +45345,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LevelJustification LevelJustification
+        public LevelJustification? LevelJustification
         {
             get => GetElement<LevelJustification>();
             set => SetElement(value);
@@ -45356,7 +45358,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PreviousParagraphProperties PreviousParagraphProperties
+        public PreviousParagraphProperties? PreviousParagraphProperties
         {
             get => GetElement<PreviousParagraphProperties>();
             set => SetElement(value);
@@ -45369,7 +45371,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingSymbolRunProperties NumberingSymbolRunProperties
+        public NumberingSymbolRunProperties? NumberingSymbolRunProperties
         {
             get => GetElement<NumberingSymbolRunProperties>();
             set => SetElement(value);
@@ -45381,7 +45383,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Numbering Level Definition Override.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lvlOverride.</para>
     /// </summary>
     /// <remark>
@@ -45440,7 +45442,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "ilvl")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value LevelIndex
+        public Int32Value? LevelIndex
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -45471,7 +45473,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StartOverrideNumberingValue StartOverrideNumberingValue
+        public StartOverrideNumberingValue? StartOverrideNumberingValue
         {
             get => GetElement<StartOverrideNumberingValue>();
             set => SetElement(value);
@@ -45484,7 +45486,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Level Level
+        public Level? Level
         {
             get => GetElement<Level>();
             set => SetElement(value);
@@ -45496,7 +45498,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Picture Numbering Symbol Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:numPicBullet.</para>
     /// </summary>
     /// <remark>
@@ -45555,7 +45557,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "numPicBulletId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value NumberingPictureBulletId
+        public Int32Value? NumberingPictureBulletId
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -45590,7 +45592,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PictureBulletBase PictureBulletBase
+        public PictureBulletBase? PictureBulletBase
         {
             get => GetElement<PictureBulletBase>();
             set => SetElement(value);
@@ -45603,7 +45605,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Drawing Drawing
+        public Drawing? Drawing
         {
             get => GetElement<Drawing>();
             set => SetElement(value);
@@ -45615,7 +45617,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Abstract Numbering Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:abstractNum.</para>
     /// </summary>
     /// <remark>
@@ -45679,7 +45681,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "abstractNumId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value AbstractNumberId
+        public Int32Value? AbstractNumberId
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -45722,7 +45724,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Nsid Nsid
+        public Nsid? Nsid
         {
             get => GetElement<Nsid>();
             set => SetElement(value);
@@ -45735,7 +45737,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MultiLevelType MultiLevelType
+        public MultiLevelType? MultiLevelType
         {
             get => GetElement<MultiLevelType>();
             set => SetElement(value);
@@ -45748,7 +45750,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TemplateCode TemplateCode
+        public TemplateCode? TemplateCode
         {
             get => GetElement<TemplateCode>();
             set => SetElement(value);
@@ -45761,7 +45763,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AbstractNumDefinitionName AbstractNumDefinitionName
+        public AbstractNumDefinitionName? AbstractNumDefinitionName
         {
             get => GetElement<AbstractNumDefinitionName>();
             set => SetElement(value);
@@ -45774,7 +45776,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StyleLink StyleLink
+        public StyleLink? StyleLink
         {
             get => GetElement<StyleLink>();
             set => SetElement(value);
@@ -45787,7 +45789,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingStyleLink NumberingStyleLink
+        public NumberingStyleLink? NumberingStyleLink
         {
             get => GetElement<NumberingStyleLink>();
             set => SetElement(value);
@@ -45799,7 +45801,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Numbering Definition Instance.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:num.</para>
     /// </summary>
     /// <remark>
@@ -45858,7 +45860,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(23, "numId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value NumberID
+        public Int32Value? NumberID
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -45890,7 +45892,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AbstractNumId AbstractNumId
+        public AbstractNumId? AbstractNumId
         {
             get => GetElement<AbstractNumId>();
             set => SetElement(value);
@@ -45902,7 +45904,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Style Conditional Formatting Paragraph Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pPr.</para>
     /// </summary>
     /// <remark>
@@ -46073,7 +46075,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepNext KeepNext
+        public KeepNext? KeepNext
         {
             get => GetElement<KeepNext>();
             set => SetElement(value);
@@ -46086,7 +46088,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepLines KeepLines
+        public KeepLines? KeepLines
         {
             get => GetElement<KeepLines>();
             set => SetElement(value);
@@ -46099,7 +46101,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PageBreakBefore PageBreakBefore
+        public PageBreakBefore? PageBreakBefore
         {
             get => GetElement<PageBreakBefore>();
             set => SetElement(value);
@@ -46112,7 +46114,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FrameProperties FrameProperties
+        public FrameProperties? FrameProperties
         {
             get => GetElement<FrameProperties>();
             set => SetElement(value);
@@ -46125,7 +46127,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WidowControl WidowControl
+        public WidowControl? WidowControl
         {
             get => GetElement<WidowControl>();
             set => SetElement(value);
@@ -46138,7 +46140,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingProperties NumberingProperties
+        public NumberingProperties? NumberingProperties
         {
             get => GetElement<NumberingProperties>();
             set => SetElement(value);
@@ -46151,7 +46153,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressLineNumbers SuppressLineNumbers
+        public SuppressLineNumbers? SuppressLineNumbers
         {
             get => GetElement<SuppressLineNumbers>();
             set => SetElement(value);
@@ -46164,7 +46166,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphBorders ParagraphBorders
+        public ParagraphBorders? ParagraphBorders
         {
             get => GetElement<ParagraphBorders>();
             set => SetElement(value);
@@ -46177,7 +46179,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -46190,7 +46192,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Tabs Tabs
+        public Tabs? Tabs
         {
             get => GetElement<Tabs>();
             set => SetElement(value);
@@ -46203,7 +46205,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressAutoHyphens SuppressAutoHyphens
+        public SuppressAutoHyphens? SuppressAutoHyphens
         {
             get => GetElement<SuppressAutoHyphens>();
             set => SetElement(value);
@@ -46216,7 +46218,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Kinsoku Kinsoku
+        public Kinsoku? Kinsoku
         {
             get => GetElement<Kinsoku>();
             set => SetElement(value);
@@ -46229,7 +46231,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WordWrap WordWrap
+        public WordWrap? WordWrap
         {
             get => GetElement<WordWrap>();
             set => SetElement(value);
@@ -46242,7 +46244,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OverflowPunctuation OverflowPunctuation
+        public OverflowPunctuation? OverflowPunctuation
         {
             get => GetElement<OverflowPunctuation>();
             set => SetElement(value);
@@ -46255,7 +46257,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopLinePunctuation TopLinePunctuation
+        public TopLinePunctuation? TopLinePunctuation
         {
             get => GetElement<TopLinePunctuation>();
             set => SetElement(value);
@@ -46268,7 +46270,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDE AutoSpaceDE
+        public AutoSpaceDE? AutoSpaceDE
         {
             get => GetElement<AutoSpaceDE>();
             set => SetElement(value);
@@ -46281,7 +46283,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDN AutoSpaceDN
+        public AutoSpaceDN? AutoSpaceDN
         {
             get => GetElement<AutoSpaceDN>();
             set => SetElement(value);
@@ -46294,7 +46296,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BiDi BiDi
+        public BiDi? BiDi
         {
             get => GetElement<BiDi>();
             set => SetElement(value);
@@ -46307,7 +46309,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AdjustRightIndent AdjustRightIndent
+        public AdjustRightIndent? AdjustRightIndent
         {
             get => GetElement<AdjustRightIndent>();
             set => SetElement(value);
@@ -46320,7 +46322,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SnapToGrid SnapToGrid
+        public SnapToGrid? SnapToGrid
         {
             get => GetElement<SnapToGrid>();
             set => SetElement(value);
@@ -46333,7 +46335,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpacingBetweenLines SpacingBetweenLines
+        public SpacingBetweenLines? SpacingBetweenLines
         {
             get => GetElement<SpacingBetweenLines>();
             set => SetElement(value);
@@ -46346,7 +46348,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Indentation Indentation
+        public Indentation? Indentation
         {
             get => GetElement<Indentation>();
             set => SetElement(value);
@@ -46359,7 +46361,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ContextualSpacing ContextualSpacing
+        public ContextualSpacing? ContextualSpacing
         {
             get => GetElement<ContextualSpacing>();
             set => SetElement(value);
@@ -46372,7 +46374,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MirrorIndents MirrorIndents
+        public MirrorIndents? MirrorIndents
         {
             get => GetElement<MirrorIndents>();
             set => SetElement(value);
@@ -46385,7 +46387,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressOverlap SuppressOverlap
+        public SuppressOverlap? SuppressOverlap
         {
             get => GetElement<SuppressOverlap>();
             set => SetElement(value);
@@ -46398,7 +46400,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Justification Justification
+        public Justification? Justification
         {
             get => GetElement<Justification>();
             set => SetElement(value);
@@ -46411,7 +46413,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextDirection TextDirection
+        public TextDirection? TextDirection
         {
             get => GetElement<TextDirection>();
             set => SetElement(value);
@@ -46424,7 +46426,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextAlignment TextAlignment
+        public TextAlignment? TextAlignment
         {
             get => GetElement<TextAlignment>();
             set => SetElement(value);
@@ -46437,7 +46439,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextBoxTightWrap TextBoxTightWrap
+        public TextBoxTightWrap? TextBoxTightWrap
         {
             get => GetElement<TextBoxTightWrap>();
             set => SetElement(value);
@@ -46450,7 +46452,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OutlineLevel OutlineLevel
+        public OutlineLevel? OutlineLevel
         {
             get => GetElement<OutlineLevel>();
             set => SetElement(value);
@@ -46463,7 +46465,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphPropertiesChange ParagraphPropertiesChange
+        public ParagraphPropertiesChange? ParagraphPropertiesChange
         {
             get => GetElement<ParagraphPropertiesChange>();
             set => SetElement(value);
@@ -46475,7 +46477,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Style Conditional Formatting Table Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblPr.</para>
     /// </summary>
     /// <remark>
@@ -46565,7 +46567,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableJustification TableJustification
+        public TableJustification? TableJustification
         {
             get => GetElement<TableJustification>();
             set => SetElement(value);
@@ -46578,7 +46580,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellSpacing TableCellSpacing
+        public TableCellSpacing? TableCellSpacing
         {
             get => GetElement<TableCellSpacing>();
             set => SetElement(value);
@@ -46591,7 +46593,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableIndentation TableIndentation
+        public TableIndentation? TableIndentation
         {
             get => GetElement<TableIndentation>();
             set => SetElement(value);
@@ -46604,7 +46606,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableBorders TableBorders
+        public TableBorders? TableBorders
         {
             get => GetElement<TableBorders>();
             set => SetElement(value);
@@ -46617,7 +46619,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -46630,7 +46632,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMarginDefault TableCellMarginDefault
+        public TableCellMarginDefault? TableCellMarginDefault
         {
             get => GetElement<TableCellMarginDefault>();
             set => SetElement(value);
@@ -46642,7 +46644,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Style Conditional Formatting Table Row Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:trPr.</para>
     /// </summary>
     /// <remark>
@@ -46722,7 +46724,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Style Conditional Formatting Table Cell Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tcPr.</para>
     /// </summary>
     /// <remark>
@@ -46815,7 +46817,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellBorders TableCellBorders
+        public TableCellBorders? TableCellBorders
         {
             get => GetElement<TableCellBorders>();
             set => SetElement(value);
@@ -46828,7 +46830,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -46841,7 +46843,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoWrap NoWrap
+        public NoWrap? NoWrap
         {
             get => GetElement<NoWrap>();
             set => SetElement(value);
@@ -46854,7 +46856,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMargin TableCellMargin
+        public TableCellMargin? TableCellMargin
         {
             get => GetElement<TableCellMargin>();
             set => SetElement(value);
@@ -46867,7 +46869,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellVerticalAlignment TableCellVerticalAlignment
+        public TableCellVerticalAlignment? TableCellVerticalAlignment
         {
             get => GetElement<TableCellVerticalAlignment>();
             set => SetElement(value);
@@ -46879,7 +46881,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Primary Style Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:name.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -46907,7 +46909,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -46931,7 +46933,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Optional User Interface Sorting Order.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:uiPriority.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -46959,7 +46961,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -46983,7 +46985,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Run Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rPr.</para>
     /// </summary>
     /// <remark>
@@ -47184,7 +47186,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunFonts RunFonts
+        public RunFonts? RunFonts
         {
             get => GetElement<RunFonts>();
             set => SetElement(value);
@@ -47197,7 +47199,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Bold Bold
+        public Bold? Bold
         {
             get => GetElement<Bold>();
             set => SetElement(value);
@@ -47210,7 +47212,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BoldComplexScript BoldComplexScript
+        public BoldComplexScript? BoldComplexScript
         {
             get => GetElement<BoldComplexScript>();
             set => SetElement(value);
@@ -47223,7 +47225,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Italic Italic
+        public Italic? Italic
         {
             get => GetElement<Italic>();
             set => SetElement(value);
@@ -47236,7 +47238,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ItalicComplexScript ItalicComplexScript
+        public ItalicComplexScript? ItalicComplexScript
         {
             get => GetElement<ItalicComplexScript>();
             set => SetElement(value);
@@ -47249,7 +47251,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Caps Caps
+        public Caps? Caps
         {
             get => GetElement<Caps>();
             set => SetElement(value);
@@ -47262,7 +47264,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SmallCaps SmallCaps
+        public SmallCaps? SmallCaps
         {
             get => GetElement<SmallCaps>();
             set => SetElement(value);
@@ -47275,7 +47277,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Strike Strike
+        public Strike? Strike
         {
             get => GetElement<Strike>();
             set => SetElement(value);
@@ -47288,7 +47290,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoubleStrike DoubleStrike
+        public DoubleStrike? DoubleStrike
         {
             get => GetElement<DoubleStrike>();
             set => SetElement(value);
@@ -47301,7 +47303,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Outline Outline
+        public Outline? Outline
         {
             get => GetElement<Outline>();
             set => SetElement(value);
@@ -47314,7 +47316,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shadow Shadow
+        public Shadow? Shadow
         {
             get => GetElement<Shadow>();
             set => SetElement(value);
@@ -47327,7 +47329,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Emboss Emboss
+        public Emboss? Emboss
         {
             get => GetElement<Emboss>();
             set => SetElement(value);
@@ -47340,7 +47342,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Imprint Imprint
+        public Imprint? Imprint
         {
             get => GetElement<Imprint>();
             set => SetElement(value);
@@ -47353,7 +47355,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoProof NoProof
+        public NoProof? NoProof
         {
             get => GetElement<NoProof>();
             set => SetElement(value);
@@ -47366,7 +47368,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SnapToGrid SnapToGrid
+        public SnapToGrid? SnapToGrid
         {
             get => GetElement<SnapToGrid>();
             set => SetElement(value);
@@ -47379,7 +47381,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Vanish Vanish
+        public Vanish? Vanish
         {
             get => GetElement<Vanish>();
             set => SetElement(value);
@@ -47392,7 +47394,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WebHidden WebHidden
+        public WebHidden? WebHidden
         {
             get => GetElement<WebHidden>();
             set => SetElement(value);
@@ -47405,7 +47407,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Color Color
+        public Color? Color
         {
             get => GetElement<Color>();
             set => SetElement(value);
@@ -47418,7 +47420,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Spacing Spacing
+        public Spacing? Spacing
         {
             get => GetElement<Spacing>();
             set => SetElement(value);
@@ -47431,7 +47433,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public CharacterScale CharacterScale
+        public CharacterScale? CharacterScale
         {
             get => GetElement<CharacterScale>();
             set => SetElement(value);
@@ -47444,7 +47446,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Kern Kern
+        public Kern? Kern
         {
             get => GetElement<Kern>();
             set => SetElement(value);
@@ -47457,7 +47459,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Position Position
+        public Position? Position
         {
             get => GetElement<Position>();
             set => SetElement(value);
@@ -47470,7 +47472,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontSize FontSize
+        public FontSize? FontSize
         {
             get => GetElement<FontSize>();
             set => SetElement(value);
@@ -47483,7 +47485,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontSizeComplexScript FontSizeComplexScript
+        public FontSizeComplexScript? FontSizeComplexScript
         {
             get => GetElement<FontSizeComplexScript>();
             set => SetElement(value);
@@ -47496,7 +47498,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Underline Underline
+        public Underline? Underline
         {
             get => GetElement<Underline>();
             set => SetElement(value);
@@ -47509,7 +47511,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextEffect TextEffect
+        public TextEffect? TextEffect
         {
             get => GetElement<TextEffect>();
             set => SetElement(value);
@@ -47522,7 +47524,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Border Border
+        public Border? Border
         {
             get => GetElement<Border>();
             set => SetElement(value);
@@ -47535,7 +47537,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -47548,7 +47550,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FitText FitText
+        public FitText? FitText
         {
             get => GetElement<FitText>();
             set => SetElement(value);
@@ -47561,7 +47563,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public VerticalTextAlignment VerticalTextAlignment
+        public VerticalTextAlignment? VerticalTextAlignment
         {
             get => GetElement<VerticalTextAlignment>();
             set => SetElement(value);
@@ -47574,7 +47576,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Emphasis Emphasis
+        public Emphasis? Emphasis
         {
             get => GetElement<Emphasis>();
             set => SetElement(value);
@@ -47587,7 +47589,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Languages Languages
+        public Languages? Languages
         {
             get => GetElement<Languages>();
             set => SetElement(value);
@@ -47600,7 +47602,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EastAsianLayout EastAsianLayout
+        public EastAsianLayout? EastAsianLayout
         {
             get => GetElement<EastAsianLayout>();
             set => SetElement(value);
@@ -47613,7 +47615,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpecVanish SpecVanish
+        public SpecVanish? SpecVanish
         {
             get => GetElement<SpecVanish>();
             set => SetElement(value);
@@ -47626,7 +47628,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunPropertiesChange RunPropertiesChange
+        public RunPropertiesChange? RunPropertiesChange
         {
             get => GetElement<RunPropertiesChange>();
             set => SetElement(value);
@@ -47638,7 +47640,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Style Table Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblPr.</para>
     /// </summary>
     /// <remark>
@@ -47740,7 +47742,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableStyleRowBandSize TableStyleRowBandSize
+        public TableStyleRowBandSize? TableStyleRowBandSize
         {
             get => GetElement<TableStyleRowBandSize>();
             set => SetElement(value);
@@ -47753,7 +47755,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableStyleColumnBandSize TableStyleColumnBandSize
+        public TableStyleColumnBandSize? TableStyleColumnBandSize
         {
             get => GetElement<TableStyleColumnBandSize>();
             set => SetElement(value);
@@ -47766,7 +47768,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableJustification TableJustification
+        public TableJustification? TableJustification
         {
             get => GetElement<TableJustification>();
             set => SetElement(value);
@@ -47779,7 +47781,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellSpacing TableCellSpacing
+        public TableCellSpacing? TableCellSpacing
         {
             get => GetElement<TableCellSpacing>();
             set => SetElement(value);
@@ -47792,7 +47794,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableIndentation TableIndentation
+        public TableIndentation? TableIndentation
         {
             get => GetElement<TableIndentation>();
             set => SetElement(value);
@@ -47805,7 +47807,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableBorders TableBorders
+        public TableBorders? TableBorders
         {
             get => GetElement<TableBorders>();
             set => SetElement(value);
@@ -47818,7 +47820,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -47831,7 +47833,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMarginDefault TableCellMarginDefault
+        public TableCellMarginDefault? TableCellMarginDefault
         {
             get => GetElement<TableCellMarginDefault>();
             set => SetElement(value);
@@ -47843,7 +47845,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Style Table Cell Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tcPr.</para>
     /// </summary>
     /// <remark>
@@ -47927,7 +47929,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -47940,7 +47942,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoWrap NoWrap
+        public NoWrap? NoWrap
         {
             get => GetElement<NoWrap>();
             set => SetElement(value);
@@ -47953,7 +47955,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMargin TableCellMargin
+        public TableCellMargin? TableCellMargin
         {
             get => GetElement<TableCellMargin>();
             set => SetElement(value);
@@ -47966,7 +47968,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellVerticalAlignment TableCellVerticalAlignment
+        public TableCellVerticalAlignment? TableCellVerticalAlignment
         {
             get => GetElement<TableCellVerticalAlignment>();
             set => SetElement(value);
@@ -47978,7 +47980,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Style Conditional Table Formatting Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblStylePr.</para>
     /// </summary>
     /// <remark>
@@ -48040,7 +48042,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableStyleOverrideValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableStyleOverrideValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableStyleOverrideValues>>();
             set => SetAttribute(value);
@@ -48077,7 +48079,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StyleParagraphProperties StyleParagraphProperties
+        public StyleParagraphProperties? StyleParagraphProperties
         {
             get => GetElement<StyleParagraphProperties>();
             set => SetElement(value);
@@ -48090,7 +48092,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunPropertiesBaseStyle RunPropertiesBaseStyle
+        public RunPropertiesBaseStyle? RunPropertiesBaseStyle
         {
             get => GetElement<RunPropertiesBaseStyle>();
             set => SetElement(value);
@@ -48103,7 +48105,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableStyleConditionalFormattingTableProperties TableStyleConditionalFormattingTableProperties
+        public TableStyleConditionalFormattingTableProperties? TableStyleConditionalFormattingTableProperties
         {
             get => GetElement<TableStyleConditionalFormattingTableProperties>();
             set => SetElement(value);
@@ -48116,7 +48118,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableStyleConditionalFormattingTableRowProperties TableStyleConditionalFormattingTableRowProperties
+        public TableStyleConditionalFormattingTableRowProperties? TableStyleConditionalFormattingTableRowProperties
         {
             get => GetElement<TableStyleConditionalFormattingTableRowProperties>();
             set => SetElement(value);
@@ -48129,7 +48131,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableStyleConditionalFormattingTableCellProperties TableStyleConditionalFormattingTableCellProperties
+        public TableStyleConditionalFormattingTableCellProperties? TableStyleConditionalFormattingTableCellProperties
         {
             get => GetElement<TableStyleConditionalFormattingTableCellProperties>();
             set => SetElement(value);
@@ -48141,7 +48143,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Latent Style Exception.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lsdException.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -48169,7 +48171,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -48188,7 +48190,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "locked")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Locked
+        public OnOffValue? Locked
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48207,7 +48209,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "uiPriority")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value UiPriority
+        public Int32Value? UiPriority
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -48226,7 +48228,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "semiHidden")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue SemiHidden
+        public OnOffValue? SemiHidden
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48245,7 +48247,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "unhideWhenUsed")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue UnhideWhenUsed
+        public OnOffValue? UnhideWhenUsed
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48264,7 +48266,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "qFormat")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue PrimaryStyle
+        public OnOffValue? PrimaryStyle
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48295,7 +48297,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Document Default Paragraph and Run Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docDefaults.</para>
     /// </summary>
     /// <remark>
@@ -48361,7 +48363,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RunPropertiesDefault RunPropertiesDefault
+        public RunPropertiesDefault? RunPropertiesDefault
         {
             get => GetElement<RunPropertiesDefault>();
             set => SetElement(value);
@@ -48374,7 +48376,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphPropertiesDefault ParagraphPropertiesDefault
+        public ParagraphPropertiesDefault? ParagraphPropertiesDefault
         {
             get => GetElement<ParagraphPropertiesDefault>();
             set => SetElement(value);
@@ -48386,7 +48388,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Latent Style Information.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:latentStyles.</para>
     /// </summary>
     /// <remark>
@@ -48444,7 +48446,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "defLockedState")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue DefaultLockedState
+        public OnOffValue? DefaultLockedState
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48463,7 +48465,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "defUIPriority")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value DefaultUiPriority
+        public Int32Value? DefaultUiPriority
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -48482,7 +48484,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "defSemiHidden")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue DefaultSemiHidden
+        public OnOffValue? DefaultSemiHidden
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48501,7 +48503,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "defUnhideWhenUsed")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue DefaultUnhideWhenUsed
+        public OnOffValue? DefaultUnhideWhenUsed
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48520,7 +48522,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "defQFormat")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue DefaultPrimaryStyle
+        public OnOffValue? DefaultPrimaryStyle
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48539,7 +48541,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "count")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Count
+        public Int32Value? Count
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -48572,7 +48574,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Style Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:style.</para>
     /// </summary>
     /// <remark>
@@ -48651,7 +48653,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.StyleValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.StyleValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.StyleValues>>();
             set => SetAttribute(value);
@@ -48670,7 +48672,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "styleId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue StyleId
+        public StringValue? StyleId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -48689,7 +48691,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "default")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Default
+        public OnOffValue? Default
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48708,7 +48710,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "customStyle")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue CustomStyle
+        public OnOffValue? CustomStyle
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -48783,7 +48785,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StyleName StyleName
+        public StyleName? StyleName
         {
             get => GetElement<StyleName>();
             set => SetElement(value);
@@ -48796,7 +48798,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Aliases Aliases
+        public Aliases? Aliases
         {
             get => GetElement<Aliases>();
             set => SetElement(value);
@@ -48809,7 +48811,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BasedOn BasedOn
+        public BasedOn? BasedOn
         {
             get => GetElement<BasedOn>();
             set => SetElement(value);
@@ -48822,7 +48824,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NextParagraphStyle NextParagraphStyle
+        public NextParagraphStyle? NextParagraphStyle
         {
             get => GetElement<NextParagraphStyle>();
             set => SetElement(value);
@@ -48835,7 +48837,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LinkedStyle LinkedStyle
+        public LinkedStyle? LinkedStyle
         {
             get => GetElement<LinkedStyle>();
             set => SetElement(value);
@@ -48848,7 +48850,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoRedefine AutoRedefine
+        public AutoRedefine? AutoRedefine
         {
             get => GetElement<AutoRedefine>();
             set => SetElement(value);
@@ -48861,7 +48863,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StyleHidden StyleHidden
+        public StyleHidden? StyleHidden
         {
             get => GetElement<StyleHidden>();
             set => SetElement(value);
@@ -48874,7 +48876,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UIPriority UIPriority
+        public UIPriority? UIPriority
         {
             get => GetElement<UIPriority>();
             set => SetElement(value);
@@ -48887,7 +48889,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SemiHidden SemiHidden
+        public SemiHidden? SemiHidden
         {
             get => GetElement<SemiHidden>();
             set => SetElement(value);
@@ -48900,7 +48902,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UnhideWhenUsed UnhideWhenUsed
+        public UnhideWhenUsed? UnhideWhenUsed
         {
             get => GetElement<UnhideWhenUsed>();
             set => SetElement(value);
@@ -48913,7 +48915,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PrimaryStyle PrimaryStyle
+        public PrimaryStyle? PrimaryStyle
         {
             get => GetElement<PrimaryStyle>();
             set => SetElement(value);
@@ -48926,7 +48928,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Locked Locked
+        public Locked? Locked
         {
             get => GetElement<Locked>();
             set => SetElement(value);
@@ -48939,7 +48941,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Personal Personal
+        public Personal? Personal
         {
             get => GetElement<Personal>();
             set => SetElement(value);
@@ -48952,7 +48954,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PersonalCompose PersonalCompose
+        public PersonalCompose? PersonalCompose
         {
             get => GetElement<PersonalCompose>();
             set => SetElement(value);
@@ -48965,7 +48967,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PersonalReply PersonalReply
+        public PersonalReply? PersonalReply
         {
             get => GetElement<PersonalReply>();
             set => SetElement(value);
@@ -48978,7 +48980,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Rsid Rsid
+        public Rsid? Rsid
         {
             get => GetElement<Rsid>();
             set => SetElement(value);
@@ -48991,7 +48993,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StyleParagraphProperties StyleParagraphProperties
+        public StyleParagraphProperties? StyleParagraphProperties
         {
             get => GetElement<StyleParagraphProperties>();
             set => SetElement(value);
@@ -49004,7 +49006,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StyleRunProperties StyleRunProperties
+        public StyleRunProperties? StyleRunProperties
         {
             get => GetElement<StyleRunProperties>();
             set => SetElement(value);
@@ -49017,7 +49019,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StyleTableProperties StyleTableProperties
+        public StyleTableProperties? StyleTableProperties
         {
             get => GetElement<StyleTableProperties>();
             set => SetElement(value);
@@ -49030,7 +49032,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableStyleConditionalFormattingTableRowProperties TableStyleConditionalFormattingTableRowProperties
+        public TableStyleConditionalFormattingTableRowProperties? TableStyleConditionalFormattingTableRowProperties
         {
             get => GetElement<TableStyleConditionalFormattingTableRowProperties>();
             set => SetElement(value);
@@ -49043,7 +49045,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StyleTableCellProperties StyleTableCellProperties
+        public StyleTableCellProperties? StyleTableCellProperties
         {
             get => GetElement<StyleTableCellProperties>();
             set => SetElement(value);
@@ -49055,7 +49057,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
 
     /// <summary>
     /// <para>Properties for a Single Font.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:font.</para>
     /// </summary>
     /// <remark>
@@ -49123,7 +49125,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (253L) });
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -49172,7 +49174,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AltName AltName
+        public AltName? AltName
         {
             get => GetElement<AltName>();
             set => SetElement(value);
@@ -49185,7 +49187,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Panose1Number Panose1Number
+        public Panose1Number? Panose1Number
         {
             get => GetElement<Panose1Number>();
             set => SetElement(value);
@@ -49198,7 +49200,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontCharSet FontCharSet
+        public FontCharSet? FontCharSet
         {
             get => GetElement<FontCharSet>();
             set => SetElement(value);
@@ -49211,7 +49213,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontFamily FontFamily
+        public FontFamily? FontFamily
         {
             get => GetElement<FontFamily>();
             set => SetElement(value);
@@ -49224,7 +49226,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NotTrueType NotTrueType
+        public NotTrueType? NotTrueType
         {
             get => GetElement<NotTrueType>();
             set => SetElement(value);
@@ -49237,7 +49239,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Pitch Pitch
+        public Pitch? Pitch
         {
             get => GetElement<Pitch>();
             set => SetElement(value);
@@ -49250,7 +49252,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FontSignature FontSignature
+        public FontSignature? FontSignature
         {
             get => GetElement<FontSignature>();
             set => SetElement(value);
@@ -49263,7 +49265,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EmbedRegularFont EmbedRegularFont
+        public EmbedRegularFont? EmbedRegularFont
         {
             get => GetElement<EmbedRegularFont>();
             set => SetElement(value);
@@ -49276,7 +49278,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EmbedBoldFont EmbedBoldFont
+        public EmbedBoldFont? EmbedBoldFont
         {
             get => GetElement<EmbedBoldFont>();
             set => SetElement(value);
@@ -49289,7 +49291,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EmbedItalicFont EmbedItalicFont
+        public EmbedItalicFont? EmbedItalicFont
         {
             get => GetElement<EmbedItalicFont>();
             set => SetElement(value);
@@ -49302,7 +49304,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EmbedBoldItalicFont EmbedBoldItalicFont
+        public EmbedBoldItalicFont? EmbedBoldItalicFont
         {
             get => GetElement<EmbedBoldItalicFont>();
             set => SetElement(value);
@@ -49314,7 +49316,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Left Margin for HTML div.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:marLeft.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -49341,7 +49343,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Right Margin for HTML div.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:marRight.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -49368,7 +49370,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Top Margin for HTML div.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:marTop.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -49395,7 +49397,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Bottom Margin for HTML div.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:marBottom.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -49422,7 +49424,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SignedTwipsMeasureType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class SignedTwipsMeasureType : OpenXmlLeafElement
@@ -49447,7 +49449,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -49472,7 +49474,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Set of Borders for HTML div.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:divBdr.</para>
     /// </summary>
     /// <remark>
@@ -49544,7 +49546,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopBorder TopBorder
+        public TopBorder? TopBorder
         {
             get => GetElement<TopBorder>();
             set => SetElement(value);
@@ -49557,7 +49559,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LeftBorder LeftBorder
+        public LeftBorder? LeftBorder
         {
             get => GetElement<LeftBorder>();
             set => SetElement(value);
@@ -49570,7 +49572,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BottomBorder BottomBorder
+        public BottomBorder? BottomBorder
         {
             get => GetElement<BottomBorder>();
             set => SetElement(value);
@@ -49583,7 +49585,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RightBorder RightBorder
+        public RightBorder? RightBorder
         {
             get => GetElement<RightBorder>();
             set => SetElement(value);
@@ -49595,7 +49597,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Child div Elements Contained within Current div.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:divsChild.</para>
     /// </summary>
     /// <remark>
@@ -49656,7 +49658,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Divs Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:divs.</para>
     /// </summary>
     /// <remark>
@@ -49717,7 +49719,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DivsType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -49768,7 +49770,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Information About Single HTML div Element.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:div.</para>
     /// </summary>
     /// <remark>
@@ -49833,7 +49835,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -49882,7 +49884,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BlockQuote BlockQuote
+        public BlockQuote? BlockQuote
         {
             get => GetElement<BlockQuote>();
             set => SetElement(value);
@@ -49895,7 +49897,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BodyDiv BodyDiv
+        public BodyDiv? BodyDiv
         {
             get => GetElement<BodyDiv>();
             set => SetElement(value);
@@ -49908,7 +49910,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LeftMarginDiv LeftMarginDiv
+        public LeftMarginDiv? LeftMarginDiv
         {
             get => GetElement<LeftMarginDiv>();
             set => SetElement(value);
@@ -49921,7 +49923,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RightMarginDiv RightMarginDiv
+        public RightMarginDiv? RightMarginDiv
         {
             get => GetElement<RightMarginDiv>();
             set => SetElement(value);
@@ -49934,7 +49936,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopMarginDiv TopMarginDiv
+        public TopMarginDiv? TopMarginDiv
         {
             get => GetElement<TopMarginDiv>();
             set => SetElement(value);
@@ -49947,7 +49949,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BottomMarginDiv BottomMarginDiv
+        public BottomMarginDiv? BottomMarginDiv
         {
             get => GetElement<BottomMarginDiv>();
             set => SetElement(value);
@@ -49960,7 +49962,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DivBorder DivBorder
+        public DivBorder? DivBorder
         {
             get => GetElement<DivBorder>();
             set => SetElement(value);
@@ -49972,7 +49974,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
 
     /// <summary>
     /// <para>Comment Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:comment.</para>
     /// </summary>
     /// <remark>
@@ -50041,7 +50043,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         [SchemaAttr(23, "initials")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Initials
+        public StringValue? Initials
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -50060,7 +50062,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -50079,7 +50081,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -50098,7 +50100,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-1L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -50215,7 +50217,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Footnote Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:footnote.</para>
     /// </summary>
     /// <remark>
@@ -50411,7 +50413,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Endnote Content.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:endnote.</para>
     /// </summary>
     /// <remark>
@@ -50607,7 +50609,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the FootnoteEndnoteType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -50696,7 +50698,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FootnoteEndnoteValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FootnoteEndnoteValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.FootnoteEndnoteValues>>();
             set => SetAttribute(value);
@@ -50715,7 +50717,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue Id
+        public IntegerValue? Id
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -50771,7 +50773,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-2147483648L), Max
 
     /// <summary>
     /// <para>Entry Insertion Behavior.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:behavior.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -50799,7 +50801,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-2147483648L), Max
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocPartBehaviorValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocPartBehaviorValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocPartBehaviorValues>>();
             set => SetAttribute(value);
@@ -50822,7 +50824,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Entry Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:type.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -50850,7 +50852,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocPartValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocPartValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocPartValues>>();
             set => SetAttribute(value);
@@ -50873,7 +50875,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Gallery Associated With Entry.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:gallery.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -50901,7 +50903,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocPartGalleryValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocPartGalleryValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocPartGalleryValues>>();
             set => SetAttribute(value);
@@ -50924,7 +50926,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Single Automatic Captioning Setting.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:autoCaption.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -50952,7 +50954,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -50971,7 +50973,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "caption")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Caption
+        public StringValue? Caption
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -51001,7 +51003,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Single Caption Type Definition.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:caption.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -51029,7 +51031,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -51048,7 +51050,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "pos")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CaptionPositionValues> Position
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CaptionPositionValues>? Position
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CaptionPositionValues>>();
             set => SetAttribute(value);
@@ -51067,7 +51069,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "chapNum")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue ChapterNumber
+        public OnOffValue? ChapterNumber
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -51086,7 +51088,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "heading")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Heading
+        public Int32Value? Heading
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -51105,7 +51107,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "noLabel")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue NoLabel
+        public OnOffValue? NoLabel
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -51124,7 +51126,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "numFmt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.NumberFormatValues> NumberFormat
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.NumberFormatValues>? NumberFormat
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.NumberFormatValues>>();
             set => SetAttribute(value);
@@ -51143,7 +51145,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "sep")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ChapterSeparatorValues> Separator
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ChapterSeparatorValues>? Separator
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ChapterSeparatorValues>>();
             set => SetAttribute(value);
@@ -51173,7 +51175,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Automatic Captioning Settings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:autoCaptions.</para>
     /// </summary>
     /// <remark>
@@ -51235,7 +51237,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
 
     /// <summary>
     /// <para>Document Background.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:background.</para>
     /// </summary>
     /// <remark>
@@ -51293,7 +51295,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "color")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Color
+        public StringValue? Color
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -51312,7 +51314,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "themeColor")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues> ThemeColor
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>? ThemeColor
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ThemeColorValues>>();
             set => SetAttribute(value);
@@ -51331,7 +51333,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "themeTint")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeTint
+        public StringValue? ThemeTint
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -51350,7 +51352,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (255L) });
         [SchemaAttr(23, "themeShade")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ThemeShade
+        public StringValue? ThemeShade
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -51392,7 +51394,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:v = urn:schemas-microsoft-com:vml
         /// </remark>
-        public DocumentFormat.OpenXml.Vml.Background Background
+        public DocumentFormat.OpenXml.Vml.Background? Background
         {
             get => GetElement<DocumentFormat.OpenXml.Vml.Background>();
             set => SetElement(value);
@@ -51404,7 +51406,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>List of Glossary Document Entries.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docParts.</para>
     /// </summary>
     /// <remark>
@@ -51467,7 +51469,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Entry Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:name.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -51495,7 +51497,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -51514,7 +51516,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         [SchemaAttr(23, "decorated")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Decorated
+        public OnOffValue? Decorated
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -51538,7 +51540,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Entry Categorization.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:category.</para>
     /// </summary>
     /// <remark>
@@ -51604,7 +51606,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Name Name
+        public Name? Name
         {
             get => GetElement<Name>();
             set => SetElement(value);
@@ -51617,7 +51619,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Gallery Gallery
+        public Gallery? Gallery
         {
             get => GetElement<Gallery>();
             set => SetElement(value);
@@ -51629,7 +51631,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Entry Types.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:types.</para>
     /// </summary>
     /// <remark>
@@ -51687,7 +51689,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         [SchemaAttr(23, "all")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue All
+        public OnOffValue? All
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -51712,7 +51714,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Entry Insertion Behaviors.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:behaviors.</para>
     /// </summary>
     /// <remark>
@@ -51774,7 +51776,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Entry ID.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:guid.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -51802,7 +51804,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -51826,7 +51828,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Glossary Document Entry Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docPartPr.</para>
     /// </summary>
     /// <remark>
@@ -51907,7 +51909,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocPartName DocPartName
+        public DocPartName? DocPartName
         {
             get => GetElement<DocPartName>();
             set => SetElement(value);
@@ -51920,7 +51922,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public StyleId StyleId
+        public StyleId? StyleId
         {
             get => GetElement<StyleId>();
             set => SetElement(value);
@@ -51933,7 +51935,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Category Category
+        public Category? Category
         {
             get => GetElement<Category>();
             set => SetElement(value);
@@ -51946,7 +51948,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocPartTypes DocPartTypes
+        public DocPartTypes? DocPartTypes
         {
             get => GetElement<DocPartTypes>();
             set => SetElement(value);
@@ -51959,7 +51961,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Behaviors Behaviors
+        public Behaviors? Behaviors
         {
             get => GetElement<Behaviors>();
             set => SetElement(value);
@@ -51972,7 +51974,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Description Description
+        public Description? Description
         {
             get => GetElement<Description>();
             set => SetElement(value);
@@ -51985,7 +51987,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocPartId DocPartId
+        public DocPartId? DocPartId
         {
             get => GetElement<DocPartId>();
             set => SetElement(value);
@@ -51997,7 +51999,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Contents of Glossary Document Entry.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docPartBody.</para>
     /// </summary>
     /// <remark>
@@ -52194,7 +52196,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Defines the Body Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:body.</para>
     /// </summary>
     /// <remark>
@@ -52391,7 +52393,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Defines the BodyType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -52512,7 +52514,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Glossary Document Entry.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docPart.</para>
     /// </summary>
     /// <remark>
@@ -52578,7 +52580,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocPartProperties DocPartProperties
+        public DocPartProperties? DocPartProperties
         {
             get => GetElement<DocPartProperties>();
             set => SetElement(value);
@@ -52591,7 +52593,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocPartBody DocPartBody
+        public DocPartBody? DocPartBody
         {
             get => GetElement<DocPartBody>();
             set => SetElement(value);
@@ -52603,7 +52605,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Defines the CompatibilitySetting Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:compatSetting.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -52631,7 +52633,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CompatSettingNameValues> Name
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CompatSettingNameValues>? Name
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CompatSettingNameValues>>();
             set => SetAttribute(value);
@@ -52650,7 +52652,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         [SchemaAttr(23, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -52669,7 +52671,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -52701,7 +52703,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Cell Left Margin Default.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:left.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -52728,7 +52730,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Cell Right Margin Default.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:right.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -52755,7 +52757,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TableWidthDxaNilType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TableWidthDxaNilType : OpenXmlLeafElement
@@ -52780,7 +52782,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value Width
+        public Int16Value? Width
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -52799,7 +52801,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableWidthValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableWidthValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TableWidthValues>>();
             set => SetAttribute(value);
@@ -52823,7 +52825,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table-Level Property Exceptions.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblPrEx.</para>
     /// </summary>
     /// <remark>
@@ -52919,7 +52921,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableWidth TableWidth
+        public TableWidth? TableWidth
         {
             get => GetElement<TableWidth>();
             set => SetElement(value);
@@ -52932,7 +52934,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableJustification TableJustification
+        public TableJustification? TableJustification
         {
             get => GetElement<TableJustification>();
             set => SetElement(value);
@@ -52945,7 +52947,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellSpacing TableCellSpacing
+        public TableCellSpacing? TableCellSpacing
         {
             get => GetElement<TableCellSpacing>();
             set => SetElement(value);
@@ -52958,7 +52960,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableIndentation TableIndentation
+        public TableIndentation? TableIndentation
         {
             get => GetElement<TableIndentation>();
             set => SetElement(value);
@@ -52971,7 +52973,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableBorders TableBorders
+        public TableBorders? TableBorders
         {
             get => GetElement<TableBorders>();
             set => SetElement(value);
@@ -52984,7 +52986,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -52997,7 +52999,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableLayout TableLayout
+        public TableLayout? TableLayout
         {
             get => GetElement<TableLayout>();
             set => SetElement(value);
@@ -53010,7 +53012,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableCellMarginDefault TableCellMarginDefault
+        public TableCellMarginDefault? TableCellMarginDefault
         {
             get => GetElement<TableCellMarginDefault>();
             set => SetElement(value);
@@ -53023,7 +53025,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TableLook TableLook
+        public TableLook? TableLook
         {
             get => GetElement<TableLook>();
             set => SetElement(value);
@@ -53036,7 +53038,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TablePropertyExceptionsChange TablePropertyExceptionsChange
+        public TablePropertyExceptionsChange? TablePropertyExceptionsChange
         {
             get => GetElement<TablePropertyExceptionsChange>();
             set => SetElement(value);
@@ -53048,7 +53050,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Table Row Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:trPr.</para>
     /// </summary>
     /// <remark>
@@ -53182,7 +53184,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Revision Information for Table Row Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:trPrChange.</para>
     /// </summary>
     /// <remark>
@@ -53240,7 +53242,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -53259,7 +53261,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -53278,7 +53280,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -53322,7 +53324,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PreviousTableRowProperties PreviousTableRowProperties
+        public PreviousTableRowProperties? PreviousTableRowProperties
         {
             get => GetElement<PreviousTableRowProperties>();
             set => SetElement(value);
@@ -53334,7 +53336,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Paragraph Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pPr.</para>
     /// </summary>
     /// <remark>
@@ -53532,7 +53534,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphStyleId ParagraphStyleId
+        public ParagraphStyleId? ParagraphStyleId
         {
             get => GetElement<ParagraphStyleId>();
             set => SetElement(value);
@@ -53545,7 +53547,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepNext KeepNext
+        public KeepNext? KeepNext
         {
             get => GetElement<KeepNext>();
             set => SetElement(value);
@@ -53558,7 +53560,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public KeepLines KeepLines
+        public KeepLines? KeepLines
         {
             get => GetElement<KeepLines>();
             set => SetElement(value);
@@ -53571,7 +53573,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PageBreakBefore PageBreakBefore
+        public PageBreakBefore? PageBreakBefore
         {
             get => GetElement<PageBreakBefore>();
             set => SetElement(value);
@@ -53584,7 +53586,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FrameProperties FrameProperties
+        public FrameProperties? FrameProperties
         {
             get => GetElement<FrameProperties>();
             set => SetElement(value);
@@ -53597,7 +53599,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WidowControl WidowControl
+        public WidowControl? WidowControl
         {
             get => GetElement<WidowControl>();
             set => SetElement(value);
@@ -53610,7 +53612,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingProperties NumberingProperties
+        public NumberingProperties? NumberingProperties
         {
             get => GetElement<NumberingProperties>();
             set => SetElement(value);
@@ -53623,7 +53625,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressLineNumbers SuppressLineNumbers
+        public SuppressLineNumbers? SuppressLineNumbers
         {
             get => GetElement<SuppressLineNumbers>();
             set => SetElement(value);
@@ -53636,7 +53638,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphBorders ParagraphBorders
+        public ParagraphBorders? ParagraphBorders
         {
             get => GetElement<ParagraphBorders>();
             set => SetElement(value);
@@ -53649,7 +53651,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Shading Shading
+        public Shading? Shading
         {
             get => GetElement<Shading>();
             set => SetElement(value);
@@ -53662,7 +53664,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Tabs Tabs
+        public Tabs? Tabs
         {
             get => GetElement<Tabs>();
             set => SetElement(value);
@@ -53675,7 +53677,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressAutoHyphens SuppressAutoHyphens
+        public SuppressAutoHyphens? SuppressAutoHyphens
         {
             get => GetElement<SuppressAutoHyphens>();
             set => SetElement(value);
@@ -53688,7 +53690,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Kinsoku Kinsoku
+        public Kinsoku? Kinsoku
         {
             get => GetElement<Kinsoku>();
             set => SetElement(value);
@@ -53701,7 +53703,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WordWrap WordWrap
+        public WordWrap? WordWrap
         {
             get => GetElement<WordWrap>();
             set => SetElement(value);
@@ -53714,7 +53716,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OverflowPunctuation OverflowPunctuation
+        public OverflowPunctuation? OverflowPunctuation
         {
             get => GetElement<OverflowPunctuation>();
             set => SetElement(value);
@@ -53727,7 +53729,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TopLinePunctuation TopLinePunctuation
+        public TopLinePunctuation? TopLinePunctuation
         {
             get => GetElement<TopLinePunctuation>();
             set => SetElement(value);
@@ -53740,7 +53742,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDE AutoSpaceDE
+        public AutoSpaceDE? AutoSpaceDE
         {
             get => GetElement<AutoSpaceDE>();
             set => SetElement(value);
@@ -53753,7 +53755,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceDN AutoSpaceDN
+        public AutoSpaceDN? AutoSpaceDN
         {
             get => GetElement<AutoSpaceDN>();
             set => SetElement(value);
@@ -53766,7 +53768,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BiDi BiDi
+        public BiDi? BiDi
         {
             get => GetElement<BiDi>();
             set => SetElement(value);
@@ -53779,7 +53781,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AdjustRightIndent AdjustRightIndent
+        public AdjustRightIndent? AdjustRightIndent
         {
             get => GetElement<AdjustRightIndent>();
             set => SetElement(value);
@@ -53792,7 +53794,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SnapToGrid SnapToGrid
+        public SnapToGrid? SnapToGrid
         {
             get => GetElement<SnapToGrid>();
             set => SetElement(value);
@@ -53805,7 +53807,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpacingBetweenLines SpacingBetweenLines
+        public SpacingBetweenLines? SpacingBetweenLines
         {
             get => GetElement<SpacingBetweenLines>();
             set => SetElement(value);
@@ -53818,7 +53820,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Indentation Indentation
+        public Indentation? Indentation
         {
             get => GetElement<Indentation>();
             set => SetElement(value);
@@ -53831,7 +53833,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ContextualSpacing ContextualSpacing
+        public ContextualSpacing? ContextualSpacing
         {
             get => GetElement<ContextualSpacing>();
             set => SetElement(value);
@@ -53844,7 +53846,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MirrorIndents MirrorIndents
+        public MirrorIndents? MirrorIndents
         {
             get => GetElement<MirrorIndents>();
             set => SetElement(value);
@@ -53857,7 +53859,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressOverlap SuppressOverlap
+        public SuppressOverlap? SuppressOverlap
         {
             get => GetElement<SuppressOverlap>();
             set => SetElement(value);
@@ -53870,7 +53872,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Justification Justification
+        public Justification? Justification
         {
             get => GetElement<Justification>();
             set => SetElement(value);
@@ -53883,7 +53885,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextDirection TextDirection
+        public TextDirection? TextDirection
         {
             get => GetElement<TextDirection>();
             set => SetElement(value);
@@ -53896,7 +53898,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextAlignment TextAlignment
+        public TextAlignment? TextAlignment
         {
             get => GetElement<TextAlignment>();
             set => SetElement(value);
@@ -53909,7 +53911,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TextBoxTightWrap TextBoxTightWrap
+        public TextBoxTightWrap? TextBoxTightWrap
         {
             get => GetElement<TextBoxTightWrap>();
             set => SetElement(value);
@@ -53922,7 +53924,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public OutlineLevel OutlineLevel
+        public OutlineLevel? OutlineLevel
         {
             get => GetElement<OutlineLevel>();
             set => SetElement(value);
@@ -53935,7 +53937,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DivId DivId
+        public DivId? DivId
         {
             get => GetElement<DivId>();
             set => SetElement(value);
@@ -53948,7 +53950,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ConditionalFormatStyle ConditionalFormatStyle
+        public ConditionalFormatStyle? ConditionalFormatStyle
         {
             get => GetElement<ConditionalFormatStyle>();
             set => SetElement(value);
@@ -53961,7 +53963,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphMarkRunProperties ParagraphMarkRunProperties
+        public ParagraphMarkRunProperties? ParagraphMarkRunProperties
         {
             get => GetElement<ParagraphMarkRunProperties>();
             set => SetElement(value);
@@ -53974,7 +53976,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SectionProperties SectionProperties
+        public SectionProperties? SectionProperties
         {
             get => GetElement<SectionProperties>();
             set => SetElement(value);
@@ -53987,7 +53989,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ParagraphPropertiesChange ParagraphPropertiesChange
+        public ParagraphPropertiesChange? ParagraphPropertiesChange
         {
             get => GetElement<ParagraphPropertiesChange>();
             set => SetElement(value);
@@ -53999,7 +54001,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Control Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:control.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -54027,7 +54029,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54046,7 +54048,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "shapeid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ShapeId
+        public StringValue? ShapeId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54065,7 +54067,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54092,7 +54094,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (254L) });
 
     /// <summary>
     /// <para>Previous Table Grid.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:tblGrid.</para>
     /// </summary>
     /// <remark>
@@ -54154,7 +54156,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (254L) });
 
     /// <summary>
     /// <para>Defines the ObjectEmbed Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:objectEmbed.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -54182,7 +54184,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (254L) });
         [SchemaAttr(23, "drawAspect")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ObjectDrawAspect> drawAspect
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ObjectDrawAspect>? drawAspect
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ObjectDrawAspect>>();
             set => SetAttribute(value);
@@ -54201,7 +54203,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (254L) });
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54220,7 +54222,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (254L) });
         [SchemaAttr(23, "progId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ProgId
+        public StringValue? ProgId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54239,7 +54241,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (254L) });
         [SchemaAttr(23, "shapeId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ShapeId
+        public StringValue? ShapeId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54258,7 +54260,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (254L) });
         [SchemaAttr(23, "fieldCodes")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue FieldCodes
+        public StringValue? FieldCodes
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54285,7 +54287,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ObjectLink Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:objectLink.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -54313,7 +54315,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "updateMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ObjectUpdateMode> UpdateMode
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ObjectUpdateMode>? UpdateMode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ObjectUpdateMode>>();
             set => SetAttribute(value);
@@ -54332,7 +54334,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "lockedField")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue LockedField
+        public OnOffValue? LockedField
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -54351,7 +54353,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "drawAspect")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ObjectDrawAspect> drawAspect
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ObjectDrawAspect>? drawAspect
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ObjectDrawAspect>>();
             set => SetAttribute(value);
@@ -54370,7 +54372,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54389,7 +54391,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "progId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ProgId
+        public StringValue? ProgId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54408,7 +54410,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "shapeId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ShapeId
+        public StringValue? ShapeId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54427,7 +54429,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "fieldCodes")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue FieldCodes
+        public StringValue? FieldCodes
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54459,7 +54461,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Lock Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:lock.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -54487,7 +54489,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LockingValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.LockingValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.LockingValues>>();
             set => SetAttribute(value);
@@ -54507,7 +54509,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtPlaceholder Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:placeholder.</para>
     /// </summary>
     /// <remark>
@@ -54570,7 +54572,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocPartReference DocPartReference
+        public DocPartReference? DocPartReference
         {
             get => GetElement<DocPartReference>();
             set => SetElement(value);
@@ -54582,7 +54584,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DataBinding Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dataBinding.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -54610,7 +54612,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "prefixMappings")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue PrefixMappings
+        public StringValue? PrefixMappings
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54629,7 +54631,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "xpath")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue XPath
+        public StringValue? XPath
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54648,7 +54650,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "storeItemID")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue StoreItemId
+        public StringValue? StoreItemId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54676,7 +54678,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtContentComboBox Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:comboBox.</para>
     /// </summary>
     /// <remark>
@@ -54734,7 +54736,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "lastValue")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue LastValue
+        public StringValue? LastValue
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -54759,7 +54761,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtContentDate Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:date.</para>
     /// </summary>
     /// <remark>
@@ -54820,7 +54822,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "fullDate")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue FullDate
+        public DateTimeValue? FullDate
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -54852,7 +54854,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DateFormat DateFormat
+        public DateFormat? DateFormat
         {
             get => GetElement<DateFormat>();
             set => SetElement(value);
@@ -54865,7 +54867,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LanguageId LanguageId
+        public LanguageId? LanguageId
         {
             get => GetElement<LanguageId>();
             set => SetElement(value);
@@ -54878,7 +54880,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SdtDateMappingType SdtDateMappingType
+        public SdtDateMappingType? SdtDateMappingType
         {
             get => GetElement<SdtDateMappingType>();
             set => SetElement(value);
@@ -54891,7 +54893,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Calendar Calendar
+        public Calendar? Calendar
         {
             get => GetElement<Calendar>();
             set => SetElement(value);
@@ -54903,7 +54905,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtContentDocPartObject Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docPartObj.</para>
     /// </summary>
     /// <remark>
@@ -54968,7 +54970,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtContentDocPartList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docPartList.</para>
     /// </summary>
     /// <remark>
@@ -55033,7 +55035,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtDocPartType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -55092,7 +55094,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocPartGallery DocPartGallery
+        public DocPartGallery? DocPartGallery
         {
             get => GetElement<DocPartGallery>();
             set => SetElement(value);
@@ -55105,7 +55107,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocPartCategory DocPartCategory
+        public DocPartCategory? DocPartCategory
         {
             get => GetElement<DocPartCategory>();
             set => SetElement(value);
@@ -55118,7 +55120,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocPartUnique DocPartUnique
+        public DocPartUnique? DocPartUnique
         {
             get => GetElement<DocPartUnique>();
             set => SetElement(value);
@@ -55127,7 +55129,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtContentDropDownList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:dropDownList.</para>
     /// </summary>
     /// <remark>
@@ -55185,7 +55187,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "lastValue")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue LastValue
+        public StringValue? LastValue
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -55210,7 +55212,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SdtContentText Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:text.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -55238,7 +55240,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "multiLine")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue MultiLine
+        public OnOffValue? MultiLine
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -55258,7 +55260,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Write Protection.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:writeProtection.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -55286,7 +55288,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "recommended")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Recommended
+        public OnOffValue? Recommended
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -55305,7 +55307,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptProviderType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptProviderValues> CryptographicProviderType
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptProviderValues>? CryptographicProviderType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptProviderValues>>();
             set => SetAttribute(value);
@@ -55324,7 +55326,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptAlgorithmClass")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmClassValues> CryptographicAlgorithmClass
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmClassValues>? CryptographicAlgorithmClass
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmClassValues>>();
             set => SetAttribute(value);
@@ -55343,7 +55345,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptAlgorithmType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmValues> CryptographicAlgorithmType
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmValues>? CryptographicAlgorithmType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmValues>>();
             set => SetAttribute(value);
@@ -55362,7 +55364,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptAlgorithmSid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value CryptographicAlgorithmSid
+        public Int32Value? CryptographicAlgorithmSid
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -55381,7 +55383,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptSpinCount")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value CryptographicSpinCount
+        public UInt32Value? CryptographicSpinCount
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -55400,7 +55402,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptProvider")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue CryptographicProvider
+        public StringValue? CryptographicProvider
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -55419,7 +55421,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "algIdExt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue AlgorithmIdExtensibility
+        public HexBinaryValue? AlgorithmIdExtensibility
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -55438,7 +55440,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "algIdExtSource")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue AlgorithmIdExtensibilitySource
+        public StringValue? AlgorithmIdExtensibilitySource
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -55457,7 +55459,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptProviderTypeExt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue CryptographicProviderTypeExtensibility
+        public HexBinaryValue? CryptographicProviderTypeExtensibility
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -55476,7 +55478,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptProviderTypeExtSource")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue CryptographicProviderTypeExtSource
+        public StringValue? CryptographicProviderTypeExtSource
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -55495,7 +55497,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "hash")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Base64BinaryValue Hash
+        public Base64BinaryValue? Hash
         {
             get => GetAttribute<Base64BinaryValue>();
             set => SetAttribute(value);
@@ -55514,14 +55516,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "salt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Base64BinaryValue Salt
+        public Base64BinaryValue? Salt
         {
             get => GetAttribute<Base64BinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>algorithmName, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>algorithmName, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:algorithmName</para>
         /// </summary>
         /// <remark>
@@ -55533,14 +55535,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "algorithmName")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue AlgorithmName
+        public StringValue? AlgorithmName
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>hashValue, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>hashValue, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:hashValue</para>
         /// </summary>
         /// <remark>
@@ -55552,14 +55554,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "hashValue")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Base64BinaryValue HashValue
+        public Base64BinaryValue? HashValue
         {
             get => GetAttribute<Base64BinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>saltValue, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>saltValue, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:saltValue</para>
         /// </summary>
         /// <remark>
@@ -55571,14 +55573,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "saltValue")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Base64BinaryValue SaltValue
+        public Base64BinaryValue? SaltValue
         {
             get => GetAttribute<Base64BinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>spinCount, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>spinCount, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:spinCount</para>
         /// </summary>
         /// <remark>
@@ -55590,7 +55592,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "spinCount")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value SpinCount
+        public Int32Value? SpinCount
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -55647,7 +55649,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Document View Setting.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:view.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -55675,7 +55677,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ViewValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ViewValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ViewValues>>();
             set => SetAttribute(value);
@@ -55698,7 +55700,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Magnification Setting.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:zoom.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -55726,7 +55728,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PresetZoomValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.PresetZoomValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.PresetZoomValues>>();
             set => SetAttribute(value);
@@ -55745,7 +55747,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "percent")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Percent
+        public StringValue? Percent
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -55779,7 +55781,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Grammar Checking Settings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:activeWritingStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -55807,7 +55809,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "lang")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Language
+        public StringValue? Language
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -55826,7 +55828,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "vendorID")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value VendorID
+        public UInt16Value? VendorID
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -55845,7 +55847,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "dllVersion")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value DllVersion
+        public Int32Value? DllVersion
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -55864,7 +55866,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "nlCheck")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue NaturalLanguageGrammarCheck
+        public OnOffValue? NaturalLanguageGrammarCheck
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -55883,7 +55885,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "checkStyle")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue CheckStyle
+        public OnOffValue? CheckStyle
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -55902,7 +55904,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "appName")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ApplicationName
+        public StringValue? ApplicationName
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -55944,7 +55946,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Spelling and Grammatical Checking State.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:proofState.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -55972,7 +55974,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "spelling")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ProofingStateValues> Spelling
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ProofingStateValues>? Spelling
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ProofingStateValues>>();
             set => SetAttribute(value);
@@ -55991,7 +55993,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "grammar")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ProofingStateValues> Grammar
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ProofingStateValues>? Grammar
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ProofingStateValues>>();
             set => SetAttribute(value);
@@ -56012,7 +56014,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Suggested Filtering for List of Document Styles.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:stylePaneFormatFilter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -56040,14 +56042,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue Val
+        public HexBinaryValue? Val
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>allStyles, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>allStyles, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:allStyles</para>
         /// </summary>
         /// <remark>
@@ -56059,14 +56061,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "allStyles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue AllStyles
+        public OnOffValue? AllStyles
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>customStyles, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>customStyles, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:customStyles</para>
         /// </summary>
         /// <remark>
@@ -56078,14 +56080,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "customStyles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue CustomStyles
+        public OnOffValue? CustomStyles
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>latentStyles, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>latentStyles, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:latentStyles</para>
         /// </summary>
         /// <remark>
@@ -56097,14 +56099,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "latentStyles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue LatentStyles
+        public OnOffValue? LatentStyles
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>stylesInUse, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>stylesInUse, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:stylesInUse</para>
         /// </summary>
         /// <remark>
@@ -56116,14 +56118,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "stylesInUse")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue StylesInUse
+        public OnOffValue? StylesInUse
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>headingStyles, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>headingStyles, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:headingStyles</para>
         /// </summary>
         /// <remark>
@@ -56135,14 +56137,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "headingStyles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue HeadingStyles
+        public OnOffValue? HeadingStyles
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>numberingStyles, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>numberingStyles, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:numberingStyles</para>
         /// </summary>
         /// <remark>
@@ -56154,14 +56156,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "numberingStyles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue NumberingStyles
+        public OnOffValue? NumberingStyles
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>tableStyles, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>tableStyles, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:tableStyles</para>
         /// </summary>
         /// <remark>
@@ -56173,14 +56175,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "tableStyles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue TableStyles
+        public OnOffValue? TableStyles
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>directFormattingOnRuns, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>directFormattingOnRuns, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:directFormattingOnRuns</para>
         /// </summary>
         /// <remark>
@@ -56192,14 +56194,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "directFormattingOnRuns")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue DirectFormattingOnRuns
+        public OnOffValue? DirectFormattingOnRuns
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>directFormattingOnParagraphs, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>directFormattingOnParagraphs, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:directFormattingOnParagraphs</para>
         /// </summary>
         /// <remark>
@@ -56211,14 +56213,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "directFormattingOnParagraphs")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue DirectFormattingOnParagraphs
+        public OnOffValue? DirectFormattingOnParagraphs
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>directFormattingOnNumbering, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>directFormattingOnNumbering, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:directFormattingOnNumbering</para>
         /// </summary>
         /// <remark>
@@ -56230,14 +56232,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "directFormattingOnNumbering")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue DirectFormattingOnNumbering
+        public OnOffValue? DirectFormattingOnNumbering
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>directFormattingOnTables, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>directFormattingOnTables, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:directFormattingOnTables</para>
         /// </summary>
         /// <remark>
@@ -56249,14 +56251,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "directFormattingOnTables")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue DirectFormattingOnTables
+        public OnOffValue? DirectFormattingOnTables
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>clearFormatting, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>clearFormatting, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:clearFormatting</para>
         /// </summary>
         /// <remark>
@@ -56268,14 +56270,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "clearFormatting")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue ClearFormatting
+        public OnOffValue? ClearFormatting
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>top3HeadingStyles, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>top3HeadingStyles, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:top3HeadingStyles</para>
         /// </summary>
         /// <remark>
@@ -56287,14 +56289,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "top3HeadingStyles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Top3HeadingStyles
+        public OnOffValue? Top3HeadingStyles
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>visibleStyles, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>visibleStyles, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:visibleStyles</para>
         /// </summary>
         /// <remark>
@@ -56306,14 +56308,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "visibleStyles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue VisibleStyles
+        public OnOffValue? VisibleStyles
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>alternateStyleNames, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>alternateStyleNames, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:alternateStyleNames</para>
         /// </summary>
         /// <remark>
@@ -56325,7 +56327,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "alternateStyleNames")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue AlternateStyleNames
+        public OnOffValue? AlternateStyleNames
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -56409,7 +56411,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Suggested Sorting for List of Document Styles.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:stylePaneSortMethod.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -56437,7 +56439,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -56462,7 +56464,7 @@ aBuilder.AddValidator<EnumValue<DocumentFormat.OpenXml.Wordprocessing.StylePaneS
 
     /// <summary>
     /// <para>Document Classification.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:documentType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -56490,7 +56492,7 @@ aBuilder.AddValidator<EnumValue<DocumentFormat.OpenXml.Wordprocessing.StylePaneS
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocumentTypeValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocumentTypeValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocumentTypeValues>>();
             set => SetAttribute(value);
@@ -56513,7 +56515,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Mail Merge Settings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:mailMerge.</para>
     /// </summary>
     /// <remark>
@@ -56621,7 +56623,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MainDocumentType MainDocumentType
+        public MainDocumentType? MainDocumentType
         {
             get => GetElement<MainDocumentType>();
             set => SetElement(value);
@@ -56634,7 +56636,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LinkToQuery LinkToQuery
+        public LinkToQuery? LinkToQuery
         {
             get => GetElement<LinkToQuery>();
             set => SetElement(value);
@@ -56647,7 +56649,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DataType DataType
+        public DataType? DataType
         {
             get => GetElement<DataType>();
             set => SetElement(value);
@@ -56660,7 +56662,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ConnectString ConnectString
+        public ConnectString? ConnectString
         {
             get => GetElement<ConnectString>();
             set => SetElement(value);
@@ -56673,7 +56675,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Query Query
+        public Query? Query
         {
             get => GetElement<Query>();
             set => SetElement(value);
@@ -56686,7 +56688,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DataSourceReference DataSourceReference
+        public DataSourceReference? DataSourceReference
         {
             get => GetElement<DataSourceReference>();
             set => SetElement(value);
@@ -56699,7 +56701,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public HeaderSource HeaderSource
+        public HeaderSource? HeaderSource
         {
             get => GetElement<HeaderSource>();
             set => SetElement(value);
@@ -56712,7 +56714,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotSuppressBlankLines DoNotSuppressBlankLines
+        public DoNotSuppressBlankLines? DoNotSuppressBlankLines
         {
             get => GetElement<DoNotSuppressBlankLines>();
             set => SetElement(value);
@@ -56725,7 +56727,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public Destination Destination
+        public Destination? Destination
         {
             get => GetElement<Destination>();
             set => SetElement(value);
@@ -56738,7 +56740,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AddressFieldName AddressFieldName
+        public AddressFieldName? AddressFieldName
         {
             get => GetElement<AddressFieldName>();
             set => SetElement(value);
@@ -56751,7 +56753,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MailSubject MailSubject
+        public MailSubject? MailSubject
         {
             get => GetElement<MailSubject>();
             set => SetElement(value);
@@ -56764,7 +56766,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MailAsAttachment MailAsAttachment
+        public MailAsAttachment? MailAsAttachment
         {
             get => GetElement<MailAsAttachment>();
             set => SetElement(value);
@@ -56777,7 +56779,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ViewMergedData ViewMergedData
+        public ViewMergedData? ViewMergedData
         {
             get => GetElement<ViewMergedData>();
             set => SetElement(value);
@@ -56790,7 +56792,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ActiveRecord ActiveRecord
+        public ActiveRecord? ActiveRecord
         {
             get => GetElement<ActiveRecord>();
             set => SetElement(value);
@@ -56803,7 +56805,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public CheckErrors CheckErrors
+        public CheckErrors? CheckErrors
         {
             get => GetElement<CheckErrors>();
             set => SetElement(value);
@@ -56816,7 +56818,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DataSourceObject DataSourceObject
+        public DataSourceObject? DataSourceObject
         {
             get => GetElement<DataSourceObject>();
             set => SetElement(value);
@@ -56828,7 +56830,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Visibility of Annotation Types.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:revisionView.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -56856,7 +56858,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "markup")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Markup
+        public OnOffValue? Markup
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -56875,7 +56877,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "comments")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Comments
+        public OnOffValue? Comments
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -56894,7 +56896,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "insDel")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue DisplayRevision
+        public OnOffValue? DisplayRevision
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -56913,7 +56915,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "formatting")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Formatting
+        public OnOffValue? Formatting
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -56932,7 +56934,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "inkAnnotations")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue InkAnnotations
+        public OnOffValue? InkAnnotations
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -56956,7 +56958,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Document Editing Restrictions.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:documentProtection.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -56984,7 +56986,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "edit")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocumentProtectionValues> Edit
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocumentProtectionValues>? Edit
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.DocumentProtectionValues>>();
             set => SetAttribute(value);
@@ -57003,7 +57005,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "formatting")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Formatting
+        public OnOffValue? Formatting
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -57022,7 +57024,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "enforcement")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Enforcement
+        public OnOffValue? Enforcement
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -57041,7 +57043,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptProviderType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptProviderValues> CryptographicProviderType
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptProviderValues>? CryptographicProviderType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptProviderValues>>();
             set => SetAttribute(value);
@@ -57060,7 +57062,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptAlgorithmClass")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmClassValues> CryptographicAlgorithmClass
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmClassValues>? CryptographicAlgorithmClass
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmClassValues>>();
             set => SetAttribute(value);
@@ -57079,7 +57081,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptAlgorithmType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmValues> CryptographicAlgorithmType
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmValues>? CryptographicAlgorithmType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CryptAlgorithmValues>>();
             set => SetAttribute(value);
@@ -57098,7 +57100,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptAlgorithmSid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value CryptographicAlgorithmSid
+        public Int32Value? CryptographicAlgorithmSid
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -57117,7 +57119,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptSpinCount")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value CryptographicSpinCount
+        public UInt32Value? CryptographicSpinCount
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -57136,7 +57138,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptProvider")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue CryptographicProvider
+        public StringValue? CryptographicProvider
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -57155,7 +57157,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "algIdExt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue AlgorithmIdExtensibility
+        public HexBinaryValue? AlgorithmIdExtensibility
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -57174,7 +57176,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "algIdExtSource")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue AlgorithmIdExtensibilitySource
+        public StringValue? AlgorithmIdExtensibilitySource
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -57193,7 +57195,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptProviderTypeExt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue CryptographicProviderTypeExtensibility
+        public HexBinaryValue? CryptographicProviderTypeExtensibility
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -57212,7 +57214,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "cryptProviderTypeExtSource")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue CryptographicProviderTypeExtSource
+        public StringValue? CryptographicProviderTypeExtSource
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -57231,7 +57233,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "hash")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Base64BinaryValue Hash
+        public Base64BinaryValue? Hash
         {
             get => GetAttribute<Base64BinaryValue>();
             set => SetAttribute(value);
@@ -57250,14 +57252,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "salt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Base64BinaryValue Salt
+        public Base64BinaryValue? Salt
         {
             get => GetAttribute<Base64BinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>algorithmName, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>algorithmName, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:algorithmName</para>
         /// </summary>
         /// <remark>
@@ -57269,14 +57271,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "algorithmName")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue AlgorithmName
+        public StringValue? AlgorithmName
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>hashValue, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>hashValue, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:hashValue</para>
         /// </summary>
         /// <remark>
@@ -57288,14 +57290,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "hashValue")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Base64BinaryValue HashValue
+        public Base64BinaryValue? HashValue
         {
             get => GetAttribute<Base64BinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>saltValue, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>saltValue, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:saltValue</para>
         /// </summary>
         /// <remark>
@@ -57307,14 +57309,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "saltValue")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Base64BinaryValue SaltValue
+        public Base64BinaryValue? SaltValue
         {
             get => GetAttribute<Base64BinaryValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>spinCount, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>spinCount, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w:spinCount</para>
         /// </summary>
         /// <remark>
@@ -57326,7 +57328,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "spinCount")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value SpinCount
+        public Int32Value? SpinCount
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -57386,7 +57388,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Distance Between Automatic Tab Stops.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:defaultTabStop.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57413,7 +57415,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Number of Pages Per Booklet.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:bookFoldPrintingSheets.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57440,7 +57442,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the NonNegativeShortType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class NonNegativeShortType : OpenXmlLeafElement
@@ -57465,7 +57467,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int16Value Val
+        public Int16Value? Val
         {
             get => GetAttribute<Int16Value>();
             set => SetAttribute(value);
@@ -57485,7 +57487,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Maximum Number of Consecutively Hyphenated Lines.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:consecutiveHyphenLimit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57513,7 +57515,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -57536,7 +57538,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Percentage of Document to Use When Generating Summary.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:summaryLength.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57564,7 +57566,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -57588,7 +57590,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Distance between Horizontal Gridlines.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:displayHorizontalDrawingGridEvery.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57615,7 +57617,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Distance between Vertical Gridlines.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:displayVerticalDrawingGridEvery.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57642,7 +57644,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the UnsignedInt7Type Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class UnsignedInt7Type : OpenXmlLeafElement
@@ -57667,7 +57669,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -57687,7 +57689,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Character-Level Whitespace Compression.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:characterSpacingControl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57715,7 +57717,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CharacterSpacingValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.CharacterSpacingValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.CharacterSpacingValues>>();
             set => SetAttribute(value);
@@ -57738,7 +57740,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Custom Set of Characters Which Cannot End a Line.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noLineBreaksAfter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57766,7 +57768,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "lang")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Language
+        public StringValue? Language
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -57785,7 +57787,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -57814,7 +57816,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (50L) });
 
     /// <summary>
     /// <para>Custom Set Of Characters Which Cannot Begin A Line.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:noLineBreaksBefore.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57842,7 +57844,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (50L) });
         [SchemaAttr(23, "lang")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Language
+        public StringValue? Language
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -57861,7 +57863,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (50L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -57890,7 +57892,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Custom XSL Transform To Use When Saving As XML File.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:saveThroughXslt.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57918,7 +57920,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -57937,7 +57939,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "solutionID")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue SolutionId
+        public StringValue? SolutionId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -57959,7 +57961,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Default Properties for VML Objects in Header and Footer.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:hdrShapeDefaults.</para>
     /// </summary>
     /// <remark>
@@ -58022,7 +58024,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Default Properties for VML Objects in Main Document.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:shapeDefaults.</para>
     /// </summary>
     /// <remark>
@@ -58085,7 +58087,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Defines the ShapeDefaultsType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -58138,7 +58140,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Document-Wide Footnote Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:footnotePr.</para>
     /// </summary>
     /// <remark>
@@ -58225,7 +58227,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FootnotePosition FootnotePosition
+        public FootnotePosition? FootnotePosition
         {
             get => GetElement<FootnotePosition>();
             set => SetElement(value);
@@ -58238,7 +58240,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -58251,7 +58253,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingStart NumberingStart
+        public NumberingStart? NumberingStart
         {
             get => GetElement<NumberingStart>();
             set => SetElement(value);
@@ -58264,7 +58266,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingRestart NumberingRestart
+        public NumberingRestart? NumberingRestart
         {
             get => GetElement<NumberingRestart>();
             set => SetElement(value);
@@ -58276,7 +58278,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Document-Wide Endnote Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:endnotePr.</para>
     /// </summary>
     /// <remark>
@@ -58363,7 +58365,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public EndnotePosition EndnotePosition
+        public EndnotePosition? EndnotePosition
         {
             get => GetElement<EndnotePosition>();
             set => SetElement(value);
@@ -58376,7 +58378,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -58389,7 +58391,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingStart NumberingStart
+        public NumberingStart? NumberingStart
         {
             get => GetElement<NumberingStart>();
             set => SetElement(value);
@@ -58402,7 +58404,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NumberingRestart NumberingRestart
+        public NumberingRestart? NumberingRestart
         {
             get => GetElement<NumberingRestart>();
             set => SetElement(value);
@@ -58414,7 +58416,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Compatibility Settings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:compat.</para>
     /// </summary>
     /// <remark>
@@ -58672,7 +58674,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UseSingleBorderForContiguousCells UseSingleBorderForContiguousCells
+        public UseSingleBorderForContiguousCells? UseSingleBorderForContiguousCells
         {
             get => GetElement<UseSingleBorderForContiguousCells>();
             set => SetElement(value);
@@ -58685,7 +58687,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WordPerfectJustification WordPerfectJustification
+        public WordPerfectJustification? WordPerfectJustification
         {
             get => GetElement<WordPerfectJustification>();
             set => SetElement(value);
@@ -58698,7 +58700,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoTabHangIndent NoTabHangIndent
+        public NoTabHangIndent? NoTabHangIndent
         {
             get => GetElement<NoTabHangIndent>();
             set => SetElement(value);
@@ -58711,7 +58713,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoLeading NoLeading
+        public NoLeading? NoLeading
         {
             get => GetElement<NoLeading>();
             set => SetElement(value);
@@ -58724,7 +58726,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpaceForUnderline SpaceForUnderline
+        public SpaceForUnderline? SpaceForUnderline
         {
             get => GetElement<SpaceForUnderline>();
             set => SetElement(value);
@@ -58737,7 +58739,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoColumnBalance NoColumnBalance
+        public NoColumnBalance? NoColumnBalance
         {
             get => GetElement<NoColumnBalance>();
             set => SetElement(value);
@@ -58750,7 +58752,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public BalanceSingleByteDoubleByteWidth BalanceSingleByteDoubleByteWidth
+        public BalanceSingleByteDoubleByteWidth? BalanceSingleByteDoubleByteWidth
         {
             get => GetElement<BalanceSingleByteDoubleByteWidth>();
             set => SetElement(value);
@@ -58763,7 +58765,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoExtraLineSpacing NoExtraLineSpacing
+        public NoExtraLineSpacing? NoExtraLineSpacing
         {
             get => GetElement<NoExtraLineSpacing>();
             set => SetElement(value);
@@ -58776,7 +58778,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotLeaveBackslashAlone DoNotLeaveBackslashAlone
+        public DoNotLeaveBackslashAlone? DoNotLeaveBackslashAlone
         {
             get => GetElement<DoNotLeaveBackslashAlone>();
             set => SetElement(value);
@@ -58789,7 +58791,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UnderlineTrailingSpaces UnderlineTrailingSpaces
+        public UnderlineTrailingSpaces? UnderlineTrailingSpaces
         {
             get => GetElement<UnderlineTrailingSpaces>();
             set => SetElement(value);
@@ -58802,7 +58804,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotExpandShiftReturn DoNotExpandShiftReturn
+        public DoNotExpandShiftReturn? DoNotExpandShiftReturn
         {
             get => GetElement<DoNotExpandShiftReturn>();
             set => SetElement(value);
@@ -58815,7 +58817,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SpacingInWholePoints SpacingInWholePoints
+        public SpacingInWholePoints? SpacingInWholePoints
         {
             get => GetElement<SpacingInWholePoints>();
             set => SetElement(value);
@@ -58828,7 +58830,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LineWrapLikeWord6 LineWrapLikeWord6
+        public LineWrapLikeWord6? LineWrapLikeWord6
         {
             get => GetElement<LineWrapLikeWord6>();
             set => SetElement(value);
@@ -58841,7 +58843,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PrintBodyTextBeforeHeader PrintBodyTextBeforeHeader
+        public PrintBodyTextBeforeHeader? PrintBodyTextBeforeHeader
         {
             get => GetElement<PrintBodyTextBeforeHeader>();
             set => SetElement(value);
@@ -58854,7 +58856,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public PrintColorBlackWhite PrintColorBlackWhite
+        public PrintColorBlackWhite? PrintColorBlackWhite
         {
             get => GetElement<PrintColorBlackWhite>();
             set => SetElement(value);
@@ -58867,7 +58869,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WordPerfectSpaceWidth WordPerfectSpaceWidth
+        public WordPerfectSpaceWidth? WordPerfectSpaceWidth
         {
             get => GetElement<WordPerfectSpaceWidth>();
             set => SetElement(value);
@@ -58880,7 +58882,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ShowBreaksInFrames ShowBreaksInFrames
+        public ShowBreaksInFrames? ShowBreaksInFrames
         {
             get => GetElement<ShowBreaksInFrames>();
             set => SetElement(value);
@@ -58893,7 +58895,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SubFontBySize SubFontBySize
+        public SubFontBySize? SubFontBySize
         {
             get => GetElement<SubFontBySize>();
             set => SetElement(value);
@@ -58906,7 +58908,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressBottomSpacing SuppressBottomSpacing
+        public SuppressBottomSpacing? SuppressBottomSpacing
         {
             get => GetElement<SuppressBottomSpacing>();
             set => SetElement(value);
@@ -58919,7 +58921,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressTopSpacing SuppressTopSpacing
+        public SuppressTopSpacing? SuppressTopSpacing
         {
             get => GetElement<SuppressTopSpacing>();
             set => SetElement(value);
@@ -58932,7 +58934,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressSpacingAtTopOfPage SuppressSpacingAtTopOfPage
+        public SuppressSpacingAtTopOfPage? SuppressSpacingAtTopOfPage
         {
             get => GetElement<SuppressSpacingAtTopOfPage>();
             set => SetElement(value);
@@ -58945,7 +58947,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressTopSpacingWordPerfect SuppressTopSpacingWordPerfect
+        public SuppressTopSpacingWordPerfect? SuppressTopSpacingWordPerfect
         {
             get => GetElement<SuppressTopSpacingWordPerfect>();
             set => SetElement(value);
@@ -58958,7 +58960,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SuppressSpacingBeforeAfterPageBreak SuppressSpacingBeforeAfterPageBreak
+        public SuppressSpacingBeforeAfterPageBreak? SuppressSpacingBeforeAfterPageBreak
         {
             get => GetElement<SuppressSpacingBeforeAfterPageBreak>();
             set => SetElement(value);
@@ -58971,7 +58973,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SwapBordersFacingPages SwapBordersFacingPages
+        public SwapBordersFacingPages? SwapBordersFacingPages
         {
             get => GetElement<SwapBordersFacingPages>();
             set => SetElement(value);
@@ -58984,7 +58986,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ConvertMailMergeEscape ConvertMailMergeEscape
+        public ConvertMailMergeEscape? ConvertMailMergeEscape
         {
             get => GetElement<ConvertMailMergeEscape>();
             set => SetElement(value);
@@ -58997,7 +58999,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public TruncateFontHeightsLikeWordPerfect TruncateFontHeightsLikeWordPerfect
+        public TruncateFontHeightsLikeWordPerfect? TruncateFontHeightsLikeWordPerfect
         {
             get => GetElement<TruncateFontHeightsLikeWordPerfect>();
             set => SetElement(value);
@@ -59010,7 +59012,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public MacWordSmallCaps MacWordSmallCaps
+        public MacWordSmallCaps? MacWordSmallCaps
         {
             get => GetElement<MacWordSmallCaps>();
             set => SetElement(value);
@@ -59023,7 +59025,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UsePrinterMetrics UsePrinterMetrics
+        public UsePrinterMetrics? UsePrinterMetrics
         {
             get => GetElement<UsePrinterMetrics>();
             set => SetElement(value);
@@ -59036,7 +59038,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotSuppressParagraphBorders DoNotSuppressParagraphBorders
+        public DoNotSuppressParagraphBorders? DoNotSuppressParagraphBorders
         {
             get => GetElement<DoNotSuppressParagraphBorders>();
             set => SetElement(value);
@@ -59049,7 +59051,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public WrapTrailSpaces WrapTrailSpaces
+        public WrapTrailSpaces? WrapTrailSpaces
         {
             get => GetElement<WrapTrailSpaces>();
             set => SetElement(value);
@@ -59062,7 +59064,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public FootnoteLayoutLikeWord8 FootnoteLayoutLikeWord8
+        public FootnoteLayoutLikeWord8? FootnoteLayoutLikeWord8
         {
             get => GetElement<FootnoteLayoutLikeWord8>();
             set => SetElement(value);
@@ -59075,7 +59077,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ShapeLayoutLikeWord8 ShapeLayoutLikeWord8
+        public ShapeLayoutLikeWord8? ShapeLayoutLikeWord8
         {
             get => GetElement<ShapeLayoutLikeWord8>();
             set => SetElement(value);
@@ -59088,7 +59090,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AlignTablesRowByRow AlignTablesRowByRow
+        public AlignTablesRowByRow? AlignTablesRowByRow
         {
             get => GetElement<AlignTablesRowByRow>();
             set => SetElement(value);
@@ -59101,7 +59103,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ForgetLastTabAlignment ForgetLastTabAlignment
+        public ForgetLastTabAlignment? ForgetLastTabAlignment
         {
             get => GetElement<ForgetLastTabAlignment>();
             set => SetElement(value);
@@ -59114,7 +59116,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AdjustLineHeightInTable AdjustLineHeightInTable
+        public AdjustLineHeightInTable? AdjustLineHeightInTable
         {
             get => GetElement<AdjustLineHeightInTable>();
             set => SetElement(value);
@@ -59127,7 +59129,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutoSpaceLikeWord95 AutoSpaceLikeWord95
+        public AutoSpaceLikeWord95? AutoSpaceLikeWord95
         {
             get => GetElement<AutoSpaceLikeWord95>();
             set => SetElement(value);
@@ -59140,7 +59142,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public NoSpaceRaiseLower NoSpaceRaiseLower
+        public NoSpaceRaiseLower? NoSpaceRaiseLower
         {
             get => GetElement<NoSpaceRaiseLower>();
             set => SetElement(value);
@@ -59153,7 +59155,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotUseHTMLParagraphAutoSpacing DoNotUseHTMLParagraphAutoSpacing
+        public DoNotUseHTMLParagraphAutoSpacing? DoNotUseHTMLParagraphAutoSpacing
         {
             get => GetElement<DoNotUseHTMLParagraphAutoSpacing>();
             set => SetElement(value);
@@ -59166,7 +59168,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LayoutRawTableWidth LayoutRawTableWidth
+        public LayoutRawTableWidth? LayoutRawTableWidth
         {
             get => GetElement<LayoutRawTableWidth>();
             set => SetElement(value);
@@ -59179,7 +59181,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public LayoutTableRowsApart LayoutTableRowsApart
+        public LayoutTableRowsApart? LayoutTableRowsApart
         {
             get => GetElement<LayoutTableRowsApart>();
             set => SetElement(value);
@@ -59192,7 +59194,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UseWord97LineBreakRules UseWord97LineBreakRules
+        public UseWord97LineBreakRules? UseWord97LineBreakRules
         {
             get => GetElement<UseWord97LineBreakRules>();
             set => SetElement(value);
@@ -59205,7 +59207,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotBreakWrappedTables DoNotBreakWrappedTables
+        public DoNotBreakWrappedTables? DoNotBreakWrappedTables
         {
             get => GetElement<DoNotBreakWrappedTables>();
             set => SetElement(value);
@@ -59218,7 +59220,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotSnapToGridInCell DoNotSnapToGridInCell
+        public DoNotSnapToGridInCell? DoNotSnapToGridInCell
         {
             get => GetElement<DoNotSnapToGridInCell>();
             set => SetElement(value);
@@ -59231,7 +59233,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SelectFieldWithFirstOrLastChar SelectFieldWithFirstOrLastChar
+        public SelectFieldWithFirstOrLastChar? SelectFieldWithFirstOrLastChar
         {
             get => GetElement<SelectFieldWithFirstOrLastChar>();
             set => SetElement(value);
@@ -59244,7 +59246,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public ApplyBreakingRules ApplyBreakingRules
+        public ApplyBreakingRules? ApplyBreakingRules
         {
             get => GetElement<ApplyBreakingRules>();
             set => SetElement(value);
@@ -59257,7 +59259,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotWrapTextWithPunctuation DoNotWrapTextWithPunctuation
+        public DoNotWrapTextWithPunctuation? DoNotWrapTextWithPunctuation
         {
             get => GetElement<DoNotWrapTextWithPunctuation>();
             set => SetElement(value);
@@ -59270,7 +59272,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotUseEastAsianBreakRules DoNotUseEastAsianBreakRules
+        public DoNotUseEastAsianBreakRules? DoNotUseEastAsianBreakRules
         {
             get => GetElement<DoNotUseEastAsianBreakRules>();
             set => SetElement(value);
@@ -59283,7 +59285,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UseWord2002TableStyleRules UseWord2002TableStyleRules
+        public UseWord2002TableStyleRules? UseWord2002TableStyleRules
         {
             get => GetElement<UseWord2002TableStyleRules>();
             set => SetElement(value);
@@ -59296,7 +59298,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public GrowAutofit GrowAutofit
+        public GrowAutofit? GrowAutofit
         {
             get => GetElement<GrowAutofit>();
             set => SetElement(value);
@@ -59309,7 +59311,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UseFarEastLayout UseFarEastLayout
+        public UseFarEastLayout? UseFarEastLayout
         {
             get => GetElement<UseFarEastLayout>();
             set => SetElement(value);
@@ -59322,7 +59324,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UseNormalStyleForList UseNormalStyleForList
+        public UseNormalStyleForList? UseNormalStyleForList
         {
             get => GetElement<UseNormalStyleForList>();
             set => SetElement(value);
@@ -59335,7 +59337,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotUseIndentAsNumberingTabStop DoNotUseIndentAsNumberingTabStop
+        public DoNotUseIndentAsNumberingTabStop? DoNotUseIndentAsNumberingTabStop
         {
             get => GetElement<DoNotUseIndentAsNumberingTabStop>();
             set => SetElement(value);
@@ -59348,7 +59350,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UseAltKinsokuLineBreakRules UseAltKinsokuLineBreakRules
+        public UseAltKinsokuLineBreakRules? UseAltKinsokuLineBreakRules
         {
             get => GetElement<UseAltKinsokuLineBreakRules>();
             set => SetElement(value);
@@ -59361,7 +59363,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AllowSpaceOfSameStyleInTable AllowSpaceOfSameStyleInTable
+        public AllowSpaceOfSameStyleInTable? AllowSpaceOfSameStyleInTable
         {
             get => GetElement<AllowSpaceOfSameStyleInTable>();
             set => SetElement(value);
@@ -59374,7 +59376,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotSuppressIndentation DoNotSuppressIndentation
+        public DoNotSuppressIndentation? DoNotSuppressIndentation
         {
             get => GetElement<DoNotSuppressIndentation>();
             set => SetElement(value);
@@ -59387,7 +59389,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotAutofitConstrainedTables DoNotAutofitConstrainedTables
+        public DoNotAutofitConstrainedTables? DoNotAutofitConstrainedTables
         {
             get => GetElement<DoNotAutofitConstrainedTables>();
             set => SetElement(value);
@@ -59400,7 +59402,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public AutofitToFirstFixedWidthCell AutofitToFirstFixedWidthCell
+        public AutofitToFirstFixedWidthCell? AutofitToFirstFixedWidthCell
         {
             get => GetElement<AutofitToFirstFixedWidthCell>();
             set => SetElement(value);
@@ -59413,7 +59415,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UnderlineTabInNumberingList UnderlineTabInNumberingList
+        public UnderlineTabInNumberingList? UnderlineTabInNumberingList
         {
             get => GetElement<UnderlineTabInNumberingList>();
             set => SetElement(value);
@@ -59426,7 +59428,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DisplayHangulFixedWidth DisplayHangulFixedWidth
+        public DisplayHangulFixedWidth? DisplayHangulFixedWidth
         {
             get => GetElement<DisplayHangulFixedWidth>();
             set => SetElement(value);
@@ -59439,7 +59441,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public SplitPageBreakAndParagraphMark SplitPageBreakAndParagraphMark
+        public SplitPageBreakAndParagraphMark? SplitPageBreakAndParagraphMark
         {
             get => GetElement<SplitPageBreakAndParagraphMark>();
             set => SetElement(value);
@@ -59452,7 +59454,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotVerticallyAlignCellWithShape DoNotVerticallyAlignCellWithShape
+        public DoNotVerticallyAlignCellWithShape? DoNotVerticallyAlignCellWithShape
         {
             get => GetElement<DoNotVerticallyAlignCellWithShape>();
             set => SetElement(value);
@@ -59465,7 +59467,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotBreakConstrainedForcedTable DoNotBreakConstrainedForcedTable
+        public DoNotBreakConstrainedForcedTable? DoNotBreakConstrainedForcedTable
         {
             get => GetElement<DoNotBreakConstrainedForcedTable>();
             set => SetElement(value);
@@ -59478,7 +59480,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DoNotVerticallyAlignInTextBox DoNotVerticallyAlignInTextBox
+        public DoNotVerticallyAlignInTextBox? DoNotVerticallyAlignInTextBox
         {
             get => GetElement<DoNotVerticallyAlignInTextBox>();
             set => SetElement(value);
@@ -59491,7 +59493,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public UseAnsiKerningPairs UseAnsiKerningPairs
+        public UseAnsiKerningPairs? UseAnsiKerningPairs
         {
             get => GetElement<UseAnsiKerningPairs>();
             set => SetElement(value);
@@ -59504,7 +59506,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public CachedColumnBalance CachedColumnBalance
+        public CachedColumnBalance? CachedColumnBalance
         {
             get => GetElement<CachedColumnBalance>();
             set => SetElement(value);
@@ -59516,7 +59518,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Document Variables.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:docVars.</para>
     /// </summary>
     /// <remark>
@@ -59578,7 +59580,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Listing of All Revision Save ID Values.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:rsids.</para>
     /// </summary>
     /// <remark>
@@ -59644,7 +59646,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public RsidRoot RsidRoot
+        public RsidRoot? RsidRoot
         {
             get => GetElement<RsidRoot>();
             set => SetElement(value);
@@ -59656,7 +59658,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Theme Color Mappings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:clrSchemeMapping.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -59684,7 +59686,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "bg1")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Background1
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Background1
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59703,7 +59705,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "t1")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Text1
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Text1
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59722,7 +59724,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "bg2")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Background2
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Background2
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59741,7 +59743,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "t2")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Text2
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Text2
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59760,7 +59762,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "accent1")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Accent1
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Accent1
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59779,7 +59781,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "accent2")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Accent2
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Accent2
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59798,7 +59800,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "accent3")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Accent3
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Accent3
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59817,7 +59819,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "accent4")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Accent4
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Accent4
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59836,7 +59838,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "accent5")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Accent5
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Accent5
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59855,7 +59857,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "accent6")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Accent6
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Accent6
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59874,7 +59876,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "hyperlink")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> Hyperlink
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? Hyperlink
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59893,7 +59895,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "followedHyperlink")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues> FollowedHyperlink
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>? FollowedHyperlink
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -59924,7 +59926,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Caption Settings.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:captions.</para>
     /// </summary>
     /// <remark>
@@ -59989,7 +59991,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
 
     /// <summary>
     /// <para>Freeze Document Layout.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:readModeInkLockDown.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60017,7 +60019,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "actualPg")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue UseActualPages
+        public OnOffValue? UseActualPages
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -60036,7 +60038,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Width
+        public UInt32Value? Width
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -60055,7 +60057,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "h")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Height
+        public UInt32Value? Height
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -60074,7 +60076,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (100L) });
         [SchemaAttr(23, "fontSz")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue FontSize
+        public StringValue? FontSize
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -60117,7 +60119,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { InitialVersion = (FileFor
 
     /// <summary>
     /// <para>Defines the TargetScreenSize Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:targetScreenSz.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60145,7 +60147,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { InitialVersion = (FileFor
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TargetScreenSizeValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.TargetScreenSizeValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.TargetScreenSizeValues>>();
             set => SetAttribute(value);
@@ -60168,7 +60170,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the PictureBulletBase Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pict.</para>
     /// </summary>
     /// <remark>
@@ -60260,7 +60262,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Panose1Number Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:panose1.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60288,7 +60290,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue Val
+        public HexBinaryValue? Val
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -60312,7 +60314,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (10L) });
 
     /// <summary>
     /// <para>Defines the FontCharSet Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:charset.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60340,7 +60342,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (10L) });
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -60359,7 +60361,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (10L) });
         [SchemaAttr(23, "characterSet")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.StrictCharacterSet> StrictCharacterSet
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.StrictCharacterSet>? StrictCharacterSet
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.StrictCharacterSet>>();
             set => SetAttribute(value);
@@ -60383,7 +60385,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
 
     /// <summary>
     /// <para>Defines the FontFamily Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:family.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60411,7 +60413,7 @@ aBuilder.AddValidator(new StringValidator() { Pattern = ("[0-9a-fA-F]*"), MinLen
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FontFamilyValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FontFamilyValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.FontFamilyValues>>();
             set => SetAttribute(value);
@@ -60434,7 +60436,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Pitch Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:pitch.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60462,7 +60464,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FontPitchValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Wordprocessing.FontPitchValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Wordprocessing.FontPitchValues>>();
             set => SetAttribute(value);
@@ -60485,7 +60487,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the FontSignature Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:sig.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60513,7 +60515,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "usb0")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue UnicodeSignature0
+        public HexBinaryValue? UnicodeSignature0
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -60532,7 +60534,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "usb1")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue UnicodeSignature1
+        public HexBinaryValue? UnicodeSignature1
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -60551,7 +60553,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "usb2")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue UnicodeSignature2
+        public HexBinaryValue? UnicodeSignature2
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -60570,7 +60572,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "usb3")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue UnicodeSignature3
+        public HexBinaryValue? UnicodeSignature3
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -60589,7 +60591,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "csb0")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue CodePageSignature0
+        public HexBinaryValue? CodePageSignature0
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -60608,7 +60610,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "csb1")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue CodePageSignature1
+        public HexBinaryValue? CodePageSignature1
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -60659,7 +60661,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the EmbedRegularFont Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:embedRegular.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60688,7 +60690,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the EmbedBoldFont Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:embedBold.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60716,7 +60718,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the EmbedItalicFont Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:embedItalic.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60744,7 +60746,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the EmbedBoldItalicFont Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w:embedBoldItalic.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -60772,7 +60774,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the FontRelationshipType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class FontRelationshipType : OpenXmlLeafElement
@@ -60797,7 +60799,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "fontKey")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue FontKey
+        public StringValue? FontKey
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -60816,7 +60818,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(23, "subsetted")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public OnOffValue Subsetted
+        public OnOffValue? Subsetted
         {
             get => GetAttribute<OnOffValue>();
             set => SetAttribute(value);
@@ -60835,7 +60837,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -64300,7 +64302,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///umalqura.
         ///<para>When the item is serialized out as xml, its value is "umalqura".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("umalqura")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64356,7 +64358,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///gregorianUs.
         ///<para>When the item is serialized out as xml, its value is "gregorianUs".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("gregorianUs")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64364,7 +64366,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///gregorianMeFrench.
         ///<para>When the item is serialized out as xml, its value is "gregorianMeFrench".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("gregorianMeFrench")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64372,7 +64374,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///gregorianArabic.
         ///<para>When the item is serialized out as xml, its value is "gregorianArabic".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("gregorianArabic")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64380,7 +64382,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///none.
         ///<para>When the item is serialized out as xml, its value is "none".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("none")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64755,7 +64757,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///bahtText.
         ///<para>When the item is serialized out as xml, its value is "bahtText".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("bahtText")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64763,7 +64765,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///dollarText.
         ///<para>When the item is serialized out as xml, its value is "dollarText".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("dollarText")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64771,7 +64773,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///custom.
         ///<para>When the item is serialized out as xml, its value is "custom".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("custom")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64792,7 +64794,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///tb.
         ///<para>When the item is serialized out as xml, its value is "tb".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("tb")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64806,7 +64808,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///rl.
         ///<para>When the item is serialized out as xml, its value is "rl".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("rl")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64820,7 +64822,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///lr.
         ///<para>When the item is serialized out as xml, its value is "lr".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("lr")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64834,7 +64836,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///tbV.
         ///<para>When the item is serialized out as xml, its value is "tbV".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("tbV")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64848,7 +64850,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///rlV.
         ///<para>When the item is serialized out as xml, its value is "rlV".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("rlV")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64862,7 +64864,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///lrV.
         ///<para>When the item is serialized out as xml, its value is "lrV".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("lrV")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64883,7 +64885,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///custom.
         ///<para>When the item is serialized out as xml, its value is "custom".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("custom")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64904,7 +64906,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///custom.
         ///<para>When the item is serialized out as xml, its value is "custom".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("custom")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64931,7 +64933,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///custom.
         ///<para>When the item is serialized out as xml, its value is "custom".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("custom")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64952,7 +64954,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///start.
         ///<para>When the item is serialized out as xml, its value is "start".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("start")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -64972,7 +64974,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///end.
         ///<para>When the item is serialized out as xml, its value is "end".</para>
-        ///<para>This item is only available in Office2010.</para>
+        ///<para>This item is only available in Office 2010 and later.</para>
         ///</summary>
         [EnumString("end")]
         [OfficeAvailability(FileFormatVersions.Office2010)]
@@ -66469,7 +66471,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///useWord2013TrackBottomHyphenation.
         ///<para>When the item is serialized out as xml, its value is "useWord2013TrackBottomHyphenation".</para>
-        ///<para>This item is only available in Office2016.</para>
+        ///<para>This item is only available in Office 2016 and later.</para>
         ///</summary>
         [EnumString("useWord2013TrackBottomHyphenation")]
         [OfficeAvailability(FileFormatVersions.Office2016)]
@@ -66477,7 +66479,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///allowHyphenationAtTrackBottom.
         ///<para>When the item is serialized out as xml, its value is "allowHyphenationAtTrackBottom".</para>
-        ///<para>This item is only available in Office2016.</para>
+        ///<para>This item is only available in Office 2016 and later.</para>
         ///</summary>
         [EnumString("allowHyphenationAtTrackBottom")]
         [OfficeAvailability(FileFormatVersions.Office2016)]
@@ -66485,7 +66487,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         ///<summary>
         ///allowTextAfterFloatingTableBreak.
         ///<para>When the item is serialized out as xml, its value is "allowTextAfterFloatingTableBreak".</para>
-        ///<para>This item is only available in Office2013.</para>
+        ///<para>This item is only available in Office 2013 and later.</para>
         ///</summary>
         [EnumString("allowTextAfterFloatingTableBreak")]
         [OfficeAvailability(FileFormatVersions.Office2013)]

@@ -1,8 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-#nullable disable
-
 namespace DocumentFormat.OpenXml.Validation.Schema
 {
     /// <summary>
@@ -19,7 +17,10 @@ namespace DocumentFormat.OpenXml.Validation.Schema
         /// <param name="validationContext"></param>
         internal static void Validate(ValidationContext validationContext)
         {
-            AlternateContent acElement = (AlternateContent)validationContext.Stack.Current.Element;
+            if (validationContext.Stack.Current?.Element is not AlternateContent acElement)
+            {
+                return;
+            }
 
             // Validate MC attribute on AlternateContent
             ValidateMcAttributesOnAcb(validationContext, acElement);
@@ -34,9 +35,7 @@ namespace DocumentFormat.OpenXml.Validation.Schema
                 validationContext.AddError(errorInfo);
             }
 
-            OpenXmlElement child;
-
-            child = acElement.GetFirstNonMiscElementChild();
+            var child = acElement.GetFirstNonMiscElementChild();
 
             while (child is not null)
             {
@@ -162,12 +161,15 @@ namespace DocumentFormat.OpenXml.Validation.Schema
                     prefixes.InnerText = choice.Requires;
                     foreach (var prefix in prefixes.Items)
                     {
-                        var ignorableNamespace = choice.LookupNamespace(prefix);
-                        if (string.IsNullOrEmpty(ignorableNamespace))
+                        if (prefix.Value is not null)
                         {
-                            // report error, the prefix is not defined.
-                            errorInfo = validationContext.ComposeMcValidationError(choice, "MC_InvalidRequiresAttribute", choice.Requires);
-                            validationContext.AddError(errorInfo);
+                            var ignorableNamespace = choice.LookupNamespace(prefix.Value);
+                            if (string.IsNullOrEmpty(ignorableNamespace))
+                            {
+                                // report error, the prefix is not defined.
+                                errorInfo = validationContext.ComposeMcValidationError(choice, "MC_InvalidRequiresAttribute", choice.Requires);
+                                validationContext.AddError(errorInfo);
+                            }
                         }
                     }
                 }

@@ -1,8 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-#nullable disable
-
 using System.Diagnostics;
 
 namespace DocumentFormat.OpenXml.Validation.Schema
@@ -52,10 +50,7 @@ namespace DocumentFormat.OpenXml.Validation.Schema
         /// </summary>
         /// <param name="result"></param>
         /// <returns>True if there are required elements in this particle.</returns>
-        public virtual bool GetRequiredElements(ExpectedChildren result)
-        {
-            return false;
-        }
+        public virtual bool GetRequiredElements(ExpectedChildren? result) => false;
 
         /// <summary>
         /// Get the required elements - elements which minOccurs > 0.
@@ -95,8 +90,6 @@ namespace DocumentFormat.OpenXml.Validation.Schema
 
         internal static string GetExpectedChildrenMessage(OpenXmlElement parent, ExpectedChildren expectedChildrenIds)
         {
-            Debug.Assert(parent is not null);
-
             if (expectedChildrenIds is not null)
             {
                 return expectedChildrenIds.GetExpectedChildrenMessage(parent);

@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Framework.Metadata;
@@ -14,7 +16,7 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
 {
     /// <summary>
     /// <para>Defines the CustomXsn Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is ntns:customXsn.</para>
     /// </summary>
     /// <remark>
@@ -86,7 +88,7 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
         /// <remark>
         /// xmlns:ntns = http://schemas.microsoft.com/office/2006/metadata/customXsn
         /// </remark>
-        public XsnLocation XsnLocation
+        public XsnLocation? XsnLocation
         {
             get => GetElement<XsnLocation>();
             set => SetElement(value);
@@ -99,7 +101,7 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
         /// <remark>
         /// xmlns:ntns = http://schemas.microsoft.com/office/2006/metadata/customXsn
         /// </remark>
-        public CachedView CachedView
+        public CachedView? CachedView
         {
             get => GetElement<CachedView>();
             set => SetElement(value);
@@ -112,7 +114,7 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
         /// <remark>
         /// xmlns:ntns = http://schemas.microsoft.com/office/2006/metadata/customXsn
         /// </remark>
-        public OpenByDefault OpenByDefault
+        public OpenByDefault? OpenByDefault
         {
             get => GetElement<OpenByDefault>();
             set => SetElement(value);
@@ -125,7 +127,7 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
         /// <remark>
         /// xmlns:ntns = http://schemas.microsoft.com/office/2006/metadata/customXsn
         /// </remark>
-        public Scope Scope
+        public Scope? Scope
         {
             get => GetElement<Scope>();
             set => SetElement(value);
@@ -137,7 +139,7 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
 
     /// <summary>
     /// <para>Defines the XsnLocation Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is ntns:xsnLocation.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -177,7 +179,7 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
 
     /// <summary>
     /// <para>Defines the CachedView Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is ntns:cached.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -217,7 +219,7 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
 
     /// <summary>
     /// <para>Defines the OpenByDefault Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is ntns:openByDefault.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -257,7 +259,7 @@ namespace DocumentFormat.OpenXml.Office.CustomXsn
 
     /// <summary>
     /// <para>Defines the Scope Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is ntns:xsnScope.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete

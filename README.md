@@ -4,7 +4,6 @@ Open XML SDK
 [![NuGet](https://img.shields.io/nuget/v/DocumentFormat.OpenXml.svg)](https://www.nuget.org/packages/DocumentFormat.OpenXml)
 [![Downloads](https://img.shields.io/nuget/dt/DocumentFormat.OpenXml.svg)](https://www.nuget.org/packages/DocumentFormat.OpenXml)
 [![Build Status](https://office.visualstudio.com/OC/_apis/build/status/OpenXmlSdk/OfficeDev.Open-XML-SDK?branchName=master)](https://office.visualstudio.com/OC/_build/latest?definitionId=7420&branchName=master)
-[![MyGet](https://img.shields.io/dotnet.myget/open-xml-sdk/vpre/DocumentFormat.OpenXml.svg)](https://dotnet.myget.org/feed/open-xml-sdk/package/nuget/DocumentFormat.OpenXml)
 
 The Open XML SDK provides tools for working with Office Word, Excel, and PowerPoint documents. It supports scenarios such as:
 
@@ -49,7 +48,7 @@ If you want to report a problem (bug, behavior, build, distribution, feature req
 
 If you have "how-to" questions please post to one of the following resources:
 
-- [Open XML SDK forum](https://social.msdn.microsoft.com/Forums/office/en-US/home?forum=oxmlsdk)
+- [Microsoft Q&A Forums](https://docs.microsoft.com/en-us/answers/topics/office-addins-dev.html) (tag: **office-addins-dev**)
 - [Stack Overflow](http://stackoverflow.com) (tags: **openxml** or **openxml-sdk**)
 
 Known Issues
@@ -74,6 +73,8 @@ Related tools
 - **[Serialize.OpenXml.CodeGen](https://github.com/rmboggs/Serialize.OpenXml.CodeGen)**: This is a tool that converts an OpenXml document into the .NET code required to create it.
 - **[Html2OpenXml](https://github.com/onizet/html2openxml)**: This is a tool that takes HTML and converts it to an OpenXml document.
 - **[DocxToSource](https://github.com/rmboggs/DocxToSource)**: This is a tool designed to be a replacement for the old OpenXML SDK Productivity Tool.
+- **[OOXML Viewer](https://github.com/yuenm18/ooxml-viewer-vscode)**: This is an extension for Visual Studio Code to View and Edit the xml parts of an Office Open XML file and to view a diff with the previous version of an OOXML part when saved from an outside program. Search OOXML in the VS Code extensions tab or get it from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=yuenm18.ooxml-viewer)
+- **[ShapeCrawler](https://github.com/ShapeCrawler/ShapeCrawler)**: This library provides a simplified object model on top of the OpenXml SDK to manipulate PowerPoint documents.
 
 Code of Conduct
 ---------------

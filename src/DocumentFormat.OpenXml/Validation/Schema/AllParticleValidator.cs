@@ -1,8 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-#nullable disable
-
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -23,7 +21,6 @@ namespace DocumentFormat.OpenXml.Validation.Schema
         internal AllParticleValidator(CompositeParticle particleConstraint)
             : base(particleConstraint)
         {
-            Debug.Assert(particleConstraint is not null);
             Debug.Assert(particleConstraint.ParticleType == ParticleType.All);
 
             // xsd:all can only contain xsd:element children and maxOccurs of each children can only be 1
@@ -111,11 +108,6 @@ namespace DocumentFormat.OpenXml.Validation.Schema
                 next = validationContext.GetNextChildMc(next);
             }
 
-            if (particleMatchInfo.ExpectedChildren is null)
-            {
-                particleMatchInfo.InitExpectedChildren();
-            }
-
             if (particleMatchInfo.LastMatchedElement is null)
             {
                 Debug.Assert(next == particleMatchInfo.StartElement);
@@ -163,16 +155,20 @@ namespace DocumentFormat.OpenXml.Validation.Schema
 
         protected override void EmitInvalidElementError(ValidationContext validationContext, ParticleMatchInfo particleMatchInfo)
         {
-            var element = validationContext.Stack.Current.Element;
-            OpenXmlElement child;
+            var element = validationContext.Stack.Current?.Element;
 
-            if (particleMatchInfo.LastMatchedElement is null)
+            if (element is null)
             {
-                child = validationContext.GetFirstChildMc();
+                return;
             }
-            else
+
+            var child = particleMatchInfo.LastMatchedElement is null
+                ? validationContext.GetFirstChildMc()
+                : validationContext.GetNextChildMc(particleMatchInfo.LastMatchedElement);
+
+            if (child is null)
             {
-                child = validationContext.GetNextChildMc(particleMatchInfo.LastMatchedElement);
+                return;
             }
 
             string expectedChildren;
@@ -181,7 +177,7 @@ namespace DocumentFormat.OpenXml.Validation.Schema
             switch (particleMatchInfo.Match)
             {
                 case ParticleMatch.Nomatch:
-                    expectedChildren = GetExpectedChildrenMessage(validationContext.Stack.Current.Element, GetExpectedElements());
+                    expectedChildren = GetExpectedChildrenMessage(element, GetExpectedElements());
                     errorInfo = validationContext.ComposeSchemaValidationError(element, child, "Sch_InvalidElementContentExpectingComplex", child.XmlQualifiedName.ToString(), expectedChildren);
                     validationContext.AddError(errorInfo);
                     break;
@@ -196,7 +192,7 @@ namespace DocumentFormat.OpenXml.Validation.Schema
                     }
                     else
                     {
-                        expectedChildren = GetExpectedChildrenMessage(validationContext.Stack.Current.Element, particleMatchInfo.ExpectedChildren);
+                        expectedChildren = GetExpectedChildrenMessage(element, particleMatchInfo.ExpectedChildren);
                         errorInfo = validationContext.ComposeSchemaValidationError(element, child, "Sch_InvalidElementContentExpectingComplex", child.XmlQualifiedName.ToString(), expectedChildren);
                         validationContext.AddError(errorInfo);
                     }

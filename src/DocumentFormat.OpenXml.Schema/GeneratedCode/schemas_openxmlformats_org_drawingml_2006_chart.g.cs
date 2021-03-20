@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Drawing.ChartDrawing;
@@ -19,7 +21,7 @@ namespace DocumentFormat.OpenXml.Drawing.Charts
 {
     /// <summary>
     /// <para>Number Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:numFmt.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -44,7 +46,7 @@ namespace DocumentFormat.OpenXml.Drawing.Charts
         [SchemaAttr(0, "formatCode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue FormatCode
+        public StringValue? FormatCode
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -60,7 +62,7 @@ namespace DocumentFormat.OpenXml.Drawing.Charts
         [SchemaAttr(0, "sourceLinked")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue SourceLinked
+        public BooleanValue? SourceLinked
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -84,7 +86,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ChartShapeProperties Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:spPr.</para>
     /// </summary>
     /// <remark>
@@ -152,7 +154,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "bwMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> BlackWhiteMode
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? BlackWhiteMode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
@@ -222,7 +224,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Transform2D Transform2D
+        public DocumentFormat.OpenXml.Drawing.Transform2D? Transform2D
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Transform2D>();
             set => SetElement(value);
@@ -234,7 +236,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the TextProperties Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:txPr.</para>
     /// </summary>
     /// <remark>
@@ -299,7 +301,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Rich Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:rich.</para>
     /// </summary>
     /// <remark>
@@ -364,7 +366,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the TextBodyType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -423,7 +425,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.BodyProperties BodyProperties
+        public DocumentFormat.OpenXml.Drawing.BodyProperties? BodyProperties
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.BodyProperties>();
             set => SetElement(value);
@@ -436,7 +438,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.ListStyle ListStyle
+        public DocumentFormat.OpenXml.Drawing.ListStyle? ListStyle
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.ListStyle>();
             set => SetElement(value);
@@ -445,7 +447,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Data Label Position.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dLblPos.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -470,7 +472,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.DataLabelPositionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.DataLabelPositionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.DataLabelPositionValues>>();
             set => SetAttribute(value);
@@ -493,7 +495,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Legend Key.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showLegendKey.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -520,7 +522,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Value.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showVal.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -547,7 +549,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Category Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showCatName.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -574,7 +576,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Series Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showSerName.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -601,7 +603,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Percent.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showPercent.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -628,7 +630,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Bubble Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showBubbleSize.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -655,7 +657,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Leader Lines.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showLeaderLines.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -682,7 +684,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the VaryColors Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:varyColors.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -709,7 +711,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Wireframe.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:wireframe.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -736,7 +738,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Delete.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:delete.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -763,7 +765,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Overlay.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:overlay.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -790,7 +792,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Right Angle Axes.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:rAngAx.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -817,7 +819,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Horizontal Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showHorzBorder.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -844,7 +846,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Vertical Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showVertBorder.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -871,7 +873,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Outline Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showOutline.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -898,7 +900,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Legend Keys.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showKeys.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -925,7 +927,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Invert if Negative.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:invertIfNegative.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -952,7 +954,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>3D Bubble.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:bubble3D.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -979,7 +981,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Display R Squared Value.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dispRSqr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1006,7 +1008,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Display Equation.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dispEq.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1033,7 +1035,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>No End Cap.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:noEndCap.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1060,7 +1062,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Apply To Front.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:applyToFront.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1087,7 +1089,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Apply To Sides.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:applyToSides.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1114,7 +1116,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Apply to End.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:applyToEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1141,7 +1143,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Auto Title Is Deleted.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:autoTitleDeleted.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1168,7 +1170,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Plot Visible Only.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:plotVisOnly.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1195,7 +1197,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Show Data Labels over Maximum.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showDLblsOverMax.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1222,7 +1224,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Chart Object.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:chartObject.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1249,7 +1251,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Data Cannot Be Changed.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:data.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1276,7 +1278,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Formatting.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:formatting.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1303,7 +1305,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Selection.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:selection.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1330,7 +1332,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>User Interface.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:userInterface.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1357,7 +1359,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Update Automatically.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:autoUpdate.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1384,7 +1386,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Smooth Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:smooth.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1411,7 +1413,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ShowMarker Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:marker.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1438,7 +1440,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ShowNegativeBubbles Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:showNegBubbles.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1465,7 +1467,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the AutoLabeled Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:auto.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1492,7 +1494,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the NoMultiLevelLabels Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:noMultiLvlLbl.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1519,7 +1521,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Date1904 Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:date1904.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1546,7 +1548,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RoundedCorners Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:roundedCorners.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1573,7 +1575,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the BooleanType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class BooleanType : OpenXmlLeafElement
@@ -1595,7 +1597,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Val
+        public BooleanValue? Val
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -1611,7 +1613,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Separator.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:separator.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1651,7 +1653,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Trendline Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:name.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1691,7 +1693,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Formula Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:f.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1731,7 +1733,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Layout.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:layout.</para>
     /// </summary>
     /// <remark>
@@ -1797,7 +1799,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ManualLayout ManualLayout
+        public ManualLayout? ManualLayout
         {
             get => GetElement<ManualLayout>();
             set => SetElement(value);
@@ -1810,7 +1812,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -1822,7 +1824,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ChartText Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:tx.</para>
     /// </summary>
     /// <remark>
@@ -1894,7 +1896,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public StringReference StringReference
+        public StringReference? StringReference
         {
             get => GetElement<StringReference>();
             set => SetElement(value);
@@ -1907,7 +1909,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public RichText RichText
+        public RichText? RichText
         {
             get => GetElement<RichText>();
             set => SetElement(value);
@@ -1920,7 +1922,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public StringLiteral StringLiteral
+        public StringLiteral? StringLiteral
         {
             get => GetElement<StringLiteral>();
             set => SetElement(value);
@@ -1932,7 +1934,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Leader Lines.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:leaderLines.</para>
     /// </summary>
     /// <remark>
@@ -1993,7 +1995,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Drop Lines.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dropLines.</para>
     /// </summary>
     /// <remark>
@@ -2054,7 +2056,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Major Gridlines.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:majorGridlines.</para>
     /// </summary>
     /// <remark>
@@ -2115,7 +2117,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Minor Gridlines.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:minorGridlines.</para>
     /// </summary>
     /// <remark>
@@ -2176,7 +2178,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SeriesLines Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:serLines.</para>
     /// </summary>
     /// <remark>
@@ -2237,7 +2239,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the HighLowLines Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:hiLowLines.</para>
     /// </summary>
     /// <remark>
@@ -2298,7 +2300,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ChartLinesType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -2353,7 +2355,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -2362,7 +2364,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Index.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:idx.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2390,7 +2392,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Order.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:order.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2418,7 +2420,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Axis ID.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:axId.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2446,7 +2448,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Crossing Axis ID.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:crossAx.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2474,7 +2476,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Point Count.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ptCount.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2502,7 +2504,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Second Pie Point.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:secondPiePt.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2530,7 +2532,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Explosion.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:explosion.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2558,7 +2560,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Format ID.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:fmtId.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2586,7 +2588,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the UnsignedIntegerType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class UnsignedIntegerType : OpenXmlLeafElement
@@ -2608,7 +2610,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -2627,7 +2629,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Series Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:tx.</para>
     /// </summary>
     /// <remark>
@@ -2696,7 +2698,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public StringReference StringReference
+        public StringReference? StringReference
         {
             get => GetElement<StringReference>();
             set => SetElement(value);
@@ -2709,7 +2711,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumericValue NumericValue
+        public NumericValue? NumericValue
         {
             get => GetElement<NumericValue>();
             set => SetElement(value);
@@ -2721,7 +2723,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Grouping.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:grouping.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2746,7 +2748,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.GroupingValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.GroupingValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.GroupingValues>>();
             set => SetAttribute(value);
@@ -2766,7 +2768,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the LineChartSeries Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ser.</para>
     /// </summary>
     /// <remark>
@@ -2874,7 +2876,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -2887,7 +2889,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Order Order
+        public Order? Order
         {
             get => GetElement<Order>();
             set => SetElement(value);
@@ -2900,7 +2902,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SeriesText SeriesText
+        public SeriesText? SeriesText
         {
             get => GetElement<SeriesText>();
             set => SetElement(value);
@@ -2913,7 +2915,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -2926,7 +2928,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Marker Marker
+        public Marker? Marker
         {
             get => GetElement<Marker>();
             set => SetElement(value);
@@ -2939,7 +2941,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureOptions PictureOptions
+        public PictureOptions? PictureOptions
         {
             get => GetElement<PictureOptions>();
             set => SetElement(value);
@@ -2951,7 +2953,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Data Labels.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dLbls.</para>
     /// </summary>
     /// <remark>
@@ -3073,7 +3075,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Bar Direction.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:barDir.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3098,7 +3100,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.BarDirectionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.BarDirectionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.BarDirectionValues>>();
             set => SetAttribute(value);
@@ -3121,7 +3123,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Bar Grouping.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:grouping.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3146,7 +3148,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.BarGroupingValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.BarGroupingValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.BarGroupingValues>>();
             set => SetAttribute(value);
@@ -3166,7 +3168,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Bar Chart Series.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ser.</para>
     /// </summary>
     /// <remark>
@@ -3274,7 +3276,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -3287,7 +3289,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Order Order
+        public Order? Order
         {
             get => GetElement<Order>();
             set => SetElement(value);
@@ -3300,7 +3302,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SeriesText SeriesText
+        public SeriesText? SeriesText
         {
             get => GetElement<SeriesText>();
             set => SetElement(value);
@@ -3313,7 +3315,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -3326,7 +3328,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public InvertIfNegative InvertIfNegative
+        public InvertIfNegative? InvertIfNegative
         {
             get => GetElement<InvertIfNegative>();
             set => SetElement(value);
@@ -3339,7 +3341,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureOptions PictureOptions
+        public PictureOptions? PictureOptions
         {
             get => GetElement<PictureOptions>();
             set => SetElement(value);
@@ -3351,7 +3353,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Area Chart Series.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ser.</para>
     /// </summary>
     /// <remark>
@@ -3453,7 +3455,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -3466,7 +3468,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Order Order
+        public Order? Order
         {
             get => GetElement<Order>();
             set => SetElement(value);
@@ -3479,7 +3481,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SeriesText SeriesText
+        public SeriesText? SeriesText
         {
             get => GetElement<SeriesText>();
             set => SetElement(value);
@@ -3492,7 +3494,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -3505,7 +3507,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureOptions PictureOptions
+        public PictureOptions? PictureOptions
         {
             get => GetElement<PictureOptions>();
             set => SetElement(value);
@@ -3517,7 +3519,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Pie Chart Series.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ser.</para>
     /// </summary>
     /// <remark>
@@ -3616,7 +3618,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -3629,7 +3631,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Order Order
+        public Order? Order
         {
             get => GetElement<Order>();
             set => SetElement(value);
@@ -3642,7 +3644,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SeriesText SeriesText
+        public SeriesText? SeriesText
         {
             get => GetElement<SeriesText>();
             set => SetElement(value);
@@ -3655,7 +3657,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -3668,7 +3670,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureOptions PictureOptions
+        public PictureOptions? PictureOptions
         {
             get => GetElement<PictureOptions>();
             set => SetElement(value);
@@ -3681,7 +3683,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Explosion Explosion
+        public Explosion? Explosion
         {
             get => GetElement<Explosion>();
             set => SetElement(value);
@@ -3693,7 +3695,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Surface Chart Series.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ser.</para>
     /// </summary>
     /// <remark>
@@ -3786,7 +3788,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -3799,7 +3801,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Order Order
+        public Order? Order
         {
             get => GetElement<Order>();
             set => SetElement(value);
@@ -3812,7 +3814,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SeriesText SeriesText
+        public SeriesText? SeriesText
         {
             get => GetElement<SeriesText>();
             set => SetElement(value);
@@ -3825,7 +3827,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -3838,7 +3840,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureOptions PictureOptions
+        public PictureOptions? PictureOptions
         {
             get => GetElement<PictureOptions>();
             set => SetElement(value);
@@ -3851,7 +3853,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public CategoryAxisData CategoryAxisData
+        public CategoryAxisData? CategoryAxisData
         {
             get => GetElement<CategoryAxisData>();
             set => SetElement(value);
@@ -3864,7 +3866,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Values Values
+        public Values? Values
         {
             get => GetElement<Values>();
             set => SetElement(value);
@@ -3877,7 +3879,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Bubble3D Bubble3D
+        public Bubble3D? Bubble3D
         {
             get => GetElement<Bubble3D>();
             set => SetElement(value);
@@ -3890,7 +3892,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SurfaceSerExtensionList SurfaceSerExtensionList
+        public SurfaceSerExtensionList? SurfaceSerExtensionList
         {
             get => GetElement<SurfaceSerExtensionList>();
             set => SetElement(value);
@@ -3902,7 +3904,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Band Formats.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:bandFmts.</para>
     /// </summary>
     /// <remark>
@@ -3964,7 +3966,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Scaling.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:scaling.</para>
     /// </summary>
     /// <remark>
@@ -4039,7 +4041,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public LogBase LogBase
+        public LogBase? LogBase
         {
             get => GetElement<LogBase>();
             set => SetElement(value);
@@ -4052,7 +4054,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Orientation Orientation
+        public Orientation? Orientation
         {
             get => GetElement<Orientation>();
             set => SetElement(value);
@@ -4065,7 +4067,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MaxAxisValue MaxAxisValue
+        public MaxAxisValue? MaxAxisValue
         {
             get => GetElement<MaxAxisValue>();
             set => SetElement(value);
@@ -4078,7 +4080,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MinAxisValue MinAxisValue
+        public MinAxisValue? MinAxisValue
         {
             get => GetElement<MinAxisValue>();
             set => SetElement(value);
@@ -4091,7 +4093,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -4103,7 +4105,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Axis Position.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:axPos.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4128,7 +4130,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.AxisPositionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.AxisPositionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.AxisPositionValues>>();
             set => SetAttribute(value);
@@ -4151,7 +4153,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Title.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:title.</para>
     /// </summary>
     /// <remark>
@@ -4229,7 +4231,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartText ChartText
+        public ChartText? ChartText
         {
             get => GetElement<ChartText>();
             set => SetElement(value);
@@ -4242,7 +4244,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Layout Layout
+        public Layout? Layout
         {
             get => GetElement<Layout>();
             set => SetElement(value);
@@ -4255,7 +4257,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Overlay Overlay
+        public Overlay? Overlay
         {
             get => GetElement<Overlay>();
             set => SetElement(value);
@@ -4268,7 +4270,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -4281,7 +4283,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TextProperties TextProperties
+        public TextProperties? TextProperties
         {
             get => GetElement<TextProperties>();
             set => SetElement(value);
@@ -4294,7 +4296,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -4306,7 +4308,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Major Tick Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:majorTickMark.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4333,7 +4335,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Minor Tick Mark.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:minorTickMark.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4360,7 +4362,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TickMarkType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TickMarkType : OpenXmlLeafElement
@@ -4382,7 +4384,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TickMarkValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TickMarkValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TickMarkValues>>();
             set => SetAttribute(value);
@@ -4398,7 +4400,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Tick Label Position.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:tickLblPos.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4423,7 +4425,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TickLabelPositionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TickLabelPositionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TickLabelPositionValues>>();
             set => SetAttribute(value);
@@ -4443,7 +4445,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Crosses.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:crosses.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4468,7 +4470,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.CrossesValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.CrossesValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.CrossesValues>>();
             set => SetAttribute(value);
@@ -4491,7 +4493,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Crossing Value.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:crossesAt.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4519,7 +4521,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Left.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:x.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4546,7 +4548,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Top.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:y.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4573,7 +4575,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Width.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:w.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4600,7 +4602,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Height.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:h.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4627,7 +4629,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Forward.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:forward.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4656,7 +4658,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Backward.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:backward.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4684,7 +4686,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Intercept.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:intercept.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4711,7 +4713,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Error Bar Value.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:val.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4738,7 +4740,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Split Position.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:splitPos.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4766,7 +4768,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Custom Display Unit.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:custUnit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4794,7 +4796,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Maximum.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:max.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4821,7 +4823,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Minimum.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:min.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4848,7 +4850,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DoubleType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class DoubleType : OpenXmlLeafElement
@@ -4870,7 +4872,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Val
+        public DoubleValue? Val
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -4889,7 +4891,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Chart Space.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:chartSpace.</para>
     /// </summary>
     /// <remark>
@@ -4997,7 +4999,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Date1904 Date1904
+        public Date1904? Date1904
         {
             get => GetElement<Date1904>();
             set => SetElement(value);
@@ -5010,7 +5012,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public EditingLanguage EditingLanguage
+        public EditingLanguage? EditingLanguage
         {
             get => GetElement<EditingLanguage>();
             set => SetElement(value);
@@ -5023,7 +5025,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public RoundedCorners RoundedCorners
+        public RoundedCorners? RoundedCorners
         {
             get => GetElement<RoundedCorners>();
             set => SetElement(value);
@@ -5057,7 +5059,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the ChartPart associated with this element.
         /// </summary>
-        public ChartPart ChartPart
+        public ChartPart? ChartPart
         {
             get => OpenXmlPart as ChartPart;
             internal set => OpenXmlPart = value;
@@ -5066,7 +5068,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>User Shapes.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:userShapes.</para>
     /// </summary>
     /// <remark>
@@ -5159,7 +5161,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the ChartDrawingPart associated with this element.
         /// </summary>
-        public ChartDrawingPart ChartDrawingPart
+        public ChartDrawingPart? ChartDrawingPart
         {
             get => OpenXmlPart as ChartDrawingPart;
             internal set => OpenXmlPart = value;
@@ -5168,7 +5170,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Reference to Chart Part.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:chart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5196,7 +5198,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Legacy Drawing for Headers and Footers.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:legacyDrawingHF.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5223,7 +5225,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the UserShapesReference Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:userShapes.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5250,7 +5252,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RelationshipIdType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class RelationshipIdType : OpenXmlLeafElement
@@ -5275,7 +5277,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -5294,7 +5296,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Extension.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5343,7 +5345,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -5370,7 +5372,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Numeric Value.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:v.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5410,7 +5412,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Format Code.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:formatCode.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5450,7 +5452,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Odd Header.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:oddHeader.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5490,7 +5492,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Odd Footer.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:oddFooter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5530,7 +5532,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Even Header.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:evenHeader.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5570,7 +5572,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Even Footer.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:evenFooter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5610,7 +5612,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>First Header.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:firstHeader.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5650,7 +5652,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>First Footer.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:firstFooter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5690,7 +5692,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Pivot Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:name.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5730,7 +5732,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Numeric Point.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pt.</para>
     /// </summary>
     /// <remark>
@@ -5785,7 +5787,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "idx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Index
+        public UInt32Value? Index
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -5801,7 +5803,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "formatCode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue FormatCode
+        public StringValue? FormatCode
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -5832,7 +5834,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumericValue NumericValue
+        public NumericValue? NumericValue
         {
             get => GetElement<NumericValue>();
             set => SetElement(value);
@@ -5844,7 +5846,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -5906,7 +5908,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Number Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:numRef.</para>
     /// </summary>
     /// <remark>
@@ -5975,7 +5977,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Formula Formula
+        public Formula? Formula
         {
             get => GetElement<Formula>();
             set => SetElement(value);
@@ -5988,7 +5990,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberingCache NumberingCache
+        public NumberingCache? NumberingCache
         {
             get => GetElement<NumberingCache>();
             set => SetElement(value);
@@ -6001,7 +6003,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumRefExtensionList NumRefExtensionList
+        public NumRefExtensionList? NumRefExtensionList
         {
             get => GetElement<NumRefExtensionList>();
             set => SetElement(value);
@@ -6013,7 +6015,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Number Literal.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:numLit.</para>
     /// </summary>
     /// <remark>
@@ -6080,7 +6082,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the NumberingCache Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:numCache.</para>
     /// </summary>
     /// <remark>
@@ -6147,7 +6149,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the NumberDataType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -6208,7 +6210,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public FormatCode FormatCode
+        public FormatCode? FormatCode
         {
             get => GetElement<FormatCode>();
             set => SetElement(value);
@@ -6221,7 +6223,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PointCount PointCount
+        public PointCount? PointCount
         {
             get => GetElement<PointCount>();
             set => SetElement(value);
@@ -6230,7 +6232,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Level.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:lvl.</para>
     /// </summary>
     /// <remark>
@@ -6292,7 +6294,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Multi Level String Reference.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:multiLvlStrRef.</para>
     /// </summary>
     /// <remark>
@@ -6361,7 +6363,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Formula Formula
+        public Formula? Formula
         {
             get => GetElement<Formula>();
             set => SetElement(value);
@@ -6374,7 +6376,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MultiLevelStringCache MultiLevelStringCache
+        public MultiLevelStringCache? MultiLevelStringCache
         {
             get => GetElement<MultiLevelStringCache>();
             set => SetElement(value);
@@ -6387,7 +6389,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MultiLvlStrRefExtensionList MultiLvlStrRefExtensionList
+        public MultiLvlStrRefExtensionList? MultiLvlStrRefExtensionList
         {
             get => GetElement<MultiLvlStrRefExtensionList>();
             set => SetElement(value);
@@ -6399,7 +6401,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the StringReference Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:strRef.</para>
     /// </summary>
     /// <remark>
@@ -6468,7 +6470,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Formula Formula
+        public Formula? Formula
         {
             get => GetElement<Formula>();
             set => SetElement(value);
@@ -6481,7 +6483,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public StringCache StringCache
+        public StringCache? StringCache
         {
             get => GetElement<StringCache>();
             set => SetElement(value);
@@ -6494,7 +6496,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public StrRefExtensionList StrRefExtensionList
+        public StrRefExtensionList? StrRefExtensionList
         {
             get => GetElement<StrRefExtensionList>();
             set => SetElement(value);
@@ -6506,7 +6508,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>String Literal.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:strLit.</para>
     /// </summary>
     /// <remark>
@@ -6571,7 +6573,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the StringCache Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:strCache.</para>
     /// </summary>
     /// <remark>
@@ -6636,7 +6638,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the StringDataType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -6695,7 +6697,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PointCount PointCount
+        public PointCount? PointCount
         {
             get => GetElement<PointCount>();
             set => SetElement(value);
@@ -6704,7 +6706,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Layout Target.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:layoutTarget.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6729,7 +6731,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LayoutTargetValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LayoutTargetValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LayoutTargetValues>>();
             set => SetAttribute(value);
@@ -6749,7 +6751,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Left Mode.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:xMode.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6776,7 +6778,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Top Mode.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:yMode.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6803,7 +6805,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Width Mode.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:wMode.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6830,7 +6832,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Height Mode.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:hMode.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6857,7 +6859,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the LayoutModeType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class LayoutModeType : OpenXmlLeafElement
@@ -6879,7 +6881,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LayoutModeValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LayoutModeValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LayoutModeValues>>();
             set => SetAttribute(value);
@@ -6895,7 +6897,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Manual Layout.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:manualLayout.</para>
     /// </summary>
     /// <remark>
@@ -6985,7 +6987,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public LayoutTarget LayoutTarget
+        public LayoutTarget? LayoutTarget
         {
             get => GetElement<LayoutTarget>();
             set => SetElement(value);
@@ -6998,7 +7000,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public LeftMode LeftMode
+        public LeftMode? LeftMode
         {
             get => GetElement<LeftMode>();
             set => SetElement(value);
@@ -7011,7 +7013,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TopMode TopMode
+        public TopMode? TopMode
         {
             get => GetElement<TopMode>();
             set => SetElement(value);
@@ -7024,7 +7026,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public WidthMode WidthMode
+        public WidthMode? WidthMode
         {
             get => GetElement<WidthMode>();
             set => SetElement(value);
@@ -7037,7 +7039,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public HeightMode HeightMode
+        public HeightMode? HeightMode
         {
             get => GetElement<HeightMode>();
             set => SetElement(value);
@@ -7050,7 +7052,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Left Left
+        public Left? Left
         {
             get => GetElement<Left>();
             set => SetElement(value);
@@ -7063,7 +7065,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Top Top
+        public Top? Top
         {
             get => GetElement<Top>();
             set => SetElement(value);
@@ -7076,7 +7078,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Width Width
+        public Width? Width
         {
             get => GetElement<Width>();
             set => SetElement(value);
@@ -7089,7 +7091,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Height Height
+        public Height? Height
         {
             get => GetElement<Height>();
             set => SetElement(value);
@@ -7102,7 +7104,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -7114,7 +7116,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>X Rotation.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:rotX.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7139,7 +7141,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public SByteValue Val
+        public SByteValue? Val
         {
             get => GetAttribute<SByteValue>();
             set => SetAttribute(value);
@@ -7162,7 +7164,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Height Percent.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:hPercent.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7187,7 +7189,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -7210,7 +7212,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (5L), MaxInclusive 
 
     /// <summary>
     /// <para>Y Rotation.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:rotY.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7235,7 +7237,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (5L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -7258,7 +7260,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (5L), MaxInclusive 
 
     /// <summary>
     /// <para>Depth Percent.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:depthPercent.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7283,7 +7285,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (5L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -7306,7 +7308,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (20L), MaxInclusive
 
     /// <summary>
     /// <para>Perspective.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:perspective.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7331,7 +7333,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (20L), MaxInclusive
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue Val
+        public ByteValue? Val
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -7354,7 +7356,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Symbol.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:symbol.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7379,7 +7381,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.MarkerStyleValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.MarkerStyleValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.MarkerStyleValues>>();
             set => SetAttribute(value);
@@ -7402,7 +7404,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:size.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7427,7 +7429,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue Val
+        public ByteValue? Val
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -7450,7 +7452,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Marker.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:marker.</para>
     /// </summary>
     /// <remark>
@@ -7522,7 +7524,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Symbol Symbol
+        public Symbol? Symbol
         {
             get => GetElement<Symbol>();
             set => SetElement(value);
@@ -7535,7 +7537,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Size Size
+        public Size? Size
         {
             get => GetElement<Size>();
             set => SetElement(value);
@@ -7548,7 +7550,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -7561,7 +7563,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -7573,7 +7575,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the PictureOptions Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pictureOptions.</para>
     /// </summary>
     /// <remark>
@@ -7648,7 +7650,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ApplyToFront ApplyToFront
+        public ApplyToFront? ApplyToFront
         {
             get => GetElement<ApplyToFront>();
             set => SetElement(value);
@@ -7661,7 +7663,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ApplyToSides ApplyToSides
+        public ApplyToSides? ApplyToSides
         {
             get => GetElement<ApplyToSides>();
             set => SetElement(value);
@@ -7674,7 +7676,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ApplyToEnd ApplyToEnd
+        public ApplyToEnd? ApplyToEnd
         {
             get => GetElement<ApplyToEnd>();
             set => SetElement(value);
@@ -7687,7 +7689,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureFormat PictureFormat
+        public PictureFormat? PictureFormat
         {
             get => GetElement<PictureFormat>();
             set => SetElement(value);
@@ -7700,7 +7702,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureStackUnit PictureStackUnit
+        public PictureStackUnit? PictureStackUnit
         {
             get => GetElement<PictureStackUnit>();
             set => SetElement(value);
@@ -7712,7 +7714,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Trendline Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:trendlineType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7737,7 +7739,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TrendlineValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TrendlineValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TrendlineValues>>();
             set => SetAttribute(value);
@@ -7757,7 +7759,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Polynomial Trendline Order.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:order.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7782,7 +7784,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue Val
+        public ByteValue? Val
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -7806,7 +7808,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Period.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:period.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7831,7 +7833,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -7855,7 +7857,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L) });
 
     /// <summary>
     /// <para>Trendline Label.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:trendlineLbl.</para>
     /// </summary>
     /// <remark>
@@ -7933,7 +7935,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Layout Layout
+        public Layout? Layout
         {
             get => GetElement<Layout>();
             set => SetElement(value);
@@ -7946,7 +7948,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartText ChartText
+        public ChartText? ChartText
         {
             get => GetElement<ChartText>();
             set => SetElement(value);
@@ -7959,7 +7961,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -7972,7 +7974,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -7985,7 +7987,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TextProperties TextProperties
+        public TextProperties? TextProperties
         {
             get => GetElement<TextProperties>();
             set => SetElement(value);
@@ -7998,7 +8000,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -8010,7 +8012,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L) });
 
     /// <summary>
     /// <para>Error Bar Direction.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:errDir.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8035,7 +8037,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ErrorBarDirectionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ErrorBarDirectionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ErrorBarDirectionValues>>();
             set => SetAttribute(value);
@@ -8058,7 +8060,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Error Bar Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:errBarType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8083,7 +8085,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ErrorBarValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ErrorBarValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ErrorBarValues>>();
             set => SetAttribute(value);
@@ -8106,7 +8108,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Error Bar Value Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:errValType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8131,7 +8133,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ErrorValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ErrorValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ErrorValues>>();
             set => SetAttribute(value);
@@ -8154,7 +8156,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Plus.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:plus.</para>
     /// </summary>
     /// <remark>
@@ -8220,7 +8222,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Minus.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:minus.</para>
     /// </summary>
     /// <remark>
@@ -8286,7 +8288,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Values Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:val.</para>
     /// </summary>
     /// <remark>
@@ -8352,7 +8354,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the YValues Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:yVal.</para>
     /// </summary>
     /// <remark>
@@ -8418,7 +8420,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the BubbleSize Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:bubbleSize.</para>
     /// </summary>
     /// <remark>
@@ -8484,7 +8486,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the NumberDataSourceType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -8541,7 +8543,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberReference NumberReference
+        public NumberReference? NumberReference
         {
             get => GetElement<NumberReference>();
             set => SetElement(value);
@@ -8554,7 +8556,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberLiteral NumberLiteral
+        public NumberLiteral? NumberLiteral
         {
             get => GetElement<NumberLiteral>();
             set => SetElement(value);
@@ -8563,7 +8565,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Gap Width.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:gapWidth.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8590,7 +8592,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the GapDepth Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:gapDepth.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8617,7 +8619,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the GapAmountType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class GapAmountType : OpenXmlLeafElement
@@ -8639,7 +8641,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -8658,7 +8660,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Up Bars.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:upBars.</para>
     /// </summary>
     /// <remark>
@@ -8719,7 +8721,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Down Bars.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:downBars.</para>
     /// </summary>
     /// <remark>
@@ -8780,7 +8782,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the UpDownBarType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -8835,7 +8837,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -8844,7 +8846,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Pie of Pie or Bar of Pie Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ofPieType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8869,7 +8871,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.OfPieValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.OfPieValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.OfPieValues>>();
             set => SetAttribute(value);
@@ -8892,7 +8894,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Split Type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:splitType.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8917,7 +8919,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.SplitValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.SplitValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.SplitValues>>();
             set => SetAttribute(value);
@@ -8940,7 +8942,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Custom Split.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:custSplit.</para>
     /// </summary>
     /// <remark>
@@ -9002,7 +9004,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Second Pie Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:secondPieSize.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9027,7 +9029,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -9050,7 +9052,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (5L), MaxInclusive 
 
     /// <summary>
     /// <para>Band Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:bandFmt.</para>
     /// </summary>
     /// <remark>
@@ -9116,7 +9118,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (5L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -9129,7 +9131,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (5L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -9141,7 +9143,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (5L), MaxInclusive 
 
     /// <summary>
     /// <para>Picture Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pictureFormat.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9166,7 +9168,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (5L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.PictureFormatValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.PictureFormatValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.PictureFormatValues>>();
             set => SetAttribute(value);
@@ -9189,7 +9191,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Picture Stack Unit.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pictureStackUnit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9214,7 +9216,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Val
+        public DoubleValue? Val
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -9238,7 +9240,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Built in Display Unit Value.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:builtInUnit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9263,7 +9265,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.BuiltInUnitValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.BuiltInUnitValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.BuiltInUnitValues>>();
             set => SetAttribute(value);
@@ -9283,7 +9285,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Display Units Label.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dispUnitsLbl.</para>
     /// </summary>
     /// <remark>
@@ -9355,7 +9357,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Layout Layout
+        public Layout? Layout
         {
             get => GetElement<Layout>();
             set => SetElement(value);
@@ -9368,7 +9370,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartText ChartText
+        public ChartText? ChartText
         {
             get => GetElement<ChartText>();
             set => SetElement(value);
@@ -9381,7 +9383,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -9394,7 +9396,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TextProperties TextProperties
+        public TextProperties? TextProperties
         {
             get => GetElement<TextProperties>();
             set => SetElement(value);
@@ -9406,7 +9408,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Logarithmic Base.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:logBase.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9431,7 +9433,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Val
+        public DoubleValue? Val
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -9455,7 +9457,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Axis Orientation.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:orientation.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9480,7 +9482,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.OrientationValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.OrientationValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.OrientationValues>>();
             set => SetAttribute(value);
@@ -9500,7 +9502,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Pivot Format.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pivotFmt.</para>
     /// </summary>
     /// <remark>
@@ -9575,7 +9577,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -9588,7 +9590,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ShapeProperties ShapeProperties
+        public ShapeProperties? ShapeProperties
         {
             get => GetElement<ShapeProperties>();
             set => SetElement(value);
@@ -9601,7 +9603,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Marker Marker
+        public Marker? Marker
         {
             get => GetElement<Marker>();
             set => SetElement(value);
@@ -9614,7 +9616,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DataLabel DataLabel
+        public DataLabel? DataLabel
         {
             get => GetElement<DataLabel>();
             set => SetElement(value);
@@ -9627,7 +9629,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -9639,7 +9641,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Legend Position.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:legendPos.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9664,7 +9666,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LegendPositionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LegendPositionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LegendPositionValues>>();
             set => SetAttribute(value);
@@ -9684,7 +9686,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Legend Entry.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:legendEntry.</para>
     /// </summary>
     /// <remark>
@@ -9765,7 +9767,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -9777,7 +9779,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Pivot Formats.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pivotFmts.</para>
     /// </summary>
     /// <remark>
@@ -9839,7 +9841,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>View In 3D.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:view3D.</para>
     /// </summary>
     /// <remark>
@@ -9920,7 +9922,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public RotateX RotateX
+        public RotateX? RotateX
         {
             get => GetElement<RotateX>();
             set => SetElement(value);
@@ -9933,7 +9935,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public HeightPercent HeightPercent
+        public HeightPercent? HeightPercent
         {
             get => GetElement<HeightPercent>();
             set => SetElement(value);
@@ -9946,7 +9948,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public RotateY RotateY
+        public RotateY? RotateY
         {
             get => GetElement<RotateY>();
             set => SetElement(value);
@@ -9959,7 +9961,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DepthPercent DepthPercent
+        public DepthPercent? DepthPercent
         {
             get => GetElement<DepthPercent>();
             set => SetElement(value);
@@ -9972,7 +9974,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public RightAngleAxes RightAngleAxes
+        public RightAngleAxes? RightAngleAxes
         {
             get => GetElement<RightAngleAxes>();
             set => SetElement(value);
@@ -9985,7 +9987,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Perspective Perspective
+        public Perspective? Perspective
         {
             get => GetElement<Perspective>();
             set => SetElement(value);
@@ -9998,7 +10000,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -10010,7 +10012,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Floor.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:floor.</para>
     /// </summary>
     /// <remark>
@@ -10077,7 +10079,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Side Wall.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:sideWall.</para>
     /// </summary>
     /// <remark>
@@ -10144,7 +10146,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Back Wall.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:backWall.</para>
     /// </summary>
     /// <remark>
@@ -10211,7 +10213,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the SurfaceType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -10272,7 +10274,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Thickness Thickness
+        public Thickness? Thickness
         {
             get => GetElement<Thickness>();
             set => SetElement(value);
@@ -10285,7 +10287,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ShapeProperties ShapeProperties
+        public ShapeProperties? ShapeProperties
         {
             get => GetElement<ShapeProperties>();
             set => SetElement(value);
@@ -10298,7 +10300,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureOptions PictureOptions
+        public PictureOptions? PictureOptions
         {
             get => GetElement<PictureOptions>();
             set => SetElement(value);
@@ -10311,7 +10313,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -10320,7 +10322,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Plot Area.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:plotArea.</para>
     /// </summary>
     /// <remark>
@@ -10458,7 +10460,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Layout Layout
+        public Layout? Layout
         {
             get => GetElement<Layout>();
             set => SetElement(value);
@@ -10470,7 +10472,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Legend.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:legend.</para>
     /// </summary>
     /// <remark>
@@ -10551,7 +10553,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public LegendPosition LegendPosition
+        public LegendPosition? LegendPosition
         {
             get => GetElement<LegendPosition>();
             set => SetElement(value);
@@ -10563,7 +10565,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Display Blanks As.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dispBlanksAs.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10588,7 +10590,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.DisplayBlanksAsValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.DisplayBlanksAsValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.DisplayBlanksAsValues>>();
             set => SetAttribute(value);
@@ -10608,7 +10610,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Header and Footer.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:headerFooter.</para>
     /// </summary>
     /// <remark>
@@ -10668,7 +10670,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "alignWithMargins")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue AlignWithMargins
+        public BooleanValue? AlignWithMargins
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -10684,7 +10686,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "differentOddEven")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue DifferentOddEven
+        public BooleanValue? DifferentOddEven
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -10700,7 +10702,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "differentFirst")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue DifferentFirst
+        public BooleanValue? DifferentFirst
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -10738,7 +10740,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public OddHeader OddHeader
+        public OddHeader? OddHeader
         {
             get => GetElement<OddHeader>();
             set => SetElement(value);
@@ -10751,7 +10753,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public OddFooter OddFooter
+        public OddFooter? OddFooter
         {
             get => GetElement<OddFooter>();
             set => SetElement(value);
@@ -10764,7 +10766,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public EvenHeader EvenHeader
+        public EvenHeader? EvenHeader
         {
             get => GetElement<EvenHeader>();
             set => SetElement(value);
@@ -10777,7 +10779,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public EvenFooter EvenFooter
+        public EvenFooter? EvenFooter
         {
             get => GetElement<EvenFooter>();
             set => SetElement(value);
@@ -10790,7 +10792,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public FirstHeader FirstHeader
+        public FirstHeader? FirstHeader
         {
             get => GetElement<FirstHeader>();
             set => SetElement(value);
@@ -10803,7 +10805,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public FirstFooter FirstFooter
+        public FirstFooter? FirstFooter
         {
             get => GetElement<FirstFooter>();
             set => SetElement(value);
@@ -10815,7 +10817,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
 
     /// <summary>
     /// <para>Page Margins.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pageMargins.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10840,7 +10842,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "l")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Left
+        public DoubleValue? Left
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -10856,7 +10858,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "r")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Right
+        public DoubleValue? Right
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -10872,7 +10874,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "t")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Top
+        public DoubleValue? Top
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -10888,7 +10890,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "b")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Bottom
+        public DoubleValue? Bottom
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -10904,7 +10906,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "header")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Header
+        public DoubleValue? Header
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -10920,7 +10922,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (2L), MaxInclusive 
         [SchemaAttr(0, "footer")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Footer
+        public DoubleValue? Footer
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -10969,7 +10971,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Page Setup.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pageSetup.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10994,7 +10996,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "paperSize")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value PaperSize
+        public UInt32Value? PaperSize
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -11010,7 +11012,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "firstPageNumber")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value FirstPageNumber
+        public Int32Value? FirstPageNumber
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -11026,7 +11028,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "orientation")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.PageSetupOrientationValues> Orientation
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.PageSetupOrientationValues>? Orientation
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.PageSetupOrientationValues>>();
             set => SetAttribute(value);
@@ -11042,7 +11044,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "blackAndWhite")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue BlackAndWhite
+        public BooleanValue? BlackAndWhite
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -11058,7 +11060,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "draft")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Draft
+        public BooleanValue? Draft
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -11074,7 +11076,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "useFirstPageNumber")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue UseFirstPageNumber
+        public BooleanValue? UseFirstPageNumber
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -11090,7 +11092,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "horizontalDpi")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value HorizontalDpi
+        public Int32Value? HorizontalDpi
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -11106,7 +11108,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "verticalDpi")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value VerticalDpi
+        public Int32Value? VerticalDpi
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -11122,7 +11124,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "copies")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Copies
+        public UInt32Value? Copies
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -11152,7 +11154,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ShapeProperties Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:spPr.</para>
     /// </summary>
     /// <remark>
@@ -11221,7 +11223,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "bwMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> BlackWhiteMode
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? BlackWhiteMode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
@@ -11296,7 +11298,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Transform2D Transform2D
+        public DocumentFormat.OpenXml.Drawing.Transform2D? Transform2D
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Transform2D>();
             set => SetElement(value);
@@ -11308,7 +11310,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Data Label.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dLbl.</para>
     /// </summary>
     /// <remark>
@@ -11431,7 +11433,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -11443,7 +11445,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Area Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:areaChart.</para>
     /// </summary>
     /// <remark>
@@ -11530,7 +11532,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Grouping Grouping
+        public Grouping? Grouping
         {
             get => GetElement<Grouping>();
             set => SetElement(value);
@@ -11543,7 +11545,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -11555,7 +11557,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>3D Area Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:area3DChart.</para>
     /// </summary>
     /// <remark>
@@ -11645,7 +11647,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Grouping Grouping
+        public Grouping? Grouping
         {
             get => GetElement<Grouping>();
             set => SetElement(value);
@@ -11658,7 +11660,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -11670,7 +11672,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Line Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:lineChart.</para>
     /// </summary>
     /// <remark>
@@ -11769,7 +11771,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Grouping Grouping
+        public Grouping? Grouping
         {
             get => GetElement<Grouping>();
             set => SetElement(value);
@@ -11782,7 +11784,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -11794,7 +11796,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>3D Line Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:line3DChart.</para>
     /// </summary>
     /// <remark>
@@ -11884,7 +11886,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Grouping Grouping
+        public Grouping? Grouping
         {
             get => GetElement<Grouping>();
             set => SetElement(value);
@@ -11897,7 +11899,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -11909,7 +11911,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Stock Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:stockChart.</para>
     /// </summary>
     /// <remark>
@@ -11989,7 +11991,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Radar Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:radarChart.</para>
     /// </summary>
     /// <remark>
@@ -12067,7 +12069,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public RadarStyle RadarStyle
+        public RadarStyle? RadarStyle
         {
             get => GetElement<RadarStyle>();
             set => SetElement(value);
@@ -12080,7 +12082,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -12092,7 +12094,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Scatter Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:scatterChart.</para>
     /// </summary>
     /// <remark>
@@ -12170,7 +12172,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ScatterStyle ScatterStyle
+        public ScatterStyle? ScatterStyle
         {
             get => GetElement<ScatterStyle>();
             set => SetElement(value);
@@ -12183,7 +12185,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -12195,7 +12197,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Pie Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pieChart.</para>
     /// </summary>
     /// <remark>
@@ -12276,7 +12278,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -12288,7 +12290,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>3D Pie Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pie3DChart.</para>
     /// </summary>
     /// <remark>
@@ -12366,7 +12368,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -12378,7 +12380,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Doughnut Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:doughnutChart.</para>
     /// </summary>
     /// <remark>
@@ -12462,7 +12464,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -12474,7 +12476,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Bar Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:barChart.</para>
     /// </summary>
     /// <remark>
@@ -12570,7 +12572,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public BarDirection BarDirection
+        public BarDirection? BarDirection
         {
             get => GetElement<BarDirection>();
             set => SetElement(value);
@@ -12583,7 +12585,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public BarGrouping BarGrouping
+        public BarGrouping? BarGrouping
         {
             get => GetElement<BarGrouping>();
             set => SetElement(value);
@@ -12596,7 +12598,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -12608,7 +12610,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>3D Bar Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:bar3DChart.</para>
     /// </summary>
     /// <remark>
@@ -12704,7 +12706,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public BarDirection BarDirection
+        public BarDirection? BarDirection
         {
             get => GetElement<BarDirection>();
             set => SetElement(value);
@@ -12717,7 +12719,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public BarGrouping BarGrouping
+        public BarGrouping? BarGrouping
         {
             get => GetElement<BarGrouping>();
             set => SetElement(value);
@@ -12730,7 +12732,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -12742,7 +12744,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Pie of Pie or Bar of Pie Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ofPieChart.</para>
     /// </summary>
     /// <remark>
@@ -12841,7 +12843,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public OfPieType OfPieType
+        public OfPieType? OfPieType
         {
             get => GetElement<OfPieType>();
             set => SetElement(value);
@@ -12854,7 +12856,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -12866,7 +12868,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Surface Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:surfaceChart.</para>
     /// </summary>
     /// <remark>
@@ -12947,7 +12949,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Wireframe Wireframe
+        public Wireframe? Wireframe
         {
             get => GetElement<Wireframe>();
             set => SetElement(value);
@@ -12959,7 +12961,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>3D Surface Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:surface3DChart.</para>
     /// </summary>
     /// <remark>
@@ -13037,7 +13039,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Wireframe Wireframe
+        public Wireframe? Wireframe
         {
             get => GetElement<Wireframe>();
             set => SetElement(value);
@@ -13050,7 +13052,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -13062,7 +13064,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Bubble Charts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:bubbleChart.</para>
     /// </summary>
     /// <remark>
@@ -13149,7 +13151,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public VaryColors VaryColors
+        public VaryColors? VaryColors
         {
             get => GetElement<VaryColors>();
             set => SetElement(value);
@@ -13161,7 +13163,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Value Axis.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:valAx.</para>
     /// </summary>
     /// <remark>
@@ -13293,7 +13295,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AxisId AxisId
+        public AxisId? AxisId
         {
             get => GetElement<AxisId>();
             set => SetElement(value);
@@ -13306,7 +13308,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Scaling Scaling
+        public Scaling? Scaling
         {
             get => GetElement<Scaling>();
             set => SetElement(value);
@@ -13319,7 +13321,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Delete Delete
+        public Delete? Delete
         {
             get => GetElement<Delete>();
             set => SetElement(value);
@@ -13332,7 +13334,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AxisPosition AxisPosition
+        public AxisPosition? AxisPosition
         {
             get => GetElement<AxisPosition>();
             set => SetElement(value);
@@ -13345,7 +13347,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MajorGridlines MajorGridlines
+        public MajorGridlines? MajorGridlines
         {
             get => GetElement<MajorGridlines>();
             set => SetElement(value);
@@ -13358,7 +13360,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MinorGridlines MinorGridlines
+        public MinorGridlines? MinorGridlines
         {
             get => GetElement<MinorGridlines>();
             set => SetElement(value);
@@ -13371,7 +13373,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Title Title
+        public Title? Title
         {
             get => GetElement<Title>();
             set => SetElement(value);
@@ -13384,7 +13386,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -13397,7 +13399,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MajorTickMark MajorTickMark
+        public MajorTickMark? MajorTickMark
         {
             get => GetElement<MajorTickMark>();
             set => SetElement(value);
@@ -13410,7 +13412,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MinorTickMark MinorTickMark
+        public MinorTickMark? MinorTickMark
         {
             get => GetElement<MinorTickMark>();
             set => SetElement(value);
@@ -13423,7 +13425,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TickLabelPosition TickLabelPosition
+        public TickLabelPosition? TickLabelPosition
         {
             get => GetElement<TickLabelPosition>();
             set => SetElement(value);
@@ -13436,7 +13438,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -13449,7 +13451,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TextProperties TextProperties
+        public TextProperties? TextProperties
         {
             get => GetElement<TextProperties>();
             set => SetElement(value);
@@ -13462,7 +13464,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public CrossingAxis CrossingAxis
+        public CrossingAxis? CrossingAxis
         {
             get => GetElement<CrossingAxis>();
             set => SetElement(value);
@@ -13474,7 +13476,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Category Axis Data.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:catAx.</para>
     /// </summary>
     /// <remark>
@@ -13612,7 +13614,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AxisId AxisId
+        public AxisId? AxisId
         {
             get => GetElement<AxisId>();
             set => SetElement(value);
@@ -13625,7 +13627,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Scaling Scaling
+        public Scaling? Scaling
         {
             get => GetElement<Scaling>();
             set => SetElement(value);
@@ -13638,7 +13640,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Delete Delete
+        public Delete? Delete
         {
             get => GetElement<Delete>();
             set => SetElement(value);
@@ -13651,7 +13653,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AxisPosition AxisPosition
+        public AxisPosition? AxisPosition
         {
             get => GetElement<AxisPosition>();
             set => SetElement(value);
@@ -13664,7 +13666,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MajorGridlines MajorGridlines
+        public MajorGridlines? MajorGridlines
         {
             get => GetElement<MajorGridlines>();
             set => SetElement(value);
@@ -13677,7 +13679,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MinorGridlines MinorGridlines
+        public MinorGridlines? MinorGridlines
         {
             get => GetElement<MinorGridlines>();
             set => SetElement(value);
@@ -13690,7 +13692,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Title Title
+        public Title? Title
         {
             get => GetElement<Title>();
             set => SetElement(value);
@@ -13703,7 +13705,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -13716,7 +13718,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MajorTickMark MajorTickMark
+        public MajorTickMark? MajorTickMark
         {
             get => GetElement<MajorTickMark>();
             set => SetElement(value);
@@ -13729,7 +13731,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MinorTickMark MinorTickMark
+        public MinorTickMark? MinorTickMark
         {
             get => GetElement<MinorTickMark>();
             set => SetElement(value);
@@ -13742,7 +13744,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TickLabelPosition TickLabelPosition
+        public TickLabelPosition? TickLabelPosition
         {
             get => GetElement<TickLabelPosition>();
             set => SetElement(value);
@@ -13755,7 +13757,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -13768,7 +13770,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TextProperties TextProperties
+        public TextProperties? TextProperties
         {
             get => GetElement<TextProperties>();
             set => SetElement(value);
@@ -13781,7 +13783,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public CrossingAxis CrossingAxis
+        public CrossingAxis? CrossingAxis
         {
             get => GetElement<CrossingAxis>();
             set => SetElement(value);
@@ -13793,7 +13795,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Date Axis.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dateAx.</para>
     /// </summary>
     /// <remark>
@@ -13934,7 +13936,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AxisId AxisId
+        public AxisId? AxisId
         {
             get => GetElement<AxisId>();
             set => SetElement(value);
@@ -13947,7 +13949,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Scaling Scaling
+        public Scaling? Scaling
         {
             get => GetElement<Scaling>();
             set => SetElement(value);
@@ -13960,7 +13962,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Delete Delete
+        public Delete? Delete
         {
             get => GetElement<Delete>();
             set => SetElement(value);
@@ -13973,7 +13975,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AxisPosition AxisPosition
+        public AxisPosition? AxisPosition
         {
             get => GetElement<AxisPosition>();
             set => SetElement(value);
@@ -13986,7 +13988,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MajorGridlines MajorGridlines
+        public MajorGridlines? MajorGridlines
         {
             get => GetElement<MajorGridlines>();
             set => SetElement(value);
@@ -13999,7 +14001,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MinorGridlines MinorGridlines
+        public MinorGridlines? MinorGridlines
         {
             get => GetElement<MinorGridlines>();
             set => SetElement(value);
@@ -14012,7 +14014,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Title Title
+        public Title? Title
         {
             get => GetElement<Title>();
             set => SetElement(value);
@@ -14025,7 +14027,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -14038,7 +14040,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MajorTickMark MajorTickMark
+        public MajorTickMark? MajorTickMark
         {
             get => GetElement<MajorTickMark>();
             set => SetElement(value);
@@ -14051,7 +14053,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MinorTickMark MinorTickMark
+        public MinorTickMark? MinorTickMark
         {
             get => GetElement<MinorTickMark>();
             set => SetElement(value);
@@ -14064,7 +14066,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TickLabelPosition TickLabelPosition
+        public TickLabelPosition? TickLabelPosition
         {
             get => GetElement<TickLabelPosition>();
             set => SetElement(value);
@@ -14077,7 +14079,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -14090,7 +14092,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TextProperties TextProperties
+        public TextProperties? TextProperties
         {
             get => GetElement<TextProperties>();
             set => SetElement(value);
@@ -14103,7 +14105,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public CrossingAxis CrossingAxis
+        public CrossingAxis? CrossingAxis
         {
             get => GetElement<CrossingAxis>();
             set => SetElement(value);
@@ -14115,7 +14117,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Series Axis.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:serAx.</para>
     /// </summary>
     /// <remark>
@@ -14241,7 +14243,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AxisId AxisId
+        public AxisId? AxisId
         {
             get => GetElement<AxisId>();
             set => SetElement(value);
@@ -14254,7 +14256,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Scaling Scaling
+        public Scaling? Scaling
         {
             get => GetElement<Scaling>();
             set => SetElement(value);
@@ -14267,7 +14269,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Delete Delete
+        public Delete? Delete
         {
             get => GetElement<Delete>();
             set => SetElement(value);
@@ -14280,7 +14282,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AxisPosition AxisPosition
+        public AxisPosition? AxisPosition
         {
             get => GetElement<AxisPosition>();
             set => SetElement(value);
@@ -14293,7 +14295,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MajorGridlines MajorGridlines
+        public MajorGridlines? MajorGridlines
         {
             get => GetElement<MajorGridlines>();
             set => SetElement(value);
@@ -14306,7 +14308,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MinorGridlines MinorGridlines
+        public MinorGridlines? MinorGridlines
         {
             get => GetElement<MinorGridlines>();
             set => SetElement(value);
@@ -14319,7 +14321,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Title Title
+        public Title? Title
         {
             get => GetElement<Title>();
             set => SetElement(value);
@@ -14332,7 +14334,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberingFormat NumberingFormat
+        public NumberingFormat? NumberingFormat
         {
             get => GetElement<NumberingFormat>();
             set => SetElement(value);
@@ -14345,7 +14347,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MajorTickMark MajorTickMark
+        public MajorTickMark? MajorTickMark
         {
             get => GetElement<MajorTickMark>();
             set => SetElement(value);
@@ -14358,7 +14360,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MinorTickMark MinorTickMark
+        public MinorTickMark? MinorTickMark
         {
             get => GetElement<MinorTickMark>();
             set => SetElement(value);
@@ -14371,7 +14373,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TickLabelPosition TickLabelPosition
+        public TickLabelPosition? TickLabelPosition
         {
             get => GetElement<TickLabelPosition>();
             set => SetElement(value);
@@ -14384,7 +14386,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -14397,7 +14399,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TextProperties TextProperties
+        public TextProperties? TextProperties
         {
             get => GetElement<TextProperties>();
             set => SetElement(value);
@@ -14410,7 +14412,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public CrossingAxis CrossingAxis
+        public CrossingAxis? CrossingAxis
         {
             get => GetElement<CrossingAxis>();
             set => SetElement(value);
@@ -14422,7 +14424,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Data Table.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dTable.</para>
     /// </summary>
     /// <remark>
@@ -14503,7 +14505,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ShowHorizontalBorder ShowHorizontalBorder
+        public ShowHorizontalBorder? ShowHorizontalBorder
         {
             get => GetElement<ShowHorizontalBorder>();
             set => SetElement(value);
@@ -14516,7 +14518,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ShowVerticalBorder ShowVerticalBorder
+        public ShowVerticalBorder? ShowVerticalBorder
         {
             get => GetElement<ShowVerticalBorder>();
             set => SetElement(value);
@@ -14529,7 +14531,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ShowOutlineBorder ShowOutlineBorder
+        public ShowOutlineBorder? ShowOutlineBorder
         {
             get => GetElement<ShowOutlineBorder>();
             set => SetElement(value);
@@ -14542,7 +14544,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ShowKeys ShowKeys
+        public ShowKeys? ShowKeys
         {
             get => GetElement<ShowKeys>();
             set => SetElement(value);
@@ -14555,7 +14557,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -14568,7 +14570,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TextProperties TextProperties
+        public TextProperties? TextProperties
         {
             get => GetElement<TextProperties>();
             set => SetElement(value);
@@ -14581,7 +14583,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -14593,7 +14595,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>First Slice Angle.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:firstSliceAng.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -14618,7 +14620,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -14641,7 +14643,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Hole Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:holeSize.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -14666,7 +14668,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue Val
+        public ByteValue? Val
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -14690,7 +14692,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (1L), MaxInclusive 
 
     /// <summary>
     /// <para>String Point.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pt.</para>
     /// </summary>
     /// <remark>
@@ -14745,7 +14747,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (1L), MaxInclusive 
         [SchemaAttr(0, "idx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Index
+        public UInt32Value? Index
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -14775,7 +14777,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumericValue NumericValue
+        public NumericValue? NumericValue
         {
             get => GetElement<NumericValue>();
             set => SetElement(value);
@@ -14787,7 +14789,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Thickness.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:thickness.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -14812,7 +14814,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue Val
+        public ByteValue? Val
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -14835,7 +14837,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the StockChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -14890,7 +14892,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -14920,7 +14922,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the PieChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -14975,7 +14977,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15005,7 +15007,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Pie3DChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15060,7 +15062,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15090,7 +15092,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the NumRefExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15147,7 +15149,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15181,7 +15183,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the StrDataExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15236,7 +15238,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15266,7 +15268,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the StrRefExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15323,7 +15325,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15357,7 +15359,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the MultiLvlStrRefExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15414,7 +15416,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15448,7 +15450,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DLblExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15507,7 +15509,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15545,7 +15547,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DLblsExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15606,7 +15608,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15648,7 +15650,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the LineSerExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15706,7 +15708,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15742,7 +15744,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ScatterSerExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15800,7 +15802,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15836,7 +15838,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the RadarSerExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15894,7 +15896,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -15930,7 +15932,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the AreaSerExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -15988,7 +15990,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16024,7 +16026,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the PieSerExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16082,7 +16084,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16118,7 +16120,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the SurfaceSerExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16175,7 +16177,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16209,7 +16211,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the LineChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16264,7 +16266,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16294,7 +16296,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Line3DChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16349,7 +16351,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16379,7 +16381,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ScatterChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16434,7 +16436,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16464,7 +16466,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the RadarChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16519,7 +16521,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16549,7 +16551,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BarChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16604,7 +16606,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16634,7 +16636,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Bar3DChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16689,7 +16691,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16719,7 +16721,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the AreaChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16774,7 +16776,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16804,7 +16806,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Area3DChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16859,7 +16861,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16889,7 +16891,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BubbleChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -16944,7 +16946,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -16974,7 +16976,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the SurfaceChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -17029,7 +17031,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -17059,7 +17061,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Surface3DChartExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -17114,7 +17116,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -17144,7 +17146,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the CatAxExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -17199,7 +17201,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -17229,7 +17231,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DateAxExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -17284,7 +17286,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -17314,7 +17316,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the SerAxExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -17369,7 +17371,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -17399,7 +17401,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ValAxExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -17454,7 +17456,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -17484,7 +17486,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the UpDownBars Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:upDownBars.</para>
     /// </summary>
     /// <remark>
@@ -17556,7 +17558,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public GapWidth GapWidth
+        public GapWidth? GapWidth
         {
             get => GetElement<GapWidth>();
             set => SetElement(value);
@@ -17569,7 +17571,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public UpBars UpBars
+        public UpBars? UpBars
         {
             get => GetElement<UpBars>();
             set => SetElement(value);
@@ -17582,7 +17584,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DownBars DownBars
+        public DownBars? DownBars
         {
             get => GetElement<DownBars>();
             set => SetElement(value);
@@ -17595,7 +17597,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -17607,7 +17609,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the StockChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -17669,7 +17671,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the PieChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -17731,7 +17733,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Pie3DChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -17793,7 +17795,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the NumRefExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -17855,7 +17857,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the StrDataExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -17917,7 +17919,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the StrRefExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -17979,7 +17981,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the MultiLevelStringCache Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:multiLvlStrCache.</para>
     /// </summary>
     /// <remark>
@@ -18048,7 +18050,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PointCount PointCount
+        public PointCount? PointCount
         {
             get => GetElement<PointCount>();
             set => SetElement(value);
@@ -18060,7 +18062,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the MultiLvlStrRefExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -18122,7 +18124,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DLblExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -18184,7 +18186,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DLblsExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -18246,7 +18248,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DataPoint Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dPt.</para>
     /// </summary>
     /// <remark>
@@ -18330,7 +18332,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -18343,7 +18345,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public InvertIfNegative InvertIfNegative
+        public InvertIfNegative? InvertIfNegative
         {
             get => GetElement<InvertIfNegative>();
             set => SetElement(value);
@@ -18356,7 +18358,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Marker Marker
+        public Marker? Marker
         {
             get => GetElement<Marker>();
             set => SetElement(value);
@@ -18369,7 +18371,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Bubble3D Bubble3D
+        public Bubble3D? Bubble3D
         {
             get => GetElement<Bubble3D>();
             set => SetElement(value);
@@ -18382,7 +18384,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Explosion Explosion
+        public Explosion? Explosion
         {
             get => GetElement<Explosion>();
             set => SetElement(value);
@@ -18395,7 +18397,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -18408,7 +18410,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureOptions PictureOptions
+        public PictureOptions? PictureOptions
         {
             get => GetElement<PictureOptions>();
             set => SetElement(value);
@@ -18421,7 +18423,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -18433,7 +18435,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Trendline Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:trendline.</para>
     /// </summary>
     /// <remark>
@@ -18529,7 +18531,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TrendlineName TrendlineName
+        public TrendlineName? TrendlineName
         {
             get => GetElement<TrendlineName>();
             set => SetElement(value);
@@ -18542,7 +18544,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -18555,7 +18557,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TrendlineType TrendlineType
+        public TrendlineType? TrendlineType
         {
             get => GetElement<TrendlineType>();
             set => SetElement(value);
@@ -18568,7 +18570,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PolynomialOrder PolynomialOrder
+        public PolynomialOrder? PolynomialOrder
         {
             get => GetElement<PolynomialOrder>();
             set => SetElement(value);
@@ -18581,7 +18583,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Period Period
+        public Period? Period
         {
             get => GetElement<Period>();
             set => SetElement(value);
@@ -18594,7 +18596,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Forward Forward
+        public Forward? Forward
         {
             get => GetElement<Forward>();
             set => SetElement(value);
@@ -18607,7 +18609,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Backward Backward
+        public Backward? Backward
         {
             get => GetElement<Backward>();
             set => SetElement(value);
@@ -18620,7 +18622,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Intercept Intercept
+        public Intercept? Intercept
         {
             get => GetElement<Intercept>();
             set => SetElement(value);
@@ -18633,7 +18635,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DisplayRSquaredValue DisplayRSquaredValue
+        public DisplayRSquaredValue? DisplayRSquaredValue
         {
             get => GetElement<DisplayRSquaredValue>();
             set => SetElement(value);
@@ -18646,7 +18648,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DisplayEquation DisplayEquation
+        public DisplayEquation? DisplayEquation
         {
             get => GetElement<DisplayEquation>();
             set => SetElement(value);
@@ -18659,7 +18661,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public TrendlineLabel TrendlineLabel
+        public TrendlineLabel? TrendlineLabel
         {
             get => GetElement<TrendlineLabel>();
             set => SetElement(value);
@@ -18672,7 +18674,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -18684,7 +18686,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ErrorBars Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:errBars.</para>
     /// </summary>
     /// <remark>
@@ -18771,7 +18773,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ErrorDirection ErrorDirection
+        public ErrorDirection? ErrorDirection
         {
             get => GetElement<ErrorDirection>();
             set => SetElement(value);
@@ -18784,7 +18786,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ErrorBarType ErrorBarType
+        public ErrorBarType? ErrorBarType
         {
             get => GetElement<ErrorBarType>();
             set => SetElement(value);
@@ -18797,7 +18799,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ErrorBarValueType ErrorBarValueType
+        public ErrorBarValueType? ErrorBarValueType
         {
             get => GetElement<ErrorBarValueType>();
             set => SetElement(value);
@@ -18810,7 +18812,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NoEndCap NoEndCap
+        public NoEndCap? NoEndCap
         {
             get => GetElement<NoEndCap>();
             set => SetElement(value);
@@ -18823,7 +18825,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Plus Plus
+        public Plus? Plus
         {
             get => GetElement<Plus>();
             set => SetElement(value);
@@ -18836,7 +18838,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Minus Minus
+        public Minus? Minus
         {
             get => GetElement<Minus>();
             set => SetElement(value);
@@ -18849,7 +18851,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ErrorBarValue ErrorBarValue
+        public ErrorBarValue? ErrorBarValue
         {
             get => GetElement<ErrorBarValue>();
             set => SetElement(value);
@@ -18862,7 +18864,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -18875,7 +18877,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -18887,7 +18889,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the CategoryAxisData Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:cat.</para>
     /// </summary>
     /// <remark>
@@ -18959,7 +18961,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the XValues Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:xVal.</para>
     /// </summary>
     /// <remark>
@@ -19031,7 +19033,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the AxisDataSourceType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -19094,7 +19096,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public MultiLevelStringReference MultiLevelStringReference
+        public MultiLevelStringReference? MultiLevelStringReference
         {
             get => GetElement<MultiLevelStringReference>();
             set => SetElement(value);
@@ -19107,7 +19109,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberReference NumberReference
+        public NumberReference? NumberReference
         {
             get => GetElement<NumberReference>();
             set => SetElement(value);
@@ -19120,7 +19122,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public NumberLiteral NumberLiteral
+        public NumberLiteral? NumberLiteral
         {
             get => GetElement<NumberLiteral>();
             set => SetElement(value);
@@ -19133,7 +19135,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public StringReference StringReference
+        public StringReference? StringReference
         {
             get => GetElement<StringReference>();
             set => SetElement(value);
@@ -19146,7 +19148,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public StringLiteral StringLiteral
+        public StringLiteral? StringLiteral
         {
             get => GetElement<StringLiteral>();
             set => SetElement(value);
@@ -19155,7 +19157,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the LineSerExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -19217,7 +19219,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ScatterSerExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -19279,7 +19281,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the RadarSerExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -19341,7 +19343,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Shape Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:shape.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -19366,7 +19368,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ShapeValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ShapeValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ShapeValues>>();
             set => SetAttribute(value);
@@ -19386,7 +19388,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BarSerExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -19448,7 +19450,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BarSerExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -19507,7 +19509,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -19545,7 +19547,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the AreaSerExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -19607,7 +19609,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the PieSerExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -19669,7 +19671,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BubbleSerExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -19731,7 +19733,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BubbleSerExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -19789,7 +19791,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -19825,7 +19827,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the SurfaceSerExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -19887,7 +19889,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the LineChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -19949,7 +19951,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Line3DChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -20011,7 +20013,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ScatterStyle Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:scatterStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -20036,7 +20038,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ScatterStyleValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ScatterStyleValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.ScatterStyleValues>>();
             set => SetAttribute(value);
@@ -20056,7 +20058,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ScatterChartSeries Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ser.</para>
     /// </summary>
     /// <remark>
@@ -20161,7 +20163,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -20174,7 +20176,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Order Order
+        public Order? Order
         {
             get => GetElement<Order>();
             set => SetElement(value);
@@ -20187,7 +20189,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SeriesText SeriesText
+        public SeriesText? SeriesText
         {
             get => GetElement<SeriesText>();
             set => SetElement(value);
@@ -20200,7 +20202,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -20213,7 +20215,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Marker Marker
+        public Marker? Marker
         {
             get => GetElement<Marker>();
             set => SetElement(value);
@@ -20225,7 +20227,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ScatterChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -20287,7 +20289,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the RadarStyle Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:radarStyle.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -20312,7 +20314,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.RadarStyleValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.RadarStyleValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.RadarStyleValues>>();
             set => SetAttribute(value);
@@ -20335,7 +20337,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RadarChartSeries Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ser.</para>
     /// </summary>
     /// <remark>
@@ -20434,7 +20436,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -20447,7 +20449,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Order Order
+        public Order? Order
         {
             get => GetElement<Order>();
             set => SetElement(value);
@@ -20460,7 +20462,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SeriesText SeriesText
+        public SeriesText? SeriesText
         {
             get => GetElement<SeriesText>();
             set => SetElement(value);
@@ -20473,7 +20475,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -20486,7 +20488,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureOptions PictureOptions
+        public PictureOptions? PictureOptions
         {
             get => GetElement<PictureOptions>();
             set => SetElement(value);
@@ -20499,7 +20501,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Marker Marker
+        public Marker? Marker
         {
             get => GetElement<Marker>();
             set => SetElement(value);
@@ -20511,7 +20513,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RadarChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -20573,7 +20575,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Overlap Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:overlap.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -20598,7 +20600,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public SByteValue Val
+        public SByteValue? Val
         {
             get => GetAttribute<SByteValue>();
             set => SetAttribute(value);
@@ -20621,7 +20623,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
 
     /// <summary>
     /// <para>Defines the BarChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -20683,7 +20685,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
 
     /// <summary>
     /// <para>Defines the Bar3DChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -20745,7 +20747,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
 
     /// <summary>
     /// <para>Defines the AreaChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -20807,7 +20809,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
 
     /// <summary>
     /// <para>Defines the Area3DChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -20869,7 +20871,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
 
     /// <summary>
     /// <para>Defines the BubbleChartSeries Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ser.</para>
     /// </summary>
     /// <remark>
@@ -20980,7 +20982,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Index Index
+        public Index? Index
         {
             get => GetElement<Index>();
             set => SetElement(value);
@@ -20993,7 +20995,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Order Order
+        public Order? Order
         {
             get => GetElement<Order>();
             set => SetElement(value);
@@ -21006,7 +21008,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SeriesText SeriesText
+        public SeriesText? SeriesText
         {
             get => GetElement<SeriesText>();
             set => SetElement(value);
@@ -21019,7 +21021,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartShapeProperties ChartShapeProperties
+        public ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<ChartShapeProperties>();
             set => SetElement(value);
@@ -21032,7 +21034,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PictureOptions PictureOptions
+        public PictureOptions? PictureOptions
         {
             get => GetElement<PictureOptions>();
             set => SetElement(value);
@@ -21045,7 +21047,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public InvertIfNegative InvertIfNegative
+        public InvertIfNegative? InvertIfNegative
         {
             get => GetElement<InvertIfNegative>();
             set => SetElement(value);
@@ -21057,7 +21059,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
 
     /// <summary>
     /// <para>Defines the BubbleScale Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:bubbleScale.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21082,7 +21084,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (-100L), MaxInclusi
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -21105,7 +21107,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the SizeRepresents Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:sizeRepresents.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21130,7 +21132,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.SizeRepresentsValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.SizeRepresentsValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.SizeRepresentsValues>>();
             set => SetAttribute(value);
@@ -21150,7 +21152,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the BubbleChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -21212,7 +21214,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the SurfaceChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -21274,7 +21276,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the Surface3DChartExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -21336,7 +21338,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the LabelAlignment Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:lblAlgn.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21361,7 +21363,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LabelAlignmentValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LabelAlignmentValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.LabelAlignmentValues>>();
             set => SetAttribute(value);
@@ -21384,7 +21386,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the LabelOffset Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:lblOffset.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21409,7 +21411,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -21432,7 +21434,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the TickLabelSkip Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:tickLblSkip.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21459,7 +21461,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the TickMarkSkip Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:tickMarkSkip.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21486,7 +21488,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the SkipType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class SkipType : OpenXmlLeafElement
@@ -21508,7 +21510,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -21528,7 +21530,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the CatAxExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -21590,7 +21592,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the BaseTimeUnit Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:baseTimeUnit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21617,7 +21619,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the MajorTimeUnit Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:majorTimeUnit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21644,7 +21646,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the MinorTimeUnit Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:minorTimeUnit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21671,7 +21673,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the TimeUnitType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TimeUnitType : OpenXmlLeafElement
@@ -21693,7 +21695,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TimeUnitValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TimeUnitValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.TimeUnitValues>>();
             set => SetAttribute(value);
@@ -21709,7 +21711,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the MajorUnit Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:majorUnit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21736,7 +21738,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the MinorUnit Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:minorUnit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21763,7 +21765,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the AxisUnitType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class AxisUnitType : OpenXmlLeafElement
@@ -21785,7 +21787,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Val
+        public DoubleValue? Val
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
@@ -21805,7 +21807,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the DateAxExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -21867,7 +21869,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the SerAxExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -21929,7 +21931,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the CrossBetween Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:crossBetween.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -21954,7 +21956,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.CrossBetweenValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Drawing.Charts.CrossBetweenValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.Charts.CrossBetweenValues>>();
             set => SetAttribute(value);
@@ -21977,7 +21979,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DisplayUnits Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:dispUnits.</para>
     /// </summary>
     /// <remark>
@@ -22051,7 +22053,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ValAxExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -22113,7 +22115,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the EditingLanguage Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:lang.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -22138,7 +22140,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -22161,7 +22163,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Style Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:style.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -22186,7 +22188,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue Val
+        public ByteValue? Val
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -22209,7 +22211,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ColorMapOverride Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:clrMapOvr.</para>
     /// </summary>
     /// <remark>
@@ -22264,7 +22266,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "bg1")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Background1
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Background1
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22280,7 +22282,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "tx1")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Text1
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Text1
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22296,7 +22298,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "bg2")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Background2
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Background2
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22312,7 +22314,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "tx2")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Text2
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Text2
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22328,7 +22330,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "accent1")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Accent1
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Accent1
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22344,7 +22346,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "accent2")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Accent2
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Accent2
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22360,7 +22362,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "accent3")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Accent3
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Accent3
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22376,7 +22378,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "accent4")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Accent4
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Accent4
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22392,7 +22394,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "accent5")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Accent5
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Accent5
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22408,7 +22410,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "accent6")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Accent6
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Accent6
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22424,7 +22426,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "hlink")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> Hyperlink
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? Hyperlink
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22440,7 +22442,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "folHlink")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues> FollowedHyperlink
+        public EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>? FollowedHyperlink
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.ColorSchemeIndexValues>>();
             set => SetAttribute(value);
@@ -22525,7 +22527,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.ExtensionList ExtensionList
+        public DocumentFormat.OpenXml.Drawing.ExtensionList? ExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.ExtensionList>();
             set => SetElement(value);
@@ -22537,7 +22539,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the PivotSource Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:pivotSource.</para>
     /// </summary>
     /// <remark>
@@ -22606,7 +22608,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PivotTableName PivotTableName
+        public PivotTableName? PivotTableName
         {
             get => GetElement<PivotTableName>();
             set => SetElement(value);
@@ -22619,7 +22621,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public FormatId FormatId
+        public FormatId? FormatId
         {
             get => GetElement<FormatId>();
             set => SetElement(value);
@@ -22632,7 +22634,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -22644,7 +22646,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Protection Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:protection.</para>
     /// </summary>
     /// <remark>
@@ -22719,7 +22721,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ChartObject ChartObject
+        public ChartObject? ChartObject
         {
             get => GetElement<ChartObject>();
             set => SetElement(value);
@@ -22732,7 +22734,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Data Data
+        public Data? Data
         {
             get => GetElement<Data>();
             set => SetElement(value);
@@ -22745,7 +22747,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Formatting Formatting
+        public Formatting? Formatting
         {
             get => GetElement<Formatting>();
             set => SetElement(value);
@@ -22758,7 +22760,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Selection Selection
+        public Selection? Selection
         {
             get => GetElement<Selection>();
             set => SetElement(value);
@@ -22771,7 +22773,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public UserInterface UserInterface
+        public UserInterface? UserInterface
         {
             get => GetElement<UserInterface>();
             set => SetElement(value);
@@ -22783,7 +22785,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Chart Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:chart.</para>
     /// </summary>
     /// <remark>
@@ -22882,7 +22884,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Title Title
+        public Title? Title
         {
             get => GetElement<Title>();
             set => SetElement(value);
@@ -22895,7 +22897,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AutoTitleDeleted AutoTitleDeleted
+        public AutoTitleDeleted? AutoTitleDeleted
         {
             get => GetElement<AutoTitleDeleted>();
             set => SetElement(value);
@@ -22908,7 +22910,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PivotFormats PivotFormats
+        public PivotFormats? PivotFormats
         {
             get => GetElement<PivotFormats>();
             set => SetElement(value);
@@ -22921,7 +22923,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public View3D View3D
+        public View3D? View3D
         {
             get => GetElement<View3D>();
             set => SetElement(value);
@@ -22934,7 +22936,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Floor Floor
+        public Floor? Floor
         {
             get => GetElement<Floor>();
             set => SetElement(value);
@@ -22947,7 +22949,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public SideWall SideWall
+        public SideWall? SideWall
         {
             get => GetElement<SideWall>();
             set => SetElement(value);
@@ -22960,7 +22962,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public BackWall BackWall
+        public BackWall? BackWall
         {
             get => GetElement<BackWall>();
             set => SetElement(value);
@@ -22973,7 +22975,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PlotArea PlotArea
+        public PlotArea? PlotArea
         {
             get => GetElement<PlotArea>();
             set => SetElement(value);
@@ -22986,7 +22988,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public Legend Legend
+        public Legend? Legend
         {
             get => GetElement<Legend>();
             set => SetElement(value);
@@ -22999,7 +23001,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PlotVisibleOnly PlotVisibleOnly
+        public PlotVisibleOnly? PlotVisibleOnly
         {
             get => GetElement<PlotVisibleOnly>();
             set => SetElement(value);
@@ -23012,7 +23014,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DisplayBlanksAs DisplayBlanksAs
+        public DisplayBlanksAs? DisplayBlanksAs
         {
             get => GetElement<DisplayBlanksAs>();
             set => SetElement(value);
@@ -23025,7 +23027,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ShowDataLabelsOverMaximum ShowDataLabelsOverMaximum
+        public ShowDataLabelsOverMaximum? ShowDataLabelsOverMaximum
         {
             get => GetElement<ShowDataLabelsOverMaximum>();
             set => SetElement(value);
@@ -23038,7 +23040,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -23050,7 +23052,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ExternalData Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:externalData.</para>
     /// </summary>
     /// <remark>
@@ -23108,7 +23110,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -23138,7 +23140,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public AutoUpdate AutoUpdate
+        public AutoUpdate? AutoUpdate
         {
             get => GetElement<AutoUpdate>();
             set => SetElement(value);
@@ -23150,7 +23152,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the PrintSettings Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:printSettings.</para>
     /// </summary>
     /// <remark>
@@ -23222,7 +23224,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public HeaderFooter HeaderFooter
+        public HeaderFooter? HeaderFooter
         {
             get => GetElement<HeaderFooter>();
             set => SetElement(value);
@@ -23235,7 +23237,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PageMargins PageMargins
+        public PageMargins? PageMargins
         {
             get => GetElement<PageMargins>();
             set => SetElement(value);
@@ -23248,7 +23250,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public PageSetup PageSetup
+        public PageSetup? PageSetup
         {
             get => GetElement<PageSetup>();
             set => SetElement(value);
@@ -23261,7 +23263,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public LegacyDrawingHeaderFooter LegacyDrawingHeaderFooter
+        public LegacyDrawingHeaderFooter? LegacyDrawingHeaderFooter
         {
             get => GetElement<LegacyDrawingHeaderFooter>();
             set => SetElement(value);
@@ -23273,7 +23275,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ChartSpaceExtensionList Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:extLst.</para>
     /// </summary>
     /// <remark>
@@ -23335,7 +23337,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ChartSpaceExtension Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c:ext.</para>
     /// </summary>
     /// <remark>
@@ -23392,7 +23394,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uri")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uri
+        public StringValue? Uri
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);

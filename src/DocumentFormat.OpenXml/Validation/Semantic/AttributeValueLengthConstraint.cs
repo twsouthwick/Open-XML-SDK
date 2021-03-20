@@ -1,8 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-#nullable disable
-
 using System.Diagnostics;
 
 namespace DocumentFormat.OpenXml.Validation.Semantic
@@ -28,9 +26,15 @@ namespace DocumentFormat.OpenXml.Validation.Semantic
             _minLength = minLength;
         }
 
-        public override ValidationErrorInfo ValidateCore(ValidationContext context)
+        public override ValidationErrorInfo? ValidateCore(ValidationContext context)
         {
-            var element = context.Stack.Current.Element;
+            var element = context.Stack.Current?.Element;
+
+            if (element is null)
+            {
+                return null;
+            }
+
             var attribute = element.ParsedState.Attributes[_attribute];
 
             //if the attribute is omitted, semantic validation will do nothing
@@ -39,8 +43,8 @@ namespace DocumentFormat.OpenXml.Validation.Semantic
                 return null;
             }
 
-            string attributeValue = attribute.Value.InnerText ?? string.Empty;
-            string subMsg = null;
+            var attributeValue = attribute.Value.InnerText ?? string.Empty;
+            var subMsg = default(string);
 
             if (attributeValue.Length < _minLength)
             {

@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -16,7 +18,7 @@ namespace DocumentFormat.OpenXml.Drawing.LegacyCompatibility
 {
     /// <summary>
     /// <para>Legacy Drawing Object.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is comp:legacyDrawing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -41,7 +43,7 @@ namespace DocumentFormat.OpenXml.Drawing.LegacyCompatibility
         [SchemaAttr(0, "spid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ShapeId
+        public StringValue? ShapeId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);

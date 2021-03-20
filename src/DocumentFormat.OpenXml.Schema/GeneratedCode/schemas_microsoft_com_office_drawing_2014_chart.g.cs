@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Drawing.Charts;
@@ -16,7 +18,7 @@ namespace DocumentFormat.OpenXml.Office2016.Drawing.Charts
 {
     /// <summary>
     /// <para>Defines the ShapeProperties Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:spPr.</para>
     /// </summary>
     /// <remark>
@@ -85,7 +87,7 @@ namespace DocumentFormat.OpenXml.Office2016.Drawing.Charts
         [SchemaAttr(0, "bwMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> BlackWhiteMode
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? BlackWhiteMode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
@@ -161,7 +163,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Transform2D Transform2D
+        public DocumentFormat.OpenXml.Drawing.Transform2D? Transform2D
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Transform2D>();
             set => SetElement(value);
@@ -173,7 +175,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the UnsignedIntegerType Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:explosion.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -198,7 +200,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -222,7 +224,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the InvertIfNegativeBoolean Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:invertIfNegative.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -250,7 +252,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Bubble3DBoolean Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:bubble3D.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -278,7 +280,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the BooleanType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class BooleanType : OpenXmlLeafElement
@@ -300,7 +302,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Val
+        public BooleanValue? Val
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -316,7 +318,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Marker Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:marker.</para>
     /// </summary>
     /// <remark>
@@ -389,7 +391,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.Symbol Symbol
+        public DocumentFormat.OpenXml.Drawing.Charts.Symbol? Symbol
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.Symbol>();
             set => SetElement(value);
@@ -402,7 +404,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.Size Size
+        public DocumentFormat.OpenXml.Drawing.Charts.Size? Size
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.Size>();
             set => SetElement(value);
@@ -415,7 +417,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties ChartShapeProperties
+        public DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties? ChartShapeProperties
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.ChartShapeProperties>();
             set => SetElement(value);
@@ -428,7 +430,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.ExtensionList ExtensionList
+        public DocumentFormat.OpenXml.Drawing.Charts.ExtensionList? ExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.ExtensionList>();
             set => SetElement(value);
@@ -440,7 +442,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DLbl Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:dLbl.</para>
     /// </summary>
     /// <remark>
@@ -564,7 +566,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.Index Index
+        public DocumentFormat.OpenXml.Drawing.Charts.Index? Index
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.Index>();
             set => SetElement(value);
@@ -576,7 +578,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the CategoryFilterExceptions Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:categoryFilterExceptions.</para>
     /// </summary>
     /// <remark>
@@ -639,7 +641,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the PivotOptions16 Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:pivotOptions16.</para>
     /// </summary>
     /// <remark>
@@ -703,7 +705,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public BooleanFalse BooleanFalse
+        public BooleanFalse? BooleanFalse
         {
             get => GetElement<BooleanFalse>();
             set => SetElement(value);
@@ -715,7 +717,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ChartDataPointUniqueIDMap Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:datapointuniqueidmap.</para>
     /// </summary>
     /// <remark>
@@ -778,7 +780,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the UniqueIdChartUniqueID Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:uniqueId.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -806,7 +808,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the UniqueID Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:uniqueID.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -834,7 +836,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the UniqueIDChart Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class UniqueIDChart : OpenXmlLeafElement
@@ -847,7 +849,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2016</para>
+        /// <para>val, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: val</para>
         /// </summary>
 
@@ -856,7 +858,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -875,7 +877,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the CategoryFilterException Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:categoryFilterException.</para>
     /// </summary>
     /// <remark>
@@ -957,7 +959,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public UniqueIdChartUniqueID UniqueIdChartUniqueID
+        public UniqueIdChartUniqueID? UniqueIdChartUniqueID
         {
             get => GetElement<UniqueIdChartUniqueID>();
             set => SetElement(value);
@@ -970,7 +972,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public ShapeProperties ShapeProperties
+        public ShapeProperties? ShapeProperties
         {
             get => GetElement<ShapeProperties>();
             set => SetElement(value);
@@ -983,7 +985,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public UnsignedIntegerType UnsignedIntegerType
+        public UnsignedIntegerType? UnsignedIntegerType
         {
             get => GetElement<UnsignedIntegerType>();
             set => SetElement(value);
@@ -996,7 +998,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public InvertIfNegativeBoolean InvertIfNegativeBoolean
+        public InvertIfNegativeBoolean? InvertIfNegativeBoolean
         {
             get => GetElement<InvertIfNegativeBoolean>();
             set => SetElement(value);
@@ -1009,7 +1011,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public Bubble3DBoolean Bubble3DBoolean
+        public Bubble3DBoolean? Bubble3DBoolean
         {
             get => GetElement<Bubble3DBoolean>();
             set => SetElement(value);
@@ -1022,7 +1024,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public Marker Marker
+        public Marker? Marker
         {
             get => GetElement<Marker>();
             set => SetElement(value);
@@ -1035,7 +1037,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public DLbl DLbl
+        public DLbl? DLbl
         {
             get => GetElement<DLbl>();
             set => SetElement(value);
@@ -1047,7 +1049,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the NumberDataType Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:numCache.</para>
     /// </summary>
     /// <remark>
@@ -1120,7 +1122,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.FormatCode FormatCode
+        public DocumentFormat.OpenXml.Drawing.Charts.FormatCode? FormatCode
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.FormatCode>();
             set => SetElement(value);
@@ -1133,7 +1135,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.PointCount PointCount
+        public DocumentFormat.OpenXml.Drawing.Charts.PointCount? PointCount
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.PointCount>();
             set => SetElement(value);
@@ -1145,7 +1147,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the NumFilteredLiteralCache Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:filteredLitCache.</para>
     /// </summary>
     /// <remark>
@@ -1209,7 +1211,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public NumberDataType NumberDataType
+        public NumberDataType? NumberDataType
         {
             get => GetElement<NumberDataType>();
             set => SetElement(value);
@@ -1221,7 +1223,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the StringDataType Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:strCache.</para>
     /// </summary>
     /// <remark>
@@ -1291,7 +1293,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.PointCount PointCount
+        public DocumentFormat.OpenXml.Drawing.Charts.PointCount? PointCount
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.PointCount>();
             set => SetElement(value);
@@ -1303,7 +1305,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the StrFilteredLiteralCache Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:filteredLitCache.</para>
     /// </summary>
     /// <remark>
@@ -1367,7 +1369,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public StringDataType StringDataType
+        public StringDataType? StringDataType
         {
             get => GetElement<StringDataType>();
             set => SetElement(value);
@@ -1379,7 +1381,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the MultiLvlStrData Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:multiLvlStrCache.</para>
     /// </summary>
     /// <remark>
@@ -1449,7 +1451,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.PointCount PointCount
+        public DocumentFormat.OpenXml.Drawing.Charts.PointCount? PointCount
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.PointCount>();
             set => SetElement(value);
@@ -1461,7 +1463,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the MultiLvlStrFilteredLiteralCache Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:filteredLitCache.</para>
     /// </summary>
     /// <remark>
@@ -1525,7 +1527,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public MultiLvlStrData MultiLvlStrData
+        public MultiLvlStrData? MultiLvlStrData
         {
             get => GetElement<MultiLvlStrData>();
             set => SetElement(value);
@@ -1537,7 +1539,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the LiteralDataChart Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:literalDataChart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1553,7 +1555,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2016</para>
+        /// <para>val, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: val</para>
         /// </summary>
 
@@ -1562,7 +1564,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Val
+        public BooleanValue? Val
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -1586,7 +1588,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the BooleanFalse Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:showExpandCollapseFieldButtons.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1602,7 +1604,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2016</para>
+        /// <para>val, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: val</para>
         /// </summary>
 
@@ -1611,7 +1613,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Val
+        public BooleanValue? Val
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -1632,7 +1634,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the XsdunsignedInt Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:ptidx.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1674,7 +1676,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ChartDataPointUniqueIDMapEntry Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16:ptentry.</para>
     /// </summary>
     /// <remark>
@@ -1741,7 +1743,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public XsdunsignedInt XsdunsignedInt
+        public XsdunsignedInt? XsdunsignedInt
         {
             get => GetElement<XsdunsignedInt>();
             set => SetElement(value);
@@ -1754,7 +1756,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:c16 = http://schemas.microsoft.com/office/drawing/2014/chart
         /// </remark>
-        public UniqueID UniqueID
+        public UniqueID? UniqueID
         {
             get => GetElement<UniqueID>();
             set => SetElement(value);

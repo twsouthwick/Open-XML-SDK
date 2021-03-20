@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Framework.Metadata;
@@ -15,7 +17,7 @@ namespace DocumentFormat.OpenXml.Math
 {
     /// <summary>
     /// <para>Script.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:scr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -43,7 +45,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.ScriptValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.ScriptValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.ScriptValues>>();
             set => SetAttribute(value);
@@ -66,7 +68,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>style.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sty.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -94,7 +96,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.StyleValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.StyleValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.StyleValues>>();
             set => SetAttribute(value);
@@ -117,7 +119,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Defines the Run Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:r.</para>
     /// </summary>
     /// <remark>
@@ -297,7 +299,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public RunProperties MathRunProperties
+        public RunProperties? MathRunProperties
         {
             get => GetElement<RunProperties>();
             set => SetElement(value);
@@ -310,7 +312,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:w = http://schemas.openxmlformats.org/wordprocessingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Wordprocessing.RunProperties RunProperties
+        public DocumentFormat.OpenXml.Wordprocessing.RunProperties? RunProperties
         {
             get => GetElement<DocumentFormat.OpenXml.Wordprocessing.RunProperties>();
             set => SetElement(value);
@@ -322,7 +324,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Accent.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:acc.</para>
     /// </summary>
     /// <remark>
@@ -388,7 +390,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public AccentProperties AccentProperties
+        public AccentProperties? AccentProperties
         {
             get => GetElement<AccentProperties>();
             set => SetElement(value);
@@ -401,7 +403,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -413,7 +415,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Bar.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:bar.</para>
     /// </summary>
     /// <remark>
@@ -479,7 +481,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public BarProperties BarProperties
+        public BarProperties? BarProperties
         {
             get => GetElement<BarProperties>();
             set => SetElement(value);
@@ -492,7 +494,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -504,7 +506,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Box Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:box.</para>
     /// </summary>
     /// <remark>
@@ -570,7 +572,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public BoxProperties BoxProperties
+        public BoxProperties? BoxProperties
         {
             get => GetElement<BoxProperties>();
             set => SetElement(value);
@@ -583,7 +585,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -595,7 +597,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Border-Box Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:borderBox.</para>
     /// </summary>
     /// <remark>
@@ -661,7 +663,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public BorderBoxProperties BorderBoxProperties
+        public BorderBoxProperties? BorderBoxProperties
         {
             get => GetElement<BorderBoxProperties>();
             set => SetElement(value);
@@ -674,7 +676,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -686,7 +688,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Delimiter Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:d.</para>
     /// </summary>
     /// <remark>
@@ -752,7 +754,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public DelimiterProperties DelimiterProperties
+        public DelimiterProperties? DelimiterProperties
         {
             get => GetElement<DelimiterProperties>();
             set => SetElement(value);
@@ -764,7 +766,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Equation-Array Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:eqArr.</para>
     /// </summary>
     /// <remark>
@@ -830,7 +832,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public EquationArrayProperties EquationArrayProperties
+        public EquationArrayProperties? EquationArrayProperties
         {
             get => GetElement<EquationArrayProperties>();
             set => SetElement(value);
@@ -842,7 +844,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Fraction Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:f.</para>
     /// </summary>
     /// <remark>
@@ -911,7 +913,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public FractionProperties FractionProperties
+        public FractionProperties? FractionProperties
         {
             get => GetElement<FractionProperties>();
             set => SetElement(value);
@@ -924,7 +926,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Numerator Numerator
+        public Numerator? Numerator
         {
             get => GetElement<Numerator>();
             set => SetElement(value);
@@ -937,7 +939,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Denominator Denominator
+        public Denominator? Denominator
         {
             get => GetElement<Denominator>();
             set => SetElement(value);
@@ -949,7 +951,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Function Apply Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:func.</para>
     /// </summary>
     /// <remark>
@@ -1018,7 +1020,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public FunctionProperties FunctionProperties
+        public FunctionProperties? FunctionProperties
         {
             get => GetElement<FunctionProperties>();
             set => SetElement(value);
@@ -1031,7 +1033,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public FunctionName FunctionName
+        public FunctionName? FunctionName
         {
             get => GetElement<FunctionName>();
             set => SetElement(value);
@@ -1044,7 +1046,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -1056,7 +1058,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Group-Character Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:groupChr.</para>
     /// </summary>
     /// <remark>
@@ -1122,7 +1124,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public GroupCharProperties GroupCharProperties
+        public GroupCharProperties? GroupCharProperties
         {
             get => GetElement<GroupCharProperties>();
             set => SetElement(value);
@@ -1135,7 +1137,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -1147,7 +1149,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Lower-Limit Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:limLow.</para>
     /// </summary>
     /// <remark>
@@ -1216,7 +1218,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public LimitLowerProperties LimitLowerProperties
+        public LimitLowerProperties? LimitLowerProperties
         {
             get => GetElement<LimitLowerProperties>();
             set => SetElement(value);
@@ -1229,7 +1231,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -1242,7 +1244,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Limit Limit
+        public Limit? Limit
         {
             get => GetElement<Limit>();
             set => SetElement(value);
@@ -1254,7 +1256,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Upper-Limit Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:limUpp.</para>
     /// </summary>
     /// <remark>
@@ -1323,7 +1325,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public LimitUpperProperties LimitUpperProperties
+        public LimitUpperProperties? LimitUpperProperties
         {
             get => GetElement<LimitUpperProperties>();
             set => SetElement(value);
@@ -1336,7 +1338,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -1349,7 +1351,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Limit Limit
+        public Limit? Limit
         {
             get => GetElement<Limit>();
             set => SetElement(value);
@@ -1361,7 +1363,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Matrix Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:m.</para>
     /// </summary>
     /// <remark>
@@ -1427,7 +1429,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public MatrixProperties MatrixProperties
+        public MatrixProperties? MatrixProperties
         {
             get => GetElement<MatrixProperties>();
             set => SetElement(value);
@@ -1439,7 +1441,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>n-ary Operator Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:nary.</para>
     /// </summary>
     /// <remark>
@@ -1511,7 +1513,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public NaryProperties NaryProperties
+        public NaryProperties? NaryProperties
         {
             get => GetElement<NaryProperties>();
             set => SetElement(value);
@@ -1524,7 +1526,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SubArgument SubArgument
+        public SubArgument? SubArgument
         {
             get => GetElement<SubArgument>();
             set => SetElement(value);
@@ -1537,7 +1539,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SuperArgument SuperArgument
+        public SuperArgument? SuperArgument
         {
             get => GetElement<SuperArgument>();
             set => SetElement(value);
@@ -1550,7 +1552,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -1562,7 +1564,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Phantom Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:phant.</para>
     /// </summary>
     /// <remark>
@@ -1628,7 +1630,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public PhantomProperties PhantomProperties
+        public PhantomProperties? PhantomProperties
         {
             get => GetElement<PhantomProperties>();
             set => SetElement(value);
@@ -1641,7 +1643,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -1653,7 +1655,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Radical Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:rad.</para>
     /// </summary>
     /// <remark>
@@ -1722,7 +1724,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public RadicalProperties RadicalProperties
+        public RadicalProperties? RadicalProperties
         {
             get => GetElement<RadicalProperties>();
             set => SetElement(value);
@@ -1735,7 +1737,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Degree Degree
+        public Degree? Degree
         {
             get => GetElement<Degree>();
             set => SetElement(value);
@@ -1748,7 +1750,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -1760,7 +1762,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Pre-Sub-Superscript Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sPre.</para>
     /// </summary>
     /// <remark>
@@ -1832,7 +1834,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public PreSubSuperProperties PreSubSuperProperties
+        public PreSubSuperProperties? PreSubSuperProperties
         {
             get => GetElement<PreSubSuperProperties>();
             set => SetElement(value);
@@ -1845,7 +1847,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SubArgument SubArgument
+        public SubArgument? SubArgument
         {
             get => GetElement<SubArgument>();
             set => SetElement(value);
@@ -1858,7 +1860,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SuperArgument SuperArgument
+        public SuperArgument? SuperArgument
         {
             get => GetElement<SuperArgument>();
             set => SetElement(value);
@@ -1871,7 +1873,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -1883,7 +1885,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Subscript Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sSub.</para>
     /// </summary>
     /// <remark>
@@ -1952,7 +1954,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SubscriptProperties SubscriptProperties
+        public SubscriptProperties? SubscriptProperties
         {
             get => GetElement<SubscriptProperties>();
             set => SetElement(value);
@@ -1965,7 +1967,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -1978,7 +1980,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SubArgument SubArgument
+        public SubArgument? SubArgument
         {
             get => GetElement<SubArgument>();
             set => SetElement(value);
@@ -1990,7 +1992,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Sub-Superscript Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sSubSup.</para>
     /// </summary>
     /// <remark>
@@ -2062,7 +2064,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SubSuperscriptProperties SubSuperscriptProperties
+        public SubSuperscriptProperties? SubSuperscriptProperties
         {
             get => GetElement<SubSuperscriptProperties>();
             set => SetElement(value);
@@ -2075,7 +2077,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -2088,7 +2090,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SubArgument SubArgument
+        public SubArgument? SubArgument
         {
             get => GetElement<SubArgument>();
             set => SetElement(value);
@@ -2101,7 +2103,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SuperArgument SuperArgument
+        public SuperArgument? SuperArgument
         {
             get => GetElement<SuperArgument>();
             set => SetElement(value);
@@ -2113,7 +2115,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Superscript Function.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sSup.</para>
     /// </summary>
     /// <remark>
@@ -2182,7 +2184,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SuperscriptProperties SuperscriptProperties
+        public SuperscriptProperties? SuperscriptProperties
         {
             get => GetElement<SuperscriptProperties>();
             set => SetElement(value);
@@ -2195,7 +2197,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Base Base
+        public Base? Base
         {
             get => GetElement<Base>();
             set => SetElement(value);
@@ -2208,7 +2210,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SuperArgument SuperArgument
+        public SuperArgument? SuperArgument
         {
             get => GetElement<SuperArgument>();
             set => SetElement(value);
@@ -2220,7 +2222,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Defines the Paragraph Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:oMathPara.</para>
     /// </summary>
     /// <remark>
@@ -2439,7 +2441,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ParagraphProperties ParagraphProperties
+        public ParagraphProperties? ParagraphProperties
         {
             get => GetElement<ParagraphProperties>();
             set => SetElement(value);
@@ -2451,7 +2453,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Defines the OfficeMath Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:oMath.</para>
     /// </summary>
     /// <remark>
@@ -2794,7 +2796,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Math Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:mathPr.</para>
     /// </summary>
     /// <remark>
@@ -2905,7 +2907,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public MathFont MathFont
+        public MathFont? MathFont
         {
             get => GetElement<MathFont>();
             set => SetElement(value);
@@ -2918,7 +2920,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public BreakBinary BreakBinary
+        public BreakBinary? BreakBinary
         {
             get => GetElement<BreakBinary>();
             set => SetElement(value);
@@ -2931,7 +2933,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public BreakBinarySubtraction BreakBinarySubtraction
+        public BreakBinarySubtraction? BreakBinarySubtraction
         {
             get => GetElement<BreakBinarySubtraction>();
             set => SetElement(value);
@@ -2944,7 +2946,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SmallFraction SmallFraction
+        public SmallFraction? SmallFraction
         {
             get => GetElement<SmallFraction>();
             set => SetElement(value);
@@ -2957,7 +2959,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public DisplayDefaults DisplayDefaults
+        public DisplayDefaults? DisplayDefaults
         {
             get => GetElement<DisplayDefaults>();
             set => SetElement(value);
@@ -2970,7 +2972,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public LeftMargin LeftMargin
+        public LeftMargin? LeftMargin
         {
             get => GetElement<LeftMargin>();
             set => SetElement(value);
@@ -2983,7 +2985,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public RightMargin RightMargin
+        public RightMargin? RightMargin
         {
             get => GetElement<RightMargin>();
             set => SetElement(value);
@@ -2996,7 +2998,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public DefaultJustification DefaultJustification
+        public DefaultJustification? DefaultJustification
         {
             get => GetElement<DefaultJustification>();
             set => SetElement(value);
@@ -3009,7 +3011,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public PreSpacing PreSpacing
+        public PreSpacing? PreSpacing
         {
             get => GetElement<PreSpacing>();
             set => SetElement(value);
@@ -3022,7 +3024,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public PostSpacing PostSpacing
+        public PostSpacing? PostSpacing
         {
             get => GetElement<PostSpacing>();
             set => SetElement(value);
@@ -3035,7 +3037,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public InterSpacing InterSpacing
+        public InterSpacing? InterSpacing
         {
             get => GetElement<InterSpacing>();
             set => SetElement(value);
@@ -3048,7 +3050,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public IntraSpacing IntraSpacing
+        public IntraSpacing? IntraSpacing
         {
             get => GetElement<IntraSpacing>();
             set => SetElement(value);
@@ -3060,7 +3062,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Literal.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:lit.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3087,7 +3089,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Normal Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:nor.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3114,7 +3116,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Align.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:aln.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3141,7 +3143,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Operator Emulator.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:opEmu.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3168,7 +3170,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>No Break.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:noBreak.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3195,7 +3197,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Differential.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:diff.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3222,7 +3224,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Hide Top Edge.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:hideTop.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3249,7 +3251,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Hide Bottom Edge.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:hideBot.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3276,7 +3278,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Hide Left Edge.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:hideLeft.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3303,7 +3305,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Hide Right Edge.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:hideRight.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3330,7 +3332,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Border Box Strikethrough Horizontal.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:strikeH.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3357,7 +3359,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Border Box Strikethrough Vertical.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:strikeV.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3384,7 +3386,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Border Box Strikethrough Bottom-Left to Top-Right.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:strikeBLTR.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3411,7 +3413,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Border Box Strikethrough Top-Left to Bottom-Right.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:strikeTLBR.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3438,7 +3440,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Delimiter Grow.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:grow.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3465,7 +3467,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Maximum Distribution.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:maxDist.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3492,7 +3494,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Object Distribution.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:objDist.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3519,7 +3521,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Hide Placeholders (Matrix).</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:plcHide.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3546,7 +3548,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Hide Subscript (n-ary).</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:subHide.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3573,7 +3575,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Hide Superscript (n-ary).</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:supHide.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3600,7 +3602,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Phantom Show.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:show.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3627,7 +3629,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Phantom Zero Width.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:zeroWid.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3654,7 +3656,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Phantom Zero Ascent.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:zeroAsc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3681,7 +3683,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Phantom Zero Descent.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:zeroDesc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3708,7 +3710,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Transparent (Phantom).</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:transp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3735,7 +3737,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Hide Degree.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:degHide.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3762,7 +3764,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Align Scripts.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:alnScr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3789,7 +3791,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Small Fraction.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:smallFrac.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3816,7 +3818,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Use Display Math Defaults.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:dispDef.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3843,7 +3845,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Wrap Right.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:wrapRight.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3870,7 +3872,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Defines the OnOffType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class OnOffType : OpenXmlLeafElement
@@ -3895,7 +3897,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.BooleanValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.BooleanValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.BooleanValues>>();
             set => SetAttribute(value);
@@ -3911,7 +3913,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Break.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:brk.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3939,7 +3941,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(21, "alnAt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue AlignAt
+        public IntegerValue? AlignAt
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -3958,7 +3960,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue Val
+        public IntegerValue? Val
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -3985,7 +3987,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Run Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:rPr.</para>
     /// </summary>
     /// <remark>
@@ -4075,7 +4077,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Literal Literal
+        public Literal? Literal
         {
             get => GetElement<Literal>();
             set => SetElement(value);
@@ -4087,7 +4089,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Text.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:t.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4128,7 +4130,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(1, "space")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.SpaceProcessingModeValues> Space
+        public EnumValue<DocumentFormat.OpenXml.SpaceProcessingModeValues>? Space
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.SpaceProcessingModeValues>>();
             set => SetAttribute(value);
@@ -4148,7 +4150,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Accent Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:chr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4175,7 +4177,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Delimiter Beginning Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:begChr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4202,7 +4204,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Delimiter Separator Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sepChr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4229,7 +4231,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Delimiter Ending Character.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:endChr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4256,7 +4258,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Defines the CharType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class CharType : OpenXmlLeafElement
@@ -4281,7 +4283,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -4301,7 +4303,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Control Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:ctrlPr.</para>
     /// </summary>
     /// <remark>
@@ -4399,7 +4401,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Accent Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:accPr.</para>
     /// </summary>
     /// <remark>
@@ -4465,7 +4467,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public AccentChar AccentChar
+        public AccentChar? AccentChar
         {
             get => GetElement<AccentChar>();
             set => SetElement(value);
@@ -4478,7 +4480,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -4490,7 +4492,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Base.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:e.</para>
     /// </summary>
     /// <remark>
@@ -4781,7 +4783,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Numerator.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:num.</para>
     /// </summary>
     /// <remark>
@@ -5072,7 +5074,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Denominator.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:den.</para>
     /// </summary>
     /// <remark>
@@ -5363,7 +5365,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Function Name.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:fName.</para>
     /// </summary>
     /// <remark>
@@ -5654,7 +5656,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Limit (Lower).</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:lim.</para>
     /// </summary>
     /// <remark>
@@ -5945,7 +5947,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Lower limit (n-ary) .</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sub.</para>
     /// </summary>
     /// <remark>
@@ -6236,7 +6238,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Upper limit (n-ary).</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sup.</para>
     /// </summary>
     /// <remark>
@@ -6527,7 +6529,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Degree.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:deg.</para>
     /// </summary>
     /// <remark>
@@ -6818,7 +6820,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Defines the OfficeMathArgumentType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -6987,7 +6989,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ArgumentProperties ArgumentProperties
+        public ArgumentProperties? ArgumentProperties
         {
             get => GetElement<ArgumentProperties>();
             set => SetElement(value);
@@ -6996,7 +6998,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Position (Bar).</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:pos.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7023,7 +7025,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Vertical Justification.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:vertJc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7050,7 +7052,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Defines the TopBottomType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TopBottomType : OpenXmlLeafElement
@@ -7075,7 +7077,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.VerticalJustificationValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.VerticalJustificationValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.VerticalJustificationValues>>();
             set => SetAttribute(value);
@@ -7094,7 +7096,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Bar Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:barPr.</para>
     /// </summary>
     /// <remark>
@@ -7160,7 +7162,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Position Position
+        public Position? Position
         {
             get => GetElement<Position>();
             set => SetElement(value);
@@ -7173,7 +7175,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -7185,7 +7187,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Box Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:boxPr.</para>
     /// </summary>
     /// <remark>
@@ -7263,7 +7265,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public OperatorEmulator OperatorEmulator
+        public OperatorEmulator? OperatorEmulator
         {
             get => GetElement<OperatorEmulator>();
             set => SetElement(value);
@@ -7276,7 +7278,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public NoBreak NoBreak
+        public NoBreak? NoBreak
         {
             get => GetElement<NoBreak>();
             set => SetElement(value);
@@ -7289,7 +7291,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Differential Differential
+        public Differential? Differential
         {
             get => GetElement<Differential>();
             set => SetElement(value);
@@ -7302,7 +7304,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Break Break
+        public Break? Break
         {
             get => GetElement<Break>();
             set => SetElement(value);
@@ -7315,7 +7317,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Alignment Alignment
+        public Alignment? Alignment
         {
             get => GetElement<Alignment>();
             set => SetElement(value);
@@ -7328,7 +7330,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -7340,7 +7342,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Border Box Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:borderBoxPr.</para>
     /// </summary>
     /// <remark>
@@ -7427,7 +7429,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public HideTop HideTop
+        public HideTop? HideTop
         {
             get => GetElement<HideTop>();
             set => SetElement(value);
@@ -7440,7 +7442,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public HideBottom HideBottom
+        public HideBottom? HideBottom
         {
             get => GetElement<HideBottom>();
             set => SetElement(value);
@@ -7453,7 +7455,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public HideLeft HideLeft
+        public HideLeft? HideLeft
         {
             get => GetElement<HideLeft>();
             set => SetElement(value);
@@ -7466,7 +7468,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public HideRight HideRight
+        public HideRight? HideRight
         {
             get => GetElement<HideRight>();
             set => SetElement(value);
@@ -7479,7 +7481,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public StrikeHorizontal StrikeHorizontal
+        public StrikeHorizontal? StrikeHorizontal
         {
             get => GetElement<StrikeHorizontal>();
             set => SetElement(value);
@@ -7492,7 +7494,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public StrikeVertical StrikeVertical
+        public StrikeVertical? StrikeVertical
         {
             get => GetElement<StrikeVertical>();
             set => SetElement(value);
@@ -7505,7 +7507,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public StrikeBottomLeftToTopRight StrikeBottomLeftToTopRight
+        public StrikeBottomLeftToTopRight? StrikeBottomLeftToTopRight
         {
             get => GetElement<StrikeBottomLeftToTopRight>();
             set => SetElement(value);
@@ -7518,7 +7520,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public StrikeTopLeftToBottomRight StrikeTopLeftToBottomRight
+        public StrikeTopLeftToBottomRight? StrikeTopLeftToBottomRight
         {
             get => GetElement<StrikeTopLeftToBottomRight>();
             set => SetElement(value);
@@ -7531,7 +7533,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -7543,7 +7545,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Shape (Delimiters).</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:shp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7571,7 +7573,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.ShapeDelimiterValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.ShapeDelimiterValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.ShapeDelimiterValues>>();
             set => SetAttribute(value);
@@ -7594,7 +7596,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Delimiter Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:dPr.</para>
     /// </summary>
     /// <remark>
@@ -7672,7 +7674,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public BeginChar BeginChar
+        public BeginChar? BeginChar
         {
             get => GetElement<BeginChar>();
             set => SetElement(value);
@@ -7685,7 +7687,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public SeparatorChar SeparatorChar
+        public SeparatorChar? SeparatorChar
         {
             get => GetElement<SeparatorChar>();
             set => SetElement(value);
@@ -7698,7 +7700,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public EndChar EndChar
+        public EndChar? EndChar
         {
             get => GetElement<EndChar>();
             set => SetElement(value);
@@ -7711,7 +7713,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public GrowOperators GrowOperators
+        public GrowOperators? GrowOperators
         {
             get => GetElement<GrowOperators>();
             set => SetElement(value);
@@ -7724,7 +7726,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Shape Shape
+        public Shape? Shape
         {
             get => GetElement<Shape>();
             set => SetElement(value);
@@ -7737,7 +7739,7 @@ namespace DocumentFormat.OpenXml.Math
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -7749,7 +7751,7 @@ namespace DocumentFormat.OpenXml.Math
 
     /// <summary>
     /// <para>Equation Array Base Justification.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:baseJc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7777,7 +7779,7 @@ namespace DocumentFormat.OpenXml.Math
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.VerticalAlignmentValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.VerticalAlignmentValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.VerticalAlignmentValues>>();
             set => SetAttribute(value);
@@ -7800,7 +7802,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Row Spacing Rule.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:rSpRule.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7827,7 +7829,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Column Gap Rule.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:cGpRule.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7854,7 +7856,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the SpacingRuleType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class SpacingRuleType : OpenXmlLeafElement
@@ -7879,7 +7881,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue Val
+        public IntegerValue? Val
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -7899,7 +7901,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Row Spacing (Equation Array).</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:rSp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7926,7 +7928,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Column Gap.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:cGp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -7953,7 +7955,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the UnsignedShortType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class UnsignedShortType : OpenXmlLeafElement
@@ -7978,7 +7980,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt16Value Val
+        public UInt16Value? Val
         {
             get => GetAttribute<UInt16Value>();
             set => SetAttribute(value);
@@ -7997,7 +7999,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Equation Array Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:eqArrPr.</para>
     /// </summary>
     /// <remark>
@@ -8075,7 +8077,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public BaseJustification BaseJustification
+        public BaseJustification? BaseJustification
         {
             get => GetElement<BaseJustification>();
             set => SetElement(value);
@@ -8088,7 +8090,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public MaxDistribution MaxDistribution
+        public MaxDistribution? MaxDistribution
         {
             get => GetElement<MaxDistribution>();
             set => SetElement(value);
@@ -8101,7 +8103,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ObjectDistribution ObjectDistribution
+        public ObjectDistribution? ObjectDistribution
         {
             get => GetElement<ObjectDistribution>();
             set => SetElement(value);
@@ -8114,7 +8116,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public RowSpacingRule RowSpacingRule
+        public RowSpacingRule? RowSpacingRule
         {
             get => GetElement<RowSpacingRule>();
             set => SetElement(value);
@@ -8127,7 +8129,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public RowSpacing RowSpacing
+        public RowSpacing? RowSpacing
         {
             get => GetElement<RowSpacing>();
             set => SetElement(value);
@@ -8140,7 +8142,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -8152,7 +8154,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Fraction type.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:type.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8180,7 +8182,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.FractionTypeValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.FractionTypeValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.FractionTypeValues>>();
             set => SetAttribute(value);
@@ -8203,7 +8205,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Fraction Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:fPr.</para>
     /// </summary>
     /// <remark>
@@ -8269,7 +8271,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public FractionType FractionType
+        public FractionType? FractionType
         {
             get => GetElement<FractionType>();
             set => SetElement(value);
@@ -8282,7 +8284,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -8294,7 +8296,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Function Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:funcPr.</para>
     /// </summary>
     /// <remark>
@@ -8357,7 +8359,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -8369,7 +8371,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Group-Character Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:groupChrPr.</para>
     /// </summary>
     /// <remark>
@@ -8441,7 +8443,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public AccentChar AccentChar
+        public AccentChar? AccentChar
         {
             get => GetElement<AccentChar>();
             set => SetElement(value);
@@ -8454,7 +8456,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Position Position
+        public Position? Position
         {
             get => GetElement<Position>();
             set => SetElement(value);
@@ -8467,7 +8469,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public VerticalJustification VerticalJustification
+        public VerticalJustification? VerticalJustification
         {
             get => GetElement<VerticalJustification>();
             set => SetElement(value);
@@ -8480,7 +8482,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -8492,7 +8494,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Lower Limit Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:limLowPr.</para>
     /// </summary>
     /// <remark>
@@ -8555,7 +8557,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -8567,7 +8569,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Upper Limit Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:limUppPr.</para>
     /// </summary>
     /// <remark>
@@ -8630,7 +8632,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -8642,7 +8644,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Column Count.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:count.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8670,7 +8672,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue Val
+        public IntegerValue? Val
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -8694,7 +8696,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Column Justification.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:mcJc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8722,7 +8724,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.HorizontalAlignmentValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.HorizontalAlignmentValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.HorizontalAlignmentValues>>();
             set => SetAttribute(value);
@@ -8745,7 +8747,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Column Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:mcPr.</para>
     /// </summary>
     /// <remark>
@@ -8811,7 +8813,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public MatrixColumnCount MatrixColumnCount
+        public MatrixColumnCount? MatrixColumnCount
         {
             get => GetElement<MatrixColumnCount>();
             set => SetElement(value);
@@ -8824,7 +8826,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public MatrixColumnJustification MatrixColumnJustification
+        public MatrixColumnJustification? MatrixColumnJustification
         {
             get => GetElement<MatrixColumnJustification>();
             set => SetElement(value);
@@ -8836,7 +8838,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Column.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:mc.</para>
     /// </summary>
     /// <remark>
@@ -8899,7 +8901,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public MatrixColumnProperties MatrixColumnProperties
+        public MatrixColumnProperties? MatrixColumnProperties
         {
             get => GetElement<MatrixColumnProperties>();
             set => SetElement(value);
@@ -8911,7 +8913,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Column Spacing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:cSp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8938,7 +8940,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Left Margin.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:lMargin.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8965,7 +8967,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Right Margin.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:rMargin.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -8992,7 +8994,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Pre-Equation Spacing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:preSp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9019,7 +9021,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Post-Equation Spacing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:postSp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9046,7 +9048,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Inter-Equation Spacing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:interSp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9073,7 +9075,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Intra-Equation Spacing.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:intraSp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9100,7 +9102,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Wrap Indent.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:wrapIndent.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9127,7 +9129,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the TwipsMeasureType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TwipsMeasureType : OpenXmlLeafElement
@@ -9152,7 +9154,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Val
+        public UInt32Value? Val
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -9172,7 +9174,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Columns.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:mcs.</para>
     /// </summary>
     /// <remark>
@@ -9234,7 +9236,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:mPr.</para>
     /// </summary>
     /// <remark>
@@ -9321,7 +9323,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public BaseJustification BaseJustification
+        public BaseJustification? BaseJustification
         {
             get => GetElement<BaseJustification>();
             set => SetElement(value);
@@ -9334,7 +9336,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public HidePlaceholder HidePlaceholder
+        public HidePlaceholder? HidePlaceholder
         {
             get => GetElement<HidePlaceholder>();
             set => SetElement(value);
@@ -9347,7 +9349,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public RowSpacingRule RowSpacingRule
+        public RowSpacingRule? RowSpacingRule
         {
             get => GetElement<RowSpacingRule>();
             set => SetElement(value);
@@ -9360,7 +9362,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ColumnGapRule ColumnGapRule
+        public ColumnGapRule? ColumnGapRule
         {
             get => GetElement<ColumnGapRule>();
             set => SetElement(value);
@@ -9373,7 +9375,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public RowSpacing RowSpacing
+        public RowSpacing? RowSpacing
         {
             get => GetElement<RowSpacing>();
             set => SetElement(value);
@@ -9386,7 +9388,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ColumnSpacing ColumnSpacing
+        public ColumnSpacing? ColumnSpacing
         {
             get => GetElement<ColumnSpacing>();
             set => SetElement(value);
@@ -9399,7 +9401,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ColumnGap ColumnGap
+        public ColumnGap? ColumnGap
         {
             get => GetElement<ColumnGap>();
             set => SetElement(value);
@@ -9412,7 +9414,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public MatrixColumns MatrixColumns
+        public MatrixColumns? MatrixColumns
         {
             get => GetElement<MatrixColumns>();
             set => SetElement(value);
@@ -9425,7 +9427,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -9437,7 +9439,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Matrix Row.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:mr.</para>
     /// </summary>
     /// <remark>
@@ -9499,7 +9501,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>n-ary Limit Location.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:limLoc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9526,7 +9528,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Integral Limit Locations.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:intLim.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9553,7 +9555,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>n-ary Limit Location.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:naryLim.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -9580,7 +9582,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the LimitLocationType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class LimitLocationType : OpenXmlLeafElement
@@ -9605,7 +9607,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.LimitLocationValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.LimitLocationValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.LimitLocationValues>>();
             set => SetAttribute(value);
@@ -9624,7 +9626,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>n-ary Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:naryPr.</para>
     /// </summary>
     /// <remark>
@@ -9702,7 +9704,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public AccentChar AccentChar
+        public AccentChar? AccentChar
         {
             get => GetElement<AccentChar>();
             set => SetElement(value);
@@ -9715,7 +9717,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public LimitLocation LimitLocation
+        public LimitLocation? LimitLocation
         {
             get => GetElement<LimitLocation>();
             set => SetElement(value);
@@ -9728,7 +9730,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public GrowOperators GrowOperators
+        public GrowOperators? GrowOperators
         {
             get => GetElement<GrowOperators>();
             set => SetElement(value);
@@ -9741,7 +9743,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public HideSubArgument HideSubArgument
+        public HideSubArgument? HideSubArgument
         {
             get => GetElement<HideSubArgument>();
             set => SetElement(value);
@@ -9754,7 +9756,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public HideSuperArgument HideSuperArgument
+        public HideSuperArgument? HideSuperArgument
         {
             get => GetElement<HideSuperArgument>();
             set => SetElement(value);
@@ -9767,7 +9769,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -9779,7 +9781,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Phantom Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:phantPr.</para>
     /// </summary>
     /// <remark>
@@ -9857,7 +9859,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ShowPhantom ShowPhantom
+        public ShowPhantom? ShowPhantom
         {
             get => GetElement<ShowPhantom>();
             set => SetElement(value);
@@ -9870,7 +9872,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ZeroWidth ZeroWidth
+        public ZeroWidth? ZeroWidth
         {
             get => GetElement<ZeroWidth>();
             set => SetElement(value);
@@ -9883,7 +9885,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ZeroAscent ZeroAscent
+        public ZeroAscent? ZeroAscent
         {
             get => GetElement<ZeroAscent>();
             set => SetElement(value);
@@ -9896,7 +9898,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ZeroDescent ZeroDescent
+        public ZeroDescent? ZeroDescent
         {
             get => GetElement<ZeroDescent>();
             set => SetElement(value);
@@ -9909,7 +9911,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Transparent Transparent
+        public Transparent? Transparent
         {
             get => GetElement<Transparent>();
             set => SetElement(value);
@@ -9922,7 +9924,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -9934,7 +9936,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Radical Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:radPr.</para>
     /// </summary>
     /// <remark>
@@ -10000,7 +10002,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public HideDegree HideDegree
+        public HideDegree? HideDegree
         {
             get => GetElement<HideDegree>();
             set => SetElement(value);
@@ -10013,7 +10015,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -10025,7 +10027,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Pre-Sub-Superscript Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sPrePr.</para>
     /// </summary>
     /// <remark>
@@ -10088,7 +10090,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -10100,7 +10102,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Subscript Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sSubPr.</para>
     /// </summary>
     /// <remark>
@@ -10163,7 +10165,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -10175,7 +10177,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Sub-Superscript Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sSubSupPr.</para>
     /// </summary>
     /// <remark>
@@ -10241,7 +10243,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public AlignScripts AlignScripts
+        public AlignScripts? AlignScripts
         {
             get => GetElement<AlignScripts>();
             set => SetElement(value);
@@ -10254,7 +10256,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -10266,7 +10268,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Superscript Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:sSupPr.</para>
     /// </summary>
     /// <remark>
@@ -10329,7 +10331,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ControlProperties ControlProperties
+        public ControlProperties? ControlProperties
         {
             get => GetElement<ControlProperties>();
             set => SetElement(value);
@@ -10341,7 +10343,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Argument Size.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:argSz.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10369,7 +10371,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue Val
+        public IntegerValue? Val
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -10393,7 +10395,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Argument Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:argPr.</para>
     /// </summary>
     /// <remark>
@@ -10456,7 +10458,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public ArgumentSize ArgumentSize
+        public ArgumentSize? ArgumentSize
         {
             get => GetElement<ArgumentSize>();
             set => SetElement(value);
@@ -10468,7 +10470,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Justification.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:jc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10495,7 +10497,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Default Justification.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:defJc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10522,7 +10524,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the OfficeMathJustificationType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class OfficeMathJustificationType : OpenXmlLeafElement
@@ -10547,7 +10549,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.JustificationValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.JustificationValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.JustificationValues>>();
             set => SetAttribute(value);
@@ -10566,7 +10568,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Math Font.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:mathFont.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10594,7 +10596,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Val
+        public StringValue? Val
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -10618,7 +10620,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
 
     /// <summary>
     /// <para>Break on Binary Operators.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:brkBin.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10646,7 +10648,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.BreakBinaryOperatorValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.BreakBinaryOperatorValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.BreakBinaryOperatorValues>>();
             set => SetAttribute(value);
@@ -10666,7 +10668,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
 
     /// <summary>
     /// <para>Break on Binary Subtraction.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:brkBinSub.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -10694,7 +10696,7 @@ aBuilder.AddValidator(new StringValidator() { MaxLength = (31L) });
         [SchemaAttr(21, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Math.BreakBinarySubtractionValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Math.BreakBinarySubtractionValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Math.BreakBinarySubtractionValues>>();
             set => SetAttribute(value);
@@ -10718,7 +10720,7 @@ aBuilder.AddValidator(new RequiredValidator() { IsRequired = (false), InitialVer
 
     /// <summary>
     /// <para>Office Math Paragraph Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is m:oMathParaPr.</para>
     /// </summary>
     /// <remark>
@@ -10781,7 +10783,7 @@ aBuilder.AddValidator(new RequiredValidator() { IsRequired = (false), InitialVer
         /// <remark>
         /// xmlns:m = http://schemas.openxmlformats.org/officeDocument/2006/math
         /// </remark>
-        public Justification Justification
+        public Justification? Justification
         {
             get => GetElement<Justification>();
             set => SetElement(value);

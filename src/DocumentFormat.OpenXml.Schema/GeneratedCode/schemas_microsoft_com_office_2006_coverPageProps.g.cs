@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Framework.Metadata;
@@ -14,7 +16,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
 {
     /// <summary>
     /// <para>Defines the CoverPageProperties Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is cppr:CoverPageProperties.</para>
     /// </summary>
     /// <remark>
@@ -92,7 +94,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
         /// <remark>
         /// xmlns:cppr = http://schemas.microsoft.com/office/2006/coverPageProps
         /// </remark>
-        public PublishDate PublishDate
+        public PublishDate? PublishDate
         {
             get => GetElement<PublishDate>();
             set => SetElement(value);
@@ -105,7 +107,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
         /// <remark>
         /// xmlns:cppr = http://schemas.microsoft.com/office/2006/coverPageProps
         /// </remark>
-        public DocumentAbstract DocumentAbstract
+        public DocumentAbstract? DocumentAbstract
         {
             get => GetElement<DocumentAbstract>();
             set => SetElement(value);
@@ -118,7 +120,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
         /// <remark>
         /// xmlns:cppr = http://schemas.microsoft.com/office/2006/coverPageProps
         /// </remark>
-        public CompanyAddress CompanyAddress
+        public CompanyAddress? CompanyAddress
         {
             get => GetElement<CompanyAddress>();
             set => SetElement(value);
@@ -131,7 +133,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
         /// <remark>
         /// xmlns:cppr = http://schemas.microsoft.com/office/2006/coverPageProps
         /// </remark>
-        public CompanyPhoneNumber CompanyPhoneNumber
+        public CompanyPhoneNumber? CompanyPhoneNumber
         {
             get => GetElement<CompanyPhoneNumber>();
             set => SetElement(value);
@@ -144,7 +146,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
         /// <remark>
         /// xmlns:cppr = http://schemas.microsoft.com/office/2006/coverPageProps
         /// </remark>
-        public CompanyFaxNumber CompanyFaxNumber
+        public CompanyFaxNumber? CompanyFaxNumber
         {
             get => GetElement<CompanyFaxNumber>();
             set => SetElement(value);
@@ -157,7 +159,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
         /// <remark>
         /// xmlns:cppr = http://schemas.microsoft.com/office/2006/coverPageProps
         /// </remark>
-        public CompanyEmailAddress CompanyEmailAddress
+        public CompanyEmailAddress? CompanyEmailAddress
         {
             get => GetElement<CompanyEmailAddress>();
             set => SetElement(value);
@@ -169,7 +171,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
 
     /// <summary>
     /// <para>Defines the PublishDate Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is cppr:PublishDate.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -209,7 +211,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
 
     /// <summary>
     /// <para>Defines the DocumentAbstract Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is cppr:Abstract.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -249,7 +251,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
 
     /// <summary>
     /// <para>Defines the CompanyAddress Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is cppr:CompanyAddress.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -289,7 +291,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
 
     /// <summary>
     /// <para>Defines the CompanyPhoneNumber Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is cppr:CompanyPhone.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -329,7 +331,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
 
     /// <summary>
     /// <para>Defines the CompanyFaxNumber Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is cppr:CompanyFax.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -369,7 +371,7 @@ namespace DocumentFormat.OpenXml.Office.CoverPageProps
 
     /// <summary>
     /// <para>Defines the CompanyEmailAddress Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is cppr:CompanyEmail.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete

@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Framework.Metadata;
@@ -15,7 +17,7 @@ namespace DocumentFormat.OpenXml.Office2016.ExcelAc
 {
     /// <summary>
     /// <para>Defines the ModelTimeGroupings Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x16:modelTimeGroupings.</para>
     /// </summary>
     /// <remark>
@@ -78,7 +80,7 @@ namespace DocumentFormat.OpenXml.Office2016.ExcelAc
 
     /// <summary>
     /// <para>Defines the ModelTimeGrouping Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x16:modelTimeGrouping.</para>
     /// </summary>
     /// <remark>
@@ -124,7 +126,7 @@ namespace DocumentFormat.OpenXml.Office2016.ExcelAc
         }
 
         /// <summary>
-        /// <para>tableName, this property is only available in Office2016</para>
+        /// <para>tableName, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: tableName</para>
         /// </summary>
 
@@ -133,14 +135,14 @@ namespace DocumentFormat.OpenXml.Office2016.ExcelAc
         [SchemaAttr(0, "tableName")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue TableName
+        public StringValue? TableName
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>columnName, this property is only available in Office2016</para>
+        /// <para>columnName, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: columnName</para>
         /// </summary>
 
@@ -149,14 +151,14 @@ namespace DocumentFormat.OpenXml.Office2016.ExcelAc
         [SchemaAttr(0, "columnName")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ColumnName
+        public StringValue? ColumnName
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>columnId, this property is only available in Office2016</para>
+        /// <para>columnId, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: columnId</para>
         /// </summary>
 
@@ -165,7 +167,7 @@ namespace DocumentFormat.OpenXml.Office2016.ExcelAc
         [SchemaAttr(0, "columnId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ColumnId
+        public StringValue? ColumnId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -202,7 +204,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the CalculatedTimeColumn Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is x16:calculatedTimeColumn.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -218,7 +220,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>columnName, this property is only available in Office2016</para>
+        /// <para>columnName, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: columnName</para>
         /// </summary>
 
@@ -227,14 +229,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "columnName")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ColumnName
+        public StringValue? ColumnName
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>columnId, this property is only available in Office2016</para>
+        /// <para>columnId, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: columnId</para>
         /// </summary>
 
@@ -243,14 +245,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "columnId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ColumnId
+        public StringValue? ColumnId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>contentType, this property is only available in Office2016</para>
+        /// <para>contentType, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: contentType</para>
         /// </summary>
 
@@ -259,14 +261,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "contentType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.ExcelAc.ModelTimeGroupingContentType> ContentType
+        public EnumValue<DocumentFormat.OpenXml.Office2016.ExcelAc.ModelTimeGroupingContentType>? ContentType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.ExcelAc.ModelTimeGroupingContentType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>isSelected, this property is only available in Office2016</para>
+        /// <para>isSelected, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: isSelected</para>
         /// </summary>
 
@@ -275,7 +277,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "isSelected")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue IsSelected
+        public BooleanValue? IsSelected
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);

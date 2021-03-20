@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -16,7 +18,7 @@ namespace DocumentFormat.OpenXml.Office2010.Excel.Drawing
 {
     /// <summary>
     /// <para>Defines the ContentPart Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xdr14:contentPart.</para>
     /// </summary>
     /// <remark>
@@ -65,7 +67,7 @@ namespace DocumentFormat.OpenXml.Office2010.Excel.Drawing
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: r:id</para>
         /// </summary>
         /// <remark>
@@ -77,14 +79,14 @@ namespace DocumentFormat.OpenXml.Office2010.Excel.Drawing
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue RelationshipId
+        public StringValue? RelationshipId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>bwMode, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>bwMode, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: bwMode</para>
         /// </summary>
 
@@ -93,7 +95,7 @@ namespace DocumentFormat.OpenXml.Office2010.Excel.Drawing
         [SchemaAttr(0, "bwMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> BlackWhiteMode
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? BlackWhiteMode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
@@ -133,7 +135,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:xdr14 = http://schemas.microsoft.com/office/excel/2010/spreadsheetDrawing
         /// </remark>
-        public ExcelNonVisualContentPartShapeProperties ExcelNonVisualContentPartShapeProperties
+        public ExcelNonVisualContentPartShapeProperties? ExcelNonVisualContentPartShapeProperties
         {
             get => GetElement<ExcelNonVisualContentPartShapeProperties>();
             set => SetElement(value);
@@ -146,7 +148,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:xdr14 = http://schemas.microsoft.com/office/excel/2010/spreadsheetDrawing
         /// </remark>
-        public ApplicationNonVisualDrawingProperties ApplicationNonVisualDrawingProperties
+        public ApplicationNonVisualDrawingProperties? ApplicationNonVisualDrawingProperties
         {
             get => GetElement<ApplicationNonVisualDrawingProperties>();
             set => SetElement(value);
@@ -159,7 +161,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:xdr14 = http://schemas.microsoft.com/office/excel/2010/spreadsheetDrawing
         /// </remark>
-        public Transform2D Transform2D
+        public Transform2D? Transform2D
         {
             get => GetElement<Transform2D>();
             set => SetElement(value);
@@ -172,7 +174,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:xdr14 = http://schemas.microsoft.com/office/excel/2010/spreadsheetDrawing
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);
@@ -184,7 +186,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the NonVisualDrawingProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xdr14:cNvPr.</para>
     /// </summary>
     /// <remark>
@@ -241,7 +243,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Id
+        public UInt32Value? Id
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -257,7 +259,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -273,7 +275,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "descr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Description
+        public StringValue? Description
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -289,7 +291,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "hidden")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Hidden
+        public BooleanValue? Hidden
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -305,7 +307,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "title")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Title
+        public StringValue? Title
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -346,7 +348,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.HyperlinkOnClick HyperlinkOnClick
+        public DocumentFormat.OpenXml.Drawing.HyperlinkOnClick? HyperlinkOnClick
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.HyperlinkOnClick>();
             set => SetElement(value);
@@ -359,7 +361,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.HyperlinkOnHover HyperlinkOnHover
+        public DocumentFormat.OpenXml.Drawing.HyperlinkOnHover? HyperlinkOnHover
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.HyperlinkOnHover>();
             set => SetElement(value);
@@ -372,7 +374,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList NonVisualDrawingPropertiesExtensionList
+        public DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList? NonVisualDrawingPropertiesExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList>();
             set => SetElement(value);
@@ -384,7 +386,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the NonVisualInkContentPartProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xdr14:cNvContentPartPr.</para>
     /// </summary>
     /// <remark>
@@ -431,7 +433,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>isComment, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>isComment, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: isComment</para>
         /// </summary>
 
@@ -440,7 +442,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "isComment")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue IsComment
+        public BooleanValue? IsComment
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -469,7 +471,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a14 = http://schemas.microsoft.com/office/drawing/2010/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Drawing.ContentPartLocks ContentPartLocks
+        public DocumentFormat.OpenXml.Office2010.Drawing.ContentPartLocks? ContentPartLocks
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Drawing.ContentPartLocks>();
             set => SetElement(value);
@@ -482,7 +484,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a14 = http://schemas.microsoft.com/office/drawing/2010/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Drawing.OfficeArtExtensionList OfficeArtExtensionList
+        public DocumentFormat.OpenXml.Office2010.Drawing.OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Drawing.OfficeArtExtensionList>();
             set => SetElement(value);
@@ -494,7 +496,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ExcelNonVisualContentPartShapeProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xdr14:nvContentPartPr.</para>
     /// </summary>
     /// <remark>
@@ -561,7 +563,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xdr14 = http://schemas.microsoft.com/office/excel/2010/spreadsheetDrawing
         /// </remark>
-        public NonVisualDrawingProperties NonVisualDrawingProperties
+        public NonVisualDrawingProperties? NonVisualDrawingProperties
         {
             get => GetElement<NonVisualDrawingProperties>();
             set => SetElement(value);
@@ -574,7 +576,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xdr14 = http://schemas.microsoft.com/office/excel/2010/spreadsheetDrawing
         /// </remark>
-        public NonVisualInkContentPartProperties NonVisualInkContentPartProperties
+        public NonVisualInkContentPartProperties? NonVisualInkContentPartProperties
         {
             get => GetElement<NonVisualInkContentPartProperties>();
             set => SetElement(value);
@@ -586,7 +588,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ApplicationNonVisualDrawingProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xdr14:nvPr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -602,7 +604,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>macro, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>macro, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: macro</para>
         /// </summary>
 
@@ -611,14 +613,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "macro")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Macro
+        public StringValue? Macro
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>fPublished, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>fPublished, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: fPublished</para>
         /// </summary>
 
@@ -627,7 +629,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "fPublished")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue PublishedFlag
+        public BooleanValue? PublishedFlag
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -649,7 +651,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Transform2D Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xdr14:xfrm.</para>
     /// </summary>
     /// <remark>
@@ -705,7 +707,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rot")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Rotation
+        public Int32Value? Rotation
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -721,7 +723,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "flipH")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue HorizontalFlip
+        public BooleanValue? HorizontalFlip
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -737,7 +739,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "flipV")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue VerticalFlip
+        public BooleanValue? VerticalFlip
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -768,7 +770,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Offset Offset
+        public DocumentFormat.OpenXml.Drawing.Offset? Offset
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Offset>();
             set => SetElement(value);
@@ -781,7 +783,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Extents Extents
+        public DocumentFormat.OpenXml.Drawing.Extents? Extents
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Extents>();
             set => SetElement(value);
@@ -793,7 +795,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the OfficeArtExtensionList Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xdr14:extLst.</para>
     /// </summary>
     /// <remark>

@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Drawing.Spreadsheet;
@@ -19,7 +21,7 @@ namespace DocumentFormat.OpenXml.Office2016.Excel
 {
     /// <summary>
     /// <para>Defines the RevExHeaders Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:revHdrs.</para>
     /// </summary>
     /// <remark>
@@ -65,7 +67,7 @@ namespace DocumentFormat.OpenXml.Office2016.Excel
         }
 
         /// <summary>
-        /// <para>minRev, this property is only available in Office2016</para>
+        /// <para>minRev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: minRev</para>
         /// </summary>
 
@@ -74,14 +76,14 @@ namespace DocumentFormat.OpenXml.Office2016.Excel
         [SchemaAttr(0, "minRev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value MinRev
+        public UInt64Value? MinRev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>maxRev, this property is only available in Office2016</para>
+        /// <para>maxRev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: maxRev</para>
         /// </summary>
 
@@ -90,14 +92,14 @@ namespace DocumentFormat.OpenXml.Office2016.Excel
         [SchemaAttr(0, "maxRev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value MaxRev
+        public UInt64Value? MaxRev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>docId, this property is only available in Office2016</para>
+        /// <para>docId, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: docId</para>
         /// </summary>
 
@@ -106,14 +108,14 @@ namespace DocumentFormat.OpenXml.Office2016.Excel
         [SchemaAttr(0, "docId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue DocId
+        public StringValue? DocId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>endpointId, this property is only available in Office2016</para>
+        /// <para>endpointId, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: endpointId</para>
         /// </summary>
 
@@ -122,7 +124,7 @@ namespace DocumentFormat.OpenXml.Office2016.Excel
         [SchemaAttr(0, "endpointId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue EndpointId
+        public StringValue? EndpointId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -163,7 +165,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevExStream Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:revStream.</para>
     /// </summary>
     /// <remark>
@@ -265,7 +267,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DifferentialFormatType Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:dxf.</para>
     /// </summary>
     /// <remark>
@@ -347,7 +349,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Font Font
+        public DocumentFormat.OpenXml.Spreadsheet.Font? Font
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Font>();
             set => SetElement(value);
@@ -360,7 +362,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.NumberingFormat NumberingFormat
+        public DocumentFormat.OpenXml.Spreadsheet.NumberingFormat? NumberingFormat
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.NumberingFormat>();
             set => SetElement(value);
@@ -373,7 +375,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Fill Fill
+        public DocumentFormat.OpenXml.Spreadsheet.Fill? Fill
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Fill>();
             set => SetElement(value);
@@ -386,7 +388,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Alignment Alignment
+        public DocumentFormat.OpenXml.Spreadsheet.Alignment? Alignment
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Alignment>();
             set => SetElement(value);
@@ -399,7 +401,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Border Border
+        public DocumentFormat.OpenXml.Spreadsheet.Border? Border
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Border>();
             set => SetElement(value);
@@ -412,7 +414,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Protection Protection
+        public DocumentFormat.OpenXml.Spreadsheet.Protection? Protection
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Protection>();
             set => SetElement(value);
@@ -425,7 +427,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.ExtensionList ExtensionList
+        public DocumentFormat.OpenXml.Spreadsheet.ExtensionList? ExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.ExtensionList>();
             set => SetElement(value);
@@ -437,7 +439,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevisionPtr Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:revisionPtr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -453,7 +455,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>revIDLastSave, this property is only available in Office2016</para>
+        /// <para>revIDLastSave, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: revIDLastSave</para>
         /// </summary>
 
@@ -462,14 +464,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "revIDLastSave")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value RevIDLastSave
+        public UInt64Value? RevIDLastSave
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>documentId, this property is only available in Office2016</para>
+        /// <para>documentId, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: documentId</para>
         /// </summary>
 
@@ -478,7 +480,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "documentId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue DocumentId
+        public StringValue? DocumentId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -506,7 +508,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the StateBasedObject Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:objectState.</para>
     /// </summary>
     /// <remark>
@@ -585,7 +587,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public DataValidation DataValidation
+        public DataValidation? DataValidation
         {
             get => GetElement<DataValidation>();
             set => SetElement(value);
@@ -598,7 +600,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public Hyperlink Hyperlink
+        public Hyperlink? Hyperlink
         {
             get => GetElement<Hyperlink>();
             set => SetElement(value);
@@ -611,7 +613,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public SparklineGroup SparklineGroup
+        public SparklineGroup? SparklineGroup
         {
             get => GetElement<SparklineGroup>();
             set => SetElement(value);
@@ -624,7 +626,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public Comments Comments
+        public Comments? Comments
         {
             get => GetElement<Comments>();
             set => SetElement(value);
@@ -637,7 +639,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public AutoFilter AutoFilter
+        public AutoFilter? AutoFilter
         {
             get => GetElement<AutoFilter>();
             set => SetElement(value);
@@ -650,7 +652,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public pivotTableDefinition pivotTableDefinition
+        public pivotTableDefinition? pivotTableDefinition
         {
             get => GetElement<pivotTableDefinition>();
             set => SetElement(value);
@@ -662,7 +664,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevExHeader Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:hdr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -678,7 +680,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2016</para>
+        /// <para>id, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: r:id</para>
         /// </summary>
         /// <remark>
@@ -690,14 +692,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>minRev, this property is only available in Office2016</para>
+        /// <para>minRev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: minRev</para>
         /// </summary>
 
@@ -706,14 +708,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "minRev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value MinRev
+        public UInt64Value? MinRev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>maxRev, this property is only available in Office2016</para>
+        /// <para>maxRev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: maxRev</para>
         /// </summary>
 
@@ -722,14 +724,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "maxRev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value MaxRev
+        public UInt64Value? MaxRev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>time, this property is only available in Office2016</para>
+        /// <para>time, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: time</para>
         /// </summary>
 
@@ -738,7 +740,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "time")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Time
+        public DateTimeValue? Time
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -768,7 +770,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevExFuture Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrftr.</para>
     /// </summary>
     /// <remark>
@@ -814,7 +816,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -823,14 +825,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -839,14 +841,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -855,14 +857,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -871,14 +873,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -887,14 +889,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sti, this property is only available in Office2016</para>
+        /// <para>sti, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sti</para>
         /// </summary>
 
@@ -903,7 +905,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sti")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Sti
+        public BooleanValue? Sti
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -948,7 +950,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevExUnsupported Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrUspt.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -964,7 +966,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -973,14 +975,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -989,14 +991,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -1005,14 +1007,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -1021,14 +1023,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -1037,7 +1039,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
@@ -1076,7 +1078,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevExTrimmed Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrTrim.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1092,7 +1094,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -1101,14 +1103,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -1117,14 +1119,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -1133,14 +1135,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -1149,14 +1151,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -1165,7 +1167,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
@@ -1204,7 +1206,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevExRowColumn Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrrc.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1220,7 +1222,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -1229,14 +1231,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -1245,14 +1247,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -1261,14 +1263,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -1277,14 +1279,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -1293,14 +1295,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>eol, this property is only available in Office2016</para>
+        /// <para>eol, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: eol</para>
         /// </summary>
 
@@ -1309,14 +1311,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "eol")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Eol
+        public BooleanValue? Eol
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ref, this property is only available in Office2016</para>
+        /// <para>ref, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ref</para>
         /// </summary>
 
@@ -1325,14 +1327,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ref")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Ref
+        public StringValue? Ref
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>action, this property is only available in Office2016</para>
+        /// <para>action, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: action</para>
         /// </summary>
 
@@ -1341,7 +1343,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "action")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RwColAction> Action
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RwColAction>? Action
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RwColAction>>();
             set => SetAttribute(value);
@@ -1389,7 +1391,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevExMove Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrm.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1405,7 +1407,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -1414,14 +1416,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -1430,14 +1432,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -1446,14 +1448,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -1462,14 +1464,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -1478,14 +1480,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>src, this property is only available in Office2016</para>
+        /// <para>src, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: src</para>
         /// </summary>
 
@@ -1494,14 +1496,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "src")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Src
+        public StringValue? Src
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>dst, this property is only available in Office2016</para>
+        /// <para>dst, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: dst</para>
         /// </summary>
 
@@ -1510,14 +1512,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "dst")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Dst
+        public StringValue? Dst
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>srcSh, this property is only available in Office2016</para>
+        /// <para>srcSh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: srcSh</para>
         /// </summary>
 
@@ -1526,7 +1528,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "srcSh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue SrcSh
+        public StringValue? SrcSh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -1577,7 +1579,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevExChangeCell Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrc.</para>
     /// </summary>
     /// <remark>
@@ -1624,7 +1626,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>listUid, this property is only available in Office2016</para>
+        /// <para>listUid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: listUid</para>
         /// </summary>
 
@@ -1633,14 +1635,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "listUid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ListUid
+        public StringValue? ListUid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -1649,14 +1651,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -1665,14 +1667,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -1681,14 +1683,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -1697,14 +1699,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -1713,14 +1715,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>r, this property is only available in Office2016</para>
+        /// <para>r, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: r</para>
         /// </summary>
 
@@ -1729,14 +1731,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "r")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue R
+        public StringValue? R
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>t, this property is only available in Office2016</para>
+        /// <para>t, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: t</para>
         /// </summary>
 
@@ -1745,14 +1747,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "t")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillType> T
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillType>? T
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>x, this property is only available in Office2016</para>
+        /// <para>x, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: x</para>
         /// </summary>
 
@@ -1761,14 +1763,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "x")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillTypeExt> X
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillTypeExt>? X
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillTypeExt>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>w, this property is only available in Office2016</para>
+        /// <para>w, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: w</para>
         /// </summary>
 
@@ -1777,7 +1779,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value W
+        public UInt32Value? W
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -1834,7 +1836,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevExFormatting Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrf.</para>
     /// </summary>
     /// <remark>
@@ -1881,7 +1883,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -1890,14 +1892,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -1906,14 +1908,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -1922,14 +1924,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -1938,14 +1940,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -1954,14 +1956,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>numFmtId, this property is only available in Office2016</para>
+        /// <para>numFmtId, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: numFmtId</para>
         /// </summary>
 
@@ -1970,14 +1972,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "numFmtId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value NumFmtId
+        public UInt32Value? NumFmtId
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>xfDxf, this property is only available in Office2016</para>
+        /// <para>xfDxf, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: xfDxf</para>
         /// </summary>
 
@@ -1986,14 +1988,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "xfDxf")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue XfDxf
+        public BooleanValue? XfDxf
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>style, this property is only available in Office2016</para>
+        /// <para>style, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: style</para>
         /// </summary>
 
@@ -2002,14 +2004,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "style")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Style
+        public BooleanValue? Style
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sqref, this property is only available in Office2016</para>
+        /// <para>sqref, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sqref</para>
         /// </summary>
 
@@ -2018,14 +2020,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sqref")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ListValue<StringValue> Sqref
+        public ListValue<StringValue>? Sqref
         {
             get => GetAttribute<ListValue<StringValue>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>start, this property is only available in Office2016</para>
+        /// <para>start, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: start</para>
         /// </summary>
 
@@ -2034,14 +2036,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "start")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Start
+        public UInt32Value? Start
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>length, this property is only available in Office2016</para>
+        /// <para>length, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: length</para>
         /// </summary>
 
@@ -2050,14 +2052,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "length")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Length
+        public UInt32Value? Length
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>styleUid, this property is only available in Office2016</para>
+        /// <para>styleUid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: styleUid</para>
         /// </summary>
 
@@ -2066,14 +2068,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "styleUid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue StyleUid
+        public StringValue? StyleUid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>fBlankCell, this property is only available in Office2016</para>
+        /// <para>fBlankCell, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: fBlankCell</para>
         /// </summary>
 
@@ -2082,14 +2084,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "fBlankCell")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue FBlankCell
+        public BooleanValue? FBlankCell
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>applyNumberFormat, this property is only available in Office2016</para>
+        /// <para>applyNumberFormat, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: applyNumberFormat</para>
         /// </summary>
 
@@ -2098,14 +2100,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyNumberFormat")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyNumberFormat
+        public BooleanValue? ApplyNumberFormat
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>applyFont, this property is only available in Office2016</para>
+        /// <para>applyFont, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: applyFont</para>
         /// </summary>
 
@@ -2114,14 +2116,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyFont")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyFont
+        public BooleanValue? ApplyFont
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>applyFill, this property is only available in Office2016</para>
+        /// <para>applyFill, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: applyFill</para>
         /// </summary>
 
@@ -2130,14 +2132,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyFill")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyFill
+        public BooleanValue? ApplyFill
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>applyBorder, this property is only available in Office2016</para>
+        /// <para>applyBorder, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: applyBorder</para>
         /// </summary>
 
@@ -2146,14 +2148,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyBorder")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyBorder
+        public BooleanValue? ApplyBorder
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>applyAlignment, this property is only available in Office2016</para>
+        /// <para>applyAlignment, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: applyAlignment</para>
         /// </summary>
 
@@ -2162,14 +2164,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyAlignment")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyAlignment
+        public BooleanValue? ApplyAlignment
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>applyProtection, this property is only available in Office2016</para>
+        /// <para>applyProtection, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: applyProtection</para>
         /// </summary>
 
@@ -2178,7 +2180,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyProtection")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyProtection
+        public BooleanValue? ApplyProtection
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -2245,7 +2247,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public DifferentialFormatType DifferentialFormatType
+        public DifferentialFormatType? DifferentialFormatType
         {
             get => GetElement<DifferentialFormatType>();
             set => SetElement(value);
@@ -2258,7 +2260,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -2270,7 +2272,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevExDefinedName Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrDefName.</para>
     /// </summary>
     /// <remark>
@@ -2317,7 +2319,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -2326,14 +2328,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -2342,14 +2344,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -2358,14 +2360,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -2374,14 +2376,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -2390,14 +2392,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>customView, this property is only available in Office2016</para>
+        /// <para>customView, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: customView</para>
         /// </summary>
 
@@ -2406,14 +2408,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "customView")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue CustomView
+        public BooleanValue? CustomView
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>name, this property is only available in Office2016</para>
+        /// <para>name, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: name</para>
         /// </summary>
 
@@ -2422,14 +2424,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>function, this property is only available in Office2016</para>
+        /// <para>function, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: function</para>
         /// </summary>
 
@@ -2438,14 +2440,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "function")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Function
+        public BooleanValue? Function
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>functionGroupId, this property is only available in Office2016</para>
+        /// <para>functionGroupId, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: functionGroupId</para>
         /// </summary>
 
@@ -2454,14 +2456,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "functionGroupId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue FunctionGroupId
+        public ByteValue? FunctionGroupId
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>shortcutKey, this property is only available in Office2016</para>
+        /// <para>shortcutKey, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: shortcutKey</para>
         /// </summary>
 
@@ -2470,14 +2472,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "shortcutKey")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue ShortcutKey
+        public ByteValue? ShortcutKey
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>hidden, this property is only available in Office2016</para>
+        /// <para>hidden, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: hidden</para>
         /// </summary>
 
@@ -2486,14 +2488,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "hidden")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Hidden
+        public BooleanValue? Hidden
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>customMenu, this property is only available in Office2016</para>
+        /// <para>customMenu, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: customMenu</para>
         /// </summary>
 
@@ -2502,14 +2504,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "customMenu")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue CustomMenu
+        public StringValue? CustomMenu
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>description, this property is only available in Office2016</para>
+        /// <para>description, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: description</para>
         /// </summary>
 
@@ -2518,14 +2520,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "description")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Description
+        public StringValue? Description
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>help, this property is only available in Office2016</para>
+        /// <para>help, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: help</para>
         /// </summary>
 
@@ -2534,14 +2536,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "help")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Help
+        public StringValue? Help
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>statusBar, this property is only available in Office2016</para>
+        /// <para>statusBar, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: statusBar</para>
         /// </summary>
 
@@ -2550,14 +2552,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "statusBar")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue StatusBar
+        public StringValue? StatusBar
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>comment, this property is only available in Office2016</para>
+        /// <para>comment, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: comment</para>
         /// </summary>
 
@@ -2566,7 +2568,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "comment")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Comment
+        public StringValue? Comment
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -2627,7 +2629,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public FormulaFormula FormulaFormula
+        public FormulaFormula? FormulaFormula
         {
             get => GetElement<FormulaFormula>();
             set => SetElement(value);
@@ -2640,7 +2642,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public ExtensionList ExtensionList
+        public ExtensionList? ExtensionList
         {
             get => GetElement<ExtensionList>();
             set => SetElement(value);
@@ -2652,7 +2654,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevExDelObj Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrdo.</para>
     /// </summary>
     /// <remark>
@@ -2698,7 +2700,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -2707,14 +2709,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -2723,14 +2725,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -2739,14 +2741,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -2755,14 +2757,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -2771,7 +2773,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
@@ -2816,7 +2818,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public StateBasedHeader StateBasedHeader
+        public StateBasedHeader? StateBasedHeader
         {
             get => GetElement<StateBasedHeader>();
             set => SetElement(value);
@@ -2828,7 +2830,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevExChgObj Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrco.</para>
     /// </summary>
     /// <remark>
@@ -2876,7 +2878,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -2885,14 +2887,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -2901,14 +2903,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -2917,14 +2919,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -2933,14 +2935,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -2949,7 +2951,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
@@ -3001,7 +3003,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public StateBasedHeader StateBasedHeader
+        public StateBasedHeader? StateBasedHeader
         {
             get => GetElement<StateBasedHeader>();
             set => SetElement(value);
@@ -3013,7 +3015,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevExSheetOp Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrSheet.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3029,7 +3031,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -3038,14 +3040,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -3054,14 +3056,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -3070,14 +3072,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -3086,14 +3088,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -3102,14 +3104,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>op, this property is only available in Office2016</para>
+        /// <para>op, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: op</para>
         /// </summary>
 
@@ -3118,14 +3120,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "op")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.SheetOp> Op
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.SheetOp>? Op
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.SheetOp>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>name, this property is only available in Office2016</para>
+        /// <para>name, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: name</para>
         /// </summary>
 
@@ -3134,14 +3136,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>idOrig, this property is only available in Office2016</para>
+        /// <para>idOrig, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: idOrig</para>
         /// </summary>
 
@@ -3150,14 +3152,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "idOrig")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value IdOrig
+        public UInt32Value? IdOrig
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>idNew, this property is only available in Office2016</para>
+        /// <para>idNew, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: idNew</para>
         /// </summary>
 
@@ -3166,7 +3168,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "idNew")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value IdNew
+        public UInt32Value? IdNew
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -3212,7 +3214,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevisionList Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrList.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3228,7 +3230,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -3237,14 +3239,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -3253,14 +3255,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -3269,14 +3271,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -3285,14 +3287,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -3301,14 +3303,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>Data, this property is only available in Office2016</para>
+        /// <para>Data, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: Data</para>
         /// </summary>
 
@@ -3317,14 +3319,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "Data")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Data
+        public BooleanValue? Data
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>Formatting, this property is only available in Office2016</para>
+        /// <para>Formatting, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: Formatting</para>
         /// </summary>
 
@@ -3333,14 +3335,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "Formatting")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Formatting
+        public BooleanValue? Formatting
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>RangeBased, this property is only available in Office2016</para>
+        /// <para>RangeBased, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: RangeBased</para>
         /// </summary>
 
@@ -3349,14 +3351,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "RangeBased")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue RangeBased
+        public BooleanValue? RangeBased
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>Fake, this property is only available in Office2016</para>
+        /// <para>Fake, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: Fake</para>
         /// </summary>
 
@@ -3365,14 +3367,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "Fake")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Fake
+        public BooleanValue? Fake
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ref, this property is only available in Office2016</para>
+        /// <para>ref, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ref</para>
         /// </summary>
 
@@ -3381,14 +3383,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ref")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Ref
+        public StringValue? Ref
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>Headers, this property is only available in Office2016</para>
+        /// <para>Headers, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: Headers</para>
         /// </summary>
 
@@ -3397,14 +3399,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "Headers")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Headers
+        public BooleanValue? Headers
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>InsDelHeaders, this property is only available in Office2016</para>
+        /// <para>InsDelHeaders, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: InsDelHeaders</para>
         /// </summary>
 
@@ -3413,14 +3415,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "InsDelHeaders")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue InsDelHeaders
+        public BooleanValue? InsDelHeaders
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>rId, this property is only available in Office2016</para>
+        /// <para>rId, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rId</para>
         /// </summary>
 
@@ -3429,7 +3431,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value RId
+        public UInt32Value? RId
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -3482,7 +3484,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevListAutoExpandRw Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrListExpR.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3498,7 +3500,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -3507,14 +3509,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -3523,14 +3525,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -3539,14 +3541,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -3555,14 +3557,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -3571,14 +3573,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>refAdded, this property is only available in Office2016</para>
+        /// <para>refAdded, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: refAdded</para>
         /// </summary>
 
@@ -3587,14 +3589,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "refAdded")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue RefAdded
+        public StringValue? RefAdded
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>listGuid, this property is only available in Office2016</para>
+        /// <para>listGuid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: listGuid</para>
         /// </summary>
 
@@ -3603,7 +3605,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "listGuid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ListGuid
+        public StringValue? ListGuid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -3651,7 +3653,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevGroup Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrg.</para>
     /// </summary>
     /// <remark>
@@ -3709,7 +3711,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2016</para>
+        /// <para>rev, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rev</para>
         /// </summary>
 
@@ -3718,14 +3720,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt64Value Rev
+        public UInt64Value? Rev
         {
             get => GetAttribute<UInt64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -3734,14 +3736,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sh, this property is only available in Office2016</para>
+        /// <para>sh, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sh</para>
         /// </summary>
 
@@ -3750,14 +3752,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "sh")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Sh
+        public StringValue? Sh
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidp, this property is only available in Office2016</para>
+        /// <para>uidp, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidp</para>
         /// </summary>
 
@@ -3766,14 +3768,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uidp")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uidp
+        public StringValue? Uidp
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ctx, this property is only available in Office2016</para>
+        /// <para>ctx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ctx</para>
         /// </summary>
 
@@ -3782,7 +3784,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ctx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext> Ctx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>? Ctx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RevisionContext>>();
             set => SetAttribute(value);
@@ -3850,7 +3852,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevExTest Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:xrrtest.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3878,7 +3880,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RevCell Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:c.</para>
     /// </summary>
     /// <remark>
@@ -3926,7 +3928,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>t, this property is only available in Office2016</para>
+        /// <para>t, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: t</para>
         /// </summary>
 
@@ -3935,14 +3937,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "t")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.CellValues> T
+        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.CellValues>? T
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Spreadsheet.CellValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>nop, this property is only available in Office2016</para>
+        /// <para>nop, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: nop</para>
         /// </summary>
 
@@ -3951,14 +3953,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "nop")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Nop
+        public BooleanValue? Nop
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>tick, this property is only available in Office2016</para>
+        /// <para>tick, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: tick</para>
         /// </summary>
 
@@ -3967,14 +3969,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "tick")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Tick
+        public BooleanValue? Tick
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>rep, this property is only available in Office2016</para>
+        /// <para>rep, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: rep</para>
         /// </summary>
 
@@ -3983,7 +3985,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "rep")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Rep
+        public UInt32Value? Rep
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -4017,7 +4019,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public FFormula FFormula
+        public FFormula? FFormula
         {
             get => GetElement<FFormula>();
             set => SetElement(value);
@@ -4030,7 +4032,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public Xstring Xstring
+        public Xstring? Xstring
         {
             get => GetElement<Xstring>();
             set => SetElement(value);
@@ -4043,7 +4045,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public RstType RstType
+        public RstType? RstType
         {
             get => GetElement<RstType>();
             set => SetElement(value);
@@ -4055,7 +4057,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the ChangeCellSubEdit Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:ccse.</para>
     /// </summary>
     /// <remark>
@@ -4101,7 +4103,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>r, this property is only available in Office2016</para>
+        /// <para>r, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: r</para>
         /// </summary>
 
@@ -4110,14 +4112,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "r")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue R
+        public StringValue? R
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>t, this property is only available in Office2016</para>
+        /// <para>t, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: t</para>
         /// </summary>
 
@@ -4126,14 +4128,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "t")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillType> T
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillType>? T
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>x, this property is only available in Office2016</para>
+        /// <para>x, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: x</para>
         /// </summary>
 
@@ -4142,14 +4144,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "x")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillTypeExt> X
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillTypeExt>? X
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FillTypeExt>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>w, this property is only available in Office2016</para>
+        /// <para>w, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: w</para>
         /// </summary>
 
@@ -4158,7 +4160,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value W
+        public UInt32Value? W
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -4190,7 +4192,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ExtensionList Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:extLst.</para>
     /// </summary>
     /// <remark>
@@ -4259,7 +4261,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the FormulaFormula Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:formula.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4300,7 +4302,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the FFormula Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:f.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4341,7 +4343,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the StateBasedHeader Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:hdr.</para>
     /// </summary>
     /// <remark>
@@ -4387,7 +4389,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -4396,14 +4398,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>eft, this property is only available in Office2016</para>
+        /// <para>eft, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: eft</para>
         /// </summary>
 
@@ -4412,14 +4414,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "eft")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FeatureType> Eft
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FeatureType>? Eft
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.FeatureType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>eftx, this property is only available in Office2016</para>
+        /// <para>eftx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: eftx</para>
         /// </summary>
 
@@ -4428,14 +4430,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "eftx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.ExtFeatureType> Eftx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.ExtFeatureType>? Eftx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.ExtFeatureType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>seft, this property is only available in Office2016</para>
+        /// <para>seft, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: seft</para>
         /// </summary>
 
@@ -4444,14 +4446,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "seft")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.SubFeatureType> Seft
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.SubFeatureType>? Seft
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.SubFeatureType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>seftx, this property is only available in Office2016</para>
+        /// <para>seftx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: seftx</para>
         /// </summary>
 
@@ -4460,7 +4462,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "seftx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.ExtSubFeatureType> Seftx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.ExtSubFeatureType>? Seftx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.ExtSubFeatureType>>();
             set => SetAttribute(value);
@@ -4498,7 +4500,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public RefMap RefMap
+        public RefMap? RefMap
         {
             get => GetElement<RefMap>();
             set => SetElement(value);
@@ -4510,7 +4512,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevisionStateLink Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:link.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4526,7 +4528,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2016</para>
+        /// <para>id, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: r:id</para>
         /// </summary>
         /// <remark>
@@ -4538,7 +4540,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -4562,7 +4564,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RevisionState Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:body.</para>
     /// </summary>
     /// <remark>
@@ -4638,7 +4640,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public RowColVisualOps RowColVisualOps
+        public RowColVisualOps? RowColVisualOps
         {
             get => GetElement<RowColVisualOps>();
             set => SetElement(value);
@@ -4651,7 +4653,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public HideUnhideSheet HideUnhideSheet
+        public HideUnhideSheet? HideUnhideSheet
         {
             get => GetElement<HideUnhideSheet>();
             set => SetElement(value);
@@ -4664,7 +4666,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public ShowGridlinesHeadings ShowGridlinesHeadings
+        public ShowGridlinesHeadings? ShowGridlinesHeadings
         {
             get => GetElement<ShowGridlinesHeadings>();
             set => SetElement(value);
@@ -4677,7 +4679,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public FreezePanes FreezePanes
+        public FreezePanes? FreezePanes
         {
             get => GetElement<FreezePanes>();
             set => SetElement(value);
@@ -4690,7 +4692,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xr = http://schemas.microsoft.com/office/spreadsheetml/2014/revision
         /// </remark>
-        public Outlines Outlines
+        public Outlines? Outlines
         {
             get => GetElement<Outlines>();
             set => SetElement(value);
@@ -4702,7 +4704,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RefMap Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:refmap.</para>
     /// </summary>
     /// <remark>
@@ -4777,7 +4779,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RowColVisualOps Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:rowColVisualOps.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4793,7 +4795,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>action, this property is only available in Office2016</para>
+        /// <para>action, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: action</para>
         /// </summary>
 
@@ -4802,14 +4804,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "action")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RowColVisualOp> Action
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RowColVisualOp>? Action
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.RowColVisualOp>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>isRow, this property is only available in Office2016</para>
+        /// <para>isRow, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: isRow</para>
         /// </summary>
 
@@ -4818,14 +4820,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "isRow")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue IsRow
+        public BooleanValue? IsRow
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>size, this property is only available in Office2016</para>
+        /// <para>size, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: size</para>
         /// </summary>
 
@@ -4834,14 +4836,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "size")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Size
+        public UInt32Value? Size
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>userSized, this property is only available in Office2016</para>
+        /// <para>userSized, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: userSized</para>
         /// </summary>
 
@@ -4850,7 +4852,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "userSized")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue UserSized
+        public BooleanValue? UserSized
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -4880,7 +4882,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the HideUnhideSheet Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:hideUnhideSheet.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4896,7 +4898,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>hide, this property is only available in Office2016</para>
+        /// <para>hide, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: hide</para>
         /// </summary>
 
@@ -4905,7 +4907,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "hide")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Hide
+        public BooleanValue? Hide
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -4929,7 +4931,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ShowGridlinesHeadings Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:showGridlinesHeadings.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4945,7 +4947,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>showGridLines, this property is only available in Office2016</para>
+        /// <para>showGridLines, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: showGridLines</para>
         /// </summary>
 
@@ -4954,14 +4956,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showGridLines")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowGridLines
+        public BooleanValue? ShowGridLines
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>showRowCol, this property is only available in Office2016</para>
+        /// <para>showRowCol, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: showRowCol</para>
         /// </summary>
 
@@ -4970,7 +4972,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showRowCol")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowRowCol
+        public BooleanValue? ShowRowCol
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -4998,7 +5000,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the FreezePanes Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:freezePanes.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5014,7 +5016,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>sheetViewUid, this property is only available in Office2016</para>
+        /// <para>sheetViewUid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: sheetViewUid</para>
         /// </summary>
 
@@ -5023,7 +5025,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sheetViewUid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue SheetViewUid
+        public StringValue? SheetViewUid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -5047,7 +5049,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the Outlines Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:outlines.</para>
     /// </summary>
     /// <remark>
@@ -5093,7 +5095,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>isRow, this property is only available in Office2016</para>
+        /// <para>isRow, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: isRow</para>
         /// </summary>
 
@@ -5102,7 +5104,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "isRow")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue IsRow
+        public BooleanValue? IsRow
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -5131,7 +5133,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Outline Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:outline.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5147,7 +5149,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>isCollapsed, this property is only available in Office2016</para>
+        /// <para>isCollapsed, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: isCollapsed</para>
         /// </summary>
 
@@ -5156,14 +5158,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "isCollapsed")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue IsCollapsed
+        public BooleanValue? IsCollapsed
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>level, this property is only available in Office2016</para>
+        /// <para>level, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: level</para>
         /// </summary>
 
@@ -5172,7 +5174,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "level")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue Level
+        public ByteValue? Level
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -5200,7 +5202,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Xstring Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:v.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5241,7 +5243,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RstType Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:is.</para>
     /// </summary>
     /// <remark>
@@ -5314,7 +5316,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Text Text
+        public DocumentFormat.OpenXml.Spreadsheet.Text? Text
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Text>();
             set => SetElement(value);
@@ -5326,7 +5328,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RefCell Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:ref.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5342,7 +5344,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>n, this property is only available in Office2016</para>
+        /// <para>n, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: n</para>
         /// </summary>
 
@@ -5351,14 +5353,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "n")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue N
+        public StringValue? N
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ajt, this property is only available in Office2016</para>
+        /// <para>ajt, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ajt</para>
         /// </summary>
 
@@ -5367,14 +5369,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ajt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType> Ajt
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType>? Ajt
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ajtx, this property is only available in Office2016</para>
+        /// <para>ajtx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ajtx</para>
         /// </summary>
 
@@ -5383,14 +5385,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ajtx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt> Ajtx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt>? Ajtx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>homeRef, this property is only available in Office2016</para>
+        /// <para>homeRef, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: homeRef</para>
         /// </summary>
 
@@ -5399,14 +5401,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "homeRef")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue HomeRef
+        public BooleanValue? HomeRef
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>r, this property is only available in Office2016</para>
+        /// <para>r, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: r</para>
         /// </summary>
 
@@ -5415,14 +5417,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "r")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ListValue<StringValue> R
+        public ListValue<StringValue>? R
         {
             get => GetAttribute<ListValue<StringValue>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -5431,14 +5433,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uidLast, this property is only available in Office2016</para>
+        /// <para>uidLast, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uidLast</para>
         /// </summary>
 
@@ -5447,7 +5449,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "uidLast")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue UidLast
+        public StringValue? UidLast
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -5489,7 +5491,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the SheetXluid Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:sheetUid.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5505,7 +5507,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>n, this property is only available in Office2016</para>
+        /// <para>n, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: n</para>
         /// </summary>
 
@@ -5514,14 +5516,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "n")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue N
+        public StringValue? N
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ajt, this property is only available in Office2016</para>
+        /// <para>ajt, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ajt</para>
         /// </summary>
 
@@ -5530,14 +5532,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ajt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType> Ajt
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType>? Ajt
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ajtx, this property is only available in Office2016</para>
+        /// <para>ajtx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ajtx</para>
         /// </summary>
 
@@ -5546,14 +5548,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ajtx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt> Ajtx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt>? Ajtx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>homeRef, this property is only available in Office2016</para>
+        /// <para>homeRef, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: homeRef</para>
         /// </summary>
 
@@ -5562,14 +5564,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "homeRef")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue HomeRef
+        public BooleanValue? HomeRef
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>uid, this property is only available in Office2016</para>
+        /// <para>uid, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: uid</para>
         /// </summary>
 
@@ -5578,7 +5580,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "uid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Uid
+        public StringValue? Uid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -5613,7 +5615,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the RefOartAnchor Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:oartAnchor.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5629,7 +5631,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>n, this property is only available in Office2016</para>
+        /// <para>n, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: n</para>
         /// </summary>
 
@@ -5638,14 +5640,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "n")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue N
+        public StringValue? N
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ajt, this property is only available in Office2016</para>
+        /// <para>ajt, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ajt</para>
         /// </summary>
 
@@ -5654,14 +5656,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ajt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType> Ajt
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType>? Ajt
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ajtx, this property is only available in Office2016</para>
+        /// <para>ajtx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ajtx</para>
         /// </summary>
 
@@ -5670,14 +5672,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "ajtx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt> Ajtx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt>? Ajtx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>homeRef, this property is only available in Office2016</para>
+        /// <para>homeRef, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: homeRef</para>
         /// </summary>
 
@@ -5686,14 +5688,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "homeRef")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue HomeRef
+        public BooleanValue? HomeRef
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>r, this property is only available in Office2016</para>
+        /// <para>r, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: r</para>
         /// </summary>
 
@@ -5702,14 +5704,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "r")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue R
+        public StringValue? R
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>fromRowOff, this property is only available in Office2016</para>
+        /// <para>fromRowOff, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: fromRowOff</para>
         /// </summary>
 
@@ -5718,14 +5720,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "fromRowOff")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value FromRowOff
+        public Int64Value? FromRowOff
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>fromColOff, this property is only available in Office2016</para>
+        /// <para>fromColOff, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: fromColOff</para>
         /// </summary>
 
@@ -5734,14 +5736,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "fromColOff")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value FromColOff
+        public Int64Value? FromColOff
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>toRowOff, this property is only available in Office2016</para>
+        /// <para>toRowOff, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: toRowOff</para>
         /// </summary>
 
@@ -5750,14 +5752,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "toRowOff")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value ToRowOff
+        public Int64Value? ToRowOff
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>toColOff, this property is only available in Office2016</para>
+        /// <para>toColOff, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: toColOff</para>
         /// </summary>
 
@@ -5766,14 +5768,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "toColOff")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value ToColOff
+        public Int64Value? ToColOff
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>cx, this property is only available in Office2016</para>
+        /// <para>cx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: cx</para>
         /// </summary>
 
@@ -5782,14 +5784,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "cx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value Cx
+        public Int64Value? Cx
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>cy, this property is only available in Office2016</para>
+        /// <para>cy, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: cy</para>
         /// </summary>
 
@@ -5798,14 +5800,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "cy")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value Cy
+        public Int64Value? Cy
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>x, this property is only available in Office2016</para>
+        /// <para>x, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: x</para>
         /// </summary>
 
@@ -5814,14 +5816,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "x")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value X
+        public Int64Value? X
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>y, this property is only available in Office2016</para>
+        /// <para>y, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: y</para>
         /// </summary>
 
@@ -5830,14 +5832,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "y")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value Y
+        public Int64Value? Y
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>oat, this property is only available in Office2016</para>
+        /// <para>oat, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: oat</para>
         /// </summary>
 
@@ -5846,7 +5848,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "oat")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.OartAnchorType> Oat
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.OartAnchorType>? Oat
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.OartAnchorType>>();
             set => SetAttribute(value);
@@ -5913,7 +5915,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RefFuture Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:future.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5941,7 +5943,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RefTest Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:test.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5957,7 +5959,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>n, this property is only available in Office2016</para>
+        /// <para>n, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: n</para>
         /// </summary>
 
@@ -5966,14 +5968,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "n")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue N
+        public StringValue? N
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ajt, this property is only available in Office2016</para>
+        /// <para>ajt, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ajt</para>
         /// </summary>
 
@@ -5982,14 +5984,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ajt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType> Ajt
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType>? Ajt
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustType>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ajtx, this property is only available in Office2016</para>
+        /// <para>ajtx, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: ajtx</para>
         /// </summary>
 
@@ -5998,14 +6000,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ajtx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt> Ajtx
+        public EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt>? Ajtx
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2016.Excel.AdjustTypeExt>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>homeRef, this property is only available in Office2016</para>
+        /// <para>homeRef, this property is only available in Office 2016 and later.</para>
         /// <para>Represents the following attribute in the schema: homeRef</para>
         /// </summary>
 
@@ -6014,7 +6016,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "homeRef")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue HomeRef
+        public BooleanValue? HomeRef
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -6044,7 +6046,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Represents an external link to another workbook..</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:dataValidation.</para>
     /// </summary>
     /// <remark>
@@ -6101,7 +6103,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationValues>>();
             set => SetAttribute(value);
@@ -6117,7 +6119,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "errorStyle")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationErrorStyleValues> ErrorStyle
+        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationErrorStyleValues>? ErrorStyle
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationErrorStyleValues>>();
             set => SetAttribute(value);
@@ -6133,7 +6135,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "imeMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationImeModeValues> ImeMode
+        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationImeModeValues>? ImeMode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationImeModeValues>>();
             set => SetAttribute(value);
@@ -6149,7 +6151,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "operator")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationOperatorValues> Operator
+        public EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationOperatorValues>? Operator
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Spreadsheet.DataValidationOperatorValues>>();
             set => SetAttribute(value);
@@ -6165,7 +6167,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "allowBlank")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue AllowBlank
+        public BooleanValue? AllowBlank
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -6181,7 +6183,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showDropDown")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowDropDown
+        public BooleanValue? ShowDropDown
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -6197,7 +6199,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showInputMessage")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowInputMessage
+        public BooleanValue? ShowInputMessage
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -6213,7 +6215,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showErrorMessage")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowErrorMessage
+        public BooleanValue? ShowErrorMessage
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -6229,7 +6231,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "errorTitle")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ErrorTitle
+        public StringValue? ErrorTitle
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -6245,7 +6247,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "error")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Error
+        public StringValue? Error
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -6261,7 +6263,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "promptTitle")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue PromptTitle
+        public StringValue? PromptTitle
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -6277,7 +6279,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "prompt")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Prompt
+        public StringValue? Prompt
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -6293,7 +6295,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "sqref")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ListValue<StringValue> SequenceOfReferences
+        public ListValue<StringValue>? SequenceOfReferences
         {
             get => GetAttribute<ListValue<StringValue>>();
             set => SetAttribute(value);
@@ -6339,7 +6341,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x12ac = http://schemas.microsoft.com/office/spreadsheetml/2011/1/ac
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.ExcelAc.List List
+        public DocumentFormat.OpenXml.Office2010.ExcelAc.List? List
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.ExcelAc.List>();
             set => SetElement(value);
@@ -6352,7 +6354,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Formula1 Formula1
+        public DocumentFormat.OpenXml.Spreadsheet.Formula1? Formula1
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Formula1>();
             set => SetElement(value);
@@ -6365,7 +6367,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Formula2 Formula2
+        public DocumentFormat.OpenXml.Spreadsheet.Formula2? Formula2
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Formula2>();
             set => SetElement(value);
@@ -6377,7 +6379,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Represents a hyperlink within a cell..</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:hyperlink.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -6402,7 +6404,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ref")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Reference
+        public StringValue? Reference
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -6421,7 +6423,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -6437,7 +6439,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "location")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Location
+        public StringValue? Location
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -6453,7 +6455,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "tooltip")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Tooltip
+        public StringValue? Tooltip
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -6469,7 +6471,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "display")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Display
+        public StringValue? Display
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -6497,7 +6499,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Represents a sparkline group of 1 or more sparklines..</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:sparklineGroup.</para>
     /// </summary>
     /// <remark>
@@ -6552,7 +6554,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>manualMax, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>manualMax, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: manualMax</para>
         /// </summary>
 
@@ -6561,14 +6563,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "manualMax")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue ManualMax
+        public DoubleValue? ManualMax
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>manualMin, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>manualMin, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: manualMin</para>
         /// </summary>
 
@@ -6577,14 +6579,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "manualMin")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue ManualMin
+        public DoubleValue? ManualMin
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>lineWeight, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lineWeight, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: lineWeight</para>
         /// </summary>
 
@@ -6593,14 +6595,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "lineWeight")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue LineWeight
+        public DoubleValue? LineWeight
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>type, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>type, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: type</para>
         /// </summary>
 
@@ -6609,14 +6611,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Excel.SparklineTypeValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Excel.SparklineTypeValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Excel.SparklineTypeValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>dateAxis, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>dateAxis, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: dateAxis</para>
         /// </summary>
 
@@ -6625,14 +6627,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "dateAxis")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue DateAxis
+        public BooleanValue? DateAxis
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>displayEmptyCellsAs, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>displayEmptyCellsAs, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: displayEmptyCellsAs</para>
         /// </summary>
 
@@ -6641,14 +6643,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "displayEmptyCellsAs")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Excel.DisplayBlanksAsValues> DisplayEmptyCellsAs
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Excel.DisplayBlanksAsValues>? DisplayEmptyCellsAs
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Excel.DisplayBlanksAsValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>markers, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>markers, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: markers</para>
         /// </summary>
 
@@ -6657,14 +6659,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "markers")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Markers
+        public BooleanValue? Markers
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>high, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>high, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: high</para>
         /// </summary>
 
@@ -6673,14 +6675,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "high")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue High
+        public BooleanValue? High
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>low, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>low, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: low</para>
         /// </summary>
 
@@ -6689,14 +6691,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "low")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Low
+        public BooleanValue? Low
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>first, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>first, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: first</para>
         /// </summary>
 
@@ -6705,14 +6707,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "first")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue First
+        public BooleanValue? First
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>last, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>last, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: last</para>
         /// </summary>
 
@@ -6721,14 +6723,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "last")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Last
+        public BooleanValue? Last
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>negative, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>negative, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: negative</para>
         /// </summary>
 
@@ -6737,14 +6739,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "negative")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Negative
+        public BooleanValue? Negative
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>displayXAxis, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>displayXAxis, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: displayXAxis</para>
         /// </summary>
 
@@ -6753,14 +6755,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "displayXAxis")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue DisplayXAxis
+        public BooleanValue? DisplayXAxis
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>displayHidden, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>displayHidden, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: displayHidden</para>
         /// </summary>
 
@@ -6769,14 +6771,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "displayHidden")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue DisplayHidden
+        public BooleanValue? DisplayHidden
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>minAxisType, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>minAxisType, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: minAxisType</para>
         /// </summary>
 
@@ -6785,14 +6787,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "minAxisType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Excel.SparklineAxisMinMaxValues> MinAxisType
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Excel.SparklineAxisMinMaxValues>? MinAxisType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Excel.SparklineAxisMinMaxValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>maxAxisType, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>maxAxisType, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: maxAxisType</para>
         /// </summary>
 
@@ -6801,14 +6803,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "maxAxisType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Excel.SparklineAxisMinMaxValues> MaxAxisType
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Excel.SparklineAxisMinMaxValues>? MaxAxisType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Excel.SparklineAxisMinMaxValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>rightToLeft, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>rightToLeft, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: rightToLeft</para>
         /// </summary>
 
@@ -6817,7 +6819,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rightToLeft")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue RightToLeft
+        public BooleanValue? RightToLeft
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -6878,7 +6880,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x14 = http://schemas.microsoft.com/office/spreadsheetml/2009/9/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Excel.SeriesColor SeriesColor
+        public DocumentFormat.OpenXml.Office2010.Excel.SeriesColor? SeriesColor
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Excel.SeriesColor>();
             set => SetElement(value);
@@ -6891,7 +6893,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x14 = http://schemas.microsoft.com/office/spreadsheetml/2009/9/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Excel.NegativeColor NegativeColor
+        public DocumentFormat.OpenXml.Office2010.Excel.NegativeColor? NegativeColor
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Excel.NegativeColor>();
             set => SetElement(value);
@@ -6904,7 +6906,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x14 = http://schemas.microsoft.com/office/spreadsheetml/2009/9/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Excel.AxisColor AxisColor
+        public DocumentFormat.OpenXml.Office2010.Excel.AxisColor? AxisColor
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Excel.AxisColor>();
             set => SetElement(value);
@@ -6917,7 +6919,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x14 = http://schemas.microsoft.com/office/spreadsheetml/2009/9/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Excel.MarkersColor MarkersColor
+        public DocumentFormat.OpenXml.Office2010.Excel.MarkersColor? MarkersColor
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Excel.MarkersColor>();
             set => SetElement(value);
@@ -6930,7 +6932,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x14 = http://schemas.microsoft.com/office/spreadsheetml/2009/9/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Excel.FirstMarkerColor FirstMarkerColor
+        public DocumentFormat.OpenXml.Office2010.Excel.FirstMarkerColor? FirstMarkerColor
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Excel.FirstMarkerColor>();
             set => SetElement(value);
@@ -6943,7 +6945,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x14 = http://schemas.microsoft.com/office/spreadsheetml/2009/9/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Excel.LastMarkerColor LastMarkerColor
+        public DocumentFormat.OpenXml.Office2010.Excel.LastMarkerColor? LastMarkerColor
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Excel.LastMarkerColor>();
             set => SetElement(value);
@@ -6956,7 +6958,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x14 = http://schemas.microsoft.com/office/spreadsheetml/2009/9/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Excel.HighMarkerColor HighMarkerColor
+        public DocumentFormat.OpenXml.Office2010.Excel.HighMarkerColor? HighMarkerColor
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Excel.HighMarkerColor>();
             set => SetElement(value);
@@ -6969,7 +6971,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x14 = http://schemas.microsoft.com/office/spreadsheetml/2009/9/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Excel.LowMarkerColor LowMarkerColor
+        public DocumentFormat.OpenXml.Office2010.Excel.LowMarkerColor? LowMarkerColor
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Excel.LowMarkerColor>();
             set => SetElement(value);
@@ -6982,7 +6984,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:xne = http://schemas.microsoft.com/office/excel/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office.Excel.Formula Formula
+        public DocumentFormat.OpenXml.Office.Excel.Formula? Formula
         {
             get => GetElement<DocumentFormat.OpenXml.Office.Excel.Formula>();
             set => SetElement(value);
@@ -6995,7 +6997,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x14 = http://schemas.microsoft.com/office/spreadsheetml/2009/9/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Excel.Sparklines Sparklines
+        public DocumentFormat.OpenXml.Office2010.Excel.Sparklines? Sparklines
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Excel.Sparklines>();
             set => SetElement(value);
@@ -7007,7 +7009,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Represents one comment within a cell..</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:comments.</para>
     /// </summary>
     /// <remark>
@@ -7077,7 +7079,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Authors Authors
+        public DocumentFormat.OpenXml.Spreadsheet.Authors? Authors
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Authors>();
             set => SetElement(value);
@@ -7090,7 +7092,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.CommentList CommentList
+        public DocumentFormat.OpenXml.Spreadsheet.CommentList? CommentList
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.CommentList>();
             set => SetElement(value);
@@ -7103,7 +7105,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.ExtensionList ExtensionList
+        public DocumentFormat.OpenXml.Spreadsheet.ExtensionList? ExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.ExtensionList>();
             set => SetElement(value);
@@ -7115,7 +7117,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Represents an autofilter..</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:autoFilter.</para>
     /// </summary>
     /// <remark>
@@ -7172,7 +7174,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "ref")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Reference
+        public StringValue? Reference
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7202,7 +7204,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Represents a PivotTable View..</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xr:pivotTableDefinition.</para>
     /// </summary>
     /// <remark>
@@ -7273,7 +7275,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7289,7 +7291,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "cacheId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value CacheId
+        public UInt32Value? CacheId
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -7305,7 +7307,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "dataOnRows")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue DataOnRows
+        public BooleanValue? DataOnRows
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7321,7 +7323,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "dataPosition")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value DataPosition
+        public UInt32Value? DataPosition
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -7337,7 +7339,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "autoFormatId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value AutoFormatId
+        public UInt32Value? AutoFormatId
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -7353,7 +7355,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyNumberFormats")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyNumberFormats
+        public BooleanValue? ApplyNumberFormats
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7369,7 +7371,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyBorderFormats")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyBorderFormats
+        public BooleanValue? ApplyBorderFormats
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7385,7 +7387,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyFontFormats")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyFontFormats
+        public BooleanValue? ApplyFontFormats
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7401,7 +7403,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyPatternFormats")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyPatternFormats
+        public BooleanValue? ApplyPatternFormats
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7417,7 +7419,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyAlignmentFormats")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyAlignmentFormats
+        public BooleanValue? ApplyAlignmentFormats
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7433,7 +7435,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "applyWidthHeightFormats")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ApplyWidthHeightFormats
+        public BooleanValue? ApplyWidthHeightFormats
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7449,7 +7451,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "dataCaption")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue DataCaption
+        public StringValue? DataCaption
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7465,7 +7467,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "grandTotalCaption")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue GrandTotalCaption
+        public StringValue? GrandTotalCaption
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7481,7 +7483,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "errorCaption")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ErrorCaption
+        public StringValue? ErrorCaption
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7497,7 +7499,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showError")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowError
+        public BooleanValue? ShowError
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7513,7 +7515,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "missingCaption")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue MissingCaption
+        public StringValue? MissingCaption
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7529,7 +7531,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showMissing")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowMissing
+        public BooleanValue? ShowMissing
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7545,7 +7547,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "pageStyle")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue PageStyle
+        public StringValue? PageStyle
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7561,7 +7563,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "pivotTableStyle")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue PivotTableStyleName
+        public StringValue? PivotTableStyleName
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7577,7 +7579,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "vacatedStyle")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue VacatedStyle
+        public StringValue? VacatedStyle
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7593,7 +7595,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "tag")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Tag
+        public StringValue? Tag
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -7609,7 +7611,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "updatedVersion")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue UpdatedVersion
+        public ByteValue? UpdatedVersion
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -7625,7 +7627,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "minRefreshableVersion")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue MinRefreshableVersion
+        public ByteValue? MinRefreshableVersion
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -7641,7 +7643,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "asteriskTotals")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue AsteriskTotals
+        public BooleanValue? AsteriskTotals
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7657,7 +7659,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showItems")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowItems
+        public BooleanValue? ShowItems
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7673,7 +7675,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "editData")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue EditData
+        public BooleanValue? EditData
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7689,7 +7691,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "disableFieldList")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue DisableFieldList
+        public BooleanValue? DisableFieldList
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7705,7 +7707,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showCalcMbrs")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowCalculatedMembers
+        public BooleanValue? ShowCalculatedMembers
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7721,7 +7723,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "visualTotals")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue VisualTotals
+        public BooleanValue? VisualTotals
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7737,7 +7739,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showMultipleLabel")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowMultipleLabel
+        public BooleanValue? ShowMultipleLabel
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7753,7 +7755,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showDataDropDown")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowDataDropDown
+        public BooleanValue? ShowDataDropDown
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7769,7 +7771,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showDrill")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowDrill
+        public BooleanValue? ShowDrill
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7785,7 +7787,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "printDrill")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue PrintDrill
+        public BooleanValue? PrintDrill
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7801,7 +7803,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showMemberPropertyTips")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowMemberPropertyTips
+        public BooleanValue? ShowMemberPropertyTips
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7817,7 +7819,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showDataTips")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowDataTips
+        public BooleanValue? ShowDataTips
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7833,7 +7835,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "enableWizard")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue EnableWizard
+        public BooleanValue? EnableWizard
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7849,7 +7851,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "enableDrill")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue EnableDrill
+        public BooleanValue? EnableDrill
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7865,7 +7867,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "enableFieldProperties")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue EnableFieldProperties
+        public BooleanValue? EnableFieldProperties
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7881,7 +7883,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "preserveFormatting")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue PreserveFormatting
+        public BooleanValue? PreserveFormatting
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7897,7 +7899,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "useAutoFormatting")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue UseAutoFormatting
+        public BooleanValue? UseAutoFormatting
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7913,7 +7915,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "pageWrap")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value PageWrap
+        public UInt32Value? PageWrap
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -7929,7 +7931,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "pageOverThenDown")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue PageOverThenDown
+        public BooleanValue? PageOverThenDown
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7945,7 +7947,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "subtotalHiddenItems")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue SubtotalHiddenItems
+        public BooleanValue? SubtotalHiddenItems
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7961,7 +7963,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rowGrandTotals")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue RowGrandTotals
+        public BooleanValue? RowGrandTotals
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7977,7 +7979,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "colGrandTotals")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ColumnGrandTotals
+        public BooleanValue? ColumnGrandTotals
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -7993,7 +7995,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "fieldPrintTitles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue FieldPrintTitles
+        public BooleanValue? FieldPrintTitles
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8009,7 +8011,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "itemPrintTitles")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ItemPrintTitles
+        public BooleanValue? ItemPrintTitles
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8025,7 +8027,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "mergeItem")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue MergeItem
+        public BooleanValue? MergeItem
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8041,7 +8043,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showDropZones")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowDropZones
+        public BooleanValue? ShowDropZones
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8057,7 +8059,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "createdVersion")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue CreatedVersion
+        public ByteValue? CreatedVersion
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -8073,7 +8075,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "indent")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Indent
+        public UInt32Value? Indent
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -8089,7 +8091,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showEmptyRow")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowEmptyRow
+        public BooleanValue? ShowEmptyRow
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8105,7 +8107,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showEmptyCol")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowEmptyColumn
+        public BooleanValue? ShowEmptyColumn
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8121,7 +8123,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "showHeaders")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowHeaders
+        public BooleanValue? ShowHeaders
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8137,7 +8139,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "compact")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Compact
+        public BooleanValue? Compact
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8153,7 +8155,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "outline")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Outline
+        public BooleanValue? Outline
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8169,7 +8171,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "outlineData")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue OutlineData
+        public BooleanValue? OutlineData
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8185,7 +8187,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "compactData")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue CompactData
+        public BooleanValue? CompactData
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8201,7 +8203,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "published")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Published
+        public BooleanValue? Published
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8217,7 +8219,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "gridDropZones")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue GridDropZones
+        public BooleanValue? GridDropZones
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8233,7 +8235,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "immersive")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue StopImmersiveUi
+        public BooleanValue? StopImmersiveUi
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8249,7 +8251,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "multipleFieldFilters")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue MultipleFieldFilters
+        public BooleanValue? MultipleFieldFilters
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8265,7 +8267,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "chartFormat")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value ChartFormat
+        public UInt32Value? ChartFormat
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -8281,7 +8283,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rowHeaderCaption")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue RowHeaderCaption
+        public StringValue? RowHeaderCaption
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8297,7 +8299,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "colHeaderCaption")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ColumnHeaderCaption
+        public StringValue? ColumnHeaderCaption
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -8313,7 +8315,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "fieldListSortAscending")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue FieldListSortAscending
+        public BooleanValue? FieldListSortAscending
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8329,7 +8331,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "mdxSubqueries")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue MdxSubqueries
+        public BooleanValue? MdxSubqueries
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8345,7 +8347,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "customListSort")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue CustomListSort
+        public BooleanValue? CustomListSort
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -8480,7 +8482,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Location Location
+        public DocumentFormat.OpenXml.Spreadsheet.Location? Location
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Location>();
             set => SetElement(value);
@@ -8493,7 +8495,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.PivotFields PivotFields
+        public DocumentFormat.OpenXml.Spreadsheet.PivotFields? PivotFields
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.PivotFields>();
             set => SetElement(value);
@@ -8506,7 +8508,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.RowFields RowFields
+        public DocumentFormat.OpenXml.Spreadsheet.RowFields? RowFields
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.RowFields>();
             set => SetElement(value);
@@ -8519,7 +8521,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.RowItems RowItems
+        public DocumentFormat.OpenXml.Spreadsheet.RowItems? RowItems
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.RowItems>();
             set => SetElement(value);
@@ -8532,7 +8534,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.ColumnFields ColumnFields
+        public DocumentFormat.OpenXml.Spreadsheet.ColumnFields? ColumnFields
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.ColumnFields>();
             set => SetElement(value);
@@ -8545,7 +8547,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.ColumnItems ColumnItems
+        public DocumentFormat.OpenXml.Spreadsheet.ColumnItems? ColumnItems
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.ColumnItems>();
             set => SetElement(value);
@@ -8558,7 +8560,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.PageFields PageFields
+        public DocumentFormat.OpenXml.Spreadsheet.PageFields? PageFields
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.PageFields>();
             set => SetElement(value);
@@ -8571,7 +8573,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.DataFields DataFields
+        public DocumentFormat.OpenXml.Spreadsheet.DataFields? DataFields
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.DataFields>();
             set => SetElement(value);
@@ -8584,7 +8586,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.Formats Formats
+        public DocumentFormat.OpenXml.Spreadsheet.Formats? Formats
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.Formats>();
             set => SetElement(value);
@@ -8597,7 +8599,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.ConditionalFormats ConditionalFormats
+        public DocumentFormat.OpenXml.Spreadsheet.ConditionalFormats? ConditionalFormats
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.ConditionalFormats>();
             set => SetElement(value);
@@ -8610,7 +8612,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.ChartFormats ChartFormats
+        public DocumentFormat.OpenXml.Spreadsheet.ChartFormats? ChartFormats
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.ChartFormats>();
             set => SetElement(value);
@@ -8623,7 +8625,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.PivotHierarchies PivotHierarchies
+        public DocumentFormat.OpenXml.Spreadsheet.PivotHierarchies? PivotHierarchies
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.PivotHierarchies>();
             set => SetElement(value);
@@ -8636,7 +8638,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.PivotTableStyle PivotTableStyle
+        public DocumentFormat.OpenXml.Spreadsheet.PivotTableStyle? PivotTableStyle
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.PivotTableStyle>();
             set => SetElement(value);
@@ -8649,7 +8651,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.PivotFilters PivotFilters
+        public DocumentFormat.OpenXml.Spreadsheet.PivotFilters? PivotFilters
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.PivotFilters>();
             set => SetElement(value);
@@ -8662,7 +8664,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.RowHierarchiesUsage RowHierarchiesUsage
+        public DocumentFormat.OpenXml.Spreadsheet.RowHierarchiesUsage? RowHierarchiesUsage
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.RowHierarchiesUsage>();
             set => SetElement(value);
@@ -8675,7 +8677,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.ColumnHierarchiesUsage ColumnHierarchiesUsage
+        public DocumentFormat.OpenXml.Spreadsheet.ColumnHierarchiesUsage? ColumnHierarchiesUsage
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.ColumnHierarchiesUsage>();
             set => SetElement(value);
@@ -8688,7 +8690,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.PivotTableDefinitionExtensionList PivotTableDefinitionExtensionList
+        public DocumentFormat.OpenXml.Spreadsheet.PivotTableDefinitionExtensionList? PivotTableDefinitionExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.PivotTableDefinitionExtensionList>();
             set => SetElement(value);

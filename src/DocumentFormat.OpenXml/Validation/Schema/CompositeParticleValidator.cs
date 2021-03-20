@@ -1,8 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-#nullable disable
-
 using System.Diagnostics;
 
 namespace DocumentFormat.OpenXml.Validation.Schema
@@ -33,10 +31,10 @@ namespace DocumentFormat.OpenXml.Validation.Schema
         /// <returns></returns>
         internal override void Validate(ValidationContext validationContext)
         {
-            Debug.Assert(validationContext is not null);
-
-            var element = validationContext.Stack.Current.Element as OpenXmlCompositeElement;
-            Debug.Assert(element is not null);
+            if (validationContext.Stack.Current?.Element is not OpenXmlCompositeElement element)
+            {
+                return;
+            }
 
             var child = validationContext.GetFirstChildMc();
             ValidationErrorInfo errorInfo;
@@ -191,7 +189,7 @@ namespace DocumentFormat.OpenXml.Validation.Schema
         /// </summary>
         /// <param name="result"></param>
         /// <returns>True if there are required elements in this particle.</returns>
-        public override bool GetRequiredElements(ExpectedChildren result)
+        public override bool GetRequiredElements(ExpectedChildren? result)
         {
             bool requiredElements = false;
 
@@ -199,7 +197,7 @@ namespace DocumentFormat.OpenXml.Validation.Schema
             {
                 foreach (var constraint in ParticleConstraint.ChildrenParticles)
                 {
-                    if (constraint.ParticleValidator.GetRequiredElements(result))
+                    if (constraint.ParticleValidator is IParticleValidator validator && validator.GetRequiredElements(result))
                     {
                         requiredElements = true;
                     }
@@ -218,7 +216,10 @@ namespace DocumentFormat.OpenXml.Validation.Schema
         {
             foreach (var constraint in ParticleConstraint.ChildrenParticles)
             {
-                constraint.ParticleValidator.GetExpectedElements(result);
+                if (constraint.ParticleValidator is IParticleValidator validator)
+                {
+                    validator.GetExpectedElements(result);
+                }
             }
 
             return true;
@@ -228,7 +229,7 @@ namespace DocumentFormat.OpenXml.Validation.Schema
             ValidationContext validationContext,
             ParticleMatchInfo particleMatchInfo)
         {
-            OpenXmlElement child;
+            OpenXmlElement? child;
 
             // re-validate the element, collect the expected children information
             if (particleMatchInfo.Match != ParticleMatch.Nomatch)
@@ -240,7 +241,7 @@ namespace DocumentFormat.OpenXml.Validation.Schema
                 child = validationContext.GetFirstChildMc();
                 validationContext.CollectExpectedChildren = true;
                 particleMatchInfo.Reset(child);
-                particleMatchInfo.InitExpectedChildren();
+                particleMatchInfo.ExpectedChildren.Clear();
                 TryMatch(particleMatchInfo, validationContext);
                 validationContext.CollectExpectedChildren = false;
 
@@ -250,7 +251,13 @@ namespace DocumentFormat.OpenXml.Validation.Schema
 #endif
             }
 
-            var element = validationContext.Stack.Current.Element;
+            var element = validationContext.Stack.Current?.Element;
+
+            if (element is null)
+            {
+                return;
+            }
+
             if (particleMatchInfo.LastMatchedElement is null)
             {
                 child = validationContext.GetFirstChildMc();
@@ -261,12 +268,12 @@ namespace DocumentFormat.OpenXml.Validation.Schema
             }
 
             ValidationErrorInfo errorInfo;
-            string expectedChildren = null;
+            string expectedChildren = string.Empty;
 
             switch (particleMatchInfo.Match)
             {
                 case ParticleMatch.Nomatch:
-                    expectedChildren = GetExpectedChildrenMessage(validationContext.Stack.Current.Element, GetExpectedElements());
+                    expectedChildren = GetExpectedChildrenMessage(element, GetExpectedElements());
                     break;
 
                 case ParticleMatch.Partial:
@@ -281,7 +288,7 @@ namespace DocumentFormat.OpenXml.Validation.Schema
                     }
                     else
                     {
-                        expectedChildren = GetExpectedChildrenMessage(validationContext.Stack.Current.Element, particleMatchInfo.ExpectedChildren);
+                        expectedChildren = GetExpectedChildrenMessage(element, particleMatchInfo.ExpectedChildren);
                     }
 
                     break;
@@ -289,17 +296,22 @@ namespace DocumentFormat.OpenXml.Validation.Schema
                 case ParticleMatch.Matched:
                     if (ParticleConstraint.CanOccursMoreThanOne)
                     {
-                        expectedChildren = GetExpectedChildrenMessage(validationContext.Stack.Current.Element, GetExpectedElements());
+                        expectedChildren = GetExpectedChildrenMessage(element, GetExpectedElements());
                     }
                     else
                     {
-                        expectedChildren = GetExpectedChildrenMessage(validationContext.Stack.Current.Element, particleMatchInfo.ExpectedChildren);
+                        expectedChildren = GetExpectedChildrenMessage(element, particleMatchInfo.ExpectedChildren);
                     }
 
                     break;
             }
 
-            if (validationContext.Stack.Current.Element.CanContainChild(child))
+            if (child is null)
+            {
+                return;
+            }
+
+            if (element.CanContainChild(child))
             {
                 // The child can be contained in the parent, but not follow the schema.
                 errorInfo = validationContext.ComposeSchemaValidationError(element, child, "Sch_UnexpectedElementContentExpectingComplex", child.XmlQualifiedName.ToString(), expectedChildren);

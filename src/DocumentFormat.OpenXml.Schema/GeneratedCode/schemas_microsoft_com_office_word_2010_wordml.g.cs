@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -18,7 +20,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word
 {
     /// <summary>
     /// <para>Defines the RunConflictInsertion Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:conflictIns.</para>
     /// </summary>
     /// <remark>
@@ -271,7 +273,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word
 
     /// <summary>
     /// <para>Defines the RunConflictDeletion Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:conflictDel.</para>
     /// </summary>
     /// <remark>
@@ -524,7 +526,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word
 
     /// <summary>
     /// <para>Defines the RunTrackChangeType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -634,7 +636,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -653,7 +655,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -672,7 +674,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -758,7 +760,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the ConflictInsertion Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:conflictIns.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -786,7 +788,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the ConflictDeletion Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:conflictDel.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -814,7 +816,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlConflictInsertionRangeStart Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:customXmlConflictInsRangeStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -842,7 +844,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlConflictDeletionRangeStart Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:customXmlConflictDelRangeStart.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -870,7 +872,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the TrackChangeType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class TrackChangeType : OpenXmlLeafElement
@@ -895,7 +897,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "author")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Author
+        public StringValue? Author
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -914,7 +916,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "date")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DateTimeValue Date
+        public DateTimeValue? Date
         {
             get => GetAttribute<DateTimeValue>();
             set => SetAttribute(value);
@@ -933,7 +935,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -963,7 +965,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Tint Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:tint.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -991,7 +993,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Shade Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:shade.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1019,7 +1021,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the Alpha Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:alpha.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1047,7 +1049,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the PositiveFixedPercentageType Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class PositiveFixedPercentageType : OpenXmlLeafElement
@@ -1060,7 +1062,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -1072,7 +1074,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -1093,7 +1095,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
 
     /// <summary>
     /// <para>Defines the HueModulation Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:hueMod.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1109,7 +1111,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -1121,7 +1123,7 @@ union.AddValidator<Int32Value>(new NumberValidator() { MaxInclusive = (-2L) });
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -1147,7 +1149,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the Saturation Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:sat.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1175,7 +1177,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the SaturationOffset Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:satOff.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1203,7 +1205,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the SaturationModulation Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:satMod.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1231,7 +1233,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the Luminance Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:lum.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1259,7 +1261,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the LuminanceOffset Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:lumOff.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1287,7 +1289,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the LuminanceModulation Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:lumMod.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1315,7 +1317,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the PercentageType Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class PercentageType : OpenXmlLeafElement
@@ -1328,7 +1330,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -1340,7 +1342,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -1360,7 +1362,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the RgbColorModelHex Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:srgbClr.</para>
     /// </summary>
     /// <remark>
@@ -1415,7 +1417,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -1427,7 +1429,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue Val
+        public HexBinaryValue? Val
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -1482,7 +1484,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (3L) });
 
     /// <summary>
     /// <para>Defines the SchemeColor Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:schemeClr.</para>
     /// </summary>
     /// <remark>
@@ -1537,7 +1539,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (3L) });
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -1549,7 +1551,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (3L) });
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.SchemeColorValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.SchemeColorValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.SchemeColorValues>>();
             set => SetAttribute(value);
@@ -1603,7 +1605,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the LinearShadeProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:lin.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1619,7 +1621,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>ang, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>ang, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:ang</para>
         /// </summary>
         /// <remark>
@@ -1631,14 +1633,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "ang")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Angle
+        public Int32Value? Angle
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>scaled, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>scaled, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:scaled</para>
         /// </summary>
         /// <remark>
@@ -1650,7 +1652,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "scaled")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.OnOffValues> Scaled
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.OnOffValues>? Scaled
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.OnOffValues>>();
             set => SetAttribute(value);
@@ -1679,7 +1681,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the PathShadeProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:path.</para>
     /// </summary>
     /// <remark>
@@ -1725,7 +1727,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>path, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>path, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:path</para>
         /// </summary>
         /// <remark>
@@ -1737,7 +1739,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "path")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PathShadeTypeValues> Path
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PathShadeTypeValues>? Path
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.PathShadeTypeValues>>();
             set => SetAttribute(value);
@@ -1767,7 +1769,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public FillToRectangle FillToRectangle
+        public FillToRectangle? FillToRectangle
         {
             get => GetElement<FillToRectangle>();
             set => SetElement(value);
@@ -1779,7 +1781,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the NoFillEmpty Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:noFill.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1807,7 +1809,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the RoundEmpty Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:round.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1835,7 +1837,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the BevelEmpty Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:bevel.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1863,7 +1865,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the EntityPickerEmpty Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:entityPicker.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -1891,7 +1893,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the EmptyType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class EmptyType : OpenXmlLeafElement
@@ -1911,7 +1913,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the SolidColorFillProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:solidFill.</para>
     /// </summary>
     /// <remark>
@@ -1984,7 +1986,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public RgbColorModelHex RgbColorModelHex
+        public RgbColorModelHex? RgbColorModelHex
         {
             get => GetElement<RgbColorModelHex>();
             set => SetElement(value);
@@ -1997,7 +1999,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public SchemeColor SchemeColor
+        public SchemeColor? SchemeColor
         {
             get => GetElement<SchemeColor>();
             set => SetElement(value);
@@ -2009,7 +2011,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the GradientFillProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:gradFill.</para>
     /// </summary>
     /// <remark>
@@ -2085,7 +2087,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public GradientStopList GradientStopList
+        public GradientStopList? GradientStopList
         {
             get => GetElement<GradientStopList>();
             set => SetElement(value);
@@ -2097,7 +2099,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the PresetLineDashProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:prstDash.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2113,7 +2115,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -2125,7 +2127,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PresetLineDashValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PresetLineDashValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.PresetLineDashValues>>();
             set => SetAttribute(value);
@@ -2149,7 +2151,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the LineJoinMiterProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:miter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2165,7 +2167,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>lim, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lim, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:lim</para>
         /// </summary>
         /// <remark>
@@ -2177,7 +2179,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "lim")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Limit
+        public Int32Value? Limit
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -2202,7 +2204,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
 
     /// <summary>
     /// <para>Defines the Glow Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:glow.</para>
     /// </summary>
     /// <remark>
@@ -2249,7 +2251,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         }
 
         /// <summary>
-        /// <para>rad, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>rad, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:rad</para>
         /// </summary>
         /// <remark>
@@ -2261,7 +2263,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L) });
         [SchemaAttr(52, "rad")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value GlowRadius
+        public Int64Value? GlowRadius
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
@@ -2300,7 +2302,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public RgbColorModelHex RgbColorModelHex
+        public RgbColorModelHex? RgbColorModelHex
         {
             get => GetElement<RgbColorModelHex>();
             set => SetElement(value);
@@ -2313,7 +2315,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public SchemeColor SchemeColor
+        public SchemeColor? SchemeColor
         {
             get => GetElement<SchemeColor>();
             set => SetElement(value);
@@ -2325,7 +2327,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the Shadow Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:shadow.</para>
     /// </summary>
     /// <remark>
@@ -2372,7 +2374,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         }
 
         /// <summary>
-        /// <para>blurRad, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>blurRad, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:blurRad</para>
         /// </summary>
         /// <remark>
@@ -2384,14 +2386,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "blurRad")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value BlurRadius
+        public Int64Value? BlurRadius
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>dist, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>dist, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:dist</para>
         /// </summary>
         /// <remark>
@@ -2403,14 +2405,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "dist")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value DistanceFromText
+        public Int64Value? DistanceFromText
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>dir, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>dir, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:dir</para>
         /// </summary>
         /// <remark>
@@ -2422,14 +2424,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "dir")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value DirectionAngle
+        public Int32Value? DirectionAngle
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sx, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>sx, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:sx</para>
         /// </summary>
         /// <remark>
@@ -2441,14 +2443,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "sx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value HorizontalScalingFactor
+        public Int32Value? HorizontalScalingFactor
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sy, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>sy, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:sy</para>
         /// </summary>
         /// <remark>
@@ -2460,14 +2462,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "sy")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value VerticalScalingFactor
+        public Int32Value? VerticalScalingFactor
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>kx, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>kx, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:kx</para>
         /// </summary>
         /// <remark>
@@ -2479,14 +2481,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "kx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value HorizontalSkewAngle
+        public Int32Value? HorizontalSkewAngle
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ky, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>ky, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:ky</para>
         /// </summary>
         /// <remark>
@@ -2498,14 +2500,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "ky")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value VerticalSkewAngle
+        public Int32Value? VerticalSkewAngle
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>algn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>algn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:algn</para>
         /// </summary>
         /// <remark>
@@ -2517,7 +2519,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "algn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.RectangleAlignmentValues> Alignment
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.RectangleAlignmentValues>? Alignment
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.RectangleAlignmentValues>>();
             set => SetAttribute(value);
@@ -2588,7 +2590,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public RgbColorModelHex RgbColorModelHex
+        public RgbColorModelHex? RgbColorModelHex
         {
             get => GetElement<RgbColorModelHex>();
             set => SetElement(value);
@@ -2601,7 +2603,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public SchemeColor SchemeColor
+        public SchemeColor? SchemeColor
         {
             get => GetElement<SchemeColor>();
             set => SetElement(value);
@@ -2613,7 +2615,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the Reflection Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:reflection.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -2629,7 +2631,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>blurRad, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>blurRad, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:blurRad</para>
         /// </summary>
         /// <remark>
@@ -2641,14 +2643,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "blurRad")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value BlurRadius
+        public Int64Value? BlurRadius
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>stA, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>stA, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:stA</para>
         /// </summary>
         /// <remark>
@@ -2660,14 +2662,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "stA")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value StartingOpacity
+        public Int32Value? StartingOpacity
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>stPos, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>stPos, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:stPos</para>
         /// </summary>
         /// <remark>
@@ -2679,14 +2681,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "stPos")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value StartPosition
+        public Int32Value? StartPosition
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>endA, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>endA, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:endA</para>
         /// </summary>
         /// <remark>
@@ -2698,14 +2700,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "endA")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value EndingOpacity
+        public Int32Value? EndingOpacity
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>endPos, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>endPos, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:endPos</para>
         /// </summary>
         /// <remark>
@@ -2717,14 +2719,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "endPos")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value EndPosition
+        public Int32Value? EndPosition
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>dist, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>dist, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:dist</para>
         /// </summary>
         /// <remark>
@@ -2736,14 +2738,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "dist")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value DistanceFromText
+        public Int64Value? DistanceFromText
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>dir, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>dir, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:dir</para>
         /// </summary>
         /// <remark>
@@ -2755,14 +2757,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "dir")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value DirectionAngle
+        public Int32Value? DirectionAngle
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>fadeDir, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>fadeDir, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:fadeDir</para>
         /// </summary>
         /// <remark>
@@ -2774,14 +2776,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "fadeDir")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value FadeDirection
+        public Int32Value? FadeDirection
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sx, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>sx, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:sx</para>
         /// </summary>
         /// <remark>
@@ -2793,14 +2795,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "sx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value HorizontalScalingFactor
+        public Int32Value? HorizontalScalingFactor
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sy, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>sy, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:sy</para>
         /// </summary>
         /// <remark>
@@ -2812,14 +2814,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "sy")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value VerticalScalingFactor
+        public Int32Value? VerticalScalingFactor
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>kx, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>kx, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:kx</para>
         /// </summary>
         /// <remark>
@@ -2831,14 +2833,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "kx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value HorizontalSkewAngle
+        public Int32Value? HorizontalSkewAngle
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>ky, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>ky, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:ky</para>
         /// </summary>
         /// <remark>
@@ -2850,14 +2852,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "ky")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value VerticalSkewAngle
+        public Int32Value? VerticalSkewAngle
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>algn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>algn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:algn</para>
         /// </summary>
         /// <remark>
@@ -2869,7 +2871,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "algn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.RectangleAlignmentValues> Alignment
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.RectangleAlignmentValues>? Alignment
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.RectangleAlignmentValues>>();
             set => SetAttribute(value);
@@ -2951,7 +2953,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the TextOutlineEffect Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:textOutline.</para>
     /// </summary>
     /// <remark>
@@ -3003,7 +3005,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>w, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>w, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:w</para>
         /// </summary>
         /// <remark>
@@ -3015,14 +3017,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value LineWidth
+        public Int32Value? LineWidth
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>cap, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>cap, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:cap</para>
         /// </summary>
         /// <remark>
@@ -3034,14 +3036,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "cap")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.LineCapValues> CapType
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.LineCapValues>? CapType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.LineCapValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>cmpd, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>cmpd, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:cmpd</para>
         /// </summary>
         /// <remark>
@@ -3053,14 +3055,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "cmpd")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.CompoundLineValues> Compound
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.CompoundLineValues>? Compound
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.CompoundLineValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>algn, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>algn, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:algn</para>
         /// </summary>
         /// <remark>
@@ -3072,7 +3074,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "algn")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PenAlignmentValues> Alignment
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PenAlignmentValues>? Alignment
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.PenAlignmentValues>>();
             set => SetAttribute(value);
@@ -3144,7 +3146,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the FillTextEffect Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:textFill.</para>
     /// </summary>
     /// <remark>
@@ -3220,7 +3222,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public NoFillEmpty NoFillEmpty
+        public NoFillEmpty? NoFillEmpty
         {
             get => GetElement<NoFillEmpty>();
             set => SetElement(value);
@@ -3233,7 +3235,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public SolidColorFillProperties SolidColorFillProperties
+        public SolidColorFillProperties? SolidColorFillProperties
         {
             get => GetElement<SolidColorFillProperties>();
             set => SetElement(value);
@@ -3246,7 +3248,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public GradientFillProperties GradientFillProperties
+        public GradientFillProperties? GradientFillProperties
         {
             get => GetElement<GradientFillProperties>();
             set => SetElement(value);
@@ -3258,7 +3260,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the Scene3D Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:scene3d.</para>
     /// </summary>
     /// <remark>
@@ -3325,7 +3327,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public Camera Camera
+        public Camera? Camera
         {
             get => GetElement<Camera>();
             set => SetElement(value);
@@ -3338,7 +3340,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public LightRig LightRig
+        public LightRig? LightRig
         {
             get => GetElement<LightRig>();
             set => SetElement(value);
@@ -3350,7 +3352,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the Properties3D Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:props3d.</para>
     /// </summary>
     /// <remark>
@@ -3399,7 +3401,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>extrusionH, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>extrusionH, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:extrusionH</para>
         /// </summary>
         /// <remark>
@@ -3411,14 +3413,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "extrusionH")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value ExtrusionHeight
+        public Int64Value? ExtrusionHeight
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>contourW, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>contourW, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:contourW</para>
         /// </summary>
         /// <remark>
@@ -3430,14 +3432,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "contourW")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value ContourWidth
+        public Int64Value? ContourWidth
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>prstMaterial, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>prstMaterial, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:prstMaterial</para>
         /// </summary>
         /// <remark>
@@ -3449,7 +3451,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "prstMaterial")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PresetMaterialTypeValues> PresetMaterialType
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PresetMaterialTypeValues>? PresetMaterialType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.PresetMaterialTypeValues>>();
             set => SetAttribute(value);
@@ -3496,7 +3498,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public BevelTop BevelTop
+        public BevelTop? BevelTop
         {
             get => GetElement<BevelTop>();
             set => SetElement(value);
@@ -3509,7 +3511,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public BevelBottom BevelBottom
+        public BevelBottom? BevelBottom
         {
             get => GetElement<BevelBottom>();
             set => SetElement(value);
@@ -3522,7 +3524,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public ExtrusionColor ExtrusionColor
+        public ExtrusionColor? ExtrusionColor
         {
             get => GetElement<ExtrusionColor>();
             set => SetElement(value);
@@ -3535,7 +3537,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public ContourColor ContourColor
+        public ContourColor? ContourColor
         {
             get => GetElement<ContourColor>();
             set => SetElement(value);
@@ -3547,7 +3549,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the Ligatures Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:ligatures.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3563,7 +3565,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -3575,7 +3577,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.LigaturesValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.LigaturesValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.LigaturesValues>>();
             set => SetAttribute(value);
@@ -3600,7 +3602,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the NumberingFormat Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:numForm.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3616,7 +3618,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -3628,7 +3630,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.NumberFormValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.NumberFormValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.NumberFormValues>>();
             set => SetAttribute(value);
@@ -3653,7 +3655,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the NumberSpacing Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:numSpacing.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3669,7 +3671,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -3681,7 +3683,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.NumberSpacingValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.NumberSpacingValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.NumberSpacingValues>>();
             set => SetAttribute(value);
@@ -3706,7 +3708,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the StylisticSets Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:stylisticSets.</para>
     /// </summary>
     /// <remark>
@@ -3769,7 +3771,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the ContextualAlternatives Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:cntxtAlts.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3797,7 +3799,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the ConflictMode Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:conflictMode.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3825,7 +3827,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the DiscardImageEditingData Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:discardImageEditingData.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3853,7 +3855,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the Checked Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:checked.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -3881,7 +3883,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the OnOffType Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class OnOffType : OpenXmlLeafElement
@@ -3894,7 +3896,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -3906,7 +3908,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.OnOffValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.OnOffValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.OnOffValues>>();
             set => SetAttribute(value);
@@ -3925,7 +3927,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the ContentPart Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:contentPart.</para>
     /// </summary>
     /// <remark>
@@ -3973,7 +3975,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>bwMode, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>bwMode, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:bwMode</para>
         /// </summary>
         /// <remark>
@@ -3985,14 +3987,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "bwMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> BlackWhiteMode
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? BlackWhiteMode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: r:id</para>
         /// </summary>
         /// <remark>
@@ -4004,7 +4006,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue RelationshipId
+        public StringValue? RelationshipId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -4043,7 +4045,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public WordNonVisualContentPartShapeProperties WordNonVisualContentPartShapeProperties
+        public WordNonVisualContentPartShapeProperties? WordNonVisualContentPartShapeProperties
         {
             get => GetElement<WordNonVisualContentPartShapeProperties>();
             set => SetElement(value);
@@ -4056,7 +4058,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public Transform2D Transform2D
+        public Transform2D? Transform2D
         {
             get => GetElement<Transform2D>();
             set => SetElement(value);
@@ -4069,7 +4071,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);
@@ -4081,7 +4083,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the DocumentId Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:docId.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4097,7 +4099,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -4109,7 +4111,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue Val
+        public HexBinaryValue? Val
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -4136,7 +4138,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlConflictInsertionRangeEnd Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:customXmlConflictInsRangeEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4164,7 +4166,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the CustomXmlConflictDeletionRangeEnd Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:customXmlConflictDelRangeEnd.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4192,7 +4194,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the MarkupType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class MarkupType : OpenXmlLeafElement
@@ -4217,7 +4219,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(23, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -4241,7 +4243,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
 
     /// <summary>
     /// <para>Defines the DefaultImageDpi Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:defaultImageDpi.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4257,7 +4259,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -4269,7 +4271,7 @@ aBuilder.AddValidator(new StringValidator() { Length = (4L) });
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Val
+        public Int32Value? Val
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -4294,7 +4296,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the SdtContentCheckBox Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:checkbox.</para>
     /// </summary>
     /// <remark>
@@ -4364,7 +4366,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public Checked Checked
+        public Checked? Checked
         {
             get => GetElement<Checked>();
             set => SetElement(value);
@@ -4377,7 +4379,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public CheckedState CheckedState
+        public CheckedState? CheckedState
         {
             get => GetElement<CheckedState>();
             set => SetElement(value);
@@ -4390,7 +4392,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public UncheckedState UncheckedState
+        public UncheckedState? UncheckedState
         {
             get => GetElement<UncheckedState>();
             set => SetElement(value);
@@ -4402,7 +4404,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the GradientStop Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:gs.</para>
     /// </summary>
     /// <remark>
@@ -4449,7 +4451,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>pos, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>pos, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:pos</para>
         /// </summary>
         /// <remark>
@@ -4461,7 +4463,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "pos")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value StopPosition
+        public Int32Value? StopPosition
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -4501,7 +4503,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public RgbColorModelHex RgbColorModelHex
+        public RgbColorModelHex? RgbColorModelHex
         {
             get => GetElement<RgbColorModelHex>();
             set => SetElement(value);
@@ -4514,7 +4516,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public SchemeColor SchemeColor
+        public SchemeColor? SchemeColor
         {
             get => GetElement<SchemeColor>();
             set => SetElement(value);
@@ -4526,7 +4528,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
 
     /// <summary>
     /// <para>Defines the FillToRectangle Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:fillToRect.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4542,7 +4544,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         }
 
         /// <summary>
-        /// <para>l, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>l, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:l</para>
         /// </summary>
         /// <remark>
@@ -4554,14 +4556,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "l")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Left
+        public Int32Value? Left
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>t, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>t, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:t</para>
         /// </summary>
         /// <remark>
@@ -4573,14 +4575,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "t")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Top
+        public Int32Value? Top
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>r, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>r, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:r</para>
         /// </summary>
         /// <remark>
@@ -4592,14 +4594,14 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "r")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Right
+        public Int32Value? Right
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>b, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>b, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:b</para>
         /// </summary>
         /// <remark>
@@ -4611,7 +4613,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (0L), MaxInclusive 
         [SchemaAttr(52, "b")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Bottom
+        public Int32Value? Bottom
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -4647,7 +4649,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the GradientStopList Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:gsLst.</para>
     /// </summary>
     /// <remark>
@@ -4710,7 +4712,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the SphereCoordinates Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:rot.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4726,7 +4728,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>lat, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lat, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:lat</para>
         /// </summary>
         /// <remark>
@@ -4738,14 +4740,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "lat")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Lattitude
+        public Int32Value? Lattitude
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>lon, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>lon, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:lon</para>
         /// </summary>
         /// <remark>
@@ -4757,14 +4759,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "lon")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Longitude
+        public Int32Value? Longitude
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>rev, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>rev, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:rev</para>
         /// </summary>
         /// <remark>
@@ -4776,7 +4778,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "rev")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Revolution
+        public Int32Value? Revolution
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -4814,7 +4816,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxExclusive = (21600000L), MinInc
 
     /// <summary>
     /// <para>Defines the Camera Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:camera.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -4830,7 +4832,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxExclusive = (21600000L), MinInc
         }
 
         /// <summary>
-        /// <para>prst, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>prst, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:prst</para>
         /// </summary>
         /// <remark>
@@ -4842,7 +4844,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxExclusive = (21600000L), MinInc
         [SchemaAttr(52, "prst")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PresetCameraTypeValues> PresetCameraType
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.PresetCameraTypeValues>? PresetCameraType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.PresetCameraTypeValues>>();
             set => SetAttribute(value);
@@ -4868,7 +4870,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the LightRig Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:lightRig.</para>
     /// </summary>
     /// <remark>
@@ -4914,7 +4916,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>rig, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>rig, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:rig</para>
         /// </summary>
         /// <remark>
@@ -4926,14 +4928,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(52, "rig")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.LightRigTypeValues> LightRigType
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.LightRigTypeValues>? LightRigType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.LightRigTypeValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>dir, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>dir, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:dir</para>
         /// </summary>
         /// <remark>
@@ -4945,7 +4947,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(52, "dir")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.LightRigDirectionValues> LightDirectionType
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.LightRigDirectionValues>? LightDirectionType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.LightRigDirectionValues>>();
             set => SetAttribute(value);
@@ -4983,7 +4985,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public SphereCoordinates SphereCoordinates
+        public SphereCoordinates? SphereCoordinates
         {
             get => GetElement<SphereCoordinates>();
             set => SetElement(value);
@@ -4995,7 +4997,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BevelTop Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:bevelT.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5023,7 +5025,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BevelBottom Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:bevelB.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5051,7 +5053,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BevelType Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class BevelType : OpenXmlLeafElement
@@ -5064,7 +5066,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>w, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>w, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:w</para>
         /// </summary>
         /// <remark>
@@ -5076,14 +5078,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(52, "w")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value Width
+        public Int64Value? Width
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>h, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>h, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:h</para>
         /// </summary>
         /// <remark>
@@ -5095,14 +5097,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(52, "h")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value Height
+        public Int64Value? Height
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>prst, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>prst, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:prst</para>
         /// </summary>
         /// <remark>
@@ -5114,7 +5116,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(52, "prst")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.BevelPresetTypeValues> PresetProfileType
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.BevelPresetTypeValues>? PresetProfileType
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.BevelPresetTypeValues>>();
             set => SetAttribute(value);
@@ -5144,7 +5146,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ExtrusionColor Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:extrusionClr.</para>
     /// </summary>
     /// <remark>
@@ -5214,7 +5216,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ContourColor Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:contourClr.</para>
     /// </summary>
     /// <remark>
@@ -5284,7 +5286,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ColorType Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     /// <remark>
@@ -5341,7 +5343,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public RgbColorModelHex RgbColorModelHex
+        public RgbColorModelHex? RgbColorModelHex
         {
             get => GetElement<RgbColorModelHex>();
             set => SetElement(value);
@@ -5354,7 +5356,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public SchemeColor SchemeColor
+        public SchemeColor? SchemeColor
         {
             get => GetElement<SchemeColor>();
             set => SetElement(value);
@@ -5363,7 +5365,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the StyleSet Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:styleSet.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5379,7 +5381,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:id</para>
         /// </summary>
         /// <remark>
@@ -5391,14 +5393,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(52, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Id
+        public UInt32Value? Id
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -5410,7 +5412,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.OnOffValues> Val
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.OnOffValues>? Val
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.OnOffValues>>();
             set => SetAttribute(value);
@@ -5440,7 +5442,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the CheckedState Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:checkedState.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5468,7 +5470,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the UncheckedState Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:uncheckedState.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -5496,7 +5498,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the CheckBoxSymbolType Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class CheckBoxSymbolType : OpenXmlLeafElement
@@ -5509,7 +5511,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         }
 
         /// <summary>
-        /// <para>font, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>font, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:font</para>
         /// </summary>
         /// <remark>
@@ -5521,14 +5523,14 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "font")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Font
+        public StringValue? Font
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: w14:val</para>
         /// </summary>
         /// <remark>
@@ -5540,7 +5542,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(52, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public HexBinaryValue Val
+        public HexBinaryValue? Val
         {
             get => GetAttribute<HexBinaryValue>();
             set => SetAttribute(value);
@@ -5564,7 +5566,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
 
     /// <summary>
     /// <para>Defines the NonVisualDrawingProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:cNvPr.</para>
     /// </summary>
     /// <remark>
@@ -5621,7 +5623,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(0, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Id
+        public UInt32Value? Id
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -5637,7 +5639,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -5653,7 +5655,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(0, "descr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Description
+        public StringValue? Description
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -5669,7 +5671,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(0, "hidden")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Hidden
+        public BooleanValue? Hidden
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -5685,7 +5687,7 @@ aBuilder.AddValidator(new OfficeVersionValidator(FileFormatVersions.Office2010))
         [SchemaAttr(0, "title")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Title
+        public StringValue? Title
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -5726,7 +5728,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.HyperlinkOnClick HyperlinkOnClick
+        public DocumentFormat.OpenXml.Drawing.HyperlinkOnClick? HyperlinkOnClick
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.HyperlinkOnClick>();
             set => SetElement(value);
@@ -5739,7 +5741,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.HyperlinkOnHover HyperlinkOnHover
+        public DocumentFormat.OpenXml.Drawing.HyperlinkOnHover? HyperlinkOnHover
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.HyperlinkOnHover>();
             set => SetElement(value);
@@ -5752,7 +5754,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList NonVisualDrawingPropertiesExtensionList
+        public DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList? NonVisualDrawingPropertiesExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList>();
             set => SetElement(value);
@@ -5764,7 +5766,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the NonVisualInkContentPartProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:cNvContentPartPr.</para>
     /// </summary>
     /// <remark>
@@ -5811,7 +5813,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>isComment, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>isComment, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: isComment</para>
         /// </summary>
 
@@ -5820,7 +5822,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "isComment")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue IsComment
+        public BooleanValue? IsComment
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -5849,7 +5851,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a14 = http://schemas.microsoft.com/office/drawing/2010/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Drawing.ContentPartLocks ContentPartLocks
+        public DocumentFormat.OpenXml.Office2010.Drawing.ContentPartLocks? ContentPartLocks
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Drawing.ContentPartLocks>();
             set => SetElement(value);
@@ -5862,7 +5864,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a14 = http://schemas.microsoft.com/office/drawing/2010/main
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Drawing.OfficeArtExtensionList OfficeArtExtensionList
+        public DocumentFormat.OpenXml.Office2010.Drawing.OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Drawing.OfficeArtExtensionList>();
             set => SetElement(value);
@@ -5874,7 +5876,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the WordNonVisualContentPartShapeProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:nvContentPartPr.</para>
     /// </summary>
     /// <remark>
@@ -5941,7 +5943,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public NonVisualDrawingProperties NonVisualDrawingProperties
+        public NonVisualDrawingProperties? NonVisualDrawingProperties
         {
             get => GetElement<NonVisualDrawingProperties>();
             set => SetElement(value);
@@ -5954,7 +5956,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:w14 = http://schemas.microsoft.com/office/word/2010/wordml
         /// </remark>
-        public NonVisualInkContentPartProperties NonVisualInkContentPartProperties
+        public NonVisualInkContentPartProperties? NonVisualInkContentPartProperties
         {
             get => GetElement<NonVisualInkContentPartProperties>();
             set => SetElement(value);
@@ -5966,7 +5968,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Transform2D Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:xfrm.</para>
     /// </summary>
     /// <remark>
@@ -6022,7 +6024,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rot")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int32Value Rotation
+        public Int32Value? Rotation
         {
             get => GetAttribute<Int32Value>();
             set => SetAttribute(value);
@@ -6038,7 +6040,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "flipH")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue HorizontalFlip
+        public BooleanValue? HorizontalFlip
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -6054,7 +6056,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "flipV")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue VerticalFlip
+        public BooleanValue? VerticalFlip
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -6085,7 +6087,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Offset Offset
+        public DocumentFormat.OpenXml.Drawing.Offset? Offset
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Offset>();
             set => SetElement(value);
@@ -6098,7 +6100,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Extents Extents
+        public DocumentFormat.OpenXml.Drawing.Extents? Extents
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Extents>();
             set => SetElement(value);
@@ -6110,7 +6112,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the OfficeArtExtensionList Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w14:extLst.</para>
     /// </summary>
     /// <remark>

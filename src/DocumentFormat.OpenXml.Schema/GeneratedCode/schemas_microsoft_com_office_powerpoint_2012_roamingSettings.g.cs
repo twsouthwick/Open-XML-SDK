@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Framework.Metadata;
@@ -14,7 +16,7 @@ namespace DocumentFormat.OpenXml.Office2013.PowerPoint.Roaming
 {
     /// <summary>
     /// <para>Defines the Key Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is pRoam:key.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -55,7 +57,7 @@ namespace DocumentFormat.OpenXml.Office2013.PowerPoint.Roaming
 
     /// <summary>
     /// <para>Defines the Value Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is pRoam:value.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -96,7 +98,7 @@ namespace DocumentFormat.OpenXml.Office2013.PowerPoint.Roaming
 
     /// <summary>
     /// <para>Defines the RoamingProperty Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is pRoam:props.</para>
     /// </summary>
     /// <remark>
@@ -163,7 +165,7 @@ namespace DocumentFormat.OpenXml.Office2013.PowerPoint.Roaming
         /// <remark>
         /// xmlns:pRoam = http://schemas.microsoft.com/office/powerpoint/2012/roamingSettings
         /// </remark>
-        public Key Key
+        public Key? Key
         {
             get => GetElement<Key>();
             set => SetElement(value);
@@ -176,7 +178,7 @@ namespace DocumentFormat.OpenXml.Office2013.PowerPoint.Roaming
         /// <remark>
         /// xmlns:pRoam = http://schemas.microsoft.com/office/powerpoint/2012/roamingSettings
         /// </remark>
-        public Value Value
+        public Value? Value
         {
             get => GetElement<Value>();
             set => SetElement(value);

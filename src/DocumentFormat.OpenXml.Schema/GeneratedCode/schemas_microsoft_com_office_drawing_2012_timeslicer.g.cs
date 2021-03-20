@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -15,7 +17,7 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing.TimeSlicer
 {
     /// <summary>
     /// <para>Defines the TimeSlicer Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is tsle:timeslicer.</para>
     /// </summary>
     /// <remark>
@@ -61,7 +63,7 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing.TimeSlicer
         }
 
         /// <summary>
-        /// <para>name, this property is only available in Office2013, Office2016</para>
+        /// <para>name, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: name</para>
         /// </summary>
 
@@ -70,7 +72,7 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing.TimeSlicer
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -100,7 +102,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:tsle = http://schemas.microsoft.com/office/drawing/2012/timeslicer
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);
@@ -112,7 +114,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the OfficeArtExtensionList Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is tsle:extLst.</para>
     /// </summary>
     /// <remark>

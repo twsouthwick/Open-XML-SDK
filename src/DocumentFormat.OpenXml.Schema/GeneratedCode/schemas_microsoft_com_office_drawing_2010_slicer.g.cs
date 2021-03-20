@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -16,7 +18,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Slicer
 {
     /// <summary>
     /// <para>Defines the Slicer Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is sle:slicer.</para>
     /// </summary>
     /// <remark>
@@ -62,7 +64,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Slicer
         }
 
         /// <summary>
-        /// <para>name, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>name, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: name</para>
         /// </summary>
 
@@ -71,7 +73,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Slicer
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -101,7 +103,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:sle = http://schemas.microsoft.com/office/drawing/2010/slicer
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);
@@ -113,7 +115,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the OfficeArtExtensionList Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is sle:extLst.</para>
     /// </summary>
     /// <remark>

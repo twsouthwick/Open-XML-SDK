@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -15,7 +17,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word.Drawing
 {
     /// <summary>
     /// <para>Defines the PercentagePositionHeightOffset Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp14:pctPosHOffset.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -57,7 +59,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word.Drawing
 
     /// <summary>
     /// <para>Defines the PercentagePositionVerticalOffset Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp14:pctPosVOffset.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -99,7 +101,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word.Drawing
 
     /// <summary>
     /// <para>Defines the RelativeWidth Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp14:sizeRelH.</para>
     /// </summary>
     /// <remark>
@@ -145,7 +147,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word.Drawing
         }
 
         /// <summary>
-        /// <para>relativeFrom, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>relativeFrom, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: relativeFrom</para>
         /// </summary>
 
@@ -154,7 +156,7 @@ namespace DocumentFormat.OpenXml.Office2010.Word.Drawing
         [SchemaAttr(0, "relativeFrom")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.Drawing.SizeRelativeHorizontallyValues> ObjectId
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.Drawing.SizeRelativeHorizontallyValues>? ObjectId
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.Drawing.SizeRelativeHorizontallyValues>>();
             set => SetAttribute(value);
@@ -185,7 +187,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:wp14 = http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing
         /// </remark>
-        public PercentageWidth PercentageWidth
+        public PercentageWidth? PercentageWidth
         {
             get => GetElement<PercentageWidth>();
             set => SetElement(value);
@@ -197,7 +199,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the RelativeHeight Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp14:sizeRelV.</para>
     /// </summary>
     /// <remark>
@@ -243,7 +245,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>relativeFrom, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>relativeFrom, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: relativeFrom</para>
         /// </summary>
 
@@ -252,7 +254,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "relativeFrom")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.Drawing.SizeRelativeVerticallyValues> RelativeFrom
+        public EnumValue<DocumentFormat.OpenXml.Office2010.Word.Drawing.SizeRelativeVerticallyValues>? RelativeFrom
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2010.Word.Drawing.SizeRelativeVerticallyValues>>();
             set => SetAttribute(value);
@@ -283,7 +285,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:wp14 = http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing
         /// </remark>
-        public PercentageHeight PercentageHeight
+        public PercentageHeight? PercentageHeight
         {
             get => GetElement<PercentageHeight>();
             set => SetElement(value);
@@ -295,7 +297,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the PercentageWidth Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp14:pctWidth.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -337,7 +339,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the PercentageHeight Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wp14:pctHeight.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete

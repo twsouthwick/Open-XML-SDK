@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -15,7 +17,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Diagram
 {
     /// <summary>
     /// <para>Defines the NonVisualDrawingProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is dgm14:cNvPr.</para>
     /// </summary>
     /// <remark>
@@ -72,7 +74,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Diagram
         [SchemaAttr(0, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Id
+        public UInt32Value? Id
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -88,7 +90,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Diagram
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -104,7 +106,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Diagram
         [SchemaAttr(0, "descr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Description
+        public StringValue? Description
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -120,7 +122,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Diagram
         [SchemaAttr(0, "hidden")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Hidden
+        public BooleanValue? Hidden
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -136,7 +138,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Diagram
         [SchemaAttr(0, "title")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Title
+        public StringValue? Title
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -177,7 +179,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.HyperlinkOnClick HyperlinkOnClick
+        public DocumentFormat.OpenXml.Drawing.HyperlinkOnClick? HyperlinkOnClick
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.HyperlinkOnClick>();
             set => SetElement(value);
@@ -190,7 +192,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.HyperlinkOnHover HyperlinkOnHover
+        public DocumentFormat.OpenXml.Drawing.HyperlinkOnHover? HyperlinkOnHover
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.HyperlinkOnHover>();
             set => SetElement(value);
@@ -203,7 +205,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList NonVisualDrawingPropertiesExtensionList
+        public DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList? NonVisualDrawingPropertiesExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList>();
             set => SetElement(value);
@@ -215,7 +217,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the RecolorImages Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is dgm14:recolorImg.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -231,7 +233,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: val</para>
         /// </summary>
 
@@ -240,7 +242,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Val
+        public BooleanValue? Val
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);

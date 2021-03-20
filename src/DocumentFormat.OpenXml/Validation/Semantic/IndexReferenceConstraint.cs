@@ -1,8 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-#nullable disable
-
 using System;
 
 namespace DocumentFormat.OpenXml.Validation.Semantic
@@ -14,11 +12,11 @@ namespace DocumentFormat.OpenXml.Validation.Semantic
     {
         private readonly byte _attribute;
         private readonly string _refPartType;
-        private readonly Type _refElementParent;
+        private readonly Type? _refElementParent;
         private readonly Type _refElement;
         private readonly int _indexBase;
 
-        public IndexReferenceConstraint(byte attribute, string referencedPart, Type referencedElementParent, Type referencedElement, string referencedElementName, int indexBase)
+        public IndexReferenceConstraint(byte attribute, string referencedPart, Type? referencedElementParent, Type referencedElement, string referencedElementName, int indexBase)
             : base(SemanticValidationLevel.Package)
         {
             _attribute = attribute;
@@ -30,9 +28,15 @@ namespace DocumentFormat.OpenXml.Validation.Semantic
 
         public override SemanticValidationLevel StateScope => SemanticValidationLevel.Part;
 
-        public override ValidationErrorInfo ValidateCore(ValidationContext context)
+        public override ValidationErrorInfo? ValidateCore(ValidationContext context)
         {
-            var element = context.Stack.Current.Element;
+            var element = context.Stack.Current?.Element;
+
+            if (element is null)
+            {
+                return null;
+            }
+
             var attribute = element.ParsedState.Attributes[_attribute];
 
             //if the attribute is omitted, semantic validation will do nothing

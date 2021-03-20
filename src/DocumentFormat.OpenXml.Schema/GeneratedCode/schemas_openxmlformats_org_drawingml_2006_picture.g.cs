@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -17,7 +19,7 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
 {
     /// <summary>
     /// <para>Picture.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is pic:pic.</para>
     /// </summary>
     /// <remark>
@@ -92,7 +94,7 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
         /// <remark>
         /// xmlns:pic = http://schemas.openxmlformats.org/drawingml/2006/picture
         /// </remark>
-        public NonVisualPictureProperties NonVisualPictureProperties
+        public NonVisualPictureProperties? NonVisualPictureProperties
         {
             get => GetElement<NonVisualPictureProperties>();
             set => SetElement(value);
@@ -105,7 +107,7 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
         /// <remark>
         /// xmlns:pic = http://schemas.openxmlformats.org/drawingml/2006/picture
         /// </remark>
-        public BlipFill BlipFill
+        public BlipFill? BlipFill
         {
             get => GetElement<BlipFill>();
             set => SetElement(value);
@@ -118,33 +120,33 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
         /// <remark>
         /// xmlns:pic = http://schemas.openxmlformats.org/drawingml/2006/picture
         /// </remark>
-        public ShapeProperties ShapeProperties
+        public ShapeProperties? ShapeProperties
         {
             get => GetElement<ShapeProperties>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>ShapeStyle.</para>
+        /// <para>ShapeStyle, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: pic14:style.</para>
         /// </summary>
         /// <remark>
         /// xmlns:pic14 = http://schemas.microsoft.com/office/drawing/2010/picture
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Drawing.Pictures.ShapeStyle ShapeStyle
+        public DocumentFormat.OpenXml.Office2010.Drawing.Pictures.ShapeStyle? ShapeStyle
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Drawing.Pictures.ShapeStyle>();
             set => SetElement(value);
         }
 
         /// <summary>
-        /// <para>OfficeArtExtensionList.</para>
+        /// <para>OfficeArtExtensionList, this property is only available in Office 2010 and later..</para>
         /// <para>Represents the following element tag in the schema: pic14:extLst.</para>
         /// </summary>
         /// <remark>
         /// xmlns:pic14 = http://schemas.microsoft.com/office/drawing/2010/picture
         /// </remark>
-        public DocumentFormat.OpenXml.Office2010.Drawing.Pictures.OfficeArtExtensionList OfficeArtExtensionList
+        public DocumentFormat.OpenXml.Office2010.Drawing.Pictures.OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Office2010.Drawing.Pictures.OfficeArtExtensionList>();
             set => SetElement(value);
@@ -156,7 +158,7 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
 
     /// <summary>
     /// <para>Non-Visual Drawing Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is pic:cNvPr.</para>
     /// </summary>
     /// <remark>
@@ -213,7 +215,7 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
         [SchemaAttr(0, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Id
+        public UInt32Value? Id
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -229,7 +231,7 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -245,7 +247,7 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
         [SchemaAttr(0, "descr")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Description
+        public StringValue? Description
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -261,7 +263,7 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
         [SchemaAttr(0, "hidden")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Hidden
+        public BooleanValue? Hidden
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -277,7 +279,7 @@ namespace DocumentFormat.OpenXml.Drawing.Pictures
         [SchemaAttr(0, "title")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Title
+        public StringValue? Title
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -318,7 +320,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.HyperlinkOnClick HyperlinkOnClick
+        public DocumentFormat.OpenXml.Drawing.HyperlinkOnClick? HyperlinkOnClick
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.HyperlinkOnClick>();
             set => SetElement(value);
@@ -331,7 +333,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.HyperlinkOnHover HyperlinkOnHover
+        public DocumentFormat.OpenXml.Drawing.HyperlinkOnHover? HyperlinkOnHover
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.HyperlinkOnHover>();
             set => SetElement(value);
@@ -344,7 +346,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList NonVisualDrawingPropertiesExtensionList
+        public DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList? NonVisualDrawingPropertiesExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.NonVisualDrawingPropertiesExtensionList>();
             set => SetElement(value);
@@ -356,7 +358,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Non-Visual Picture Drawing Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is pic:cNvPicPr.</para>
     /// </summary>
     /// <remark>
@@ -412,7 +414,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "preferRelativeResize")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue PreferRelativeResize
+        public BooleanValue? PreferRelativeResize
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -440,7 +442,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.PictureLocks PictureLocks
+        public DocumentFormat.OpenXml.Drawing.PictureLocks? PictureLocks
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.PictureLocks>();
             set => SetElement(value);
@@ -453,7 +455,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.NonVisualPicturePropertiesExtensionList NonVisualPicturePropertiesExtensionList
+        public DocumentFormat.OpenXml.Drawing.NonVisualPicturePropertiesExtensionList? NonVisualPicturePropertiesExtensionList
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.NonVisualPicturePropertiesExtensionList>();
             set => SetElement(value);
@@ -465,7 +467,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Non-Visual Picture Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is pic:nvPicPr.</para>
     /// </summary>
     /// <remark>
@@ -531,7 +533,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:pic = http://schemas.openxmlformats.org/drawingml/2006/picture
         /// </remark>
-        public NonVisualDrawingProperties NonVisualDrawingProperties
+        public NonVisualDrawingProperties? NonVisualDrawingProperties
         {
             get => GetElement<NonVisualDrawingProperties>();
             set => SetElement(value);
@@ -544,7 +546,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:pic = http://schemas.openxmlformats.org/drawingml/2006/picture
         /// </remark>
-        public NonVisualPictureDrawingProperties NonVisualPictureDrawingProperties
+        public NonVisualPictureDrawingProperties? NonVisualPictureDrawingProperties
         {
             get => GetElement<NonVisualPictureDrawingProperties>();
             set => SetElement(value);
@@ -556,7 +558,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Picture Fill.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is pic:blipFill.</para>
     /// </summary>
     /// <remark>
@@ -614,7 +616,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "dpi")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Dpi
+        public UInt32Value? Dpi
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -630,7 +632,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "rotWithShape")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue RotateWithShape
+        public BooleanValue? RotateWithShape
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -669,7 +671,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Blip Blip
+        public DocumentFormat.OpenXml.Drawing.Blip? Blip
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Blip>();
             set => SetElement(value);
@@ -682,7 +684,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.SourceRectangle SourceRectangle
+        public DocumentFormat.OpenXml.Drawing.SourceRectangle? SourceRectangle
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.SourceRectangle>();
             set => SetElement(value);
@@ -694,7 +696,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Shape Properties.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is pic:spPr.</para>
     /// </summary>
     /// <remark>
@@ -763,7 +765,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "bwMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> BlackWhiteMode
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? BlackWhiteMode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
@@ -838,7 +840,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Transform2D Transform2D
+        public DocumentFormat.OpenXml.Drawing.Transform2D? Transform2D
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Transform2D>();
             set => SetElement(value);

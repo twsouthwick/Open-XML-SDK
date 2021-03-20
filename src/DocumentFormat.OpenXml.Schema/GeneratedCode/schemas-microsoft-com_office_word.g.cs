@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Framework.Metadata;
@@ -14,7 +16,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
 {
     /// <summary>
     /// <para>Top Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w10:bordertop.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -41,7 +43,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
 
     /// <summary>
     /// <para>Left Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w10:borderleft.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -68,7 +70,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
 
     /// <summary>
     /// <para>Right Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w10:borderright.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -95,7 +97,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
 
     /// <summary>
     /// <para>Bottom Border.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w10:borderbottom.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -122,7 +124,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
 
     /// <summary>
     /// <para>Defines the BorderType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class BorderType : OpenXmlLeafElement
@@ -144,7 +146,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
         [SchemaAttr(0, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.BorderValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.BorderValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.BorderValues>>();
             set => SetAttribute(value);
@@ -160,7 +162,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
         [SchemaAttr(0, "width")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public IntegerValue Width
+        public IntegerValue? Width
         {
             get => GetAttribute<IntegerValue>();
             set => SetAttribute(value);
@@ -176,7 +178,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
         [SchemaAttr(0, "shadow")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public TrueFalseValue Shadow
+        public TrueFalseValue? Shadow
         {
             get => GetAttribute<TrueFalseValue>();
             set => SetAttribute(value);
@@ -197,7 +199,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
 
     /// <summary>
     /// <para>Text Wrapping.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w10:wrap.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -222,7 +224,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
         [SchemaAttr(0, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.WrapValues> Type
+        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.WrapValues>? Type
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.WrapValues>>();
             set => SetAttribute(value);
@@ -238,7 +240,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
         [SchemaAttr(0, "side")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.WrapSideValues> Side
+        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.WrapSideValues>? Side
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.WrapSideValues>>();
             set => SetAttribute(value);
@@ -254,7 +256,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
         [SchemaAttr(0, "anchorx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.HorizontalAnchorValues> AnchorX
+        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.HorizontalAnchorValues>? AnchorX
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.HorizontalAnchorValues>>();
             set => SetAttribute(value);
@@ -270,7 +272,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
         [SchemaAttr(0, "anchory")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.VerticalAnchorValues> AnchorY
+        public EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.VerticalAnchorValues>? AnchorY
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Vml.Wordprocessing.VerticalAnchorValues>>();
             set => SetAttribute(value);
@@ -293,7 +295,7 @@ namespace DocumentFormat.OpenXml.Vml.Wordprocessing
 
     /// <summary>
     /// <para>Anchor Location Is Locked.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is w10:anchorlock.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete

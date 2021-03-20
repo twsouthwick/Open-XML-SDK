@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -15,7 +17,7 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing
 {
     /// <summary>
     /// <para>Defines the BackgroundProperties Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a15:backgroundPr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -31,7 +33,7 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing
         }
 
         /// <summary>
-        /// <para>bwMode, this property is only available in Office2013, Office2016</para>
+        /// <para>bwMode, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: bwMode</para>
         /// </summary>
 
@@ -40,14 +42,14 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing
         [SchemaAttr(0, "bwMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> Mode
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? Mode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>bwPure, this property is only available in Office2013, Office2016</para>
+        /// <para>bwPure, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: bwPure</para>
         /// </summary>
 
@@ -56,14 +58,14 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing
         [SchemaAttr(0, "bwPure")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> Pure
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? Pure
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>bwNormal, this property is only available in Office2013, Office2016</para>
+        /// <para>bwNormal, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: bwNormal</para>
         /// </summary>
 
@@ -72,14 +74,14 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing
         [SchemaAttr(0, "bwNormal")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> Normal
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? Normal
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>targetScreenSize, this property is only available in Office2013, Office2016</para>
+        /// <para>targetScreenSize, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: targetScreenSize</para>
         /// </summary>
 
@@ -88,7 +90,7 @@ namespace DocumentFormat.OpenXml.Office2013.Drawing
         [SchemaAttr(0, "targetScreenSize")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Office2013.Drawing.TargetScreenSize> TargetScreenSize
+        public EnumValue<DocumentFormat.OpenXml.Office2013.Drawing.TargetScreenSize>? TargetScreenSize
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Office2013.Drawing.TargetScreenSize>>();
             set => SetAttribute(value);
@@ -124,7 +126,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the NonVisualGroupProperties Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a15:nonVisualGroupProps.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -140,7 +142,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>isLegacyGroup, this property is only available in Office2013, Office2016</para>
+        /// <para>isLegacyGroup, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: isLegacyGroup</para>
         /// </summary>
 
@@ -149,7 +151,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "isLegacyGroup")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue IsLegacyGroup
+        public BooleanValue? IsLegacyGroup
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -170,7 +172,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ObjectProperties Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a15:objectPr.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -186,7 +188,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>objectId, this property is only available in Office2013, Office2016</para>
+        /// <para>objectId, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: objectId</para>
         /// </summary>
 
@@ -195,14 +197,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "objectId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>isActiveX, this property is only available in Office2013, Office2016</para>
+        /// <para>isActiveX, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: isActiveX</para>
         /// </summary>
 
@@ -211,14 +213,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "isActiveX")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue IsActiveX
+        public BooleanValue? IsActiveX
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>linkType, this property is only available in Office2013, Office2016</para>
+        /// <para>linkType, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: linkType</para>
         /// </summary>
 
@@ -227,7 +229,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "linkType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue LinkType
+        public StringValue? LinkType
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -250,7 +252,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the SignatureLine Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is a15:signatureLine.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -266,7 +268,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>isSignatureLine, this property is only available in Office2013, Office2016</para>
+        /// <para>isSignatureLine, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: isSignatureLine</para>
         /// </summary>
 
@@ -275,14 +277,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "isSignatureLine")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue IsSignatureLine
+        public BooleanValue? IsSignatureLine
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: id</para>
         /// </summary>
 
@@ -291,14 +293,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>provId, this property is only available in Office2013, Office2016</para>
+        /// <para>provId, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: provId</para>
         /// </summary>
 
@@ -307,14 +309,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "provId")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ProviderId
+        public StringValue? ProviderId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>signingInstructionsSet, this property is only available in Office2013, Office2016</para>
+        /// <para>signingInstructionsSet, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: signingInstructionsSet</para>
         /// </summary>
 
@@ -323,14 +325,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "signingInstructionsSet")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue SigningInstructionsSet
+        public BooleanValue? SigningInstructionsSet
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>allowComments, this property is only available in Office2013, Office2016</para>
+        /// <para>allowComments, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: allowComments</para>
         /// </summary>
 
@@ -339,14 +341,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "allowComments")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue AllowComments
+        public BooleanValue? AllowComments
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>showSignDate, this property is only available in Office2013, Office2016</para>
+        /// <para>showSignDate, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: showSignDate</para>
         /// </summary>
 
@@ -355,14 +357,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "showSignDate")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue ShowSignDate
+        public BooleanValue? ShowSignDate
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>suggestedSigner, this property is only available in Office2013, Office2016</para>
+        /// <para>suggestedSigner, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: suggestedSigner</para>
         /// </summary>
 
@@ -371,14 +373,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "suggestedSigner")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue SuggestedSigner
+        public StringValue? SuggestedSigner
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>suggestedSigner2, this property is only available in Office2013, Office2016</para>
+        /// <para>suggestedSigner2, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: suggestedSigner2</para>
         /// </summary>
 
@@ -387,14 +389,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "suggestedSigner2")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue SuggestedSigner2
+        public StringValue? SuggestedSigner2
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>suggestedSignerEmail, this property is only available in Office2013, Office2016</para>
+        /// <para>suggestedSignerEmail, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: suggestedSignerEmail</para>
         /// </summary>
 
@@ -403,14 +405,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "suggestedSignerEmail")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue SuggestedSignerEmail
+        public StringValue? SuggestedSignerEmail
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>signingInstructions, this property is only available in Office2013, Office2016</para>
+        /// <para>signingInstructions, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: signingInstructions</para>
         /// </summary>
 
@@ -419,14 +421,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "signingInstructions")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue SigningInstructions
+        public StringValue? SigningInstructions
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>addlXml, this property is only available in Office2013, Office2016</para>
+        /// <para>addlXml, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: addlXml</para>
         /// </summary>
 
@@ -435,14 +437,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "addlXml")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue AdditionalXml
+        public StringValue? AdditionalXml
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>sigProvUrl, this property is only available in Office2013, Office2016</para>
+        /// <para>sigProvUrl, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: sigProvUrl</para>
         /// </summary>
 
@@ -451,7 +453,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "sigProvUrl")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue SignatureProviderUrl
+        public StringValue? SignatureProviderUrl
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);

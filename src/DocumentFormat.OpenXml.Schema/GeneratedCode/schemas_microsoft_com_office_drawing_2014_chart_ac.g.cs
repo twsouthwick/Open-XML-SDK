@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing.Charts;
 using DocumentFormat.OpenXml.Framework;
@@ -15,7 +17,7 @@ namespace DocumentFormat.OpenXml.Office2016.Drawing.ChartsAc
 {
     /// <summary>
     /// <para>Defines the MultiLvlStrData Class.</para>
-    /// <para>This class is available in Office 2016 or above.</para>
+    /// <para>This class is available in Office 2016 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c16ac:multiLvlStrLit.</para>
     /// </summary>
     /// <remark>
@@ -85,7 +87,7 @@ namespace DocumentFormat.OpenXml.Office2016.Drawing.ChartsAc
         /// <remark>
         /// xmlns:c = http://schemas.openxmlformats.org/drawingml/2006/chart
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Charts.PointCount PointCount
+        public DocumentFormat.OpenXml.Drawing.Charts.PointCount? PointCount
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Charts.PointCount>();
             set => SetElement(value);

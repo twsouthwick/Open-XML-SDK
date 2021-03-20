@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Framework;
 using DocumentFormat.OpenXml.Framework.Metadata;
@@ -15,7 +17,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
 {
     /// <summary>
     /// <para>Defines the Macrosheet Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:macrosheet.</para>
     /// </summary>
     /// <remark>
@@ -156,7 +158,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.SheetProperties SheetProperties
+        public DocumentFormat.OpenXml.Spreadsheet.SheetProperties? SheetProperties
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.SheetProperties>();
             set => SetElement(value);
@@ -169,7 +171,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.SheetDimension SheetDimension
+        public DocumentFormat.OpenXml.Spreadsheet.SheetDimension? SheetDimension
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.SheetDimension>();
             set => SetElement(value);
@@ -182,7 +184,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.SheetViews SheetViews
+        public DocumentFormat.OpenXml.Spreadsheet.SheetViews? SheetViews
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.SheetViews>();
             set => SetElement(value);
@@ -195,7 +197,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         /// <remark>
         /// xmlns:x = http://schemas.openxmlformats.org/spreadsheetml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Spreadsheet.SheetFormatProperties SheetFormatProperties
+        public DocumentFormat.OpenXml.Spreadsheet.SheetFormatProperties? SheetFormatProperties
         {
             get => GetElement<DocumentFormat.OpenXml.Spreadsheet.SheetFormatProperties>();
             set => SetElement(value);
@@ -229,7 +231,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         /// <summary>
         /// Gets the MacroSheetPart associated with this element.
         /// </summary>
-        public MacroSheetPart MacroSheetPart
+        public MacroSheetPart? MacroSheetPart
         {
             get => OpenXmlPart as MacroSheetPart;
             internal set => OpenXmlPart = value;
@@ -238,7 +240,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
 
     /// <summary>
     /// <para>Worksheet Sort Map.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:worksheetSortMap.</para>
     /// </summary>
     /// <remark>
@@ -304,7 +306,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         /// <remark>
         /// xmlns:xne = http://schemas.microsoft.com/office/excel/2006/main
         /// </remark>
-        public RowSortMap RowSortMap
+        public RowSortMap? RowSortMap
         {
             get => GetElement<RowSortMap>();
             set => SetElement(value);
@@ -317,7 +319,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         /// <remark>
         /// xmlns:xne = http://schemas.microsoft.com/office/excel/2006/main
         /// </remark>
-        public ColumnSortMap ColumnSortMap
+        public ColumnSortMap? ColumnSortMap
         {
             get => GetElement<ColumnSortMap>();
             set => SetElement(value);
@@ -351,7 +353,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         /// <summary>
         /// Gets the WorksheetSortMapPart associated with this element.
         /// </summary>
-        public WorksheetSortMapPart WorksheetSortMapPart
+        public WorksheetSortMapPart? WorksheetSortMapPart
         {
             get => OpenXmlPart as WorksheetSortMapPart;
             internal set => OpenXmlPart = value;
@@ -360,7 +362,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
 
     /// <summary>
     /// <para>Defines the ReferenceSequence Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:sqref.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -402,7 +404,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
 
     /// <summary>
     /// <para>Defines the Formula Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:f.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -443,7 +445,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
 
     /// <summary>
     /// <para>Row Sort Map.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:rowSortMap.</para>
     /// </summary>
     /// <remark>
@@ -498,7 +500,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         [SchemaAttr(0, "ref")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Ref
+        public StringValue? Ref
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -514,7 +516,7 @@ namespace DocumentFormat.OpenXml.Office.Excel
         [SchemaAttr(0, "count")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Count
+        public UInt32Value? Count
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -546,7 +548,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
 
     /// <summary>
     /// <para>Column Sort Map.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:colSortMap.</para>
     /// </summary>
     /// <remark>
@@ -601,7 +603,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
         [SchemaAttr(0, "ref")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Ref
+        public StringValue? Ref
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -617,7 +619,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
         [SchemaAttr(0, "count")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Count
+        public UInt32Value? Count
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -649,7 +651,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
 
     /// <summary>
     /// <para>Row.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:row.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -676,7 +678,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
 
     /// <summary>
     /// <para>Column.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is xne:col.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -703,7 +705,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
 
     /// <summary>
     /// <para>Defines the SortMapItemType Class.</para>
-    /// <para>This class is available in Office 2007 or above.</para>
+    /// <para>This class is available in Office 2007 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class SortMapItemType : OpenXmlLeafElement
@@ -725,7 +727,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
         [SchemaAttr(0, "newVal")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value NewVal
+        public UInt32Value? NewVal
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
@@ -741,7 +743,7 @@ aBuilder.AddValidator(new NumberValidator() { MaxInclusive = (536870910L) });
         [SchemaAttr(0, "oldVal")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value OldVal
+        public UInt32Value? OldVal
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);

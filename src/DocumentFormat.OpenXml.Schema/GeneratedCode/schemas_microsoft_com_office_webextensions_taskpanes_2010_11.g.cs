@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -17,7 +19,7 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtentionPane
 {
     /// <summary>
     /// <para>Defines the Taskpanes Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wetp:taskpanes.</para>
     /// </summary>
     /// <remark>
@@ -102,7 +104,7 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtentionPane
         /// <summary>
         /// Gets the WebExTaskpanesPart associated with this element.
         /// </summary>
-        public WebExTaskpanesPart WebExTaskpanesPart
+        public WebExTaskpanesPart? WebExTaskpanesPart
         {
             get => OpenXmlPart as WebExTaskpanesPart;
             internal set => OpenXmlPart = value;
@@ -111,7 +113,7 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtentionPane
 
     /// <summary>
     /// <para>Defines the WebExtensionPartReference Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wetp:webextensionref.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -127,7 +129,7 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtentionPane
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: r:id</para>
         /// </summary>
         /// <remark>
@@ -139,7 +141,7 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtentionPane
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -164,7 +166,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the OfficeArtExtensionList Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wetp:extLst.</para>
     /// </summary>
     /// <remark>
@@ -233,7 +235,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the WebExtensionTaskpane Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is wetp:taskpane.</para>
     /// </summary>
     /// <remark>
@@ -280,7 +282,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>dockstate, this property is only available in Office2013, Office2016</para>
+        /// <para>dockstate, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: dockstate</para>
         /// </summary>
 
@@ -289,14 +291,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "dockstate")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue DockState
+        public StringValue? DockState
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>visibility, this property is only available in Office2013, Office2016</para>
+        /// <para>visibility, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: visibility</para>
         /// </summary>
 
@@ -305,14 +307,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "visibility")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Visibility
+        public BooleanValue? Visibility
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>width, this property is only available in Office2013, Office2016</para>
+        /// <para>width, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: width</para>
         /// </summary>
 
@@ -321,14 +323,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "width")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public DoubleValue Width
+        public DoubleValue? Width
         {
             get => GetAttribute<DoubleValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>row, this property is only available in Office2013, Office2016</para>
+        /// <para>row, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: row</para>
         /// </summary>
 
@@ -337,14 +339,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "row")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public UInt32Value Row
+        public UInt32Value? Row
         {
             get => GetAttribute<UInt32Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>locked, this property is only available in Office2013, Office2016</para>
+        /// <para>locked, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: locked</para>
         /// </summary>
 
@@ -353,7 +355,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "locked")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Locked
+        public BooleanValue? Locked
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -398,7 +400,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:wetp = http://schemas.microsoft.com/office/webextensions/taskpanes/2010/11
         /// </remark>
-        public WebExtensionPartReference WebExtensionPartReference
+        public WebExtensionPartReference? WebExtensionPartReference
         {
             get => GetElement<WebExtensionPartReference>();
             set => SetElement(value);
@@ -411,7 +413,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:wetp = http://schemas.microsoft.com/office/webextensions/taskpanes/2010/11
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);

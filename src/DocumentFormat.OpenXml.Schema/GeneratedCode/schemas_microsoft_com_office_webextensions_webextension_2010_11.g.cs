@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -16,7 +18,7 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtension
 {
     /// <summary>
     /// <para>Defines the WebExtension Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:webextension.</para>
     /// </summary>
     /// <remark>
@@ -67,7 +69,7 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtension
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: id</para>
         /// </summary>
 
@@ -76,14 +78,14 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtension
         [SchemaAttr(0, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>frozen, this property is only available in Office2013, Office2016</para>
+        /// <para>frozen, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: frozen</para>
         /// </summary>
 
@@ -92,7 +94,7 @@ namespace DocumentFormat.OpenXml.Office2013.WebExtension
         [SchemaAttr(0, "frozen")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Frozen
+        public BooleanValue? Frozen
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -134,7 +136,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:we = http://schemas.microsoft.com/office/webextensions/webextension/2010/11
         /// </remark>
-        public WebExtensionStoreReference WebExtensionStoreReference
+        public WebExtensionStoreReference? WebExtensionStoreReference
         {
             get => GetElement<WebExtensionStoreReference>();
             set => SetElement(value);
@@ -147,7 +149,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:we = http://schemas.microsoft.com/office/webextensions/webextension/2010/11
         /// </remark>
-        public WebExtensionReferenceList WebExtensionReferenceList
+        public WebExtensionReferenceList? WebExtensionReferenceList
         {
             get => GetElement<WebExtensionReferenceList>();
             set => SetElement(value);
@@ -160,7 +162,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:we = http://schemas.microsoft.com/office/webextensions/webextension/2010/11
         /// </remark>
-        public WebExtensionPropertyBag WebExtensionPropertyBag
+        public WebExtensionPropertyBag? WebExtensionPropertyBag
         {
             get => GetElement<WebExtensionPropertyBag>();
             set => SetElement(value);
@@ -173,7 +175,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:we = http://schemas.microsoft.com/office/webextensions/webextension/2010/11
         /// </remark>
-        public WebExtensionBindingList WebExtensionBindingList
+        public WebExtensionBindingList? WebExtensionBindingList
         {
             get => GetElement<WebExtensionBindingList>();
             set => SetElement(value);
@@ -186,7 +188,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:we = http://schemas.microsoft.com/office/webextensions/webextension/2010/11
         /// </remark>
-        public Snapshot Snapshot
+        public Snapshot? Snapshot
         {
             get => GetElement<Snapshot>();
             set => SetElement(value);
@@ -199,7 +201,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:we = http://schemas.microsoft.com/office/webextensions/webextension/2010/11
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);
@@ -233,7 +235,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <summary>
         /// Gets the WebExtensionPart associated with this element.
         /// </summary>
-        public WebExtensionPart WebExtensionPart
+        public WebExtensionPart? WebExtensionPart
         {
             get => OpenXmlPart as WebExtensionPart;
             internal set => OpenXmlPart = value;
@@ -242,7 +244,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the WebExtensionReference Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:webextensionref.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -258,7 +260,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: r:id</para>
         /// </summary>
         /// <remark>
@@ -270,7 +272,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -294,7 +296,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the WebExtensionProperty Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:property.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -310,7 +312,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>name, this property is only available in Office2013, Office2016</para>
+        /// <para>name, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: name</para>
         /// </summary>
 
@@ -319,14 +321,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>value, this property is only available in Office2013, Office2016</para>
+        /// <para>value, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: value</para>
         /// </summary>
 
@@ -335,7 +337,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "value")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Value
+        public StringValue? Value
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -363,7 +365,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the OfficeArtExtensionList Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:extLst.</para>
     /// </summary>
     /// <remark>
@@ -432,7 +434,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the WebExtensionBinding Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:binding.</para>
     /// </summary>
     /// <remark>
@@ -478,7 +480,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: id</para>
         /// </summary>
 
@@ -487,14 +489,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>type, this property is only available in Office2013, Office2016</para>
+        /// <para>type, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: type</para>
         /// </summary>
 
@@ -503,14 +505,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "type")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Type
+        public StringValue? Type
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>appref, this property is only available in Office2013, Office2016</para>
+        /// <para>appref, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: appref</para>
         /// </summary>
 
@@ -519,7 +521,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "appref")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue AppReference
+        public StringValue? AppReference
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -557,7 +559,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:we = http://schemas.microsoft.com/office/webextensions/webextension/2010/11
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);
@@ -569,7 +571,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the WebExtensionStoreReference Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:reference.</para>
     /// </summary>
     /// <remark>
@@ -615,7 +617,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: id</para>
         /// </summary>
 
@@ -624,14 +626,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>version, this property is only available in Office2013, Office2016</para>
+        /// <para>version, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: version</para>
         /// </summary>
 
@@ -640,14 +642,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "version")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Version
+        public StringValue? Version
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>store, this property is only available in Office2013, Office2016</para>
+        /// <para>store, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: store</para>
         /// </summary>
 
@@ -656,14 +658,14 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "store")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Store
+        public StringValue? Store
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>storeType, this property is only available in Office2013, Office2016</para>
+        /// <para>storeType, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: storeType</para>
         /// </summary>
 
@@ -672,7 +674,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "storeType")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue StoreType
+        public StringValue? StoreType
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -709,7 +711,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:we = http://schemas.microsoft.com/office/webextensions/webextension/2010/11
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);
@@ -721,7 +723,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the WebExtensionReferenceList Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:alternateReferences.</para>
     /// </summary>
     /// <remark>
@@ -784,7 +786,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the WebExtensionPropertyBag Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:properties.</para>
     /// </summary>
     /// <remark>
@@ -847,7 +849,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the WebExtensionBindingList Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:bindings.</para>
     /// </summary>
     /// <remark>
@@ -910,7 +912,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the Snapshot Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is we:snapshot.</para>
     /// </summary>
     /// <remark>
@@ -985,7 +987,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "embed")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Embed
+        public StringValue? Embed
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -1004,7 +1006,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(19, "link")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Link
+        public StringValue? Link
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -1020,7 +1022,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         [SchemaAttr(0, "cstate")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlipCompressionValues> CompressionState
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlipCompressionValues>? CompressionState
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlipCompressionValues>>();
             set => SetAttribute(value);

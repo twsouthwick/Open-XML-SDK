@@ -1,8 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-#nullable disable
-
 using DocumentFormat.OpenXml.Packaging;
 
 namespace DocumentFormat.OpenXml.Office.CustomUI
@@ -42,17 +40,10 @@ namespace DocumentFormat.OpenXml.Office.CustomUI
         /// <summary>
         /// Gets the CustomUIPart associated with this element, it could either be a QuickAccessToolbarCustomizationsPart or a RibbonExtensibilityPart.
         /// </summary>
-        public CustomUIPart CustomUIPart
+        public CustomUIPart? CustomUIPart
         {
-            get
-            {
-                return OpenXmlPart as CustomUIPart;
-            }
-
-            internal set
-            {
-                OpenXmlPart = value;
-            }
+            get => OpenXmlPart as CustomUIPart;
+            internal set => OpenXmlPart = value;
         }
     }
 }

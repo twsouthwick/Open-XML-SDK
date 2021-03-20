@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Drawing.ChartDrawing;
@@ -17,7 +19,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
 {
     /// <summary>
     /// <para>Defines the PivotOptions Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:pivotOptions.</para>
     /// </summary>
     /// <remark>
@@ -93,7 +95,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         /// <remark>
         /// xmlns:c14 = http://schemas.microsoft.com/office/drawing/2007/8/2/chart
         /// </remark>
-        public DropZoneFilter DropZoneFilter
+        public DropZoneFilter? DropZoneFilter
         {
             get => GetElement<DropZoneFilter>();
             set => SetElement(value);
@@ -106,7 +108,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         /// <remark>
         /// xmlns:c14 = http://schemas.microsoft.com/office/drawing/2007/8/2/chart
         /// </remark>
-        public DropZoneCategories DropZoneCategories
+        public DropZoneCategories? DropZoneCategories
         {
             get => GetElement<DropZoneCategories>();
             set => SetElement(value);
@@ -119,7 +121,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         /// <remark>
         /// xmlns:c14 = http://schemas.microsoft.com/office/drawing/2007/8/2/chart
         /// </remark>
-        public DropZoneData DropZoneData
+        public DropZoneData? DropZoneData
         {
             get => GetElement<DropZoneData>();
             set => SetElement(value);
@@ -132,7 +134,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         /// <remark>
         /// xmlns:c14 = http://schemas.microsoft.com/office/drawing/2007/8/2/chart
         /// </remark>
-        public DropZoneSeries DropZoneSeries
+        public DropZoneSeries? DropZoneSeries
         {
             get => GetElement<DropZoneSeries>();
             set => SetElement(value);
@@ -145,7 +147,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         /// <remark>
         /// xmlns:c14 = http://schemas.microsoft.com/office/drawing/2007/8/2/chart
         /// </remark>
-        public DropZonesVisible DropZonesVisible
+        public DropZonesVisible? DropZonesVisible
         {
             get => GetElement<DropZonesVisible>();
             set => SetElement(value);
@@ -157,7 +159,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
 
     /// <summary>
     /// <para>Defines the SketchOptions Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:sketchOptions.</para>
     /// </summary>
     /// <remark>
@@ -224,7 +226,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         /// <remark>
         /// xmlns:c14 = http://schemas.microsoft.com/office/drawing/2007/8/2/chart
         /// </remark>
-        public InSketchMode InSketchMode
+        public InSketchMode? InSketchMode
         {
             get => GetElement<InSketchMode>();
             set => SetElement(value);
@@ -237,7 +239,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         /// <remark>
         /// xmlns:c14 = http://schemas.microsoft.com/office/drawing/2007/8/2/chart
         /// </remark>
-        public ShowSketchButton ShowSketchButton
+        public ShowSketchButton? ShowSketchButton
         {
             get => GetElement<ShowSketchButton>();
             set => SetElement(value);
@@ -249,7 +251,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
 
     /// <summary>
     /// <para>Defines the InvertSolidFillFormat Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:invertSolidFillFmt.</para>
     /// </summary>
     /// <remark>
@@ -313,7 +315,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         /// <remark>
         /// xmlns:c14 = http://schemas.microsoft.com/office/drawing/2007/8/2/chart
         /// </remark>
-        public ShapeProperties ShapeProperties
+        public ShapeProperties? ShapeProperties
         {
             get => GetElement<ShapeProperties>();
             set => SetElement(value);
@@ -325,7 +327,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
 
     /// <summary>
     /// <para>Defines the Style Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:style.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -341,7 +343,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: val</para>
         /// </summary>
 
@@ -350,7 +352,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.Charts
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public ByteValue Val
+        public ByteValue? Val
         {
             get => GetAttribute<ByteValue>();
             set => SetAttribute(value);
@@ -375,7 +377,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (101L), MaxInclusiv
 
     /// <summary>
     /// <para>Defines the ShapeProperties Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:spPr.</para>
     /// </summary>
     /// <remark>
@@ -444,7 +446,7 @@ aBuilder.AddValidator(new NumberValidator() { MinInclusive = (101L), MaxInclusiv
         [SchemaAttr(0, "bwMode")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues> BlackWhiteMode
+        public EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>? BlackWhiteMode
         {
             get => GetAttribute<EnumValue<DocumentFormat.OpenXml.Drawing.BlackWhiteModeValues>>();
             set => SetAttribute(value);
@@ -520,7 +522,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         /// <remark>
         /// xmlns:a = http://schemas.openxmlformats.org/drawingml/2006/main
         /// </remark>
-        public DocumentFormat.OpenXml.Drawing.Transform2D Transform2D
+        public DocumentFormat.OpenXml.Drawing.Transform2D? Transform2D
         {
             get => GetElement<DocumentFormat.OpenXml.Drawing.Transform2D>();
             set => SetElement(value);
@@ -532,7 +534,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DropZoneFilter Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:dropZoneFilter.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -560,7 +562,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DropZoneCategories Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:dropZoneCategories.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -588,7 +590,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DropZoneData Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:dropZoneData.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -616,7 +618,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DropZoneSeries Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:dropZoneSeries.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -644,7 +646,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the DropZonesVisible Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:dropZonesVisible.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -672,7 +674,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the InSketchMode Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:inSketchMode.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -700,7 +702,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the BooleanFalseType Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is :.</para>
     /// </summary>
     public abstract partial class BooleanFalseType : OpenXmlLeafElement
@@ -713,7 +715,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: val</para>
         /// </summary>
 
@@ -722,7 +724,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Val
+        public BooleanValue? Val
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);
@@ -738,7 +740,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
 
     /// <summary>
     /// <para>Defines the ShowSketchButton Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is c14:showSketchBtn.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -754,7 +756,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         }
 
         /// <summary>
-        /// <para>val, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>val, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: val</para>
         /// </summary>
 
@@ -763,7 +765,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true) });
         [SchemaAttr(0, "val")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public BooleanValue Val
+        public BooleanValue? Val
         {
             get => GetAttribute<BooleanValue>();
             set => SetAttribute(value);

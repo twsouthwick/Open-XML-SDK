@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -16,7 +18,7 @@ namespace DocumentFormat.OpenXml.Office2013.Theme
 {
     /// <summary>
     /// <para>Defines the ThemeFamily Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is thm15:themeFamily.</para>
     /// </summary>
     /// <remark>
@@ -62,7 +64,7 @@ namespace DocumentFormat.OpenXml.Office2013.Theme
         }
 
         /// <summary>
-        /// <para>name, this property is only available in Office2013, Office2016</para>
+        /// <para>name, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: name</para>
         /// </summary>
 
@@ -71,14 +73,14 @@ namespace DocumentFormat.OpenXml.Office2013.Theme
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: id</para>
         /// </summary>
 
@@ -87,14 +89,14 @@ namespace DocumentFormat.OpenXml.Office2013.Theme
         [SchemaAttr(0, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>vid, this property is only available in Office2013, Office2016</para>
+        /// <para>vid, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: vid</para>
         /// </summary>
 
@@ -103,7 +105,7 @@ namespace DocumentFormat.OpenXml.Office2013.Theme
         [SchemaAttr(0, "vid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Vid
+        public StringValue? Vid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -144,7 +146,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         /// <remark>
         /// xmlns:thm15 = http://schemas.microsoft.com/office/thememl/2012/main
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);
@@ -156,7 +158,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the OfficeArtExtensionList Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is thm15:extLst.</para>
     /// </summary>
     /// <remark>
@@ -225,7 +227,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
 
     /// <summary>
     /// <para>Defines the ThemeVariant Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is thm15:themeVariant.</para>
     /// </summary>
     /// <remark>
@@ -271,7 +273,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         }
 
         /// <summary>
-        /// <para>name, this property is only available in Office2013, Office2016</para>
+        /// <para>name, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: name</para>
         /// </summary>
 
@@ -280,14 +282,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "name")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Name
+        public StringValue? Name
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>vid, this property is only available in Office2013, Office2016</para>
+        /// <para>vid, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: vid</para>
         /// </summary>
 
@@ -296,14 +298,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "vid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Vid
+        public StringValue? Vid
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>cx, this property is only available in Office2013, Office2016</para>
+        /// <para>cx, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: cx</para>
         /// </summary>
 
@@ -312,14 +314,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "cx")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value X
+        public Int64Value? X
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>cy, this property is only available in Office2013, Office2016</para>
+        /// <para>cy, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: cy</para>
         /// </summary>
 
@@ -328,14 +330,14 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(0, "cy")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public Int64Value Y
+        public Int64Value? Y
         {
             get => GetAttribute<Int64Value>();
             set => SetAttribute(value);
         }
 
         /// <summary>
-        /// <para>id, this property is only available in Office2013, Office2016</para>
+        /// <para>id, this property is only available in Office 2013 and later.</para>
         /// <para>Represents the following attribute in the schema: r:id</para>
         /// </summary>
         /// <remark>
@@ -347,7 +349,7 @@ aBuilder.AddValidator(new StringValidator() { IsToken = (true), Pattern = ("\\{[
         [SchemaAttr(19, "id")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue Id
+        public StringValue? Id
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
@@ -396,7 +398,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
         /// <remark>
         /// xmlns:thm15 = http://schemas.microsoft.com/office/thememl/2012/main
         /// </remark>
-        public OfficeArtExtensionList OfficeArtExtensionList
+        public OfficeArtExtensionList? OfficeArtExtensionList
         {
             get => GetElement<OfficeArtExtensionList>();
             set => SetElement(value);
@@ -408,7 +410,7 @@ aBuilder.AddValidator(RequiredValidator.Instance);
 
     /// <summary>
     /// <para>Defines the ThemeVariantList Class.</para>
-    /// <para>This class is available in Office 2013 or above.</para>
+    /// <para>This class is available in Office 2013 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is thm15:themeVariantLst.</para>
     /// </summary>
     /// <remark>

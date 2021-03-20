@@ -1,8 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-#nullable disable
-
 using System;
 
 namespace DocumentFormat.OpenXml.Validation.Semantic
@@ -13,10 +11,10 @@ namespace DocumentFormat.OpenXml.Validation.Semantic
     internal class UniqueAttributeValueConstraint : SemanticConstraint
     {
         private readonly byte _attribute;
-        private readonly Type _parent;
+        private readonly Type? _parent;
         private readonly StringComparer _comparer;
 
-        public UniqueAttributeValueConstraint(byte attribute, bool caseSensitive, Type parent)
+        public UniqueAttributeValueConstraint(byte attribute, bool caseSensitive, Type? parent)
             : base(SemanticValidationLevel.Part)
         {
             _attribute = attribute;
@@ -24,14 +22,20 @@ namespace DocumentFormat.OpenXml.Validation.Semantic
             _comparer = caseSensitive ? StringComparer.Ordinal : StringComparer.OrdinalIgnoreCase;
         }
 
-        public override ValidationErrorInfo ValidateCore(ValidationContext context)
+        public override ValidationErrorInfo? ValidateCore(ValidationContext context)
         {
             if (_parent is not null)
             {
                 return null;
             }
 
-            var element = context.Stack.Current.Element;
+            var element = context.Stack.Current?.Element;
+
+            if (element is null)
+            {
+                return null;
+            }
+
             var attribute = element.ParsedState.Attributes[_attribute];
             var elementType = element.GetType();
 
@@ -49,6 +53,11 @@ namespace DocumentFormat.OpenXml.Validation.Semantic
                 return null;
             }
 
+            if (part is null)
+            {
+                return null;
+            }
+
             var attributeText = attribute.Value.InnerText;
 
             var added = false;
@@ -58,7 +67,7 @@ namespace DocumentFormat.OpenXml.Validation.Semantic
 
                 foreach (var e in root.Descendants(context.FileFormat, TraversalOptions.SelectAlternateContent))
                 {
-                    if (e != element & e.GetType() == elementType)
+                    if (e != element && e.GetType() == elementType)
                     {
                         var eValue = e.ParsedState.Attributes[_attribute];
 
@@ -89,7 +98,7 @@ namespace DocumentFormat.OpenXml.Validation.Semantic
             };
         }
 
-        private OpenXmlElement GetRoot(OpenXmlElement element)
+        private OpenXmlElement? GetRoot(OpenXmlElement element)
         {
             if (_parent is null)
             {

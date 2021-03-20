@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+#nullable enable
+
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Drawing;
 using DocumentFormat.OpenXml.Framework;
@@ -15,7 +17,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.LegacyCompatibility
 {
     /// <summary>
     /// <para>Defines the CompatibilityShape Class.</para>
-    /// <para>This class is available in Office 2010 or above.</para>
+    /// <para>This class is available in Office 2010 and above.</para>
     /// <para>When the object is serialized out as xml, it's qualified name is com14:compatSp.</para>
     /// </summary>
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -31,7 +33,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.LegacyCompatibility
         }
 
         /// <summary>
-        /// <para>spid, this property is only available in Office2010, Office2013, Office2016</para>
+        /// <para>spid, this property is only available in Office 2010 and later.</para>
         /// <para>Represents the following attribute in the schema: spid</para>
         /// </summary>
 
@@ -40,7 +42,7 @@ namespace DocumentFormat.OpenXml.Office2010.Drawing.LegacyCompatibility
         [SchemaAttr(0, "spid")]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-        public StringValue ShapeId
+        public StringValue? ShapeId
         {
             get => GetAttribute<StringValue>();
             set => SetAttribute(value);
