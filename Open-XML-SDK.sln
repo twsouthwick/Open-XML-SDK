@@ -42,7 +42,14 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsolatedStorageExceptionWorkaround", "samples\IsolatedStorageExceptionWorkaround\IsolatedStorageExceptionWorkaround.csproj", "{F38D119D-A5B7-4027-83B1-804432922E55}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunburstChartExample", "samples\SunburstChartExample\SunburstChartExample.csproj", "{5034C012-FED8-4DE5-B422-C1E4DF9EDBF2}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentFormat.OpenXml.Schema", "src\DocumentFormat.OpenXml.Schema\DocumentFormat.OpenXml.Schema.csproj", "{8A2DB10C-BE8E-45C3-8168-9F816CAEE896}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentFormat.OpenXml.Schema.PowerPoint", "src\DocumentFormat.OpenXml.Schema.PowerPoint\DocumentFormat.OpenXml.Schema.PowerPoint.csproj", "{A4C3D06B-DCE8-4CE8-BE47-6615CDAF4A33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentFormat.OpenXml.Schema.Excel", "src\DocumentFormat.OpenXml.Schema.Excel\DocumentFormat.OpenXml.Schema.Excel.csproj", "{CC4C2CB0-5B76-445F-944A-3824C9601286}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentFormat.OpenXml.Schema.Word", "src\DocumentFormat.OpenXml.Schema.Word\DocumentFormat.OpenXml.Schema.Word.csproj", "{1180F083-5B38-4186-8AF5-C9AA21ADACCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +93,18 @@ Global
 		{8A2DB10C-BE8E-45C3-8168-9F816CAEE896}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A2DB10C-BE8E-45C3-8168-9F816CAEE896}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A2DB10C-BE8E-45C3-8168-9F816CAEE896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C3D06B-DCE8-4CE8-BE47-6615CDAF4A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C3D06B-DCE8-4CE8-BE47-6615CDAF4A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C3D06B-DCE8-4CE8-BE47-6615CDAF4A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C3D06B-DCE8-4CE8-BE47-6615CDAF4A33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC4C2CB0-5B76-445F-944A-3824C9601286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4C2CB0-5B76-445F-944A-3824C9601286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4C2CB0-5B76-445F-944A-3824C9601286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4C2CB0-5B76-445F-944A-3824C9601286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1180F083-5B38-4186-8AF5-C9AA21ADACCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1180F083-5B38-4186-8AF5-C9AA21ADACCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1180F083-5B38-4186-8AF5-C9AA21ADACCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1180F083-5B38-4186-8AF5-C9AA21ADACCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +119,9 @@ Global
 		{F38D119D-A5B7-4027-83B1-804432922E55} = {7DAF7304-40CC-4180-88A5-9A89DD13C565}
 		{5034C012-FED8-4DE5-B422-C1E4DF9EDBF2} = {7DAF7304-40CC-4180-88A5-9A89DD13C565}
 		{8A2DB10C-BE8E-45C3-8168-9F816CAEE896} = {A4DF60EB-3AA5-48F0-B4D2-3F94B8E62F03}
+		{A4C3D06B-DCE8-4CE8-BE47-6615CDAF4A33} = {A4DF60EB-3AA5-48F0-B4D2-3F94B8E62F03}
+		{CC4C2CB0-5B76-445F-944A-3824C9601286} = {A4DF60EB-3AA5-48F0-B4D2-3F94B8E62F03}
+		{1180F083-5B38-4186-8AF5-C9AA21ADACCD} = {A4DF60EB-3AA5-48F0-B4D2-3F94B8E62F03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F476383-E917-43D1-A1E5-9A61A47DA3F5}
