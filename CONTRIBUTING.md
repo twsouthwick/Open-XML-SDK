@@ -22,14 +22,13 @@ This project's main aim is to provide a low-level infrastructure for reading and
 Some questions that are considered when identifying where a new feature should go:
 
 - Does this facillitate reading/writing the file format? `DocumentFormat.OpenXml`
-- Does this provide functionality to aid developers? `DocumentFormat.OpenXml.Features`
-- Does this provide functionality that 
+- Does this provide functionality to aid developers but not necessarily scoped within the core SDK? `DocumentFormat.OpenXml.Features`
+  > If there are internal APIs that are needed to enable features that build on top of the API, please open an issue to investigate how we can do that.
 
 The decision to break the functionality into assemblies for layers are the following:
 
 - Provide a more pay-for-play model. People should only carry the functionality they care about
 - Enable scenarios like AOT better that do attempt to reduce unused pathways, but for best results require well-layered approaches
-
 
 #### Open Questions
 
