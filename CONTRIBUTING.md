@@ -9,6 +9,35 @@ with any additional questions or comments.
 
 For our general contributing guidelines please see [our dotnet/runtime contributing guide](https://github.com/dotnet/runtime/blob/master/CONTRIBUTING.md).
 
+## Scope
+
+This project's main aim is to provide a low-level infrastructure for reading and writing Word/Excel/PowerPoint documents. The project itself is very large due to all the specialized types to provide type-safety for accessing parts and elements. Below are the guidelines for the projects within the repo:
+
+- `DocumentFormat.OpenXml`: This project is the core project. Its sole focus is on reading and writing the documents themselves.
+  > For historical reasons, this project contains behavior that would otherwise fit in higher levels, but for now will be grandfathered in. As time goes on, these behaviors will probably be moved into other assemblies to more clearly stay in line with the layering described here.
+- `DocumentFormat.OpenXml.Features`: A collection of features that build on top of the file format level and provide some nice to have features for quality of life improvements.
+  > This may be scoped further to `DocumentFormat.OpenXml.Features.[DocumentType]` such as `DocumentFormat.OpenXml.Features.Word` as people will often be focused on a single type of document and won't care about the features for other document types.
+- `DocumentFormat.OpenXml.Features.[FeatureName]`: This pattern will be used to provide features that may require a large amount of additional behavior or data to enable appropriately and wholly (such as `DocumentFormat.OpenXml.Linq` [to be renamed]).
+
+Some questions that are considered when identifying where a new feature should go:
+
+- Does this facillitate reading/writing the file format? `DocumentFormat.OpenXml`
+- Does this provide functionality to aid developers? `DocumentFormat.OpenXml.Features`
+- Does this provide functionality that 
+
+The decision to break the functionality into assemblies for layers are the following:
+
+- Provide a more pay-for-play model. People should only carry the functionality they care about
+- Enable scenarios like AOT better that do attempt to reduce unused pathways, but for best results require well-layered approaches
+
+
+#### Open Questions
+
+There are still some open questions regarding scoping, including the following:
+
+- Do we want to scope things to document types? i.e. `DocumentFormat.OpenXml.Word`?
+- Do we want to move strongly types types out into a separate layer?
+
 ## Prerequisites
 
 The only prerequisite for building, testing, and deploying from this repository
