@@ -1,0 +1,11 @@
+{
+  "solution": {
+    "path": "Open-XML-SDK.sln",
+    "projects": [
+      "gen\\DocumentFormat.OpenXml.Generator.Linq\\DocumentFormat.OpenXml.Generator.Linq.csproj",
+      "gen\\DocumentFormat.OpenXml.Generator.Models\\DocumentFormat.OpenXml.Generator.Models.csproj",
+      "gen\\DocumentFormat.OpenXml.Generator\\DocumentFormat.OpenXml.Generator.csproj",
+      "src\\DocumentFormat.OpenXml.Framework\\DocumentFormat.OpenXml.Framework.csproj"
+    ]
+  }
+}

@@ -1,6 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+using DocumentFormat.OpenXml.Features;
+using DocumentFormat.OpenXml.Packaging.Builder;
 using System;
 
 namespace DocumentFormat.OpenXml.Packaging
@@ -26,6 +28,7 @@ namespace DocumentFormat.OpenXml.Packaging
                 return;
             }
 
+            PackageInitializer = other.PackageInitializer;
             AutoSave = other.AutoSave;
             MarkupCompatibilityProcessSettings.ProcessMode = other.MarkupCompatibilityProcessSettings.ProcessMode;
             MarkupCompatibilityProcessSettings.TargetFileFormatVersions = other.MarkupCompatibilityProcessSettings.TargetFileFormatVersions;
@@ -39,6 +42,28 @@ namespace DocumentFormat.OpenXml.Packaging
         /// The default value is true.
         /// </summary>
         public bool AutoSave { get; set; } = true;
+
+        /// <summary>
+        /// Gets or sets an action that will run to initialize a package.
+        /// </summary>
+        public Action<OpenXmlPackage>? PackageInitializer { get; set; }
+
+        /// <summary>
+        /// Gets a default initializer that attempts to setup the package in a way useful to most developers.
+        /// </summary>
+        public static Action<OpenXmlPackage> DefaultInitializer { get; } = DefaultInitializerImpl;
+
+        private static void DefaultInitializerImpl(OpenXmlPackage package)
+        {
+            var feature = package.Features.GetRequired<IPackageFeature>();
+
+            var updated = feature
+                .EnableSavePackage()
+                .UseTemporaryPartStream()
+                .UseCaching();
+
+            package.Features.Set<IPackageFeature>(feature);
+        }
 
         /// <summary>
         /// Gets or sets the value of the markup compatibility processing mode.
