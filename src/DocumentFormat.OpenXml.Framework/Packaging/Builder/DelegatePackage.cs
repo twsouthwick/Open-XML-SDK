@@ -40,6 +40,9 @@ internal abstract class DelegatePackage : IPackage, IPackageFeature
 
     public virtual IEnumerable<IPackagePart> GetParts() => Package.GetParts();
 
+    public virtual IPackageRelationship GetRelationship(string id)
+        => Package.GetRelationship(id);
+
     public virtual IEnumerable<IPackageRelationship> GetRelationships() => Package.GetRelationships();
 
     public virtual bool PartExists(Uri partUri) => Package.PartExists(partUri);

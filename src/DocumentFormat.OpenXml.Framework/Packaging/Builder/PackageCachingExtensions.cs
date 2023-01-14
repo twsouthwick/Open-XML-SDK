@@ -11,8 +11,17 @@ namespace DocumentFormat.OpenXml.Packaging.Builder;
 
 internal static class PackageCachingExtensions
 {
-    internal static IPackageFeature UseCaching(this IPackageFeature feature)
-        => new CachingPackage(feature);
+    internal static OpenXmlPackage EnableCaching(this OpenXmlPackage package)
+    {
+        var feature = package.Features.GetRequired<IPackageFeature>();
+
+        if (!feature.Capabilities.HasFlagFast(PackageCapabilities.Cached))
+        {
+            package.Features.Set<IPackageFeature>(new CachingPackage(feature));
+        }
+
+        return package;
+    }
 
     private sealed class CachingPackage : DelegatePackage
     {

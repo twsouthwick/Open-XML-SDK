@@ -53,17 +53,10 @@ namespace DocumentFormat.OpenXml.Packaging
         /// </summary>
         public static Action<OpenXmlPackage> DefaultInitializer { get; } = DefaultInitializerImpl;
 
-        private static void DefaultInitializerImpl(OpenXmlPackage package)
-        {
-            var feature = package.Features.GetRequired<IPackageFeature>();
-
-            var updated = feature
-                .EnableSavePackage()
-                .UseTemporaryPartStream()
-                .UseCaching();
-
-            package.Features.Set<IPackageFeature>(feature);
-        }
+        private static void DefaultInitializerImpl(OpenXmlPackage package) => package
+            .EnableSavePackage()
+            .EnableLargePartStreams()
+            .EnableCaching();
 
         /// <summary>
         /// Gets or sets the value of the markup compatibility processing mode.

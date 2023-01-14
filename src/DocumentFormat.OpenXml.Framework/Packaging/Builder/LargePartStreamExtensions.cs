@@ -9,25 +9,32 @@ using System.IO.Packaging;
 
 namespace DocumentFormat.OpenXml.Packaging.Builder;
 
-internal static class TemporaryPartStreamExtensions
+internal static class LargePartStreamExtensions
 {
-    internal static IPackageFeature UseTemporaryPartStream(this IPackageFeature feature)
+    internal static OpenXmlPackage EnableLargePartStreams(this OpenXmlPackage package)
     {
+        var feature = package.Features.GetRequired<IPackageFeature>();
+
         if (!feature.Capabilities.HasFlagFast(PackageCapabilities.LargePartStreams))
         {
-            return feature;
+            return package;
         }
 
         // Required to support feature
         if (!feature.Capabilities.HasFlagFast(PackageCapabilities.Reload))
         {
-            return feature;
+            return package;
         }
 
-        return new TemporaryStreamPackage(feature);
+        var newFeature = new TemporaryStreamPackage(feature);
+
+        package.Features.Set<IPackageFeature>(newFeature);
+        package.OnClose(newFeature.Dispose);
+
+        return package;
     }
 
-    private sealed class TemporaryStreamPackage : DelegatePackage
+    private sealed class TemporaryStreamPackage : DelegatePackage, IDisposable
     {
         private Dictionary<Uri, string>? _streams;
 
@@ -35,6 +42,8 @@ internal static class TemporaryPartStreamExtensions
             : base(package)
         {
         }
+
+        public override PackageCapabilities Capabilities => base.Capabilities & PackageCapabilities.LargePartStreams;
 
         public Stream GetStream(Uri uri, FileMode mode, FileAccess access, IPackagePart originalPart)
         {
@@ -110,6 +119,17 @@ internal static class TemporaryPartStreamExtensions
             foreach (var inner in base.GetParts())
             {
                 yield return Wrap(inner);
+            }
+        }
+
+        public void Dispose()
+        {
+            if (_streams is not null)
+            {
+                foreach (var item in _streams.Values)
+                {
+                    File.Delete(item);
+                }
             }
         }
     }

@@ -8,22 +8,17 @@ namespace DocumentFormat.OpenXml.Packaging.Builder;
 
 internal static class SavePackageExtensions
 {
-    internal static IPackageFeature EnableSavePackage(this IPackageFeature feature)
+    internal static OpenXmlPackage EnableSavePackage(this OpenXmlPackage package)
     {
+        var feature = package.Features.GetRequired<IPackageFeature>();
         var capabilities = feature.Capabilities;
 
-        if (capabilities.HasFlagFast(PackageCapabilities.Save))
+        if (!capabilities.HasFlagFast(PackageCapabilities.Save) && capabilities.HasFlagFast(PackageCapabilities.Reload))
         {
-            return feature;
+            package.Features.Set<IPackageFeature>(new SaveablePackage(feature));
         }
-        else if (capabilities.HasFlagFast(PackageCapabilities.Reload))
-        {
-            return new SaveablePackage(feature);
-        }
-        else
-        {
-            return feature;
-        }
+
+        return package;
     }
 
     private sealed class SaveablePackage : DelegatePackage
