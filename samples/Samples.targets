@@ -65,7 +65,7 @@
         File="$(SummaryOutDir)/$(TargetName).summary.md"
         Lines="@(_Contents)"
         Overwrite="true"
-        Encoding="Unicode"/>
+        Encoding="UTF8"/>
 
     <Message Text="Wrote summary file to $(SummaryFile)" Importance="High" />
   </Target>
