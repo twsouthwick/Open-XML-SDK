@@ -19,18 +19,11 @@ jobs:
       - uses: actions/setup-dotnet@v1
       - name: Build Sample
         run: cd samples/SunburstChartExample && dotnet build -c RELEASE
-      - uses: mshick/add-pr-comment@v2
-        if: always()
-        with:
-          message: |
-            **Hello MAIN**
       - name: Publish Sample
         run: cd samples/SunburstChartExample && dotnet publish -c RELEASE -f net7.0 /p:PublishAot=true -o ./publish/sunburst
-      - name: Get contents
-        run: ls publish/sunburst > result.txt
-      - uses: mshick/add-pr-comment@v2
-        if: always()
-        with:
-          message-path: |
-            result.txt
-  
+      - name: Write summary
+        run: |
+          echo '# Sunburst Sample:' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          ls publish/sunburst >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
