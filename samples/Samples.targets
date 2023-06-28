@@ -64,8 +64,7 @@
     <WriteLinesToFile
         File="$(SummaryOutDir)/$(TargetName).summary.md"
         Lines="@(_Contents)"
-        Overwrite="true"
-        Encoding="UTF8"/>
+        Overwrite="true" />
 
     <Message Text="Wrote summary file to $(SummaryFile)" Importance="High" />
   </Target>
