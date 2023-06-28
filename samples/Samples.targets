@@ -44,9 +44,9 @@
     </Task>
   </UsingTask>
 
-  <Target Name="WriteMarkdownSummary" AfterTargets="PublishItemsOutputGroup">
+  <Target Name="WriteMarkdownSummary" Condition=" '$(SummaryOutDir)' != '' " AfterTargets="PublishItemsOutputGroup">
     <PropertyGroup>
-        <SummaryOutDir Condition=" '$(SummaryOutDir)' == '' ">$(PublishDir)</SummaryOutDir>
+        <SummaryFile>$(SummaryOutDir)/$(TargetName).summary.md</SummaryFile>
     </PropertyGroup>
 
     <GetPublishOutputDetails  Items="@(PublishItemsOutputGroupOutputs)">
@@ -66,6 +66,8 @@
         Lines="@(_Contents)"
         Overwrite="true"
         Encoding="Unicode"/>
+
+    <Message Text="Wrote summary file to $(SummaryFile)" Importance="High" />
   </Target>
   
 </Project>
