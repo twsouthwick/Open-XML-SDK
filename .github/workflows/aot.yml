@@ -27,5 +27,5 @@ jobs:
           echo '# AOT Output Information' >> $GITHUB_STEP_SUMMARY
           for FILE in *.summary.md
           do
-            echo ${FILE} >> $GITHUB_STEP_SUMMARY
+            cat ${FILE} >> $GITHUB_STEP_SUMMARY
           done
