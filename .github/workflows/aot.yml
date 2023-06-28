@@ -25,5 +25,5 @@ jobs:
         run: |
           echo '# Sunburst Sample:' >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
-          ls publish/sunburst >> $GITHUB_STEP_SUMMARY
+          ls -l -h publish/sunburst >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
