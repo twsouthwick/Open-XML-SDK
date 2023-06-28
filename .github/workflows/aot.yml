@@ -18,12 +18,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-dotnet@v1
       - name: Build Sample
-        run: dotnet build   samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=$GITHUB_PATH/summary
+        run: dotnet build   samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=$GITHUB_WORKSPACE/summary
       - name: Publish Sample
-        run: dotnet publish samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=$GITHUB_PATH/summary
+        run: dotnet publish samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=$GITHUB_WORKSPACE/summary
       - name: Write summary
         run: |
-          ls $GITHUB_PATH
-          cd $GITHUB_PATH/summary
+          ls $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/summary
           echo '# AOT Output Information' >> $GITHUB_STEP_SUMMARY
           find . -name '*.summary.md' -exec cat {} >> $GITHUB_STEP_SUMMARY
