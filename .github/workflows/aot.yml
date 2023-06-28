@@ -1,4 +1,4 @@
-name: AOT Checker
+name: AOT
 
 permissions:
   pull-requests: write
@@ -12,15 +12,17 @@ on:
 
 jobs:
   benchmark:
-    name: Compile AOT Samples
+    name: AOT Samples Compilation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-dotnet@v1
-      - name: Build Sample
-        run: dotnet build   samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=$GITHUB_WORKSPACE/summary
-      - name: Publish Sample
+      - name: SunburstChartExample
         run: dotnet publish samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=$GITHUB_WORKSPACE/summary
+      - name: LinqSvgExample
+        run: dotnet publish samples/Linq/SvgExample -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=$GITHUB_WORKSPACE/summary
+      - name: ThreadedCommentExample
+        run: dotnet publish samples/ThreadedCommentExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=$GITHUB_WORKSPACE/summary
       - name: Write summary
         run: |
           cd $GITHUB_WORKSPACE/summary
