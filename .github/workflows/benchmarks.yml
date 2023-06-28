@@ -31,8 +31,7 @@ jobs:
         shell: pwsh
         run: |
           $files = gci test/DocumentFormat.OpenXml.Benchmarks/results/results/*.asciidoc
-          $files | % { gc $_ } | Out-File combined.txt
-          echo combined.txt >> $env:GITHUB_STEP_SUMMARY
+          $files | % { gc $_ } >> $env:GITHUB_STEP_SUMMARY
       - name: Store Validation
         uses: benchmark-action/github-action-benchmark@v1
         with:
