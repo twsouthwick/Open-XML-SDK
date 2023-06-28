@@ -20,7 +20,7 @@ jobs:
       - name: Build Sample
         run: cd samples/SunburstChartExample && dotnet build -c RELEASE
       - name: Publish Sample
-        run: cd samples/SunburstChartExample && dotnet publish -c RELEASE -f net7.0 /p:PublishAot=true -o ./publish/sunburst
+        run: dotnet publish samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true -o ./publish/sunburst
       - name: Write summary
         run: |
           echo '# Sunburst Sample:' >> $GITHUB_STEP_SUMMARY
