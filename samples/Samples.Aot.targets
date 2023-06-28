@@ -54,13 +54,10 @@
     </GetPublishOutputDetails>
 
     <ItemGroup>
-      <_Contents Include="- **$(TargetName)**" />
-      <_Contents Include=" " />
+      <_Contents Include="### $(TargetName)" />
       <_Contents Include="| File | Size |" />
       <_Contents Include="|---|---|" />
       <_Contents Include="| %(PublishItemsOutputInfo.Identity) | %(PublishItemsOutputInfo.Size) |" />
-      <_Contents Include=" " />
-      <_Contents Include=" " />
     </ItemGroup>
 
     <WriteLinesToFile
