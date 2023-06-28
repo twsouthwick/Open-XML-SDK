@@ -25,7 +25,7 @@ jobs:
           message: |
             **Hello MAIN**
       - name: Publish Sample
-        run: cd samples/SunburstChartExample && dotnet publish -c RELEASE -f net7.0 /p:PublishAot=true -o publish/sunburst
+        run: cd samples/SunburstChartExample && dotnet publish -c RELEASE -f net7.0 /p:PublishAot=true -o ./publish/sunburst
       - name: Get contents
         run: ls publish/sunburst > result.txt
       - uses: mshick/add-pr-comment@v2
