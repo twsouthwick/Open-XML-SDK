@@ -26,4 +26,4 @@ jobs:
           ls $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/summary
           echo '# AOT Output Information' >> $GITHUB_STEP_SUMMARY
-          find . -name '*.summary.md' -exec cat {} >> $GITHUB_STEP_SUMMARY
+          echo !(*.summary.md) >> $GITHUB_STEP_SUMMARY
