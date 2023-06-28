@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687934062511,
+  "lastUpdate": 1687934067361,
   "repoUrl": "https://github.com/twsouthwick/Open-XML-SDK",
   "entries": {
     "Validation": [
@@ -1644,6 +1644,38 @@ window.BENCHMARK_DATA = {
             "value": 111.82092825571696,
             "unit": "ns",
             "range": "± 1.87322881155305"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "twsouthwick",
+            "username": "twsouthwick"
+          },
+          "committer": {
+            "name": "twsouthwick",
+            "username": "twsouthwick"
+          },
+          "id": "019a6b3d7381c1fa5dd0bcc0db1e0e023cac035b",
+          "message": "Aot tests",
+          "timestamp": "2019-12-20T18:37:43Z",
+          "url": "https://github.com/twsouthwick/Open-XML-SDK/pull/6/commits/019a6b3d7381c1fa5dd0bcc0db1e0e023cac035b"
+        },
+        "date": 1687934065150,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "DocumentFormat.OpenXml.Benchmarks.CompiledParticle.SetItem",
+            "value": 98.23392799922398,
+            "unit": "ns",
+            "range": "± 0.4622250590251822"
+          },
+          {
+            "name": "DocumentFormat.OpenXml.Benchmarks.CompiledParticle.AddToCollection",
+            "value": 81.21625505960904,
+            "unit": "ns",
+            "range": "± 0.3450811162416842"
           }
         ]
       }
