@@ -20,7 +20,7 @@ jobs:
       - name: Build Sample
         run: dotnet build   samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=summary
       - name: Publish Sample
-        run: dotnet publish samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=summary
+        run: dotnet publish samples/SunburstChartExample/ -c RELEASE -f net7.0 --no-restore --no-build /p:PublishAot=true /p:SummaryOutDir=summary
       - name: Write summary
         run: |
           ls

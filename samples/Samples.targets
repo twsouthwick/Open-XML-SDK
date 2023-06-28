@@ -46,7 +46,7 @@
 
   <Target Name="WriteMarkdownSummary" Condition=" '$(SummaryOutDir)' != '' " AfterTargets="PublishItemsOutputGroup">
     <PropertyGroup>
-        <SummaryFile>$(SummaryOutDir)/$(TargetName).summary.md</SummaryFile>
+        <SummaryFile>$([MSBuild]::NormalizePath('$(SummaryOutDir)/$(TargetName).summary.md'))</SummaryFile>
     </PropertyGroup>
 
     <GetPublishOutputDetails  Items="@(PublishItemsOutputGroupOutputs)">
