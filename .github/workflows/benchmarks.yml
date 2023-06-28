@@ -27,6 +27,12 @@ jobs:
       - name: List folders
         shell: pwsh
         run: cd test/DocumentFormat.OpenXml.Benchmarks; ls -recurse
+      - name: Write summary
+        shell: pwsh
+        run: |
+          $files = gci test/DocumentFormat.OpenXml.Benchmarks/results/results/*.asciidoc
+          $files | % { gc $_ } | Out-File combined.txt
+          $env:GITHUB_STEP_SUMMARY = gc combined.txt
       - name: Store Validation
         uses: benchmark-action/github-action-benchmark@v1
         with:
