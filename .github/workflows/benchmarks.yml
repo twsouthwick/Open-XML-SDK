@@ -24,9 +24,6 @@ jobs:
       - name: Run benchmarks
         run: cd test/DocumentFormat.OpenXml.Benchmarks; dotnet run -c RELEASE -- results --exporters json --filter '*'
         shell: pwsh
-      - name: List folders
-        shell: pwsh
-        run: cd test/DocumentFormat.OpenXml.Benchmarks; ls -recurse
       - name: Write summary
         shell: pwsh
         run: |
