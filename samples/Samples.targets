@@ -58,7 +58,6 @@
       <_Contents Include="| File | Size |" />
       <_Contents Include="|---|---|" />
       <_Contents Include="| %(PublishItemsOutputInfo.Identity) | %(PublishItemsOutputInfo.Size) |" />
-      <_Contents Include="|---|---|" />
     </ItemGroup>
 
     <WriteLinesToFile
