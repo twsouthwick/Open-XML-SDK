@@ -32,6 +32,7 @@ jobs:
         run: |
           $files = gci test/DocumentFormat.OpenXml.Benchmarks/results/results/*.asciidoc
           $files | % { gc $_ } | Out-File combined.txt
+          gc combined.txt
           $env:GITHUB_STEP_SUMMARY = gc combined.txt
       - name: Store Validation
         uses: benchmark-action/github-action-benchmark@v1
