@@ -23,7 +23,9 @@ jobs:
         run: dotnet publish samples/SunburstChartExample/ -c RELEASE -f net7.0 /p:PublishAot=true /p:SummaryOutDir=$GITHUB_WORKSPACE/summary
       - name: Write summary
         run: |
-          ls $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE/summary
           echo '# AOT Output Information' >> $GITHUB_STEP_SUMMARY
-          echo !(*.summary.md) >> $GITHUB_STEP_SUMMARY
+          for FILE in *.log
+          do
+            echo ${FILE} >> $GITHUB_STEP_SUMMARY
+          done
