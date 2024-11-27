@@ -9,9 +9,9 @@ namespace DocumentFormat.OpenXml.Framework.Metadata;
 /// A lookup that identifies properties on an <see cref="OpenXmlElement"/> and caches the schema information
 /// from those elements.
 /// </summary>
-internal class ElementFactoryCollection
+internal readonly struct ElementFactoryCollection
 {
-    public static readonly ElementFactoryCollection Empty = new([]);
+    public static readonly ElementFactoryCollection Empty;
 
     private readonly List<ElementFactory> _data;
 
@@ -21,9 +21,11 @@ internal class ElementFactoryCollection
         _data = lookup;
     }
 
+    public IEnumerable<ElementFactory> Elements => _data ?? [];
+
     public OpenXmlElement? Create(in OpenXmlQualifiedName qname)
     {
-        if (_data.Count == 0)
+        if (_data is null || _data.Count == 0)
         {
             return null;
         }
